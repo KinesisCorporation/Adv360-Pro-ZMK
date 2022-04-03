@@ -1,0 +1,19 @@
+identifier: adv360
+name: Adv360
+type: keyboard
+arch: arm
+toolchain:
+  - zephyr
+  - gnuarmemb
+  - xtools
+supported:
+  - gpio
+  - i2c
+  - counter
+  - spi
+  - usb_device
+  - nvs
+  - can
+  - kscan
+  - ble
+  - pwm
