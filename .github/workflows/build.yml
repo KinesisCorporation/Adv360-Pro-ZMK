@@ -1,0 +1,58 @@
+on: [push, pull_request, workflow_dispatch]
+
+name: Build
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container:
+      image: zmkfirmware/zmk-build-arm:2.4
+    name: Build
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Cache west modules
+        uses: actions/cache@v2
+        env:
+          cache-name: cache-zephyr-modules
+        with:
+          path: |
+            modules/
+            tools/
+            zephyr/
+            bootloader/
+            zmk/
+          key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('manifest-dir/west.yml') }}
+          restore-keys: |
+            ${{ runner.os }}-build-${{ env.cache-name }}-
+            ${{ runner.os }}-build-
+            ${{ runner.os }}-
+      - name: West Init
+        run: west init -l config
+      - name: West Update
+        run: west update
+      - name: West Zephyr export
+        run: west zephyr-export
+      - name: West Build (left)
+        run: west build -s zmk/app -d build/left -b adv360_left -- -DZMK_CONFIG="${GITHUB_WORKSPACE}/config"
+      - name: Adv360 Left DTS File
+        if: ${{ always() }}
+        run: cat -n build/left/zephyr/adv360_left.dts.pre.tmp
+      - name: Adv360 Left Kconfig file
+        run: cat build/left/zephyr/.config | grep -v "^#" | grep -v "^$"
+      - name: West Build (right)
+        run: west build -s zmk/app -d build/right -b adv360_right -- -DZMK_CONFIG="${GITHUB_WORKSPACE}/config"
+      - name: Adv360 Right DTS File
+        if: ${{ always() }}
+        run: cat -n build/right/zephyr/adv360_right.dts.pre.tmp
+      - name: Adv360 Right Kconfig file
+        run: cat build/right/zephyr/.config | grep -v "^#" | grep -v "^$"
+      - name: Rename zmk.uf2
+        run: cp build/left/zephyr/zmk.uf2 left.uf2 && cp build/right/zephyr/zmk.uf2 right.uf2
+      - name: Archive (Adv360)
+        uses: actions/upload-artifact@v2
+        with:
+          name: firmware
+          path: |
+            left.uf2
+            right.uf2
