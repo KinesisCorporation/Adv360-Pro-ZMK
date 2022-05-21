@@ -5,12 +5,6 @@ set -e
 PWD=$(pwd)
 TIMESTAMP=$(date -u +"%Y%m%d%H%M%S")
 
-# West Init
-west init -l config
-# West Update
-west update
-# West Zephyr export
-west zephyr-export
 # West Build (left)
 west build -s zmk/app -d build/left -b adv360_left -- -DZMK_CONFIG="${PWD}/config"
 # Adv360 Left DTS File
