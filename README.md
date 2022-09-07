@@ -18,6 +18,7 @@
 
 1. Execute `setup.sh`.
 
+
 ### Build firmware
 
 1. Execute `run.sh`
