@@ -35,9 +35,9 @@
         default_layer {
             bindings = <
  &kp EQUAL     &kp N1            &kp N2      &kp N3            &kp N4           &kp N5                          &tog 1     &mo 3     &kp N6     &kp N7     &kp N8     &kp N9     &kp N0  &kp MINUS
- &mt LS(LC(LALT)) TAB      &kp Q             &kp W       &kp E             &kp R            &kp T                           &none     &none      &kp Y      &kp U      &kp I      &kp O      &kp P   &kp BSLH
-   &mt LS(LC(LA(LGUI))) ESC      &kp A    &hm  LEFT_GUI S       &hm LALT D             &hm LSHFT F            &kp G                           &none  &kp LGUI    &kp F17                         &kp LGUI  &kp RCTRL      &none     &kp H        &kp J           &kp K         &kp L  &kp SEMI    &kp SQT
- &kp LSHFT      &kp Z    &kp X  &kp C  &kp V            &kp B                           &none     &none   &kp HOME      &none      &none  &kp PG_UP      &none      &none     &kp N  &hm RSHFT M  &hm RALT COMMA  &hm RGUI DOT  &kp FSLH  &kp RSHFT
+ &mt LS(LC(LALT)) TAB            &kp Q             &kp W       &kp E             &kp R            &kp T                           &none     &none      &kp Y      &kp U      &kp I      &kp O      &kp P   &kp BSLH
+ &mt LS(LC(LA(LGUI))) ESC      &kp A    &hm  LEFT_GUI S       &hm LALT D             &hm LSHFT F            &kp G                           &none  &kp LGUI    &kp F17                         &kp LGUI  &kp RCTRL      &none     &kp H        &hm RSHFT J           &hm RALT K         &hm RGUI L  &kp SEMI    &kp SQT
+ &kp LSHFT      &kp Z    &kp X   &kp C  &kp V            &kp B                           &none     &none   &kp HOME      &none      &none  &kp PG_UP      &none      &none     &kp N  &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
      &mo 2  &kp GRAVE  &kp LOCKING_CAPS    &kp LEFT         &kp RIGHT  &lt 2 BACKSPACE            &mt LEFT_CONTROL F17   &kp END  &kp PG_DN  &kp ENTER  &kp SPACE     &kp UP   &kp DOWN   &kp LBKT  &kp RBKT        &mo 2
             >;
         };
@@ -63,7 +63,7 @@
         };
 
         layer_mod {
-            bindings = <
+            bindings = <aaaaaaaau
   &none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3     &bt BT_SEL 4                             &none       &trans  &bt BT_SEL 0  &bt BT_SEL 1     &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                   &none
   &none         &none         &none         &none         &none            &none                       &bootloader  &bootloader         &none         &none            &none         &none         &none                   &none
   &none         &none         &none         &none         &none            &none            &rgb_ug RGB_MEFS_CMD 5   &bt BT_CLR         &none                                   &bt BT_CLR    &bt BT_CLR  &rgb_ug RGB_MEFS_CMD 5   &none   &none   &none   &none   &none   &none
