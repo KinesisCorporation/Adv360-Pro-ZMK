@@ -20,6 +20,13 @@
   behaviors {
     #include "macros.dtsi"
 
+    clnswp: colon_swap{
+    compatible = "zmk, behavior-mod-morph";
+    label = "COLON_SWAP";
+    #binding-cells = <0>;
+    bindings = <&kp COLON>, <&kp SEMICOLON>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+  };
     hm: homerow_mods {
         compatible = "zmk,behavior-hold-tap";
         label = "HOMEROW_MODS";
