@@ -13,6 +13,8 @@
 
 
 #define HYPER LS(LC(LA(LGUI)))
+#define MEH LS(LC(LALT))
+#define CSHFT LS(LCTRL)
 
 / {
   behaviors {
@@ -36,8 +38,8 @@
         default_layer {
             bindings = <
  &kp EQUAL     &kp N1            &kp N2     &kp N3               &kp N4           &kp N5                                                                                             &tog 1     &mo 3                    &kp N6        &kp N7                &kp N8     &kp N9                      &kp N0      &kp MINUS
- &mt LS(LC(LALT)) TAB            &kp Q      &kp W                &kp E            &kp R            &kp T                                                                             &none  &none                        &kp Y         &kp U                 &kp I      &kp O                       &kp P       &kp BSLH
- &mt HYPER ESC        &kp A      &hm LEFT_GUI S       &hm LALT D       &hm LSHFT F      &kp G                     &none &kp LGUI    &kp F17                                &kp LGUI  &kp RCTRL      &none      &kp H         &hm RSHFT J           &hm RALT K &hm RIGHT_GUI L             &kp SEMI    &mt HYPER SQT
+ &mt MEH TAB            &kp Q      &kp W                &kp E            &kp R            &kp T                                                                             &none  &none                        &kp Y         &kp U                 &kp I      &kp O                       &kp P       &mt MEmt MEHH BSLH
+ &mt HYPER ESC        &mt CSHFT A      &hm LEFT_GUI S       &hm LALT D       &hm LSHFT F      &kp G                     &none &kp LGUI    &kp F17                                &kp LGUI  &kp RCTRL      &none      &kp H         &hm RSHFT J           &hm RALT K &hm RIGHT_GUI L             &kp SEMI    &mt HYPER SQT
  &kp LSHFT                       &kp Z      &kp X                &kp C            &kp V            &kp B                           &none     &none   &kp HOME      &none      &none  &kp PG_UP      &none      &none     &kp N         &kp M                 &kp COMMA  &kp DOT                     &kp FSLH    &kp RSHFT
  &mo 2                           &kp GRAVE  &kp CAPS             &kp LEFT         &kp RIGHT        &lt 2 BACKSPACE                 &mt LEFT_CONTROL F17   &kp END                          &kp PG_DN  &mt RIGHT_CONTROL ENTER  &kp SPACE     &kp UP                &kp DOWN                     &kp LBKT  &kp RBKT    &mo 2
             >;
