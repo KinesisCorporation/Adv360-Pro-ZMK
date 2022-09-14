@@ -5,18 +5,14 @@
  * SPDX-License-Identifier: MIT
  */
 
-
-/* THIS FILE WAS GENERATED!
- *
- * This file was generated automatically. You may or may not want to
- * edit it directly.
- */
-
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/rgb.h>
 #include <dt-bindings/zmk/backlight.h>
+
+#DEFINE HYPER "&kp LS(LC(LA(LGUI)))"
+
 
 / {
   behaviors {
@@ -41,8 +37,8 @@
             bindings = <
  &kp EQUAL     &kp N1            &kp N2      &kp N3            &kp N4           &kp N5                          &tog 1     &mo 3     &kp N6     &kp N7     &kp N8     &kp N9     &kp N0  &kp MINUS
    &kp TAB      &kp Q             &kp W       &kp E             &kp R            &kp T                           &none     &none      &kp Y      &kp U      &kp I      &kp O      &kp P   &kp BSLH
-   &kp ESC      &kp A             &kp S       &kp D             &kp F            &kp G                           &none  &kp LGUI    &kp F17                         &kp LGUI  &kp RCTRL      &none     &kp H        &kp J           &kp K         &kp L  &kp SEMI    &kp SQT
- &kp LSHFT      &kp Z    &hm LEFT_GUI X  &hm LALT C  &hm LEFT_SHIFT V            &kp B                           &none     &none   &kp HOME      &none      &none  &kp PG_UP      &none      &none     &kp N  &hm RSHFT M  &hm RALT COMMA  &hm RGUI DOT  &kp FSLH  &kp RSHFT
+   &mt HYPER ESC      &kp A    &hm  LEFT_GUI S       &hm LALT D             &hm LSHFT F            &kp G                           &none  &kp LGUI    &kp F17                         &kp LGUI  &kp RCTRL      &none     &kp H        &kp J           &kp K         &kp L  &kp SEMI    &kp SQT
+ &kp LSHFT      &kp Z    &kp X  &kp C  &kp V            &kp B                           &none     &none   &kp HOME      &none      &none  &kp PG_UP      &none      &none     &kp N  &hm RSHFT M  &hm RALT COMMA  &hm RGUI DOT  &kp FSLH  &kp RSHFT
      &mo 2  &kp GRAVE  &kp LOCKING_CAPS    &kp LEFT         &kp RIGHT  &lt 2 BACKSPACE            &mt LEFT_CONTROL F17   &kp END  &kp PG_DN  &kp ENTER  &kp SPACE     &kp UP   &kp DOWN   &kp LBKT  &kp RBKT        &mo 2
             >;
         };
