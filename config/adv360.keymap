@@ -39,11 +39,11 @@
 
         default_layer {
             bindings = <
-   &kp ESC  &kp N1    &kp N2    &kp N3     &kp N4    &kp N5                &kp F5      &mo 3     &kp N6     &kp N7     &kp N8           &kp N9     &kp N0    &kp MINUS
-   &kp TAB   &kp Q     &kp W     &kp E      &kp R     &kp T             &kp K_CUT    &kp DEL      &kp Y      &kp U      &kp I            &kp O      &kp P     &kp BSLH
-    &tog 2   &kp A     &kp S     &kp D      &kp F     &kp G            &kp K_COPY  &kp GRAVE     &tog 1                        &kp PRINTSCREEN    &kp INS  &kp K_PASTE     &kp H      &kp J      &kp K    &kp L  &kp SEMI  &kp ENTER
- &kp LSHFT   &kp Z     &kp X     &kp C      &kp V     &kp B                 &none      &none     &kp UP      &none      &none        &kp PG_UP      &none        &none     &kp N      &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
- &kp LCTRL   &mo 2  &kp LGUI  &kp LALT  &kp EQUAL  &kp BSPC               &kp DEL   &kp DOWN  &kp PG_DN  &kp ENTER  &kp SPACE         &kp LEFT  &kp RIGHT     &kp LBKT  &kp RBKT  &kp EQUAL
+   &kp ESC  &kp N1    &kp N2    &kp N3     &kp N4    &kp N5                 &kp F5      &mo 3     &kp N6     &kp N7     &kp N8           &kp N9     &kp N0     &kp MINUS
+   &kp TAB   &kp Q     &kp W     &kp E      &kp R     &kp T             &macro_cut    &kp DEL      &kp Y      &kp U      &kp I            &kp O      &kp P      &kp BSLH
+    &tog 2   &kp A     &kp S     &kp D      &kp F     &kp G            &macro_copy  &kp GRAVE     &tog 1                        &kp PRINTSCREEN    &kp INS  &macro_paste     &kp H      &kp J      &kp K    &kp L  &kp SEMI  &kp ENTER
+ &kp LSHFT   &kp Z     &kp X     &kp C      &kp V     &kp B                  &none      &none     &kp UP      &none      &none        &kp PG_UP      &none         &none     &kp N      &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
+ &kp LCTRL   &mo 2  &kp LGUI  &kp LALT  &kp EQUAL  &kp BSPC                &kp DEL   &kp DOWN  &kp PG_DN  &kp ENTER  &kp SPACE         &kp LEFT  &kp RIGHT      &kp LBKT  &kp RBKT  &kp EQUAL
             >;
         };
 
