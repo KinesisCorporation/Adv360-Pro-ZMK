@@ -53,7 +53,7 @@
    &kp TAB      &kp Q     &kp W     &kp E      &kp R     &kp T              &none      &none      &kp Y   &kp KP_N7     &kp KP_N8      &kp KP_N9     &kp KP_MINUS    &kp BSLH
    &kp ESC      &kp A     &kp S     &kp D      &kp F     &kp G              &none  &kp LCTRL   &kp LALT                                 &kp LGUI        &kp RCTRL       &none     &kp H  &kp KP_N4  &kp KP_N5  &kp KP_N6   &kp KP_PLUS    &kp SQT
  &kp LSHFT      &kp Z     &kp X     &kp C      &kp V     &kp B              &none      &none   &kp HOME       &none         &none      &kp PG_UP            &none       &none     &kp N  &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_ENTER  &kp RSHFT
-     &mo 2  &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT  &kp BSPC            &kp DEL    &kp END  &kp PG_DN   &kp ENTER     &kp KP_N0         &kp UP         &kp DOWN  &kp KP_DOT  &kp RBKT      &mo 2
+     &mo 2  &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT  &kp BSPC            &kp DEL    &kp END  &kp PG_DN   &kp ENTER     &kp KP_N0       &kp DOWN           &kp UP  &kp KP_DOT  &kp RBKT      &mo 2
             >;
         };
 
