@@ -2,7 +2,4 @@
 
 set -e
 
-docker run -it --name zmk zmk
-docker cp zmk:/app/firmware/ ./
-docker stop zmk
-docker rm zmk
+docker run --rm -it --name zmk -v $(pwd)/firmware:/app/firmware zmk

@@ -3,7 +3,6 @@
 set -e
 
 PWD=$(pwd)
-TIMESTAMP=$(date -u +"%Y%m%d%H%M%S")
 
 # West Build (left)
 west build -s zmk/app -d build/left -b adv360_left -- -DZMK_CONFIG="${PWD}/config"
@@ -18,4 +17,4 @@ cat -n build/right/zephyr/adv360_right.dts.pre.tmp
 # Adv360 Right Kconfig file
 cat build/right/zephyr/.config | grep -v "^#" | grep -v "^$"
 # Rename zmk.uf2
-cp build/left/zephyr/zmk.uf2 ./firmware/${TIMESTAMP}-left.uf2 && cp build/right/zephyr/zmk.uf2 ./firmware/${TIMESTAMP}-right.uf2
+cp build/left/zephyr/zmk.uf2 ./firmware/left.uf2 && cp build/right/zephyr/zmk.uf2 ./firmware/right.uf2
