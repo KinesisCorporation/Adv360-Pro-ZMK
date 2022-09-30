@@ -19,7 +19,7 @@
 #include <dt-bindings/zmk/backlight.h>
 
 &caps_word {
-    continue-list = <UNDERSCORE MINUS LSHFT>;
+    continue-list = <UNDERSCORE MINUS LSHFT BSPC>;
 };
 
 / {
