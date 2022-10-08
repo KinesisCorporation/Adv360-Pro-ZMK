@@ -36,7 +36,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_MOD_TAP";
             #binding-cells = <0>;
-            tapping-term-ms = <250>;
+            tapping-term-ms = <300>;
             bindings = <&mt LGUI BSPC>, <&kp BSPC>;
         };
   };
