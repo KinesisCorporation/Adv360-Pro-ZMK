@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
-set -e
+set -eu
 
 PWD=$(pwd)
-TIMESTAMP=$(date -u +"%Y%m%d%H%M%S")
+TIMESTAMP="${TIMESTAMP:-$(date -u +"%Y%m%d%H%M%S")}"
 
 # West Build (left)
 west build -s zmk/app -d build/left -b adv360_left -- -DZMK_CONFIG="${PWD}/config"
