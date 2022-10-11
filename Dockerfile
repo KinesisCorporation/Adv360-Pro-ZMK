@@ -1,4 +1,4 @@
-FROM zmkfirmware/zmk-build-arm:stable
+FROM zmkfirmware/zmk-build-arm:2.4
 
 WORKDIR /app
 
