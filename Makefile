@@ -14,8 +14,8 @@ firmware/%-left.uf2 firmware/%-right.uf2: config/adv360.keymap timestamp
 		-e TIMESTAMP=$(TIMESTAMP) \
 		zmk
 
-setup:
-	docker build --tag zmk .
+setup: Dockerfile bin/build.sh config/west.yml
+	docker build --tag zmk --file Dockerfile .
 
 timestamp:
 	$(eval TIMESTAMP:=$(shell date -u +"%Y%m%d%H%M%S"))
