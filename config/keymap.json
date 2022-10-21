@@ -5,10 +5,10 @@
   "layer_names": [
     "Mac",
     "Windows",
+    "FPS",
     "Arrow",
     "FN",
-    "Mod",
-    "FPS"
+    "Mod"
   ],
   "layers": [
     [
