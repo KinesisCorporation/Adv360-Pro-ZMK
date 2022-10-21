@@ -49,8 +49,8 @@
             bindings = <
  &kp EQUAL              &kp N1            &kp N2          &kp N3              &kp N4      &kp N5               &tog 1      &mo 3     &kp N6       &kp N7       &kp N8     &kp N9     &kp N0  &kp MINUS
    &kp TAB               &kp Q             &kp W           &kp F               &kp P       &kp B                &none      &none      &kp J        &kp L        &kp U      &kp Y   &kp SEMI   &kp SEMI
-   &kp ESC  &mt LEFT_COMMAND A  &mt LEFT_SHIFT R  &mt LEFT_ALT S  &mt LEFT_CONTROL T       &kp G                &none  &kp LCTRL   &kp LALT                             &kp LGUI  &kp RCTRL      &none     &kp M  &mt RIGHT_CONTROL N  &mt RIGHT_ALT E  &mt RSHIFT undefined  &mt RIGHT_COMMAND O    &kp SQT
- &kp LSHFT               &kp Z             &kp X           &kp C               &kp D       &kp V                &none      &none   &kp HOME        &none        &none  &kp PG_UP      &none      &none     &kp K                &kp H        &kp COMMA               &kp DOT             &kp FSLH  &kp RSHFT
+   &kp ESC  &mt LEFT_COMMAND A  &mt LEFT_SHIFT R  &mt LEFT_ALT S  &mt LEFT_CONTROL T       &kp G                &none  &kp LCTRL   &kp LALT                             &kp LGUI  &kp RCTRL      &none     &kp M  &mt RIGHT_CONTROL N  &mt RIGHT_ALT E  &mt RSHIFT I  &mt RIGHT_COMMAND O    &kp SQT
+ &kp LSHFT               &kp Z             &kp X           &kp C               &kp D       &kp V                &none      &none   &kp HOME        &none        &none  &kp PG_UP      &none      &none     &kp K                &kp H        &kp COMMA       &kp DOT             &kp FSLH  &kp RSHFT
      &mo 2           &kp GRAVE          &kp CAPS        &kp LEFT           &kp RIGHT  &lt 7 BSPC            &lt 8 DEL  &lt 9 TAB  &lt 6 ESC  &lt 5 ENTER  &lt 4 SPACE     &kp UP   &kp DOWN   &kp LBKT  &kp RBKT                &mo 2
             >;
         };
