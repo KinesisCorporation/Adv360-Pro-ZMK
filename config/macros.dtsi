@@ -2,19 +2,19 @@ macro_mac_layout: macro_mac_layout{
 compatible = "zmk,behavior-macro";
 label = "macro_mac_layout";
 #binding-cells = <0>;
-bindings = <&bt BT_SEL 0>, <&none >, <&none >, <&none >, <&to 0>;
+bindings = <&bt BT_SEL 0>, <&to 0>;
 };
 macro_win_layout: macro_win_layout{
 compatible = "zmk,behavior-macro";
 label = "macro_win_layout";
 #binding-cells = <0>;
-bindings = <&bt BT_SEL 1>, <&none >, <&none >, <&none >, <&to 1>;
+bindings = <&bt BT_SEL 1>, <&to 1>;
 };
 macro_win_sleep: macro_win_sleep{
 compatible = "zmk,behavior-macro";
 label = "macro_win_sleep";
 #binding-cells = <0>;
-bindings = <&kp LG(D)>, <&none >, <&none >, <&none >, <&none >, <&none >, <&kp LA(F4)>, <&none >, <&none >, <&none >, <&kp R>, <&none >, <&none >, <&none >, <&kp UP>, <&none >, <&none >, <&none >, <&kp UP>, <&kp ENTER>;
+bindings = <&kp LG(D)>, <&kp LA(F4)>, <&kp R>, <&kp UP>, <&kp UP>, <&kp ENTER>;
 };
 macro_quotes: macro_quotes{
 compatible = "zmk,behavior-macro";
