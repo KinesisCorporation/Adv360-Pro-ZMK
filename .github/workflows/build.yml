@@ -44,7 +44,7 @@ jobs:
       - name: Rename zmk.uf2
         run: cp build/left/zephyr/zmk.uf2 left.uf2 && cp build/right/zephyr/zmk.uf2 right.uf2
       - name: Archive (Adv360)
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: firmware
           path: |
