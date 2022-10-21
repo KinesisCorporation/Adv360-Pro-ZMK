@@ -56,6 +56,16 @@
  &kp LGUI  &trans  &trans  &kp LCTRL  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &kp RCTRL  &trans  &trans  &macro_win_sleep
             >;
         };
+        
+        layer_FPS {
+            bindings = <
+ &trans  &trans  &trans  &trans      &trans     &trans                &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans   &kp Q   &kp W       &kp E      &kp R                 &kp T  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans   &kp A   &kp S       &kp D      &kp F                 &kp G  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans      &trans     &trans                &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &kp LSHIFT  &kp SPACE            &kp LSHIFT  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+            >;
+        };
 
         layer_Arrow {
             bindings = <
@@ -84,16 +94,6 @@
   &none         &none         &none         &none         &none            &none            &rgb_ug RGB_MEFS_CMD 5   &bt BT_CLR              &none                                        &bt BT_CLR    &bt BT_CLR  &rgb_ug RGB_MEFS_CMD 5   &none   &none   &none   &none   &none   &none
   &none         &none         &none         &none         &none            &none                             &none        &none              &none              &none            &none         &none         &none                   &none   &none   &none   &none   &none   &none   &none
   &none         &none         &none    &bl BL_INC    &bl BL_DEC  &rgb_ug RGB_TOG                        &bl BL_TOG        &none              &none         &bl BL_TOG  &rgb_ug RGB_TOG    &bl BL_INC    &bl BL_DEC                   &none   &none   &none
-            >;
-        };
-
-        layer_FPS {
-            bindings = <
- &trans  &trans  &trans  &trans      &trans     &trans                &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
- &trans  &trans   &kp Q   &kp W       &kp E      &kp R                 &kp T  &trans  &trans  &trans  &trans  &trans  &trans  &trans
- &trans  &trans   &kp A   &kp S       &kp D      &kp F                 &kp G  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
- &trans  &trans  &trans  &trans      &trans     &trans                &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
- &trans  &trans  &trans  &trans  &kp LSHIFT  &kp SPACE            &kp LSHIFT  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
