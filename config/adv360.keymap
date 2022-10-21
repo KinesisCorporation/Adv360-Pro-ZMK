@@ -1,3 +1,17 @@
+
+/*
+ * Copyright (c) 2020 The ZMK Contributors
+ *
+ * SPDX-License-Identifier: MIT
+ */
+
+
+/* THIS FILE WAS GENERATED!
+ *
+ * This file was generated automatically. You may or may not want to
+ * edit it directly.
+ */
+
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
@@ -49,7 +63,7 @@
  &trans  &trans     &trans  &kp LSHIFT    &trans  &trans            &trans  &trans  &trans   &kp HOME     &kp UP  &kp END  &trans  &trans
  &trans  &trans  &kp LCTRL    &kp LALT  &kp LGUI  &trans            &trans  &trans  &trans                         &trans  &trans  &trans  &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &trans
  &trans  &trans     &trans      &trans    &trans  &trans            &trans  &trans  &trans     &trans     &trans   &trans  &trans  &trans  &trans    &trans    &trans     &trans  &trans  &trans
- &trans  &trans     &trans      &trans    &trans     &kp            &trans  &trans  &trans  &kp PG_UP  &kp PG_DN   &trans  &trans  &trans  &trans    &trans
+ &trans  &trans     &trans      &trans    &trans   &none            &trans  &trans  &trans  &kp PG_UP  &kp PG_DN   &trans  &trans  &trans  &trans    &trans
             >;
         };
 
@@ -70,6 +84,16 @@
   &none         &none         &none         &none         &none            &none            &rgb_ug RGB_MEFS_CMD 5   &bt BT_CLR              &none                                        &bt BT_CLR    &bt BT_CLR  &rgb_ug RGB_MEFS_CMD 5   &none   &none   &none   &none   &none   &none
   &none         &none         &none         &none         &none            &none                             &none        &none              &none              &none            &none         &none         &none                   &none   &none   &none   &none   &none   &none   &none
   &none         &none         &none    &bl BL_INC    &bl BL_DEC  &rgb_ug RGB_TOG                        &bl BL_TOG        &none              &none         &bl BL_TOG  &rgb_ug RGB_TOG    &bl BL_INC    &bl BL_DEC                   &none   &none   &none
+            >;
+        };
+
+        layer_FPS {
+            bindings = <
+ &trans  &trans  &trans  &trans      &trans     &trans                &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans   &kp Q   &kp W       &kp E      &kp R                 &kp T  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans   &kp A   &kp S       &kp D      &kp F                 &kp G  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans      &trans     &trans                &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &kp LSHIFT  &kp SPACE            &kp LSHIFT  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
