@@ -88,7 +88,7 @@
         layer_Nav {
             bindings = <
  &trans            &trans          &trans        &trans            &trans         &trans  &trans                                                                              &trans      &trans    &trans     &trans       &trans     &trans  &trans
- &trans            &trans          &trans        &trans            &trans         &trans  &trans                                                                              &trans  &kp INSERT  &kp HOME  &kp PG_UP  &kp PAGE_DN    &kp END  &trans
+ &trans            &trans          &trans        &trans            &trans         &trans  &trans                                                                              &trans  &kp INSERT  &kp HOME  &kp PG_UP    &kp PG_DN    &kp END  &trans
  &trans          &kp LGUI  &kp LEFT_SHIFT  &kp LEFT_ALT  &kp LEFT_CONTROL         &trans  &trans            &trans  &trans                        &trans   &trans             &trans  &caps_word  &kp LEFT     &kp UP     &kp DOWN  &kp RIGHT  &trans
  &trans         &kp LG(Z)       &kp LG(X)     &kp LG(C)         &kp LG(V)  &kp LS(LG(Z))            &trans  &trans  &trans  &trans     &trans     &trans   &trans     &trans       &kp LS(LG(Z)) &kp LG(V)  &kp LG(C)    &kp LG(X)  &kp LG(Z)  &trans
  &trans            &trans          &trans        &trans            &trans                           &trans  &trans  &trans                     &kp SPACE  &kp ESC  &kp ENTER                        &trans     &trans       &trans     &trans  &trans
