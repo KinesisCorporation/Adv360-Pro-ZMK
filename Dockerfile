@@ -1,4 +1,4 @@
-FROM zmkfirmware/zmk-build-arm:stable
+FROM docker.io/zmkfirmware/zmk-build-arm:stable
 
 WORKDIR /app
 
