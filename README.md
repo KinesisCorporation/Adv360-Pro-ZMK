@@ -12,9 +12,11 @@
 1. Push a commit to trigger the build.
 2. Download the artifact.
 
-## To build Firmware locally using Docker
+## To build Firmware locally using a container
 
 ### First run
+
+Note: Either Podman or Docker is required, Podman is preferred if both are present.
 
 1. Execute `make all`.
 2. Check the `firmware` directory for the latest firmware build.
