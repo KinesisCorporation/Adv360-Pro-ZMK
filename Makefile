@@ -8,7 +8,7 @@ all: setup build
 build: firmware/$$(TIMESTAMP)-left.uf2 firmware/$$(TIMESTAMP)-right.uf2
 
 clean:
-	rm ./firmware/*.uf2
+	rm -f firmware/*.uf2
 
 firmware/%-left.uf2 firmware/%-right.uf2: config/adv360.keymap
 	$(DOCKER) run --rm -it --name zmk \
