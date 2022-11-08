@@ -42,11 +42,11 @@
     };
     fn {
       bindings = <
-        &kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp F6 &tog 1                                                       &mo 3 &kp F7       &kp F8       &kp F9       &kp F10 &kp F11 &kp F12
-        &trans &trans &trans &trans &trans &trans  &none                                                       &none &kp C_MUTE   &kp C_VOL_DN &kp C_VOL_UP &trans  &trans  &trans
-        &trans &trans &trans &trans &trans &trans  &none        &trans &trans             &trans &trans        &none &kp C_PREV   &kp C_PP     &kp C_NEXT   &trans  &trans  &trans
-        &trans &trans &trans &trans &trans &trans        &none  &none  &trans &none &none &trans &none  &none        &kp C_BRI_UP &kp C_BRI_DN &trans       &trans  &trans  &trans
-        &trans &trans &trans &trans &trans               &trans &trans &trans             &trans &trans &trans                    &trans       &trans       &trans  &trans  &trans
+        &kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp F6 &tog 1                                                       &mo 3 &kp F7 &kp F8       &kp F9       &kp F10      &kp F11 &kp F12
+        &trans &trans &trans &trans &trans &trans  &none                                                       &none &trans &kp C_MUTE   &kp C_VOL_DN &kp C_VOL_UP &trans  &trans
+        &trans &trans &trans &trans &trans &trans  &none        &trans &trans             &trans &trans        &none &trans &kp C_PREV   &kp C_PP     &kp C_NEXT   &trans  &trans
+        &trans &trans &trans &trans &trans &trans        &none  &none  &trans &none &none &trans &none  &none        &trans &kp C_BRI_DN &kp C_BRI_UP &trans       &trans  &trans
+        &trans &trans &trans &trans &trans               &trans &trans &trans             &trans &trans &trans              &trans       &trans       &trans       &trans  &trans
       >;
     };
     mod {
