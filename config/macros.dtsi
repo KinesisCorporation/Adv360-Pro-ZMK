@@ -3,82 +3,106 @@ compatible = "zmk,behavior-macro";
 label = "macro_colon";
 #binding-cells = <0>;
 bindings = <&sk LEFT_SHIFT>, <&kp Z>;
+tap-ms = <10>;
+wait-ms = <10>;
 };
 macro_screen_right: macro_screen_right{
 compatible = "zmk,behavior-macro";
 label = "macro_screen_right";
 #binding-cells = <0>;
 bindings = <&sk LEFT_COMMAND>, <&sk LEFT_ALT>, <&sk LEFT_CONTROL>, <&kp RIGHT>;
+wait-ms = <10>;
 };
 macro_screen_left: macro_screen_left{
 compatible = "zmk,behavior-macro";
 label = "macro_screen_left";
 #binding-cells = <0>;
 bindings = <&sk LEFT_COMMAND>, <&sk LEFT_ALT>, <&sk LEFT_CONTROL>, <&kp LEFT>;
+wait-ms = <10>;
 };
 macro_window_right: macro_window_right{
 compatible = "zmk,behavior-macro";
 label = "macro_window_right";
 #binding-cells = <0>;
 bindings = <&sk LEFT_COMMAND>, <&sk LEFT_ALT>, <&kp RIGHT>;
+wait-ms = <10>;
 };
 macro_window_left: macro_window_left{
 compatible = "zmk,behavior-macro";
 label = "macro_window_left";
 #binding-cells = <0>;
 bindings = <&sk LEFT_COMMAND>, <&sk LEFT_ALT>, <&kp LEFT>;
+wait-ms = <10>;
 };
 macro_delete_word: macro_delete_word{
 compatible = "zmk,behavior-macro";
 label = "macro_delete_word";
 #binding-cells = <0>;
 bindings = <&sk LEFT_ALT>, <&kp BACKSPACE>;
+tap-ms = <10>;
+wait-ms = <10>;
 };
 macro_double_quote: macro_double_quote{
 compatible = "zmk,behavior-macro";
 label = "macro_double_quote";
 #binding-cells = <0>;
 bindings = <&sk LEFT_SHIFT>, <&kp Q>;
+tap-ms = <10>;
+wait-ms = <10>;
 };
 macro_forward_slash: macro_forward_slash{
 compatible = "zmk,behavior-macro";
 label = "macro_forward_slash";
 #binding-cells = <0>;
 bindings = <&sk LEFT_SHIFT>, <&kp Z>;
+tap-ms = <10>;
+wait-ms = <10>;
 };
 macro_greater_than: macro_greater_than{
 compatible = "zmk,behavior-macro";
 label = "macro_greater_than";
 #binding-cells = <0>;
 bindings = <&sk LEFT_SHIFT>, <&kp E>;
+tap-ms = <10>;
+wait-ms = <10>;
 };
 macro_less_than: macro_less_than{
 compatible = "zmk,behavior-macro";
 label = "macro_less_than";
 #binding-cells = <0>;
 bindings = <&sk LEFT_SHIFT>, <&kp W>;
+tap-ms = <10>;
+wait-ms = <10>;
 };
 macro_omni: macro_omni{
 compatible = "zmk,behavior-macro";
 label = "macro_omni";
 #binding-cells = <0>;
 bindings = <&sk LEFT_ALT>, <&kp SPACE>;
+tap-ms = <10>;
+wait-ms = <10>;
 };
 macro_shift_tab: macro_shift_tab{
 compatible = "zmk,behavior-macro";
 label = "macro_shift_tab";
 #binding-cells = <0>;
 bindings = <&sk LEFT_SHIFT>, <&kp TAB>;
+tap-ms = <10>;
+wait-ms = <10>;
 };
 macro_app_switcher: macro_app_switcher{
 compatible = "zmk,behavior-macro";
 label = "macro_app_switcher";
 #binding-cells = <0>;
 bindings = <&sk LEFT_COMMAND>, <&kp TAB>;
+tap-ms = <10>;
+wait-ms = <10>;
 };
 macro_spotlight: macro_spotlight{
 compatible = "zmk,behavior-macro";
 label = "macro_spotlight";
 #binding-cells = <0>;
 bindings = <&sk LEFT_COMMAND>, <&kp SPACE>;
+tap-ms = <10>;
+wait-ms = <10>;
 };
