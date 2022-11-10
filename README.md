@@ -32,3 +32,4 @@ If you have changed other files in the `config` directory (such as `config/west.
 Resources can be found on Kinesis.com
 https://kinesis-ergo.com/support/kb360pro/#firmware-updates
 https://kinesis-ergo.com/support/kb360pro/#manuals
+
