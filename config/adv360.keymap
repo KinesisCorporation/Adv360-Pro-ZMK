@@ -79,12 +79,12 @@
 
         layer_code {
             bindings = <
- &trans               &trans       &trans              &trans                &trans              &trans            &trans  &trans            &trans            &trans             &trans              &trans               &trans  &trans
- &trans                &kp Z        &kp Q   &kp RIGHT_BRACKET       &kp RIGHT_BRACE             &kp TAB            &trans  &trans  &macro_shift_tab  &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES    &kp LEFT_BRACKET       &kp LEFT_BRACE  &trans
- &trans  &macro_double_quote    &kp UNDER           &kp MINUS  &kp LEFT_PARENTHESIS    &macro_less_than            &trans  &trans            &trans                                                   &trans               &trans  &trans  &macro_greater_than  &kp RIGHT_PARENTHESIS  &kp EQUAL       &kp PLUS  &macro_colon  &kp PIPE
- &trans      &kp EXCLAMATION  &kp AT_SIGN           &kp POUND            &kp DOLLAR       &kp BACKSLASH            &trans  &trans            &trans            &trans             &trans              &trans               &trans  &trans            &kp GRAVE            &kp PERCENT  &kp CARET  &kp AMPERSAND  &kp ASTERISK    &trans
- &trans               &trans       &trans  &macro_window_left   &macro_window_right  &macro_delete_word            &trans  &trans            &trans        &kp ESCAPE        &macro_omni  &macro_screen_left  &macro_screen_right  &trans               &trans                 &trans
-            >;
+                        &trans   &trans                &trans         &trans              &trans                &trans                &trans  &trans    &trans             &trans             &trans               &trans               &trans                 &trans
+                        &trans   &kp Z                 &kp Q         &kp RIGHT_BRACKET    &kp RIGHT_BRACE       &kp TAB               &trans  &trans    &macro_shift_tab   &kp SINGLE_QUOTE   &kp DOUBLE_QUOTES    &kp LEFT_BRACKET     &kp LEFT_BRACE         &trans
+                        &trans   &macro_double_quote   &kp UNDER     &kp MINUS            &kp LEFT_PARENTHESIS  &macro_less_than      &trans  &trans    &trans             &trans             &trans               &trans               &macro_greater_than    &kp RIGHT_PARENTHESIS   &kp EQUAL     &kp PLUS   &macro_colon   &kp PIPE
+                        &trans   &kp EXCLAMATION       &kp AT_SIGN   &kp POUND            &kp DOLLAR            &kp BACKSLASH         &trans  &trans    &trans             &trans             &trans               &trans               &trans  &trans         &kp GRAVE               &kp PERCENT   &kp CARET  &kp AMPERSAND  &kp ASTERISK    &trans
+                        &trans   &trans                &trans        &macro_window_left   &macro_window_right   &macro_delete_word    &trans  &trans    &trans             &kp ESCAPE         &macro_omni          &macro_screen_left   &macro_screen_right    &trans                  &trans        &trans
+                       >;
         };
 
     };
