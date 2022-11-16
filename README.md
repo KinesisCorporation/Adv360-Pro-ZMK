@@ -14,18 +14,16 @@
 
 ## To build Firmware locally using a container
 
-### First run
-
 Note: Either Podman or Docker is required, Podman is preferred if both are present.
+If compiling on Windows use WSL2 and docker [Docker Setup Guide](https://docs.docker.com/desktop/windows/wsl/).
 
-1. Execute `make all`.
+1. Execute `make`.
 2. Check the `firmware` directory for the latest firmware build.
+3. Follow the programming instruction on page 8 of the [Quick Start Guide](https://kinesis-ergo.com/wp-content/uploads/Advantage360-Professional-QSG-v8-25-22.pdf) to flash the firmware.
 
-### Subsequent runs
+### Cleanup
 
-If the only file you have changed is `config/adv360.keymap`, execute `make build` and check the `firmware` directory for the latest firmware build.
-
-If you have changed other files in the `config` directory (such as `config/west.yml`) you will need to execute `make all` to rebuild the Docker image as well as the firmware.
+The built docker container and compiled firmware files can be deleted with `make clean`.
 
 ### Flash firmware
 
