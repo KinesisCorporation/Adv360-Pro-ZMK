@@ -6,8 +6,8 @@ TIMESTAMP := $(shell date -u +"%Y%m%d%H%M%S")
 all:
 	$(DOCKER) build --tag zmk --file Dockerfile .
 	$(DOCKER) run --rm -it --name zmk \
-		-v $(PWD)/firmware:/app/firmware \
-		-v $(PWD)/config:/app/config:ro \
+		-v $(PWD)/firmware:/app/firmware:z \
+		-v $(PWD)/config:/app/config:ro,z \
 		-e TIMESTAMP=$(TIMESTAMP) \
 		zmk
 
