@@ -35,11 +35,11 @@
         "&none",        "&none",        "&none",        "&none",        "&none",           "&none",                            "&none",       "&none",        "&none",        "&none",           "&none",        "&none",        "&none",                  "&none",  "&none",  "&none",  "&none",  "&none",  "&none",  "&none",
         "&none",        "&none",        "&none",   "&bl BL_INC",   "&bl BL_DEC", "&rgb_ug RGB_TOG",                       "&bl BL_TOG",       "&none",        "&none",   "&bl BL_TOG", "&rgb_ug RGB_TOG",   "&bl BL_INC",   "&bl BL_DEC",                  "&none",  "&none",  "&none"
     ], [
-       "&trans", "&trans", "&trans", "&trans", "&trans", "&trans",           "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans",
-       "&trans", "&trans", "&trans", "&trans", "&trans", "&trans",           "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans",
-       "&trans", "&trans", "&trans", "&trans", "&trans", "&trans",           "&trans", "&trans", "&trans",                     "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans",
-       "&trans", "&trans", "&trans", "&trans", "&trans", "&trans",           "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans",
-       "&trans", "&trans", "&trans", "&trans", "&trans", "&trans",           "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans"
+            "&kp EQUAL",  "&kp NUMBER_1", "&kp NUMBER_2", "&kp NUMBER_3", "&kp NUMBER_4",  "&kp NUMBER_5",               "&tog 1",            "&mo 3",  "&kp NUMBER_6", "&kp NUMBER_7", "&kp NUMBER_8", "&kp NUMBER_9", "&kp NUMBER_0", "&kp MINUS",
+              "&kp TAB",       "&kp SQT",    "&kp COMMA",   "&kp PERIOD",        "&kp P",         "&kp Y",                "&none",            "&none",         "&kp F",        "&kp G",        "&kp C",        "&kp R",        "&kp L",  "&kp FSLH",
+              "&kp ESC",         "&kp A",        "&kp O",        "&kp E",        "&kp U",         "&kp I",                "&none", "&kp LEFT_CONTROL",  "&kp LEFT_ALT",                                     "&kp LGUI",    "&kp RCTRL",     "&none",    "&kp D",  "&kp H",  "&kp T",  "&kp N",  "&kp S",        "&kp BSLH",
+       "&kp LEFT_SHIFT", "&kp SEMICOLON",        "&kp Q",        "&kp J",        "&kp K",         "&kp X",               "&trans",           "&trans",      "&kp HOME",        "&none",        "&none",  "&kp PAGE_UP",       "&trans",    "&trans",    "&kp B",  "&kp M",  "&kp W",  "&kp V",  "&kp Z", "&kp RIGHT_SHIFT",
+                "&mo 2",     "&kp GRAVE",        "&none",     "&kp LEFT",    "&kp RIGHT", "&kp BACKSPACE",           "&kp DELETE",          "&kp END", "&kp PAGE_DOWN",    "&kp ENTER",    "&kp SPACE",       "&kp UP",     "&kp DOWN",  "&kp LBKT", "&kp RBKT",  "&mo 2"
     ]
   ]
 }
