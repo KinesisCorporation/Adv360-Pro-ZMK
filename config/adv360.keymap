@@ -34,7 +34,6 @@
             then-layer = <ADJUST>;
         };
     };
-  KC_LGUI,KC_LALT,KC_LCTRL, KC_LOWER, KC_ENT,      KC_SPC,  KC_RAISE, KC_RCTRL, KC_RALT, KC_RGUI
     keymap {
       compatible = "zmk,keymap";
 
