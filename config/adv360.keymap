@@ -82,13 +82,35 @@
           &mo 2       &kp GRAVE   &kp CAPS    &kp LEFT     &kp RIGHT                     &kp BSPC &kp DEL   &kp END              &kp PG_DN &kp ENTER &kp SPACE        &kp UP     &kp DOWN    &kp LBKT    &kp RBKT    &mo 2
         >;
       };
+
+/* RAISE
+ * ,----------------------------------------.                    ,-----------------------------------------.
+ * |      |      |      |      |      |      |                    |      |      |      |      |      |      |
+ * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
+ * | Esc  | Ins  | Pscr | Menu | ctl+r| Lead |                    | PGUP | PWrd |  Up  | NWrd | DLine| Bspc |
+ * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
+ * | Tab  | LAt  | LCtl |LShift| HYPR | Caps |-------.    ,-------| PGDWN| Left | Down | Rigth|  Del | Bspc |
+ * |------+------+------+------+------+------|  MUTE  |    |       |------+------+------+------+------+------|
+ * |Shift | Undo |  Cut | Copy | Paste| Task |-------|    |-------|      | LStr |      | LEnd |      | Shift|
+ * `-----------------------------------------/       /     \      \-----------------------------------------'
+ *            | LGUI | LAlt | LCTR |LOWER | /Enter  /       \Space \  |RAISE | RCTR | RAlt | RGUI |
+ *            |      |      |      |      |/       /         \      \ |      |      |      |      |
+ *            `----------------------------------'           '------''---------------------------'
+ 
+[_RAISE] = LAYOUT(
+  _______, _______ , _______ , _______ , _______ , _______,                           _______,  _______  , _______,  _______ ,  _______ ,_______,
+  _______,  KC_INS,  KC_PSCR,   KC_APP,  KC_REC_SRCH, KC_LEAD,                        KC_PGUP, KC_PRVWD,   KC_UP, KC_NXTWD,KC_DLINE, KC_BSPC,
+  _______, KC_LALT,  KC_LCTL,  KC_LSFT,  KC_HYPR, KC_CAPSLOCK,                       KC_PGDN,  KC_LEFT, KC_DOWN, KC_RGHT,  KC_DEL, KC_BSPC,
+  _______,KC_UNDO, KC_CUT, KC_COPY, KC_PASTE, KC_TASKMAN,  _______,       _______,  XXXXXXX, KC_LSTRT, XXXXXXX, KC_LEND,   XXXXXXX, _______,
+                         _______, _______, _______, _______, _______,       _______, _______, _______, _______, _______
+*/
       RISE {
         bindings = <
-          &kp ESC   &kp DE_1  &kp DE_2 &kp DE_3 &kp DE_4   &kp DE_5 &tog 1                                                                       &mo 3 &kp DE_6 &kp DE_7  &kp DE_8  &kp DE_9 &kp DE_0    &kp &none
-          &kp TAB   &kp Q     &kp W    &kp E    &kp R      &kp T    &none                                                                        &none &kp DE_Z &kp U     &kp UP     &kp O     &kp P       &kp &none
-          &kp BSPC  &kp A     &kp S    &kp D    &kp F      &kp G    &none           &kp LCTRL &kp LALT             &kp LGUI  &kp RCTRL           &none &kp H    &kp LEFT  &kp DOWN  &kp RIGHT &kp DEL     &kp BSPC
-          &kp LSHFT &kp DE_Y  &kp X    &kp C    &kp V      &kp B           &none    &none     &kp HOME &none &none &kp PG_UP &none     &none           &kp N    &kp &none &kp COMMA &kp DOT   &kp FSLH    &kp RSHFT
-          &mo 2     &kp GRAVE &kp CAPS &kp LEFT &kp RIGHT                  &kp BSPC &kp DEL   &kp END              &kp PG_DN &kp ENTER &kp SPACE                &kp UP    &kp DOWN  &kp LBKT  &kp RBKT    &mo 2
+          &kp ESC   &kp DE_1  &kp DE_2  &kp DE_3  &kp DE_4   &kp DE_5 &tog 1                                                                       &mo 3 &kp DE_6 &kp DE_7     &kp DE_8  &kp DE_9      &kp DE_0          &kp &none
+          &kp TAB   &kp INS   &kp PSCRN &kp E     &kp LC(R)  &kp T    &none                                                                        &none &kp DE_Z &kp RA(LEFT) &kp UP    &kp LA(RIGHT) &kp RC(BACKSPACE) &kp &none
+          &kp BSPC  &kp A     &kp S     &kp D     &kp F      &kp G    &none           &kp LCTRL &kp LALT             &kp LGUI  &kp RCTRL           &none &kp H    &kp LEFT     &kp DOWN  &kp RIGHT     &kp DEL           &kp BSPC
+          &kp LSHFT &kp Y     &kp LC(X) &kp LC(C) &kp LC(V)  &kp B           &none    &none     &kp HOME &none &none &kp PG_UP &none     &none           &kp N    &none        &kp COMMA &kp DOT       &kp FSLH          &kp RSHFT
+          &mo 2     &kp GRAVE &kp CAPS  &kp LEFT  &kp RIGHT                  &kp BSPC &kp DEL   &kp END              &kp PG_DN &kp ENTER &kp SPACE                &kp UP       &kp DOWN  &kp LBKT      &kp RBKT          &mo 2
         >;
       };
       ADJUST {
