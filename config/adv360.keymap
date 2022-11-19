@@ -15,7 +15,6 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
-#include <dt-bindings/zmk/rgb.h>
 #include <dt-bindings/zmk/backlight.h>
 
 / {
@@ -69,11 +68,11 @@
 
         layer_mod {
             bindings = <
-  &none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3     &bt BT_SEL 4                             &none       &trans  &bt BT_SEL 0  &bt BT_SEL 1     &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                   &none
-  &none         &none         &none         &none         &none            &none                       &bootloader  &bootloader         &none         &none            &none         &none         &none                   &none
-  &none         &none         &none         &none         &none            &none            &rgb_ug RGB_MEFS_CMD 5   &bt BT_CLR         &none                                   &bt BT_CLR    &bt BT_CLR  &rgb_ug RGB_MEFS_CMD 5   &none   &none   &none   &none   &none   &none
-  &none         &none         &none         &none         &none            &none                             &none        &none         &none         &none            &none         &none         &none                   &none   &none   &none   &none   &none   &none   &none
-  &none         &none         &none    &bl BL_INC    &bl BL_DEC  &rgb_ug RGB_TOG                        &bl BL_TOG        &none         &none    &bl BL_TOG  &rgb_ug RGB_TOG    &bl BL_INC    &bl BL_DEC                   &none   &none   &none
+  &none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3                 &bt BT_SEL 4            &mt RIGHT_COMMAND SPACE                 &trans                  &bt BT_SEL 0  &bt BT_SEL 1                  &bt BT_SEL 2     &bt BT_SEL 3  &bt BT_SEL 4               &none
+  &none         &none         &none         &none         &none                        &none                &mt RIGHT_COMMAND F     &mt LEFT_COMMAND T                         &none         &none                         &none            &none         &none               &none
+  &none         &none         &none         &none         &none                        &none                 &mt LEFT_COMMAND R             &bt BT_CLR                   &bootloader                                                  &bootloader    &bt BT_CLR  &mt LEFT_COMMAND K   &none   &none   &none   &none   &none   &none
+  &none         &none         &none         &none         &none                        &none                              &none                  &none             &kp K_VOLUME_DOWN         &none                         &none  &kp K_VOLUME_UP         &none               &none   &none   &none   &none   &none   &none   &none
+  &none         &none         &none    &bl BL_INC    &bl BL_DEC  &mt LEFT_CONTROL LEFT_ARROW                         &bl BL_TOG  &mt RIGHT_COMMAND TAB  &mt LEFT_COMMAND RIGHT_SHIFT    &bl BL_TOG  &mt LEFT_CONTROL RIGHT_ARROW       &bl BL_INC    &bl BL_DEC               &none   &none   &none
             >;
         };
 
