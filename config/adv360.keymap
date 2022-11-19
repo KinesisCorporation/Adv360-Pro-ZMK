@@ -38,15 +38,25 @@
 
         default_layer {
             bindings = <
- &mt LEFT_SHIFT EQUAL     &mt LEFT_SHIFT N1  &mt LEFT_SHIFT N2    &mt LEFT_SHIFT N3     &mt LEFT_SHIFT N4  &mt LEFT_SHIFT N5                &tog 1             &mo 3  &mt LEFT_SHIFT N6  &mt LEFT_SHIFT N7       &mt LEFT_SHIFT N8  &mt LEFT_SHIFT N9    &mt LEFT_SHIFT N0  &mt LEFT_SHIFT MINUS
-   &mt LEFT_SHIFT TAB      &mt LEFT_SHIFT Q   &mt LEFT_SHIFT W     &mt LEFT_SHIFT E      &mt LEFT_SHIFT R   &mt LEFT_SHIFT T            &kp K_COPY       &kp K_PASTE   &mt LEFT_SHIFT Y   &mt LEFT_SHIFT U        &mt LEFT_SHIFT I   &mt LEFT_SHIFT O     &mt LEFT_SHIFT P   &mt LEFT_SHIFT BSLH
-              &kp ESC      &mt LEFT_SHIFT A   &mt LEFT_SHIFT S     &mt LEFT_SHIFT D      &mt LEFT_SHIFT F   &mt LEFT_SHIFT G            &kp K_UNDO  &kp LEFT_COMMAND           &kp LALT                                             &kp RIGHT_CONTROL    &kp RIGHT_COMMAND            &kp K_REDO     &mt LEFT_SHIFT H  &mt LEFT_SHIFT J      &mt LEFT_SHIFT K    &mt LEFT_SHIFT L      &mt LSHIFT SEMI  &mt LEFT_SHIFT SQT
-       &kp LEFT_SHIFT      &mt LEFT_SHIFT Z   &mt LEFT_SHIFT X     &mt LEFT_SHIFT C      &mt LEFT_SHIFT V   &mt LEFT_SHIFT B                 &none             &none           &kp HOME              &none                   &none          &kp PG_UP                &none                 &none     &mt LEFT_SHIFT N  &mt LEFT_SHIFT M  &mt LEFT_SHIFT COMMA  &mt LEFT_SHIFT DOT  &mt LEFT_SHIFT FSLH     &kp RIGHT_SHIFT
-                &mo 2  &mt LEFT_SHIFT GRAVE           &kp CAPS  &mt LEFT_SHIFT LEFT  &mt LEFT_SHIFT RIGHT           &kp BSPC               &kp DEL           &kp END          &kp PG_DN          &kp ENTER  &mt LEFT_COMMAND SPACE  &mt LEFT_SHIFT UP  &mt LEFT_SHIFT DOWN   &mt LEFT_SHIFT LBKT  &mt LEFT_SHIFT RBKT             &mo 2
+ &mt LEFT_SHIFT EQUAL     &mt LEFT_SHIFT N1  &mt LEFT_SHIFT N2    &mt LEFT_SHIFT N3     &mt LEFT_SHIFT N4  &mt LEFT_SHIFT N5                   &tog 1             &mo 3  &mt LEFT_SHIFT N6  &mt LEFT_SHIFT N7       &mt LEFT_SHIFT N8  &mt LEFT_SHIFT N9    &mt LEFT_SHIFT N0  &mt LEFT_SHIFT MINUS
+   &mt LEFT_SHIFT TAB      &mt LEFT_SHIFT Q   &mt LEFT_SHIFT W     &mt LEFT_SHIFT E      &mt LEFT_SHIFT R   &mt LEFT_SHIFT T            &macro_quotes             &none   &mt LEFT_SHIFT Y   &mt LEFT_SHIFT U        &mt LEFT_SHIFT I   &mt LEFT_SHIFT O     &mt LEFT_SHIFT P   &mt LEFT_SHIFT BSLH
+              &kp ESC      &mt LEFT_SHIFT A   &mt LEFT_SHIFT S     &mt LEFT_SHIFT D      &mt LEFT_SHIFT F   &mt LEFT_SHIFT G                    &none  &sk LEFT_COMMAND           &sk LALT                                             &sk RIGHT_CONTROL    &sk RIGHT_COMMAND                 &none     &mt LEFT_SHIFT H  &mt LEFT_SHIFT J      &mt LEFT_SHIFT K    &mt LEFT_SHIFT L      &mt LSHIFT SEMI  &mt LEFT_SHIFT SQT
+       &sk LEFT_SHIFT      &mt LEFT_SHIFT Z   &mt LEFT_SHIFT X     &mt LEFT_SHIFT C      &mt LEFT_SHIFT V   &mt LEFT_SHIFT B                    &none             &none           &kp HOME              &none                   &none          &kp PG_UP                &none                 &none     &mt LEFT_SHIFT N  &mt LEFT_SHIFT M  &mt LEFT_SHIFT COMMA  &mt LEFT_SHIFT DOT  &mt LEFT_SHIFT FSLH     &sk RIGHT_SHIFT
+                &mo 2  &mt LEFT_SHIFT GRAVE           &kp CAPS  &mt LEFT_SHIFT LEFT  &mt LEFT_SHIFT RIGHT           &kp BSPC                  &kp DEL           &kp END          &kp PG_DN          &kp ENTER  &mt LEFT_COMMAND SPACE  &mt LEFT_SHIFT UP  &mt LEFT_SHIFT DOWN   &mt LEFT_SHIFT LBKT  &mt LEFT_SHIFT RBKT             &mo 2
             >;
         };
 
         layer_keypad {
+            bindings = <
+ &kp EQUAL     &kp N1    &kp N2    &kp N3     &kp N4    &kp N5             &trans      &mo 3     &kp N6  &kp KP_NUM  &kp KP_EQUAL  &kp KP_DIVIDE  &kp KP_MULTIPLY   &kp MINUS
+   &kp TAB      &kp Q     &kp W     &kp E      &kp R     &kp T              &none      &none      &kp Y   &kp KP_N7     &kp KP_N8      &kp KP_N9     &kp KP_MINUS    &kp BSLH
+   &kp ESC      &kp A     &kp S     &kp D      &kp F     &kp G              &none  &kp LCTRL   &kp LALT                                 &kp LGUI        &kp RCTRL       &none     &kp H  &kp KP_N4  &kp KP_N5  &kp KP_N6   &kp KP_PLUS    &kp SQT
+ &kp LSHFT      &kp Z     &kp X     &kp C      &kp V     &kp B              &none      &none   &kp HOME       &none         &none      &kp PG_UP            &none       &none     &kp N  &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_ENTER  &kp RSHFT
+     &mo 2  &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT  &kp BSPC            &kp DEL    &kp END  &kp PG_DN   &kp ENTER     &kp KP_N0         &kp UP         &kp DOWN  &kp KP_DOT  &kp RBKT      &mo 2
+            >;
+        };
+
+        layer_keypad2 {
             bindings = <
  &kp EQUAL     &kp N1    &kp N2    &kp N3     &kp N4    &kp N5             &trans      &mo 3     &kp N6  &kp KP_NUM  &kp KP_EQUAL  &kp KP_DIVIDE  &kp KP_MULTIPLY   &kp MINUS
    &kp TAB      &kp Q     &kp W     &kp E      &kp R     &kp T              &none      &none      &kp Y   &kp KP_N7     &kp KP_N8      &kp KP_N9     &kp KP_MINUS    &kp BSLH
