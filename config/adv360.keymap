@@ -38,11 +38,11 @@
 
         default_layer {
             bindings = <
-      &kp EQUAL  &mt LEFT_SHIFT N1    &kp N2    &kp N3     &kp N4    &kp N5                &tog 1             &mo 3             &kp N6     &kp N7                  &kp N8             &kp N9             &kp N0         &kp MINUS
-        &kp TAB   &mt LEFT_SHIFT Q     &kp W     &kp E      &kp R     &kp T            &kp K_COPY       &kp K_PASTE              &kp Y      &kp U                   &kp I              &kp O              &kp P          &kp BSLH
-        &kp ESC              &kp A     &kp S     &kp D      &kp F     &kp G            &kp K_UNDO  &kp LEFT_COMMAND           &kp LALT                                     &kp RIGHT_CONTROL  &kp RIGHT_COMMAND        &kp K_REDO     &kp H   &kp J      &kp K    &kp L  &kp SEMI          &kp SQT
- &kp LEFT_SHIFT              &kp Z     &kp X     &kp C      &kp V     &kp B                 &none             &none           &kp HOME      &none                   &none          &kp PG_UP              &none             &none     &kp N   &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RIGHT_SHIFT
-          &mo 2          &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT  &kp BSPC               &kp DEL  &kp LEFT_COMMAND  &kp RIGHT_COMMAND  &kp ENTER  &mt LEFT_COMMAND SPACE             &kp UP           &kp DOWN  &kp LEFT_BRACKET  &kp RBKT   &mo 2
+ &mt LEFT_SHIFT EQUAL     &mt LEFT_SHIFT N1  &mt LEFT_SHIFT N2    &mt LEFT_SHIFT N3     &mt LEFT_SHIFT N4  &mt LEFT_SHIFT N5                &tog 1             &mo 3  &mt RIGHT_SHIFT N6  &mt RIGHT_SHIFT N7      &mt RIGHT_SHIFT N8  &mt RIGHT_SHIFT N9   &mt RIGHT_SHIFT N0            &kp MINUS
+   &mt LEFT_SHIFT TAB      &mt LEFT_SHIFT Q   &mt LEFT_SHIFT W     &mt LEFT_SHIFT E      &mt LEFT_SHIFT R   &mt LEFT_SHIFT T            &kp K_COPY       &kp K_PASTE               &kp Y               &kp U                   &kp I               &kp O                &kp P             &kp BSLH
+              &kp ESC      &mt LEFT_SHIFT A   &mt LEFT_SHIFT S     &mt LEFT_SHIFT D      &mt LEFT_SHIFT F   &mt LEFT_SHIFT G            &kp K_UNDO  &kp LEFT_COMMAND            &kp LALT                                               &kp RIGHT_CONTROL    &kp RIGHT_COMMAND           &kp K_REDO                &kp H   &kp J      &kp K    &kp L  &kp SEMI          &kp SQT
+       &kp LEFT_SHIFT      &mt LEFT_SHIFT Z   &mt LEFT_SHIFT X     &mt LEFT_SHIFT C      &mt LEFT_SHIFT V   &mt LEFT_SHIFT B                 &none             &none            &kp HOME               &none                   &none           &kp PG_UP                &none                &none                &kp N   &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RIGHT_SHIFT
+                &mo 2  &mt LEFT_SHIFT GRAVE           &kp CAPS  &mt LEFT_SHIFT LEFT  &mt LEFT_SHIFT RIGHT           &kp BSPC               &kp DEL  &kp LEFT_COMMAND   &kp RIGHT_COMMAND           &kp ENTER  &mt LEFT_COMMAND SPACE   &mt LEFT_SHIFT UP  &mt LEFT_SHIFT DOWN  &mt LEFT_SHIFT LBKT  &mt LEFT_SHIFT RBKT   &mo 2
             >;
         };
 
