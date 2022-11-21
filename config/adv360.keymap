@@ -39,11 +39,11 @@
 
       default_layer {
         bindings = <
-          &kp ESC   &kp DE_1     &kp DE_2     &kp DE_3         &kp DE_4   &kp DE_5 &tog 1                                                                       &mo 3 &kp DE_6 &kp DE_7 &kp DE_8           &kp DE_9      &kp DE_0       &kp DE_SS
-          &kp TAB   &kp Q        &kp W        &kp E            &kp R      &kp T    &none                                                                        &none &kp DE_Z &kp U    &kp I              &kp O         &kp P          &kp DE_UDIA
-          &kp BSPC  &kp A        &kp S        &kp D            &kp F      &kp G    &none            &none     &none                &none     &none              &none &kp H    &kp J    &kp K              &kp L         &kp DE_ODIA    &kp DE_ADIA
-          &kp LSHFT &kp DE_Y     &kp X        &kp C            &kp V      &kp B           &none     &none     &none &none &none    &kp PG_UP &none     &none          &kp N    &kp M    &kp COMMA          &kp DOT       &kp FSLH       &kp RSHFT
-          &mo 2     &kp LEFT_GUI &kp LEFT_ALT &kp LEFT_CONTROL &none                      &mo LOWER &kp ENTER &none                &kp PG_DN &kp SPACE &mo RAISE               &none    &kp RIGHT_CONTROL  &kp RIGHT_ALT &kp RIGHT_GUI  &mo 2
+          &kp ESC   &kp DE_1     &kp DE_2     &kp DE_3      &kp DE_4         &kp DE_5 &tog 1                                                                       &mo 3       &kp DE_6 &kp DE_7           &kp DE_8      &kp DE_9       &kp DE_0    &kp DE_SS
+          &kp TAB   &kp Q        &kp W        &kp E         &kp R            &kp T    &kp RG(LS(S))                                                                &none       &kp DE_Z &kp U              &kp I         &kp O          &kp P       &kp DE_UDIA
+          &kp BSPC  &kp A        &kp S        &kp D         &kp F            &kp G    &kp LS(LA(ESC))  &none     &none                &none     &none              &kp LA(ESC) &kp H    &kp J              &kp K         &kp L          &kp DE_ODIA &kp DE_ADIA
+          &kp LSHFT &kp DE_Y     &kp X        &kp C         &kp V            &kp B           &none     &none     &none &none &none    &kp PG_UP &none     &none                &kp N    &kp M              &kp COMMA     &kp DOT        &kp FSLH    &kp RSHFT
+          &mo 2     &caps_word   &kp LEFT_GUI &kp LEFT_ALT  &kp LEFT_CONTROL                 &mo LOWER &kp ENTER &none                &kp PG_DN &kp SPACE &mo RAISE                     &kp RIGHT_CONTROL  &kp RIGHT_ALT &kp RIGHT_GUI  &none       &mo 2
         >;
       };
       keypad {
@@ -52,7 +52,7 @@
           &kp TAB   &kp Q     &kp W    &kp E    &kp R      &kp T  &none                                                                        &none &kp Y  &kp KP_N7  &kp KP_N8    &kp KP_N9     &kp KP_MINUS    &kp BSLH
           &kp ESC   &kp A     &kp S    &kp D    &kp F      &kp G  &none           &kp LCTRL &kp LALT             &kp LGUI  &kp RCTRL           &none &kp H  &kp KP_N4  &kp KP_N5    &kp KP_N6     &kp KP_PLUS     &kp SQT
           &kp LSHFT &kp Z     &kp X    &kp C    &kp V      &kp B         &none    &none     &kp HOME &none &none &kp PG_UP &none     &none           &kp N  &kp KP_N1  &kp KP_N2    &kp KP_N3     &kp KP_ENTER    &kp RSHFT
-          &mo 2     &kp GRAVE &kp CAPS &kp LEFT &kp RIGHT                &kp BSPC &kp DEL   &kp END              &kp PG_DN &kp ENTER &kp KP_N0              &kp UP     &kp DOWN     &kp KP_DOT    &kp RBKT        &mo 2
+          &mo 2     &kp GRAVE &kp CAPS &kp LEFT &kp RIGHT                &trans   &trans    &trans               &kp PG_DN &trans    &trans              &kp UP     &kp DOWN     &kp KP_DOT    &kp RBKT        &mo 2
         >;
       };
       fn {
@@ -79,7 +79,7 @@
           &kp DE_SQT  &kp &none   &kp W       &kp E        &kp R       &kp T       &none                                                                        &none &kp DE_Z   &kp U       &kp I       &kp O       &kp P       &kp DE_UDIA
           &kp BSPC    &kp DE_EXCL &kp DE_AT   &kp DE_HASH  &kp DE_DLR  &kp DE_PERC &none          &kp LCTRL &kp LALT             &kp LGUI  &kp RCTRL            &none &kp DE_GRV &kp DE_AMPS &kp DE_STAR &kp DE_LPAR &kp DE_RPAR &kp DE_PIPE
           &kp LSHFT   &kp DE_EQL  &kp DE_MINS &kp DE_PLUS  &kp DE_LBRC &kp DE_RBRC       &none    &none     &kp HOME &none &none &kp PG_UP &none     &none            &kp DE_LBKT&kp DE_RBKT &kp DE_RABK &kp DE_LABK &kp DE_BSLH &kp RSHFT
-          &mo 2       &kp GRAVE   &kp CAPS    &kp LEFT     &kp RIGHT                     &kp BSPC &kp DEL   &kp END              &kp PG_DN &kp ENTER &kp SPACE        &kp UP     &kp DOWN    &kp LBKT    &kp RBKT    &mo 2
+          &mo 2       &kp GRAVE   &kp CAPS    &kp LEFT     &kp RIGHT                     &trans   &trans   &kp END              &kp PG_DN  &trans    &trans           &kp UP     &kp DOWN    &kp LBKT    &kp RBKT    &mo 2
         >;
       };
 
@@ -110,7 +110,7 @@
           &kp TAB   &kp INS   &kp PSCRN &kp E     &kp LC(R)  &kp T    &none                                                                        &none &kp DE_Z &kp RA(LEFT) &kp UP    &kp LA(RIGHT) &kp RC(BACKSPACE) &kp &none
           &kp BSPC  &kp A     &kp S     &kp D     &kp F      &kp G    &none           &kp LCTRL &kp LALT             &kp LGUI  &kp RCTRL           &none &kp H    &kp LEFT     &kp DOWN  &kp RIGHT     &kp DEL           &kp BSPC
           &kp LSHFT &kp Y     &kp LC(X) &kp LC(C) &kp LC(V)  &kp B           &none    &none     &kp HOME &none &none &kp PG_UP &none     &none           &kp N    &none        &kp COMMA &kp DOT       &kp FSLH          &kp RSHFT
-          &mo 2     &kp GRAVE &kp CAPS  &kp LEFT  &kp RIGHT                  &kp BSPC &kp DEL   &kp END              &kp PG_DN &kp ENTER &kp SPACE                &kp UP       &kp DOWN  &kp LBKT      &kp RBKT          &mo 2
+          &mo 2     &kp GRAVE &kp CAPS  &kp LEFT  &kp RIGHT                  &trans   &trans    &kp END              &kp PG_DN &trans    &trans          &kp UP   &kp DOWN     &kp LBKT  &kp RBKT      &mo 2
         >;
       };
       ADJUST {
@@ -119,7 +119,7 @@
           &kp TAB   &kp Q     &kp W    &kp E    &kp R      &kp T    &none                                                                        &none &kp DE_Z &kp U     &kp UP     &kp O     &kp P       &kp &none
           &kp BSPC  &kp A     &kp S    &kp D    &kp F      &kp G    &none           &kp LCTRL &kp LALT             &kp LGUI  &kp RCTRL           &none &kp H    &kp LEFT  &kp DOWN  &kp RIGHT &kp DEL     &kp BSPC
           &kp LSHFT &kp DE_Y  &kp X    &kp C    &kp V      &kp B           &none    &none     &kp HOME &none &none &kp PG_UP &none     &none           &kp N    &kp &none &kp COMMA &kp DOT   &kp FSLH    &kp RSHFT
-          &mo 2     &kp GRAVE &kp CAPS &kp LEFT &kp RIGHT                  &kp BSPC &kp DEL   &kp END              &kp PG_DN &kp ENTER &kp SPACE                &kp UP    &kp DOWN  &kp LBKT  &kp RBKT    &mo 2
+          &mo 2     &kp GRAVE &kp CAPS &kp LEFT &kp RIGHT                  &trans   &trans    &trans               &kp PG_DN &trans    &trans                &kp UP    &kp DOWN  &kp LBKT  &kp RBKT    &mo 2
         >;
       };
     };
