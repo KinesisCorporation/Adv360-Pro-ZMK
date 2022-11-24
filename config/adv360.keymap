@@ -6,7 +6,7 @@
 
 / {
     behaviors {
-      #include "macros.dtsi"
+      ##include "macros.dtsi"
 
       hm: homerow_mods {
           compatible = "zmk,behavior-hold-tap";
