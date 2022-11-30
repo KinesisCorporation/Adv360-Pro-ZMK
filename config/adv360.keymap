@@ -39,11 +39,11 @@
 
         default_layer {
             bindings = <
-                        &kp EQUAL    &kp N1     &kp N2    &kp N3     &kp N4     &kp N5     &tog 1      &mo 3             &kp N6               &kp N7       &kp N8             &kp N9             &kp N0     &kp MINUS
-                        &kp TAB      &kp Q      &kp W     &kp E      &kp R      &kp T      &none       &none             &kp Y                &kp U        &kp I              &kp O              &kp P      &kp BSLH
-                        &kp ESC      &kp A      &kp S     &kp D      &kp F      &kp G      &none       &kp LEFT_SHIFT    &kp LEFT_COMMAND     &kp LGUI     &kp RIGHT_SHIFT    &none              &kp H      &kp J      &kp K       &kp L   &kp SEMI    &kp SQT
-                        &kp LSHIFT   &kp Z      &kp X     &kp C      &kp V      &kp B      &none       &none             &kp LEFT_CONTROL     &none        &none              &kp RIGHT_CONTROL  &none      &none      &kp N       &kp M   &kp COMMA   &kp DOT  &kp SLASH  &kp RSHFT
-                        &mo 2        &kp TILDE  &kp CAPS  &kp LEFT   &kp RIGHT  &kp BSPC   &mo 4       &kp LG(SPACE)     &kp LG(TAB)          &lt 1 ENTER  &kp SPACE          &kp UP             &kp DOWN   &kp MINUS  &kp EQUAL   &mo 2
+                        &kp RIGHT_BRACKET  &kp N1     &kp N2    &kp N3     &kp N4     &kp N5     &tog 1      &mo 3             &kp N6               &kp N7       &kp N8             &kp N9             &kp N0     &kp SINGLE_QUOTE
+                        &kp TAB            &kp Q      &kp W     &kp E      &kp R      &kp T      &none       &none             &kp Y                &kp U        &kp I              &kp O              &kp P      &kp LEFT_BRACKET
+                        &kp ESC            &kp A      &kp S     &kp D      &kp F      &kp G      &none       &kp LEFT_SHIFT    &kp LEFT_COMMAND     &kp LGUI     &kp RIGHT_SHIFT    &none              &kp H      &kp J      &kp K       &kp L   &kp SEMI    &kp SQT
+                        &kp CAPS           &kp Z      &kp X     &kp C      &kp V      &kp B      &none       &none             &kp LEFT_CONTROL     &none        &none              &kp RIGHT_CONTROL  &none      &none      &kp N       &kp M   &kp COMMA   &kp DOT  &kp SLASH  &kp RSHFT
+                        &mo 2              &kp TILDE  &kp LALT  &kp LEFT   &kp RIGHT  &kp BSPC   &mo 4       &kp LG(SPACE)     &kp LG(TAB)          &lt 1 ENTER  &kp SPACE          &kp UP             &kp DOWN   &kp MINUS  &kp EQUAL   &mo 2
                        >;
         };
 
@@ -51,7 +51,7 @@
             bindings = <
                         &kp EQUAL   &kp N1     &kp N2     &kp N3       &kp N4           &kp N5        &trans   &mo 3   &kp N6  &kp KP_NUM   &kp KP_EQUAL  &kp KP_DIVIDE  &kp KP_MULTIPLY  &kp MINUS
                         &kp TAB     &trans     &kp KP_N7  &kp KP_N8    &kp KP_N9        &kp T         &none    &none   &kp Y   &kp KP_N7    &kp KP_N8     &kp KP_N9      &kp KP_MINUS     &kp BSLH
-                        &kp ESC     &kp KP_N0  &kp KP_N4  &kp KP_N5    &kp KP_N6        &macro_ten    &none    &trans  &trans  &trans       &trans        &none          &kp H            &kp KP_N4   &kp KP_N5  &kp KP_N6   &kp KP_PLUS    &kp SQT
+                        &kp ESC     &kp KP_N0  &kp KP_N4  &kp KP_N5    &kp KP_N6        &macro_ten    &none    &trans  &trans  &trans       &trans        &none          &kp KP_N0        &kp KP_N4   &kp KP_N5  &kp KP_N6   &kp KP_PLUS    &kp SQT
                         &kp LSHFT   &trans     &kp KP_N1  &kp KP_N2    &kp KP_NUMBER_3  &kp B         &none    &none   &trans  &none        &none         &trans         &none            &none       &kp N      &kp KP_N1   &kp KP_N2      &kp KP_N3  &kp KP_ENTER  &kp RSHFT
                         &mo 2       &kp GRAVE  &kp CAPS   &kp LEFT     &kp RIGHT        &kp BSPC      &kp DEL  &trans  &trans  &kp ENTER    &trans        &kp UP         &kp DOWN         &kp KP_DOT  &kp RBKT   &mo 2
                        >;
