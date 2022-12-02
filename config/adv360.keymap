@@ -49,11 +49,11 @@
 
         layer_keypad {
             bindings = <
-                        &kp EQUAL   &kp N1     &kp N2     &kp N3       &kp N4           &kp N5        &trans   &mo 3   &kp N6  &kp KP_NUM   &kp KP_EQUAL  &kp KP_DIVIDE  &kp KP_MULTIPLY  &kp MINUS
-                        &kp TAB     &trans     &kp KP_N7  &kp KP_N8    &kp KP_N9        &kp T         &none    &none   &kp Y   &kp KP_N7    &kp KP_N8     &kp KP_N9      &kp KP_MINUS     &kp BSLH
-                        &kp ESC     &kp KP_N0  &kp KP_N4  &kp KP_N5    &kp KP_N6        &macro_ten    &none    &trans  &trans  &trans       &trans        &none          &kp KP_N0        &kp KP_N4   &kp KP_N5  &kp KP_N6   &kp KP_PLUS    &kp SQT
-                        &kp LSHFT   &trans     &kp KP_N1  &kp KP_N2    &kp KP_NUMBER_3  &kp B         &none    &none   &trans  &none        &none         &trans         &none            &none       &kp N      &kp KP_N1   &kp KP_N2      &kp KP_N3  &kp KP_ENTER  &kp RSHFT
-                        &mo 2       &kp GRAVE  &kp CAPS   &kp LEFT     &kp RIGHT        &kp BSPC      &kp DEL  &trans  &trans  &kp ENTER    &trans        &kp UP         &kp DOWN         &kp KP_DOT  &kp RBKT   &mo 2
+                        &kp EQUAL   &kp N1     &kp N2     &kp N3        &kp N4           &kp N5        &trans   &mo 3   &kp N6  &kp KP_NUM   &kp KP_EQUAL  &kp KP_DIVIDE  &kp KP_MULTIPLY  &kp MINUS
+                        &kp TAB     &trans     &kp KP_N7  &kp KP_N8     &kp KP_N9        &kp T         &none    &none   &kp Y   &kp KP_N7    &kp KP_N8     &kp KP_N9      &kp KP_MINUS     &kp BSLH
+                        &kp ESC     &kp KP_N0  &kp KP_N4  &kp LA(LG(F)) &kp LA(SPACE)    &trans        &none    &trans  &trans  &trans       &trans        &none          &kp KP_N0        &kp KP_N4   &kp KP_N5  &kp KP_N6   &kp KP_PLUS    &kp SQT
+                        &kp LSHFT   &trans     &kp KP_N1  &kp KP_N2     &kp KP_NUMBER_3  &kp B         &none    &none   &trans  &none        &none         &trans         &none            &none       &kp N      &kp KP_N1   &kp KP_N2      &kp KP_N3  &kp KP_ENTER  &kp RSHFT
+                        &mo 2       &kp GRAVE  &kp CAPS   &kp LEFT      &kp RIGHT        &kp BSPC      &kp DEL  &trans  &trans  &kp ENTER    &trans        &kp UP         &kp DOWN         &kp KP_DOT  &kp RBKT   &mo 2
                        >;
         };
 
@@ -83,7 +83,7 @@
                         &trans   &kp Z                 &kp Q         &kp RIGHT_BRACKET      &kp RIGHT_BRACE       &kp LS(TAB)           &trans  &trans    &kp TAB            &kp SINGLE_QUOTE   &kp DOUBLE_QUOTES    &kp LEFT_BRACKET     &kp LEFT_BRACE         &trans
                         &trans   &kp LS(Q)             &kp UNDER     &kp MINUS              &kp LEFT_PARENTHESIS  &kp LS(W)             &trans  &trans    &trans             &trans             &trans               &trans               &kp LS(E)              &kp RIGHT_PARENTHESIS   &kp EQUAL     &kp PLUS      &kp LS(Z)   &kp PIPE
                         &trans   &kp EXCLAMATION       &kp AT_SIGN   &kp POUND              &kp DOLLAR            &kp BACKSLASH         &trans  &trans    &trans             &trans             &trans               &trans               &trans                 &trans                  &kp GRAVE     &kp PERCENT   &kp CARET   &kp AMPERSAND  &kp ASTERISK    &trans
-                        &trans   &trans                &trans        &kp LG(LA(LEFT))       &kp LG(LA(RIGHT))     &kp LA(BACKSPACE)     &trans  &trans    &kp LG(GRAVE)      &kp ESCAPE         &kp LA(SPACE)        &kp LG(LC(LA(LEFT))) &kp LG(LC(LA(RIGHT)))  &trans                  &trans        &trans
+                        &trans   &trans                &trans        &kp LG(LA(LEFT))       &kp LG(LA(RIGHT))     &kp LA(BACKSPACE)     &trans  &trans    &kp LG(GRAVE)      &kp ESCAPE         &kp SPACE        &kp LG(LC(LA(LEFT))) &kp LG(LC(LA(RIGHT)))  &trans                  &trans        &trans
                        >;
         };
 
