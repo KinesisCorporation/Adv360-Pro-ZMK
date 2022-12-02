@@ -12,11 +12,11 @@
   ],
   "layers": [
     [
-       "&kp EQUAL",    "&kp N1",   "&kp N2",   "&kp N3",    "&kp N4",   "&kp N5",                     "&tog 1",     "&mo 3",    "&kp N6",    "&kp N7",    "&kp N8",         "&kp N9",       "&kp N0",                         "&kp MINUS",
-         "&kp TAB",     "&kp Q",    "&kp W",    "&kp E",     "&kp R",    "&kp T",                      "&none",     "&none",     "&kp Y",     "&kp U",     "&kp I",          "&kp O",        "&kp P",                          "&kp BSLH",
-         "&kp ESC",     "&kp A",    "&kp S",    "&kp D",     "&kp F",    "&kp G",             "&macro_kinesis", "&kp LCTRL",  "&kp LALT",                                 "&kp LGUI",    "&kp RCTRL", "&kp C_AC_DESKTOP_SHOW_ALL_WINDOWS",    "&kp H",  "&kp J",     "&kp K",   "&kp L", "&kp SEMICOLON",   "&kp SQT",
-       "&kp LSHFT",     "&kp Z",    "&kp X",    "&kp C",     "&kp V",    "&kp B",                      "&none",     "&none",     "&mo 5",     "&none",     "&none",      "&kp PG_UP",        "&none",                             "&none",    "&kp N",  "&kp M", "&kp COMMA", "&kp DOT",      "&kp FSLH", "&kp RSHFT",
-           "&mo 1", "&kp GRAVE", "&kp CAPS", "&kp LEFT", "&kp RIGHT", "&kp BSPC",           "&kp LEFT_COMMAND",     "&mo 2", "&kp PG_DN", "&kp ENTER", "&kp SPACE", "&kp DOWN_ARROW", "&kp UP_ARROW",                          "&kp LBKT", "&kp RBKT",  "&mo 4"
+       "&kp EQUAL",    "&kp N1",   "&kp N2",   "&kp N3",    "&kp N4",   "&kp N5",                     "&tog 1",     "&mo 3",    "&kp N6",    "&kp N7",    "&kp N8",         "&kp N9",       "&kp N0",         "&kp MINUS",
+         "&kp TAB",     "&kp Q",    "&kp W",    "&kp E",     "&kp R",    "&kp T",                      "&none",     "&none",     "&kp Y",     "&kp U",     "&kp I",          "&kp O",        "&kp P",          "&kp BSLH",
+         "&kp ESC",     "&kp A",    "&kp S",    "&kp D",     "&kp F",    "&kp G",             "&macro_kinesis", "&kp LCTRL",  "&kp LALT",                                 "&kp LGUI",    "&kp RCTRL", "&macro_macro_lock",    "&kp H",  "&kp J",     "&kp K",   "&kp L", "&kp SEMICOLON",   "&kp SQT",
+       "&kp LSHFT",     "&kp Z",    "&kp X",    "&kp C",     "&kp V",    "&kp B",                      "&none",     "&none",     "&mo 5",     "&none",     "&none",      "&kp PG_UP",        "&none",             "&none",    "&kp N",  "&kp M", "&kp COMMA", "&kp DOT",      "&kp FSLH", "&kp RSHFT",
+           "&mo 1", "&kp GRAVE", "&kp CAPS", "&kp LEFT", "&kp RIGHT", "&kp BSPC",           "&kp LEFT_COMMAND",     "&mo 2", "&kp PG_DN", "&kp ENTER", "&kp SPACE", "&kp DOWN_ARROW", "&kp UP_ARROW",          "&kp LBKT", "&kp RBKT",  "&mo 4"
     ], [
        "&kp EQUAL",    "&kp N1",   "&kp N2",   "&kp N3",    "&kp N4",   "&kp N5",            "&trans",     "&mo 3",    "&kp N6", "&kp KP_NUM", "&kp KP_EQUAL", "&kp KP_DIVIDE", "&kp KP_MULTIPLY",  "&kp MINUS",
          "&kp TAB",     "&kp Q",    "&kp W",    "&kp E",     "&kp R",    "&kp T",             "&none",     "&none",     "&kp Y",  "&kp KP_N7",    "&kp KP_N8",     "&kp KP_N9",    "&kp KP_MINUS",   "&kp BSLH",
