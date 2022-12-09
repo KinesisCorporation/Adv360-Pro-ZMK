@@ -49,11 +49,11 @@
 
         layer_SYMBOLS {
             bindings = <
-     &none     &kp N1     &kp N2    &kp N3     &kp N4      &kp N5            &trans   &mo 3  &kp N6     &kp N7     &kp N8     &kp N9     &kp N0       &none
-     &none  &kp GRAVE      &none  &kp LBRC   &kp RBRC   &kp MINUS             &none   &none   &none  &kp KP_N7  &kp KP_N8  &kp KP_N9      &none       &none
-     &none      &none  &kp EQUAL  &kp LPAR   &kp RPAR  &kp LSHIFT             &none   &none   &none                            &none      &none       &none  &kp RIGHT_SHIFT  &kp KP_N4  &kp KP_N5  &kp KP_N6   &none      &none
- &kp LSHFT      &none      &none  &kp LBKT   &kp RBKT       &none             &none   &none   &none      &none      &none      &none      &none       &none        &kp KP_N0  &kp KP_N1  &kp KP_N2  &kp KP_N3   &none  &kp RSHFT
-     &mo 2      &none      &none  &kp LEFT  &kp RIGHT       &none             &none   &none   &none      &none      &none  &kp PG_UP  &kp PG_DN  &kp KP_DOT            &none      &mo 2
+     &none     &kp N1     &kp N2    &kp N3    &kp N4      &kp N5            &trans   &mo 3  &kp N6  &kp N7  &kp N8     &kp N9     &kp N0   &none
+     &none  &kp GRAVE      &none  &kp LBRC  &kp RBRC   &kp MINUS             &none   &none   &none  &kp N7  &kp N8     &kp N9      &none   &none
+     &none      &none  &kp EQUAL  &kp LPAR  &kp RPAR  &kp LSHIFT             &none   &none   &none                      &none      &none   &none  &kp RIGHT_SHIFT  &kp N4  &kp N5  &kp N6   &none      &none
+ &kp LSHFT      &none      &none  &kp LBKT  &kp RBKT       &none             &none   &none   &none   &none   &none      &none      &none   &none           &kp N0  &kp N1  &kp N2  &kp N3   &none  &kp RSHFT
+     &mo 2      &none      &none     &none     &none       &none             &none   &none   &none   &none   &none  &kp PG_UP  &kp PG_DN   &none            &none   &mo 2
             >;
         };
 
