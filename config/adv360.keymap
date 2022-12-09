@@ -39,11 +39,11 @@
 
         default_layer {
             bindings = <
- &kp PRINTSCREEN        &kp N1     &kp N2    &kp N3  &kp N4     &kp N5               &kp N6     &kp N7     &kp N8     &kp N9    &kp N0      &kp MINUS  &kp EQUAL  &kp SCROLLLOCK
-         &kp ESC         &kp Q      &kp W     &kp E   &kp R      &kp T            &kp RIGHT     &kp UP      &kp Y      &kp U     &kp I          &kp O      &kp P         &kp SQT
-  &kp LEFT_SHIFT         &kp A      &kp S     &kp D   &kp F      &kp G             &kp LEFT  &kp LCTRL   &kp LALT                       &kp RIGHT_ALT  &kp RCTRL        &kp DOWN          &kp H   &kp J      &kp K    &kp L  &kp SEMI  &kp RIGHT_SHIFT
-         &kp TAB         &kp Z      &kp X     &kp C   &kp V      &kp B                &none      &none   &kp HOME      &none     &none      &kp PG_UP      &none           &none          &kp N   &kp M  &kp COMMA  &kp DOT  &kp FSLH         &kp CAPS
-           &mo 2  &kp LEFT_WIN  &kp GRAVE  &kp BSLH   &none  &kp SPACE              &kp DEL    &kp END  &kp PG_DN  &kp ENTER  &kp BSPC          &none   &kp LBKT        &kp RBKT  &kp RIGHT_WIN   &mo 1
+ &kp PRINTSCREEN        &kp N1     &kp N2    &kp N3  &kp N4     &kp N5               &kp N6     &kp N7     &kp N8     &kp N9    &kp N0      &kp MINUS  &kp EQUAL  &kp INSERT
+         &kp DEL         &kp Q      &kp W     &kp E   &kp R      &kp T            &kp RIGHT     &kp UP      &kp Y      &kp U     &kp I          &kp O      &kp P     &kp SQT
+  &kp LEFT_SHIFT         &kp A      &kp S     &kp D   &kp F      &kp G             &kp LEFT  &kp LCTRL   &kp LALT                       &kp RIGHT_ALT  &kp RCTRL    &kp DOWN          &kp H   &kp J      &kp K    &kp L  &kp SEMI  &kp RIGHT_SHIFT
+         &kp TAB         &kp Z      &kp X     &kp C   &kp V      &kp B                &none      &none   &kp HOME      &none     &none      &kp PG_UP      &none       &none          &kp N   &kp M  &kp COMMA  &kp DOT  &kp FSLH         &kp CAPS
+           &mo 2  &kp LEFT_WIN  &kp GRAVE  &kp BSLH   &none  &kp SPACE              &kp ESC    &kp END  &kp PG_DN  &kp ENTER  &kp BSPC          &none   &kp LBKT    &kp RBKT  &kp RIGHT_WIN   &mo 1
             >;
         };
 
@@ -59,11 +59,11 @@
 
         layer_mod {
             bindings = <
-  &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4            &rgb_ug RGB_TOG  &rgb_ug RGB_MEFS_CMD   &none  &kp KP_NLCK  &kp KP_SLASH  &kp KP_MULTIPLY  &kp KP_MINUS   &bt BT_CLR
- &bootloader         &none         &none         &none         &none         &none                 &bt BT_NXT            &bl BL_INC   &none    &kp KP_N7     &kp KP_N8        &kp KP_N9   &kp KP_PLUS  &bootloader
-      &reset         &none         &none         &none         &none         &none                 &bt BT_PRV                &trans  &trans                                      &trans        &trans   &bl BL_DEC         &none  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_ENTER  &reset
-       &none         &none         &none         &none         &none         &none                      &none                 &none  &trans        &none         &none           &trans         &none        &none         &none  &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_EQUAL   &none
-       &none         &none         &none         &none         &none        &trans                     &trans                &trans  &trans       &trans        &trans       &kp KP_DOT     &kp KP_N0   &kp KP_DOT  &kp KP_COMMA      &none
+  &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4            &rgb_ug RGB_TOG  &rgb_ug RGB_MEFS_CMD   &none      &kp KP_NLCK     &kp KP_SLASH  &kp KP_MULTIPLY  &kp KP_MINUS   &bt BT_CLR
+ &bootloader         &none         &none         &none         &none         &none                 &bt BT_NXT            &bl BL_INC   &none  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9   &kp KP_PLUS  &bootloader
+      &reset         &none         &none         &none         &none         &none                 &bt BT_PRV                &trans  &trans                                             &trans        &trans   &bl BL_DEC         &none  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_ENTER  &reset
+       &none         &none         &none         &none         &none         &none                      &none                 &none  &trans            &none            &none           &trans         &none        &none         &none  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_EQUAL   &none
+       &none         &none         &none         &none         &none        &trans                     &trans                &trans  &trans           &trans           &trans       &kp KP_DOT     &kp KP_N0   &kp KP_DOT  &kp KP_COMMA            &none
             >;
         };
 
