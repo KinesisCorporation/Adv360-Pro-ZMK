@@ -59,7 +59,7 @@
 
         layer_mod {
             bindings = <
-  &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4            &rgb_ug RGB_MEFS_CMD  &rgb_ug RGB_TOG undefined   &none   &none   &none   &none   &none   &bt BT_CLR
+  &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4            &rgb_ug RGB_MEFS_CMD 5  &rgb_ug RGB_TOG    &none   &none   &none   &none   &none   &bt BT_CLR
  &bootloader         &none         &none         &none         &none         &none                      &bt BT_NXT                 &bl BL_INC   &none   &none   &none   &none   &none  &bootloader
       &reset         &none         &none         &none         &none         &none                      &bt BT_PRV                     &trans  &trans                  &trans  &trans   &bl BL_DEC   &none   &none   &none   &none   &none  &reset
        &none         &none         &none         &none         &none         &none                           &none                      &none  &trans   &none   &none  &trans   &none        &none   &none   &none   &none   &none   &none   &none
