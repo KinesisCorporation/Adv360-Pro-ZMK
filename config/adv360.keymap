@@ -39,21 +39,21 @@
 
         default_layer {
             bindings = <
-      &kp EQUAL        &kp N1     &kp N2    &kp N3     &kp N4     &kp N5                &mo 3      &mo 2     &kp N6     &kp N7    &kp N8         &kp N9     &kp N0  &kp MINUS
-        &kp TAB         &kp Q      &kp W     &kp E      &kp R      &kp T            &kp RIGHT     &kp UP      &kp Y      &kp U     &kp I          &kp O      &kp P    &kp SQT
- &kp LEFT_SHIFT         &kp A      &kp S     &kp D      &kp F      &kp G             &kp LEFT  &kp LCTRL   &kp LALT                       &kp RIGHT_ALT  &kp RCTRL   &kp DOWN          &kp H   &kp J      &kp K    &kp L  &kp SEMI  &kp RIGHT_SHIFT
-        &kp DEL         &kp Z      &kp X     &kp C      &kp V      &kp B                &none      &none   &kp HOME      &none     &none      &kp PG_UP      &none      &none          &kp N   &kp M  &kp COMMA  &kp DOT  &kp FSLH       &caps_word
-          &mo 1  &kp LEFT_WIN  &kp GRAVE  &kp BSLH  &kp EQUAL  &kp SPACE              &kp ESC    &kp END  &kp PG_DN  &kp ENTER  &kp BSPC      &kp MINUS   &kp LBKT   &kp RBKT  &kp RIGHT_WIN   &mo 1
+      &kp EQUAL        &kp N1     &kp N2    &kp N3     &kp N4     &kp N5                &mo 3      &mo 2     &kp N6     &kp N7    &kp N8         &kp N9     &kp N0   &kp MINUS
+        &kp TAB         &kp Q      &kp W     &kp E      &kp R      &kp T            &kp RIGHT     &kp UP      &kp Y      &kp U     &kp I          &kp O      &kp P  &kp DELETE
+     &caps_word         &kp A      &kp S     &kp D      &kp F      &kp G             &kp LEFT  &kp LCTRL   &kp LALT                       &kp RIGHT_ALT  &kp RCTRL    &kp DOWN          &kp H   &kp J      &kp K    &kp L  &kp SEMI          &kp SQT
+ &kp LEFT_SHIFT         &kp Z      &kp X     &kp C      &kp V      &kp B                &none      &none   &kp HOME      &none     &none      &kp PG_UP      &none       &none          &kp N   &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RIGHT_SHIFT
+          &mo 1  &kp LEFT_WIN  &kp GRAVE  &kp BSLH  &kp EQUAL  &kp SPACE              &kp ESC    &kp END  &kp PG_DN  &kp ENTER  &kp BSPC      &kp MINUS   &kp LBKT    &kp RBKT  &kp RIGHT_WIN   &mo 1
             >;
         };
 
         layer_fn {
             bindings = <
- &kp C_PP  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5                &kp F6        &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12    &kp C_MUTE
-   &trans  &trans  &trans  &trans  &trans  &trans            &kp C_NEXT  &kp C_VOL_UP  &trans  &trans   &trans   &trans   &trans        &trans
-   &trans  &trans  &trans  &trans  &trans  &trans            &kp C_PREV        &trans  &trans                    &trans   &trans  &kp C_VOL_DN  &kp LEFT  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &trans  &trans
-   &trans  &trans  &trans  &trans  &trans  &trans                 &none         &none  &trans   &none    &none   &trans    &none         &none    &trans          &trans        &trans     &trans  &trans  &trans
-   &trans  &trans  &trans  &trans  &trans  &trans                &trans        &trans  &trans  &trans   &trans   &trans   &trans        &trans    &trans          &trans
+  &none  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5              &kp C_PP    &kp C_MUTE  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10         &none
+ &trans  &trans  &trans  &trans  &trans  &trans            &kp C_NEXT  &kp C_VOL_UP  &trans  &trans  &trans  &trans   &trans        &trans
+ &trans  &trans  &trans  &trans  &trans  &trans            &kp C_PREV        &trans  &trans                  &trans   &trans  &kp C_VOL_DN  &kp LEFT  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans                 &none         &none  &trans   &none   &none  &trans    &none         &none    &trans          &trans        &trans     &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans                &trans        &trans  &trans  &trans  &trans  &trans   &trans        &trans    &trans          &trans
             >;
         };
 
