@@ -44,3 +44,9 @@ Follow the programming instruction on page 8 of the [Quick Start Guide](https://
 Further support resources can be found on Kinesis.com
 https://kinesis-ergo.com/support/kb360pro/#firmware-updates
 https://kinesis-ergo.com/support/kb360pro/#manuals
+
+## Use this site to configure
+https://kinesiscorporation.github.io/Adv360-Pro-GUI/
+
+### Medium Article about key mappings
+https://arslan.io/2022/10/22/review-of-the-kinesis-advantage360-professional/
