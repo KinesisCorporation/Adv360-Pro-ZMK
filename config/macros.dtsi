@@ -4,7 +4,7 @@ label = "macro_opt_cmd_v";
 #binding-cells = <0>;
 wait-ms = <40>;
 tap-ms = <40>;
-bindings = <&macro_press &kp LALT &kp LGUI>, <&kp V>, <&macro_release &kp LALT &kp LGUI>;
+bindings = <&macro_press &kp LSHFT>, <&kp V>, <&kp U>, <&macro_release &kp LSHFT>;
 };
 macro_opt_cmd_c: macro_opt_cmd_c{
 compatible = "zmk,behavior-macro";
