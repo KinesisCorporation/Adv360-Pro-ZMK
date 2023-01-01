@@ -2,13 +2,17 @@ macro_opt_cmd_v: macro_opt_cmd_v{
 compatible = "zmk,behavior-macro";
 label = "macro_opt_cmd_v";
 #binding-cells = <0>;
-bindings = <&macro_press &kp LALT>, <&macro_press &kp LGUI>, <&kp V>, <&macro_release &kp LALT>, <&macro_release &kp LGUI>;
+wait-ms = <40>;
+tap-ms = <40>;
+bindings = <&macro_press &kp LALT &kp LGUI>, <&kp V>, <&macro_release &kp LALT &kp LGUI>;
 };
 macro_opt_cmd_c: macro_opt_cmd_c{
 compatible = "zmk,behavior-macro";
 label = "macro_opt_cmd_c";
 #binding-cells = <0>;
-bindings = <&macro_press &kp LALT>, <&macro_press &kp LGUI>, <&kp C>, <&macro_release &kp LALT>, <&macro_release &kp LGUI>;
+wait-ms = <40>;
+tap-ms = <40>;
+bindings = <&macro_press &kp LALT &kp LGUI>, <&kp C>, <&macro_release &kp LALT &kp LGUI>;
 };
 macro_quotes: macro_quotes{
 compatible = "zmk,behavior-macro";
