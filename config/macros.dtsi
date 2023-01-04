@@ -1,6 +1,12 @@
-macro_quotes: macro_quotes{
+macro_launch: macro_launch{
 compatible = "zmk,behavior-macro";
-label = "macro_quotes";
+label = "macro_launch";
+#binding-cells = <0>;
+bindings = <&kp LEFT_META>, <&kp SPACE>;
+};
+macro_close: macro_close{
+compatible = "zmk,behavior-macro";
+label = "macro_close";
 #binding-cells = <0>;
 bindings = <&kp LEFT_META>, <&kp Q>;
 };
