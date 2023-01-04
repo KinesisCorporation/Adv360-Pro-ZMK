@@ -51,7 +51,7 @@
             bindings = <
                         &kp EQUAL   &kp N1     &kp N2     &kp N3        &kp N4           &kp N5         &trans   &mo 3   &kp N6        &kp KP_NUM   &kp KP_EQUAL  &kp KP_DIVIDE  &kp KP_MULTIPLY  &kp MINUS
                         &kp TAB     &trans     &kp KP_N7  &kp KP_N8     &kp KP_N9        &kp T          &none    &none   &kp KP_PLUS   &kp KP_N7    &kp KP_N8     &kp KP_N9      &kp KP_MINUS     &kp KP_DIVIDE
-                        &kp ESC     &trans     &kp KP_N4  &kp LA(SPACE) &kp LG(LA(F))    &kp LG(LA(I))  &none    &trans  &trans        &trans       &trans        &none          &kp KP_N0        &kp KP_N4   &kp KP_N5  &kp KP_N6   &kp LS(Z)    &kp KP_MULTIPLY
+                        &kp ESC     &trans     &kp KP_N4  &kp LA(SPACE) &kp LG(LA(F))    &kp LG(LA(I))  &none    &trans  &trans        &trans       &trans        &none          &kp LS(Z)        &kp KP_N4   &kp KP_N5  &kp KP_N6   &kp KP_N0    &kp KP_MULTIPLY
                         &kp LSHFT   &trans     &kp KP_N1  &kp KP_N2     &kp KP_NUMBER_3  &kp B          &none    &none   &trans        &none        &none         &trans         &none            &none       &kp E      &kp KP_N1   &kp KP_N2    &kp KP_N3        &kp KP_ENTER  &kp RSHFT
                         &mo 2       &kp GRAVE  &kp CAPS   &kp LEFT      &kp RIGHT        &kp BSPC       &kp DEL  &trans  &trans        &kp ENTER    &trans        &kp UP         &kp DOWN         &kp KP_DOT  &kp RBKT   &mo 2
                        >;
