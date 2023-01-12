@@ -1,6 +1,4 @@
-FROM zmkfirmware/zmk-build-arm:2.4
-
-RUN mkdir -p /app/firmware
+FROM docker.io/zmkfirmware/zmk-build-arm:stable
 
 WORKDIR /app
 
@@ -13,7 +11,6 @@ RUN west update
 # West Zephyr export
 RUN west zephyr-export
 
-COPY config config
 COPY bin/build.sh ./
 
 CMD ["./build.sh"]
