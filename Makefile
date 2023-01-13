@@ -1,7 +1,7 @@
 DOCKER := $(shell { command -v podman || command -v docker; })
 TIMESTAMP := $(shell date -u +"%Y%m%d%H%M%S")
 detected_OS := $(shell uname)  # Classify UNIX OS
-ifeq ($(detected_OS),Darwin) #We only care if it's OS X
+ifeq ($(strip $(detected_OS)),Darwin) #We only care if it's OS X
 SELINUX1 :=
 SELINUX2 :=
 else
