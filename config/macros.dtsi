@@ -2,13 +2,13 @@ macro_launch: macro_launch{
 compatible = "zmk,behavior-macro";
 label = "macro_launch";
 #binding-cells = <0>;
-bindings = <&mt LEFT_META undefined>, <&kp SPACE>;
+bindings = <&mt LEFT_META SPACE>, <&kp SPACE>;
 };
 macro_close: macro_close{
 compatible = "zmk,behavior-macro";
 label = "macro_close";
 #binding-cells = <0>;
-bindings = <&mt LEFT_META undefined>, <&kp Q>;
+bindings = <&mt LEFT_META Q>, <&kp Q>;
 };
 macro_dquotes: macro_dquotes{
 compatible = "zmk,behavior-macro";
