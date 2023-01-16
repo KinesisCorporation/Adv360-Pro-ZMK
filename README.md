@@ -12,23 +12,35 @@
 1. Push a commit to trigger the build.
 2. Download the artifact.
 
-## To build Firmware locally using a container
+## Local building in a container
 
-### First run
+### Setup
 
-Note: Either Podman or Docker is required, Podman is preferred if both are present.
+#### Software
 
-1. Execute `make all`.
+Either Podman or Docker is required, Podman is preferred if both are present.\
+Make is also required
+
+#### Windows specific
+If compiling on Windows use WSL2 and Docker [Docker Setup Guide](https://docs.docker.com/desktop/windows/wsl/).\
+Install make using `sudo apt-get install make`.\
+The repository can be cloned directly into the WSL2 instance or accessed through the C: mount point WSL provides by default (`/mnt/c/path-to-repo`).
+
+### Build firmware
+
+1. Execute `make`.
 2. Check the `firmware` directory for the latest firmware build.
 
-### Subsequent runs
+### Cleanup
 
-If the only file you have changed is `config/adv360.keymap`, execute `make build` and check the `firmware` directory for the latest firmware build.
+The built docker container and compiled firmware files can be deleted with `make clean`.
 
-If you have changed other files in the `config` directory (such as `config/west.yml`) you will need to execute `make all` to rebuild the Docker image as well as the firmware.
+## Flashing firmware
 
-### Flash firmware
+Follow the programming instruction on page 8 of the [Quick Start Guide](https://kinesis-ergo.com/wp-content/uploads/Advantage360-Professional-QSG-v8-25-22.pdf) to flash the firmware.
 
-Resources can be found on Kinesis.com
+## Other support
+
+Further support resources can be found on Kinesis.com
 https://kinesis-ergo.com/support/kb360pro/#firmware-updates
 https://kinesis-ergo.com/support/kb360pro/#manuals
