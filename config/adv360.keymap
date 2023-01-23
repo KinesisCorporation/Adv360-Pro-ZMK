@@ -96,11 +96,11 @@
 
         layer_mod {
             bindings = <
-  &none  &kp C_PREV  &kp C_PP  &kp C_NEXT  &kp C_VOL_DN     &kp C_VOL_UP                             &none       &trans  &bt BT_SEL 0  &bt BT_SEL 1     &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                   &none
-  &none       &none     &none       &none         &none            &none                       &bootloader  &bootloader         &none         &none            &none         &none         &none                   &none
-  &none       &none     &none       &none         &none            &none            &rgb_ug RGB_MEFS_CMD 5   &bt BT_CLR         &none                                   &bt BT_CLR    &bt BT_CLR  &rgb_ug RGB_MEFS_CMD 5   &none   &none   &none   &none   &none   &none
-  &none       &none     &none       &none         &none            &none                             &none        &none         &none         &none            &none         &none         &none                   &none   &none   &none   &none   &none   &none   &none
-  &none       &none     &none  &bl BL_INC    &bl BL_DEC  &rgb_ug RGB_TOG                        &bl BL_TOG        &none         &none    &bl BL_TOG  &rgb_ug RGB_TOG    &bl BL_INC    &bl BL_DEC                   &none   &none   &none
+  &none  &kp K_PREV  &kp K_PLAY_PAUSE  &kp K_NEXT  &kp K_VOL_DN     &kp K_VOL_UP                             &none       &trans  &bt BT_SEL 0  &bt BT_SEL 1     &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                   &none
+  &none       &none             &none       &none         &none            &none                       &bootloader  &bootloader         &none         &none            &none         &none         &none                   &none
+  &none       &none             &none       &none         &none            &none            &rgb_ug RGB_MEFS_CMD 5   &bt BT_CLR         &none                                   &bt BT_CLR    &bt BT_CLR  &rgb_ug RGB_MEFS_CMD 5   &none   &none   &none   &none   &none   &none
+  &none       &none             &none       &none         &none            &none                             &none        &none         &none         &none            &none         &none         &none                   &none   &none   &none   &none   &none   &none   &none
+  &none       &none             &none  &bl BL_INC    &bl BL_DEC  &rgb_ug RGB_TOG                        &bl BL_TOG        &none         &none    &bl BL_TOG  &rgb_ug RGB_TOG    &bl BL_INC    &bl BL_DEC                   &none   &none   &none
             >;
         };
 
