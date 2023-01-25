@@ -40,7 +40,7 @@
         bindings = <&mt LEFT_CONTROL BACKSPACE>, <&kp BACKSPACE>;
     };
    };
-  };
+
 
     keymap {
         compatible = "zmk,keymap";
