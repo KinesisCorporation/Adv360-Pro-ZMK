@@ -30,16 +30,16 @@
         quick_tap_ms = <175>;
         flavor = "tap-preferred";
         bindings = <&kp>, <&kp>;
+    };
         
     td_mt: tap_dance_mod_tap {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_BSPC";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&mt LEFT_CONTROL BACKSPACE>, <&kp BACKSPACE>;
-        };
+        compatible = "zmk,behavior-tap-dance";
+        label = "TAP_DANCE_BSPC";
+        #binding-cells = <0>;
+        tapping-term-ms = <200>;
+        bindings = <&mt LEFT_CONTROL BACKSPACE>, <&kp BACKSPACE>;
     };
-    };
+   };
   };
 
     keymap {
