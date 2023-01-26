@@ -18,6 +18,11 @@
 #include <dt-bindings/zmk/rgb.h>
 #include <dt-bindings/zmk/backlight.h>
 
+// set the global tap and hold time
+&mt {
+    tapping-term-ms = <150>;
+};
+
 / {
   behaviors {
     #include "macros.dtsi"
@@ -32,12 +37,36 @@
         bindings = <&kp>, <&kp>;
     };
         
-    td_mt: tap_dance_mod_tap {
+    td_bs: tap_dance_mod_tap {
         compatible = "zmk,behavior-tap-dance";
         label = "TAP_DANCE_BSPC";
         #binding-cells = <0>;
         tapping-term-ms = <200>;
         bindings = <&mt LEFT_CONTROL BACKSPACE>, <&kp BACKSPACE>;
+    };
+    
+    td_del: tap_dance_mod_tap {
+        compatible = "zmk,behavior-tap-dance";
+        label = "TAP_DANCE_DEL";
+        #binding-cells = <0>;
+        tapping-term-ms = <200>;
+        bindings = <&mt LEFT_META DEL>, <&kp DEL>;
+    };
+
+    td_sp: tap_dance_mod_tap {
+        compatible = "zmk,behavior-tap-dance";
+        label = "TAP_DANCE_SPACE";
+        #binding-cells = <0>;
+        tapping-term-ms = <200>;
+        bindings = <&mt RIGHT_CONTROL SPACE>, <&kp SPACE>;
+    };
+
+    td_ent: tap_dance_mod_tap {
+        compatible = "zmk,behavior-tap-dance";
+        label = "TAP_DANCE_ENTER";
+        #binding-cells = <0>;
+        tapping-term-ms = <200>;
+        bindings = <&mt RIGHT_META ENTER>, <&kp ENTER>;
     };
    };
 
@@ -52,7 +81,7 @@
           &kp TAB      &kp Q     &kp W     &kp E      &kp R   &kp T                                 &none                                                                         &none   &kp Y     &kp U      &kp I     &kp O     &kp P   &kp BSLH
  &mt LCTRL ESCAPE      &kp A     &kp S     &kp D      &kp F   &kp G                                 &mo 1              &mo 4  &kp LALT                   &kp LGUI  &kp RCTRL      &none   &kp H     &kp J      &kp K     &kp L  &kp SEMI    &kp SQT
         &kp LSHFT      &kp Z     &kp X     &kp C      &kp V   &kp B                                 &none              &none  &kp HOME   &none   &none  &kp PG_UP      &none      &none   &kp N     &kp M  &kp COMMA   &kp DOT  &kp FSLH  &kp RSHFT
-            &mo 1  &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT                    &td_mt  &mt LEFT_META DEL   &kp END                  &kp PG_DN  &kp ENTER  &kp SPACE          &kp DOWN     &kp UP  &kp LBKT  &kp RBKT      &mo 2
+            &mo 1  &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT                    &td_bs  &td_del   &kp END                  &kp PG_DN  &td_ent  &td_sp          &kp DOWN     &kp UP  &kp LBKT  &kp RBKT      &mo 2
             >;
         };
 
