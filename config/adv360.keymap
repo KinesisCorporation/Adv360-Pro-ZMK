@@ -37,7 +37,7 @@
         bindings = <&kp>, <&kp>;
     };
         
-    td_bs: tap_dance_mod_tap {
+    td_bs: tap_dance_mod_tap_backspace {
         compatible = "zmk,behavior-tap-dance";
         label = "TAP_DANCE_BSPC";
         #binding-cells = <0>;
@@ -45,7 +45,7 @@
         bindings = <&mt LEFT_CONTROL BACKSPACE>, <&kp BACKSPACE>;
     };
     
-    td_del: tap_dance_mod_tap {
+    td_del: tap_dance_mod_tap_delete {
         compatible = "zmk,behavior-tap-dance";
         label = "TAP_DANCE_DEL";
         #binding-cells = <0>;
@@ -53,7 +53,7 @@
         bindings = <&mt LEFT_META DEL>, <&kp DEL>;
     };
 
-    td_sp: tap_dance_mod_tap {
+    td_sp: tap_dance_mod_tap_space {
         compatible = "zmk,behavior-tap-dance";
         label = "TAP_DANCE_SPACE";
         #binding-cells = <0>;
@@ -61,7 +61,7 @@
         bindings = <&mt RIGHT_CONTROL SPACE>, <&kp SPACE>;
     };
 
-    td_ent: tap_dance_mod_tap {
+    td_ent: tap_dance_mod_tap_enter {
         compatible = "zmk,behavior-tap-dance";
         label = "TAP_DANCE_ENTER";
         #binding-cells = <0>;
