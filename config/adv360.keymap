@@ -6,7 +6,8 @@
 
 / {
     behaviors {
-      #include "macros.dtsi"
+      #include "macros/macros.dtsi"
+      #include "macros/zvd.dtsi"
 
       hm: homerow_mods {
           compatible = "zmk,behavior-hold-tap";
@@ -24,39 +25,48 @@
 
     default_layer {
       bindings = <
-        &________i__  &kp N1    &kp N2   &kp N3   &kp N4     &kp N5 &tog 1                                                                       &mo 3 &kp N6 &kp N7 &kp N8    &kp N9   &kp N0   &kp MINUS
-        &kp TAB   &kp Q     &kp W    &kp E    &kp R      &kp T  &none                                                                        &none &kp Y  &kp U  &kp I     &kp O    &kp P    &kp BSLH
-        &kp ESC   &kp A     &kp S    &kp D    &kp F      &kp G  &none           &kp LCTRL &kp LALT             &kp LGUI  &kp RCTRL           &none &kp H  &kp J  &kp K     &kp L    &kp SEMI &kp SQT
-        &kp LSHFT &kp Z     &kp X    &kp C    &kp V      &kp B         &none    &none     &kp HOME &none &none &kp PG_UP &none     &none           &kp N  &kp M  &kp COMMA &kp DOT  &kp FSLH &kp RSHFT
-        &mo 2     &kp GRAVE &kp CAPS &kp LEFT &kp RIGHT                &kp BSPC &kp DEL   &kp END              &kp PG_DN &kp ENTER &kp SPACE              &kp UP &kp DOWN  &kp LBKT &kp RBKT &mo 2
-      >;
-    };
-    keypad {
-      bindings = <
-        &kp EQUAL &kp N1    &kp N2   &kp N3   &kp N4     &kp N5 &trans                                                                       &mo 3 &kp N6 &kp KP_NUM &kp KP_EQUAL &kp KP_DIVIDE &kp KP_MULTIPLY &kp MINUS
-        &kp TAB   &kp Q     &kp W    &kp E    &kp R      &kp T  &none                                                                        &none &kp Y  &kp KP_N7  &kp KP_N8    &kp KP_N9     &kp KP_MINUS    &kp BSLH
-        &kp ESC   &kp A     &kp S    &kp D    &kp F      &kp G  &none           &kp LCTRL &kp LALT             &kp LGUI  &kp RCTRL           &none &kp H  &kp KP_N4  &kp KP_N5    &kp KP_N6     &kp KP_PLUS     &kp SQT
-        &kp LSHFT &kp Z     &kp X    &kp C    &kp V      &kp B         &none    &none     &kp HOME &none &none &kp PG_UP &none     &none           &kp N  &kp KP_N1  &kp KP_N2    &kp KP_N3     &kp KP_ENTER    &kp RSHFT
-        &mo 2     &kp GRAVE &kp CAPS &kp LEFT &kp RIGHT                &kp BSPC &kp DEL   &kp END              &kp PG_DN &kp ENTER &kp KP_N0              &kp UP     &kp DOWN     &kp KP_DOT    &kp RBKT        &mo 2
+        &kp GRAVE  &kp N1     &kp N2     &kp N3     &kp N4     &kp N5     &kp F5                                                          &trans     &kp N6     &kp N7     &kp N8     &kp N9     &kp N0     &trans
+        &kp TAB    &kp SQT    &kp COMMA  &kp PERIOD &kp P      &kp Y      &kp EQUAL                                                       &trans     &kp F      &kp G      &kp C      &kp R      &kp L      &trans
+        &kp ESC    &kp A      &kp O      &kp E      &kp U      &kp I      &kp F12      &kp LGUI   &kp LALT        &kp LGUI   &SPOTLIGHT   &trans     &kp D      &kp H      &kp T      &kp N      &kp S      &kp END
+        &kp LSHFT  &kp SLASH  &kp Q      &kp J      &kp K      &kp X                   &_&_       &kp DEL    &_ &_&kp HOME   &_&_                    &kp B      &kp M      &kp W      &kp V      &kp Z      &kp ENTER
+        &kp LCTRL  &kp UP     &kp DOWN   &kp LBKT   &kp N9                &kp SPACE    &kp BSPC   &mo 1           &kp END    &mo 2        &mo 1                 &kp N0   &kp RBKT   &kp LEFT   &kp RIGHT    &kp K_APP
       >;
     };
     fn {
       bindings = <
-        &kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp F6 &tog 1                                                       &mo 3 &kp F7 &kp F8 &kp F9 &kp F10 &kp F11 &kp F12
-        &trans &trans &trans &trans &trans &trans  &none                                                       &none &trans &trans &trans &trans  &trans  &trans
-        &trans &trans &trans &trans &trans &trans  &none        &trans &trans             &trans &trans        &none &trans &trans &trans &trans  &trans  &trans
-        &trans &trans &trans &trans &trans &trans        &none  &none  &trans &none &none &trans &none  &none        &trans &trans &trans &trans  &trans  &trans
-        &trans &trans &trans &trans &trans               &trans &trans &trans             &trans &trans &trans              &trans &trans &trans  &trans  &trans
+        &kp F1     &kp F2     &kp F3     &kp F4     &kp F5     &kp F6     &bootloader                                                     &bootloader&kp F7     &kp F8     &kp F9     &kp F10    &kp F11    &kp F12 
+        &RDC_X     &ditto     &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp PSCRN  &to 4                                                           &DSK_UP    &kp EQUAL  &kp N7     &kp N8     &kp N9     &kp MINUS  &trans     
+        &trans     &kp LG(UP) &kp LG(DOWN)&kp LG(LEFT)&kp LG(RIGHT)&T_ADD &to 3        &trans     &trans      &rgb_ug RGB_TOG&trans       &DSK_DN    &kp SLASH  &kp N4     &kp N5     &kp N6     &kp PLUS   &trans     
+        &trans     &kp LC(Z)  &kp LC(Y)  &kp LC(A)  &kp LC(K)  &T_OPEN                 &_&_       &bt BT_CLR &_ &_&bl BL_TOG &_&_                    &none      &kp N1     &kp N2     &kp N3     &kp EQUAL  &trans     
+        &trans     &trans     &trans     &trans     &trans                &trans       &trans     &trans          &trans     &trans       &trans                &trans     &trans     &kp N0     &trans     &trans     
       >;
     };
-    mod {
+    symbol {
       bindings = <
-        &none &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &none                                                                                                          &trans                 &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &none
-        &none &none        &none        &none        &none        &none        &bootloader                                                                                                    &bootloader            &none        &none        &none        &none        &none        &none
-        &none &none        &none        &none        &none        &none        &rgb_ug RGB_MEFS_CMD 5                 &bt BT_CLR &bt BT_CLR             &bt BT_CLR &bt BT_CLR                 &rgb_ug RGB_MEFS_CMD 5 &none        &none        &none        &none        &none        &none
-        &none &none        &none        &none        &none        &none                               &none           &none      &none      &none &none &none      &none      &none                                  &none        &none        &none        &none        &none        &none
-        &none &none        &none        &bl BL_INC   &bl BL_DEC                                       &rgb_ug RGB_TOG &bl BL_TOG &none                  &none      &bl BL_TOG &rgb_ug RGB_TOG                                     &bl BL_INC   &bl BL_DEC   &none        &none        &none
+        &kp LA(F4) &DESK_A    &DESK_B    &DESK_C    &DESK_D    &DESK_E    &trans                                                          &trans     &DESK_F    &DESK_G    &DESK_H    &DESK_I    &DESK_VW   &trans     
+        &AT_TOG    &kp EXCL   &kp AT     &kp HASH   &kp DLLR   &kp PRCNT  &trans                                                          &trans     &kp CARET  &kp AMPS   &kp STAR   &kp LPAR   &kp RPAR   &trans     
+        &trans     &kp LBKT   &kp SEMI   &kp LBRC   &kp LPAR   &kp GRAVE  &trans       &trans     &trans          &trans     &trans       &trans     &kp TILDE  &kp RPAR   &kp RBRC   &kp COLON  &kp RBKT   &trans     
+        &trans     &trans     &kp MINUS  &kp BSLH   &kp EQUAL  &trans                  &_&_       &trans     &_ &_&trans     &_&_                    &trans     &kp PLUS   &kp PIPE   &kp UNDER  &trans     &trans     
+        &trans     &trans     &trans     &trans     &trans                &trans       &trans     &trans          &trans     &trans       &trans                &trans     &trans     &trans     &trans     &trans     
       >;
     };
-  };
+    qwerty {
+      bindings = <
+        &trans     &trans     &trans     &trans     &trans     &trans     &trans                                                          &trans     &trans     &trans     &trans     &trans     &trans     &trans     
+        &kp TAB    &kp Q      &kp W      &kp E      &kp R      &kp T      &trans                                                          &trans     &kp Y      &kp U      &kp I      &kp O      &kp P      &kp BSLH
+        &kp ESC    &kp A      &kp S      &kp D      &kp F      &kp G      &to 0        &trans     &trans          &trans     &trans       &trans     &kp H      &kp J      &kp K      &kp L      &kp SEMI   &kp SQT
+        &kp LSHFT  &kp Z      &kp X      &kp C      &kp V      &kp B                   &_&_       &trans     &_ &_&trans     &_&_                    &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH   &kp RSHFT
+        &trans     &trans     &trans     &trans     &trans                &trans       &trans     &to 0           &trans     &trans       &trans                &trans     &trans     &trans     &trans     &trans     
+      >;
+    };
+    gaming {
+      bindings = <
+        &trans     &trans     &trans     &trans     &trans     &trans     &trans                                                          &trans     &trans     &trans     &trans     &trans     &trans     &trans     
+        &trans     &trans     &trans     &trans     &trans     &trans     &trans                                                          &trans     &trans     &trans     &trans     &trans     &trans     &trans     
+        &trans     &trans     &trans     &trans     &trans     &trans     &trans       &trans     &trans          &trans     &trans       &trans     &trans     &trans     &trans     &trans     &trans     &trans
+        &trans     &trans     &trans     &trans     &trans     &trans                  &_&_       &kp BSPC   &_ &_&kp BSPC   &_&_                    &trans     &trans     &trans     &trans     &trans     &trans
+        &trans     &trans     &trans     &trans     &trans                &kp LSHIFT   &kp LALT   &to 0           &trans     &trans       &trans                &trans     &trans     &trans     &trans     &trans     
+      >;
+    };
+    };
 };
