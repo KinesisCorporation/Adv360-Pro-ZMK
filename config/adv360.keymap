@@ -33,18 +33,6 @@
     };
   };
 
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
-        conditional_layer_1 {
-            if-layers = <4 2>;
-            then-layer = <2>;
-        };
-        conditional_layer_2 {
-            if-layers = <5 2>;
-            then-layer = <2>;
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
