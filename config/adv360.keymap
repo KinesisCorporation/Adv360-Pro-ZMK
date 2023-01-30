@@ -77,7 +77,7 @@
             >;
         };
 
-        layer_MAC {
+        layer_mac {
             bindings = <
  &kp EQUAL     &kp N1    &kp N2    &kp N3     &kp N4  &kp N5              &tog 1                                                                                            &mo 3  &kp N6  &kp N7     &kp N8    &kp N9    &kp N0  &kp MINUS
    &kp TAB      &kp Q     &kp W     &kp E      &kp R   &kp T               &none                                                                                            &none   &kp Y   &kp U      &kp I     &kp O     &kp P   &kp BSLH
@@ -87,7 +87,7 @@
             >;
         };
 
-        layer_Windows {
+        layer_windows {
             bindings = <
  &kp EQUAL     &kp N1    &kp N2    &kp N3     &kp N4  &kp N5              &tog 1                                                                 &mo 3  &kp N6  &kp N7     &kp N8    &kp N9    &kp N0  &kp MINUS
    &kp TAB      &kp Q     &kp W     &kp E      &kp R   &kp T               &none                                                                 &none   &kp Y   &kp U      &kp I     &kp O     &kp P   &kp BSLH
