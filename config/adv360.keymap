@@ -1,81 +1,47 @@
-
 /*
  * Copyright (c) 2020 The ZMK Contributors
  *
  * SPDX-License-Identifier: MIT
  */
 
-
-/* THIS FILE WAS GENERATED!
- *
- * This file was generated automatically. You may or may not want to
- * edit it directly.
- */
-
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
-#include <dt-bindings/zmk/rgb.h>
-#include <dt-bindings/zmk/backlight.h>
+#include <dt-bindings/zmk/ext_power.h>
 
 / {
-  behaviors {
-    #include "macros.dtsi"
-
-    hm: homerow_mods {
-        compatible = "zmk,behavior-hold-tap";
-        label = "HOMEROW_MODS";
-        #binding-cells = <2>;
-        tapping-term-ms = <200>;
-        quick_tap_ms = <175>;
-        flavor = "tap-preferred";
-        bindings = <&kp>, <&kp>;
+  keymap {
+    compatible = "zmk,keymap";
+    layer0 {
+      bindings = <
+      &kp EQUAL &kp N1 &kp N2 &kp N3 &kp N4 &kp N5 &tog 3 &tog 4 &kp N6 &kp N7 &kp N8 &kp N9 &kp N0 &kp MINUS &kp TAB &kp Q &kp W &kp F &kp P &kp B &kp HOME &kp END &kp J &kp L &kp U &kp Y KC_SCOLON &lt 5 KC_BSLASH &lt 1 ESCAPE MT(MOD_LCTL, KC_A) MT(MOD_LALT, KC_R) MT(MOD_LGUI, KC_S) MT(MOD_LSFT, KC_T) &kp G KC_HYPR KC_MEH &kp M MT(MOD_RSFT, KC_N) MT(MOD_RGUI, KC_E) MT(MOD_RALT, KC_I) MT(MOD_RCTL, KC_O) &lt 1 QUOTE OSM(MOD_LSFT) &kp Z &kp X &kp C &kp D &kp V &kp K &kp H &kp COMMA &kp DOT &lt 2 SLASH OSM(MOD_RSFT) TD(DANCE_0) CAPS_WORD &kp GRAVE &kp LEFT &kp RIGHT &kp LEFT_ALT &kp LEFT_ALT &kp UP &kp DOWN KC_LBRACKET KC_RBRACKET TD(DANCE_1) &kp SPACE KC_BSPACE LALT(LCTL(LSFT(KC_SPACE))) &kp RIGHT_GUI &kp ENTER &kp ENTER
+      >;
+    };
+    layer1 {
+      bindings = <
+      KC_TRANSPARENT &kp F1 &kp F2 &kp F3 &kp F4 &kp F5 KC_TRANSPARENT KC_TRANSPARENT &kp F6 &kp F7 &kp F8 &kp F9 &kp F10 KC_TRANSPARENT KC_TRANSPARENT KC_PSCREEN KC_TRANSPARENT KC_LCBR KC_RCBR KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_LPRN KC_RPRN &kp GRAVE KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT &to 0 KC_TRANSPARENT KC_TRANSPARENT KC_LBRACKET KC_RBRACKET KC_TILD KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT &to 0 KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT
+      >;
+    };
+    layer2 {
+      bindings = <
+      KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT &kp H &kp J &kp K &kp L KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT
+      >;
+    };
+    layer3 {
+      bindings = <
+      KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT &kp TAB &kp Q &kp W &kp E &kp R &kp T KC_TRANSPARENT KC_TRANSPARENT &kp Y &kp U &kp I &kp O &kp P KC_TRANSPARENT &kp ESCAPE &kp A &kp S &kp D &kp F &kp G KC_LCTRL KC_TRANSPARENT &kp H &kp J &kp K &kp L KC_SCOLON KC_TRANSPARENT KC_LSHIFT &kp Z &kp X &kp C &kp V &kp B &kp N &kp M KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_RSHIFT KC_TRANSPARENT &kp LEFT &kp UP &kp DOWN &kp RIGHT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT
+      >;
+    };
+    layer4 {
+      bindings = <
+      KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT &kp F11 &kp F12 KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT &kp C_VOLUME_UP &kp C_VOLUME_DOWN KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT
+      >;
+    };
+    layer5 {
+      bindings = <
+      KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT RESET KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT KC_TRANSPARENT
+      >;
     };
   };
-
-    keymap {
-        compatible = "zmk,keymap";
-
-
-        default_layer {
-            bindings = <
- &kp EQUAL     &kp N1    &kp N2    &kp N3     &kp N4  &kp N5              &tog 1                                                                 &mo 3  &kp N6  &kp N7     &kp N8    &kp N9    &kp N0  &kp MINUS
-   &kp TAB      &kp Q     &kp W     &kp F      &kp R   &kp T               &none                                                                 &none   &kp Y   &kp U      &kp I     &kp O     &kp P   &kp BSLH
-   &kp ESC      &kp A     &kp S     &kp D      &kp F   &kp G               &none  &kp LCTRL  &kp LALT                   &kp LGUI  &kp RCTRL      &none   &kp H   &kp J      &kp K     &kp L  &kp SEMI    &kp SQT
- &kp LSHFT      &kp Z     &kp X     &kp C      &kp V   &kp B               &none      &none  &kp HOME   &none   &none  &kp PG_UP      &none      &none   &kp N   &kp M  &kp COMMA   &kp DOT  &kp FSLH  &kp RSHFT
-     &mo 2  &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT                    &kp BSPC    &kp DEL   &kp END                  &kp PG_DN  &kp ENTER  &kp SPACE          &kp UP   &kp DOWN  &kp LBKT  &kp RBKT      &mo 2
-            >;
-        };
-
-        layer_keypad {
-            bindings = <
- &kp EQUAL     &kp N1    &kp N2    &kp N3     &kp N4  &kp N5              &trans                                                                 &mo 3  &kp N6  &kp KP_NUM  &kp KP_EQUAL  &kp KP_DIVIDE  &kp KP_MULTIPLY  &kp MINUS
-   &kp TAB      &kp Q     &kp W     &kp E      &kp R   &kp T               &none                                                                 &none   &kp Y   &kp KP_N7     &kp KP_N8      &kp KP_N9     &kp KP_MINUS   &kp BSLH
-   &kp ESC      &kp A     &kp S     &kp D      &kp F   &kp G               &none  &kp LCTRL  &kp LALT                   &kp LGUI  &kp RCTRL      &none   &kp H   &kp KP_N4     &kp KP_N5      &kp KP_N6      &kp KP_PLUS    &kp SQT
- &kp LSHFT      &kp Z     &kp X     &kp C      &kp V   &kp B               &none      &none  &kp HOME   &none   &none  &kp PG_UP      &none      &none   &kp N   &kp KP_N1     &kp KP_N2      &kp KP_N3     &kp KP_ENTER  &kp RSHFT
-     &mo 2  &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT                    &kp BSPC    &kp DEL   &kp END                  &kp PG_DN  &kp ENTER  &kp KP_N0              &kp UP      &kp DOWN     &kp KP_DOT         &kp RBKT      &mo 2
-            >;
-        };
-
-        layer_fn {
-            bindings = <
- &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6            &tog 1                                                   &mo 3  &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
- &trans  &trans  &trans  &trans  &trans  &trans             &none                                                   &none  &trans  &trans  &trans   &trans   &trans   &trans
- &trans  &trans  &trans  &trans  &trans  &trans             &none  &trans  &trans                  &trans  &trans   &none  &trans  &trans  &trans   &trans   &trans   &trans
- &trans  &trans  &trans  &trans  &trans  &trans             &none   &none  &trans   &none   &none  &trans   &none   &none  &trans  &trans  &trans   &trans   &trans   &trans
- &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans                  &trans  &trans  &trans          &trans  &trans   &trans   &trans   &trans
-            >;
-        };
-
-        layer_mod {
-            bindings = <
-  &none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                             &none                                                                              &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4   &none
-  &none         &none         &none         &none         &none         &none                       &bootloader                                                                         &bootloader         &none         &none         &none         &none         &none   &none
-  &none         &none         &none         &none         &none         &none            &rgb_ug RGB_MEFS_CMD 5  &bt BT_CLR   &none                  &bt BT_CLR  &bt BT_CLR  &rgb_ug RGB_MEFS_CMD 5         &none         &none         &none         &none         &none   &none
-  &none         &none         &none         &none         &none         &none                             &none       &none   &none   &none   &none       &none       &none                   &none         &none         &none         &none         &none         &none   &none
-  &none         &none         &none    &bl BL_INC    &bl BL_DEC                                 &rgb_ug RGB_TOG  &bl BL_TOG   &none                       &none  &bl BL_TOG         &rgb_ug RGB_TOG                  &bl BL_INC    &bl BL_DEC         &none         &none   &none
-            >;
-        };
-
-    };
 };
+
