@@ -37,7 +37,9 @@
         compatible = "zmk,behavior-tap-dance";
         label = "TAP_DANCE_BSPC";
         #binding-cells = <0>;
-        tapping-term-ms = <100>;
+        tapping-term-ms = <200>;
+        quick-tap-ms = <175>;
+        flavor = "tap-preferred";
         bindings = <&mt LEFT_CONTROL BACKSPACE>, <&kp BACKSPACE>;
     };
    };
