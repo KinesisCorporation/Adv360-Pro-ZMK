@@ -10,7 +10,7 @@
   ],
   "layers": [
     [
-       "&kp EQUAL",     "&kp N1",    "&kp N2",   "&kp N3",    "&kp N4",  "&kp A",              "&tog 1",                                                                                 "&mo 3", "&kp N6", "&kp N7",    "&kp N8",   "&kp N9",        "&kp N0", "&kp MINUS",
+       "&kp EQUAL",     "&kp N1",    "&kp N2",   "&kp N3",    "&kp N4", "&kp N5",              "&tog 1",                                                                                 "&mo 3", "&kp N6", "&kp N7",    "&kp N8",   "&kp N9",        "&kp N0", "&kp MINUS",
          "&kp TAB",      "&kp Q",     "&kp W",    "&kp F",     "&kp P",  "&kp B",               "&none",                                                                                 "&none",  "&kp J",  "&kp L",     "&kp U",    "&kp Y", "&kp SEMICOLON",  "&kp BSLH",
          "&kp ESC",      "&kp A",     "&kp R",    "&kp S",     "&kp T",  "&kp G",               "&none",     "&kp LCTRL", "&kp LALT",                      "&kp LGUI",  "&kp RCTRL",     "&none",  "&kp M",  "&kp N",     "&kp E",    "&kp I",         "&kp O",   "&kp SQT",
        "&kp LSHFT",      "&kp Z",     "&kp X",    "&kp C",     "&kp D",  "&kp V",               "&none",         "&none", "&kp HOME",  "&none",  "&none",     "&kp A",      "&none",     "&none",  "&kp K",  "&kp H", "&kp COMMA",  "&kp DOT",      "&kp FSLH", "&kp RSHFT",
