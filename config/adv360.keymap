@@ -20,7 +20,7 @@
 
 &caps_word {
   continue-list = <UNDERSCORE MINUS BACKSPACE DELETE>;
-}
+};
 
 / {
   behaviors {
