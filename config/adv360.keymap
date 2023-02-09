@@ -53,7 +53,7 @@
             bindings = <
  &kp EQUAL      &kp N1     &kp N2    &kp N3           &kp N4  &kp N5               &tog 2                                                                         &tog 3  &kp N6  &kp N7     &kp N8    &kp N9         &kp N0  &kp MINUS
    &kp TAB       &kp Q      &kp W     &kp F            &kp P   &kp B                &none                                                                          &none   &kp J   &kp L      &kp U     &kp Y  &kp SEMICOLON   &kp BSLH
-   &lt 1 ESC       &kp A      &kp R     &kp S            &kp T   &kp G                &none      &kp LCTRL  &kp LEFT_ALT                   &kp LGUI   &kp RCTRL      &none   &kp M   &kp N      &kp E     &kp I          &kp O    &lt 1 SQT
+   &lt 1 ESC       &kp A      &kp R     &kp S            &kp T   &kp G                &none      &kp LCTRL  &kp LALT                   &kp LGUI   &kp RCTRL      &none   &kp M   &kp N      &kp E     &kp I          &kp O    &lt 1 SQT
  &sk LSHFT       &kp Z      &kp X     &kp C            &kp D   &kp V                &none          &none      &kp HOME   &none   &none  &kp PG_UP       &none      &none   &kp K   &kp H  &kp COMMA   &kp DOT       &kp FSLH  &sk RSHFT
      &td0  &caps_word  &kp GRAVE  &kp LEFT  &kp RIGHT_ARROW                    &kp SPACE  &kp BACKSPACE       &kp END                  &kp PG_DN  &kp DELETE  &kp ENTER          &kp UP   &kp DOWN  &kp LBKT       &kp RBKT     &tog 4
             >;
