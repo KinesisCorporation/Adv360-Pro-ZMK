@@ -14,7 +14,7 @@ macro_go_left: macro_go_left{
 compatible = "zmk,behavior-macro";
 label = "macro_go_left";
 #binding-cells = <0>;
-bindings = <&sk LEFT_GUI>, <&sk LCTRL>, <&kp LEFT_ARROW>;
+bindings = <&sk LEFT_GUI>, <&macro left>;
 };
 macro_alt_tab: macro_alt_tab{
 compatible = "zmk,behavior-macro";
