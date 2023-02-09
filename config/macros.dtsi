@@ -8,7 +8,7 @@ macro_go_right: macro_go_right{
 compatible = "zmk,behavior-macro";
 label = "macro_go_right";
 #binding-cells = <0>;
-bindings = <&sk LGUI>, <&kp RCTRL>, <&kp RIGHT_ARROW>;
+bindings = <&macro_press &kp LWIN &kp LCTRL &kp RIGHT_ARROW>, <&macro_release &kp LWIN &kp LCTRL &kp RIGHT_ARROW>;
 };
 macro_go_left: macro_go_left{
 compatible = "zmk,behavior-macro";
