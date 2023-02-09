@@ -1,3 +1,21 @@
+macro_delete_word: macro_delete_word{
+compatible = "zmk,behavior-macro";
+label = "macro_delete_word";
+#binding-cells = <0>;
+bindings = <&kp RCTRL>, <&kp BACKSPACE>;
+};
+macro_go_right: macro_go_right{
+compatible = "zmk,behavior-macro";
+label = "macro_go_right";
+#binding-cells = <0>;
+bindings = <&kp LEFT_GUI>, <&kp RCTRL>, <&kp RIGHT_ARROW>;
+};
+macro_go_left: macro_go_left{
+compatible = "zmk,behavior-macro";
+label = "macro_go_left";
+#binding-cells = <0>;
+bindings = <&kp LEFT_GUI>, <&kp LCTRL>, <&kp LEFT_ARROW>;
+};
 macro_alt_tab: macro_alt_tab{
 compatible = "zmk,behavior-macro";
 label = "macro_alt_tab";
