@@ -57,6 +57,16 @@
           key-positions = <30 32>;
           bindings = <&kp TAB>;
       };
+      escr {
+          timeout-ms = <50>;
+          key-positions = <29 32>;
+          bindings = <&kp ESC>;
+      };
+      eq {
+          timeout-ms = <50>;
+          key-positions = <44 41>;
+          bindings = <&kp EQUAL>;
+      };
     };
     behaviors {
       #include "macros.dtsi"
@@ -79,10 +89,11 @@
         default_layer {
             bindings = <
  &kp EQUAL     &kp N1    &kp N2    &kp N3     &kp N4     &kp N5                    &tog 1      &mo 3      &kp N6           &kp N7         &kp N8     &kp N9     &kp N0  &kp MINUS
-   &kp TAB      &kp Q     &kp W     &kp E      &kp R      &kp T                     &none      &none       &kp Y            &kp U          &kp I      &kp O      &kp P   &kp BSLH
-   &kp ESC      &kp A     &kp S     &kp D      &kp F      &kp G                    &trans  &kp LCTRL    &kp LALT                                   &kp LGUI  &kp RCTRL      &none     &kp H    &kp J        &kp K    &kp L  &kp SEMI    &kp SQT
- &kp LSHFT      &kp Z     &kp X     &kp C    &lt 1 V      &kp B                     &none      &none    &kp HOME            &none          &none  &kp PG_UP      &none      &none     &kp N  &lt 2 M  &lt 4 COMMA  &kp DOT  &kp FSLH  &kp RSHFT
-     &mo 2  &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT  &kp SPACE            &kp LEFT_SHIFT    &kp END  &kp RETURN  &kp RIGHT_SHIFT  &kp BACKSPACE     &kp UP   &kp DOWN   &kp LBKT  &kp RBKT    &mo 2
+ &kp TAB      &kp Q     &kp W     &kp E      &kp R      &kp T                     &none      &none       &kp Y            &kp U          &kp I      &kp O      &kp P   &kp BSLH
+ &kp ESC      &kp A     &kp S     &kp D      &kp F      &kp G                    &trans  &kp LCTRL    &kp LALT                                   &kp LGUI  &kp RCTRL      &none     &kp H    &kp J        &kp K    &kp L  &kp SEMI    &kp SQT
+ &none      &kp Z     &kp X     &kp C    &lt 1 V      &kp B                     &none      &none    &kp HOME            &none          &none  &kp PG_UP      &none      &none     &kp N  &lt 2 M  &lt 4 COMMA  &kp DOT  &kp FSLH  &none
+ &none          &none     &none     &none  &none        &kp SPACE            &kp LEFT_SHIFT    &kp END  &kp RETURN  &kp RIGHT_SHIFT  &kp BACKSPACE     &none   &none   &none  &none    &none
+
             >;
         };
 
