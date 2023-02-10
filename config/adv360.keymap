@@ -20,6 +20,8 @@
       };
     };
 
+        //&kp LA(F4) &kp LG(LC(N1)) &kp LG(LC(N2)) &kp LG(LC(N3)) &kp LG(LC(N4)) &kp LG(LC(N5))    &kp KP_NUMLOCK                                      &trans     &kp LG(LC(N6))    &kp LG(LC(N7))    &kp LG(LC(N8))    &kp LG(LC(N9))    &DESK_VW   &trans     
+        //&kp GRAVE  &kp N1     &kp N2     &kp N3     &kp N4     &kp N5     &kp F5                                                          &trans     &kp N6     &kp N7     &kp N8     &kp N9     &kp N0     &trans
   keymap {
     compatible = "zmk,keymap";
 
@@ -35,10 +37,10 @@
     fn {
       bindings = <
         &kp F1     &kp F2     &kp F3     &kp F4     &kp F5     &kp F6     &bootloader                                                     &bootloader&kp F7     &kp F8     &kp F9     &kp F10    &kp F11    &kp F12 
-        &RDC_X     &ditto     &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp PSCRN  &to 4                                                           &DSK_UP    &kp EQUAL  &kp N7     &kp N8     &kp N9     &kp MINUS  &trans     
-        &trans     &kp LG(UP) &kp LG(DOWN)&kp LG(LEFT)&kp LG(RIGHT)&T_ADD &to 3        &trans     &trans      &rgb_ug RGB_TOG&trans       &DSK_DN    &kp SLASH  &kp N4     &kp N5     &kp N6     &kp PLUS   &trans     
-        &trans     &kp LC(Z)  &kp LC(Y)  &kp LC(A)  &kp LC(K)  &T_OPEN                 &_&_       &bt BT_CLR &_ &_&bl BL_TOG &_&_                    &none      &kp N1     &kp N2     &kp N3     &kp EQUAL  &trans     
-        &trans     &trans     &trans     &trans     &trans                &trans       &trans     &trans          &trans     &trans       &trans                &trans     &trans     &kp N0     &trans     &trans     
+        &kp LA(ESC)&ditto     &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp PSCRN  &to 4                                                           &DSK_UP    &kp EQUAL  &kp N7     &kp N8     &kp N9     &kp MINUS  &trans
+        &trans     &kp LG(UP) &kp LG(DOWN)&kp LG(LEFT)&kp LG(RIGHT)&kp LG(Z) &to 3     &trans     &RDC_X          &rgb_ug RGB_TOG&trans       &DSK_DN    &kp SLASH  &kp N4     &kp N5     &kp N6     &kp PLUS   &trans     
+        &trans     &kp LC(Z)  &kp LC(Y)  &kp LC(A)  &kp LC(K)  &T_OPEN                 &_&_       &trans &_ &_&bl BL_TOG &_&_                    &none      &kp N1     &kp N2     &kp N3     &kp EQUAL  &trans     
+        &trans     &trans     &trans     &trans     &trans                &trans       &mo5       &trans          &trans     &trans       &trans                &trans     &trans     &kp N0     &trans     &trans     
       >;
     };
     symbol {
@@ -63,9 +65,18 @@
       bindings = <
         &trans     &trans     &trans     &trans     &trans     &trans     &trans                                                          &trans     &trans     &trans     &trans     &trans     &trans     &trans     
         &trans     &trans     &trans     &trans     &trans     &trans     &trans                                                          &trans     &trans     &trans     &trans     &trans     &trans     &trans     
-        &trans     &trans     &trans     &trans     &trans     &trans     &trans       &trans     &trans          &trans     &trans       &trans     &trans     &trans     &trans     &trans     &trans     &trans
+        &trans     &trans     &trans     &trans     &trans     &trans     &trans       &trans     &trans          &bt BT_CLR &trans       &trans     &trans     &trans     &trans     &trans     &trans     &trans
         &trans     &trans     &trans     &trans     &trans     &trans                  &_&_       &kp BSPC   &_ &_&kp BSPC   &_&_                    &trans     &trans     &trans     &trans     &trans     &trans
         &trans     &trans     &trans     &trans     &trans                &kp LSHIFT   &kp LALT   &to 0           &trans     &trans       &trans                &trans     &trans     &trans     &trans     &trans     
+      >;
+    };
+    fkeys {
+      bindings = <
+        &trans     &trans     &trans     &trans     &trans     &trans     &trans                                                          &trans     &trans     &kp F10    &kp F11    &kp F12    &trans     &trans
+        &trans     &trans     &trans     &trans     &trans     &trans     &trans                                                          &trans     &trans     &kp F7     &kp F8     &kp F9     &trans     &trans     
+        &trans     &trans     &trans     &trans     &trans     &trans     &trans       &trans     &trans          &trans     &trans       &trans     &trans     &kp F4     &kp F5     &kp F6     &trans     &trans     
+        &trans     &trans     &trans     &trans     &trans     &trans                  &_&_       &trans    &_ &_&trans      &_&_                    &trans     &kp F1     &kp F2     &kp F3     &trans     &trans     
+        &trans     &trans     &trans     &trans     &trans                &trans       &trans     &trans          &trans     &trans       &trans                 &trans     &trans     &trans     &trans     &trans     
       >;
     };
     };
