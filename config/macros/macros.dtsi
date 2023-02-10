@@ -65,3 +65,22 @@ ZMK_MACRO(AT_TOG,
         ;
         )
 
+ZMK_MACRO(AT_QCK,
+        wait-ms = <0>;
+        tap-ms = <0>;
+        bindings
+        = <&macro_press &kp LALT>
+        , <&macro_tap &kp ESC>
+        , <&macro_release &kp LALT>
+        ;
+        )
+
+ZMK_MACRO(AF4,
+        wait-ms = <0>;
+        tap-ms = <0>;
+        bindings
+        = <&macro_press &kp LALT>
+        , <&macro_tap &kp F4>
+        , <&macro_release &kp LALT>
+        ;
+        )
