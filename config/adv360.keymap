@@ -90,8 +90,8 @@
             bindings = <
  &kp EQUAL     &kp N1    &kp N2    &kp N3     &kp N4     &kp N5                    &tog 1      &mo 3      &kp N6           &kp N7         &kp N8     &kp N9     &kp N0  &kp MINUS
  &kp TAB      &kp Q     &kp W     &kp E      &kp R      &kp T                     &none      &none       &kp Y            &kp U          &kp I      &kp O      &kp P   &kp BSLH
- &kp ESC      &kp A     &kp S     &kp D      &kp F      &kp G                    &trans  &kp LCTRL    &kp LALT                                   &kp LGUI  &kp RCTRL      &none     &kp H    &kp J        &kp K    &kp L  &kp SEMI    &kp SQT
- &none      &kp Z     &kp X     &kp C    &lt 1 V      &kp B                     &none      &none    &kp HOME            &none          &none  &kp PG_UP      &none      &none     &kp N  &lt 2 M  &lt 4 COMMA  &kp DOT  &kp FSLH  &none
+ &none      &kp A     &kp S     &kp D      &kp F      &kp G                    &trans  &kp LCTRL    &kp LALT                                   &kp LGUI  &kp RCTRL      &none     &kp H    &kp J        &kp K    &kp L  &kp SEMI    &kp SQT
+ &none      &kp Z     &kp X     &lt 5 C    &lt 1 V      &kp B                     &none      &none    &kp HOME            &none          &none  &kp PG_UP      &none      &none     &kp N  &lt 2 M  &lt 4 COMMA  &kp DOT  &kp FSLH  &none
  &none          &none     &none     &none  &none        &kp SPACE            &kp LEFT_SHIFT    &kp END  &kp RETURN  &kp RIGHT_SHIFT  &kp BACKSPACE     &none   &none   &none  &none    &none
 
             >;
@@ -137,5 +137,14 @@
             >;
         };
 
+        layer_angulars {
+            bindings = <
+        &kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp F6  &trans                                                     &trans &kp F7 &kp F8 &kp F9 &kp F10 &kp F11 &kp F12
+        &trans &trans &trans &trans &trans &trans  &none                                                       &none &trans &trans &trans &trans  &trans  &trans
+        &trans &trans &trans &trans &trans &trans  &none        &trans &trans             &trans &trans        &none &trans &kp EQUAL &kp GT &trans  &trans  &trans
+        &trans &trans &trans &trans &trans &trans        &none  &none  &trans &none &none &trans &none  &none        &trans &kp LT    &kp GT &trans  &trans  &trans
+        &trans &trans &trans &trans &trans               &trans &trans &trans             &trans &trans &trans              &trans &trans &trans  &trans  &trans
+            >;
+        };
     };
 };
