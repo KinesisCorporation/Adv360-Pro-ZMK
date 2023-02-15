@@ -112,7 +112,7 @@
  &kp F1          &kp F2             &kp F3                &kp F4                 &kp F5         &kp F6            &tog 1   &mo 3  &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
  &trans  &kp UNDERSCORE  &kp DOUBLE_QUOTES        &kp LEFT_BRACE        &kp RIGHT_BRACE       &kp PIPE             &none   &none  &trans  &trans  &trans   &trans   &trans   &trans
  &trans       &kp MINUS   &kp SINGLE_QUOTE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSLASH             &none  &trans  &trans                   &trans   &trans    &none  &trans  &trans  &trans  &trans  &trans  &trans
- &trans       &kp TILDE          &kp GRAVE      &kp LEFT_BRACKET      &kp RIGHT_BRACKET       &kp PLUS             &none   &none  &trans   &none   &none   &trans    &none    &none  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans       &kp TILDE          &kp GRAVE      &kp LEFT_BRACKET      &kp RIGHT_BRACKET       &kp PLUS             &none   &none  &trans   &none   &none   &trans    &none    &none  &trans  &trans  &kp LEFT_COMMAND  &kp LALT  &kp LCTRL  &kp LSHFT
  &trans          &trans             &trans                &trans                 &trans         &trans            &trans  &trans  &trans  &trans  &trans   &trans   &trans   &trans  &trans  &trans
             >;
         };
@@ -141,8 +141,8 @@
             bindings = <
         &kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp F6  &trans                                                     &trans &kp F7 &kp F8 &kp F9 &kp F10 &kp F11 &kp F12
         &trans &trans &trans &trans &trans &trans  &none                                                       &none &trans &trans &trans &trans  &trans  &trans
-        &trans &trans &trans &trans &trans &trans  &none        &trans &trans             &trans &trans        &none &trans &kp EQUAL &kp GT &trans  &trans  &trans
-        &trans &trans &trans &trans &trans &trans        &none  &none  &trans &none &none &trans &none  &none        &trans &kp LT    &kp GT &trans  &trans  &trans
+        &trans &trans &trans &trans &trans &trans  &none        &trans &trans             &trans &trans        &none &trans &kp EQUAL &kp GT &kp COLON  &trans  &trans
+        &trans &trans &trans &trans &trans &trans        &none  &none  &trans &none &none &trans &none  &none        &trans &kp LT    &kp GT &kp SLASH  &trans  &trans
         &trans &trans &trans &trans &trans               &trans &trans &trans             &trans &trans &trans              &trans &trans &trans  &trans  &trans
             >;
         };
