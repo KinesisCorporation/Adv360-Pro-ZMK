@@ -33,15 +33,17 @@
     };
 
     /**
-      * Base layer (kp) on Hold, Toggle layer on tap
+      * Base layer (kp) on Hold, Momentary Toggle layer on tap
+      * i.e. I want to activate the function layer say on tap of Shift & then can easily do Shift+F6 without having to
+      * hold function layer key and then press Shift+F6
       */
-    kp_tog: behavior_kp_tog {
+    kp_mo: behavior_kp_mo {
         compatible = "zmk,behavior-hold-tap";
-        label = "kp_tog";
+        label = "kp_mo";
         #binding-cells = <2>;
         flavor = "hold-preferred";
         tapping-term-ms = <200>;
-        bindings = <&kp>, <&tog>;
+        bindings = <&kp>, <&mo>;
     };
     mo_tog: behavior_mo_tog {
         compatible = "zmk,behavior-hold-tap";
