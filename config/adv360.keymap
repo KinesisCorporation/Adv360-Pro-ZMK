@@ -43,7 +43,7 @@
         #binding-cells = <2>;
         flavor = "hold-preferred";
         tapping-term-ms = <200>;
-        bindings = <&kp>, <&mo>;
+        bindings = <&kp>, <&sl>;
     };
     mo_tog: behavior_mo_tog {
         compatible = "zmk,behavior-hold-tap";
