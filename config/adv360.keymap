@@ -10,11 +10,11 @@
 #define W_RGT &kp LG(RIGHT)
 
 #define BASE 0
-#define RED 1
-#define SYMB 2
 #define QWRT 3
 #define GAME 4
-#define FKEYS 5
+#define RED 5
+#define SYMB 6
+#define FKEYS 7
 
 #define RGBTGL &rgb_ug RGB_TOG
 #define BTTGL &bl BL_TOG
@@ -49,24 +49,27 @@
         &kp LCTRL  &kp UP     &kp DOWN   &kp LBKT   &kp N9                &kp SPACE    &kp BSPC   &mo RED           &kp END  &mo SYMB     &mo RED               &kp N0   &kp RBKT   &kp LEFT   &kp RIGHT    &kp K_APP
       >;
     };
-    fn {
+
+    qwerty2 {
       bindings = <
-        &kp F1     &kp F2     &kp F3     &kp F4     &kp F5     &kp F6     &bootloader                                                     &bootloader&kp F7     &kp F8     &kp F9     &kp F10    &kp F11    &kp F12 
-        &trans     &ditto     &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp PSCRN  &T_ADD                                                          &DSK_UP    &kp EQUAL  &kp N7     &kp N8     &kp N9     &kp MINUS  &trans
-        &AF4       W_UP       W_DWN      W_LFT      W_RGT      &kp LG(Z)  &T_OPEN      &trans     &RDC_X          RGBTGL     &trans       &DSK_DN    &kp SLASH  &kp N4     &kp N5     &kp N6     &kp PLUS   &trans     
-        &trans     &kp LC(Z)  &kp LC(Y)  &kp LC(A)  &kp LC(K)  &T_OPEN                 &_&_       &trans &_ &_    BTTGL &_&_                         &none      &kp N1     &kp N2     &kp N3     &kp EQUAL  &trans     
-        &trans     &trans     &trans     &trans     &trans                &trans       &mo FKEYS  &trans          &trans     &trans       &trans                &trans     &trans     &kp N0     &trans     &trans     
+        &trans     &trans     &trans     &trans     &trans     &trans     &trans                                                          &trans     &trans     &trans     &trans     &trans     &trans     &trans     
+        &kp TAB    &kp Q      &kp W      &kp E      &kp R      &kp T      &trans                                                          &trans     &kp Y      &kp U      &kp I      &kp O      &kp P      &kp BSLH
+        &kp ESC    &kp A      &kp S      &kp D      &kp F      &kp G      &to BASE     &trans     &trans          &trans     &trans       &trans     &kp H      &kp J      &kp K      &kp L      &kp SEMI   &kp SQT
+        &kp LSHFT  &kp Z      &kp X      &kp C      &kp V      &kp B                   &_&_       &trans     &_ &_&trans     &_&_                    &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH   &kp RSHFT
+        &trans     &trans     &trans     &trans     &trans                &trans       &trans     &trans          &trans     &trans       &trans                &trans     &trans     &trans     &trans     &trans    
       >;
     };
-    symbol {
+
+    qwerty3 {
       bindings = <
-        &AT_TOG    &DESK_A    &DESK_B    &DESK_C    &DESK_D    &DESK_E    &trans                                                          &trans     &DESK_F    &DESK_G    &DESK_H    &DESK_I    &DESK_VW   &trans     
-        &AT_QCK    &kp EXCL   &kp AT     &kp HASH   &kp DLLR   &kp PRCNT  &to GAME                                                        &trans     &kp CARET  &kp AMPS   &kp STAR   &kp LPAR   &kp RPAR   &trans     
-        &AF4       &kp LBKT   &kp SEMI   &kp LBRC   &kp LPAR   &kp GRAVE  &to QWRT     &trans     &trans          &trans     &trans       &trans     &kp TILDE  &kp RPAR   &kp RBRC   &kp COLON  &kp RBKT   &trans     
-        &trans     &trans     &kp MINUS  &kp BSLH   &kp EQUAL  &trans                  &_&_       &trans     &_ &_&trans     &_&_                    &trans     &kp PLUS   &kp PIPE   &kp UNDER  &trans     &trans     
-        &trans     &trans     &trans     &trans     &trans                &trans       &trans     &trans          &trans     &trans       &trans                &trans     &trans     &trans     &trans     &trans     
+        &trans     &trans     &trans     &trans     &trans     &trans     &trans                                                          &trans     &trans     &trans     &trans     &trans     &trans     &trans     
+        &kp TAB    &kp Q      &kp W      &kp E      &kp R      &kp T      &trans                                                          &trans     &kp Y      &kp U      &kp I      &kp O      &kp P      &kp BSLH
+        &kp ESC    &kp A      &kp S      &kp D      &kp F      &kp G      &to BASE     &trans     &trans          &trans     &trans       &trans     &kp H      &kp J      &kp K      &kp L      &kp SEMI   &kp SQT
+        &kp LSHFT  &kp Z      &kp X      &kp C      &kp V      &kp B                   &_&_       &trans     &_ &_&trans     &_&_                    &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH   &kp RSHFT
+        &trans     &trans     &trans     &trans     &trans                &trans       &trans     &trans          &trans     &trans       &trans                &trans     &trans     &trans     &trans     &trans    
       >;
     };
+
     qwerty {
       bindings = <
         &trans     &trans     &trans     &trans     &trans     &trans     &trans                                                          &trans     &trans     &trans     &trans     &trans     &trans     &trans     
@@ -85,6 +88,25 @@
         &trans     &trans     &trans     &trans     &trans                &kp LSHIFT   &kp LALT   &to BASE        &trans     &trans       &trans                &trans     &trans     &trans     &trans     &trans     
       >;
     };
+    fn {
+      bindings = <
+        &kp F1     &kp F2     &kp F3     &kp F4     &kp F5     &kp F6     &bootloader                                                     &bootloader&kp F7     &kp F8     &kp F9     &kp F10    &kp F11    &kp F12 
+        &trans     &ditto     &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp PSCRN  &T_ADD                                                          &DSK_UP    &kp EQUAL  &kp N7     &kp N8     &kp N9     &kp MINUS  &trans
+        &AF4       W_UP       W_DWN      W_LFT      W_RGT      &kp LG(Z)  &T_OPEN      &trans     &RDC_X          RGBTGL     &trans       &DSK_DN    &kp SLASH  &kp N4     &kp N5     &kp N6     &kp PLUS   &trans     
+        &trans     &kp LC(Z)  &kp LC(Y)  &kp LC(A)  &kp LC(K)  &T_OPEN                 &_&_       &trans &_ &_    BTTGL &_&_                         &none      &kp N1     &kp N2     &kp N3     &kp EQUAL  &trans     
+        &trans     &trans     &trans     &trans     &trans                &trans       &mo FKEYS  &trans          &trans     &trans       &trans                &trans     &trans     &kp N0     &trans     &trans     
+      >;
+    };
+    symbol {
+      bindings = <
+        &AF4       &DESK_A    &DESK_B    &DESK_C    &DESK_D    &DESK_E    &trans                                                          &trans     &DESK_F    &DESK_G    &DESK_H    &DESK_I    &DESK_VW   &trans     
+        &AT_QCK    &kp EXCL   &kp AT     &kp HASH   &kp DLLR   &kp PRCNT  &to GAME                                                        &trans     &kp CARET  &kp AMPS   &kp STAR   &kp LPAR   &kp RPAR   &trans     
+        &trans     &kp LBKT   &kp SEMI   &kp LBRC   &kp LPAR   &kp GRAVE  &to QWRT     &trans     &trans          &trans     &trans       &trans     &kp TILDE  &kp RPAR   &kp RBRC   &kp COLON  &kp RBKT   &trans     
+        &trans     &trans     &kp MINUS  &kp BSLH   &kp EQUAL  &trans                  &_&_       &trans     &_ &_&trans     &_&_                    &trans     &kp PLUS   &kp PIPE   &kp UNDER  &trans     &trans     
+        &trans     &trans     &trans     &trans     &trans                &trans       &trans     &trans          &trans     &trans       &trans                &trans     &trans     &trans     &trans     &trans     
+      >;
+    };
+
     fkeys {
       bindings = <
         &trans     &trans     &trans     &trans     &trans     &trans     &trans                                                          &trans     &trans     &kp F10    &kp F11    &kp F12    &trans     &trans
