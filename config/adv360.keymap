@@ -43,7 +43,7 @@
      &caps_word   &kp Q      &kp W     &kp E      &kp R      &kp T            &kp RIGHT     &kp UP      &kp Y      &kp U     &kp I          &kp O      &kp P        &kp DEL
         &kp TAB   &kp A      &kp S     &kp D      &kp F      &kp G             &kp LEFT  &kp LCTRL   &kp LALT                       &kp RIGHT_ALT  &kp RCTRL       &kp DOWN   &kp H   &kp J      &kp K    &kp L  &kp SEMI          &kp SQT
  &kp LEFT_SHIFT   &kp Z      &kp X     &kp C      &kp V      &kp B                &none      &none   &kp HOME      &none     &none      &kp PG_UP      &none          &none   &kp N   &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RIGHT_SHIFT
-          &none   &mo 1  &kp GRAVE  &kp BSLH  &kp EQUAL  &kp SPACE              &kp ESC    &kp END  &kp PG_DN  &kp ENTER  &kp BSPC      &kp MINUS   &kp LBKT       &kp RBKT   &mo 1   &none
+          &mo 4   &mo 1  &kp GRAVE  &kp BSLH  &kp EQUAL  &kp SPACE              &kp ESC    &kp END  &kp PG_DN  &kp ENTER  &kp BSPC      &kp MINUS   &kp LBKT       &kp RBKT   &mo 1   &mo 4
             >;
         };
 
@@ -74,6 +74,16 @@
  &trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans                                             &trans           &trans      &trans        &trans  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6   &kp KP_PLUS   &none
  &trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans           &trans           &trans           &trans           &trans      &trans        &trans  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_ENTER   &none
  &trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans           &trans           &trans     &kp KP_COMMA  &kp KP_NUMBER_0  &kp KP_DOT  &kp KP_ENTER            &none
+            >;
+        };
+
+        layer_MISC {
+            bindings = <
+ &trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
