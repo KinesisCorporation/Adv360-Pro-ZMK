@@ -45,7 +45,7 @@
         bindings = <&kp>, <&kp>;
      };
 
-     as: auto_alt {
+     aa: auto_alt {
         compatible = "zmk,behavior-hold-tap";
         label = "AUTO_ALT";
         #binding-cells = <2>;
