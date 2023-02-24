@@ -19,6 +19,7 @@
 #include <dt-bindings/zmk/backlight.h>
 
 #define AS(keycode) &as LS(keycode) keycode     // Autoshift Macro
+#define AA(keycode) &aa LA(keycode) keycode     // AutoAlt Macro
 
 / {
   behaviors {
@@ -37,6 +38,16 @@
      as: auto_shift {
         compatible = "zmk,behavior-hold-tap";
         label = "AUTO_SHIFT";
+        #binding-cells = <2>;
+        tapping_term_ms = <135>;
+        quick_tap_ms = <0>;
+        flavor = "tap-preferred";
+        bindings = <&kp>, <&kp>;
+     };
+
+     as: auto_alt {
+        compatible = "zmk,behavior-hold-tap";
+        label = "AUTO_ALT";
         #binding-cells = <2>;
         tapping_term_ms = <135>;
         quick_tap_ms = <0>;
@@ -72,7 +83,7 @@
 
         layer_fn {
             bindings = <
- &kp F1     &kp F2  &kp F3  &kp F4  &kp F5  AS(F6)            &tog 1                                                   &mo 3  &kp F7        &kp F8             &kp F9    &kp F10  &kp F11  &kp F12
+ &kp F1     &kp F2  &kp F3  &kp F4  &kp F5  AS(F6)            &tog 1                                                   &mo 3  &kp F7        &kp F8             &kp F9    &kp F10  &kp F11   AA(F12)
  &trans     &trans  &trans  &trans  &trans  &trans             &none                                                   &none   &none     &kp RA(U)             &trans  &kp RA(O)   &trans   &trans
  &trans  &kp RA(A)  &trans  &trans  &trans  &trans             &none  &trans  &trans                  &trans  &trans   &none  &trans        &trans             &trans     &trans   &trans   &trans
  &trans     &trans  &trans  &trans  &trans  &trans             &none   &none  &trans   &none   &none  &trans   &none   &none  &trans        &trans             &trans     &trans   &trans   &trans
