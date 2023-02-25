@@ -102,7 +102,7 @@
         &kp F1     &kp F2     &kp F3     &kp F4     &kp F5     &kp F6     &bootloader                                                     &bootloader&kp F7     &kp F8     &kp F9     &kp F10    &kp F11    &kp F12 
         &AT_QCK    &kp EXCL   &kp AT     &kp HASH   &kp DLLR   &kp PRCNT  &trans                                                          &trans     &kp CARET  &kp AMPS   &kp STAR   &kp LPAR   &kp RPAR   &trans     
         &trans     &kp LBKT   &kp SEMI   &kp LBRC   &kp LPAR   &kp GRAVE  &trans       &trans     &trans          &trans     &trans       &trans     &kp TILDE  &kp RPAR   &kp RBRC   &kp COLON  &kp RBKT   &trans     
-        &trans     &trans     &kp MINUS  &kp BSLH   &kp EQUAL  &trans                  &_&_       &trans     &_ &_&trans     &_&_                    &trans     &kp PLUS   &kp PIPE   &kp UNDER  &trans     &trans     
+        &trans     &kp QMARK  &kp MINUS  &kp BSLH   &kp EQUAL  &kp LT                  &_&_       &trans     &_ &_&trans     &_&_                    &kp GT     &kp PLUS   &kp PIPE   &kp UNDER  &kp SLASH  &trans     
         &trans     &trans     &trans     &trans     &trans                &trans       &trans     &trans          &trans     &trans       &trans                &trans     &trans     &trans     &trans     &trans     
       >;
     };
