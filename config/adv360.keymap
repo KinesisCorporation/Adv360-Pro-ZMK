@@ -17,10 +17,29 @@
           compatible = "zmk,behavior-hold-tap";
           label = "HOMEROW_MODS";
           #binding-cells = <2>;
-          tapping-term-ms = <200>;
-          quick_tap_ms = <175>;
+          tapping-term-ms = <250>;
+          quick_tap_ms = <150>;
           flavor = "tap-preferred";
           bindings = <&kp>, <&kp>;
+      };
+
+      am: alpha_mods {
+        compatible = "zmk,behavior-hold-tap";
+        label = "ALPHA_MT";
+        #binding-cells = <2>;
+        tapping-term-ms = <250>;
+        quick-tap-ms = <150>;
+        flavor = "tap-preferred";
+        bindings = <&kp>, <&kp>;
+      };
+      as: alpha_shift {
+        compatible = "zmk,behavior-hold-tap";
+        label = "ALPHA_SFT";
+        #binding-cells = <2>;
+        tapping-term-ms = <200>;
+        quick-tap-ms = <150>;
+        flavor = "tap-preferred";
+        bindings = <&kp>, <&kp>;
       };
     };
 
@@ -29,11 +48,11 @@
 
     default_layer {
       bindings = <
-        &kp EQUAL     &kp N1    &kp N2   &kp N3   &kp N4     &kp N5 &tog 1                                                                       &mo 3 &kp N6 &kp N7   &kp N8    &kp N9   &kp N0   &kp MINUS
-        &kp TAB       &kp Q     &kp W    &kp F    &kp P      &kp B  &none                                                                        &none &kp J  &kp L    &kp U     &kp Y    &kp SEMI &kp BSLH
-        &mt LCTRL ESC &kp A     &kp R    &kp S    &kp T      &kp G  &none           &kp LCTRL &kp LALT             &kp LGUI  &kp RCTRL           &none &kp M  &kp N    &kp E     &kp I    &kp O    &mt RCTRL SQT
-        &kp LSHFT     &kp Z     &kp X    &kp C    &kp D      &kp V         &none    &none     &kp HOME &none &none &kp PG_UP &none     &none           &kp K  &kp H    &kp COMMA &kp DOT  &kp FSLH &kp RSHFT
-        &mo 2         &kp GRAVE &kp CAPS &kp DOWN &kp UP                   &kp BSPC &kp DEL   &kp END              &kp PG_DN &kp ENTER &kp SPACE              &kp LBKT &kp RBKT  &kp UP   &kp DOWN &mo 2
+        &kp EQUAL      &kp N1       &kp N2      &kp N3     &kp N4      &kp N5   &tog 1                                                                   &mo 3 &kp N6   &kp N7       &kp N8      &kp N9      &kp N0       &kp MINUS
+        &kp TAB        &kp Q        &kp W       &kp F      &kp P       &kp B    &none                                                                    &none &kp J    &kp L        &kp U       &kp Y       &kp SEMI     &kp BSLH
+        &mt LCTRL ESC  &am LCTRL A  &am LALT R  &am LGUI S &as LSHFT T &lt 2 G  &none           &kp LGUI  &kp LALT             &kp LALT  &kp RGUI          &none &lt 2 M  &as RSHFT N  &am RGUI E  &am RALT I  &am RCTRL O  &mt RCTRL SQT
+        &kp LSHFT      &kp Z        &kp X       &kp C      &kp D       &kp V           &none    &none     &kp HOME &none &none &kp PG_UP &none     &none         &kp K    &kp H        &kp COMMA   &kp DOT     &kp FSLH     &kp RSHFT
+        &mo 2          &kp GRAVE    &kp CAPS    &kp DOWN   &kp UP                  &lt 2 SPACE  &mo 2     &kp END              &kp PG_DN &kp ENTER &kp BSPC               &kp LBKT     &kp RBKT    &kp LEFT    &kp RIGHT    &mo 2
       >;
     };
     keypad {
@@ -47,11 +66,11 @@
     };
     fn {
       bindings = <
-        &kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp F6 &tog 1                                                       &mo 3 &kp F7 &kp F8 &kp F9 &kp F10 &kp F11 &kp F12
-        &trans &trans &trans &trans &trans &trans  &none                                                       &none &trans &trans &trans &trans  &trans  &trans
-        &trans &trans &trans &trans &trans &trans  &none        &trans &trans             &trans &trans        &none &trans &trans &trans &trans  &trans  &trans
-        &trans &trans &trans &trans &trans &trans        &none  &none  &trans &none &none &trans &none  &none        &trans &trans &trans &trans  &trans  &trans
-        &trans &trans &trans &trans &trans               &trans &trans &trans             &trans &trans &trans              &trans &trans &trans  &trans  &trans
+        &kp F1 &kp F2   &kp F3     &kp F4   &kp F5   &kp F6  &tog 1                                                      &mo 3 &kp F7    &kp F8   &kp F9 &kp F10   &kp F11 &kp F12
+        &trans &kp EXCL &kp AT     &kp LBRC &kp RBRC &trans  &none                                                       &none &trans    &trans   &trans &trans    &trans  &trans
+        &trans &kp AMPS &kp DOLLAR &kp LPAR &kp RPAR &trans  &none        &trans &trans             &trans &trans        &none &kp LEFT  &kp DOWN &kp UP &kp RIGHT &trans  &trans
+        &trans &kp HASH &kp CARET  &kp LBKT &kp RBKT &trans        &none  &none  &trans &none &none &trans &none  &none        &kp EQUAL &kp LT   &trans &trans    &trans  &trans
+        &trans &trans   &trans     &trans   &trans                &trans  &trans &trans             &trans &trans &trans                 &trans   &trans &trans    &trans  &trans
       >;
     };
     mod {
