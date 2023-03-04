@@ -15,13 +15,8 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
-#include <dt-bindings/zmk/backlight.h>
 #include <dt-bindings/zmk/rgb.h>
-
-&sk {
-    release-after-ms = <250>;
-    quick-release;
-};
+#include <dt-bindings/zmk/backlight.h>
 
 / {
   behaviors {
