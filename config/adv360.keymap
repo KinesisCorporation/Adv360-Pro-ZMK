@@ -119,7 +119,7 @@
             bindings = <
  &trans           &trans         &trans                 &trans             &trans           &trans  &trans                                                                                      &trans  &trans             &trans         &trans           &trans             &trans  &trans
  &trans  &kp EXCLAMATION    &kp AT_SIGN               &kp HASH         &kp DOLLAR      &kp PERCENT  &trans                                                                                      &trans  &trans             &trans         &trans           &trans             &trans  &trans
- &trans            &none  &kp BACKSLASH   &kp LEFT_PARENTHESIS   &kp LEFT_BRACKET   &kp LEFT_BRACE  &trans                  &trans   &trans                     &trans  &trans                  &trans  &trans  &kp RIGHT_CONTROL  &kp RIGHT_ALT  &kp RIGHT_SHIFT           &kp RGUI  &trans
+ &trans          &kp TAB  &kp BACKSLASH   &kp LEFT_PARENTHESIS   &kp LEFT_BRACKET   &kp LEFT_BRACE  &trans                  &trans   &trans                     &trans  &trans                  &trans  &trans  &kp RIGHT_CONTROL  &kp RIGHT_ALT  &kp RIGHT_SHIFT           &kp RGUI  &trans
  &trans        &kp GRAVE       &kp SEMI  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp RIGHT_BRACE                 &trans   &trans   &trans  &trans     &trans  &trans  &trans  &trans                  &trans             &trans         &trans           &trans             &trans  &trans
  &trans           &trans         &trans                 &trans             &trans                           &kp BACKSPACE  &kp DEL  &kp TAB                     &trans  &trans  &trans                                     &trans         &trans           &trans             &trans  &trans
             >;
