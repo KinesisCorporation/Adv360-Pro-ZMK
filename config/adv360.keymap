@@ -8,62 +8,62 @@
     combos {
       compatible = "zmk,combos";
       lctrl {
-          timeout-ms = <50>;
+          timeout-ms = <40>;
           key-positions = <29 30>;
           bindings = <&kp LCTRL>;
       };
       lalt {
-          timeout-ms = <50>;
+          timeout-ms = <40>;
           key-positions = <30 31>;
           bindings = <&kp LALT>;
       };
       lcmd {
-          timeout-ms = <50>;
+          timeout-ms = <40>;
           key-positions = <31 32>;
           bindings = <&kp LEFT_COMMAND>;
       };
       laltcmd {
-          timeout-ms = <50>;
+          timeout-ms = <40>;
           key-positions = <30 31 32>;
           bindings = <&kp LA(LEFT_COMMAND)>;
       };
       lctrlcmd {
-          timeout-ms = <50>;
+          timeout-ms = <40>;
           key-positions = <29 31 32>;
           bindings = <&kp LC(LEFT_COMMAND)>;
       };
       rctrl {
-          timeout-ms = <50>;
+          timeout-ms = <40>;
           key-positions = <44 43>;
           bindings = <&kp RCTRL>;
       };
       ralt {
-          timeout-ms = <50>;
+          timeout-ms = <40>;
           key-positions = <43 42>;
           bindings = <&kp RALT>;
       };
       rcmd {
-          timeout-ms = <50>;
+          timeout-ms = <40>;
           key-positions = <42 41>;
           bindings = <&kp RIGHT_COMMAND>;
       };
       creturn {
-          timeout-ms = <50>;
+          timeout-ms = <40>;
           key-positions = <41 43>;
           bindings = <&kp RETURN>;
       };
       ctab {
-          timeout-ms = <50>;
+          timeout-ms = <40>;
           key-positions = <30 32>;
           bindings = <&kp TAB>;
       };
       escr {
-          timeout-ms = <50>;
+          timeout-ms = <40>;
           key-positions = <29 32>;
           bindings = <&kp ESC>;
       };
       eq {
-          timeout-ms = <50>;
+          timeout-ms = <40>;
           key-positions = <44 41>;
           bindings = <&kp EQUAL>;
       };
@@ -75,8 +75,8 @@
           compatible = "zmk,behavior-hold-tap";
           label = "HOMEROW_MODS";
           #binding-cells = <2>;
-          tapping-term-ms = <200>;
-          quick_tap_ms = <175>;
+          tapping-term-ms = <175>;
+          quick_tap_ms = <150>;
           flavor = "tap-preferred";
           bindings = <&kp>, <&kp>;
       };
@@ -103,7 +103,7 @@
    &kp TAB      &kp Q         &kp W             &kp E      &kp R     &kp T              &none      &none      &kp Y   &kp N7     &kp N8      &kp N9     &kp N0    &kp BSLH
    &kp ESC      &kp A         &kp S             &kp D      &kp F     &kp G              &none  &kp LCTRL   &kp LALT                                 &kp LGUI        &kp RCTRL       &none     &kp H  &kp N4  &kp N5  &kp N6   &kp KP_PLUS    &kp SQT
  &kp LSHFT  &kp LCTRL  &kp LEFT_ALT  &kp LEFT_COMMAND      &kp V     &kp B              &none      &none   &kp HOME       &none         &none      &kp PG_UP            &none       &none     &kp N  &kp N1  &kp N2  &kp N3  &kp KP_ENTER  &kp RSHFT
-     &mo 2  &kp GRAVE      &kp CAPS          &kp LEFT  &kp RIGHT  &kp BSPC            &kp DEL    &kp END  &kp PG_DN   &kp ENTER     &kp KP_N0         &kp UP         &kp DOWN  &kp KP_DOT  &kp RBKT      &mo 2
+     &mo 2  &kp GRAVE      &kp CAPS          &kp LEFT  &kp RIGHT  &kp SPACE            &kp DEL    &kp END  &kp PG_DN   &kp ENTER     &kp KP_N0         &kp UP         &kp DOWN  &kp KP_DOT  &kp RBKT      &mo 2
             >;
         };
 
