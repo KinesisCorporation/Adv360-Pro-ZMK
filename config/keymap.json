@@ -8,15 +8,16 @@
     "FPS",
     "Arrow",
     "FN",
-    "Mod"
+    "Mod",
+    "Macros"
   ],
   "layers": [
     [
-           "&mo 4",      "&kp N1",   "&kp N2",   "&kp N3",   "&kp N4",   "&kp N5",                "&none",    "&none",    "&kp N6",    "&kp N7",    "&kp N8",    "&kp N9",   "&kp N0",    "&mo 5",
-       "&kp GRAVE",       "&kp Q",    "&kp W",    "&kp E",    "&kp R",    "&kp T",             "&kp LBKT", "&kp RBKT",     "&kp Y",     "&kp U",     "&kp I",     "&kp O",    "&kp P", "&kp BSLH",
-       "&lt 3 TAB",       "&kp A",    "&kp S",    "&kp D",    "&kp F",    "&kp G",             "&kp LPAR",  "&kp ESC",    "&tog 1",                              "&tog 2",  "&kp DEL", "&kp RPAR",    "&kp H",       "&kp J",     "&kp K",   "&kp L", "&kp SINGLE_QUOTE", "&lt 3 EQUAL",
-           "&none",       "&kp Z",    "&kp X",    "&kp C",    "&kp V",    "&kp B",                "&none",    "&none",  "&kp HOME",     "&none",     "&none", "&kp PG_UP",    "&none",    "&none",    "&kp N",       "&kp M", "&kp COMMA", "&kp DOT",         "&kp FSLH",       "&none",
-       "&kp LCTRL", "&kp LC(TAB)", "&kp LALT", "&kp LGUI", "&kp SEMI", "&kp BSPC",           "&sk LSHIFT",  "&kp END", "&kp PG_DN", "&kp ENTER", "&kp SPACE", "&kp MINUS", "&kp RGUI", "&kp LBKT", "&kp RBKT", "&kp C_SLEEP"
+                 "&mo 4",      "&kp N1",   "&kp N2",   "&kp N3",   "&kp N4",   "&kp N5",                "&none",    "&none",    "&kp N6",    "&kp N7",    "&kp N8",    "&kp N9",   "&kp N0",    "&mo 5",
+             "&kp GRAVE",       "&kp Q",    "&kp W",    "&kp E",    "&kp R",    "&kp T",             "&kp LBKT", "&kp RBKT",     "&kp Y",     "&kp U",     "&kp I",     "&kp O",    "&kp P", "&kp BSLH",
+             "&lt 3 TAB",       "&kp A",    "&kp S",    "&kp D",    "&kp F",    "&kp G",             "&kp LPAR",  "&kp ESC",    "&tog 1",                              "&tog 2",  "&kp DEL", "&kp RPAR",  "&kp H",       "&kp J",     "&kp K",   "&kp L", "&kp SINGLE_QUOTE", "&lt 3 EQUAL",
+       "&lt 6 undefined",       "&kp Z",    "&kp X",    "&kp C",    "&kp V",    "&kp B",                "&none",    "&none",  "&kp HOME",     "&none",     "&none", "&kp PG_UP",    "&none",    "&none",  "&kp N",       "&kp M", "&kp COMMA", "&kp DOT",         "&kp FSLH",       "&none",
+             "&kp LCTRL", "&kp LC(TAB)", "&kp LALT", "&kp LGUI", "&kp SEMI", "&kp BSPC",           "&sk LSHIFT",  "&kp END", "&kp PG_DN", "&kp ENTER", "&kp SPACE", "&kp MINUS", "&kp RGUI",    "&none",  "&none", "&kp C_SLEEP"
     ], [
          "&trans", "&trans", "&trans",    "&trans", "&trans", "&trans",           "&trans", "&trans", "&trans", "&trans", "&trans", "&trans",    "&trans", "&trans",
          "&trans", "&trans", "&trans",    "&trans", "&trans", "&trans",           "&trans", "&trans", "&trans", "&trans", "&trans", "&trans",    "&trans", "&trans",
@@ -47,6 +48,12 @@
         "&none",        "&none",        "&none",        "&none",        "&none",           "&none",           "&rgb_ug RGB_MEFS_CMD 5",  "&bt BT_CLR",             "&none",                                           "&bt BT_CLR",   "&bt BT_CLR", "&rgb_ug RGB_MEFS_CMD 5",  "&none",  "&none",  "&none",  "&none",  "&none",  "&none",
         "&none",        "&none",        "&none",        "&none",        "&none",           "&none",                            "&none",       "&none",             "&none",             "&none",           "&none",        "&none",        "&none",                  "&none",  "&none",  "&none",  "&none",  "&none",  "&none",  "&none",
         "&none",        "&none",        "&none",   "&bl BL_INC",   "&bl BL_DEC", "&rgb_ug RGB_TOG",                       "&bl BL_TOG",       "&none",             "&none",        "&bl BL_TOG", "&rgb_ug RGB_TOG",   "&bl BL_INC",   "&bl BL_DEC",                  "&none",  "&none",  "&none"
+    ], [
+       "&trans", "&macro_team_play", "&trans", "&trans", "&trans", "&trans",           "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans",
+       "&trans",           "&trans", "&trans", "&trans", "&trans", "&trans",           "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans",
+       "&trans",           "&trans", "&trans", "&trans", "&trans", "&trans",           "&trans", "&trans", "&trans",                     "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans",
+       "&trans",           "&trans", "&trans", "&trans", "&trans", "&trans",           "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans",
+       "&trans",           "&trans", "&trans", "&trans", "&trans", "&trans",           "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans"
     ]
   ]
 }

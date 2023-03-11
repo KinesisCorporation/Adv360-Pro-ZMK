@@ -1,3 +1,9 @@
+macro_team_play: macro_team_play{
+compatible = "zmk,behavior-macro";
+label = "macro_team_play";
+#binding-cells = <0>;
+bindings = <&kp LEFT_SHIFT>;
+};
 macro_mac_layout: macro_mac_layout{
 compatible = "zmk,behavior-macro";
 label = "macro_mac_layout";
