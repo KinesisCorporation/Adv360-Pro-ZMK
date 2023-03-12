@@ -181,11 +181,11 @@ acaret: at_caret {
     };
     vvitchkrvft {
       bindings = <
-        &ppipe    &pkp_n1     &lkp_n2   &lkp_n3  &lkp_n4    &akp_n5 &tog 4                                                                   &mo 3 &ekp_n6  &rkp_n7   &rkp_n8   &rkp_n9   &skp_n0   &eprcnt
-        &kp TAB   &kp Q       &kp W     &kp F    &kp P      &kp B  &none                                                                     &none &kp J    &kp L     &kp U     &kp Y     &kp SEMI  &bhash
-        &kp ESC   &kp A       &kp R     &kp S    &kp T      &kp G  &none           &kp LCTRL &kp LALT             &kp LGUI  &kp RCTRL        &none &kp M    &kp N     &kp E     &kp I     &kp O     &kp MINUS
-        &kp LSHFT &kp Z       &kp X     &kp C    &kp D      &kp V         &none    &none     &kp HOME &none &none &kp PG_UP &none     &none        &kp K    &kp H     &kp COMMA &kp DOT   &kp APOS  &kp RSHFT
-        &mo 2     &dgrave     &ggrave   &kp LEFT &kp RIGHT                &kp BSPC &kp DEL   &kp END              &kp PG_DN &kp ENTER &kp SPACE             &kp UP    &kp DOWN  &kp FSLH  &acaret   &mo 2
+        &ppipe    &pkp_n1     &lkp_n2   &lkp_n3  &lkp_n4    &akp_n5 &tog 4                                                     &mo 3          &ekp_n6  &rkp_n7  &rkp_n8   &rkp_n9   &skp_n0  &eprcnt
+        &kp TAB   &kp SEMI    &kp COMMA &kp DOT  &kp P      &kp Y   &none                                                      &macro_kinesis &kp F    &kp G    &kp C     &kp R     &kp L    &bhash
+        &kp ESC   &kp A       &kp O     &kp E    &kp U      &kp I   &none    &kp LCTRL &kp LALT                    &kp LGUI  &kp RCTRL  &none &kp D    &kp H    &kp T     &kp N     &kp S    &kp MINUS
+        &kp LSHFT &kp APOS    &kp Q     &kp J    &kp K      &kp X         &none     &none     &kp HOME &none &none &kp PG_UP &none     &none  &kp B    &kp M    &kp W     &kp V     &kp Z    &kp RSHFT
+        &mo 2     &dgrave     &ggrave   &kp LEFT &kp RIGHT                &kp BKSP  &kp DEL   &kp END              &kp PG_DN &kp ENTER &kp SPACE       &kp UP   &kp DOWN  &kp FSLH  &acaret  &mo 2
       >;
     };
   };
