@@ -33,7 +33,7 @@
    
     // various keys for Programmers Dvorak
 
-    MOD_MORPH(equal, AMPERSAND, PERCENTAGE)
+    MOD_MORPH(equal, AMPERSAND, PERCENT)
     
     MOD_MORPH(n1, LEFT_BRACKET, N7)
     MOD_MORPH(n2, LEFT_BRACE, N5)
