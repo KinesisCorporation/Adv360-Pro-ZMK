@@ -11,7 +11,16 @@
  * This file was generated automatically. You may or may not want to
  * edit it directly.
  */
-
+ 
+#define MOD_MORPH(NAME, KEY, MOD_KEY) \
+  mm_##NAME: mm_##NAME { \
+    compatible = "zmk,behavior-mod-morph"; \
+    label = #NAME; \
+    #binding-cells = <0>; \
+    bindings = <&kp KEY>, <&kp MOD_KEY>; \
+    mods = <(MOD_LSFT|MOD_RSFT)>; \
+  };
+  
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
@@ -21,6 +30,26 @@
 / {
   behaviors {
     #include "macros.dtsi"
+   
+    // various keys for Programmers Dvorak
+
+    MOD_MORPH(equal, AMPERSAND, PERCENTAGE)
+    
+    MOD_MORPH(n1, LEFT_BRACKET, N7)
+    MOD_MORPH(n2, LEFT_BRACE, N5)
+    MOD_MORPH(n3, RIGHT_BRACE, N3)
+    MOD_MORPH(n4, LEFT_PARENTHESIS, N1)
+    MOD_MORPH(n5, EQUAL, N9)
+    MOD_MORPH(n6, ASTERISK, N0)
+    MOD_MORPH(n7, RIGHT_PARENTHESIS, N2)
+    MOD_MORPH(n8, PLUS, N4)
+    MOD_MORPH(n9, RIGHT_BRACKET, N6)
+    MOD_MORPH(n0, EXCL, N8)
+    MOD_MORPH(minus, NON_US_HASH, GRAVE)
+
+    MOD_MORPH(grave, DOLLAR, TILDE)
+    MOD_MORPH(lbkt, AT_SIGN, CARET)
+    
 
     hm: homerow_mods {
         compatible = "zmk,behavior-hold-tap";
