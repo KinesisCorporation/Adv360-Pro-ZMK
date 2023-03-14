@@ -33,22 +33,22 @@
    
     // various keys for Programmers Dvorak
 
-    MOD_MORPH(equal, AMPERSAND, PERCENT)
+    MOD_MORPH(pdequal, AMPERSAND, PERCENT)
     
-    MOD_MORPH(n1, LEFT_BRACKET, N7)
-    MOD_MORPH(n2, LEFT_BRACE, N5)
-    MOD_MORPH(n3, RIGHT_BRACE, N3)
-    MOD_MORPH(n4, LEFT_PARENTHESIS, N1)
-    MOD_MORPH(n5, EQUAL, N9)
-    MOD_MORPH(n6, ASTERISK, N0)
-    MOD_MORPH(n7, RIGHT_PARENTHESIS, N2)
-    MOD_MORPH(n8, PLUS, N4)
-    MOD_MORPH(n9, RIGHT_BRACKET, N6)
-    MOD_MORPH(n0, EXCL, N8)
-    MOD_MORPH(minus, NON_US_HASH, GRAVE)
+    MOD_MORPH(pdn1, LEFT_BRACKET, N7)
+    MOD_MORPH(pdn2, LEFT_BRACE, N5)
+    MOD_MORPH(pdn3, RIGHT_BRACE, N3)
+    MOD_MORPH(pdn4, LEFT_PARENTHESIS, N1)
+    MOD_MORPH(pdn5, EQUAL, N9)
+    MOD_MORPH(pdn6, ASTERISK, N0)
+    MOD_MORPH(pdn7, RIGHT_PARENTHESIS, N2)
+    MOD_MORPH(pdn8, PLUS, N4)
+    MOD_MORPH(pdn9, RIGHT_BRACKET, N6)
+    MOD_MORPH(pdn0, EXCL, N8)
+    MOD_MORPH(pdminus, NON_US_HASH, GRAVE)
 
-    MOD_MORPH(grave, DOLLAR, TILDE)
-    MOD_MORPH(lbkt, AT_SIGN, CARET)
+    MOD_MORPH(pdgrave, DOLLAR, TILDE)
+    MOD_MORPH(pdlbkt, AT_SIGN, CARET)
     
 
     hm: homerow_mods {
@@ -68,11 +68,11 @@
 
         default_layer {
             bindings = <
- &kp AMPERSAND  &kp LEFT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LEFT_PARENTHESIS  &kp EQUAL                    &tog 1                                                                     &mo 3  &kp ASTERISK  &kp RIGHT_PARENTHESIS  &kp PLUS  &kp RIGHT_BRACKET  &kp EXCLAMATION   &kp HASH
-       &kp TAB     &kp SEMICOLON       &kp COMMA          &kp DOT                 &kp P      &kp Y                     &none                                                                     &none         &kp F                  &kp G     &kp C              &kp R            &kp L  &kp SLASH
-       &kp ESC             &kp A           &kp O            &kp E                 &kp U      &kp I                     &none      &kp LCTRL  &kp LALT   &none   &none   &kp LGUI  &kp RCTRL      &none         &kp D                  &kp H     &kp T              &kp N            &kp S  &kp MINUS
-    &kp DELETE  &kp SINGLE_QUOTE           &kp Q            &kp J                 &kp K      &kp X                     &none          &none  &kp HOME   &none   &none  &kp PG_UP      &none      &none         &kp B                  &kp M     &kp W              &kp V            &kp Z  &kp RSHFT
-         &mo 2        &kp DOLLAR        &kp CAPS         &kp LEFT             &kp RIGHT                       &kp LEFT_SHIFT  &kp BACKSPACE   &kp END                  &kp PG_DN  &kp ENTER  &kp SPACE                               &kp UP  &kp DOWN        &kp AT_SIGN    &kp BACKSLASH      &mo 2
+      &pdequal             &pdn1       &pdn2      &pdn3      &pdn4  &pdn5              &tog 1                                                                    &mo 3   &pdn6    &pdn7     &pdn8        &pdn9          &pdn0   &pdminus
+       &kp TAB     &kp SEMICOLON   &kp COMMA    &kp DOT      &kp P  &kp Y              &none                                                                     &none   &kp F    &kp G     &kp C        &kp R          &kp L  &kp SLASH
+       &kp ESC             &kp A       &kp O      &kp E      &kp U  &kp I              &none      &kp LCTRL  &kp LALT   &none   &none   &kp LGUI  &kp RCTRL      &none   &kp D    &kp H     &kp T        &kp N          &kp S  &kp MINUS
+    &kp DELETE  &kp SINGLE_QUOTE       &kp Q      &kp J      &kp K  &kp X              &none          &none  &kp HOME   &none   &none  &kp PG_UP      &none      &none   W&kp B   &kp M     &kp W        &kp V          &kp Z  &kp RSHFT
+         &mo 2          &pdgrave    &kp CAPS   &kp LEFT  &kp RIGHT            &kp LEFT_SHIFT  &kp BACKSPACE   &kp END                  &kp PG_DN  &kp ENTER  &kp SPACE           &kp UP  &kp DOWN      &pdlbkt  &kp BACKSLASH      &mo 2
             >;
         };
 
