@@ -68,7 +68,7 @@
 
         default_layer {
             bindings = <
-      &pdequal             &pdn1       &pdn2      &pdn3      &pdn4  &pdn5              &tog 1                                                                    &mo 3   &pdn6    &pdn7     &pdn8        &pdn9          &pdn0   &pdminus
+      &mm_pdequal             &pdn1       &pdn2      &pdn3      &pdn4  &pdn5              &tog 1                                                                    &mo 3   &pdn6    &pdn7     &pdn8        &pdn9          &pdn0   &pdminus
        &kp TAB     &kp SEMICOLON   &kp COMMA    &kp DOT      &kp P  &kp Y              &none                                                                     &none   &kp F    &kp G     &kp C        &kp R          &kp L  &kp SLASH
        &kp ESC             &kp A       &kp O      &kp E      &kp U  &kp I              &none      &kp LCTRL  &kp LALT   &none   &none   &kp LGUI  &kp RCTRL      &none   &kp D    &kp H     &kp T        &kp N          &kp S  &kp MINUS
     &kp DELETE  &kp SINGLE_QUOTE       &kp Q      &kp J      &kp K  &kp X              &none          &none  &kp HOME   &none   &none  &kp PG_UP      &none      &none   W&kp B   &kp M     &kp W        &kp V          &kp Z  &kp RSHFT
