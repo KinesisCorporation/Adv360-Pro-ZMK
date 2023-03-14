@@ -45,7 +45,7 @@
     MOD_MORPH(pdn8, PLUS, N4)
     MOD_MORPH(pdn9, RIGHT_BRACKET, N6)
     MOD_MORPH(pdn0, EXCL, N8)
-    MOD_MORPH(pdminus, NON_US_HASH, GRAVE)
+    MOD_MORPH(pdminus, HASH, GRAVE)
 
     MOD_MORPH(pdgrave, DOLLAR, TILDE)
     MOD_MORPH(pdlbkt, AT_SIGN, CARET)
