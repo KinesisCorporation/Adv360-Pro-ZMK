@@ -68,11 +68,11 @@
 
         default_layer {
             bindings = <
-      &mm_pdequal             &pdn1       &pdn2      &pdn3      &pdn4  &pdn5              &tog 1                                                                    &mo 3   &pdn6    &pdn7     &pdn8        &pdn9          &pdn0   &pdminus
-       &kp TAB     &kp SEMICOLON   &kp COMMA    &kp DOT      &kp P  &kp Y              &none                                                                     &none   &kp F    &kp G     &kp C        &kp R          &kp L  &kp SLASH
-       &kp ESC             &kp A       &kp O      &kp E      &kp U  &kp I              &none      &kp LCTRL  &kp LALT   &none   &none   &kp LGUI  &kp RCTRL      &none   &kp D    &kp H     &kp T        &kp N          &kp S  &kp MINUS
-    &kp DELETE  &kp SINGLE_QUOTE       &kp Q      &kp J      &kp K  &kp X              &none          &none  &kp HOME   &none   &none  &kp PG_UP      &none      &none   W&kp B   &kp M     &kp W        &kp V          &kp Z  &kp RSHFT
-         &mo 2          &pdgrave    &kp CAPS   &kp LEFT  &kp RIGHT            &kp LEFT_SHIFT  &kp BACKSPACE   &kp END                  &kp PG_DN  &kp ENTER  &kp SPACE           &kp UP  &kp DOWN      &pdlbkt  &kp BACKSLASH      &mo 2
+   &mm_pdequal          &mm_pdn1    &mm_pdn2   &mm_pdn3   &mm_pdn4  &mm_pdn5              &tog 1                                                                    &mo 3 &mm_pdn6 &mm_pdn7  &mm_pdn8     &mm_pdn9       &mm_pdn0  &mm_pdminus
+       &kp TAB     &kp SEMICOLON   &kp COMMA    &kp DOT      &kp P     &kp Y              &none                                                                     &none    &kp F    &kp G     &kp C        &kp R          &kp L    &kp SLASH
+       &kp ESC             &kp A       &kp O      &kp E      &kp U     &kp I              &none      &kp LCTRL  &kp LALT   &none   &none   &kp LGUI  &kp RCTRL      &none    &kp D    &kp H     &kp T        &kp N          &kp S    &kp MINUS
+    &kp DELETE  &kp SINGLE_QUOTE       &kp Q      &kp J      &kp K     &kp X              &none          &none  &kp HOME   &none   &none  &kp PG_UP      &none      &none    &kp B    &kp M     &kp W        &kp V          &kp Z    &kp RSHFT
+         &mo 2       &mm_pdgrave    &kp CAPS   &kp LEFT  &kp RIGHT               &kp LEFT_SHIFT  &kp BACKSPACE   &kp END                  &kp PG_DN  &kp ENTER  &kp SPACE               &kp UP  &kp DOWN   &mm_pdlbkt  &kp BACKSLASH        &mo 2
             >;
         };
 
