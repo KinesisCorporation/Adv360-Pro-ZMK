@@ -68,7 +68,7 @@
  &trans  &trans  &trans  &trans  &trans  &trans             &none                                                   &none  &trans  &trans  &trans   &trans   &trans   &trans
  &trans  &trans  &trans  &trans  &trans  &trans             &none  &trans  &trans   &none   &none  &trans  &trans   &none  &trans  &trans  &trans   &trans   &trans   &trans
  &trans  &trans  &trans  &trans  &trans  &trans             &none   &none  &trans   &none   &none  &trans   &none   &none  &trans  &trans  &trans   &trans   &trans   &trans
- &trans  &trans  &kp CAPS  &trans  &trans                    &trans  &trans  &trans                  &trans  &trans  &trans          &trans  &trans   &trans   &trans   &trans
+ &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans                  &trans  &trans  &trans          &trans  &trans   &trans   &trans   &trans
             >;
         };
 
