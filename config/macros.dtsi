@@ -1,9 +1,3 @@
-macro_crals: macro_crals{
-compatible = "zmk,behavior-macro";
-label = "macro_crals";
-#binding-cells = <0>;
-bindings = <&kp LCTRL>, <&kp LALT>, <&kp LSHIFT>;
-};
 macro_quotes: macro_quotes{
 compatible = "zmk,behavior-macro";
 label = "macro_quotes";
