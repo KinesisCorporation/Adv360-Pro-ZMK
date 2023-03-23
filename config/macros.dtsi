@@ -2,7 +2,7 @@ macro_hyper: macro_hyper{
 compatible = "zmk,behavior-macro";
 label = "macro_hyper";
 #binding-cells = <0>;
-bindings = <&kp LC(LS(LA(LG)))>;
+bindings = <&kp LC(LS(LA(LGUI)))>;
 };
 macro_undo: macro_undo{
 compatible = "zmk,behavior-macro";
@@ -32,7 +32,7 @@ macro_crals: macro_crals{
 compatible = "zmk,behavior-macro";
 label = "macro_crals";
 #binding-cells = <0>;
-bindings = <&kp LC(LS(LA))>;
+bindings = <&kp LC(LS(LALT))>;
 };
 macro_quotes: macro_quotes{
 compatible = "zmk,behavior-macro";
