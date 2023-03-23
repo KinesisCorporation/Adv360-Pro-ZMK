@@ -1,3 +1,27 @@
+macro_hyper: macro_hyper{
+compatible = "zmk,behavior-macro";
+label = "macro_hyper";
+#binding-cells = <0>;
+bindings = <&kp LCTRL>, <&kp LALT>, <&kp LSHFT>, <&kp LGUI>;
+};
+macro_undo: macro_undo{
+compatible = "zmk,behavior-macro";
+label = "macro_undo";
+#binding-cells = <0>;
+bindings = <&kp LCTRL>, <&kp Z>;
+};
+macro_cut: macro_cut{
+compatible = "zmk,behavior-macro";
+label = "macro_cut";
+#binding-cells = <0>;
+bindings = <&kp LCTRL>, <&kp X>;
+};
+macro_paste: macro_paste{
+compatible = "zmk,behavior-macro";
+label = "macro_paste";
+#binding-cells = <0>;
+bindings = <&kp LCTRL>, <&kp V>;
+};
 macro_copy: macro_copy{
 compatible = "zmk,behavior-macro";
 label = "macro_copy";
