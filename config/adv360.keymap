@@ -45,8 +45,8 @@
             bindings = <
  &kp EQUAL     &kp N1          &kp N2    &kp N3     &kp N4  &kp N5                  &tog 1                                                                  &mo 3  &kp N6  &kp N7     &kp N8    &kp N9    &kp N0  &kp MINUS
    &kp TAB      &kp Q           &kp W     &kp E      &kp R   &kp T             &macro_copy                                                             &macro_cut   &kp Y   &kp U      &kp I     &kp O     &kp P   &kp BSLH
-   &mt LCRTL ESC      &kp A           &kp S     &kp D      &kp F   &kp G            &macro_paste  &mt HYP LGUI  &kp LALT   &none   &none  &kp RCTRL   &mt HYP LGUI  &macro_undo   &kp H   &kp J      &kp K     &kp L  &kp SEMI    &kp SQT
- &kp LSHFT      &kp Z           &kp X     &kp C      &kp V   &kp B                   &none     &none  &mt LCRTL HOME   &none   &none  &kp PG_UP      &none        &none   &kp N   &kp M  &kp COMMA   &kp DOT  &kp FSLH  &kp RSHFT
+   &mt LCTRL ESC      &kp A           &kp S     &kp D      &kp F   &kp G            &macro_paste  &mt HYP LGUI  &kp LALT   &none   &none  &kp RCTRL   &mt HYP LGUI  &macro_undo   &kp H   &kp J      &kp K     &kp L  &kp SEMI    &kp SQT
+ &kp LSHFT      &kp Z           &kp X     &kp C      &kp V   &kp B                   &none     &none  &mt LCTRL HOME   &none   &none  &kp PG_UP      &none        &none   &kp N   &kp M  &kp COMMA   &kp DOT  &kp FSLH  &kp RSHFT
      &mo 2  &kp GRAVE  &mt CRALS CAPS  &kp LEFT  &kp RIGHT                        &kp BSPC   &kp DEL   &mt CRALS END                  &kp PG_DN  &kp ENTER    &kp SPACE          &kp UP   &kp DOWN  &kp LBKT  &kp RBKT      &mo 2
             >;
         };
