@@ -56,11 +56,11 @@
         "&none",        "&none",        "&none",        "&none",        "&none",           "&none",                            "&none",       "&none",             "&none",             "&none",           "&none",        "&none",        "&none",                  "&none",  "&none",  "&none",  "&none",  "&none",  "&none",  "&none",
         "&none",        "&none",        "&none",   "&bl BL_INC",   "&bl BL_DEC", "&rgb_ug RGB_TOG",                       "&bl BL_TOG",       "&none",             "&none",        "&bl BL_TOG", "&rgb_ug RGB_TOG",   "&bl BL_INC",   "&bl BL_DEC",                  "&none",  "&none",  "&none"
     ], [
-       "&trans", "&macro_team_play", "&trans", "&trans", "&trans", "&trans",           "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans",
-       "&trans",           "&trans", "&trans", "&trans", "&trans", "&trans",           "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans",
-       "&trans",           "&trans", "&trans", "&trans", "&trans", "&trans",           "&trans", "&trans", "&trans",                     "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans",
-       "&trans",           "&trans", "&trans", "&trans", "&trans", "&trans",           "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans",
-       "&trans",           "&trans", "&trans", "&trans", "&trans", "&trans",           "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans"
+       "&trans", "&macro_team_play", "&trans", "&macro_team_play_x3", "&trans", "&trans",           "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans",
+       "&trans",           "&trans", "&trans",              "&trans", "&trans", "&trans",           "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans",
+       "&trans",           "&trans", "&trans",              "&trans", "&trans", "&trans",           "&trans", "&trans", "&trans",                     "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans",
+       "&trans",           "&trans", "&trans",              "&trans", "&trans", "&trans",           "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans",
+       "&trans",           "&trans", "&trans",              "&trans", "&trans", "&trans",           "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans"
     ]
   ]
 }
