@@ -39,11 +39,11 @@
 
         default_layer {
             bindings = <
-           &mo 4       &kp N1    &kp N2    &kp N3    &kp N4    &kp N5                 &none     &none     &kp N6     &kp N7     &kp N8     &kp N9    &kp N0     &mo 5
-       &kp GRAVE        &kp Q     &kp W     &kp E     &kp R     &kp T              &kp LBKT  &kp RBKT      &kp Y      &kp U      &kp I      &kp O     &kp P  &kp BSLH
-       &lt 3 TAB        &kp A     &kp S     &kp D     &kp F     &kp G              &kp LPAR   &kp ESC     &tog 1                           &tog 2   &kp DEL  &kp RPAR   &kp H        &kp J      &kp K    &kp L  &kp SINGLE_QUOTE  &lt 3 EQUAL
-     &lt 6 LNLCK        &kp Z     &kp X     &kp C     &kp V     &kp B                 &none     &none   &kp HOME      &none      &none  &kp PG_UP     &none     &none   &kp N        &kp M  &kp COMMA  &kp DOT          &kp FSLH        &none
-       &kp LCTRL  &kp LC(TAB)  &kp LALT  &kp LGUI  &kp SEMI  &kp BSPC            &sk LSHIFT   &kp END  &kp PG_DN  &kp ENTER  &kp SPACE  &kp MINUS  &kp RGUI     &none   &none  &kp C_SLEEP
+       &mo 4       &kp N1    &kp N2    &kp N3    &kp N4    &kp N5                 &none     &none     &kp N6     &kp N7     &kp N8     &kp N9    &kp N0     &mo 5
+   &kp GRAVE        &kp Q     &kp W     &kp E     &kp R     &kp T              &kp LBKT  &kp RBKT      &kp Y      &kp U      &kp I      &kp O     &kp P  &kp BSLH
+   &lt 3 TAB        &kp A     &kp S     &kp D     &kp F     &kp G              &kp LPAR   &kp ESC     &tog 1                           &tog 2   &kp DEL  &kp RPAR   &kp H        &kp J      &kp K    &kp L  &kp SINGLE_QUOTE  &lt 3 EQUAL
+ &lt 6 LNLCK        &kp Z     &kp X     &kp C     &kp V     &kp B                 &none     &none   &kp HOME      &none      &none  &kp PG_UP     &none     &none   &kp N        &kp M  &kp COMMA  &kp DOT          &kp FSLH        &none
+   &kp LCTRL  &kp LC(TAB)  &kp LALT  &kp LGUI  &kp SEMI  &kp BSPC            &sk LSHIFT   &kp END  &kp PG_DN  &kp ENTER  &kp SPACE  &kp MINUS  &kp RGUI     &none   &none  &kp C_SLEEP
             >;
         };
 
@@ -104,6 +104,16 @@
  &trans            &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
  &trans            &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
  &trans            &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        layer_MMO {
+            bindings = <
+ &trans  &kp N7  &kp N8        &kp N9            &kp N0  &kp MINUS                 &kp EQUAL  &trans     &kp F8     &kp F9  &kp F10   &kp F11  &kp F12  &trans
+ &trans  &trans  &trans        &trans            &trans     &trans                     &kp Y  &trans      &kp U      &kp I   &kp UP     &kp J    &kp K  &trans
+ &trans  &trans  &trans        &trans            &trans     &trans                     &kp N  &trans     &trans                         &none  &kp DEL  &trans  &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &trans
+ &trans  &trans  &trans        &trans            &trans     &trans                    &trans  &trans     &trans     &trans   &trans  &kp HOME   &trans  &trans  &trans    &trans    &trans     &trans  &trans  &trans
+ &trans  &trans  &trans  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp SPACE            &kp LEFT_SHIFT  &trans  &kp PG_UP  &kp PG_DN  &kp END    &trans   &trans  &trans  &trans    &trans
             >;
         };
 

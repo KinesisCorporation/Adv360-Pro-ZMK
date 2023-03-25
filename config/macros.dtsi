@@ -1,14 +1,8 @@
-macro_team_play: macro_team_play_x3{
-compatible = "zmk,behavior-macro";
-label = "macro_team_play";
-#binding-cells = <0>;
-bindings = <&kp T>, <&kp LS(T)>, <&kp E>, <&kp A>, <&kp M>, <&kp SPACE>, <&kp P>, <&kp L>, <&kp A>, <&kp Y>, <&kp DOT> <&kp ENTER>, <&kp T>, <&kp LS(T)>, <&kp E>, <&kp A>, <&kp M>, <&kp SPACE>, <&kp P>, <&kp L>, <&kp A>, <&kp Y>, <&kp DOT> <&kp ENTER>, <&kp T>, <&kp LS(T)>, <&kp E>, <&kp A>, <&kp M>, <&kp SPACE>, <&kp P>, <&kp L>, <&kp A>, <&kp Y>, <&kp DOT> <&kp ENTER>;
-};
 macro_team_play: macro_team_play{
 compatible = "zmk,behavior-macro";
 label = "macro_team_play";
 #binding-cells = <0>;
-bindings = <&kp T>, <&kp LS(T)>, <&kp E>, <&kp A>, <&kp M>, <&kp SPACE>, <&kp LS(P)>, <&kp L>, <&kp A>, <&kp Y>, <&kp ENTER>;
+bindings = <&kp T>, <&kp LS(T)>, <&kp E>, <&kp A>, <&kp M>, <&kp SPACE>, <&kp P>, <&kp L>, <&kp A>, <&kp Y>, <&kp PERIOD>, <&kp ENTER>;
 };
 macro_mac_layout: macro_mac_layout{
 compatible = "zmk,behavior-macro";
@@ -26,7 +20,7 @@ macro_win_sleep: macro_win_sleep{
 compatible = "zmk,behavior-macro";
 label = "macro_win_sleep";
 #binding-cells = <0>;
-bindings = <&kp LG(D)>, <&none>, <&none>, <&none>, <&kp LA(F4)>, <&none>, <&none>, <&none>, <&kp R>, <&kp UP>, <&kp UP>, <&kp ENTER>;
+bindings = <&kp LG(D)>, <&kp LA(F4)>, <&kp R>, <&kp UP>, <&kp UP>, <&kp ENTER>;
 };
 macro_quotes: macro_quotes{
 compatible = "zmk,behavior-macro";
