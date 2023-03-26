@@ -57,7 +57,7 @@
    &kp TAB            &kp CARET    &kp AMPS        &kp ASTRK  &kp LPAR   &kp RPAR    &macro_copy                                                                           &macro_cut     &none   &kp KP_N7   &kp KP_N8     &kp KP_N9      &kp KP_MINUS     &kp BSLH
    &mt CRALS ESC      &none        &none           &none      &kp LT     &kp GT      &macro_paste  &kp LGUI  &kp LALT         &none   &none  &kp RCTRL      &mt HYP LGUI   &macro_undo    &none   &kp KP_N4   &kp KP_N5     &kp KP_N6      &kp KP_PLUS      &kp SQT
    &kp LSHFT          &none        &none           &kp UP     &kp LBKT   &kp RBKT    &none         &none     &mt LSHFT HOME   &none   &none  &kp PG_UP      &none          &none          &none   &kp KP_N1   &kp KP_N2     &kp KP_N3      &kp KP_ENTER     &kp RSHFT
-   &mo 2              &none        &kp LEFT        &kp DOWN   &kp RIGHT              &kp BSPC      &kp DEL   &mt LCTRL END                   &kp PG_DN      &kp ENTER      &kp SPACE              &none       &kp KP_N0     &kp KP_DOT     &none            &mo 2
+   &mo 2              &none        &kp LEFT        &kp DOWN   &kp RIGHT              &kp BSPC      &kp TAB   &mt LCTRL END                   &kp PG_DN      &kp ENTER      &kp SPACE              &none       &kp KP_N0     &kp KP_DOT     &none            &mo 2
             >;
         };
 
