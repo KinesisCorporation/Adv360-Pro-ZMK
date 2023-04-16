@@ -1,9 +1,3 @@
-macro_work_email: macro_work_email{
-compatible = "zmk,behavior-macro";
-label = "macro_work_email";
-#binding-cells = <0>;
-bindings = <&kp M>, <&kp A>, <&kp R>, <&kp K>, <&kp .>, <&kp H>, <&kp A>, <&kp N>, <&kp S>, <&kp E>, <&kp N>, <&kp @>, <&kp W>, <&kp A>, <&kp R>, <&kp N>, <&kp E>, <&kp R>, <&kp M>, <&kp E>, <&kp D>, <&kp I>, <&kp A>, <&kp DOT>, <&kp C>, <&kp O>, <&kp M>;
-};
 macro_quotes: macro_quotes{
 compatible = "zmk,behavior-macro";
 label = "macro_quotes";
