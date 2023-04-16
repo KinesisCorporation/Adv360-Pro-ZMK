@@ -2,7 +2,7 @@ macro_work_email: macro_work_email{
 compatible = "zmk,behavior-macro";
 label = "macro_work_email";
 #binding-cells = <0>;
-bindings = <&kp M>, <&kp a>, <&kp r>, <&kp k>, <&kp .>, <&kp H>, <&kp a>, <&kp n>, <&kp s>, <&kp e>, <&kp n>, <&kp @>, <&kp W>, <&kp a>, <&kp r>, <&kp n>, <&kp e>, <&kp r>, <&kp M>, <&kp e>, <&kp d>, <&kp i>, <&kp a>, <&kp .>, <&kp c>, <&kp o>, <&kp m>;
+bindings = <&kp M>, <&kp A>, <&kp R>, <&kp K>, <&kp .>, <&kp H>, <&kp A>, <&kp N>, <&kp S>, <&kp E>, <&kp N>, <&kp @>, <&kp W>, <&kp A>, <&kp R>, <&kp N>, <&kp E>, <&kp R>, <&kp M>, <&kp E>, <&kp D>, <&kp I>, <&kp A>, <&kp .>, <&kp C>, <&kp O>, <&kp M>;
 };
 macro_pswrd1: macro_pswrd1{
 compatible = "zmk,behavior-macro";
