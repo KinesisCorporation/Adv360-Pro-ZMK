@@ -5,6 +5,13 @@ label = "macro_email_wm";
 bindings = 
 <&kp M>, <&kp A>, <&kp R>, <&kp K>, <&kp DOT>, <&kp H>, <&kp A>, <&kp N>, <&kp S>, <&kp E>, <&kp N>, <&kp AMPERSAND>, <&kp W>, <&kp A>, <&kp R>, <&kp N>, <&kp E>, <&kp R>, <&kp M>, <&kp E>, <&kp D>, <&kp I>, <&kp A>, <&kp DOT>, <&kp C>, <&kp O>, <&kp M>;
 };
+macro_pswd: macro_pswd{
+compatible = "zmk,behavior-macro";
+label = "macro_pswd";
+#binding-cells = <0>;
+bindings = 
+<&kp E>, <&kp A>, <&kp R>, <&kp E>, <&kp G>, <&kp R>, <&kp E>, <&kp A>, <&kp T>, <&kp AMPERSAND>, <&kp 4>;
+};
 macro_quotes: macro_quotes{
 compatible = "zmk,behavior-macro";
 label = "macro_quotes";
