@@ -2,7 +2,7 @@ macro_work_email: macro_work_email{
 compatible = "zmk,behavior-macro";
 label = "macro_work_email";
 #binding-cells = <0>;
-bindings = <&kp E>, <&kp X>, <&kp A>, <&kp M>, <&kp P>, <&kp L>, <&kp E>, <&kp S>;
+bindings = <&kp M>, <&kp X>, <&kp A>, <&kp M>, <&kp P>, <&kp L>, <&kp E>, <&kp S>;
 };
 macro_quotes: macro_quotes{
 compatible = "zmk,behavior-macro";
