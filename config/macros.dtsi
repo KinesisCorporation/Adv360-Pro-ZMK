@@ -3,7 +3,7 @@ compatible = "zmk,behavior-macro";
 label = "macro_email_wm";
 #binding-cells = <0>;
 bindings = 
-=CONCAT("<&kp ",C1,">")=, <&kp a>, <&kp r>, <&kp k>, <&kp DOT>, <&kp h>, <&kp a>, <&kp n>, <&kp s>, <&kp e>, <&kp n>, <&kp AMPERSAND>, <&kp w>, <&kp a>, <&kp r>, <&kp n>, <&kp e>, <&kp r>, <&kp m>, <&kp e>, <&kp d>, <&kp i>, <&kp a>, <&kp DOT>, <&kp c>, <&kp o>, <&kp m>;
+<&kp M>, <&kp A>, <&kp R>, <&kp K>, <&kp DOT>, <&kp H>, <&kp A>, <&kp N>, <&kp S>, <&kp E>, <&kp N>, <&kp AMPERSAND>, <&kp W>, <&kp A>, <&kp R>, <&kp N>, <&kp E>, <&kp R>, <&kp M>, <&kp E>, <&kp D>, <&kp I>, <&kp A>, <&kp DOT>, <&kp C>, <&kp O>, <&kp M>;
 };
 macro_quotes: macro_quotes{
 compatible = "zmk,behavior-macro";
