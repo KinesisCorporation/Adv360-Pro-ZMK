@@ -2,13 +2,7 @@ macro_work_email: macro_work_email{
 compatible = "zmk,behavior-macro";
 label = "macro_work_email";
 #binding-cells = <0>;
-bindings = <&kp M>, <&kp A>, <&kp R>, <&kp K>, <&kp .>, <&kp H>, <&kp A>, <&kp N>, <&kp S>, <&kp E>, <&kp N>, <&kp @>, <&kp W>, <&kp A>, <&kp R>, <&kp N>, <&kp E>, <&kp R>, <&kp M>, <&kp E>, <&kp D>, <&kp I>, <&kp A>, <&kp .>, <&kp C>, <&kp O>, <&kp M>;
-};
-macro_pswrd1: macro_pswrd1{
-compatible = "zmk,behavior-macro";
-label = "macro_pswrd1";
-#binding-cells = <0>;
-bindings = <&kp W>, <&kp e>, <&kp a>, <&kp r>, <&kp e>, <&kp g>, <&kp r>, <&kp e>, <&kp a>, <&kp t>, <&kp @>, <&kp 4>;
+bindings = <&kp M>, <&kp A>, <&kp R>, <&kp K>, <&kp .>, <&kp H>, <&kp A>, <&kp N>, <&kp S>, <&kp E>, <&kp N>, <&kp @>, <&kp W>, <&kp A>, <&kp R>, <&kp N>, <&kp E>, <&kp R>, <&kp M>, <&kp E>, <&kp D>, <&kp I>, <&kp A>, <&kp DOT>, <&kp C>, <&kp O>, <&kp M>;
 };
 macro_quotes: macro_quotes{
 compatible = "zmk,behavior-macro";
@@ -45,4 +39,4 @@ compatible = "zmk,behavior-macro";
 label = "macro_kinesis";
 #binding-cells = <0>;
 bindings = <&kp LS(K)>, <&kp I>, <&kp N>, <&kp E>, <&kp S>, <&kp I>, <&kp S>;
-}; 
+};
