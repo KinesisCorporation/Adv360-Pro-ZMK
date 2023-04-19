@@ -4,9 +4,11 @@
 #include <dt-bindings/zmk/rgb.h>
 #include <dt-bindings/zmk/backlight.h>
 
-#define AS(keycode) &as LS(keycode) keycode     // Autoshift Macro
+#define AS(keycode) &as LS(keycode) keycode     								// Autoshift Macro
+#define MP(macro_primary,macro_secondary) &mp macro_secondary macro_primary		// Macro proxy
 
 / {
+
     behaviors {
       #include "macros.dtsi"
 		as: auto_shift {
@@ -17,6 +19,13 @@
 			quick_tap_ms = <0>;
 			flavor = "tap-preferred";
 			bindings = <&kp>, <&kp>;
+		};
+		ttd: terminal_tap_dance {
+			 compatible = "zmk,behavior-tap-dance";
+			 label = "TERMINAL_TAP_DANCE";
+			 #binding-cells = <0>;
+			tapping-term-ms = <200>;
+			bindings = <&term_new>, <&term_new_tab>;
 		};
 		hm: homerow_mods {
 		  compatible = "zmk,behavior-hold-tap";
@@ -36,7 +45,7 @@
       bindings = <
         AS(EQUAL) &kp N1    &kp N2   &kp N3   &kp N4     &kp N5 &tog 1                                                                       &mo 3 	&kp N6 	&kp N7	&kp N8   	&kp N9		&kp N0   	AS(MINUS)
         &kp TAB   AS(Q) 	AS(W) 	 AS(E)    AS(R)      AS(T)  &none                                                                        &none 	AS(Y)  	AS(U)  	AS(I)     	AS(O)    	AS(P)    	AS(BSLH)
-        &kp ESC   AS(A)     AS(S)    AS(D)    AS(F)      AS(G)  &none           &kp LCTRL &kp LALT &none &none &kp LGUI  &kp RCTRL           &none 	AS(H)  	AS(J)  	AS(K)     	AS(L)    	AS(SEMI) 	AS(SQT)
+        &kp ESC   AS(A)     AS(S)    AS(D)    AS(F)      AS(G)  &test           &kp LCTRL &kp LALT &none &none &kp LGUI  &kp RCTRL           &ttd	AS(H)  	AS(J)  	AS(K)     	AS(L)    	AS(SEMI) 	AS(SQT)
         &kp LSHFT AS(Z)    	AS(X)    AS(C)    AS(V)      AS(B)         &none    &none     &kp HOME &none &none &kp PG_UP &none     &none           	AS(N)  	AS(M) 	AS(COMMA) 	AS(DOT)  	AS(FSLH) 	&kp LALT
         &mo 2     AS(GRAVE) &kp CAPS &kp LEFT &kp RIGHT                &kp BSPC &kp DEL   &kp END              &kp PG_DN &kp ENTER &kp SPACE              	&kp UP 	&kp DOWN  	AS(LBKT) 	AS(RBKT) 	&mo 2
       >;
