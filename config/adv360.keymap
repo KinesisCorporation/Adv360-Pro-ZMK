@@ -61,9 +61,9 @@
             bindings = <
  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6                    &tog 1                                                                  &mo 3  &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
  &trans  &trans  &trans  &trans  &trans  &trans                     &none                                                                  &none  &trans  &trans  &trans   &trans   &trans   &trans
- &trans  &trans  &trans  &trans  &trans  &trans                     &none  &kp K_MUTE    &kp K_VOLUME_UP   &none   &none  &trans  &trans   &none  &trans  &trans  &trans   &trans   &trans   &trans
- &trans  &trans  &trans  &trans  &trans  &trans                     &none       &none   &kp K_PLAY_PAUSE   &none   &none  &trans   &none   &none  &trans  &trans  &trans   &trans   &trans   &trans
- &trans  &trans  &trans  &trans  &trans                    &kp K_PREVIOUS  &kp K_NEXT  &kp K_VOLUME_DOWN                  &trans  &trans  &trans          &trans  &trans   &trans   &trans   &trans
+ &trans  &trans  &trans  &trans  &trans  &trans                     &none  &kp C_MUTE    &kp C_VOLUME_UP   &none   &none  &trans  &trans   &none  &trans  &trans  &trans   &trans   &trans   &trans
+ &trans  &trans  &trans  &trans  &trans  &trans                     &none       &none   &kp C_PLAY_PAUSE   &none   &none  &trans   &none   &none  &trans  &trans  &trans   &trans   &trans   &trans
+ &trans  &trans  &trans  &trans  &trans                    &kp C_PREVIOUS  &kp C_NEXT  &kp C_VOLUME_DOWN                  &trans  &trans  &trans          &trans  &trans   &trans   &trans   &trans
             >;
         };
 
