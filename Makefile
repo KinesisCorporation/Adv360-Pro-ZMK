@@ -11,6 +11,7 @@ endif
 
 .PHONY: all clean
 
+
 all:
 	$(DOCKER) build --tag zmk --file Dockerfile .
 	$(DOCKER) run --rm -it --name zmk \
