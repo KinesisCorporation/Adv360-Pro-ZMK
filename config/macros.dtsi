@@ -1,3 +1,11 @@
+macro_rectangle_left: macro_rectangle_left{
+compatible = "zmk,behavior-macro";
+label = "macro_rectangle_left";
+#binding-cells = <0>;
+bindings = <&macro_press &kp LEFT_CONTROL &kp LEFT_ALT &kp LEFT>
+,<&macro_release &kp LEFT_CONTROL &kp LEFT_ALT &kp LEFT>
+;
+};
 macro_quotes: macro_quotes{
 compatible = "zmk,behavior-macro";
 label = "macro_quotes";
