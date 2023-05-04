@@ -60,6 +60,10 @@ Follow the programming instruction on page 8 of the [Quick Start Guide](https://
 
 > Note: There are also physical reset buttons on both keyboards which can be used to enter and exit the bootloader mode. Their location is described in section 2.7 on page 9 in the [User Manual](https://kinesis-ergo.com/wp-content/uploads/Advantage360-ZMK-KB360-PRO-Users-Manual-v3-10-23.pdf) and use is described in section 5.9 on page 14. 
 
+## How to create your own macros
+https://zmk.dev/docs/behaviors/macros
+other examples of [user-created macros](https://github.com/dxmh/zmk-config/blob/39d83a6f8b8930a201a29c239ef5e8f52ff49b10/config/macros.dtsi#L5)
+
 ## Other support
 
 Further support resources can be found on Kinesis.com:
