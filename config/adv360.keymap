@@ -19,11 +19,41 @@
 #include <dt-bindings/zmk/backlight.h>
 #include "adv360keys.h"
 
+#define COMBO(NAME, BINDINGS, KEYPOS) \
+  combo_##NAME { \
+    timeout-ms = <20>; \
+    bindings = <BINDINGS>; \
+    key-positions = <KEYPOS>; \
+    layers = <0>; \
+  };
+
 &sk {
   release-after-ms = <STICKY_KEY_TIMEOUT>;
 };
 
 / {
+combos {
+    compatible = "zmk,combos";
+/* Brackets */
+COMBO(left_bracket, &kp LBKT, 0 10)
+COMBO(right_bracket, &kp RBKT, 7 17)
+COMBO(left_parenthesis, &kp LPAR, 1 11)
+COMBO(right_parenthesis, &kp RPAR, 6 16)
+COMBO(left_brace, &kp LBRC, 2 12)
+COMBO(right_brace, &kp RBRC, 5 15)
+
+/* Text */
+COMBO(redo, &kp LG(LS(Z)), 2 3)
+COMBO(undo, &kp LG(Z), 12 13)
+COMBO(redow, &kp LC(Y), 2 3)
+COMBO(undow, &kp LC(Z), 12 13)
+COMBO(caps_word, &caps_word, 31 32)
+COMBO(key_repeat_l, &key_repeat, 23 24)
+COMBO(key_repeat_r, &key_repeat, 25 26)
+COMBO(alfred, &kp LG(SPACE), 21 23)
+COMBO(clpbrd, &kp LG(LC(LA(LS(Z)))), 21 22 23)
+COMBO(esc, &kp ESC, 23 30)
+};
   behaviors {
     #include "macros.dtsi"
 
@@ -55,11 +85,11 @@
 
         default_layer {
             bindings = <
- &kp ESC     &kp N1    &kp N2    &kp N3     &kp N4  &kp N5              &tog 1                                                                &mo 3  &kp N6  &kp N7     &kp N8    &kp N9    &kp N0  &kp MINUS
-   &kp GRAVE      &kp Q     &kp W     &kp E      &kp R   &kp T               &macro_braces                                                                &none   &kp Y   &kp U      &kp I     &kp O     &kp P   &kp BSLH
-   &kp TAB      &kp A     &kp S     &kp D      &kp F   &kp G               &mo 2  SK(LGUI)  &kp LALT   &none   &none  &kp LCTRL   &kp RCMD      &none   &kp H   &kp J      &kp K     &kp L  &kp SEMI    &kp SQT
- &kp LSHFT      &kp Z     &kp X     &kp C      &kp V   &kp B               &none     &none  &kp HOME   &none   &none  &kp PG_UP      &none      &none   &kp N   &kp M  &kp COMMA   &kp DOT  &kp FSLH  &kp RSHFT
-     &mo 2  &kp EQUAL  &kp CAPS  &kp LEFT  &kp RIGHT                    &kp LCMD    &kp BSPC   &kp END                  &kp PG_DN  &kp ENTER  &kp SPACE          &kp UP   &kp DOWN  &kp LBKT  &kp RBKT      &mo 2
+   &kp ESC        &kp N1    &kp N2    &kp N3     &kp N4  &kp N5     &tog 1                                                                                             &mo 3               &kp N6  &kp N7     &kp N8      &kp N9    &kp N0       &kp MINUS
+   &kp GRAVE      &kp Q     &kp W     &kp E      &kp R   &kp T      &macro_braces                                                                                      &kp LG(A)           &kp Y   &kp U      &kp I       &kp O     &kp P        &kp BSLH
+   &kp TAB        &kp A     &kp S     &kp D      &kp F   &kp G      &macro_parens               &macro_dquotes  &kp LALT   &none   &none  &kp RCTRL  &kt LA(LSHIFT)    &kp LA(BACKSPACE)   &kp H   &kp J      &kp K       &kp L     &kp SEMI     &kp SQT
+   &kp LSHFT      &kp Z     &kp X     &kp C      &kp V   &kp B                    &none         &none           &kp HOME   &none   &none  &kp PG_UP  &none      &none                      &kp N   &kp M      &kp COMMA   &kp DOT   &kp FSLH     &kp RSHFT
+   &mo 2          &kp EQUAL &kp CAPS  &kp LEFT   &kp RIGHT                        &kp LCMD      &kp BSPC        &kp END                   &kp PG_DN  &kp ENTER  &kp SPACE                          &kp UP     &kp DOWN    &kp LBKT  &kp RBKT     &mo 2
             >;
         };
 
