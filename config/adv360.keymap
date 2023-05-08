@@ -77,7 +77,7 @@
             >;
         };
 
-        layer_CODE {
+        layer_code {
             bindings = <
  &trans  &trans  &trans  &trans  &trans  &trans            &trans                                                  &trans  &trans                &trans          &trans           &trans                 &trans  &trans
  &trans  &trans  &trans  &trans  &trans  &trans            &trans                                                  &trans  &trans      &kp LEFT_BRACKET       &kp EQUAL    &kp AMPERSAND      &kp RIGHT_BRACKET  &trans
