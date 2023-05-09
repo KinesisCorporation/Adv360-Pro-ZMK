@@ -225,7 +225,7 @@ acaret: at_caret {
 
         default_layer {
             bindings = <
-    &kp ESC        &pkp_n1   &lkp_n2   &lkp_n3    &lkp_n4 &akp_n5    &tog 4                                                                                             &mo 3               &ekp_n6 &rkp_n7    &rkp_n8     &rkp_n9   &skp_n0      &kp MINUS
+    &kp ESC        &kp N1    &kp N2   &kp N3      &kp N4  &kp N5     &tog 4                                                                                             &mo 3               &kp N6 &kp N7    &kp N8     &kp N9   &kp N0      &kp MINUS
     &kp GRAVE      &kp Q     &kp W     &kp E      &kp R   &kp T      &macro_brackets                                                                                    &tog 5              &kp Y   &kp U      &kp I       &kp O     &kp P        &bhash
     &kp TAB        &kp A     &kp S     &kp D      &kp F   &kp G      &macro_parens               &macro_dquotes  &kp LALT   &none   &none  &kp RCTRL  &kp RCMD          &kp LA(BACKSPACE)   &kp H   &kp J      &kp K       &kp L     &kp SEMI     &kp SQT
     &kp LSHFT      &kp Z     &kp X     &kp C      &kp V   &kp B                    &none         &none           &kp HYPER  &none   &none  &kp PG_UP  &none      &none                      &kp N   &kp M      &kp COMMA   &kp DOT   &kp FSLH     &kp RSHFT
@@ -263,8 +263,8 @@ acaret: at_caret {
             >;
         };
 
-    prime_layer {
-      bindings = <
+        prime_layer {
+            bindings = <
     &ppipe    &pkp_n1     &lkp_n2   &lkp_n3  &lkp_n4    &akp_n5      &tog 4                                                                                                 &mo 3             &ekp_n6  &rkp_n7  &rkp_n8   &rkp_n9   &skp_n0  &eprcnt
     &kp TAB   &kp SEMI    &kp COMMA &kp DOT  &kp P      &kp Y        &none                                                                                                  &macro_kinesis    &kp F    &kp G    &kp C     &kp R     &kp L    &bhash
     &kp ESC   &kp A       &kp O     &kp E    &kp U      &kp I        &none                    &kp LCTRL    &kp LALT  &kp LGUI  &none       &kp RCTRL    &none               &none             &kp D    &kp H    &kp T     &kp N     &kp S    &kp MINUS
@@ -272,9 +272,9 @@ acaret: at_caret {
     &mo 2     &dgrave     &ggrave   &kp LEFT &kp RIGHT                        &kp BKSP        &kp LSHFT    &kp END                         &kp PG_DN    &kp ENTER    &kp SPACE                         &kp UP   &kp DOWN  &kp FSLH  &acaret  &mo 2
       >;
     };
-    // https://github.com/fatih/Adv360-Pro-ZMK/blob/V2.0/config/adv360.keymap
-    fatih_layer {
-        bindings = <
+        // https://github.com/fatih/Adv360-Pro-ZMK/blob/V2.0/config/adv360.keymap
+        fatih_layer {
+            bindings = <
     &kp EQUAL     &kp N1  &kp N2  &kp N3 &kp N4   &kp N5     &tog 4                                                                                                            &mo 3         &kp N6       &kp N7     &kp N8      &kp N9      &kp N0   &kp MINUS
     &kp TAB       &kp Q   &kp W   &kp E  &kp R    &kp T      &none                                                                                                             &tog 5        &kp Y        &kp U      &kp I       &kp O       &kp P    &kp BSLH
     &kp LCTRL     &kp A   &kp S   &kp D  &lt 1 F  &kp G      &none                    &kp HYP(N7)  &kp HYP(N8)  &none      &none         &kp RALT     &kp ESC                  &kp MACLOCK   &kp H        &kp J      &kp K       &kp L       &kp SEMI &mt RCTRL SQT
@@ -282,5 +282,15 @@ acaret: at_caret {
     &kp TAB       &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT              &kp LGUI      &kp BSPC     &kp HYP(N5)                           &kp PG_DN    &kp ENTER  &lt 2 SPACE                              &kp UP     &kp DOWN    &kp LBKT    &kp RBKT &mo 2
                 >;
             };
+        default_layer2 {
+            bindings = <
+    &kp ESC        &pkp_n1   &lkp_n2   &lkp_n3    &lkp_n4 &akp_n5    &tog 4                                                                                             &mo 3               &ekp_n6 &rkp_n7    &rkp_n8     &rkp_n9   &skp_n0      &kp MINUS
+    &kp GRAVE      &kp Q     &kp W     &kp E      &kp R   &kp T      &macro_brackets                                                                                    &tog 5              &kp Y   &kp U      &kp I       &kp O     &kp P        &bhash
+    &kp TAB        &kp A     &kp S     &kp D      &kp F   &kp G      &macro_parens               &macro_dquotes  &kp LALT   &none   &none  &kp RCTRL  &kp RCMD          &kp LA(BACKSPACE)   &kp H   &kp J      &kp K       &kp L     &kp SEMI     &kp SQT
+    &kp LSHFT      &kp Z     &kp X     &kp C      &kp V   &kp B                    &none         &none           &kp HYPER  &none   &none  &kp PG_UP  &none      &none                      &kp N   &kp M      &kp COMMA   &kp DOT   &kp FSLH     &kp RSHFT
+    &mo 2          &dgrave &ggrave     &kp LEFT   &kp RIGHT                        &kp LCMD      &kp BSPC        &kp ESC                   &kp PG_DN  &kp ENTER  &kp SPACE                          &kp UP     &kp DOWN    &kp CAPS  &acaret      &mo 2
+            >;
+        };
+
     };
 };
