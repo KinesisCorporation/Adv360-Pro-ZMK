@@ -90,20 +90,20 @@
     };
     fn {
       bindings = <
-        &AF4       &DESK_A    &DESK_B    &DESK_C    &DESK_D    &DESK_E    &bootloader                                                     &bootloader&DESK_G    &DESK_H    &DESK_I    &DESK_VW   &trans     &trans     
+        &AF4       &DESK_A    &DESK_B    &DESK_C    &DESK_D    &DESK_E    &trans                                                          &trans     &DESK_F    &DESK_G    &DESK_H    &DESK_I    &DESK_J    &trans
         &AT_QCK    &ditto     &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp PSCRN  &T_ADD                                                          &DSK_UP    &kp EQUAL  &kp N7     &kp N8     &kp N9     &kp MINUS  &trans
-        &AT_TOG    W_UP       W_DWN      W_LFT      W_RGT      &kp LG(Z)  &T_OPEN      &to QWRT   &RDC_X          RGBTGL     &trans       &DSK_DN    &kp SLASH  &kp N4     &kp N5     &kp N6     &kp PLUS   &trans     
+        &AT_TOG    W_UP       W_DWN      W_LFT      W_RGT      &kp LG(Z)  &T_OPEN      &bt BT_SEL 0 &bt BT_SEL 1          RGBTGL     &trans       &DSK_DN    &kp SLASH  &kp N4     &kp N5     &kp N6     &kp PLUS   &trans     
         &trans     &kp LC(Z)  &kp LC(Y)  &kp LC(A)  &kp LC(K)  &T_OPEN                 &_&_       &trans &_ &_    BTTGL &_&_                         &none      &kp N1     &kp N2     &kp N3     &kp EQUAL  &trans     
         &trans     &trans     &trans     &trans     &trans                &trans       &mo FKEYS  &trans          &trans     &trans       &trans                &trans     &trans     &kp N0     &trans     &trans     
       >;
     };
     symbol {
       bindings = <
-        &kp F1     &kp F2     &kp F3     &kp F4     &kp F5     &kp F6     &bootloader                                                     &bootloader&kp F7     &kp F8     &kp F9     &kp F10    &kp F11    &kp F12 
+        &kp F1     &kp F2     &kp F3     &kp F4     &kp F5     &kp F6     &trans                                                          &trans     &kp F7     &kp F8     &kp F9     &kp F10    &kp F11    &kp F12 
         &AT_QCK    &kp EXCL   &kp AT     &kp HASH   &kp DLLR   &kp PRCNT  &trans                                                          &trans     &kp CARET  &kp AMPS   &kp STAR   &kp LPAR   &kp RPAR   &trans     
-        &trans     &kp LBKT   &kp SEMI   &kp LBRC   &kp LPAR   &kp GRAVE  &trans       &trans     &trans          &trans     &trans       &trans     &kp TILDE  &kp RPAR   &kp RBRC   &kp COLON  &kp RBKT   &trans     
-        &trans     &kp QMARK  &kp MINUS  &kp BSLH   &kp EQUAL  &kp LT                  &_&_       &trans     &_ &_&trans     &_&_                    &kp GT     &kp PLUS   &kp PIPE   &kp UNDER  &kp SLASH  &trans     
-        &trans     &trans     &trans     &trans     &trans                &trans       &trans     &trans          &trans     &trans       &trans                &trans     &trans     &trans     &trans     &trans     
+        &trans     &kp LBKT   &kp SEMI   &kp LBRC   &kp LPAR   &kp GRAVE  &trans       &trans &RDC_X       &trans     &trans       &trans     &kp TILDE  &kp RPAR   &kp RBRC   &kp COLON  &kp RBKT   &trans     
+        &trans     &kp QMARK  &kp MINUS  &kp BSLH   &kp EQUAL  &kp LT                 &_&_       &trans     &_ &_&trans     &_&_                    &kp GT     &kp PLUS   &kp PIPE   &kp UNDER  &kp SLASH  &trans     
+        &trans     &kp C_VOL_UP &kp C_VOL_DN &kp C_MUTE    &trans                &trans       &trans     &trans          &trans     &trans       &trans                &trans     &trans     &kp C_PP     &kp C_NEXT     &trans     
       >;
     };
 
@@ -111,7 +111,7 @@
       bindings = <
         &trans     &trans     &trans     &trans     &trans     &trans     &bootloader                                                     &trans     &trans     &kp F10    &kp F11    &kp F12    &trans     &trans
         &trans     &trans     &trans     &trans     &trans     &trans     &trans                                                          &trans     &trans     &kp F7     &kp F8     &kp F9     &trans     &trans     
-        &trans     &kp UP     &kp DOWN   &kp LEFT   &kp RIGHT  &trans     &trans       &trans     &trans          &trans     &trans       &trans     &trans     &kp F4     &kp F5     &kp F6     &trans     &trans     
+        &trans     &kp UP     &kp DOWN   &kp LEFT   &kp RIGHT  &trans     &trans       &to QWRT   &trans          &trans     &trans       &trans     &trans     &kp F4     &kp F5     &kp F6     &trans     &trans     
         &trans     &trans     &trans     &trans     &trans     &trans                  &_&_       &trans    &_ &_&trans      &_&_                    &trans     &kp F1     &kp F2     &kp F3     &trans     &trans     
         &trans     &trans     &trans     &trans     &trans                &trans       &trans     &trans          &trans     &trans       &trans                &trans     &trans     &trans     &trans     &trans     
       >;

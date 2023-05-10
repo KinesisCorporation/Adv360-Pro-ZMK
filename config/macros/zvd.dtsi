@@ -86,6 +86,16 @@ ZMK_MACRO(DESK_I,
         ;
         )
 
+ZMK_MACRO(DESK_J,
+        wait-ms = <40>;
+        tap-ms = <40>;
+        bindings
+        = <&macro_press &kp LCTRL &kp LGUI>
+        , <&macro_tap &kp N0>
+        , <&macro_release &kp LCTRL &kp LGUI>
+        ;
+        )
+
 ZMK_MACRO(DESK_VW,
         wait-ms = <40>;
         tap-ms = <40>;
