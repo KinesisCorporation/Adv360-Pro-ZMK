@@ -5,6 +5,7 @@
 #include <dt-bindings/zmk/backlight.h>
 
 #define __ &trans
+#define __________ &trans
 #define W_UP &kp LG(UP)
 #define W_DWN &kp LG(DOWN)
 #define W_LFT &kp LG(LEFT)
@@ -16,6 +17,7 @@
 #define RED 5
 #define SYMB 6
 #define FKEYS 7
+#define TILING 8
 
 #define RGBTGL &rgb_ug RGB_TOG
 #define BTTGL &bl BL_TOG
@@ -36,16 +38,16 @@
       };
     };
 
-        //&kp LA(F4) &kp LG(LC(N1)) &kp LG(LC(N2)) &kp LG(LC(N3)) &kp LG(LC(N4)) &kp LG(LC(N5))    &kp KP_NUMLOCK                                      &trans     &kp LG(LC(N6))    &kp LG(LC(N7))    &kp LG(LC(N8))    &kp LG(LC(N9))    &DESK_VW   &trans     
-        //&kp GRAVE  &kp N1     &kp N2     &kp N3     &kp N4     &kp N5     &kp F5                                                          &trans     &kp N6     &kp N7     &kp N8     &kp N9     &kp N0     &trans
+        //&kp LA(F4) &kp LG(LC(N1)) &kp LG(LC(N2)) &kp LG(LC(N3)) &kp LG(LC(N4)) &kp LG(LC(N5))    &kp KP_NUMLOCK                                      __________ &kp LG(LC(N6))    &kp LG(LC(N7))    &kp LG(LC(N8))    &kp LG(LC(N9))    &DESK_VW   __________ 
+        //&kp GRAVE  &kp N1     &kp N2     &kp N3     &kp N4     &kp N5     &kp F5                                                          __________ &kp N6     &kp N7     &kp N8     &kp N9     &kp N0     &trans
   keymap {
     compatible = "zmk,keymap";
 
     default_layer {
       bindings = <
-        &kp GRAVE  &kp N1     &kp N2     &kp N3     &kp N4     &kp N5     &kp F5                                                          &trans     &kp N6     &kp N7     &kp N8     &kp N9     &kp N0     &trans
-        &kp TAB    &kp SQT    &kp COMMA  &kp PERIOD &kp P      &kp Y      &kp EQUAL                                                       &trans     &kp F      &kp G      &kp C      &kp R      &kp L      &kp HOME
-        &kp ESC    &kp A      &kp O      &kp E      &kp U      &kp I      &kp F12      &kp LGUI   &kp LALT        &kp LGUI   &SPOTLIGHT   &trans     &kp D      &kp H      &kp T      &kp N      &kp S      &kp END
+        &kp GRAVE  &kp N1     &kp N2     &kp N3     &kp N4     &kp N5     &kp F5                                                          __________ &kp N6     &kp N7     &kp N8     &kp N9     &kp N0     &trans
+        &kp TAB    &kp SQT    &kp COMMA  &kp PERIOD &kp P      &kp Y      &kp EQUAL                                                       __________ &kp F      &kp G      &kp C      &kp R      &kp L      &kp HOME
+        &kp ESC    &kp A      &kp O      &kp E      &kp U      &kp I      &kp F12      &kp LGUI   &kp LALT        &kp LGUI   &SPOTLIGHT   __________ &kp D      &kp H      &kp T      &kp N      &kp S      &kp END
         &kp LSHFT  &kp SLASH  &kp Q      &kp J      &kp K      &kp X                   __ __      &kp DEL  __  __ &kp HOME   __ __                   &kp B      &kp M      &kp W      &kp V      &kp Z      &kp ENTER
         &kp LCTRL  &kp UP     &kp DOWN   &kp LBKT   &kp N9                &kp SPACE    &kp BSPC   &mo RED         &kp END    &mo SYMB     &mo RED               &kp N0   &kp RBKT   &kp LEFT   &kp RIGHT    &kp K_APP
       >;
@@ -53,69 +55,69 @@
 
     empty_1 {
       bindings = <
-        &trans     &trans     &trans     &trans     &trans     &trans     &trans                                                          &trans     &trans     &trans     &trans     &trans     &trans     &trans
-        &trans     &trans     &trans     &trans     &trans     &trans     &trans                                                          &trans     &trans     &trans     &trans     &trans     &trans     &trans     
-        &trans     &trans     &trans     &trans     &trans     &trans     &trans       &trans     &trans          &trans     &trans       &trans     &trans     &trans     &trans     &trans     &trans     &trans     
-        &trans     &trans     &trans     &trans     &trans     &trans                  &_&_       &trans    &_ &_&trans      &_&_                    &trans     &trans     &trans     &trans     &trans     &trans     
-        &trans     &trans     &trans     &trans     &trans                &trans       &trans     &trans          &trans     &trans       &trans                &trans     &trans     &trans     &trans     &trans     
+        __________ __________ __________ __________ __________ __________ __________                                                      __________ __________ __________ __________ __________ __________ &trans
+        __________ __________ __________ __________ __________ __________ __________                                                      __________ __________ __________ __________ __________ __________ __________ 
+        __________ __________ __________ __________ __________ __________ __________   __________ __________      __________ __________   __________ __________ __________ __________ __________ __________ __________ 
+        __________ __________ __________ __________ __________ __________              &_&_       &trans    &_ &_ __________  &_&_                    __________ __________ __________ __________ __________ __________ 
+        __________ __________ __________ __________ __________            __________   __________ __________      __________ __________   __________            __________ __________ __________ __________ __________ 
       >;
     };
 
     empty_2 {
       bindings = <
-        &trans     &trans     &trans     &trans     &trans     &trans     &trans                                                          &trans     &trans     &trans     &trans     &trans     &trans     &trans
-        &trans     &trans     &trans     &trans     &trans     &trans     &trans                                                          &trans     &trans     &trans     &trans     &trans     &trans     &trans     
-        &trans     &trans     &trans     &trans     &trans     &trans     &trans       &trans     &trans          &trans     &trans       &trans     &trans     &trans     &trans     &trans     &trans     &trans     
-        &trans     &trans     &trans     &trans     &trans     &trans                  &_&_       &trans    &_ &_&trans      &_&_                    &trans     &trans     &trans     &trans     &trans     &trans     
-        &trans     &trans     &trans     &trans     &trans                &trans       &trans     &trans          &trans     &trans       &trans                &trans     &trans     &trans     &trans     &trans     
+        __________ __________ __________ __________ __________ __________ __________                                                      __________ __________ __________ __________ __________ __________ &trans
+        __________ __________ __________ __________ __________ __________ __________                                                      __________ __________ __________ __________ __________ __________ __________ 
+        __________ __________ __________ __________ __________ __________ __________   __________ __________      __________ __________   __________ __________ __________ __________ __________ __________ __________ 
+        __________ __________ __________ __________ __________ __________              &_&_       &trans    &_&_  __________ &_&_                    __________ __________ __________ __________ __________ __________ 
+        __________ __________ __________ __________ __________            __________   __________ __________      __________ __________   __________            __________ __________ __________ __________ __________ 
       >;
     };
     empty_3 {
       bindings = <
-        &trans     &trans     &trans     &trans     &trans     &trans     &trans                                                          &trans     &trans     &trans     &trans     &trans     &trans     &trans
-        &trans     &trans     &trans     &trans     &trans     &trans     &trans                                                          &trans     &trans     &trans     &trans     &trans     &trans     &trans     
-        &trans     &trans     &trans     &trans     &trans     &trans     &trans       &trans     &trans          &trans     &trans       &trans     &trans     &trans     &trans     &trans     &trans     &trans     
-        &trans     &trans     &trans     &trans     &trans     &trans                  &_&_       &trans    &_ &_&trans      &_&_                    &trans     &trans     &trans     &trans     &trans     &trans     
-        &trans     &trans     &trans     &trans     &trans                &trans       &trans     &trans          &trans     &trans       &trans                &trans     &trans     &trans     &trans     &trans     
+        __________ __________ __________ __________ __________ __________ __________                                                      __________ __________ __________ __________ __________ __________ &trans
+        __________ __________ __________ __________ __________ __________ __________                                                      __________ __________ __________ __________ __________ __________ __________ 
+        __________ __________ __________ __________ __________ __________ __________   __________ __________      __________ __________   __________ __________ __________ __________ __________ __________ __________ 
+        __________ __________ __________ __________ __________ __________              &_&_       &trans    &_&_  __________ &_&_                    __________ __________ __________ __________ __________ __________ 
+        __________ __________ __________ __________ __________            __________   __________ __________      __________ __________   __________            __________ __________ __________ __________ __________ 
       >;
     };
     qwerty {
       bindings = <
-        &trans     &trans     &trans     &trans     &trans     &trans     &trans                                                          &trans     &trans     &trans     &trans     &trans     &trans     &trans     
-        &kp TAB    &kp Q      &kp W      &kp E      &kp R      &kp T      &trans                                                          &trans     &kp Y      &kp U      &kp I      &kp O      &kp P      &kp BSLH
-        &kp ESC    &kp A      &kp S      &kp D      &kp F      &kp G      &to BASE     &trans     &trans          &trans     &trans       &trans     &kp H      &kp J      &kp K      &kp L      &kp SEMI   &kp SQT
-        &kp LSHFT  &kp Z      &kp X      &kp C      &kp V      &kp B                   &_&_       &trans     &_ &_&trans     &_&_                    &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH   &kp RSHFT
-        &trans     &trans     &trans     &trans     &trans                &trans       &trans     &trans          &trans     &trans       &trans                &trans     &trans     &trans     &trans     &trans    
+        __________ __________ __________ __________ __________ __________ __________                                                      __________ __________ __________ __________ __________ __________ __________ 
+        &kp TAB    &kp Q      &kp W      &kp E      &kp R      &kp T      __________                                                      __________ &kp Y      &kp U      &kp I      &kp O      &kp P      &kp BSLH
+        &kp ESC    &kp A      &kp S      &kp D      &kp F      &kp G      &to BASE     __________ __________      __________ __________   __________ &kp H      &kp J      &kp K      &kp L      &kp SEMI   &kp SQT
+        &kp LSHFT  &kp Z      &kp X      &kp C      &kp V      &kp B                   &_&_       __________ &_&_ __________ &_&_                    &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH   &kp RSHFT
+        __________ __________ __________ __________ __________            __________   __________ __________      __________ __________   __________            __________ __________ __________ __________ &trans    
       >;
     };
     fn {
       bindings = <
-        &AF4       &DESK_A    &DESK_B    &DESK_C    &DESK_D    &DESK_E    &trans                                                          &trans     &DESK_F    &DESK_G    &DESK_H    &DESK_I    &DESK_J    &trans
+        &AF4       &DESK_A    &DESK_B    &DESK_C    &DESK_D    &DESK_E    __________                                                      __________ &DESK_F    &DESK_G    &DESK_H    &DESK_I    &DESK_J    &trans
         &AT_QCK    &ditto     &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp PSCRN  &T_ADD                                                          &DSK_UP    &kp EQUAL  &kp N7     &kp N8     &kp N9     &kp MINUS  &trans
-        &AT_TOG    W_UP       W_DWN      W_LFT      W_RGT      &kp LG(Z)  &T_OPEN      &bt BT_SEL 0 &bt BT_SEL 1          RGBTGL     &trans       &DSK_DN    &kp SLASH  &kp N4     &kp N5     &kp N6     &kp PLUS   &trans     
-        &trans     &kp LC(Z)  &kp LC(Y)  &kp LC(A)  &kp LC(K)  &T_OPEN                 &_&_       &trans &_ &_    BTTGL &_&_                         &none      &kp N1     &kp N2     &kp N3     &kp EQUAL  &trans     
-        &trans     &trans     &trans     &trans     &trans                &trans       &mo FKEYS  &trans          &trans     &trans       &trans                &trans     &trans     &kp N0     &trans     &trans     
+        &AT_TOG    &kp UP     &kp DOWN   &kp LEFT   &kp RIGHT  &kp LG(Z)  &T_OPEN      &bt BT_SEL 0 &bt BT_SEL 1  RGBTGL     __________   &DSK_DN    &kp SLASH  &kp N4     &kp N5     &kp N6     &kp PLUS   __________ 
+        __________ &kp LC(Z)  &kp LC(Y)  &kp LC(A)  &kp LC(K)  &T_OPEN                 &_&_       __________ &_&_ BTTGL      &_&_                    &none      &kp N1     __________ &kp N3     &kp EQUAL  __________ 
+        __________ __________ __________ __________ __________            __________   &mo FKEYS  __________      __________ __________   __________            __________ __________ __________ __________ __________ 
       >;
     };
 
-//        &kp F1     &kp F2     &kp F3     &kp F4     &kp F5     &kp F6     &trans                                                          &trans     &kp F7     &kp F8     &kp F9     &kp F10    &kp F11    &kp F12 
+//        &kp F1     &kp F2     &kp F3     &kp F4     &kp F5     &kp F6     __________                                                      __________ &kp F7     &kp F8     &kp F9     &kp F10    &kp F11    &kp F12 
     symbol {
       bindings = <
-        &trans     &trans     &trans     &trans     &trans     &trans     &trans                                                          &trans     &trans     &trans     &trans     &trans     &trans     &trans     
-        &AT_QCK    &kp EXCL   &kp AT     &kp HASH   &kp DLLR   &kp PRCNT  &trans                                                          &trans     &kp CARET  &kp AMPS   &kp STAR   &kp LPAR   &kp RPAR   &trans     
-        &trans     &kp LBKT   &kp SEMI   &kp LBRC   &kp LPAR   &kp GRAVE  &trans       &trans     &RDC_X          &trans     &trans       &trans     &kp TILDE  &kp RPAR   &kp RBRC   &kp COLON  &kp RBKT   &trans     
-        &trans     &kp QMARK  &kp MINUS  &kp BSLH   &kp EQUAL  &kp LT                  &_&_       &trans     &_ &_&trans     &_&_                    &kp GT     &kp PLUS   &kp PIPE   &kp UNDER  &kp SLASH  &trans     
-        &trans     &kp C_VOL_UP &kp C_VOL_DN &kp C_MUTE    &trans         &trans       &trans     &trans          &trans     &trans                  &trans     &trans     &trans     &kp C_PP     &kp C_NEXT&trans     
+        __________ __________ __________ __________ __________ __________ __________                                                      __________ __________ __________ __________ __________ __________ __________ 
+        &AT_QCK    &kp EXCL   &kp AT     &kp HASH   &kp DLLR   &kp PRCNT  __________                                                      __________ &kp CARET  &kp AMPS   &kp STAR   &kp LPAR   &kp RPAR   __________ 
+        __________ &kp LBKT   &kp SEMI   &kp LBRC   &kp LPAR   &kp GRAVE  __________   __________ &RDC_X          __________ __________   __________ &kp TILDE  &kp RPAR   &kp RBRC   &kp COLON  &kp RBKT   __________ 
+        __________ &kp QMARK  &kp MINUS  &kp BSLH   &kp EQUAL  &kp LT                  &_&_       __________ &_&_ __________ &_&_                    &kp GT     &kp PLUS   &kp PIPE   &kp UNDER  &kp SLASH  __________ 
+        __________ &kp C_VOL_UP &kp C_VOL_DN &kp C_MUTE    __________     __________   __________ __________      __________ __________              __________ __________ __________ &kp C_PP     &kp C_NEXT  __________ 
       >;
     };
 
     fkeys {
       bindings = <
-        &trans     &trans     &trans     &trans     &trans     &trans     &bootloader                                                     &trans     &trans     &kp F10    &kp F11    &kp F12    &trans     &trans
-        &trans     &trans     &trans     &trans     &trans     &trans     &trans                                                          &trans     &trans     &kp F7     &kp F8     &kp F9     &trans     &trans     
-        &trans     &kp UP     &kp DOWN   &kp LEFT   &kp RIGHT  &trans     &trans       &to QWRT   &trans          &trans     &trans       &trans     &trans     &kp F4     &kp F5     &kp F6     &trans     &trans     
-        &trans     &trans     &trans     &trans     &trans     &trans                  &_&_       &trans    &_ &_&trans      &_&_                    &trans     &kp F1     &kp F2     &kp F3     &trans     &trans     
-        &trans     &trans     &trans     &trans     &trans                &trans       &trans     &trans          &trans     &trans       &trans                &trans     &trans     &trans     &trans     &trans     
+        &AF4       __________ __________ __________ __________ __________ __________                                                      __________ __________ __________ __________ __________ __________ &trans
+        &AT_QCK    __________ __________ __________ __________ __________ __________                                                      __________ __________ __________ __________ __________ __________ __________ 
+        &AT_TOG    __________ __________ __________ __________ __________ __________   __________ __________      __________ __________   __________ __________ __________ __________ __________ __________ __________ 
+        __________ __________ __________ __________ __________ __________              &_&_       &trans     &_&_ __________ &_&_                    __________ __________ __________ __________ __________ __________ 
+        __________ __________ __________ __________ __________            __________   __________ __________      __________ __________   __________            __________ __________ __________ __________ __________ 
       >;
     };
     };
