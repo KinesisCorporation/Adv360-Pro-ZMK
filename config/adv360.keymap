@@ -44,7 +44,7 @@
     default_layer {
       bindings = <
         &kp GRAVE  &kp N1     &kp N2     &kp N3     &kp N4     &kp N5     &kp F5                                                          &trans     &kp N6     &kp N7     &kp N8     &kp N9     &kp N0     &trans
-        &kp TAB    &kp SQT    &kp COMMA  &kp PERIOD &kp P      &kp Y      &kp EQUAL                                                       &trans     &kp F      &kp G      &kp C      &kp R      &kp L      &trans
+        &kp TAB    &kp SQT    &kp COMMA  &kp PERIOD &kp P      &kp Y      &kp EQUAL                                                       &trans     &kp F      &kp G      &kp C      &kp R      &kp L      &kp HOME
         &kp ESC    &kp A      &kp O      &kp E      &kp U      &kp I      &kp F12      &kp LGUI   &kp LALT        &kp LGUI   &SPOTLIGHT   &trans     &kp D      &kp H      &kp T      &kp N      &kp S      &kp END
         &kp LSHFT  &kp SLASH  &kp Q      &kp J      &kp K      &kp X                   __ __      &kp DEL  __  __ &kp HOME   __ __                   &kp B      &kp M      &kp W      &kp V      &kp Z      &kp ENTER
         &kp LCTRL  &kp UP     &kp DOWN   &kp LBKT   &kp N9                &kp SPACE    &kp BSPC   &mo RED         &kp END    &mo SYMB     &mo RED               &kp N0   &kp RBKT   &kp LEFT   &kp RIGHT    &kp K_APP
@@ -97,13 +97,15 @@
         &trans     &trans     &trans     &trans     &trans                &trans       &mo FKEYS  &trans          &trans     &trans       &trans                &trans     &trans     &kp N0     &trans     &trans     
       >;
     };
+
+//        &kp F1     &kp F2     &kp F3     &kp F4     &kp F5     &kp F6     &trans                                                          &trans     &kp F7     &kp F8     &kp F9     &kp F10    &kp F11    &kp F12 
     symbol {
       bindings = <
-        &kp F1     &kp F2     &kp F3     &kp F4     &kp F5     &kp F6     &trans                                                          &trans     &kp F7     &kp F8     &kp F9     &kp F10    &kp F11    &kp F12 
+        &trans     &trans     &trans     &trans     &trans     &trans     &trans                                                          &trans     &trans     &trans     &trans     &trans     &trans     &trans     
         &AT_QCK    &kp EXCL   &kp AT     &kp HASH   &kp DLLR   &kp PRCNT  &trans                                                          &trans     &kp CARET  &kp AMPS   &kp STAR   &kp LPAR   &kp RPAR   &trans     
-        &trans     &kp LBKT   &kp SEMI   &kp LBRC   &kp LPAR   &kp GRAVE  &trans       &trans &RDC_X       &trans     &trans       &trans     &kp TILDE  &kp RPAR   &kp RBRC   &kp COLON  &kp RBKT   &trans     
-        &trans     &kp QMARK  &kp MINUS  &kp BSLH   &kp EQUAL  &kp LT                 &_&_       &trans     &_ &_&trans     &_&_                    &kp GT     &kp PLUS   &kp PIPE   &kp UNDER  &kp SLASH  &trans     
-        &trans     &kp C_VOL_UP &kp C_VOL_DN &kp C_MUTE    &trans                &trans       &trans     &trans          &trans     &trans       &trans                &trans     &trans     &kp C_PP     &kp C_NEXT     &trans     
+        &trans     &kp LBKT   &kp SEMI   &kp LBRC   &kp LPAR   &kp GRAVE  &trans       &trans     &RDC_X          &trans     &trans       &trans     &kp TILDE  &kp RPAR   &kp RBRC   &kp COLON  &kp RBKT   &trans     
+        &trans     &kp QMARK  &kp MINUS  &kp BSLH   &kp EQUAL  &kp LT                  &_&_       &trans     &_ &_&trans     &_&_                    &kp GT     &kp PLUS   &kp PIPE   &kp UNDER  &kp SLASH  &trans     
+        &trans     &kp C_VOL_UP &kp C_VOL_DN &kp C_MUTE    &trans         &trans       &trans     &trans          &trans     &trans                  &trans     &trans     &trans     &kp C_PP     &kp C_NEXT&trans     
       >;
     };
 
