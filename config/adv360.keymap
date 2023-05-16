@@ -11,6 +11,12 @@
 #define W_LFT &kp LG(LEFT)
 #define W_RGT &kp LG(RIGHT)
 
+
+#define WM_F_L  &kp LC(LA(LEFT))
+#define WM_F_R  &kp LC(LA(RIGHT))
+#define WM_F_U  &kp LC(LA(UP))
+#define WM_F_D  &kp LC(LA(DOWN))
+
 #define BASE 0
 #define QWRT 3
 #define GAME 4
@@ -20,7 +26,7 @@
 #define TILING 8
 
 #define RGBTGL &rgb_ug RGB_TOG
-#define BTTGL &bl BL_TOG
+#define BLTGL &bl BL_TOG
 
 / {
     behaviors {
@@ -95,8 +101,8 @@
       bindings = <
         &AF4       &WM_WS_1   &WM_WS_2   &WM_WS_3   &WM_WS_4   &WM_WS_5   &WM_STACK_T                                                     __________ &WM_WS_6   &WM_WS_7   &WM_WS_8   &WM_WS_9   &WM_WS_10  __________
         &AT_QCK    &ditto     &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp PSCRN  &kp F14                                                         &DSK_UP    &kp EQUAL  &kp N7     &kp N8     &kp N9     &kp MINUS  &trans
-        &AT_TOG    &WM_LEFT   &WM_DOWN   &WM_UP     &WM_RIGHT  &WM_MON    &kp F15      &bt BT_SEL 0 &bt BT_SEL 1  RGBTGL     __________   &DSK_DN    &kp SLASH  &kp N4     &kp N5     &kp N6     &kp PLUS   __________ 
-        __________ &kp LC(Z)  &kp LC(Y)  &kp LC(A)  &WM_FLOAT  &WM_MANAGE       &_&_       __________ &_&_ BTTGL      &_&_                    &none      &kp N5     &kp N2     &kp N3     &kp EQUAL  __________ 
+        &AT_TOG    &WM_LEFT   &WM_DOWN   &WM_UP     &WM_RIGHT  &WM_MON    &kp F15      &bt BT_SEL 0 &bt BT_SEL 1  RGBTGL     __________   &DSK_DN    &WM_PROM   &kp N4     &kp N5     &kp N6     &kp PLUS   __________ 
+        __________ &kp LC(Z)  &kp LC(Y)  &kp LC(A)  &WM_FLOAT  &WM_MANAGE       &_&_   __________ &_&_ BLTGL      &_&_                    &none      &kp N5     &kp N2     &kp N3     &kp EQUAL  __________ 
         __________ __________ __________ &WM_STACK_C &WM_FOCUS            __________   &mo FKEYS  __________      __________ __________   __________            __________ &kp N0     __________ __________ __________ 
       >;
     };
@@ -116,7 +122,7 @@
         &trans     &trans     &trans     &trans     &trans     &trans     &trans                                                          &trans     &trans     &kp F7     &kp F8     &kp F9     &trans     &trans     
         &trans     &kp UP     &kp DOWN   &kp LEFT   &kp RIGHT  &trans     &trans       &to QWRT   &trans          &trans     &trans       &trans     &trans     &kp F4     &kp F5     &kp F6     &trans     &trans     
         &trans     &trans     &trans     &trans     &trans     &trans                  &_&_       &trans    &_ &_&trans      &_&_                    &trans     &kp F1     &kp F2     &kp F3     &trans     &trans     
-        &trans     &trans     &trans     &trans     &trans                &trans       &trans     &trans          &trans     &trans       &trans                &trans     &trans     &trans     &trans     &trans     
+        &trans     &trans     &trans     &trans     &trans                &trans       &bt BT_CLR     &trans          &trans     &trans       &trans                &trans     &trans     &trans     &trans     &trans     
       >;
     };
 
@@ -125,7 +131,7 @@
         &AF4       &WM_WS_1   &WM_WS_2   &WM_WS_3   &WM_WS_4   &WM_WS_5   __________                                                      __________ &WM_WS_6   &WM_WS_7   &WM_WS_8   &WM_WS_9   &WM_WS_10  __________
         &AT_QCK    __________ __________ __________ __________ __________ __________                                                      __________ __________ __________ __________ __________ __________ __________ 
         &AT_TOG    &WM_LEFT   &WM_DOWN   &WM_UP     &WM_RIGHT  __________ __________   __________ __________      __________ __________   __________ __________ __________ __________ __________ __________ __________ 
-        __________ __________ __________ __________ __________ __________              &_&_       &trans     &_&_ __________ &_&_                    __________ __________ __________ __________ __________ __________ 
+        __________ WM_F_L     WM_F_D     WM_F_U     WM_F_R                             &_&_       __________ &_&_ __________ &_&_                    __________ __________ __________ __________ __________ __________ 
         __________ __________ __________ __________ __________            __________   __________ __________      __________ __________   __________            __________ __________ __________ __________ __________ 
       >;
     };

@@ -69,6 +69,14 @@ ZMK_MACRO(WM_MON,
         ;
         )
 
+ZMK_MACRO(WM_PROM, 
+        bindings
+        = <&macro_press &kp LCTRL &kp LALT>
+        , <&macro_tap &kp P>
+        , <&macro_release &kp LCTRL &kp LALT>
+        ;
+        )
+
 ZMK_MACRO(WM_UP, 
         bindings
         = <&macro_press &kp LCTRL &kp LALT>
