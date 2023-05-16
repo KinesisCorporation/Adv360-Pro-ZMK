@@ -39,11 +39,11 @@
 
         default_layer {
             bindings = <
-     &kp MINUS     &kp N1    &kp N2    &kp N3     &kp N4  &kp N5               &tog 1                                                                 &mo 3  &kp N6    &kp N7     &kp N8    &kp N9    &kp N0  &kp EQUAL
-    &kp DELETE      &kp Q     &kp W     &kp E      &kp R   &kp T            &sk LCTRL                                                             &sk RCTRL   &kp Y     &kp U      &kp I     &kp O     &kp P   &kp BSLH
- &kp BACKSPACE      &kp A     &kp S     &kp D      &kp F   &kp G                &sl 1  &kp LCTRL  &kp LGUI   &none   &none   &kp LGUI  &kp RCTRL      &sl 1   &kp H     &kp J      &kp K     &kp L  &kp SEMI    &kp SQT
-     &kp LSHFT      &kp Z     &kp X     &kp C      &kp V   &kp B                &none      &none  &kp HOME   &none   &none  &kp PG_UP      &none      &none   &kp N     &kp M  &kp COMMA   &kp DOT  &kp FSLH  &kp RSHFT
-     &kp LCTRL  &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT                      &kp ESC    &kp TAB   &kp END                  &kp PG_DN  &kp ENTER  &kp SPACE          &kp DOWN     &kp UP  &kp LBKT  &kp RBKT  &kp RCTRL
+     &kp MINUS     &kp N1    &kp N2    &kp N3     &kp N4  &kp N5            &sk LEFT_SHIFT                                                             &sk LEFT_GUI  &kp N6    &kp N7     &kp N8    &kp N9    &kp N0  &kp EQUAL
+    &kp DELETE      &kp Q     &kp W     &kp E      &kp R   &kp T                 &sk LCTRL                                                                &sk RCTRL   &kp Y     &kp U      &kp I     &kp O     &kp P   &kp BSLH
+ &kp BACKSPACE      &kp A     &kp S     &kp D      &kp F   &kp G                     &sl 1  &kp LCTRL  &kp LGUI   &none   &none   &kp LGUI  &kp RCTRL         &sl 1   &kp H     &kp J      &kp K     &kp L  &kp SEMI    &kp SQT
+     &kp LSHFT      &kp Z     &kp X     &kp C      &kp V   &kp B                     &none      &none  &kp HOME   &none   &none  &kp PG_UP      &none         &none   &kp N     &kp M  &kp COMMA   &kp DOT  &kp FSLH  &kp RSHFT
+     &kp LCTRL  &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT                           &kp ESC    &kp TAB   &kp END                  &kp PG_DN  &kp ENTER     &kp SPACE          &kp DOWN     &kp UP  &kp LBKT  &kp RBKT  &kp RCTRL
             >;
         };
 
