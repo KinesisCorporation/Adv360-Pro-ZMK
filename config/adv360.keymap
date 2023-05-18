@@ -60,9 +60,9 @@
         layer_fn {
             bindings = <
  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6            &tog 1                                                   &mo 3  &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
- &trans  &trans  &trans  &trans  &trans  &trans             &none                                                   &none  &trans  &kp HOME  &kp UP   &kp END   &trans   &trans
- &trans  &trans  &trans  &trans  &trans  &trans             &none  &trans  &trans   &none   &none  &trans  &mo 2   &none  &trans  &kp LEFT  &kp DOWN   &kp RIGHT   &kp DEL   &trans
- &trans  &trans  &trans  &trans  &trans  &trans             &none   &none  &trans   &none   &none  &trans   &none   &none  &trans  &trans  &trans   &trans   &trans   &trans
+ &kp ESC      &kp Q     &kp W     &kp E      &kp R   &kp T             &none                                                   &none  &trans  &kp HOME  &kp UP   &kp END   &trans   &trans
+ &kp TAB      &kp A     &kp S     &kp D      &trans   &kp G             &none  &trans  &trans   &none   &none  &trans  &mo 2   &none  &trans  &kp LEFT  &kp DOWN   &kp RIGHT   &kp DEL   &trans
+ &kp LSHFT      &kp Z     &kp X     &kp C      &kp V   &kp B             &none   &none  &trans   &none   &none  &trans   &none   &none  &trans  &trans  &trans   &trans   &trans   &trans
  &tog 2  &trans  &trans  &trans  &trans                    &macro_delete_word  &trans  &trans                  &trans  &trans  &trans          &trans  &trans   &trans   &trans   &trans
             >;
         };
