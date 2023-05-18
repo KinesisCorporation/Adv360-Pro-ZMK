@@ -6,22 +6,24 @@
 
 #define __ &trans
 #define __________ &trans
+#define _________ &trans
+#define ___________ &trans
 
 #define WM_S_L                &kp LC(LA(LEFT))
 #define WM_S_D                &kp LC(LA(DOWN))
 #define WM_S_U                &kp LC(LA(UP))
 #define WM_S_R                &kp LC(LA(RIGHT))
 
-#define WM_WS_1                &kp LC(LA(0))
-#define WM_WS_2                &kp LC(LA(1))
-#define WM_WS_3                &kp LC(LA(2))
-#define WM_WS_4                &kp LC(LA(3))
-#define WM_WS_5                &kp LC(LA(4))
-#define WM_WS_6                &kp LC(LA(5))
-#define WM_WS_7                &kp LC(LA(6))
-#define WM_WS_8                &kp LC(LA(7))
-#define WM_WS_9                &kp LC(LA(8))
-#define WM_WS_10               &kp LC(LA(9))
+#define WM_WS_1                &kp LC(LA(N0))
+#define WM_WS_2                &kp LC(LA(N1))
+#define WM_WS_3                &kp LC(LA(N2))
+#define WM_WS_4                &kp LC(LA(N3))
+#define WM_WS_5                &kp LC(LA(N4))
+#define WM_WS_6                &kp LC(LA(N5))
+#define WM_WS_7                &kp LC(LA(N6))
+#define WM_WS_8                &kp LC(LA(N7))
+#define WM_WS_9                &kp LC(LA(N8))
+#define WM_WS_10               &kp LC(LA(N9))
 
 #define WM_F_L                &kp LC(LA(H))
 #define WM_F_D                &kp LC(LA(J))
@@ -39,7 +41,7 @@
 #define WM_FLIP               &kp LC(LA(I))
 #define WM_MAX                &kp LC(LA(A))
 #define WM_FOCUS              &kp LC(LA(Z))
-#define WM_RESORE_WINDOWS     &kp LC(LA(S))
+#define WM_RESTORE_WINDOWS     &kp LC(LA(S))
 #define WM_RELOAD             &kp LC(LA(N))
 
 #define WM_H_INC              &kp LC(LA(LBKT))
@@ -50,12 +52,11 @@
 
 
 #define BASE 0
-#define TILING 2
 #define QWRT 3
-#define GAME 4
-#define RED 5
-#define SYMB 6
-#define FKEYS 7
+#define RED 4
+#define SYMB 5
+#define FKEYS 6
+#define WM 7
 
 #define RGBTGL &rgb_ug RGB_TOG
 #define BLTGL &bl BL_TOG
@@ -87,7 +88,7 @@
         &kp TAB    &kp SQT    &kp COMMA  &kp PERIOD &kp P      &kp Y      &kp EQUAL                                                       __________ &kp F      &kp G      &kp C      &kp R      &kp L      &kp HOME
         &kp ESC    &kp A      &kp O      &kp E      &kp U      &kp I      &kp F12      &kp LGUI   &kp LALT        &kp LGUI   &SPOTLIGHT   __________ &kp D      &kp H      &kp T      &kp N      &kp S      &kp END
         &kp LSHFT  &kp SLASH  &kp Q      &kp J      &kp K      &kp X                   __ __      &kp DEL  __  __ &kp HOME   __ __                   &kp B      &kp M      &kp W      &kp V      &kp Z      &kp ENTER
-        &kp LCTRL  &kp UP     &kp DOWN   &kp LBKT   &kp N9                &kp SPACE    &kp BSPC   &mo RED         &kp END    &mo SYMB     &mo RED               &kp N0   &kp RBKT   &kp LEFT   &kp RIGHT    &kp K_APP
+        &kp LCTRL  &kp UP     &kp DOWN   &kp LBKT   &kp N9                &kp SPACE    &kp BSPC   &mo RED         &mo WM     &mo SYMB     &mo RED               &mo WM   &kp RBKT   &kp LEFT   &kp RIGHT    &kp K_APP
       >;
     };
 
@@ -110,16 +111,6 @@
         __________ __________ __________ __________ __________            __________   __________ __________      __________ __________   __________            __________ __________ __________ __________ __________ 
       >;
     };
-    wm {
-      bindings = <
-
-        WM_CLOSE   WM_WS_1    WM_WS_2    WM_WS_3    WM_WS_4    WM_WS_5    WM_MANAGE                                                       WM_RETILE  WM_WS_6    WM_WS_7    WM_WS_8    WM_WS_9     WM_WS_10 __________         
-        &AT_QCK    __________ WM_PROM    WM_MAX     WM_FOCUS   __________ WM_FLOAT                                                       WM_TILE_TOG __________ __________ __________ __________ __________ WM_RESORE_WINDOWS 
-        &AT_TOG    WM_F_L     WM_F_D     WM_F_U     WM_F_R     WM_MONICLE WM_S_UNSTACK  __________ __________      __________ __________   WM_FLIP    __________ __________ __________ __________ __________ __________ 
-        __________ WM_S_L     WM_S_D     WM_S_U     WM_S_R     WM_S_CYCLE              &_&_       WM_RELOAD  &_&_ __________ &_&_                    __________ __________ __________ __________ __________ __________ 
-        __________ WM_H_DEC   WM_V_INC   WM_V_DEC   WM_H_INC              __________   __________ __________      __________ __________   __________            __________ __________ __________ __________ __________ 
-      >;
-    };
     qwerty {
       bindings = <
         __________ __________ __________ __________ __________ __________ __________                                                      __________ __________ __________ __________ __________ __________ __________ 
@@ -131,11 +122,11 @@
     };
     fn {
       bindings = <
-        __________ __________ __________ __________ __________ __________ __________                                                      __________ __________ __________ __________ __________ __________ &trans
-        &AT_QCK    &ditto     &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp PSCRN  __________                                                      &DSK_UP    &kp EQUAL  &kp N7     &kp N8     &kp N9     &kp MINUS  &trans
-        &AT_TOG    &kp UP      &kp DOWN  &kp LEFT   &kp RIGHT  __________ __________   &bt BT_SEL 0 &bt BT_SEL 1  RGBTGL     __________   &DSK_DN    __________ &kp N4     &kp N5     &kp N6     &kp PLUS   __________ 
-        __________ &kp LC(Z)  &kp LC(Y)  &kp LC(A)  __________ __________       &_&_   __________ &_&_ BLTGL      &_&_                    &none      &kp N5     &kp N2     &kp N3     &kp EQUAL  __________ 
-        __________ __________ __________ __________ __________              &mo TILING __________  __________      __________ __________   __________            __________ &kp N0     __________ __________ __________ 
+        &kp LA(F4) WM_WS_1    WM_WS_2    WM_WS_3    WM_WS_4    WM_WS_5    WM_MANAGE                                                       WM_RETILE  WM_WS_6    WM_WS_7    WM_WS_8    WM_WS_9     WM_WS_10 __________         
+        &AT_QCK    &ditto     &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp PSCRN  WM_FLOAT                                                        &DSK_UP    __________ &kp N7     &kp N8     &kp N9     __________ WM_RESTORE_WINDOWS
+        &AT_TOG    WM_F_L     WM_F_D     WM_F_U     WM_F_R     WM_MONICLE _________ &bt BT_SEL 0 &bt BT_SEL 1  RGBTGL     __________   &DSK_DN    __________ &kp N4     &kp N5     &kp N6     __________ __________ 
+        __________ &kp LC(Z)  &kp LC(Y)  &kp LC(A)  WM_S_CYCLE WM_PROM                 &_&_   __________ &_&_ BLTGL      &_&_                        WM_FLIP    __________ &kp N2     &kp N3     &kp EQUAL  __________ 
+        __________ WM_H_DEC   WM_V_INC   WM_V_DEC   WM_H_INC              &mo WM       __________ __________      __________ __________  __________             __________ &kp N0      WM_S_L     WM_S_R    __________ 
       >;
     };
 //        &kp F1     &kp F2     &kp F3     &kp F4     &kp F5     &kp F6     __________                                                      __________ &kp F7     &kp F8     &kp F9     &kp F10    &kp F11    &kp F12 
@@ -155,6 +146,15 @@
         &trans     &kp UP     &kp DOWN   &kp LEFT   &kp RIGHT  &trans     &trans       &to QWRT   &trans          &trans     &trans       &trans     &trans     &kp F4     &kp F5     &kp F6     &trans     &trans     
         &trans     &trans     &trans     &trans     &trans     &trans                  &_&_       &bt BT_CLR &_&_ &trans      &_&_                    &trans     &kp F1     &kp F2     &kp F3     &trans     &trans     
         __________ __________ __________ __________ __________            __________   __________ __________      __________ __________   __________            __________ __________ __________ __________ __________ 
+      >;
+    };
+    wm {
+      bindings = <
+        &kp LA(F4) WM_WS_1    WM_WS_2    WM_WS_3    WM_WS_4    WM_WS_5    WM_MANAGE                                                       WM_RETILE  WM_WS_6    WM_WS_7    WM_WS_8    WM_WS_9     WM_WS_10 __________         
+        &AT_QCK    __________ WM_PROM    WM_MAX     WM_FOCUS   __________ WM_FLOAT                                                       WM_TILE_TOG __________ __________ __________ __________ __________ WM_RESTORE_WINDOWS 
+        &AT_TOG    WM_F_L     WM_F_D     WM_F_U     WM_F_R     WM_MONICLE WM_S_UNSTACK  __________ __________      __________ __________   WM_FLIP    __________ __________ __________ __________ __________ __________ 
+        __________ WM_S_L     WM_S_D     WM_S_U     WM_S_R     WM_S_CYCLE              &_&_       WM_RELOAD  &_&_ __________ &_&_                    __________ __________ __________ __________ __________ __________ 
+        __________ WM_H_DEC   WM_V_INC   WM_V_DEC   WM_H_INC              __________   __________ __________      __________ __________   __________            __________ __________ __________ __________ __________ 
       >;
     };
 
