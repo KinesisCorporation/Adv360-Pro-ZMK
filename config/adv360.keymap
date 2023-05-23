@@ -18,6 +18,24 @@
 #include <dt-bindings/zmk/rgb.h>
 #include <dt-bindings/zmk/backlight.h>
 
+#define KEYS_LEFT 0 1 2 3 4 5 6 \
+                  14 15 16 17 18 19 20 \
+                  28 29 30 31 32 33 34 \
+                  46 47 48 49 50 51 \
+                  66 67 68 69 70
+
+#define KEYS_RIGHT 7 8 9 10 11 12 13 \
+                   21 22 23 24 25 26 27 \
+                   39 40 41 42 43 44 45 \
+                   60 61 62 63 64 65 \
+                   77 78 79 80 81
+
+#define THUMBS_LEFT 35 36 54 71 72 73
+
+#define THUMBS_RIGHT 37 38 57 74 75 76
+
+#define THUMBS THUMBS_LEFT THUMBS_RIGHT
+
 / {
   behaviors {
     #include "macros.dtsi"
@@ -31,6 +49,17 @@
 		flavor = "tap-unless-interrupted";
 		bindings = <&kp>, <&kp>;
 		};
+
+	pht: positional_hold_tap {
+		compatible = "zmk,behavior-hold-tap";
+		label = "POSITIONAL_HOLD_TAP";
+		#binding-cells = <2>;
+		flavor = "tap-unless-interrupted";
+		tapping-term-ms = <400>;
+		quick-tap-ms = <200>;
+		bindings = <&kp>, <&kp>;
+		hold-trigger-key-positions = <KEYS_RIGHT THUMBS>;
+		};
 	};
 
 	keymap {
@@ -41,7 +70,7 @@
             bindings = <
  &kp EQUAL     &kp N1    &kp N2    &kp N3     &kp N4  &kp N5              &tog 1                                                                 &mo 3  &kp N6  &kp N7     &kp N8    &kp N9    &kp N0  &kp MINUS
    &kp ESC      &kp Q     &kp W     &kp E      &kp R   &kp T               &macro_vs_build                                                                &none   &kp Y   &kp U      &kp I     &kp O     &kp P   &kp BSLH
-   &kp TAB      &kp A     &hm 4 S     &hm 1 D      &hm 2 F   &kp G               &kp F5  &kp F12  &kp LALT   &none   &none   &kp LGUI  &mo 2      &none   &kp H   &kp J      &kp K     &kp L  &kp SEMI    &kp SQT
+   &kp TAB      &kp A     &pht 4 S     &lt 1 D      &lt 2 F   &kp G               &kp F5  &kp F12  &kp LALT   &none   &none   &kp LGUI  &mo 2      &none   &kp H   &kp J      &kp K     &kp L  &kp SEMI    &kp SQT
  &kp LSHFT      &kp Z     &kp X     &kp C      &kp V   &kp B               &none      &none  &kp HOME   &none   &none  &kp PG_UP      &none      &none   &kp N   &kp M  &kp COMMA   &kp DOT  &kp FSLH  &kp RSHFT
      &tog 2  &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT                    &kp BSPC  &kp LCTRL   &kp LGUI                  &kp PG_DN  &kp ENTER  &kp SPACE          &kp UP   &kp DOWN  &kp LBKT  &kp RBKT      &mo 2
             >;
