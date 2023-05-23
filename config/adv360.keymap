@@ -28,7 +28,7 @@
 		#binding-cells = <2>;
 		tapping-term-ms = <200>;
 		quick_tap_ms = <175>;
-		flavor = "tap-unless-interrupted'";
+		flavor = "tap-unless-interrupted";
 		bindings = <&kp>, <&kp>;
 		};
 	};
