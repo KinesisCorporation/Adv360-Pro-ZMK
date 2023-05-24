@@ -36,6 +36,12 @@ label = "macro_brackets";
 #binding-cells = <0>;
 bindings = <&kp LBKT>, <&kp RBKT>, <&kp LEFT>;
 };
+macro_curly_brace: macro_curly_brace{
+compatible = "zmk,behavior-macro";
+label = "macro_curly_brace";
+#binding-cells = <0>;
+bindings = <&kp LEFT_BRACE>, <&kp RIGHT_BRACE>, <&kp LEFT>;
+};
 macro_kinesis: macro_kinesis{
 compatible = "zmk,behavior-macro";
 label = "macro_kinesis";

@@ -1,0 +1,5 @@
+#define COMBO(NAME, BINDINGS, KEYPOS, LAYERS) combo_##NAME {bindings = <BINDINGS>;timeout-ms = <20>;key-positions = <KEYPOS>;layers = <LAYERS>;};
+#define ALPHA_ALL HDN HDNW
+#define ALPHA_MAC HDN
+#define ALPHA_WIN HDNW
+#define ALPHA_NO_QWERTY HDN HDNW
