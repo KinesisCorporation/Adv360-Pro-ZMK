@@ -72,7 +72,7 @@
    &kp ESC      &kp Q     &kp W     &kp E      &kp R   &kp T               &macro_vs_build                                                                &none   &kp Y   &kp U      &kp I     &kp O     &kp P   &kp BSLH
    &kp TAB      &kp A     &lt 4 S     &lt 1 D      &lt 2 F   &kp G               &kp F5  &kp F12  &kp LALT   &none   &none   &kp LGUI  &kp DEL      &none   &kp H   &kp J      &kp K     &kp L  &kp SEMI    &kp SQT
  &kp LSHFT      &kp Z     &kp X     &kp C      &kp V   &kp B               &none      &none  &kp HOME   &none   &none  &kp PG_UP      &none      &none   &kp N   &kp M  &kp COMMA   &kp DOT  &kp FSLH  &kp RSHFT
-     &tog 2  &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT                    &kp BSPC  &kp LCTRL   &kp LGUI                  &kp PG_DN  &kp ENTER  &kp SPACE          &kp UP   &kp DOWN  &kp LBKT  &kp RBKT      &tog 5
+     &tog 2  &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT                    &kp BSPC  &kp LCTRL   &kp LGUI                  &kp PG_DN  &kp ENTER  &kp SPACE          &kp UP   &kp DOWN  &kp LBKT  &kp RBKT      &to 5
             >;
         };
 
@@ -122,7 +122,7 @@
    &kp ESC      &kp Q     &kp W     &kp E      &kp R   &kp T               &macro_vs_build                                                                &none   &kp Y   &kp U      &kp I     &kp O     &kp P   &kp BSLH
    &kp TAB      &kp A     &lt 8 S     &lt 6 D      &lt 7 F   &kp G               &kp F5  &kp F12  &kp LALT   &none   &none   &kp LGUI  &kp DEL      &none   &kp H   &kp J      &kp K     &kp L  &kp SEMI    &kp SQT
  &kp LSHFT      &kp Z     &kp X     &kp C      &kp V   &kp B               &none      &none  &kp HOME   &none   &none  &kp PG_UP      &none      &none   &kp N   &kp M  &kp COMMA   &kp DOT  &kp FSLH  &kp RSHFT
-     &tog 2  &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT                    &kp BSPC  &kp LEFT_GUI   &kp LGUI                  &kp PG_DN  &kp ENTER  &kp SPACE          &kp UP   &kp DOWN  &kp LBKT  &kp RBKT      &tog 0
+     &tog 2  &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT                    &kp BSPC  &kp LEFT_GUI   &kp LGUI                  &kp PG_DN  &kp ENTER  &kp SPACE          &kp UP   &kp DOWN  &kp LBKT  &kp RBKT      &to 0
             >;
         };
 
