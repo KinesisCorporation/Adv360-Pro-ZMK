@@ -110,8 +110,8 @@
             bindings = <
  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6            &tog 1                                                   &mo 3  &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
    &kp TAB      &kp Q     &kp W     &kp E      &kp R   &kp T             &none                                                   &none  &trans  &kp LPAR  &kp RPAR   &trans   &trans   &trans
-   &kp ESC      &kp A     &kp S     &kp D      &kp F   &kp G             &none  &trans  &trans   &none   &none  &trans  &mo 2   &none  &kp GRAVE  &kp LBKT  &kp RBKT   &kp EQUAL   &kp MINUS   &trans
- &kp LSHFT      &kp Z     &kp X     &kp C      &kp V   &kp B             &none   &none  &trans   &none   &none  &trans   &none   &none  &trans  &kp LBRC  &kp RBRC   &trans   &trans   &trans
+   &kp ESC      &kp A     &kp S     &kp D      &kp F   &kp G             &none  &trans  &trans   &none   &none  &trans  &mo 2   &none  &kp GRAVE  &kp LBRC  &kp RBRC   &kp EQUAL   &kp MINUS   &trans
+ &kp LSHFT      &kp Z     &kp X     &kp C      &kp V   &kp B             &none   &none  &trans   &none   &none  &trans   &none   &none  &trans  &kp LBKT  &kp RBKT   &trans   &trans   &trans
  &tog 2  &trans  &trans  &trans  &trans                    &macro_delete_word  &trans  &trans                  &trans  &trans  &trans          &trans  &trans   &trans   &trans   &trans
             >;
         };
@@ -142,7 +142,7 @@
    &kp TAB      &kp Q     &kp W     &kp E      &kp R   &kp T             &none                                                   &none  &trans  &kp HOME  &kp UP   &kp END   &trans   &trans
    &kp ESC      &kp A     &kp S     &kp D      &kp F   &kp G             &none  &trans  &trans   &none   &none  &trans  &kp DEL   &none  &trans  &kp LEFT  &kp DOWN   &kp RIGHT   &kp DEL   &trans
  &kp LSHFT      &kp Z     &kp X     &kp C      &kp V   &kp B             &none   &none  &trans   &none   &none  &trans   &none   &none  &trans  &trans  &trans   &trans   &trans   &trans
- &tog 2  &trans  &trans  &trans  &trans                    &macro_delete_word_mac  &trans  &trans                  &trans  &trans  &trans          &trans  &trans   &trans   &trans   &trans
+ &tog 2  &trans  &trans  &trans  &trans                    &macro_delete_word_mac  &kp LALT  &trans                  &trans  &trans  &trans          &trans  &trans   &trans   &trans   &trans
             >;
         };
 
@@ -150,8 +150,8 @@
             bindings = <
  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6            &tog 1                                                   &mo 3  &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
    &kp TAB      &kp Q     &kp W     &kp E      &kp R   &kp T             &none                                                   &none  &trans  &kp LPAR  &kp RPAR   &trans   &trans   &trans
-   &kp ESC      &kp A     &kp S     &kp D      &kp F   &kp G             &none  &trans  &trans   &none   &none  &trans  &mo 2   &none  &kp GRAVE  &kp LBKT  &kp RBKT   &kp EQUAL   &kp MINUS   &trans
- &kp LSHFT      &kp Z     &kp X     &kp C      &kp V   &kp B             &none   &none  &trans   &none   &none  &trans   &none   &none  &trans  &kp LBRC  &kp RBRC   &trans   &trans   &trans
+   &kp ESC      &kp A     &kp S     &kp D      &kp F   &kp G             &none  &trans  &trans   &none   &none  &trans  &mo 2   &none  &kp GRAVE  &kp LBRC  &kp RBRC   &kp EQUAL   &kp MINUS   &trans
+ &kp LSHFT      &kp Z     &kp X     &kp C      &kp V   &kp B             &none   &none  &trans   &none   &none  &trans   &none   &none  &trans  &kp LBKT  &kp RBKT   &trans   &trans   &trans
  &tog 2  &trans  &trans  &trans  &trans                    &macro_delete_word_mac  &trans  &trans                  &trans  &trans  &trans          &trans  &trans   &trans   &trans   &trans
             >;
         };
