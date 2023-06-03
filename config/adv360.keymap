@@ -110,7 +110,7 @@
             bindings = <
  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6            &tog 1                                                   &mo 3  &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
    &kp TAB      &kp Q     &kp W     &kp E      &kp R   &kp T             &none                                                   &none  &trans  &kp LPAR  &kp RPAR   &trans   &trans   &trans
-   &kp ESC      &kp A     &kp S     &kp D      &kp F   &kp G             &none  &trans  &trans   &none   &none  &trans  &mo 2   &none  &kp GRAVE  &kp LBKT  &kp RBKT   &kp EQUAL   &kp MINUS   &trans
+   &kp ESC      &kp A     &kp S     &kp D      &kp F   &kp G             &none  &trans  &trans   &none   &nonffe  &trans  &mo 2   &none  &kp GRAVE  &kp LBKT  &kp RBKT   &kp EQUAL   &kp MINUS   &trans
  &kp LSHFT      &kp Z     &kp X     &kp C      &kp V   &kp B             &none   &none  &trans   &none   &none  &trans   &none   &none  &trans  &kp LBRC  &kp RBRC   &trans   &trans   &trans
  &tog 2  &trans  &trans  &trans  &trans                    &macro_delete_word  &trans  &trans                  &trans  &trans  &trans          &trans  &trans   &trans   &trans   &trans
             >;
@@ -120,7 +120,7 @@
             bindings = <
  &kp EQUAL     &kp N1    &kp N2    &kp N3     &kp N4  &kp N5              &tog 1                                                                 &mo 3  &kp N6  &kp N7     &kp N8    &kp N9    &kp N0  &kp MINUS
    &kp ESC      &kp Q     &kp W     &kp E      &kp R   &kp T               &macro_vs_build                                                                &none   &kp Y   &kp U      &kp I     &kp O     &kp P   &kp BSLH
-   &kp TAB      &kp A     &lt 4 S     &lt 1 D      &lt 2 F   &kp G               &kp F5  &kp F12  &kp LALT   &none   &none   &kp LGUI  &kp DEL      &none   &kp H   &kp J      &kp K     &kp L  &kp SEMI    &kp SQT
+   &kp TAB      &kp A     &lt 8 S     &lt 6 D      &lt 7 F   &kp G               &kp F5  &kp F12  &kp LALT   &none   &none   &kp LGUI  &kp DEL      &none   &kp H   &kp J      &kp K     &kp L  &kp SEMI    &kp SQT
  &kp LSHFT      &kp Z     &kp X     &kp C      &kp V   &kp B               &none      &none  &kp HOME   &none   &none  &kp PG_UP      &none      &none   &kp N   &kp M  &kp COMMA   &kp DOT  &kp FSLH  &kp RSHFT
      &tog 2  &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT                    &kp BSPC  &kp LEFT_GUI   &kp LGUI                  &kp PG_DN  &kp ENTER  &kp SPACE          &kp UP   &kp DOWN  &kp LBKT  &kp RBKT      &tog 0
             >;
