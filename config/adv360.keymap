@@ -59,11 +59,11 @@
 
         layer_fn {
             bindings = <
- &trans  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5            &tog 1                                                          &mo 3  &kp F6       &kp F7          &kp F8     &kp F9  &kp F10  &kp F11
- &trans  &trans  &trans  &trans  &trans  &trans             &none                                                   &kp C_VOL_UP  &trans     &kp HOME    &kp UP_ARROW    &kp END   &trans  &kp F12
- &trans  &trans  &trans  &trans  &trans  &trans             &none  &trans  &trans                  &trans  &trans   &kp C_VOL_DN  &trans     &kp LEFT  &kp DOWN_ARROW  &kp RIGHT   &trans   &trans
- &trans  &trans  &trans  &trans  &trans  &trans                            &trans                  &trans                         &trans       &trans          &trans     &trans   &trans   &trans
-  &to 0  &trans  &trans  &trans  &trans                    &trans  &trans  &trans                  &trans   &none  &kp BACKSPACE          &kp PAGE_UP   &kp PAGE_DOWN     &trans   &trans    &to 0
+ &trans  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5            &tog 1                                                                    &mo 3  &kp F6       &kp F7          &kp F8     &kp F9  &kp F10  &kp F11
+ &trans  &trans  &trans  &trans  &trans  &trans             &none                                                             &kp C_VOL_UP  &trans     &kp HOME    &kp UP_ARROW    &kp END   &trans  &kp F12
+ &trans  &trans  &trans  &trans  &trans  &trans             &none  &trans  &trans                  &trans            &trans   &kp C_VOL_DN  &trans     &kp LEFT  &kp DOWN_ARROW  &kp RIGHT   &trans   &trans
+ &trans  &trans  &trans  &trans  &trans  &trans                            &trans                  &trans                                   &trans       &trans          &trans     &trans   &trans   &trans
+  &to 0  &trans  &trans  &trans  &trans                    &trans  &trans  &trans                  &trans  &macro_ctrlspace  &kp BACKSPACE          &kp PAGE_UP   &kp PAGE_DOWN     &trans   &trans    &to 0
             >;
         };
 
