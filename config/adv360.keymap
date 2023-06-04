@@ -63,7 +63,7 @@
  &trans  &trans  &trans  &trans  &trans  &trans             &none                                                   &kp C_VOL_UP  &trans     &kp HOME    &kp UP_ARROW    &kp END   &trans  &kp F12
  &trans  &trans  &trans  &trans  &trans  &trans             &none  &trans  &trans                  &trans  &trans   &kp C_VOL_DN  &trans     &kp LEFT  &kp DOWN_ARROW  &kp RIGHT   &trans   &trans
  &trans  &trans  &trans  &trans  &trans  &trans                            &trans                  &trans                         &trans       &trans          &trans     &trans   &trans   &trans
-  &to 0  &trans  &trans  &trans  &trans                    &trans  &trans  &trans                  &trans  &trans  &kp BACKSPACE          &kp PAGE_UP   &kp PAGE_DOWN     &trans   &trans    &to 0
+  &to 0  &trans  &trans  &trans  &trans                    &trans  &trans  &trans                  &trans   &none  &kp BACKSPACE          &kp PAGE_UP   &kp PAGE_DOWN     &trans   &trans    &to 0
             >;
         };
 
