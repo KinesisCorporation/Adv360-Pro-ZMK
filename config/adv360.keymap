@@ -50,8 +50,8 @@
    &none  &kp N1     &kp N2    &kp N3     &kp N4     &kp N5                &mo 3      &mo 2     &kp N6     &kp N7    &kp N8         &kp N9     &kp N0  &none
      &caps_word   &kp Q      &kp W     &kp E      &kp R      &kp T            &kp RIGHT     &kp UP      &kp Y      &kp U     &kp I          &kp O      &kp P        &kp DEL
         &kp TAB   &kp A      &kp S     &kp D      &kp F      &kp G             &kp LEFT  &kp LCTRL   &kp LEFT_ALT                       &kp RIGHT_ALT  &kp RCTRL       &kp DOWN   &kp H   &kp J      &kp K    &kp L  &kp SEMI          &kp SQT
- &sk LEFT_SHIFT   &kp Z      &kp X     &kp C      &kp V      &kp B                &none      &none   &kp HYPER      &none     &none      &kp MEH      &none          &none   &kp N   &kp M  &kp COMMA  &kp DOT  &kp FSLH  &sk RIGHT_SHIFT
-          &mo 4   &mo 1  &kp GRAVE  &kp BSLH  &kp EQUAL  &kp SPACE              &kp LEFT_WIN    &kp END  &kp RIGHT_WIN &kp ENTER  &kp BSPC      &kp MINUS   &kp LBKT       &kp RBKT   &mo 1   &mo 4
+ &sk LSHIFT   &kp Z      &kp X     &kp C      &kp V      &kp B                &none      &none   &kp HYPER      &none     &none      &kp MEH      &none          &none   &kp N   &kp M  &kp COMMA  &kp DOT  &kp FSLH  &sk RSHIFT
+          &mo 4   &mo 1  &kp GRAVE  &kp BSLH  &kp EQUAL  &kp SPACE              &kp ESC    &kp LGUI  &kp RGUI &kp ENTER  &kp BSPC      &kp MINUS   &kp LBKT       &kp RBKT   &mo 1   &mo 4
             >;
         };
 
