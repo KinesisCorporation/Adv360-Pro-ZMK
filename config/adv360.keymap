@@ -119,7 +119,7 @@
         layer_Winkey_Left {
             bindings = <
  &trans  &kp KP_MULTIPLY  &kp KP_SLASH     &kp KP_EQUAL  &kp KP_NUMLOCK  &trans               &trans                                                       &trans  &trans  &trans  &trans  &trans  &trans  &trans
- &trans     &kp KP_MINUS     &kp KP_N9        &kp LEFT_GUI KP_N8       &kp KP_N7  &trans               &trans                                                       &trans  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans     &kp KP_MINUS     &kp KP_N9        &kp LG(KP_N8)       &kp KP_N7  &trans               &trans                                                       &trans  &trans  &trans  &trans  &trans  &trans  &trans
  &trans      &kp KP_PLUS     &kp KP_N6        &kp KP_N5       &kp KP_N4  &trans               &trans  &trans  &trans  &trans  &trans  &trans     &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
  &trans     &kp KP_ENTER     &kp KP_N3  &kp KP_NUMBER_2       &kp KP_N1  &trans               &trans  &trans  &trans  &trans  &trans  &trans     &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
  &trans           &trans    &kp KP_DOT           &trans          &trans                    &kp KP_N0  &trans  &trans                  &trans  &kp SPACE  &kp BSPC          &trans  &trans  &trans  &trans  &trans
