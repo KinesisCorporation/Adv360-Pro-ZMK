@@ -31,6 +31,15 @@
         flavor = "tap-preferred";
         bindings = <&kp>, <&kp>;
     };
+     hms: homerow_mods_shift {
+        compatible = "zmk,behavior-hold-tap";
+        label = "HOMEROW_MODS_SHIFT";
+        #binding-cells = <2>;
+        tapping-term-ms = <200>;
+        quick_tap_ms = <175>;
+        flavor = "balanced";
+        bindings = <&kp>, <&kp>;
+    };
   };
 
     keymap {
@@ -41,7 +50,7 @@
             bindings = <
  &kp EQUAL     &kp N1    &kp N2    &kp N3     &kp N4   &kp N5               &tog 1                                                                                   &mo 3   &kp N6   &kp N7     &kp N8    &kp N9    &kp N0            &kp MINUS
    &kp TAB      &kp Q     &kp W     &kp F      &kp P    &kp B               &tog 5                                                                                  &tog 1    &kp J    &kp L      &kp U     &kp Y  &kp SEMI             &kp BSLH
- &hm LEFT_GUI ESC    &hm LCTRL A   &hm LSHFT R   &lt 5 S    &lt 1 T  &hm LALT G                &none  &kp LCTRL           &kp LALT   &none   &none        &kp RIGHT_ALT  &kp RCTRL    &tog 5  &hm RALT M  &lt 4 N    &lt 6 E   &hm RSHFT I   &hm RCTRL O  &hm RIGHT_GUI SINGLE_QUOTE
+ &hm LEFT_GUI ESC    &hm LCTRL A   &hms LSHFT R   &lt 5 S    &lt 1 T  &hm LALT G                &none  &kp LCTRL           &kp LALT   &none   &none        &kp RIGHT_ALT  &kp RCTRL    &tog 5  &hm RALT M  &lt 4 N    &lt 6 E   &hms RSHFT I   &hm RCTRL O  &hm RIGHT_GUI SINGLE_QUOTE
  &kp LSHFT      &kp Z     &kp X     &kp C      &kp D    &kp V                &none      &none  &mt LEFT_GUI HOME   &none   &none  &mt RIGHT_GUI PG_UP      &none     &none    &kp K    &kp H  &kp COMMA   &kp DOT  &kp FSLH            &kp RSHFT
 &macro_excel_note  &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT                     &kp SPACE    &kp DEL            &kp END                            &kp PG_DN  &kp ENTER  &kp BSPC            &kp UP   &kp DOWN  &kp LBKT  &kp RBKT                &mo 2
             >;
