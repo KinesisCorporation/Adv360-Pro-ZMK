@@ -2,8 +2,8 @@ macro_excel_note: macro_excel_note{
 compatible = "zmk,behavior-macro";
 label = "macro_excel_note";
 #binding-cells = <0>;
-wait-ms = <40>;
-tap-ms = <40>;
+wait-ms = <90>;
+tap-ms = <90>;
 bindings = <&kp ENTER>, <&kp UP>, <&macro_press &kp LEFT_SHIFT>, <&kp F2>, <&macro_release &kp LEFT_SHIFT>;
 };
 macro_quotes: macro_quotes{
