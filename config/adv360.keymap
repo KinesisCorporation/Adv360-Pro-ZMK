@@ -39,11 +39,11 @@
 
         default_layer {
             bindings = <
-            &kp EQUAL     &kp N1          &kp N2           &kp N3        &kp N4  &kp N5                      &tog 1                                                                             &mo 3  &kp N6  &kp N7     &kp N8    &kp N9       &kp N0  &kp MINUS
-              &kp TAB      &kp Q           &kp W            &kp E         &kp R   &kp T                   &kp GRAVE                                                                         &kp EQUAL   &kp Y   &kp U      &kp I     &kp O        &kp P   &kp BSLH
- &mt LEFT_CONTROL ESC      &kp A           &kp S            &kp D         &kp F   &kp G            &kp LEFT_BRACKET  &kp LCTRL  &kp LALT                   &kp LGUI      &kp RCTRL  &kp RIGHT_BRACKET   &kp H   &kp J      &kp K     &kp L     &kp SEMI    &kp SQT
-            &kp LSHFT      &kp Z           &kp X            &kp C         &kp V   &kp B                                         &kp HOME                  &kp PG_UP                                     &kp N   &kp M  &kp COMMA   &kp DOT  &lt 2 SLASH  &kp RSHFT
-                &mo 2  &kp GRAVE  &kp LEFT_ARROW  &kp RIGHT_ARROW  &kp LEFT_ALT                            &kp BSPC  &kp ENTER   &kp END                  &kp PG_DN  &kp RIGHT_ALT          &kp SPACE          &kp UP   &kp DOWN  &kp LBKT     &kp RBKT      &mo 2
+            &kp EQUAL  &kp N1          &kp N2           &kp N3        &kp N4  &kp N5                      &tog 1                                                                             &mo 3  &kp N6  &kp N7     &kp N8    &kp N9       &kp N0  &kp MINUS
+              &kp TAB   &kp Q           &kp W            &kp E         &kp R   &kp T                   &kp GRAVE                                                                         &kp EQUAL   &kp Y   &kp U      &kp I     &kp O        &kp P   &kp BSLH
+ &mt LEFT_CONTROL ESC   &kp A           &kp S            &kp D         &kp F   &kp G            &kp LEFT_BRACKET  &kp LCTRL  &kp LALT                   &kp LGUI      &kp RCTRL  &kp RIGHT_BRACKET   &kp H   &kp J      &kp K     &kp L     &kp SEMI    &kp SQT
+            &kp LSHFT   &kp Z           &kp X            &kp C         &kp V   &kp B                                         &kp HOME                  &kp PG_UP                                     &kp N   &kp M  &kp COMMA   &kp DOT  &lt 2 SLASH  &kp RSHFT
+                &mo 2  &tog 4  &kp LEFT_ARROW  &kp RIGHT_ARROW  &kp LEFT_ALT                            &kp BSPC  &kp ENTER   &kp END                  &kp PG_DN  &kp RIGHT_ALT          &kp SPACE          &kp UP   &kp DOWN  &kp LBKT     &kp RBKT      &mo 2
             >;
         };
 
@@ -74,6 +74,16 @@
   &none         &none         &none         &none         &none         &none            &rgb_ug RGB_MEFS_CMD 5       &none  &bt BT_CLR                  &bt BT_CLR  &bt BT_CLR  &rgb_ug RGB_MEFS_CMD 5   &none       &none            &none       &none       &none   &none
   &none         &none         &none         &none         &none         &none                                                     &none                       &none                                       &none       &none            &none       &none       &none   &none
   &none         &none         &none         &none         &none                                      &bl BL_INC  &bl BL_DEC       &none                  &bl BL_TOG       &none                   &none          &bl BL_TOG  &rgb_ug RGB_TOG  &bl BL_INC  &bl BL_DEC   &none
+            >;
+        };
+
+        layer_Layer__4 {
+            bindings = <
+ &trans  &trans  &trans  &trans        &trans  &trans            &trans                                                        &trans  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans        &trans  &trans            &trans                                                        &trans  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans        &trans  &trans            &trans  &trans  &trans                  &trans        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans        &trans  &trans                            &trans                  &trans                        &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &kp LEFT_GUI                    &trans  &trans  &trans                  &trans  &kp LEFT_GUI  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
 
