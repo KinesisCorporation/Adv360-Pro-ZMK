@@ -1,5 +1,53 @@
 # ADV360-PRO-ZMK
 
+## Layout
+
+Assumptions:
+
+* Running macOS
+* [Hammerspoon](https://www.hammerspoon.org) desktop automation tool is installed using my own [settings](https://github.com/ztomer/.hammerspoon)
+
+The following keys have been remapped from the default Kinesis 360 layout
+
+### Default layer
+
+| Original  | Mapped to                                                                         |
+| --------- | --------------------------------------------------------------------------------- |
+| Tab       | Tap once for F12, tap twice for Emojis 😎                                         |
+| Esc       | Tap once for Esc, hold for Control                                                |
+| Caps-lock | Tap to change language, hold for an Hyper key (all four modifiers at once)        |
+| Left Alt  | Tap for Shift-Tab, hold for Left-Alt                                              |
+| Win-key   | Tap for Tab, hold for Right-Alt                                                   |
+| (3) Macro | Tap once for screenshot manager, tap twice for fast screenshot                    |
+| (4) Macro | Tap once for Copy, tap twice Paste                                                |
+| (1) Macro | Tap once for Lock-Screen, tap twice for Sleep                                     |
+| (2) Macro | Tap once for Hammerspoon Vim-Expose, tap Twice for the Mac's built in Expose      |
+
+### Keypad layer (kp)
+
+| Original | Mapped to    |
+| -------- | ------------ |
+| (3) Macro | Mute        |
+| (4) Macro | Play/ Pause |
+| (1) Macro | Volume Up   |
+| (2) Macro | Volume Down |
+
+### Function layer (fp)
+
+| Original  | Mapped to    |
+| --------- | ------------ |
+| (2) Macro | (            |
+| h         | )            |
+| j         | [            |
+| k         | ]            |
+| l         | {            |
+| ;         | }            |
+| '         | `            |
+
+Note:
+
+* Fatih Arslan's configuration was used as [reference](https://github.com/fatih/Adv360-Pro-ZMK/blob/V2.0/config/adv360.keymap)
+
 ## Modifying the keymap
 
 There is a GUI for editing the keymap. It is available at https://kinesiscorporation.github.io/Adv360-Pro-GUI
