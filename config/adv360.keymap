@@ -24,6 +24,7 @@
 #define WM_WS_8                &kp LC(LA(N7))
 #define WM_WS_9                &kp LC(LA(N8))
 #define WM_WS_10               &kp LC(LA(N9))
+#define WM_WS_11               &kp LC(LA(MINUS))
 
 #define WM_F_L                &kp LC(LA(H))
 #define WM_F_D                &kp LC(LA(J))
@@ -49,6 +50,9 @@
 
 #define WM_V_INC              &kp LC(LA(RBKT))
 #define WM_V_DEC              &kp LS(LC(LA(RBKT)))
+
+#define WMA_CHR              &kp KP_N1
+#define WMA_TERM             &kp KP_N2
 
 
 #define BASE 0
@@ -85,10 +89,10 @@
     default_layer {
       bindings = <
         &kp GRAVE  &kp N1     &kp N2     &kp N3     &kp N4     &kp N5     &kp F5                                                          __________ &kp N6     &kp N7     &kp N8     &kp N9     &kp N0     &trans
-        &kp TAB    &kp SQT    &kp COMMA  &kp PERIOD &kp P      &kp Y      &kp EQUAL                                                       __________ &kp F      &kp G      &kp C      &kp R      &kp L      &kp HOME
-        &kp ESC    &kp A      &kp O      &kp E      &kp U      &kp I      &kp F12      &kp LGUI   &kp LALT        &kp LGUI   &SPOTLIGHT   __________ &kp D      &kp H      &kp T      &kp N      &kp S      &kp END
+        &kp TAB    &kp SQT    &kp COMMA  &kp PERIOD &kp P      &kp Y      &kp EQUAL                                                       &kp PG_UP  &kp F      &kp G      &kp C      &kp R      &kp L      &kp HOME
+        &kp ESC    &kp A      &kp O      &kp E      &kp U      &kp I      &kp F12      &kp LGUI   &kp LALT        &kp LGUI   &SPOTLIGHT   &kp PG_DN  &kp D      &kp H      &kp T      &kp N      &kp S      &kp END
         &kp LSHFT  &kp SLASH  &kp Q      &kp J      &kp K      &kp X                   __ __      &kp DEL  __  __ &kp HOME   __ __                   &kp B      &kp M      &kp W      &kp V      &kp Z      &kp ENTER
-        &kp LCTRL  &kp UP     &kp DOWN   &kp LBKT   &kp N9                &kp SPACE    &kp BSPC   &mo RED         &mo WM     &mo SYMB     &mo RED               &mo WM   &kp RBKT   &kp LEFT   &kp RIGHT    &kp K_APP
+        &kp LCTRL  &kp UP     &kp DOWN   &kp LBKT   &kp N9                &kp SPACE    &kp BSPC   &mo RED         &mo FKEYS  &mo SYMB     &mo RED               &mo WM   &kp RBKT   &kp LEFT   &kp RIGHT    &kp K_APP
       >;
     };
 
@@ -122,28 +126,31 @@
     };
     fn {
       bindings = <
-        &kp LA(F4) WM_WS_1    WM_WS_2    WM_WS_3    WM_WS_4    WM_WS_5    WM_MANAGE                                                       WM_RETILE  WM_WS_6    WM_WS_7    WM_WS_8    WM_WS_9     WM_WS_10 __________         
+        &kp LA(F4) WM_WS_1    WM_WS_2    WM_WS_3    WM_WS_4    WM_WS_5    WM_MANAGE                                                       WM_RETILE  WM_WS_6    WM_WS_7    WM_WS_8    WM_WS_9     WM_WS_10 WM_WS_11         
         &AT_QCK    &ditto     &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp PSCRN  WM_FLOAT                                                        &DSK_UP    __________ &kp N7     &kp N8     &kp N9     __________ WM_RESTORE_WINDOWS
-        &AT_TOG    WM_F_L     WM_F_D     WM_F_U     WM_F_R     WM_MONICLE _________ &bt BT_SEL 0 &bt BT_SEL 1  RGBTGL     __________   &DSK_DN    __________ &kp N4     &kp N5     &kp N6     __________ __________ 
-        __________ &kp LC(Z)  &kp LC(Y)  &kp LC(A)  WM_S_CYCLE WM_PROM                 &_&_   __________ &_&_ BLTGL      &_&_                        WM_FLIP    __________ &kp N2     &kp N3     &kp EQUAL  __________ 
-        __________ WM_H_DEC   WM_V_INC   WM_V_DEC   WM_H_INC              &mo WM       __________ __________      __________ __________  __________             __________ &kp N0      WM_S_L     WM_S_R    __________ 
+        &AT_TOG    WM_F_L     WM_F_D     WM_F_U     WM_F_R     WM_MONICLE _________ &bt BT_SEL 0 &bt BT_SEL 1  RGBTGL     __________   &DSK_DN       __________ &kp N4     &kp N5     &kp N6     __________ __________ 
+        __________ &kp LC(Z)  &kp LC(Y)  &kp LC(A)  WM_S_CYCLE WM_PROM                 &_&_   &bt BT_SEL 2 &_&_ BLTGL      &_&_                        WM_FLIP  &kp  N1    &kp N2     &kp N3     &kp EQUAL  __________ 
+        __________ WM_H_DEC   WM_V_INC   WM_V_DEC   WM_H_INC              &mo WM       __________ __________      __________ __________  __________             __________ &kp N0     &kp N0     WM_S_L     WM_S_R     
       >;
     };
+
+//#define WMA_CHR              &kp LC(LA(KP_N1))
+//#define WMA_TERM             &kp LC(LA(KP_N2))
 //        &kp F1     &kp F2     &kp F3     &kp F4     &kp F5     &kp F6     __________                                                      __________ &kp F7     &kp F8     &kp F9     &kp F10    &kp F11    &kp F12 
     symbol {
       bindings = <
-        __________ __________ __________ __________ __________ __________ __________                                                      __________ __________ __________ __________ __________ __________ __________ 
-        &AT_QCK    &kp EXCL   &kp AT     &kp HASH   &kp DLLR   &kp PRCNT  __________                                                      __________ &kp CARET  &kp AMPS   &kp STAR   &kp LPAR   &kp RPAR   __________ 
-        __________ &kp LBKT   &kp SEMI   &kp LBRC   &kp LPAR   &kp GRAVE  __________   __________ &RDC_X          __________ __________   __________ &kp TILDE  &kp RPAR   &kp RBRC   &kp COLON  &kp RBKT   __________ 
+        __________ WMA_CHR    WMA_TERM   &kp LG(N3) &kp LG(N4) &kp LG(N5) &kp C_MUTE                                                       &kp KP_NUM __________ __________ __________ __________ __________ __________ 
+        &AT_QCK    &kp EXCL   &kp AT     &kp HASH   &kp DLLR   &kp PRCNT  &kp C_VOL_UP                                                    __________ &kp CARET  &kp AMPS   &kp STAR   &kp LPAR   &kp RPAR   __________ 
+        __________ &kp LBKT   &kp SEMI   &kp LBRC   &kp LPAR   &kp GRAVE  &kp C_VOL_DN __________ &RDC_X          __________ __________   __________ &kp TILDE  &kp RPAR   &kp RBRC   &kp COLON  &kp RBKT   __________ 
         __________ &kp QMARK  &kp MINUS  &kp BSLH   &kp EQUAL  &kp LT                  &_&_       __________ &_&_ __________ &_&_                    &kp GT     &kp PLUS   &kp PIPE   &kp UNDER  &kp SLASH  __________ 
-        __________ &kp C_VOL_UP &kp C_VOL_DN &kp C_MUTE    __________     &mo FKEYS  __________ __________     __________ __________              __________ __________ __________ &kp C_PP     &kp C_NEXT  __________ 
+        __________ &kp LA(UP) &kp LA(DOWN) &kp C_MUTE    __________     &mo FKEYS  __________ __________     __________ __________              __________ __________ __________ &kp C_PP     &kp C_NEXT  __________ 
       >;
     };
     fkeys {
       bindings = <
         &trans     &trans     &trans     &trans     &trans     &trans     &bootloader                                                     &trans     &trans     &kp F10    &kp F11    &kp F12    &trans     &trans
         &trans     &trans     &trans     &trans     &trans     &trans     &trans                                                          &trans     &trans     &kp F7     &kp F8     &kp F9     &trans     &trans     
-        &trans     &kp UP     &kp DOWN   &kp LEFT   &kp RIGHT  &trans     &trans       &to QWRT   &trans          &trans     &trans       &trans     &trans     &kp F4     &kp F5     &kp F6     &trans     &trans     
+        &trans     &kp UP     &kp DOWN   &kp LEFT   &kp RIGHT  &trans     &trans       &to QWRT   &RDC_X          &trans     &trans       &trans     &trans     &kp F4     &kp F5     &kp F6     &trans     &trans     
         &trans     &trans     &trans     &trans     &trans     &trans                  &_&_       &bt BT_CLR &_&_ &trans      &_&_                    &trans     &kp F1     &kp F2     &kp F3     &trans     &trans     
         __________ __________ __________ __________ __________            __________   __________ __________      __________ __________   __________            __________ __________ __________ __________ __________ 
       >;
