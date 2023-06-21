@@ -1,1 +1,3 @@
 /firmware/*.uf2
+/.idea
+.DS_Store
