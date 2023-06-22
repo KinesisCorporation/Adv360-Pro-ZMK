@@ -1,6 +1,12 @@
-macro_lang: macro_lang{
-compatible = "zmk,behavior-macro";
-label = "macro_lang";
-#binding-cells = <0>;
-bindings = <&kp LEFT_ALT>, <&kp SPACE>;
+macro_lang: macro_lang {
+  compatible = "zmk,behavior-macro";
+  label = "macro_lang";
+  #binding-cells = <0>;
+  bindings = <&kp LEFT_ALT>, <&kp SPACE>;
+};
+macro_alt_tab: macro_alt_tab {
+  compatible = "zmk,behavior-macro";
+  label = "macro_alt-tab";
+  #binding-cells = <0>;
+  bindings = <&kp LEFT_ALT>, <&kp TAB>;
 };
