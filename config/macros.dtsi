@@ -2,17 +2,17 @@ macro_switch_window: macro_switch_window{
 compatible = "zmk,behavior-macro";
 label = "macro_switch_window";
 #binding-cells = <0>;
-bindings = <&kp LEFT_WIN>, <&kp GRAVE>;
+bindings = <&mt LEFT_COMMAND GRAVE>;
 };
 macro_lang: macro_lang{
 compatible = "zmk,behavior-macro";
 label = "macro_lang";
 #binding-cells = <0>;
-bindings = <&kp LEFT_ALT>, <&kp SPACE>;
+bindings = <&mt LEFT_ALT SPACE>;
 };
 macro_alt_tab: macro_alt_tab{
 compatible = "zmk,behavior-macro";
 label = "macro_alt_tab";
 #binding-cells = <0>;
-bindings = <&kp LEFT_WIN>, <&kp TAB>;
+bindings = <&mt LEFT_WIN TAB>;
 };
