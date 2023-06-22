@@ -1,9 +1,3 @@
-macro_switch_window: macro_switch_window{
-compatible = "zmk,behavior-macro";
-label = "macro_switch_window";
-#binding-cells = <0>;
-bindings = <&mt LEFT_COMMAND GRAVE>;
-};
 macro_lang: macro_lang{
 compatible = "zmk,behavior-macro";
 label = "macro_lang";
