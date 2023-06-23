@@ -2,7 +2,7 @@ macro_select_webex: macro_select_webex{
 compatible = "zmk,behavior-macro";
 label = "macro_select_webex";
 #binding-cells = <0>;
-bindings = <&kp LA(LG(Y))>, <&kp ESC>;
+bindings = <&kp LA(LG(K))>, <&kp ESC>;
 };
 macro_switch_win: macro_switch_win{
 compatible = "zmk,behavior-macro";
