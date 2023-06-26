@@ -1,3 +1,9 @@
+macro_i_f8orscratch: macro_i_f8orscratch{
+compatible = "zmk,behavior-macro";
+label = "macro_i_f8orscratch";
+#binding-cells = <0>;
+bindings = <&mt LA(F8) F8>;
+};
 macro_monitor_bri_dow: macro_monitor_bri_dow{
 compatible = "zmk,behavior-macro";
 label = "macro_monitor_bri_dow";
@@ -26,7 +32,7 @@ macro_idea_scratch: macro_idea_scratch{
 compatible = "zmk,behavior-macro";
 label = "macro_idea_scratch";
 #binding-cells = <0>;
-bindings = <&mt F8 LA(F8)>;
+bindings = <&mt LA(F8) F8>;
 };
 macro_idea_debug: macro_idea_debug{
 compatible = "zmk,behavior-macro";
