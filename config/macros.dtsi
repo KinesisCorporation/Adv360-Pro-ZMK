@@ -26,7 +26,7 @@ macro_idea_scratch: macro_idea_scratch{
 compatible = "zmk,behavior-macro";
 label = "macro_idea_scratch";
 #binding-cells = <0>;
-bindings = <&kp LA(F8)>;
+bindings = <&mt F8 LA(F8)>;
 };
 macro_idea_debug: macro_idea_debug{
 compatible = "zmk,behavior-macro";
