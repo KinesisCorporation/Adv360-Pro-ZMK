@@ -79,11 +79,11 @@
 
         layer_Idea {
             bindings = <
- &trans  &kp F2  &kp F4  &kp F7  &kp LA(F8)  &kp LS(F6)             &to 2                                                   &to 0  &kp LS(F9)  &kp LS(F10)  &trans  &trans  &trans  &trans
- &trans  &trans  &trans  &trans      &trans      &trans            &trans                                                  &trans      &trans       &trans  &trans  &trans  &trans  &trans
- &trans  &trans  &trans  &trans      &trans      &trans            &trans  &trans  &trans                  &trans  &trans  &trans      &trans       &trans  &trans  &trans  &trans  &trans
- &trans  &trans  &trans  &trans      &trans      &trans                            &trans                  &trans                      &trans       &trans  &trans  &trans  &trans  &trans
- &trans  &trans  &trans  &trans      &trans                        &trans  &trans  &trans                  &trans  &trans  &trans                   &trans  &trans  &trans  &trans  &trans
+ &trans  &kp F2  &kp F3  &kp F4  &kp F5  &kp LS(F6)             &to 2                                                   &to 0  &kp F7  &kp F8  &kp F9  &kp LA(F8)  &kp LS(F9)  &kp LS(F10)
+ &trans  &trans  &trans  &trans  &trans      &trans            &trans                                                  &trans  &trans  &trans  &trans      &trans      &trans       &trans
+ &trans  &trans  &trans  &trans  &trans      &trans            &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans      &trans      &trans       &trans
+ &trans  &trans  &trans  &trans  &trans      &trans                            &trans                  &trans                  &trans  &trans  &trans      &trans      &trans       &trans
+ &trans  &trans  &trans  &trans  &trans                        &trans  &trans  &trans                  &trans  &trans  &trans          &trans  &trans      &trans      &trans       &trans
             >;
         };
 
