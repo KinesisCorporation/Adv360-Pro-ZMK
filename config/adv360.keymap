@@ -23,13 +23,14 @@
   behaviors {
     #include "macros.dtsi"
 
-    hm: homerow_mods {
+    gqt: global-quick-tap {
         compatible = "zmk,behavior-hold-tap";
-        label = "HOMEROW_MODS";
+        label = "GLOBAL_QUICK_TAP";
         #binding-cells = <2>;
-        tapping-term-ms = <200>;
-        quick_tap_ms = <175>;
         flavor = "tap-preferred";
+        tapping-term-ms = <200>;
+        quick-tap-ms = <125>;
+        global-quick-tap;
         bindings = <&kp>, <&kp>;
     };
   };
