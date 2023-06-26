@@ -1,3 +1,27 @@
+macro_idea_scratch: macro_idea_scratch{
+compatible = "zmk,behavior-macro";
+label = "macro_idea_scratch";
+#binding-cells = <0>;
+bindings = <&kp LA(F8)>;
+};
+macro_idea_debug: macro_idea_debug{
+compatible = "zmk,behavior-macro";
+label = "macro_idea_debug";
+#binding-cells = <0>;
+bindings = <&kp LS(F9)>;
+};
+macro_idea_run: macro_idea_run{
+compatible = "zmk,behavior-macro";
+label = "macro_idea_run";
+#binding-cells = <0>;
+bindings = <&kp LS(F10)>;
+};
+macro_idea_rename: macro_idea_rename{
+compatible = "zmk,behavior-macro";
+label = "macro_idea_rename";
+#binding-cells = <0>;
+bindings = <&kp LS(F6)>;
+};
 macro_select_webex: macro_select_webex{
 compatible = "zmk,behavior-macro";
 label = "macro_select_webex";
