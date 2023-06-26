@@ -28,27 +28,46 @@
     #include "macros.dtsi"
 
     hm: homerow_mods {
-        compatible = "zmk,behavior-hold-tap";
-        label = "HOMEROW_MODS";
-        #binding-cells = <2>;
-        tapping-term-ms = <200>;
-        quick_tap_ms = <175>;
-        flavor = "tap-preferred";
-        bindings = <&kp>, <&kp>;
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODS";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <155>;
+            flavor = "hold-preferred";
+            bindings = <&kp>, <&kp>;
+    };
+
+    hmo: homerow_mods_layer {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODS_LAYER";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <155>;
+            flavor = "hold-preferred";
+            bindings = <&mo>, <&kp>;
+    };
+
+    hmc: homerow_mods_caps {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODS_CAPS";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <155>;
+            flavor = "hold-preferred";
+            bindings = <&kp>, <&caps_word>;
     };
   };
 
     keymap {
         compatible = "zmk,keymap";
 
-
         default_layer {
             bindings = <
-   &none  &kp N1     &kp N2    &kp N3     &kp N4     &kp N5                &mo 3      &mo 2     &kp N6     &kp N7    &kp N8         &kp N9     &kp N0  &none
-     &caps_word   &kp Q      &kp W     &kp E      &kp R      &kp T            &kp RIGHT     &kp UP      &kp Y      &kp U     &kp I          &kp O      &kp P        &kp DEL
-        &kp TAB   &kp A      &kp S     &kp D      &kp F      &kp G             &kp LEFT  &kp LCTRL   &kp LEFT_ALT                       &kp RIGHT_ALT  &kp RCTRL       &kp DOWN   &kp H   &kp J      &kp K    &kp L  &kp SEMI          &kp SQT
- &sk LSHIFT   &kp Z      &kp X     &kp C      &kp V      &kp B                &none      &none   &kp LS(LC(LA(LGUI)))      &none     &none      &kp RS(RC(RIGHT_ALT))      &none          &none   &kp N   &kp M  &kp COMMA  &kp DOT  &kp FSLH  &sk RSHIFT
-          &mo 4   &mo 1  &kp GRAVE  &kp BSLH  &kp EQUAL  &kp SPACE              &kp ESC    &kp LGUI  &kp RGUI &kp ENTER  &kp BSPC      &kp MINUS   &kp LBKT       &kp RBKT   &mo 1   &mo 4
+&none  &kp N1     &kp N2    &kp N3     &kp N4     &kp N5          &mo 3      &mo 2     &kp N6     &kp N7    &kp N8       &kp N9     &kp N0  &none
+&caps_word   &kp Q      &kp W     &kp E      &kp R      &kp T    &kp RIGHT        &kp UP      &kp Y      &kp U     &kp I    &kp O        &kp P        &kp DEL
+&kp TAB   &kp A      &kp S     &kp D      &kp F      &kp G    &kp LEFT         &kp LCTRL &kp LEFT_ALT    &kp RIGHT_ALT      &kp RCTRL    &kp DOWN   &kp H   &kp J  &kp K  &kp L  &kp SEMI  &kp SQT
+&kp LSHIFT   &kp Z      &kp X     &kp C      &kp V      &kp B    &none         &none  &hm LS(LC(LA(LGUI))) HOME  &none  &none &hm RS(RC(RIGHT_ALT)) PG_UP       &none      &none   &kp N   &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RSHIFT
+&mo 5  &kp LGUI &kp GRAVE  &kp BSLH  &kp EQUAL  &kp SPACE   &hmo 1 ESC         &hmo 4 END                   &hmo 4 PG_DN   &hmo 1 ENTER  &kp BSPC   &kp MINUS   &kp LBKT  &kp RBKT  &kp RGUI  &mo 5
             >;
         };
 
