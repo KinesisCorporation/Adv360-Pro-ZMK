@@ -1,9 +1,3 @@
-macro_i_f8orscratch: macro_i_f8orscratch{
-compatible = "zmk,behavior-macro";
-label = "macro_i_f8orscratch";
-#binding-cells = <0>;
-bindings = <&mt LA(F8) F8>;
-};
 macro_monitor_bri_dow: macro_monitor_bri_dow{
 compatible = "zmk,behavior-macro";
 label = "macro_monitor_bri_dow";
