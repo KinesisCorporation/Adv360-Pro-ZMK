@@ -23,14 +23,13 @@
   behaviors {
     #include "macros.dtsi"
 
-    gqt: global-quick-tap {
+    hm: homerow_mods {
         compatible = "zmk,behavior-hold-tap";
-        label = "GLOBAL_QUICK_TAP";
+        label = "HOMEROW_MODS";
         #binding-cells = <2>;
-        flavor = "tap-preferred";
         tapping-term-ms = <200>;
-        quick-tap-ms = <125>;
-        global-quick-tap;
+        quick_tap_ms = <175>;
+        flavor = "tap-preferred";
         bindings = <&kp>, <&kp>;
     };
   };
@@ -81,11 +80,11 @@
 
         layer_Idea {
             bindings = <
- &trans  &kp F2  &kp F3  &kp F4  &kp F5  &macro_idea_rename             &to 2                                                   &to 0  &kp F7  &ht_bl F8 LS(F8)  &kp F9  &macro_idea_scratch  &macro_idea_debug  &macro_idea_run
- &trans  &trans  &trans  &trans  &trans              &trans            &trans                                                  &trans  &trans            &trans  &trans               &trans             &trans           &trans
- &trans  &trans  &trans  &trans  &trans              &trans            &trans  &trans  &trans                  &trans  &trans  &trans  &trans            &trans  &trans               &trans             &trans           &trans
- &trans  &trans  &trans  &trans  &trans              &trans                            &trans                  &trans                  &trans            &trans  &trans               &trans             &trans           &trans
- &trans  &trans  &trans  &trans  &trans                                &trans  &trans  &trans                  &trans  &trans  &trans                    &trans  &trans               &trans             &trans           &trans
+ &trans  &kp F2  &kp F3  &kp F4  &kp F5  &macro_idea_rename             &to 2                                                   &to 0  &kp F7  &mt LA(F8) F8  &kp F9  &macro_idea_scratch  &macro_idea_debug  &macro_idea_run
+ &trans  &trans  &trans  &trans  &trans              &trans            &trans                                                  &trans  &trans         &trans  &trans               &trans             &trans           &trans
+ &trans  &trans  &trans  &trans  &trans              &trans            &trans  &trans  &trans                  &trans  &trans  &trans  &trans         &trans  &trans               &trans             &trans           &trans
+ &trans  &trans  &trans  &trans  &trans              &trans                            &trans                  &trans                  &trans         &trans  &trans               &trans             &trans           &trans
+ &trans  &trans  &trans  &trans  &trans                                &trans  &trans  &trans                  &trans  &trans  &trans                 &trans  &trans               &trans             &trans           &trans
             >;
         };
 
