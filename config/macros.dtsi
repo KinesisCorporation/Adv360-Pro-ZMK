@@ -2,7 +2,7 @@ macro_team_play_x3: macro_team_play_x3{
 compatible = "zmk,behavior-macro";
 label = "macro_team_play_x3";
 #binding-cells = <0>;
-bindings = <&kp T>, <&kp LS(T)>, <&kp E>, <&kp A>, <&kp M>, <&kp SPACE>, <&kp P>, <&kp L>, <&kp A>, <&kp Y>, <&kp PERIOD>, <&kp ENTER>, <&kp T>, <&kp LS(T)>, <&kp E>, <&kp A>, <&kp M>, <&kp SPACE>, <&kp P>, <&kp L>, <&kp A>, <&kp Y>, <&kp PERIOD>, <&kp ENTER>, <&kp T>, <&kp LS(T)>, <&kp E>, <&kp A>, <&kp M>, <&kp SPACE>, <&kp P>, <&kp L>, <&kp A>, <&kp Y>, <&kp PERIOD>, <&kp ENTER>;
+bindings = <&macro_team_play>, <&macro_team_play>, <&macro_team_play>;
 };
 macro_team_play: macro_team_play{
 compatible = "zmk,behavior-macro";
