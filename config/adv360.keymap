@@ -73,7 +73,7 @@
  &trans  &trans  &trans        &trans            &trans     &trans                     &kp Y  &trans      &kp U      &kp I   &kp UP     &kp J    &kp K  &trans
  &trans  &trans  &trans        &trans            &trans     &trans                     &kp N  &trans     &trans                         &none  &kp DEL  &trans  &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &trans
  &trans  &trans  &trans        &trans            &trans     &trans                    &trans  &trans     &trans     &trans   &trans  &kp HOME   &trans  &trans  &trans    &trans    &trans     &trans  &trans  &trans
- &trans  &trans  &trans  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp SPACE            &kp LEFT_SHIFT  &trans  &kp PG_UP  &kp PG_DN  &kp END    &trans   &trans  &trans  &trans    &trans
+ &trans  &trans  &trans  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp SPACE            &kp LEFT_SHIFT  &trans  &kp PG_UP  &kp PG_DN  &kp END    &trans   &trans  &trans  &trans     &none
             >;
         };
 
