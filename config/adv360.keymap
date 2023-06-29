@@ -60,7 +60,40 @@
 		bindings = <&kp>, <&kp>;
 		hold-trigger-key-positions = <KEYS_RIGHT THUMBS>;
 		};
+
+	hm_l: homerow_mods_left {
+        compatible = "zmk,behavior-hold-tap";
+        label = "HOMEROW_MODS_LEFT";
+        #binding-cells = <2>;
+        tapping-term-ms = <200>;
+        quick_tap_ms = <175>;
+        flavor = "balanced";
+        bindings = <&kp>, <&kp>;
+        hold-trigger-key-positions = <KEYS_RIGHT THUMBS>;
+		};
+
+    hm_r: homerow_mods_right {
+        compatible = "zmk,behavior-hold-tap";
+        label = "HOMEROW_MODS_RIGHT";
+        #binding-cells = <2>;
+        tapping-term-ms = <200>;
+        quick_tap_ms = <175>;
+        flavor = "balanced";
+        bindings = <&kp>, <&kp>;
+        hold-trigger-key-positions = <KEYS_LEFT THUMBS>;
+		};
 	};
+
+	 // Home row mods
+	#define _F_ARW &hm_l 2 F  // Shift on index fingers
+    #define _T_SFT &hm_l LSHFT T  // Shift on index fingers
+    #define _N_SFT &hm_r RSHFT N
+    #define _S_CMD &hm_l LGUI S   // Command on middle fingers
+    #define _E_CMD &hm_r RGUI E
+    #define _D_CTL &hm_l LCTRL D  // Control on index down
+    #define _H_CTL &hm_r RCTRL H
+    #define _R_OPT &hm_l LALT R   // Option on ring finger
+    #define _I_OPT &hm_r RALT I
 
 	keymap {
 		compatible = "zmk,keymap";
@@ -68,9 +101,9 @@
 
         default_layer {
             bindings = <
- &kp EQUAL     &kp N1    &kp N2    &kp N3     &kp N4  &kp N5              &tog 1                                                                 &mo 3  &kp N6  &kp N7     &kp N8    &kp N9    &kp N0  &kp MINUS
+ &kp EQUAL      &kp N1    &kp N2    &kp N3     &kp N4  &kp N5              &tog 1                                                                 &mo 3  &kp N6  &kp N7     &kp N8    &kp N9    &kp N0  &kp MINUS
    &kp ESC      &kp Q     &kp W     &kp E      &kp R   &kp T               &macro_vs_build                                                                &none   &kp Y   &kp U      &kp I     &kp O     &kp P   &kp BSLH
-   &kp TAB      &kp A     &lt 4 S     &lt 1 D      &lt 2 F   &kp G               &kp F5  &kp F12  &kp LALT   &none   &none   &kp LGUI  &kp DEL      &none   &kp H   &kp J      &kp K     &kp L  &kp SEMI    &kp SQT
+   &kp TAB      &kp A     &lt 4 S   &lt 1 D    _F_ARW  &kp G               &kp F5  &kp F12  &kp LALT   &none   &none   &kp LGUI  &kp DEL      &none   &kp H   &kp J      &kp K     &kp L  &kp SEMI    &kp SQT
  &kp LSHFT      &kp Z     &kp X     &kp C      &kp V   &kp B               &none      &none  &kp DEL   &none   &none  &kp PG_UP      &none      &none   &kp N   &kp M  &kp COMMA   &kp DOT  &kp FSLH  &kp RSHFT
      &tog 2  &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT                    &kp BSPC  &kp LCTRL   &kp LGUI                  &kp PG_DN  &kp ENTER  &kp SPACE          &kp UP   &kp DOWN  &kp LBKT  &kp RBKT      &tog 5
             >;
