@@ -83,10 +83,6 @@
         hold-trigger-key-positions = <KEYS_LEFT THUMBS>;
 		};
 	};
-
-	 // Home row mods
-	#define _F_ARW &hm_l _LT_2 F  // Shift on index fingers
-    #define _LT_2 &lt 2  // Shift on index fingers
     
 
 	keymap {
