@@ -36,6 +36,11 @@
 
 #define THUMBS THUMBS_LEFT THUMBS_RIGHT
 
+&lt {
+    quick-tap-ms = <300>;
+    global-quick-tap;
+};
+
 / {
   behaviors {
     #include "macros.dtsi"
