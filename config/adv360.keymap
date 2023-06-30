@@ -90,15 +90,9 @@
 	};
 
 	 // Home row mods
-	#define _F_ARW &hm_l 2 F  // Shift on index fingers
-    #define _T_SFT &hm_l LSHFT T  // Shift on index fingers
-    #define _N_SFT &hm_r RSHFT N
-    #define _S_CMD &hm_l LGUI S   // Command on middle fingers
-    #define _E_CMD &hm_r RGUI E
-    #define _D_CTL &hm_l LCTRL D  // Control on index down
-    #define _H_CTL &hm_r RCTRL H
-    #define _R_OPT &hm_l LALT R   // Option on ring finger
-    #define _I_OPT &hm_r RALT I
+	#define _F_ARW &hm_l _LT_2 F  // Shift on index fingers
+    #define _LT_2 &lt 2  // Shift on index fingers
+    
 
 	keymap {
 		compatible = "zmk,keymap";
