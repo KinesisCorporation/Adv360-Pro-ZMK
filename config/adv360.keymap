@@ -237,7 +237,7 @@ acaret: at_caret {
     &kp GRAVE        &kp Q     &kp W     &kp E      &kp R   &kp T      &macro_brackets                                                                                    &tog 5              &kp Y    &kp U      &kp I       &kp O     &kp P        &bhash
     &kp TAB          &kp A     &kp S     &kp D      &kp F   &kp G      &macro_parens               &kp KP_PLUS     &kp LALT   &none   &none  &kp RCTRL  &kp RCMD          &macro_curly_brace  &kp H    &kp J      &kp K       &kp L     &kp SEMI     &kp SQT
     &kp LSHFT        &kp Z     &kp X     &kp C      &kp V   &kp B                    &none         &macro_dquotes  &kp HYPER  &none   &none  &kp PG_UP  &none      &none                      &kp N    &kp M      &kp COMMA   &kp DOT   &kp FSLH     &kp RSHFT
-    &kp LEFT_CONTROL &dgrave &ggrave     &kp LEFT   &kp RIGHT                        &kp LCMD      &kp BSPC        &kp ESC                   &kp PG_DN  &kp ENTER  &kp SPACE                           &kp UP     &kp DOWN    &kp CAPS  &acaret      &mo 2
+    &kp LEFT_CONTROL &kp LALT  &ggrave   &kp LEFT   &kp RIGHT                        &kp LCMD      &kp BSPC        &kp ESC                   &kp PG_DN  &kp ENTER  &kp SPACE                           &kp UP     &kp DOWN    &kp CAPS  &acaret      &mo 2
             >;
         };
 
