@@ -45,9 +45,17 @@ Further support resources can be found on Kinesis.com
 https://kinesis-ergo.com/support/kb360pro/#firmware-updates
 https://kinesis-ergo.com/support/kb360pro/#manuals
 
+# Useful
+To check the battery level its 
+* Mod + HK4
+
+
+# Future tests 
+## LGUI + OPT on left thumb cluster 
 
 # change log
 
 ## 2923-06-21
 * Added some navigation features to the keypad layer
 * Added physical keys as comments in the keymap file
+* created copy and paste combo paste combo
