@@ -69,11 +69,11 @@
 
         layer_game_arrows {
             bindings = <
- &trans  &trans  &trans    &trans    &trans     &trans               &trans                                                     &trans  &trans  &trans  &trans  &trans  &trans  &trans
- &trans  &trans  &trans    &trans    &kp UP     &trans               &trans                                                     &trans  &trans  &trans  &trans  &trans  &trans  &trans
- &trans  &trans  &trans  &kp LEFT  &kp DOWN  &kp RIGHT               &trans     &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
- &trans  &trans  &trans    &trans    &trans     &trans                                  &trans                  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
- &trans   &kp S   &kp D     &kp E     &kp F                       &kp SPACE  &kp ENTER  &trans                  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+ &trans  &trans    &trans    &trans     &trans  &trans               &trans                                                     &trans  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans    &trans    &kp UP     &trans  &trans               &trans                                                     &trans  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans               &trans     &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans    &trans    &trans     &trans  &trans                                  &trans                  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans   &kp S     &kp D     &kp E      &kp F                    &kp SPACE  &kp ENTER  &trans                  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
 

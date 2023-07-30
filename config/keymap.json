@@ -29,11 +29,11 @@
         "&none",        "&none",        "&none",        "&none",        "&none",        "&none",                                     "&none",                          "&none",                                          "&none",      "&none",      "&none",  "&none",  "&none",  "&none",
         "&none",        "&none",        "&none",        "&none",        "&none",                                 "&none",  "&none",  "&none",                          "&none", "&bl BL_TOG",        "&rgb_ug RGB_TOG",           "&bl BL_INC", "&bl BL_DEC",  "&none",  "&none",  "&none"
     ], [
-       "&trans", "&trans", "&trans",   "&trans",   "&trans",    "&trans",              "&trans",                                                                "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans",
-       "&trans", "&trans", "&trans",   "&trans",   "&kp UP",    "&trans",              "&trans",                                                                "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans",
-       "&trans", "&trans", "&trans", "&kp LEFT", "&kp DOWN", "&kp RIGHT",              "&trans",    "&trans", "&trans",                     "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans",
-       "&trans", "&trans", "&trans",   "&trans",   "&trans",    "&trans",                                     "&trans",                     "&trans",                     "&trans", "&trans", "&trans", "&trans", "&trans", "&trans",
-       "&trans",  "&kp S",  "&kp D",    "&kp E",    "&kp F",                        "&kp SPACE", "&kp ENTER", "&trans",                     "&trans", "&trans", "&trans",           "&trans", "&trans", "&trans", "&trans", "&trans"
+       "&trans", "&trans",   "&trans",   "&trans",    "&trans", "&trans",              "&trans",                                                                "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans",
+       "&trans", "&trans",   "&trans",   "&kp UP",    "&trans", "&trans",              "&trans",                                                                "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans",
+       "&trans", "&trans", "&kp LEFT", "&kp DOWN", "&kp RIGHT", "&trans",              "&trans",    "&trans", "&trans",                     "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans",
+       "&trans", "&trans",   "&trans",   "&trans",    "&trans", "&trans",                                     "&trans",                     "&trans",                     "&trans", "&trans", "&trans", "&trans", "&trans", "&trans",
+       "&trans",  "&kp S",    "&kp D",    "&kp E",     "&kp F",                     "&kp SPACE", "&kp ENTER", "&trans",                     "&trans", "&trans", "&trans",           "&trans", "&trans", "&trans", "&trans", "&trans"
     ], [
        "&trans", "&trans", "&trans", "&trans", "&trans", "&trans",              "&trans",                                                                "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans",
        "&trans",  "&kp T",  "&kp Q",  "&kp W",  "&kp E",  "&kp R",              "&trans",                                                                "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans",
