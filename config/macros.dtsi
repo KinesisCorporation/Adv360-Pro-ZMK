@@ -2,13 +2,13 @@ macro_macat: macro_macat{
 compatible = "zmk,behavior-macro";
 label = "macro_macat";
 #binding-cells = <0>;
-bindings = <&kp RA(RC(L))>;
+bindings = <&kp RA(L)>;
 };
 macro_winat: macro_winat{
 compatible = "zmk,behavior-macro";
 label = "macro_winat";
 #binding-cells = <0>;
-bindings = <&kp Q>;
+bindings = <&kp RA(RC(Q))>;
 };
 macro_macpw: macro_macpw{
 compatible = "zmk,behavior-macro";
