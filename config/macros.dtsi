@@ -2,7 +2,7 @@ macro_macat: macro_macat{
 compatible = "zmk,behavior-macro";
 label = "macro_macat";
 #binding-cells = <0>;
-bindings = <&kp L>;
+bindings = <&kp RALT(RCTRL (L))>;
 };
 macro_winat: macro_winat{
 compatible = "zmk,behavior-macro";
