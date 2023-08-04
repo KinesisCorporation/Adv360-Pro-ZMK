@@ -11,7 +11,7 @@
   ],
   "layers": [
     [
-                  "&none", "&kp N1", "&kp N2", "&kp N3",       "&kp N4", "&kp N5",           "&none",                                                                                   "&none", "&kp N6", "&kp N7",    "&kp N8",  "&kp N9",   "&kp N0",         "&none",
+                  "&none", "&kp N1", "&kp N2", "&kp N3",       "&kp N4", "&kp N5",           "&none",                                                                                   "&none", "&kp N6", "&kp N7",    "&kp N8",  "&kp N9",   "&kp N0",        "&tog 4",
                 "&kp ESC",  "&kp Q",  "&kp W",  "&kp E",        "&kp R",  "&kp T",           "&none",                                                                                   "&none",  "&kp Y",  "&kp U",     "&kp I",   "&kp O",    "&kp P", "&kp BACKSPACE",
        "&kp LEFT_CONTROL",  "&kp A",  "&kp S",  "&kp D",        "&kp F",  "&kp G",           "&none",     "&none", "&kp LEFT_WIN",                     "&kp PRINTSCREEN",     "&none",  "&none",  "&kp H",  "&kp J",     "&kp K",   "&kp L", "&kp SEMI",       "&kp SQT",
               "&kp LSHFT",  "&kp Z",  "&kp X",  "&kp C",        "&kp V",  "&kp B",                                     "&kp HOME",                           "&kp PG_UP",                         "&kp N",  "&kp M", "&kp COMMA", "&kp DOT", "&kp FSLH",     "&kp ENTER",
@@ -35,11 +35,11 @@
        "&trans",       "&trans",            "&trans",       "&trans",       "&trans",       "&trans",                                    "&trans",                     "&trans",                                         "&trans", "&trans", "&trans", "&trans", "&trans", "&trans",
        "&trans",       "&trans",            "&trans",       "&trans",       "&trans",                                "&trans", "&trans", "&trans",                     "&trans", "&bl BL_TOG",                 "&trans",           "&trans", "&trans", "&trans", "&trans", "&trans"
     ], [
-        "&trans", "&trans",   "&trans",    "&trans", "&trans", "&trans",              "&trans",                                                             "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans",
-       "&kp ESC", "&trans",   "&trans",    "&trans", "&trans", "&trans",              "&trans",                                                             "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans",
-       "&kp TAB", "&trans",   "&trans",    "&trans", "&trans", "&trans",              "&trans", "&trans", "&trans",                     "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans",
-        "&trans", "&trans",   "&trans",    "&trans", "&trans", "&trans",                                  "&trans",                     "&trans",                     "&trans", "&trans", "&trans", "&trans", "&trans", "&trans",
-         "&none", "&trans", "&kp LALT", "&kp SPACE", "&trans",                     "&kp SPACE", "&trans", "&trans",                     "&trans", "&trans", "&trans",           "&trans", "&trans", "&trans", "&trans", "&trans"
+        "&trans", "&trans", "&trans",       "&trans",    "&trans", "&trans",              "&trans",                                                             "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans",
+       "&kp ESC", "&trans", "&trans",       "&trans",    "&trans", "&trans",              "&trans",                                                             "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans",
+       "&kp TAB", "&trans", "&trans",       "&trans",    "&trans", "&trans",              "&trans", "&trans", "&trans",                     "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans",
+        "&trans", "&trans", "&trans",       "&trans",    "&trans", "&trans",                                  "&trans",                     "&trans",                     "&trans", "&trans", "&trans", "&trans", "&trans", "&trans",
+         "&none", "&trans", "&trans", "&kp LEFT_ALT", "&kp SPACE",                     "&kp SPACE", "&trans", "&trans",                     "&trans", "&trans", "&trans",           "&trans", "&trans", "&trans", "&trans", "&trans"
     ]
   ]
 }
