@@ -29,7 +29,7 @@
        "&trans", "&kp F1",  "&kp F2",  "&kp F3",  "&kp F4", "&trans",           "&trans",                                                             "&trans", "&trans", "&trans", "&trans", "&kp LBKT", "&kp RBKT", "&kp DELETE",
        "&trans", "&kp F5",  "&kp F6",  "&kp F7",  "&kp F8", "&trans",           "&trans", "&trans", "&trans",                     "&trans", "&trans", "&trans", "&trans", "&trans", "&trans",   "&trans",   "&trans",   "&kp BSLH",
        "&trans", "&kp F9", "&kp F10", "&kp F11", "&kp F12", "&trans",                               "&trans",                     "&trans",                     "&trans", "&trans", "&trans",   "&trans",   "&trans",     "&trans",
-       "&trans", "&trans",  "&trans",  "&trans",  "&trans",                     "&trans", "&trans", "&trans",                     "&trans", "&trans", "&trans",           "&trans", "&trans",   "&trans",   "&trans",     "&trans"
+       "&trans", "&trans",  "&trans",  "&trans",   "&mo 3",                     "&trans", "&trans", "&trans",                     "&trans", "&trans", "&trans",           "&trans", "&trans",   "&trans",   "&trans",     "&trans"
     ], [
        "&trans", "&bt BT_SEL 0", "&bt BT_SEL 1", "&bt BT_SEL 2", "&bt BT_SEL 3", "&bt BT_SEL 4",                "&trans",                                                                                 "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans",
        "&trans",       "&trans",       "&trans",       "&trans",       "&trans",       "&trans",           "&bootloader",                                                                            "&bootloader", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans",
