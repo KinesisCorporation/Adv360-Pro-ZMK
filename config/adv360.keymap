@@ -80,9 +80,9 @@
 
         layer_game {
             bindings = <
-  &trans  &trans  &trans        &trans     &trans  &trans               &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans  &trans
  &kp ESC  &trans  &trans        &trans     &trans  &trans               &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans  &trans
- &kp TAB  &trans  &trans        &trans     &trans  &trans               &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+ &kp TAB  &trans  &trans        &trans     &trans  &trans               &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+  &trans  &trans  &trans        &trans     &trans  &trans               &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
   &trans  &trans  &trans        &trans     &trans  &trans                               &trans                  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
    &none  &trans  &trans  &kp LEFT_ALT  &kp SPACE                    &kp SPACE  &trans  &trans                  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
