@@ -59,11 +59,11 @@
 
         layer_fn {
             bindings = <
- &trans  &trans   &trans   &trans   &trans  &trans            &trans                                                  &trans  &trans  &trans  &trans    &trans    &trans    &trans
- &trans  &kp F1   &kp F2   &kp F3   &kp F4  &trans            &trans                                                  &trans  &trans  &trans  &trans  &kp lbkt  &kp rbkt   &kp del
- &trans  &kp F5   &kp F6   &kp F7   &kp F8  &trans            &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans  &kp bslh
- &trans  &kp F9  &kp F10  &kp F11  &kp F12  &trans                            &trans                  &trans                  &trans  &trans  &trans    &trans    &trans    &trans
- &trans  &trans   &trans   &trans   &trans                    &trans  &trans  &trans                  &trans  &trans  &trans          &trans  &trans    &trans    &trans    &trans
+ &trans  &trans   &trans   &trans   &trans  &trans            &trans                                                  &trans  &trans  &trans  &trans    &trans    &trans      &trans
+ &trans  &kp F1   &kp F2   &kp F3   &kp F4  &trans            &trans                                                  &trans  &trans  &trans  &trans  &kp LBKT  &kp RBKT  &kp DELETE
+ &trans  &kp F5   &kp F6   &kp F7   &kp F8  &trans            &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans    &kp BSLH
+ &trans  &kp F9  &kp F10  &kp F11  &kp F12  &trans                            &trans                  &trans                  &trans  &trans  &trans    &trans    &trans      &trans
+ &trans  &trans   &trans   &trans   &trans                    &trans  &trans  &trans                  &trans  &trans  &trans          &trans  &trans    &trans    &trans      &trans
             >;
         };
 
