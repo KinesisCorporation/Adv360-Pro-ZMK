@@ -6,7 +6,7 @@ There is a GUI for editing the keymap. It is available at https://kinesiscorpora
 ## Building the Firmware in a local container
 
 ### Build firmware
-0. Make sure docker is running
+0. Make sure docker is running (and installed)
 1. Execute `make`.
 2. Check the `firmware` directory for the latest firmware build.
 
