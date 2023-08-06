@@ -11,8 +11,7 @@ There is a GUI for editing the keymap. It is available at https://kinesiscorpora
 2. Check the `firmware` directory for the latest firmware build.
 
 ```bash
-open -a Docker
-make
+rm firmware/*.uf2 && open -a Docker && make
 ```
 
 ### Cleanup
