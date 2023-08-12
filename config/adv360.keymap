@@ -53,17 +53,17 @@
    &kp TAB      &kp Q     &kp W     &kp E      &kp R   &kp T               &none                                                                &none   &kp Y   &kp KP_N7     &kp KP_N8      &kp KP_N9     &kp KP_MINUS   &kp BSLH
    &kp ESC      &kp A     &kp S     &kp D      &kp F   &kp G               &none  &kp LCTRL  &kp LALT                  &kp LGUI  &kp RCTRL      &none   &kp H   &kp KP_N4     &kp KP_N5      &kp KP_N6      &kp KP_PLUS    &kp SQT
  &kp LSHFT      &kp Z     &kp X     &kp C      &kp V   &kp B                                    &none                     &none                         &kp N   &kp KP_N1     &kp KP_N2      &kp KP_N3     &kp KP_ENTER  &kp RSHFT
-     &mo 2  &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT                    &kp BSPC    &kp DEL     &none                     &none  &kp ENTER  &kp KP_N0               &none         &none     &kp KP_DOT            &none      &mo 2
+     &mo 2  &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT                    &kp BSPC    &kp DEL     &none                     &none  &kp ENTER  &kp KP_N0               &none    &kp KP_DOT     &kp KP_DOT            &none      &mo 2
             >;
         };
 
         layer_fn {
             bindings = <
-  &none  &kp F1  &kp F2  &kp F3  &kp F4     &kp F5            &kp F6                                                   &none    &kp F7         &kp F8       &kp F9    &kp F10  &kp F11  &kp F12
- &trans  &trans  &trans  &trans  &trans  &macro_=>             &none                                                   &none    &trans         &trans    &kp MINUS  &kp EQUAL    &none   &trans
- &trans  &trans  &trans  &trans  &trans  &macro_->             &none  &trans  &trans                  &trans  &trans   &none  &kp LEFT       &kp DOWN       &kp UP  &kp RIGHT   &trans   &trans
- &trans  &trans  &trans  &trans  &trans     &trans                            &trans                  &trans                  &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP    &kp END   &trans   &trans
- &trans  &trans  &trans  &trans  &trans                       &trans  &trans  &trans                  &trans  &trans  &trans                   &trans       &trans     &trans   &trans   &trans
+  &none  &kp F1  &kp F2  &kp F3  &kp F4     &kp F5            &kp F6                                                   &none    &kp F7         &kp F8       &kp F9    &kp F10    &kp F11  &kp F12
+ &trans  &trans  &trans  &trans  &trans  &macro_=>             &none                                                   &none     &none          &none        &none  &kp MINUS  &kp EQUAL    &none
+ &trans  &trans  &trans  &trans  &trans  &macro_->             &none  &trans  &trans                  &trans  &trans   &none  &kp LEFT       &kp DOWN       &kp UP  &kp RIGHT     &trans   &trans
+ &trans  &trans  &trans  &trans  &trans     &trans                            &trans                  &trans                  &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP    &kp END     &trans   &trans
+ &trans  &trans  &trans  &trans  &trans                       &trans  &trans  &trans                  &trans  &trans  &trans                   &trans       &trans     &trans     &trans   &trans
             >;
         };
 
