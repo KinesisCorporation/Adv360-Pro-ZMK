@@ -1,62 +1,1375 @@
+
+/*
+ * Copyright (c) 2020 The ZMK Contributors
+ *
+ * SPDX-License-Identifier: MIT
+ */
+
+
+/* THIS FILE WAS GENERATED!
+ *
+ * This file was generated automatically. You may or may not want to
+ * edit it directly.
+ */
+
+
+// TODO IME 切り替えが無い
+// zmkに対応するキーが無いので、Google IMEのショートカットで代用している
+
+
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
-#include <dt-bindings/zmk/rgb.h>
-#include <dt-bindings/zmk/backlight.h>
+
+// layer
+#define DEFAULT_LAYER 0
+#define NUM_LAYER 1
+#define SYMBOL1_LAYER 2
+#define SYMBOL2_LAYER 3
+#define SPC1_LAYER 4
+#define SPC2_LAYER 5
+#define SPC3_LAYER 6
+#define ARROW_L_LAYER 7
+#define ARROW_R_LAYER 8
+#define ARROW_U_LAYER 9
+#define ARROW_D_LAYER 10
+
+// ll
+#define KEY_LL 73
+// lr
+#define KEY_LR 74
+// rl
+#define KEY_RL 77
+// rt
+#define KEY_RR 78
+
+// ime切り替えがzmkに無いので google ime の切り替え割当
+#define EIJI LS(LC(SEMICOLON))
+#define KANA LS(LC(J))
+
+// OSに渡す用ショートカット
+#define MY_KC_0 KP_N0
+
+// OSに渡す用ショートカット
+#define MY_KC_1 KP_N1
+#define MY_KC_2 KP_N2
+#define MY_KC_3 KP_N3
+#define MY_KC_4 KP_N4
+#define MY_KC_5 KP_N5
+#define MY_KC_6 KP_N6
+#define MY_KC_7 KP_N7
+#define MY_KC_8 KP_N8
+#define MY_KC_9 KP_N9
+#define MY_KC_10 KP_PLUS
+#define MY_KC_11 KP_EQUAL
+#define MY_KC_12 KP_DOT
+#define MY_KC_13 KP_MINUS
+#define MY_KC_14 KP_SLASH
+#define MY_KC_15 KP_ASTERISK
+#define MY_KC_16 NON_US_BACKSLASH
+#define MY_KC_17 LOCKING_NUM
+#define MY_KC_18 KP_ENTER
+
+// OSに渡す用ショートカット (meta
+#define MY_KC_1_M LA(LC(LS(KP_N1)))
+#define MY_KC_2_M LA(LC(LS(KP_N2)))
+#define MY_KC_3_M LA(LC(LS(KP_N3)))
+#define MY_KC_4_M LA(LC(LS(KP_N4)))
+#define MY_KC_5_M LA(LC(LS(KP_N5)))
+#define MY_KC_6_M LA(LC(LS(KP_N6)))
+#define MY_KC_7_M LA(LC(LS(KP_N7)))
+#define MY_KC_8_M LA(LC(LS(KP_N8)))
+#define MY_KC_9_M LA(LC(LS(KP_N9)))
+#define MY_KC_10_M LA(LC(LS(KP_PLUS)))
+#define MY_KC_11_M LA(LC(LS(KP_EQUAL)))
+#define MY_KC_12_M LA(LC(LS(KP_DOT)))
+#define MY_KC_13_M LA(LC(LS(KP_MINUS)))
+#define MY_KC_14_M LA(LC(LS(KP_SLASH)))
+#define MY_KC_15_M LA(LC(LS(KP_ASTERISK)))
+#define MY_KC_16_M LA(LC(LS(NON_US_BACKSLASH)))
+#define MY_KC_17_M LA(LC(LS(LOCKING_NUM)))
+#define MY_KC_18_M LA(LC(LS(KP_ENTER)))
+
+// OSに渡す用ショートカット hyper
+#define MY_KC_1_H LG(LA(LC(LS(KP_N1))))
+#define MY_KC_2_H LG(LA(LC(LS(KP_N2))))
+#define MY_KC_3_H LG(LA(LC(LS(KP_N3))))
+#define MY_KC_4_H LG(LA(LC(LS(KP_N4))))
+#define MY_KC_5_H LG(LA(LC(LS(KP_N5))))
+#define MY_KC_6_H LG(LA(LC(LS(KP_N6))))
+#define MY_KC_7_H LG(LA(LC(LS(KP_N7))))
+#define MY_KC_8_H LG(LA(LC(LS(KP_N8))))
+#define MY_KC_9_H LG(LA(LC(LS(KP_N9))))
+#define MY_KC_10_H LG(LA(LC(LS(KP_PLUS))))
+#define MY_KC_11_H LG(LA(LC(LS(KP_EQUAL))))
+#define MY_KC_12_H LG(LA(LC(LS(KP_DOT))))
+#define MY_KC_13_H LG(LA(LC(LS(KP_MINUS))))
+#define MY_KC_14_H LG(LA(LC(LS(KP_SLASH))))
+#define MY_KC_15_H LG(LA(LC(LS(KP_ASTERISK))))
+#define MY_KC_16_H LG(LA(LC(LS(NON_US_BACKSLASH))))
+#define MY_KC_17_H LG(LA(LC(LS(LOCKING_NUM))))
+#define MY_KC_18_H LG(LA(LC(LS(KP_ENTER))))
+
+// 長すぎて見づらいので、エイリアス
+#define L_SYM1 SYMBOL1_LAYER
+#define L_SYM2 SYMBOL2_LAYER
+#define L_NUM NUM_LAYER
+#define L_SPC1 SPC1_LAYER
+#define L_SPC2 SPC2_LAYER
+#define L_SPC3 SPC3_LAYER
+#define LL LEFT_SHIFT RETURN
+#define LR LEFT_COMMAND BACKSPACE
+#define RL LEFT_ALT ESC
+#define RR LEFT_CONTROL SPACE
+#define MY_SEMI L_SPC1 MY_KC_0
+#define MY_TAB L_SPC2 TAB
+#define MY_DEL L_SPC3 DEL
 
 / {
-    behaviors {
-      #include "macros.dtsi"
+    combos {
+        compatible = "zmk,combos";
 
-      hm: homerow_mods {
-          compatible = "zmk,behavior-hold-tap";
-          label = "HOMEROW_MODS";
-          #binding-cells = <2>;
-          tapping-term-ms = <200>;
-          quick_tap_ms = <175>;
-          flavor = "tap-preferred";
-          bindings = <&kp>, <&kp>;
+        // eiji
+        combo_w_l {
+            key-positions = <KEY_LL KEY_LR>;
+            // 引数の渡し方が不明
+            bindings = <&_wl LS(LEFT_COMMAND) &_kana>;
+        };
+
+        // kana
+        combo_w_r {
+            key-positions = <KEY_RL KEY_RR>;
+            // 引数の渡し方が不明
+            bindings = <&_wr LC(LALT) &_eiji>;
+        };
+    };
+
+    macros {
+      eiji_a: eiji_a {
+          label = "eiji_a";
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings
+              = <&macro_tap &kp EIJI>
+              , <&macro_press &kp LS(A)>
+              , <&macro_pause_for_release>
+              , <&macro_release &kp LS(A)>
+              ;
       };
+
+      eiji_b: eiji_b {
+          label = "eiji_b";
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings
+              = <&macro_tap &kp EIJI>
+              , <&macro_press &kp LS(B)>
+              , <&macro_pause_for_release>
+              , <&macro_release &kp LS(B)>
+              ;
+      };
+
+      eiji_c: eiji_c {
+          label = "eiji_c";
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings
+              = <&macro_tap &kp EIJI>
+              , <&macro_press &kp LS(C)>
+              , <&macro_pause_for_release>
+              , <&macro_release &kp LS(C)>
+              ;
+      };
+
+      eiji_d: eiji_d {
+          label = "eiji_d";
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings
+              = <&macro_tap &kp EIJI>
+              , <&macro_press &kp LS(D)>
+              , <&macro_pause_for_release>
+              , <&macro_release &kp LS(D)>
+              ;
+      };
+
+      eiji_e: eiji_e {
+          label = "eiji_e";
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings
+              = <&macro_tap &kp EIJI>
+              , <&macro_press &kp LS(E)>
+              , <&macro_pause_for_release>
+              , <&macro_release &kp LS(E)>
+              ;
+      };
+
+      eiji_f: eiji_f {
+          label = "eiji_f";
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings
+              = <&macro_tap &kp EIJI>
+              , <&macro_press &kp LS(F)>
+              , <&macro_pause_for_release>
+              , <&macro_release &kp LS(F)>
+              ;
+      };
+
+      eiji_g: eiji_g {
+          label = "eiji_g";
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings
+              = <&macro_tap &kp EIJI>
+              , <&macro_press &kp LS(G)>
+              , <&macro_pause_for_release>
+              , <&macro_release &kp LS(G)>
+              ;
+      };
+
+      eiji_h: eiji_h {
+          label = "eiji_h";
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings
+              = <&macro_tap &kp EIJI>
+              , <&macro_press &kp LS(H)>
+              , <&macro_pause_for_release>
+              , <&macro_release &kp LS(H)>
+              ;
+      };
+
+      eiji_i: eiji_i {
+          label = "eiji_i";
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings
+              = <&macro_tap &kp EIJI>
+              , <&macro_press &kp LS(I)>
+              , <&macro_pause_for_release>
+              , <&macro_release &kp LS(I)>
+              ;
+      };
+
+      eiji_j: eiji_j {
+          label = "eiji_j";
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings
+              = <&macro_tap &kp EIJI>
+              , <&macro_press &kp LS(J)>
+              , <&macro_pause_for_release>
+              , <&macro_release &kp LS(J)>
+              ;
+      };
+
+      eiji_k: eiji_k {
+          label = "eiji_k";
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings
+              = <&macro_tap &kp EIJI>
+              , <&macro_press &kp LS(K)>
+              , <&macro_pause_for_release>
+              , <&macro_release &kp LS(K)>
+              ;
+      };
+
+      eiji_l: eiji_l {
+          label = "eiji_l";
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings
+              = <&macro_tap &kp EIJI>
+              , <&macro_press &kp LS(L)>
+              , <&macro_pause_for_release>
+              , <&macro_release &kp LS(L)>
+              ;
+      };
+
+      eiji_m: eiji_m {
+          label = "eiji_m";
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings
+              = <&macro_tap &kp EIJI>
+              , <&macro_press &kp LS(M)>
+              , <&macro_pause_for_release>
+              , <&macro_release &kp LS(M)>
+              ;
+      };
+
+      eiji_n: eiji_n {
+          label = "eiji_n";
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings
+              = <&macro_tap &kp EIJI>
+              , <&macro_press &kp LS(N)>
+              , <&macro_pause_for_release>
+              , <&macro_release &kp LS(N)>
+              ;
+      };
+
+      eiji_o: eiji_o {
+          label = "eiji_o";
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings
+              = <&macro_tap &kp EIJI>
+              , <&macro_press &kp LS(O)>
+              , <&macro_pause_for_release>
+              , <&macro_release &kp LS(O)>
+              ;
+      };
+
+      eiji_p: eiji_p {
+          label = "eiji_p";
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings
+              = <&macro_tap &kp EIJI>
+              , <&macro_press &kp LS(P)>
+              , <&macro_pause_for_release>
+              , <&macro_release &kp LS(P)>
+              ;
+      };
+
+      eiji_q: eiji_q {
+          label = "eiji_q";
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings
+              = <&macro_tap &kp EIJI>
+              , <&macro_press &kp LS(Q)>
+              , <&macro_pause_for_release>
+              , <&macro_release &kp LS(Q)>
+              ;
+      };
+
+      eiji_r: eiji_r {
+          label = "eiji_r";
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings
+              = <&macro_tap &kp EIJI>
+              , <&macro_press &kp LS(R)>
+              , <&macro_pause_for_release>
+              , <&macro_release &kp LS(R)>
+              ;
+      };
+
+      eiji_s: eiji_s {
+          label = "eiji_s";
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings
+              = <&macro_tap &kp EIJI>
+              , <&macro_press &kp LS(S)>
+              , <&macro_pause_for_release>
+              , <&macro_release &kp LS(S)>
+              ;
+      };
+
+      eiji_t: eiji_t {
+          label = "eiji_t";
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings
+              = <&macro_tap &kp EIJI>
+              , <&macro_press &kp LS(T)>
+              , <&macro_pause_for_release>
+              , <&macro_release &kp LS(T)>
+              ;
+      };
+
+      eiji_u: eiji_u {
+          label = "eiji_u";
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings
+              = <&macro_tap &kp EIJI>
+              , <&macro_press &kp LS(U)>
+              , <&macro_pause_for_release>
+              , <&macro_release &kp LS(U)>
+              ;
+      };
+
+      eiji_v: eiji_v {
+          label = "eiji_v";
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings
+              = <&macro_tap &kp EIJI>
+              , <&macro_press &kp LS(V)>
+              , <&macro_pause_for_release>
+              , <&macro_release &kp LS(V)>
+              ;
+      };
+
+      eiji_w: eiji_w {
+          label = "eiji_w";
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings
+              = <&macro_tap &kp EIJI>
+              , <&macro_press &kp LS(W)>
+              , <&macro_pause_for_release>
+              , <&macro_release &kp LS(W)>
+              ;
+      };
+
+      eiji_x: eiji_x {
+          label = "eiji_x";
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings
+              = <&macro_tap &kp EIJI>
+              , <&macro_press &kp LS(X)>
+              , <&macro_pause_for_release>
+              , <&macro_release &kp LS(X)>
+              ;
+      };
+
+      eiji_y: eiji_y {
+          label = "eiji_y";
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings
+              = <&macro_tap &kp EIJI>
+              , <&macro_press &kp LS(Y)>
+              , <&macro_pause_for_release>
+              , <&macro_release &kp LS(Y)>
+              ;
+      };
+
+      eiji_z: eiji_z {
+          label = "eiji_z";
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings
+              = <&macro_tap &kp EIJI>
+              , <&macro_press &kp LS(Z)>
+              , <&macro_pause_for_release>
+              , <&macro_release &kp LS(Z)>
+              ;
+      };
+
+
+      _num_0: _num_0 {
+          label = "_num_0";
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings
+              = <&macro_tap &kp EIJI>
+              , <&macro_press &kp N0>
+              , <&macro_pause_for_release>
+              , <&macro_release &kp N0>
+              ;
+      };
+
+      _num_1: _num_1 {
+          label = "_num_1";
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings
+              = <&macro_tap &kp EIJI>
+              , <&macro_press &kp N1>
+              , <&macro_pause_for_release>
+              , <&macro_release &kp N1>
+              ;
+      };
+
+      _num_2: _num_2 {
+          label = "_num_2";
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings
+              = <&macro_tap &kp EIJI>
+              , <&macro_press &kp N2>
+              , <&macro_pause_for_release>
+              , <&macro_release &kp N2>
+              ;
+      };
+
+      _num_3: _num_3 {
+          label = "_num_3";
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings
+              = <&macro_tap &kp EIJI>
+              , <&macro_press &kp N3>
+              , <&macro_pause_for_release>
+              , <&macro_release &kp N3>
+              ;
+      };
+
+      _num_4: _num_4 {
+          label = "_num_4";
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings
+              = <&macro_tap &kp EIJI>
+              , <&macro_press &kp N4>
+              , <&macro_pause_for_release>
+              , <&macro_release &kp N4>
+              ;
+      };
+
+      _num_5: _num_5 {
+          label = "_num_5";
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings
+              = <&macro_tap &kp EIJI>
+              , <&macro_press &kp N5>
+              , <&macro_pause_for_release>
+              , <&macro_release &kp N5>
+              ;
+      };
+
+      _num_6: _num_6 {
+          label = "_num_6";
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings
+              = <&macro_tap &kp EIJI>
+              , <&macro_press &kp N6>
+              , <&macro_pause_for_release>
+              , <&macro_release &kp N6>
+              ;
+      };
+
+      _num_7: _num_7 {
+          label = "_num_7";
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings
+              = <&macro_tap &kp EIJI>
+              , <&macro_press &kp N7>
+              , <&macro_pause_for_release>
+              , <&macro_release &kp N7>
+              ;
+      };
+
+      _num_8: _num_8 {
+          label = "_num_8";
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings
+              = <&macro_tap &kp EIJI>
+              , <&macro_press &kp N8>
+              , <&macro_pause_for_release>
+              , <&macro_release &kp N8>
+              ;
+      };
+
+      _num_9: _num_9 {
+          label = "_num_9";
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings
+              = <&macro_tap &kp EIJI>
+              , <&macro_press &kp N9>
+              , <&macro_pause_for_release>
+              , <&macro_release &kp N9>
+              ;
+      };
+
+
+      _UNDERSCORE: _UNDERSCORE {
+          label = "_UNDERSCORE";
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings
+              = <&macro_tap &kp EIJI>
+              , <&macro_press &kp UNDERSCORE>
+              , <&macro_pause_for_release>
+              , <&macro_release &kp UNDERSCORE>
+              ;
+      };
+
+      _PIPE: _PIPE {
+          label = "_PIPE";
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings
+              = <&macro_tap &kp EIJI>
+              , <&macro_press &kp PIPE>
+              , <&macro_pause_for_release>
+              , <&macro_release &kp PIPE>
+              ;
+      };
+
+      _AMPERSAND: _AMPERSAND {
+          label = "_AMPERSAND";
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings
+              = <&macro_tap &kp EIJI>
+              , <&macro_press &kp AMPERSAND>
+              , <&macro_pause_for_release>
+              , <&macro_release &kp AMPERSAND>
+              ;
+      };
+
+      _EXCLAMATION: _EXCLAMATION {
+          label = "_EXCLAMATION";
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings
+              = <&macro_tap &kp EIJI>
+              , <&macro_press &kp EXCLAMATION>
+              , <&macro_pause_for_release>
+              , <&macro_release &kp EXCLAMATION>
+              ;
+      };
+
+      _QUESTION: _QUESTION {
+          label = "_QUESTION";
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings
+              = <&macro_tap &kp EIJI>
+              , <&macro_press &kp QUESTION>
+              , <&macro_pause_for_release>
+              , <&macro_release &kp QUESTION>
+              ;
+      };
+
+      _HASH: _HASH {
+          label = "_HASH";
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings
+              = <&macro_tap &kp EIJI>
+              , <&macro_press &kp HASH>
+              , <&macro_pause_for_release>
+              , <&macro_release &kp HASH>
+              ;
+      };
+
+      _COMMA: _COMMA {
+          label = "_COMMA";
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings
+              = <&macro_tap &kp EIJI>
+              , <&macro_press &kp COMMA>
+              , <&macro_pause_for_release>
+              , <&macro_release &kp COMMA>
+              ;
+      };
+
+      _PERIOD: _PERIOD {
+          label = "_PERIOD";
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings
+              = <&macro_tap &kp EIJI>
+              , <&macro_press &kp PERIOD>
+              , <&macro_pause_for_release>
+              , <&macro_release &kp PERIOD>
+              ;
+      };
+
+      _SEMICOLON: _SEMICOLON {
+          label = "_SEMICOLON";
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings
+              = <&macro_tap &kp EIJI>
+              , <&macro_press &kp SEMICOLON>
+              , <&macro_pause_for_release>
+              , <&macro_release &kp SEMICOLON>
+              ;
+      };
+
+      _COLON: _COLON {
+          label = "_COLON";
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings
+              = <&macro_tap &kp EIJI>
+              , <&macro_press &kp COLON>
+              , <&macro_pause_for_release>
+              , <&macro_release &kp COLON>
+              ;
+      };
+
+      _AT_SIGN: _AT_SIGN {
+          label = "_AT_SIGN";
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings
+              = <&macro_tap &kp EIJI>
+              , <&macro_press &kp AT_SIGN>
+              , <&macro_pause_for_release>
+              , <&macro_release &kp AT_SIGN>
+              ;
+      };
+
+      _DOUBLE_QUOTES: _DOUBLE_QUOTES {
+          label = "_DOUBLE_QUOTES";
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings
+              = <&macro_tap &kp EIJI>
+              , <&macro_press &kp DOUBLE_QUOTES>
+              , <&macro_pause_for_release>
+              , <&macro_release &kp DOUBLE_QUOTES>
+              ;
+      };
+
+      _SINGLE_QUOTE: _SINGLE_QUOTE {
+          label = "_SINGLE_QUOTE";
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings
+              = <&macro_tap &kp EIJI>
+              , <&macro_press &kp SINGLE_QUOTE>
+              , <&macro_pause_for_release>
+              , <&macro_release &kp SINGLE_QUOTE>
+              ;
+      };
+
+      _GRAVE: _GRAVE {
+          label = "_GRAVE";
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings
+              = <&macro_tap &kp EIJI>
+              , <&macro_press &kp GRAVE>
+              , <&macro_pause_for_release>
+              , <&macro_release &kp GRAVE>
+              ;
+      };
+
+      _SLASH: _SLASH {
+          label = "_SLASH";
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings
+              = <&macro_tap &kp EIJI>
+              , <&macro_press &kp SLASH>
+              , <&macro_pause_for_release>
+              , <&macro_release &kp SLASH>
+              ;
+      };
+
+      _BACKSLASH: _BACKSLASH {
+          label = "_BACKSLASH";
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings
+              = <&macro_tap &kp EIJI>
+              , <&macro_press &kp BACKSLASH>
+              , <&macro_pause_for_release>
+              , <&macro_release &kp BACKSLASH>
+              ;
+      };
+
+
+      _CARET: _CARET {
+          label = "_CARET";
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings
+              = <&macro_tap &kp EIJI>
+              , <&macro_press &kp CARET>
+              , <&macro_pause_for_release>
+              , <&macro_release &kp CARET>
+              ;
+      };
+
+      _LESS_THAN: _LESS_THAN {
+          label = "_LESS_THAN";
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings
+              = <&macro_tap &kp EIJI>
+              , <&macro_press &kp LESS_THAN>
+              , <&macro_pause_for_release>
+              , <&macro_release &kp LESS_THAN>
+              ;
+      };
+
+      _GREATER_THAN: _GREATER_THAN {
+          label = "_GREATER_THAN";
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings
+              = <&macro_tap &kp EIJI>
+              , <&macro_press &kp GREATER_THAN>
+              , <&macro_pause_for_release>
+              , <&macro_release &kp GREATER_THAN>
+              ;
+      };
+
+      _LEFT_BRACKET: _LEFT_BRACKET {
+          label = "_LEFT_BRACKET";
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings
+              = <&macro_tap &kp EIJI>
+              , <&macro_press &kp LEFT_BRACKET>
+              , <&macro_pause_for_release>
+              , <&macro_release &kp LEFT_BRACKET>
+              ;
+      };
+
+      _RIGHT_BRACKET: _RIGHT_BRACKET {
+          label = "_RIGHT_BRACKET";
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings
+              = <&macro_tap &kp EIJI>
+              , <&macro_press &kp RIGHT_BRACKET>
+              , <&macro_pause_for_release>
+              , <&macro_release &kp RIGHT_BRACKET>
+              ;
+      };
+
+      _EQUAL: _EQUAL {
+          label = "_EQUAL";
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings
+              = <&macro_tap &kp EIJI>
+              , <&macro_press &kp EQUAL>
+              , <&macro_pause_for_release>
+              , <&macro_release &kp EQUAL>
+              ;
+      };
+
+      _PLUS: _PLUS {
+          label = "_PLUS";
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings
+              = <&macro_tap &kp EIJI>
+              , <&macro_press &kp PLUS>
+              , <&macro_pause_for_release>
+              , <&macro_release &kp PLUS>
+              ;
+      };
+
+      _MINUS: _MINUS {
+          label = "_MINUS";
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings
+              = <&macro_tap &kp EIJI>
+              , <&macro_press &kp MINUS>
+              , <&macro_pause_for_release>
+              , <&macro_release &kp MINUS>
+              ;
+      };
+
+      _ASTERISK: _ASTERISK {
+          label = "_ASTERISK";
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings
+              = <&macro_tap &kp EIJI>
+              , <&macro_press &kp ASTERISK>
+              , <&macro_pause_for_release>
+              , <&macro_release &kp ASTERISK>
+              ;
+      };
+
+      _PERCENT: _PERCENT {
+          label = "_PERCENT";
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings
+              = <&macro_tap &kp EIJI>
+              , <&macro_press &kp PERCENT>
+              , <&macro_pause_for_release>
+              , <&macro_release &kp PERCENT>
+              ;
+      };
+
+      _DOLLAR: _DOLLAR {
+          label = "_DOLLAR";
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings
+              = <&macro_tap &kp EIJI>
+              , <&macro_press &kp DOLLAR>
+              , <&macro_pause_for_release>
+              , <&macro_release &kp DOLLAR>
+              ;
+      };
+
+      _TILDE: _TILDE {
+          label = "_TILDE";
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings
+              = <&macro_tap &kp EIJI>
+              , <&macro_press &kp TILDE>
+              , <&macro_pause_for_release>
+              , <&macro_release &kp TILDE>
+              ;
+      };
+
+      _LPAR: _LPAR {
+          label = "_LPAR";
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings
+              = <&macro_tap &kp EIJI>
+              , <&macro_press &kp LPAR>
+              , <&macro_pause_for_release>
+              , <&macro_release &kp LPAR>
+              ;
+      };
+
+      _RPAR: _RPAR {
+          label = "_RPAR";
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings
+              = <&macro_tap &kp EIJI>
+              , <&macro_press &kp RPAR>
+              , <&macro_pause_for_release>
+              , <&macro_release &kp RPAR>
+              ;
+      };
+
+      _LEFT_BRACE: _LEFT_BRACE {
+          label = "_LEFT_BRACE";
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings
+              = <&macro_tap &kp EIJI>
+              , <&macro_press &kp LEFT_BRACE>
+              , <&macro_pause_for_release>
+              , <&macro_release &kp LEFT_BRACE>
+              ;
+      };
+
+      _RIGHT_BRACE: _RIGHT_BRACE {
+          label = "_RIGHT_BRACE";
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings
+              = <&macro_tap &kp EIJI>
+              , <&macro_press &kp RIGHT_BRACE>
+              , <&macro_pause_for_release>
+              , <&macro_release &kp RIGHT_BRACE>
+              ;
+      };
+  };
+
+  behaviors {
+    #include "macros.dtsi"
+
+    // shift + a ~ z
+    _a: _a {
+        compatible = "zmk,behavior-mod-morph";
+        label = "_a";
+        #binding-cells = <0>;
+        bindings = <&kp A>, <&eiji_a>;
+        mods = <(MOD_LSFT)>;
     };
 
-  keymap {
-    compatible = "zmk,keymap";
+    _b: _b {
+        compatible = "zmk,behavior-mod-morph";
+        label = "_b";
+        #binding-cells = <0>;
+        bindings = <&kp B>, <&eiji_b>;
+        mods = <(MOD_LSFT)>;
+    };
 
-    default_layer {
-      bindings = <
-        &kp EQUAL &kp N1    &kp N2   &kp N3   &kp N4     &kp N5 &tog 1                                                           &mo 3 &kp N6 &kp N7 &kp N8    &kp N9   &kp N0   &kp MINUS
-        &kp TAB   &kp Q     &kp W    &kp E    &kp R      &kp T  &none                                                            &none &kp Y  &kp U  &kp I     &kp O    &kp P    &kp BSLH
-        &kp ESC   &kp A     &kp S    &kp D    &kp F      &kp G  &none           &kp LCTRL &kp LALT &kp LGUI  &kp RCTRL           &none &kp H  &kp J  &kp K     &kp L    &kp SEMI &kp SQT
-        &kp LSHFT &kp Z     &kp X    &kp C    &kp V      &kp B                            &kp HOME &kp PG_UP                           &kp N  &kp M  &kp COMMA &kp DOT  &kp FSLH &kp RSHFT
-        &mo 2     &kp GRAVE &kp CAPS &kp LEFT &kp RIGHT                &kp BSPC &kp DEL   &kp END  &kp PG_DN &kp ENTER &kp SPACE              &kp UP &kp DOWN  &kp LBKT &kp RBKT &mo 2
-      >;
+    _c: _c {
+        compatible = "zmk,behavior-mod-morph";
+        label = "_c";
+        #binding-cells = <0>;
+        bindings = <&kp C>, <&eiji_c>;
+        mods = <(MOD_LSFT)>;
     };
-    keypad {
-      bindings = <
-        &kp EQUAL &kp N1    &kp N2   &kp N3   &kp N4     &kp N5 &trans                                                           &mo 3 &kp N6 &kp KP_NUM &kp KP_EQUAL &kp KP_DIVIDE &kp KP_MULTIPLY &kp MINUS
-        &kp TAB   &kp Q     &kp W    &kp E    &kp R      &kp T  &none                                                            &none &kp Y  &kp KP_N7  &kp KP_N8    &kp KP_N9     &kp KP_MINUS    &kp BSLH
-        &kp ESC   &kp A     &kp S    &kp D    &kp F      &kp G  &none           &kp LCTRL &kp LALT &kp LGUI  &kp RCTRL           &none &kp H  &kp KP_N4  &kp KP_N5    &kp KP_N6     &kp KP_PLUS     &kp SQT
-        &kp LSHFT &kp Z     &kp X    &kp C    &kp V      &kp B                            &kp HOME &kp PG_UP                           &kp N  &kp KP_N1  &kp KP_N2    &kp KP_N3     &kp KP_ENTER    &kp RSHFT
-        &mo 2     &kp GRAVE &kp CAPS &kp LEFT &kp RIGHT                &kp BSPC &kp DEL   &kp END  &kp PG_DN &kp ENTER &kp KP_N0              &kp UP     &kp DOWN     &kp KP_DOT    &kp RBKT        &mo 2
-      >;
+
+    _d: _d {
+        compatible = "zmk,behavior-mod-morph";
+        label = "_d";
+        #binding-cells = <0>;
+        bindings = <&kp D>, <&eiji_d>;
+        mods = <(MOD_LSFT)>;
     };
-    fn {
-      bindings = <
-        &kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp F6 &tog 1                                           &mo 3 &kp F7 &kp F8 &kp F9 &kp F10 &kp F11 &kp F12
-        &trans &trans &trans &trans &trans &trans  &none                                           &none &trans &trans &trans &trans  &trans  &trans
-        &trans &trans &trans &trans &trans &trans  &none        &trans &trans &trans &trans        &none &trans &trans &trans &trans  &trans  &trans
-        &trans &trans &trans &trans &trans &trans                      &trans &trans                     &trans &trans &trans &trans  &trans  &trans
-        &trans &trans &trans &trans &trans               &trans &trans &trans &trans &trans &trans              &trans &trans &trans  &trans  &trans
-      >;
+
+    _e: _e {
+        compatible = "zmk,behavior-mod-morph";
+        label = "_e";
+        #binding-cells = <0>;
+        bindings = <&kp E>, <&eiji_e>;
+        mods = <(MOD_LSFT)>;
     };
-    mod {
-      bindings = <
-        &none &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &none                                                                     &trans                 &none        &none        &none        &none &none &none
-        &none &none        &none        &none        &none        &none        &bootloader                                                               &bootloader            &none        &none        &none        &none &none &none
-        &none &none        &none        &none        &none        &none        &none                   &none &none &bt BT_CLR &none                      &rgb_ug RGB_MEFS_CMD 5 &none        &none        &none        &none &none &none
-        &none &none        &none        &none        &none        &none                                      &none &none                                                        &none        &none        &none        &none &none &none
-        &none &none        &none        &none        &none                                       &none &none &none &none      &bl BL_TOG &rgb_ug RGB_TOG                                     &bl BL_INC   &bl BL_DEC   &none &none &none
-      >;
+
+    _f: _f {
+        compatible = "zmk,behavior-mod-morph";
+        label = "_f";
+        #binding-cells = <0>;
+        bindings = <&kp F>, <&eiji_f>;
+        mods = <(MOD_LSFT)>;
+    };
+
+    _g: _g {
+        compatible = "zmk,behavior-mod-morph";
+        label = "_g";
+        #binding-cells = <0>;
+        bindings = <&kp G>, <&eiji_g>;
+        mods = <(MOD_LSFT)>;
+    };
+
+    _h: _h {
+        compatible = "zmk,behavior-mod-morph";
+        label = "_h";
+        #binding-cells = <0>;
+        bindings = <&kp H>, <&eiji_h>;
+        mods = <(MOD_LSFT)>;
+    };
+
+    _i: _i {
+        compatible = "zmk,behavior-mod-morph";
+        label = "_i";
+        #binding-cells = <0>;
+        bindings = <&kp I>, <&eiji_i>;
+        mods = <(MOD_LSFT)>;
+    };
+
+    _j: _j {
+        compatible = "zmk,behavior-mod-morph";
+        label = "_j";
+        #binding-cells = <0>;
+        bindings = <&kp J>, <&eiji_j>;
+        mods = <(MOD_LSFT)>;
+    };
+
+    _k: _k {
+        compatible = "zmk,behavior-mod-morph";
+        label = "_k";
+        #binding-cells = <0>;
+        bindings = <&kp K>, <&eiji_k>;
+        mods = <(MOD_LSFT)>;
+    };
+
+    _l: _l {
+        compatible = "zmk,behavior-mod-morph";
+        label = "_l";
+        #binding-cells = <0>;
+        bindings = <&kp L>, <&eiji_l>;
+        mods = <(MOD_LSFT)>;
+    };
+
+    _m: _m {
+        compatible = "zmk,behavior-mod-morph";
+        label = "_m";
+        #binding-cells = <0>;
+        bindings = <&kp M>, <&eiji_m>;
+        mods = <(MOD_LSFT)>;
+    };
+
+    _n: _n {
+        compatible = "zmk,behavior-mod-morph";
+        label = "_n";
+        #binding-cells = <0>;
+        bindings = <&kp N>, <&eiji_n>;
+        mods = <(MOD_LSFT)>;
+    };
+
+    _o: _o {
+        compatible = "zmk,behavior-mod-morph";
+        label = "_o";
+        #binding-cells = <0>;
+        bindings = <&kp O>, <&eiji_o>;
+        mods = <(MOD_LSFT)>;
+    };
+
+    _p: _p {
+        compatible = "zmk,behavior-mod-morph";
+        label = "_p";
+        #binding-cells = <0>;
+        bindings = <&kp P>, <&eiji_p>;
+        mods = <(MOD_LSFT)>;
+    };
+
+    _q: _q {
+        compatible = "zmk,behavior-mod-morph";
+        label = "_q";
+        #binding-cells = <0>;
+        bindings = <&kp Q>, <&eiji_q>;
+        mods = <(MOD_LSFT)>;
+    };
+
+    _r: _r {
+        compatible = "zmk,behavior-mod-morph";
+        label = "_r";
+        #binding-cells = <0>;
+        bindings = <&kp R>, <&eiji_r>;
+        mods = <(MOD_LSFT)>;
+    };
+
+    _s: _s {
+        compatible = "zmk,behavior-mod-morph";
+        label = "_s";
+        #binding-cells = <0>;
+        bindings = <&kp S>, <&eiji_s>;
+        mods = <(MOD_LSFT)>;
+    };
+
+    _t: _t {
+        compatible = "zmk,behavior-mod-morph";
+        label = "_t";
+        #binding-cells = <0>;
+        bindings = <&kp T>, <&eiji_t>;
+        mods = <(MOD_LSFT)>;
+    };
+
+    _u: _u {
+        compatible = "zmk,behavior-mod-morph";
+        label = "_u";
+        #binding-cells = <0>;
+        bindings = <&kp U>, <&eiji_u>;
+        mods = <(MOD_LSFT)>;
+    };
+
+    _v: _v {
+        compatible = "zmk,behavior-mod-morph";
+        label = "_v";
+        #binding-cells = <0>;
+        bindings = <&kp V>, <&eiji_v>;
+        mods = <(MOD_LSFT)>;
+    };
+
+    _w: _w {
+        compatible = "zmk,behavior-mod-morph";
+        label = "_w";
+        #binding-cells = <0>;
+        bindings = <&kp W>, <&eiji_w>;
+        mods = <(MOD_LSFT)>;
+    };
+
+    _x: _x {
+        compatible = "zmk,behavior-mod-morph";
+        label = "_x";
+        #binding-cells = <0>;
+        bindings = <&kp X>, <&eiji_x>;
+        mods = <(MOD_LSFT)>;
+    };
+
+    _y: _y {
+        compatible = "zmk,behavior-mod-morph";
+        label = "_y";
+        #binding-cells = <0>;
+        bindings = <&kp Y>, <&eiji_y>;
+        mods = <(MOD_LSFT)>;
+    };
+
+    _z: _z {
+        compatible = "zmk,behavior-mod-morph";
+        label = "_z";
+        #binding-cells = <0>;
+        bindings = <&kp Z>, <&eiji_z>;
+        mods = <(MOD_LSFT)>;
+    };
+
+    _left: _left {
+        label = "_left";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        wait-ms = <0>;
+        bindings
+            = <&macro_press &mo ARROW_L_LAYER &kp LEFT_ARROW>
+            , <&macro_pause_for_release>
+            , <&macro_release &mo ARROW_L_LAYER &kp LEFT_ARROW>;
+    };
+
+    _up: _up {
+        label = "_up";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        wait-ms = <0>;
+        bindings
+            = <&macro_press &mo ARROW_U_LAYER &kp UP_ARROW>
+            , <&macro_pause_for_release>
+            , <&macro_release &mo ARROW_U_LAYER &kp UP_ARROW>;
+    };
+
+    _down: _down {
+        label = "_down";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        wait-ms = <0>;
+        bindings
+            = <&macro_press &mo ARROW_D_LAYER &kp DOWN_ARROW>
+            , <&macro_pause_for_release>
+            , <&macro_release &mo ARROW_D_LAYER &kp DOWN_ARROW>;
+    };
+
+    _right: _right {
+        label = "_right";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        wait-ms = <0>;
+        bindings
+            = <&macro_press &mo ARROW_R_LAYER &kp RIGHT_ARROW>
+            , <&macro_pause_for_release>
+            , <&macro_release &mo ARROW_R_LAYER &kp RIGHT_ARROW>;
+    };
+
+    // eiji
+    _eiji: _eiji {
+        compatible = "zmk,behavior-mod-morph";
+        label = "_eiji";
+        #binding-cells = <0>;
+        bindings = <&kp EIJI>, <&kp EIJI>;
+        mods = <(MOD_LCTL|MOD_LALT)>;
+    };
+    // eiji
+    _wr: _wr {
+        compatible = "zmk,behavior-hold-tap";
+        label = "_wr";
+        #binding-cells = <2>;
+        tapping-term-ms = <200>;
+        flavor = "hold-preferred";
+        bindings = <&kp>, <&_eiji>;
+    };
+
+    // kana
+    _kana: _kana {
+        compatible = "zmk,behavior-mod-morph";
+        label = "_kana";
+        #binding-cells = <0>;
+        bindings = <&kp KANA>, <&kp KANA>;
+        mods = <(MOD_LSFT|MOD_LGUI)>;
+    };
+    // kana
+    _wl: _wl {
+        compatible = "zmk,behavior-hold-tap";
+        label = "_wl";
+        #binding-cells = <2>;
+        tapping-term-ms = <200>;
+        flavor = "hold-preferred";
+        bindings = <&kp>, <&_kana>;
     };
   };
+
+  keymap {
+        compatible = "zmk,keymap";
+
+        DEFAULT_LAYER {
+            bindings = <
+&none           &none           &none           &none           &none           &none           &none                                                                                                                     &none           &none           &none           &none           &none           &none           &none
+&none           &_q             &_w             &_e             &_r             &_t             &none                                                                                                                     &none           &_y             &_u             &_i             &_o             &_p             &none
+&kp SPACE       &_a             &_s             &_d             &_f             &_g             &none                   &bootloader     &bt BT_CLR      &none           &none           &none           &bootloader       &none           &_h             &_j             &_k             &_l             &lt MY_SEMI     &kp BACKSPACE
+&kp ESCAPE      &_z             &_x             &_c             &_v             &_b                     &none           &none           &kp LALT        &none           &none           &none           &none           &none             &_n             &_m             &_up            &lt MY_TAB      &lt MY_DEL      &kp RETURN
+&none           &none           &mo L_SYM2      &mo L_SYM1      &mo L_NUM                                               &mt LL          &mt LR          &kp LCTRL       &none           &mt RL          &mt RR                                            &_left          &_down          &_right         &none           &none
+            >;
+        };
+
+        NUM_LAYER {
+            bindings = <
+&none           &none           &none           &none           &none           &none           &none                                                                                                                     &none           &none           &none           &none           &none           &none           &none
+&none           &none           &none           &none           &none           &none           &none                                                                                                                     &none           &none           &_num_7         &_num_8         &_num_9         &none           &none
+&none           &none           &none           &none           &none           &none           &none                   &none           &none           &none           &none           &none           &none             &none           &none           &_num_4         &_num_5         &_num_6         &none           &none
+&none           &none           &none           &none           &none           &none                   &none           &none           &none           &none           &none           &none           &none           &none             &_num_0         &_num_1         &_num_2         &_num_3         &none           &none
+&none           &none           &mo L_SYM2      &mo L_SYM1      &mo L_NUM                                               &mt LL          &mt LR          &none           &none           &mt RL          &mt RR                                            &none           &none           &none           &none           &none
+            >;
+        };
+
+        SYMBOL1_LAYER {
+            bindings = <
+&none           &none           &none           &none           &none           &none           &none                                                                                                                     &none           &none           &none           &none           &none           &none           &none
+&none           &none           &none           &none           &none           &none           &none                                                                                                                     &none           &_UNDERSCORE    &_PIPE          &_AMPERSAND     &_EXCLAMATION   &_QUESTION      &none
+&none           &none           &none           &none           &none           &none           &none                   &none           &none           &none           &none           &none           &none             &none           &_HASH          &_COMMA         &_PERIOD        &_SEMICOLON     &_COLON         &_AT_SIGN
+&none           &none           &none           &none           &none           &none                   &none           &none           &none           &none           &none           &none           &none           &none             &_DOUBLE_QUOTES &_SINGLE_QUOTE  &_GRAVE         &_SLASH         &_BACKSLASH     &none
+&none           &none           &mo L_SYM2      &mo L_SYM1      &mo L_NUM                                               &mt LL          &mt LR          &none           &none           &mt RL          &mt RR                                            &none           &none           &none           &none           &none
+            >;
+        };
+
+       SYMBOL2_LAYER {
+            bindings = <
+&none           &none           &none           &none           &none           &none           &none                                                                                                                     &none           &none           &none           &none           &none           &none           &none
+&none           &none           &none           &none           &none           &none           &none                                                                                                                     &none           &_CARET         &_LESS_THAN     &_GREATER_THAN  &_LEFT_BRACKET  &_RIGHT_BRACKET &none
+&none           &none           &none           &none           &none           &none           &none                   &none           &none           &none           &none           &none           &none             &none           &_EQUAL         &_PLUS          &_MINUS         &_ASTERISK      &_PERCENT       &_DOLLAR
+&none           &none           &none           &none           &none           &none                   &none           &none           &none           &none           &none           &none           &none           &none             &_TILDE         &_LPAR          &_RPAR          &_LEFT_BRACE    &_RIGHT_BRACE   &none
+&none           &none           &mo L_SYM2      &mo L_SYM1      &mo L_NUM                                               &mt LL          &mt LR          &none           &none           &mt RL          &mt RR                                            &none           &none           &none           &none           &none
+>;
+        };
+
+        SPC1_LAYER {
+            bindings = <
+&none           &none           &none           &none           &none           &none           &none                                                                                                                     &none           &none           &none           &none           &none           &none           &none
+&kp MY_KC_16    &kp MY_KC_1     &kp MY_KC_2     &kp MY_KC_3     &kp MY_KC_4     &kp MY_KC_5     &none                                                                                                                     &none           &none           &none           &none           &none           &none           &none
+&kp MY_KC_17    &kp MY_KC_6     &kp MY_KC_7     &kp MY_KC_8     &kp MY_KC_9     &kp MY_KC_10    &none                   &none           &none           &none           &none           &none           &none             &none           &none           &none           &none           &none           &none           &none
+&kp MY_KC_18    &kp MY_KC_11    &kp MY_KC_12    &kp MY_KC_13    &kp MY_KC_14    &kp MY_KC_15            &none           &none           &none           &none           &none           &none           &none           &none             &none           &none           &none           &none           &none           &none
+&none           &none           &mo L_SYM2      &mo L_SYM1      &mo L_NUM                                               &mt LL          &mt LR          &none           &none           &mt RL          &mt RR                                            &none           &none           &none           &none           &none
+            >;
+        };
+
+        SPC2_LAYER {
+            bindings = <
+&none           &none           &none           &none           &none           &none           &none                                                                                                                     &none           &none           &none           &none           &none           &none           &none
+&kp MY_KC_16_M  &kp MY_KC_1_M   &kp MY_KC_2_M   &kp MY_KC_3_M   &kp MY_KC_4_M   &kp MY_KC_5_M   &none                                                                                                                     &none           &none           &none           &none           &none           &none           &none
+&kp MY_KC_17_M  &kp MY_KC_6_M   &kp MY_KC_7_M   &kp MY_KC_8_M   &kp MY_KC_9_M   &kp MY_KC_10_M  &none                   &none           &none           &none           &none           &none           &none             &none           &none           &none           &none           &none           &none           &none
+&kp MY_KC_18_M  &kp MY_KC_11_M  &kp MY_KC_12_M  &kp MY_KC_13_M  &kp MY_KC_14_M  &kp MY_KC_15_M          &none           &none           &none           &none           &none           &none           &none           &none             &none           &none           &none           &none           &none           &none
+&none           &none           &mo L_SYM2      &mo L_SYM1      &mo L_NUM                                               &mt LL          &mt LR          &none           &none           &mt RL          &mt RR                                            &none           &none           &none           &none           &none
+            >;
+        };
+
+        SPC3_LAYER {
+            bindings = <
+&none           &none           &none           &none           &none           &none           &none                                                                                                                     &none           &none           &none           &none           &none           &none           &none
+&kp MY_KC_16_M  &kp MY_KC_1_M   &kp MY_KC_2_M   &kp MY_KC_3_M   &kp MY_KC_4_M   &kp MY_KC_5_M   &none                                                                                                                     &none           &none           &none           &none           &none           &none           &none
+&kp MY_KC_17_M  &kp MY_KC_6_M   &kp MY_KC_7_M   &kp MY_KC_8_M   &kp MY_KC_9_M   &kp MY_KC_10_M  &none                   &none           &none           &none           &none           &none           &none             &none           &none           &none           &none           &none           &none           &none
+&kp MY_KC_18_M  &kp MY_KC_11_M  &kp MY_KC_12_M  &kp MY_KC_13_M  &kp MY_KC_14_M  &kp MY_KC_15_M          &none           &none           &none           &none           &none           &none           &none           &none             &none           &none           &none           &none           &none           &none
+&none           &none           &mo L_SYM2      &mo L_SYM1      &mo L_NUM                                               &mt LL          &mt LR          &none           &none           &mt RL          &mt RR                                            &none           &none           &none           &none           &none
+            >;
+        };
+
+        ARROW_L_LAYER {
+            bindings = <
+&none           &none           &none           &none           &none           &none           &none                                                                                                                     &none           &none           &none           &none           &none           &none           &none
+&none           &none           &none           &none           &none           &none           &none                                                                                                                     &none           &none           &none           &none           &none           &none           &none
+&none           &none           &none           &none           &none           &none           &none                   &none           &none           &none           &none           &none           &none             &none           &none           &none           &none           &none           &none           &none
+&none           &none           &none           &none           &none           &none                   &none           &none           &none           &none           &none           &none           &none           &none             &none           &none           &none           &none           &none           &none
+&none           &none           &mo L_SYM2      &mo L_SYM1      &mo L_NUM                                               &mt LL          &mt LR          &none           &none           &mt RL          &mt RR                                            &none           &kp HOME        &none           &none           &none
+            >;
+        };
+
+        ARROW_R_LAYER {
+            bindings = <
+&none           &none           &none           &none           &none           &none           &none                                                                                                                     &none           &none           &none           &none           &none           &none           &none
+&none           &none           &none           &none           &none           &none           &none                                                                                                                     &none           &none           &none           &none           &none           &none           &none
+&none           &none           &none           &none           &none           &none           &none                   &none           &none           &none           &none           &none           &none             &none           &none           &none           &none           &none           &none           &none
+&none           &none           &none           &none           &none           &none                   &none           &none           &none           &none           &none           &none           &none           &none             &none           &none           &none           &none           &none           &none
+&none           &none           &mo L_SYM2      &mo L_SYM1      &mo L_NUM                                               &mt LL          &mt LR          &none           &none           &mt RL          &mt RR                                            &none           &kp END         &none           &none           &none
+            >;
+        };
+
+        ARROW_U_LAYER {
+            bindings = <
+&none           &none           &none           &none           &none           &none           &none                                                                                                                     &none           &none           &none           &none           &none           &none           &none
+&none           &none           &none           &none           &none           &none           &none                                                                                                                     &none           &none           &none           &none           &none           &none           &none
+&none           &none           &none           &none           &none           &none           &none                   &none           &none           &none           &none           &none           &none             &none           &none           &none           &none           &none           &none           &none
+&none           &none           &none           &none           &none           &none                   &none           &none           &none           &none           &none           &none           &none           &none             &none           &none           &none           &none           &none           &none
+&none           &none           &mo L_SYM2      &mo L_SYM1      &mo L_NUM                                               &mt LL          &mt LR          &none           &none           &mt RL          &mt RR                                            &kp PAGE_UP     &none           &none           &none           &none
+            >;
+        };
+
+        ARROW_D_LAYER {
+            bindings = <
+&none           &none           &none           &none           &none           &none           &none                                                                                                                     &none           &none           &none           &none           &none           &none           &none
+&none           &none           &none           &none           &none           &none           &none                                                                                                                     &none           &none           &none           &none           &none           &none           &none
+&none           &none           &none           &none           &none           &none           &none                   &none           &none           &none           &none           &none           &none             &none           &none           &none           &none           &none           &none           &none
+&none           &none           &none           &none           &none           &none                   &none           &none           &none           &none           &none           &none           &none           &none             &none           &none           &none           &none           &none           &none
+&none           &none           &mo L_SYM2      &mo L_SYM1      &mo L_NUM                                               &mt LL          &mt LR          &none           &none           &mt RL          &mt RR                                            &kp PAGE_DOWN   &none           &none           &none           &none
+            >;
+        };
+
+    };
 };
