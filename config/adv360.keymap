@@ -69,11 +69,11 @@
 
         layer_MMO {
             bindings = <
- &trans  &kp N7  &kp N8        &kp N9            &kp N0  &kp MINUS                 &kp EQUAL  &trans     &kp F8     &kp F9  &kp F10   &kp F11  &kp F12  &trans
- &trans  &trans  &trans        &trans            &trans     &trans                     &kp Y  &trans      &kp U      &kp I   &kp UP     &kp J    &kp K  &trans
- &trans  &trans  &trans        &trans            &trans     &trans                     &kp N  &trans     &trans                         &none  &kp DEL  &trans  &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &trans
- &trans  &trans  &trans        &trans            &trans     &trans                    &trans  &trans     &trans     &trans   &trans  &kp HOME   &trans  &trans  &trans    &trans    &trans     &trans  &trans  &trans
- &trans  &trans  &trans  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp SPACE            &kp LEFT_SHIFT  &trans  &kp PG_UP  &kp PG_DN  &kp END    &trans   &trans  &trans  &trans     &none
+ &trans  &trans  &trans        &trans            &trans     &trans                    &kp N6  &kp N7     &kp F8     &kp F9  &kp F10    &kp F11    &kp F12                &trans
+ &trans  &trans  &trans        &trans            &trans     &trans                     &kp Y  &trans      &kp U      &kp I   &kp UP      &kp J      &kp K                &trans
+ &trans  &trans  &trans        &trans            &trans     &trans                     &kp N  &trans     &trans                          &none    &kp DEL  &macro_advanced_dash  &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &trans
+ &trans  &trans  &trans        &trans            &trans     &trans                    &trans  &trans     &trans     &trans   &trans   &kp HOME     &trans                &trans  &trans    &trans    &trans     &trans  &trans  &trans
+  &kp O   &kp P   &kp L  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp SPACE            &kp LEFT_SHIFT  &trans  &kp PG_UP  &kp PG_DN  &kp END  &kp EQUAL  &kp MINUS                &kp N0  &kp N9    &kp N8
             >;
         };
 
