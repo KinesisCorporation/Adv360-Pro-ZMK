@@ -127,5 +127,25 @@
             >;
         };
 
+        layer_GAME {
+            bindings = <
+ &trans           &kp B  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4                &none                                                            &trans  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans         &kp TAB         &kp Q         &kp W         &kp E         &kp R                &kp T                                                            &trans  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &kp LEFT_SHIFT         &kp A         &kp S         &kp D         &kp F                &kp G            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans          &trans         &kp Z         &kp X         &kp C         &kp V               &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans          &trans        &trans        &trans        &trans                          &kp SPACE  &kp LEFT_CONTROL  &trans                  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        layer_Layer__5 {
+            bindings = <
+ &trans  &trans  &trans  &trans  &trans  &trans            &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans            &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans                  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
     };
 };

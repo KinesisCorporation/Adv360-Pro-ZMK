@@ -6,7 +6,9 @@
     "base",
     "keypad",
     "fn",
-    "mod"
+    "mod",
+    "GAME",
+    "Layer #5"
   ],
   "layers": [
     [
