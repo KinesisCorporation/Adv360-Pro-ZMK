@@ -1,0 +1,12 @@
+macro_slim_arrow: macro_slim_arrow{
+compatible = "zmk,behavior-macro";
+label = "macro_slim_arrow";
+#binding-cells = <0>;
+bindings = <&kp MINUS>, <&kp GREATER_THAN>;
+};
+macro_fat_arrow: macro_fat_arrow{
+compatible = "zmk,behavior-macro";
+label = "macro_fat_arrow";
+#binding-cells = <0>;
+bindings = <&kp EQUAL>, <&kp GREATER_THAN>;
+};
