@@ -10,11 +10,17 @@ label = "macro_winat";
 #binding-cells = <0>;
 bindings = <&kp RA(RC(Q))>;
 };
-macro_macpw: macro_macpw{
+macro_bslh: macro_bslh{
 compatible = "zmk,behavior-macro";
-label = "macro_macpw";
+label = "macro_bslh";
 #binding-cells = <0>;
-bindings = <&kp C>, <&kp Y>, <&kp A>, <&kp R>, <&kp N5>, <&kp X>;
+bindings = <&kp HASH>;
+};
+macro_pipe: macro_pipe{
+compatible = "zmk,behavior-macro";
+label = "macro_bslh";
+#binding-cells = <0>;
+bindings = <&kp LS(HASH)>;
 };
 macro_dprskp: macro_dprskp{
 compatible = "zmk,behavior-macro";
