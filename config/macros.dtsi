@@ -1,3 +1,9 @@
+macro_=>: macro_=>{
+compatible = "zmk,behavior-macro";
+label = "macro_=>";
+#binding-cells = <0>;
+bindings = <&kp KP_EQUAL>, <&kp GREATER_THAN>;
+};
 macro_slim_arrow: macro_slim_arrow{
 compatible = "zmk,behavior-macro";
 label = "macro_slim_arrow";
