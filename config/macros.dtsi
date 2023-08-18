@@ -1,3 +1,15 @@
+macro_bslh: macro_bslh{
+compatible = "zmk,behavior-macro";
+label = "macro_bslh";
+#binding-cells = <0>;
+bindings = <&kp HASH>;
+};
+macro_pipe: macro_pipe{
+compatible = "zmk,behavior-macro";
+label = "macro_pipe";
+#binding-cells = <0>;
+bindings = <&kp LS(HASH)>;
+};
 macro_macat: macro_macat{
 compatible = "zmk,behavior-macro";
 label = "macro_macat";
