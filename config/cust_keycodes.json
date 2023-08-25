@@ -1,1 +1,19 @@
-[]
+[
+	{
+		"names": [
+			"LCTRL_ESC"
+		],
+		"description": "LCTRL_ESC",
+		"clarify": false,
+		"documentation": "",
+		"os": {
+			"windows": true,
+			"linux": true,
+			"android": true,
+			"macos": true,
+			"ios": true
+		},
+		"footnotes": {},
+		"type": "UD"
+	}
+]
