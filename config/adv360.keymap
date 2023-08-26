@@ -44,7 +44,7 @@
    &kp EQUAL     &kp Q      &kp W                &kp E                 &kp R   &kp T                    &kp PG_UP                                                                                       &kp HOME   &kp Y              &kp U                &kp I      &kp O      &kp P         &kp BSLH
      &kp ESC     &kp A      &kp S                &kp D                 &kp F   &kp G                    &kp PG_DN  &kp GRAVE                &none                  &kp RIGHT_BRACKET  &kp LEFT_BRACKET   &kp END   &kp H              &kp J                &kp K      &kp L   &kp SEMI          &kp SQT
  &macro_lang     &kp Z      &kp X                &kp C                 &kp V   &kp B                                          &macro_webex_g_mute                              &none                               &kp N              &kp M            &kp COMMA    &kp DOT   &kp FSLH        &kp ENTER
-  &kp LSHIFT  &kp BSPC  &kp LCTRL  &mt LALT LEFT_ARROW  &mt RCMD RIGHT_ARROW                    &macro_switch_win      &none              &kp DEL                              &mo 3    &macro_alt_tab   &kp TAB          &mt RCMD UP_ARROW  &mt RALT DOWN_ARROW  &kp RCTRL  &kp SPACE  &kp RIGHT_SHIFT
+  &kp LSHIFT  &kp BSPC  &kp LCTRL  &mt LALT LEFT_ARROW  &mt RCMD RIGHT_ARROW                    &macro_switch_win      &none              &kp DEL                              &mo 3    &macro_alt_tab   &kp TAB                  &kp SPACE    &mt RCMD UP_ARROW  &mt RALT DOWN_ARROW  &kp RCTRL  &kp RIGHT_SHIFT
             >;
         };
 
