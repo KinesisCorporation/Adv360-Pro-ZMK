@@ -27,9 +27,101 @@
 /* German > */
 #define GER_GT (LS(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_NON_US_BACKSLASH_AND_PIPE)))
 
+/* German " */
+#define GER_DQT (AT)
+
+/* German § */
+#define GER_PARA (HASH)
+
+/* German € */
+#define GER_EURO (RA(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_E)))
+
+/* German & */
+#define GER_AMPS (CARET)
+
+/* German [ */
+#define GER_LBKT (RA(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_8_AND_ASTERISK)))
+
+/* German ] */
+#define GER_RBKT (RA(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_9_AND_LEFT_PARENTHESIS)))
+
+/* German ( */
+#define GER_LPAR (LS(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_8_AND_ASTERISK))) 
+
+/* German ) */
+#define GER_RPAR (LS(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_9_AND_LEFT_PARENTHESIS))) 
+
+/* German { */
+#define GER_LBRC (RA(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_7_AND_AMPERSAND)))
+
+/* German } */
+#define GER_RBRC (RA(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_0_AND_RIGHT_PARENTHESIS)))
+
+/* German % */
+#define GER_PERCENT (PERCENT) 
+
+/* German - */
+#define GER_MINUS (SLASH)
+
+// German + */
+#define GER_PLUS (RBKT)
+
+/* German = */
+#define GER_EQUAL (LS(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_0_AND_RIGHT_PARENTHESIS)))
+
+/* German # */
+#define GER_HASH (BSLH)
+
+/* German | */
+#define GER_PIPE (RA(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_NON_US_BACKSLASH_AND_PIPE)))
+
+/* German : */
+#define GER_COLON (GT)
+
+/* German ? */
+#define GER_QUESTION (UNDERSCORE) 
+
+/* German ~ */
+#define GER_TILDE (RA(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_RIGHT_BRACKET_AND_RIGHT_BRACE)))
+
+/* German $ */
+#define GER_DOLLAR (DOLLAR) 
+
+/* German @ */
+#define GER_AT (RA(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_Q)))
+
+/* German / */
+#define GER_SLASH (AMPERSAND)
+
+/* German * (star) */
+#define GER_STAR (RBRC)
+
+/* German \ */
+#define GER_BSLH (RA(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_MINUS_AND_UNDERSCORE)))
+
 / {
   behaviors {
     #include "macros.dtsi"
+
+      // Macro for Caret (^) dead key
+      GER_CARET: GER_CARET {
+        label = "GER_CARET";
+        #binding-cells = <0>;
+        compatible = "zmk,behavior-macro";
+        wait-ms = <100>;
+        tap-ms = <5>;
+        bindings = <&kp GRAVE &kp SPACE>;
+      };
+
+      // Macro for Backtick (`) dead key
+      GER_BACKTICK: GER_BACKTICK {
+        label = "GER_BACKTICK";
+        #binding-cells = <0>;
+        compatible = "zmk,behavior-macro";
+        wait-ms = <100>;
+        tap-ms = <5>;
+        bindings = <&kp PLUS &kp SPACE>;
+      };
 
     hm: homerow_mods {
         compatible = "zmk,behavior-hold-tap";
@@ -56,13 +148,13 @@
             >;
         };
 
-        layer_keypad {
+        symbol_layer {
             bindings = <
- &kp EQUAL     &kp N1    &kp N2    &kp N3     &kp N4  &kp N5              &trans                                                                 &mo 3  &kp N6  &kp KP_NUM  &kp KP_EQUAL  &kp KP_DIVIDE  &kp KP_MULTIPLY  &kp MINUS
-   &kp TAB      &kp Q     &kp W     &kp E      &kp R   &kp T               &none                                                                 &none   &kp Y   &kp KP_N7     &kp KP_N8      &kp KP_N9     &kp KP_MINUS   &kp BSLH
-   &kp ESC      &kp A     &kp S     &kp D      &kp F   &kp G               &none  &kp LCTRL  &kp LALT                   &kp LGUI  &kp RCTRL      &none   &kp H   &kp KP_N4     &kp KP_N5      &kp KP_N6      &kp KP_PLUS    &kp SQT
- &kp LSHFT      &kp Z     &kp X     &kp C      &kp V   &kp B                                 &kp HOME                  &kp PG_UP                         &kp N   &kp KP_N1     &kp KP_N2      &kp KP_N3     &kp KP_ENTER  &kp RSHFT
-     &mo 2  &kp GER_LT  &kp CAPS  &kp LEFT  &kp RIGHT                    &kp BSPC    &kp DEL   &kp END                  &kp PG_DN  &kp ENTER  &kp KP_N0              &kp UP      &kp DOWN     &kp KP_DOT         &kp RBKT      &mo 2
+        &kp F1    &kp F2          &kp F3        &kp F4       &kp F5        &kp F6        &tog 1                                                              &mo 3  &kp F7        &kp F8         &kp F9          &kp F10       &kp F11          &kp F12
+        &trans    &kp GER_SQT     &kp GER_LT    &kp GER_GT   &kp GER_DQT   &kp GER_PARA  &none                                                               &none  &kp GER_EURO  &kp GER_AMPS   &kp GER_LBKT    &kp GER_RBKT  &kp GER_PERCENT  &trans
+        &trans    &kp EXCLAMATION &kp GER_MINUS &kp GER_PLUS &kp GER_EQUAL &kp GER_HASH  &none        &kp LCTRL &kp DEL  &kp LGUI  &kp RCTRL                 &none  &kp GER_PIPE  &kp GER_COLON  &kp GER_LPAR    &kp GER_RPAR  &kp GER_QUESTION &trans
+        &trans    &GER_CARET      &kp GER_SLASH &kp GER_STAR &kp GER_BSLH  &GER_BACKTICK                        &kp LALT &kp RALT                                   &kp GER_TILDE &kp GER_DOLLAR &kp GER_LBRC    &kp GER_RBRC  &kp GER_AT       &trans
+        &trans    &trans          &trans        &trans       &trans                          &kp SPACE &trans   &kp BSPC  &trans &kp RSHFT &kp RETURN                             &trans         &trans          &trans        &trans           &trans
             >;
         };
 
