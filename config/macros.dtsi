@@ -1,6 +1,6 @@
-macro_ㅝ: macro_ㅝ{
+macro_nj: macro_nj{
 compatible = "zmk,behavior-macro";
-label = "macro_ㅝ";
+label = "macro_nj";
 #binding-cells = <0>;
 bindings = <&kp N>, <&kp J>;
 };
