@@ -37,11 +37,6 @@
           key-positions = <43 42>;
           bindings = <&kp RALT>;
       };
-      dnl {
-          timeout-ms = <30>;
-          key-positions = <42 58>;
-          bindings = <&macro nj>;
-      };
     };
   behaviors {
     #include "macros.dtsi"
