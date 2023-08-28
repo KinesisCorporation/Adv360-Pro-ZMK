@@ -20,6 +20,29 @@
 #include <dt-bindings/zmk/backlight.h>
 
 / {
+    combos {
+      compatible = "zmk,combos";
+      creturn {
+          timeout-ms = <30>;
+          key-positions = <41 43>;
+          bindings = <&kp RETURN>;
+      };
+      rctrl {
+          timeout-ms = <30>;
+          key-positions = <44 43>;
+          bindings = <&kp RCTRL>;
+      };
+      ralt {
+          timeout-ms = <30>;
+          key-positions = <43 42>;
+          bindings = <&kp RALT>;
+      };
+      dnl {
+          timeout-ms = <30>;
+          key-positions = <42 58>;
+          bindings = <&macro nj>;
+      };
+    };
   behaviors {
     #include "macros.dtsi"
 
