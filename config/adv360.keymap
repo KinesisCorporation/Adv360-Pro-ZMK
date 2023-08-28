@@ -19,6 +19,24 @@
 #include <dt-bindings/zmk/backlight.h>
 
 / {
+combos {
+      compatible = "zmk,combos";
+      comb_enter {
+          timeout-ms = <30>;
+          key-positions = <38 39>;
+          bindings = <&kp ENTER>;
+      };
+      comb_esc {
+          timeout-ms = <30>;
+          key-positions = <39 40>;
+          bindings = <&kp ESC>;
+      };
+      comb_ralt {
+          timeout-ms = <30>;
+          key-positions = <49 50>;
+          bindings = <&kp RALT>;
+      };
+    };
   behaviors {
     #include "macros.dtsi"
 
