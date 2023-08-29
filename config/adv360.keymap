@@ -20,6 +20,84 @@
 #include <dt-bindings/zmk/backlight.h>
 
 / {
+    combos {
+      compatible = "zmk,combos";
+      lctrl {
+          timeout-ms = <30>;
+          key-positions = <29 30>;
+          bindings = <&kp LCTRL>;
+      };
+      lalt {
+          timeout-ms = <30>;
+          key-positions = <30 31>;
+          bindings = <&kp LALT>;
+      };
+      lcmd {
+          timeout-ms = <30>;
+          key-positions = <31 32>;
+          bindings = <&kp LEFT_COMMAND>;
+      };
+      laltcmd {
+          timeout-ms = <30>;
+          key-positions = <30 31 32>;
+          bindings = <&kp LA(LEFT_COMMAND)>;
+      };
+      lctrlcmd {
+          timeout-ms = <30>;
+          key-positions = <29 31 32>;
+          bindings = <&kp LC(LEFT_COMMAND)>;
+      };
+      rctrl {
+          timeout-ms = <30>;
+          key-positions = <44 43>;
+          bindings = <&kp RCTRL>;
+      };
+      ralt {
+          timeout-ms = <30>;
+          key-positions = <43 42>;
+          bindings = <&kp RALT>;
+      };
+      rcmd {
+          timeout-ms = <30>;
+          key-positions = <42 41>;
+          bindings = <&kp RIGHT_COMMAND>;
+      };
+      creturn {
+          timeout-ms = <30>;
+          key-positions = <41 43>;
+          bindings = <&kp RETURN>;
+      };
+      ctab {
+          timeout-ms = <30>;
+          key-positions = <30 32>;
+          bindings = <&kp TAB>;
+      };
+      mnj {
+          timeout-ms = <30>;
+          key-positions = <59 41>;
+          bindings = <&macro_nj>;
+      };
+      t1 {
+          timeout-ms = <30>;
+          key-positions = <58 59>;
+          bindings = <&kp N1>;
+      };
+      t2 {
+          timeout-ms = <30>;
+          key-positions = <59 60>;
+          bindings = <&kp N2>;
+      };
+      t3 {
+          timeout-ms = <30>;
+          key-positions = <59 60>;
+          bindings = <&kp N3>;
+      };
+      t4 {
+          timeout-ms = <30>;
+          key-positions = <66 67>;
+          bindings = <&kp N4>;
+      };
+    };
   behaviors {
     #include "macros.dtsi"
 
