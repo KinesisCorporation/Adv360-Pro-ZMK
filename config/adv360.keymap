@@ -115,7 +115,7 @@
       raltcmd {
           timeout-ms = <30>;
           key-positions = <42 43 44>;
-          bindings = <&kp LA(LEFT_COMMAND)>;
+          bindings = <&kp LA(LEFT_CONTROL)>;
       };
     };
   behaviors {
