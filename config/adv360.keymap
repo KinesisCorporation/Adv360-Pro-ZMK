@@ -19,94 +19,7 @@
 #include <dt-bindings/zmk/rgb.h>
 #include <dt-bindings/zmk/backlight.h>
 
-  combos {
-      compatible = "zmk,combos";
-      lctrl {
-          timeout-ms = <30>;
-          key-positions = <29 30>;
-          bindings = <&kp LCTRL>;
-      };
-      lalt {
-          timeout-ms = <30>;
-          key-positions = <30 31>;
-          bindings = <&kp LALT>;
-      };
-      lcmd {
-          timeout-ms = <30>;
-          key-positions = <31 32>;
-          bindings = <&kp LEFT_COMMAND>;
-      };
-      laltcmd {
-          timeout-ms = <30>;
-          key-positions = <30 31 32>;
-          bindings = <&kp LA(LEFT_COMMAND)>;
-      };
-      lctrlcmd {
-          timeout-ms = <30>;
-          key-positisons = <29 31 32>;
-          bindings = <&kp LC(LEFT_COMMAND)>;
-      };
-      rctrl {
-          timeout-ms = <30>;
-          key-positions = <44 43>;
-          bindings = <&kp RCTRL>;
-      };
-      ralt {
-          timeout-ms = <30>;
-          key-positions = <43 42>;
-          bindings = <&kp RALT>;
-      };
-      rcmd {
-          timeout-ms = <30>;
-          key-positions = <42 41>;
-          bindings = <&kp RIGHT_COMMAND>;
-      };
-      creturn {
-          timeout-ms = <30>;
-          key-positions = <41 43>;
-          bindings = <&kp RETURN>;
-      };
-      ctab {
-          timeout-ms = <30>;
-          key-positions = <30 32>;
-          bindings = <&kp TAB>;
-      };
-      mnj {
-          timeout-ms = <30>;
-          key-positions = <42 55>;
-          bindings = <&macro_nj>;
-      };
-      cdot {
-          timeout-ms = <30>;
-          key-positions = <57 58>;
-          bindings = <&kp DOT>;
-      };
-      comma {
-          timeout-ms = <30>;
-          key-positions = <56 57>;
-          bindings = <&kp COMMA>;
-      };
-      chome {
-          timeout-ms = <30>;
-          key-positions = <72 73>;
-          bindings = <&kp HOME>;
-      };
-      cend {
-          timeout-ms = <30>;
-          key-positions = <71 74>;
-          bindings = <&kp END>;
-      };
-      cpgup {
-          timeout-ms = <30>;
-          key-positions = <71 72>;
-          bindings = <&kp PAGE_UP>;
-      };
-      cpgdn {
-          timeout-ms = <30>;
-          key-positions = <73 74>;
-          bindings = <&kp PAGE_DN>;
-      };
-  };
+/ {
   behaviors {
     #include "macros.dtsi"
 
@@ -127,11 +40,11 @@
 
         default_layer {
             bindings = <
-    &kp ESCAPE  &kp N1           &kp N2         &kp N3             &kp N4  &kp N5                   &tog 1                                                                                           &mo 3  &kp N6    &kp N7  &kp N8    &kp N9                 &kp N0                   &kp MINUS
-       &kp TAB   &kp Q            &kp W          &kp E              &kp R   &kp T                &kp GRAVE                                                                                         &kp DEL   &kp Y     &kp U   &kp I     &kp O                  &kp P                    &kp BSLH
- &mt LCTRL ESC   &kp A            &kp S          &kp D              &kp F   &kp G                   &tog 1            &kp LBKT  &kp RIGHT_BRACKET                         &kp LGUI    &kp MINUS  &kp EQUAL   &kp H     &kp J   &kp K     &kp L        &lt 4 SEMICOLON                   &kp EQUAL
- &mt LSHFT ESC   &kp Z            &kp X          &kp C              &kp V   &kp B                                                      &kp INSERT                        &kp LCTRL                           &kp B     &kp N   &kp M     &kp P  &mt RIGHT_SHIFT SLASH  &mt RIGHT_SHIFT APOSTROPHE
-  &out OUT_TOG   &mo 1  &mt LCTRL EQUAL  &mt LALT LBKT  &mt LEFT_WIN RBKT                    &kp BACKSPACE  &mt LEFT_SHIFT DEL     &kp APOSTROPHE                  &kp RIGHT_SHIFT  &lt 1 ENTER  &kp SPACE          &kp LEFT  &kp UP  &kp DOWN              &kp RIGHT                       &mo 2
+       &kp GRAVE  &kp N1           &kp N2         &kp N3             &kp N4  &kp N5                   &tog 1                                                                                           &mo 3  &kp N6    &kp N7  &kp N8    &kp N9                 &kp N0                   &kp MINUS
+         &kp TAB   &kp Q            &kp W          &kp E              &kp R   &kp T                &kp GRAVE                                                                                         &kp DEL   &kp Y     &kp U   &kp I     &kp O                  &kp P                    &kp BSLH
+ &mt LCTRL LANG1   &kp A            &kp S          &kp D              &kp F   &kp G                   &tog 1            &kp LBKT  &kp RIGHT_BRACKET                         &kp LGUI    &kp MINUS  &kp EQUAL   &kp H     &kp J   &kp K     &kp L        &lt 4 SEMICOLON                   &kp EQUAL
+   &mt LSHFT ESC   &kp Z            &kp X          &kp C              &kp V   &kp B                                                      &kp INSERT                        &kp LCTRL                           &kp B     &kp N   &kp M     &kp P  &mt RIGHT_SHIFT SLASH  &mt RIGHT_SHIFT APOSTROPHE
+    &out OUT_TOG   &mo 1  &mt LCTRL EQUAL  &mt LALT LBKT  &mt LEFT_WIN RBKT                    &kp BACKSPACE  &mt LEFT_SHIFT DEL     &kp APOSTROPHE                  &kp RIGHT_SHIFT  &lt 1 ENTER  &kp SPACE          &kp LEFT  &kp UP  &kp DOWN              &kp RIGHT                       &mo 2
             >;
         };
 
