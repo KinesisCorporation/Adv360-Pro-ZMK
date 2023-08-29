@@ -20,7 +20,7 @@
 #include <dt-bindings/zmk/backlight.h>
 
 / {
-    combos {
+combos {
       compatible = "zmk,combos";
       lctrl {
           timeout-ms = <30>;
@@ -44,7 +44,7 @@
       };
       lctrlcmd {
           timeout-ms = <30>;
-          key-positions = <29 31 32>;
+          key-positisons = <29 31 32>;
           bindings = <&kp LC(LEFT_COMMAND)>;
       };
       rctrl {
@@ -74,28 +74,38 @@
       };
       mnj {
           timeout-ms = <30>;
-          key-positions = <59 41>;
+          key-positions = <42 54>;
           bindings = <&macro_nj>;
       };
-      t1 {
+      dot {
           timeout-ms = <30>;
-          key-positions = <58 59>;
-          bindings = <&kp N1>;
+          key-positions = <57 58>;
+          bindings = <&kp DOT>;
       };
-      t2 {
+      comma {
           timeout-ms = <30>;
-          key-positions = <59 60>;
-          bindings = <&kp N2>;
+          key-positions = <56 59>;
+          bindings = <&kp COMMA>;
       };
-      t3 {
+      home {
           timeout-ms = <30>;
-          key-positions = <59 60>;
-          bindings = <&kp N3>;
+          key-positions = <72 73>;
+          bindings = <&kp HOME>;
       };
-      t4 {
+      end {
           timeout-ms = <30>;
-          key-positions = <66 67>;
-          bindings = <&kp N4>;
+          key-positions = <71 74>;
+          bindings = <&kp END>;
+      };
+      pgup {
+          timeout-ms = <30>;
+          key-positions = <71 72>;
+          bindings = <&kp PG_UP>;
+      };
+      pgdn {
+          timeout-ms = <30>;
+          key-positions = <73 74>;
+          bindings = <&kp PG_DN>;
       };
     };
   behaviors {
