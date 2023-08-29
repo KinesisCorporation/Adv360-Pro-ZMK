@@ -112,6 +112,16 @@
           key-positions = <57 56>;
           bindings = <&kp COMMA>;
       };
+      lctrlalt {
+          timeout-ms = <30>;
+          key-positisons = <42 43 44>;
+          bindings = <&kp LC(LALT)>;
+      };
+      lctrlaltwin {
+          timeout-ms = <30>;
+          key-positisons = <42 24 44>;
+          bindings = <&kp LG(LC(LALT))>;
+      };
     };
   behaviors {
     #include "macros.dtsi"
