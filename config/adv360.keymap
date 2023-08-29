@@ -106,7 +106,7 @@
           key-positions = <73 74>;
           bindings = <&kp PAGE_DN>;
       };
-    };
+  };
   behaviors {
     #include "macros.dtsi"
 
