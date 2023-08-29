@@ -40,11 +40,11 @@
 
         default_layer {
             bindings = <
-    &kp ESCAPE  &kp N1           &kp N2         &kp N3             &kp N4  &kp N5                   &tog 1                                                                                                     &mo 3  &kp N6    &kp N7  &kp N8    &kp N9                 &kp N0                   &kp MINUS
-       &kp TAB   &kp Q            &kp W          &kp E              &kp R   &kp T                &kp GRAVE                                                                                                   &kp DEL   &kp Y     &kp U   &kp I     &kp O                  &kp P                    &kp BSLH
- &mt LCTRL ESC   &kp A            &kp S          &kp D              &kp F   &kp G                   &tog 1            &kp LBKT  &kp RIGHT_BRACKET                         &kp LGUI              &kp RCTRL  &kp EQUAL   &kp H     &kp J   &kp K     &kp L        &lt 4 SEMICOLON                   &kp EQUAL
- &mt LSHFT ESC   &kp Z            &kp X          &kp C              &kp V   &kp B                                                      &kp INSERT                        &kp LCTRL                                     &kp B     &kp N   &kp M     &kp P  &mt RIGHT_SHIFT SLASH  &mt RIGHT_SHIFT APOSTROPHE
-  &out OUT_TOG   &mo 1  &mt LCTRL EQUAL  &mt LALT LBKT  &mt LEFT_WIN RBKT                    &kp BACKSPACE  &mt LEFT_SHIFT DEL     &kp APOSTROPHE                  &kp RIGHT_SHIFT  &mt RIGHT_SHIFT ENTER  &kp SPACE          &kp LEFT  &kp UP  &kp DOWN              &kp RIGHT                       &mo 2
+    &kp ESCAPE  &kp N1           &kp N2         &kp N3             &kp N4  &kp N5                   &tog 1                                                                                           &mo 3  &kp N6    &kp N7  &kp N8    &kp N9                 &kp N0                   &kp MINUS
+       &kp TAB   &kp Q            &kp W          &kp E              &kp R   &kp T                &kp GRAVE                                                                                         &kp DEL   &kp Y     &kp U   &kp I     &kp O                  &kp P                    &kp BSLH
+ &mt LCTRL ESC   &kp A            &kp S          &kp D              &kp F   &kp G                   &tog 1            &kp LBKT  &kp RIGHT_BRACKET                         &kp LGUI    &kp RCTRL  &kp EQUAL   &kp H     &kp J   &kp K     &kp L        &lt 4 SEMICOLON                   &kp EQUAL
+ &mt LSHFT ESC   &kp Z            &kp X          &kp C              &kp V   &kp B                                                      &kp INSERT                        &kp LCTRL                           &kp B     &kp N   &kp M     &kp P  &mt RIGHT_SHIFT SLASH  &mt RIGHT_SHIFT APOSTROPHE
+  &out OUT_TOG   &mo 1  &mt LCTRL EQUAL  &mt LALT LBKT  &mt LEFT_WIN RBKT                    &kp BACKSPACE  &mt LEFT_SHIFT DEL     &kp APOSTROPHE                  &kp RIGHT_SHIFT  &lt 1 ENTER  &kp SPACE          &kp LEFT  &kp UP  &kp DOWN              &kp RIGHT                       &mo 2
             >;
         };
 
@@ -54,7 +54,7 @@
    &kp TAB   &kp Q   &kp W   &kp E         &kp R   &kp T               &none                                                                     &none   &kp Y  &kp NUMBER_7  &kp NUMBER_8   &kp NUMBER_9     &kp KP_MINUS   &kp BSLH
    &kp ESC   &kp A   &kp S   &kp D         &kp F   &kp G               &none  &kp LCTRL   &kp LALT                   &kp LGUI  &kp RCTRL         &none   &kp H  &kp NUMBER_4  &kp NUMBER_5   &kp NUMBER_6      &kp KP_PLUS    &kp SQT
  &kp LSHFT   &kp Z   &kp X   &kp C         &kp V   &kp B                                  &kp HOME                  &kp PG_UP                            &kp N  &kp NUMBER_1  &kp NUMBER_2   &kp NUMBER_3     &kp KP_ENTER  &kp RSHFT
-    &trans  &trans  &trans  &trans  &kp LEFT_WIN                    &kp BSPC    &kp DEL  &kp COMMA                  &kp PG_DN  &kp ENTER  &kp NUMBER_0                &kp N0        &kp N0     &kp KP_DOT         &kp RBKT      &mo 2
+    &trans  &trans  &trans  &trans  &kp LEFT_WIN                    &kp BSPC    &kp DEL  &kp COMMA                  &kp PG_DN     &trans  &kp NUMBER_0                &kp N0        &kp N0     &kp KP_DOT         &kp RBKT      &mo 2
             >;
         };
 
