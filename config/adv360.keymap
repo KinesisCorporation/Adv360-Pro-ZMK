@@ -19,8 +19,7 @@
 #include <dt-bindings/zmk/rgb.h>
 #include <dt-bindings/zmk/backlight.h>
 
-/ {
-    combos {
+  combos {
       compatible = "zmk,combos";
       lctrl {
           timeout-ms = <30>;
@@ -44,7 +43,7 @@
       };
       lctrlcmd {
           timeout-ms = <30>;
-          key-positions = <29 31 32>;
+          key-positisons = <29 31 32>;
           bindings = <&kp LC(LEFT_COMMAND)>;
       };
       rctrl {
@@ -72,45 +71,50 @@
           key-positions = <30 32>;
           bindings = <&kp TAB>;
       };
-      escr {
+      mnj {
           timeout-ms = <30>;
-          key-positions = <29 32>;
-          bindings = <&kp ESC>;
-      };
-      c_nj {
-          timeout-ms = <30>;
-          key-positions = <41 56>;
+          key-positions = <42 55>;
           bindings = <&macro_nj>;
       };
-      c_home {
+      cdot {
           timeout-ms = <30>;
-          key-positions = <73 72>;
+          key-positions = <57 58>;
+          bindings = <&kp DOT>;
+      };
+      comma {
+          timeout-ms = <30>;
+          key-positions = <56 57>;
+          bindings = <&kp COMMA>;
+      };
+      chome {
+          timeout-ms = <30>;
+          key-positions = <72 73>;
           bindings = <&kp HOME>;
       };
-      c_end {
+      cend {
           timeout-ms = <30>;
           key-positions = <71 74>;
           bindings = <&kp END>;
       };
-      c_pgup {
+      cpgup {
           timeout-ms = <30>;
           key-positions = <71 72>;
-          bindings = <&kp PG_UP>;
+          bindings = <&kp PAGE_UP>;
       };
-      c_pgdn {
+      cpgdn {
           timeout-ms = <30>;
           key-positions = <73 74>;
-          bindings = <&kp PG_DN>;
+          bindings = <&kp PAGE_DN>;
       };
-      c_dot {
+      lctrlalt {
           timeout-ms = <30>;
-          key-positions = <43 58>;
-          bindings = <&kp DOT>;
+          key-positisons = <42 43 44>;
+          bindings = <&kp LC(LALT)>;
       };
-      c_comma {
+      lctrlaltwin {
           timeout-ms = <30>;
-          key-positions = <57 58>;
-          bindings = <&kp COMMA>;
+          key-positisons = <42 24 44>;
+          bindings = <&kp LG(LC(LALT))>;
       };
     };
   behaviors {
