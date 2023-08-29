@@ -106,11 +106,6 @@
           key-positions = <73 74>;
           bindings = <&kp PAGE_DN>;
       };
-      lctrlalt {
-          timeout-ms = <30>;
-          key-positisons = <42 43 44>;
-          bindings = <&kp LC(LALT)>;
-      };
     };
   behaviors {
     #include "macros.dtsi"
