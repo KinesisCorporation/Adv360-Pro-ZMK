@@ -42,6 +42,21 @@
           key-positions = <59 60>;
           bindings = <&macro_nj>;
       };
+      test1 {
+          timeout-ms = <30>; 
+          key-positions = <66 67>;
+          bindings = <&kp n1>;
+      };
+      test2 {
+          timeout-ms = <30>; 
+          key-positions = <66 67>;
+          bindings = <&kp n2;>;
+      };
+      test3 {
+          timeout-ms = <30>; 
+          key-positions = <53 54>;
+          bindings = <&kp n3>;
+      };
     };
   behaviors {
     #include "macros.dtsi"
