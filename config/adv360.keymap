@@ -67,21 +67,6 @@
           key-positions = <41 43>;
           bindings = <&kp RETURN>;
       };
-      ctab {
-          timeout-ms = <30>;
-          key-positions = <30 32>;
-          bindings = <&kp TAB>;
-      };
-      mnj {
-          timeout-ms = <30>;
-          key-positions = <42 55>;
-          bindings = <&macro_nj>;
-      };
-      cdot {
-          timeout-ms = <30>;
-          key-positions = <57 58>;
-          bindings = <&kp DOT>;
-      };
   };
   behaviors {
     #include "macros.dtsi"
