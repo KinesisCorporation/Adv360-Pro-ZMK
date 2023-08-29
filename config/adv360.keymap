@@ -77,6 +77,31 @@
           key-positions = <29 32>;
           bindings = <&kp ESC>;
       };
+      c_nj {
+          timeout-ms = <30>;
+          key-positions = <41 56>;
+          bindings = <&macro_nj>;
+      };
+      c_home {
+          timeout-ms = <30>;
+          key-positions = <73 72>;
+          bindings = <&kp HOME>;
+      };
+      c_end {
+          timeout-ms = <30>;
+          key-positions = <71 74>;
+          bindings = <&kp END>;
+      };
+      c_pgup {
+          timeout-ms = <30>;
+          key-positions = <71 72>;
+          bindings = <&kp PG_UP>;
+      };
+      c_pgdn {
+          timeout-ms = <30>;
+          key-positions = <73 74>;
+          bindings = <&kp PG_DN>;
+      };
     };
   behaviors {
     #include "macros.dtsi"
