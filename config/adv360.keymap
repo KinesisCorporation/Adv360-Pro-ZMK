@@ -25,7 +25,7 @@
       lctrl {
           timeout-ms = <30>;
           key-positions = <29 30>;
-          bindings = <&kpㅁ LCTRL>;
+          bindings = <&kp LCTRL>;
       };
       lalt {
           timeout-ms = <30>;
@@ -76,41 +76,6 @@
           timeout-ms = <30>;
           key-positions = <29 32>;
           bindings = <&kp ESC>;
-      };
-      pgdn {
-          timeout-ms = <30>;
-          key-positions = <73 74>;
-          bindings = <&kp PAGE_DN>;
-      };
-      pgup {
-          timeout-ms = <30>;
-          key-positions = <71 72>;
-          bindings = <&kp PAGE_UP>;
-      };
-      c_home {
-          timeout-ms = <30>;
-          key-positions = <73 72>;
-          bindings = <&kp HOME>;
-      };
-      c_end {
-          timeout-ms = <30>;
-          key-positions = <71 74>;
-          bindings = <&kp END>;
-      };
-      c_nj {
-          timeout-ms = <30>;
-          key-positions = <55 42>;
-          bindings = <&macro_nj>;
-      };
-      c_comma {
-          timeout-ms = <30>;
-          key-positions = <56 57>;
-          bindings = <&kp COMMA>;
-      };
-      c_dot {
-          timeout-ms = <30>;
-          key-positions = <43 58>;
-          bindings = <&kp DOT>;
       };
     };
   behaviors {
