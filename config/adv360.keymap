@@ -20,7 +20,7 @@
 #include <dt-bindings/zmk/backlight.h>
 
 / {
-combos {
+    combos {
       compatible = "zmk,combos";
       lctrl {
           timeout-ms = <30>;
@@ -44,7 +44,7 @@ combos {
       };
       lctrlcmd {
           timeout-ms = <30>;
-          key-positisons = <29 31 32>;
+          key-positions = <29 31 32>;
           bindings = <&kp LC(LEFT_COMMAND)>;
       };
       rctrl {
@@ -72,40 +72,10 @@ combos {
           key-positions = <30 32>;
           bindings = <&kp TAB>;
       };
-      mnj {
-          timeout-ms = <30>;
-          key-positions = <42 54>;
-          bindings = <&macro_nj>;
-      };
-      dot {
-          timeout-ms = <30>;
-          key-positions = <57 58>;
-          bindings = <&kp DOT>;
-      };
-      comma {
-          timeout-ms = <30>;
-          key-positions = <56 59>;
-          bindings = <&kp COMMA>;
-      };
-      home {
-          timeout-ms = <30>;
-          key-positions = <72 73>;
-          bindings = <&kp HOME>;
-      };
-      end {
-          timeout-ms = <30>;
-          key-positions = <71 74>;
-          bindings = <&kp END>;
-      };
       pgup {
           timeout-ms = <30>;
           key-positions = <71 72>;
-          bindings = <&kp PAGE_UP>;
-      };
-      pgdn {
-          timeout-ms = <30>;
-          key-positions = <73 74>;
-          bindings = <&kp PAGE_DN>;
+          bindings = <&kp PG_UP>;
       };
     };
   behaviors {
