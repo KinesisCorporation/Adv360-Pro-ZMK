@@ -78,8 +78,8 @@
           bindings = <&kp ESC>;
       };
       c_nj {
-          timeout-ms = <30>;
-          key-positions = <41 56>;
+          timeout-ms = <40>;
+          key-positions = <42 55>;
           bindings = <&macro_nj>;
       };
       c_home {
@@ -104,12 +104,12 @@
       };
       c_dot {
           timeout-ms = <30>;
-          key-positions = <43 58>;
+          key-positions = <73 56>;
           bindings = <&kp DOT>;
       };
       c_comma {
           timeout-ms = <30>;
-          key-positions = <57 58>;
+          key-positions = <57 56>;
           bindings = <&kp COMMA>;
       };
     };
