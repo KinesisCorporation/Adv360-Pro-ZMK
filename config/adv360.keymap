@@ -102,6 +102,16 @@
           key-positions = <73 74>;
           bindings = <&kp PG_DN>;
       };
+      c_dot {
+          timeout-ms = <30>;
+          key-positions = <43 58>;
+          bindings = <&kp DOT>;
+      };
+      c_comma {
+          timeout-ms = <30>;
+          key-positions = <57 58>;
+          bindings = <&kp COMMA>;
+      };
     };
   behaviors {
     #include "macros.dtsi"
