@@ -112,10 +112,10 @@
           key-positions = <57 56>;
           bindings = <&kp COMMA>;
       };
-      rctrlalt {
+      raltcmd {
           timeout-ms = <30>;
-          key-positisons = <42 43 44>;
-          bindings = <&kp LC(LALT)>;
+          key-positions = <42 43 44>;
+          bindings = <&kp LA(LEFT_COMMAND)>;
       };
     };
   behaviors {
