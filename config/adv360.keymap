@@ -67,10 +67,49 @@
           key-positions = <41 43>;
           bindings = <&kp RETURN>;
       };
+      ctab {
+          timeout-ms = <30>;
+          key-positions = <30 32>;
+          bindings = <&kp TAB>;
+      };
+      mnj {
+          timeout-ms = <30>;
+          key-positions = <42 55>;
+          bindings = <&macro_nj>;
+      };
+      cdot {
+          timeout-ms = <30>;
+          key-positions = <57 58>;
+          bindings = <&kp DOT>;
+      };
+      comma {
+          timeout-ms = <30>;
+          key-positions = <56 57>;
+          bindings = <&kp COMMA>;
+      };
+      chome {
+          timeout-ms = <30>;
+          key-positions = <72 73>;
+          bindings = <&kp HOME>;
+      };
+      cend {
+          timeout-ms = <30>;
+          key-positions = <71 74>;
+          bindings = <&kp END>;
+      };
+      cpgup {
+          timeout-ms = <30>;
+          key-positions = <71 72>;
+          bindings = <&kp PAGE_UP>;
+      };
+      cpgdn {
+          timeout-ms = <30>;
+          key-positions = <73 74>;
+          bindings = <&kp PAGE_DN>;
+      };
   };
   behaviors {
     #include "macros.dtsi"
-
     hm: homerow_mods {
         compatible = "zmk,behavior-hold-tap";
         label = "HOMEROW_MODS";
