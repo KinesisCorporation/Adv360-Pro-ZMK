@@ -100,12 +100,12 @@ combos {
       pgup {
           timeout-ms = <30>;
           key-positions = <71 72>;
-          bindings = <&kp PG_UP>;
+          bindings = <&kp PAGE_UP>;
       };
       pgdn {
           timeout-ms = <30>;
           key-positions = <73 74>;
-          bindings = <&kp PG_DN>;
+          bindings = <&kp PAGE_DN>;
       };
     };
   behaviors {
