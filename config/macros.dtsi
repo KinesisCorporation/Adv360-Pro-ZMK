@@ -1,3 +1,15 @@
+macro_tab_next: macro_tab_next{
+compatible = "zmk,behavior-macro";
+label = "macro_tab_next";
+#binding-cells = <0>;
+bindings = <&kp LA(LG(RIGHT_ARROW))>;
+};
+macro_tab_prev: macro_tab_prev{
+compatible = "zmk,behavior-macro";
+label = "macro_tab_prev";
+#binding-cells = <0>;
+bindings = <&kp LA(LG(LEFT))>;
+};
 macro_monitor_bri_dow: macro_monitor_bri_dow{
 compatible = "zmk,behavior-macro";
 label = "macro_monitor_bri_dow";
