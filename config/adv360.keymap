@@ -132,6 +132,7 @@
           key-positions = <24 41>;
           bindings = <&kp LCTRL>;
       };
+    };
   behaviors {
     #include "macros.dtsi"
 
