@@ -20,6 +20,124 @@
 #include <dt-bindings/zmk/backlight.h>
 
 / {
+    combos {
+      compatible = "zmk,combos";
+      lctrl {
+          timeout-ms = <30>;
+          key-positions = <29 30>;
+          bindings = <&kp LCTRL>;
+      };
+      lalt {
+          timeout-ms = <30>;
+          key-positions = <30 31>;
+          bindings = <&kp LALT>;
+      };
+      lcmd {
+          timeout-ms = <30>;
+          key-positions = <31 32>;
+          bindings = <&kp LEFT_COMMAND>;
+      };
+      laltcmd {
+          timeout-ms = <30>;
+          key-positions = <30 31 32>;
+          bindings = <&kp LA(LEFT_COMMAND)>;
+      };
+      lctrlcmd {
+          timeout-ms = <30>;
+          key-positions = <29 31 32>;
+          bindings = <&kp LC(LEFT_COMMAND)>;
+      };
+      rctrl {
+          timeout-ms = <30>;
+          key-positions = <44 43>;
+          bindings = <&mt LCTRL RCTRL>;
+      };
+      ralt {
+          timeout-ms = <30>;
+          key-positions = <43 42>;
+          bindings = <&mt LALT RALT>;
+      };
+      rcmd {
+          timeout-ms = <30>;
+          key-positions = <42 41>;
+          bindings = <&kp RIGHT_COMMAND>;
+      };
+      creturn {
+          timeout-ms = <50>;
+          key-positions = <55 56>;
+          bindings = <&kp RETURN>;
+      };
+      ctab {
+          timeout-ms = <30>;
+          key-positions = <49 50>;
+          bindings = <&kp TAB>;
+      };
+      escr {
+          timeout-ms = <30>;
+          key-positions = <29 32>;
+          bindings = <&kp ESC>;
+      };
+      c_nj {
+          timeout-ms = <40>;
+          key-positions = <42 55>;
+          bindings = <&macro_nj>;
+      };
+      c_home {
+          timeout-ms = <30>;
+          key-positions = <73 72>;
+          bindings = <&kp HOME>;
+      };
+      c_end {
+          timeout-ms = <30>;
+          key-positions = <71 74>;
+          bindings = <&kp END>;
+      };
+      c_pgup {
+          timeout-ms = <30>;
+          key-positions = <71 72>;
+          bindings = <&kp PG_UP>;
+      };
+      c_pgdn {
+          timeout-ms = <30>;
+          key-positions = <73 74>;
+          bindings = <&kp PG_DN>;
+      };
+      c_dot {
+          timeout-ms = <30>;
+          key-positions = <42 57>;
+          bindings = <&kp DOT>;
+      };
+      c_comma {
+          timeout-ms = <30>;
+          key-positions = <57 56>;
+          bindings = <&kp COMMA>;
+      };
+      c_dot2 {
+          timeout-ms = <30>;
+          key-positions = <73 56>;
+          bindings = <&kp DOT>;
+      };
+      raltctrl {
+          timeout-ms = <30>;
+          key-positions = <41 42 43>;
+          bindings = <&kp LG(LA(LEFT_CONTROL))>;
+      };
+      layer2_1 {
+          timeout-ms = <30>;
+          key-positions = <29 47>;
+          bindings = <&mo 2>;
+      };
+      layer2_2 {
+          timeout-ms = <30>;
+          key-positions = <44 58>;
+          bindings = <&mo 2>;
+    };
+      rctrl2 {
+          timeout-ms = <30>;
+          key-positions = <24 41>;
+          bindings = <&kp LCTRL>;
+      };
+};
   behaviors {
     #include "macros.dtsi"
 
