@@ -1,3 +1,15 @@
+macro_back: macro_back{
+compatible = "zmk,behavior-macro";
+label = "macro_back";
+#binding-cells = <0>;
+bindings = <&kp LC(LA(LEFT_ARROW))>;
+};
+macro_idea_prev_edit: macro_idea_prev_edit{
+compatible = "zmk,behavior-macro";
+label = "macro_idea_prev_edit";
+#binding-cells = <0>;
+bindings = <&kp LC(LS(BSPC))>;
+};
 macro_tab_next: macro_tab_next{
 compatible = "zmk,behavior-macro";
 label = "macro_tab_next";
