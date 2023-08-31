@@ -127,7 +127,7 @@
           key-positions = <44 58>;
           bindings = <&mo 2>;
     };
-      rctrl {
+      rctrl2 {
           timeout-ms = <30>;
           key-positions = <24 41>;
           bindings = <&kp LCTRL>;
