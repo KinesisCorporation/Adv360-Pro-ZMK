@@ -21,6 +21,124 @@
 #include <dt-bindings/zmk/backlight.h>
 
 / {
+    combos {
+      compatible = "zmk,combos";
+      lctrl {
+          timeout-ms = <30>;
+          key-positions = <29 30>;
+          bindings = <&kp LCTRL>;
+      };
+      lalt {
+          timeout-ms = <30>;
+          key-positions = <30 31>;
+          bindings = <&kp LALT>;
+      };
+      lcmd {
+          timeout-ms = <50>;
+          key-positions = <31 32>;
+          bindings = <&kp LEFT_COMMAND>;
+      };
+      laltcmd {
+          timeout-ms = <30>;
+          key-positions = <30 31 32>;
+          bindings = <&kp LA(LEFT_COMMAND)>;
+      };
+      lctrlcmd {
+          timeout-ms = <30>;
+          key-positions = <29 31 32>;
+          bindings = <&kp LC(LEFT_COMMAND)>;
+      };
+      rctrl {
+          timeout-ms = <30>;
+          key-positions = <44 43>;
+          bindings = <&mt LCTRL RCTRL>;
+      };
+      ralt {
+          timeout-ms = <30>;
+          key-positions = <43 42>;
+          bindings = <&mt LALT RALT>;
+      };
+      rcmd {
+          timeout-ms = <30>;
+          key-positions = <42 41>;
+          bindings = <&ls 4>;
+      };
+      creturn {
+          timeout-ms = <50>;
+          key-positions = <55 56>;
+          bindings = <&kp RETURN>;
+      };
+      ctab {
+          timeout-ms = <30>;
+          key-positions = <49 50>;
+          bindings = <&kp TAB>;
+      };
+      escr {
+          timeout-ms = <30>;
+          key-positions = <29 32>;
+          bindings = <&kp ESC>;
+      };
+      c_nj {
+          timeout-ms = <60>;
+          key-positions = <42 55>;
+          bindings = <&macro_nj>;
+      };
+      c_home {
+          timeout-ms = <30>;
+          key-positions = <73 72>;
+          bindings = <&kp HOME>;
+      };
+      c_end {
+          timeout-ms = <30>;
+          key-positions = <71 74>;
+          bindings = <&kp END>;
+      };
+      c_pgup {
+          timeout-ms = <30>;
+          key-positions = <71 72>;
+          bindings = <&kp PG_UP>;
+      };
+      c_pgdn {
+          timeout-ms = <30>;
+          key-positions = <73 74>;
+          bindings = <&kp PG_DN>;
+      };
+      c_dot {
+          timeout-ms = <30>;
+          key-positions = <42 57>;
+          bindings = <&kp DOT>;
+      };
+      c_comma {
+          timeout-ms = <30>;
+          key-positions = <57 56>;
+          bindings = <&kp COMMA>;
+      };
+      c_dot2 {
+          timeout-ms = <30>;
+          key-positions = <73 56>;
+          bindings = <&kp DOT>;
+      };
+      raltctrl {
+          timeout-ms = <30>;
+          key-positions = <41 42 43>;
+          bindings = <&kp LG(LA(LEFT_CONTROL))>;
+      };
+      layer2_1 {
+          timeout-ms = <30>;
+          key-positions = <29 47>;
+          bindings = <&mo 2>;
+      };
+      layer2_2 {
+          timeout-ms = <30>;
+          key-positions = <44 58>;
+          bindings = <&mo 2>;
+    };
+      rctrl2 {
+          timeout-ms = <30>;
+          key-positions = <24 41>;
+          bindings = <&kp LCTRL>;
+      };
+};
   behaviors {
     #include "macros.dtsi"
 
@@ -44,7 +162,7 @@
       &kp GRAVE              &kp N1                   &kp N2                      &kp N3                  &kp N4  &kp N5                     &tog 1                                                                                                          &kp N6  &kp N7    &kp N8  &kp N9    &kp N0           &kp MINUS            &kp EQUAL
         &kp TAB               &kp Q                    &kp W                       &kp E                   &kp R   &kp T                  &kp GRAVE                                                                                                       &kp MINUS   &kp Y     &kp U   &kp I     &kp O            &kp SEMI             &kp BSLH
   &mt LCTRL ESC               &kp A                    &kp S                       &kp D                   &kp F   &kp G            &kp PRINTSCREEN    &kp LS(LC(LWIN))              &out OUT_TOG                                  &kp LGUI    &kp MINUS      &sl 2   &kp H     &kp J   &kp K     &kp L           &lt 2 DOT       &kp APOSTROPHE
- &kp LEFT_SHIFT         &mt LSHFT Z                    &kp X                       &kp C                   &kp V   &kp B                                                 &kt LS(LG(LEFT_CONTROL))                  &kt LS(LA(LEFT_CONTROL))                           &kp B     &kp N   &kp M     &kp P  &mt LEFT_SHIFT DOT  &mt RIGHT_SHIFT DOT
+ &kp LEFT_SHIFT         &ht_bl LSHIFT Z                    &kp X                       &kp C                   &kp V   &kp B                                                 &kt LS(LG(LEFT_CONTROL))                  &kt LS(LA(LEFT_CONTROL))                           &kp B     &kp N   &kp M     &kp P  &mt LEFT_SHIFT DOT  &mt RIGHT_SHIFT DOT
           &none  &lt 1 LEFT_BRACKET  &mt LCTRL RIGHT_BRACKET  &mt LEFT_WIN RIGHT_CONTROL  &mt LEFT_ALT RIGHT_ALT                      &kp BACKSPACE  &mt LEFT_SHIFT DEL                     &mo 3                                    &tog 2  &lt 1 ENTER  &kp SPACE          &kp LEFT  &kp UP  &kp DOWN           &kp RIGHT            &kp COMMA
             >;
         };
@@ -82,9 +200,9 @@
         layer_Layer__4 {
             bindings = <
  &trans  &trans  &trans  &trans  &trans  &trans            &trans                                                  &trans  &trans      &trans      &trans      &trans  &trans  &trans
- &trans  &trans  &trans  &trans  &trans  &trans            &trans                                                  &trans  &trans  &kp LC(N7)  &kp LC(N8)  &kp LC(N9)  &trans  &trans
- &trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &kp LC(N4)      &kp N5      &kp N6  &trans  &trans
- &trans  &trans  &trans  &trans  &trans  &trans                            &trans                  &trans                  &trans  &kp LS(N1)  &kp LC(N2)  &kp LC(N3)  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans            &trans                                                  &trans  &trans  &kp LG(LC(N7))  &kp LG(LC(N8))  &kp LG(LC(N9))  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &kp LG(LC(N4))      &kp LG(N5)      &kp LG(N6)  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans                            &trans                  &trans                  &trans  &kp LG(LS(N1))  &kp LG(LC(N2))  &kp LG(LC(N3))  &trans  &trans
  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans                  &trans  &trans  &trans           &kp PG_UP   &kp PG_DN      &trans  &trans  &trans
             >;
         };
