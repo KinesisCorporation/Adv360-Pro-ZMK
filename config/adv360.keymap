@@ -20,124 +20,6 @@
 #include <dt-bindings/zmk/backlight.h>
 
 / {
-    combos {
-      compatible = "zmk,combos";
-      lctrl {
-          timeout-ms = <30>;
-          key-positions = <29 30>;
-          bindings = <&kp LCTRL>;
-      };
-      lalt {
-          timeout-ms = <30>;
-          key-positions = <30 31>;
-          bindings = <&kp LALT>;
-      };
-      lcmd {
-          timeout-ms = <30>;
-          key-positions = <31 32>;
-          bindings = <&kp LEFT_COMMAND>;
-      };
-      laltcmd {
-          timeout-ms = <30>;
-          key-positions = <30 31 32>;
-          bindings = <&kp LA(LEFT_COMMAND)>;
-      };
-      lctrlcmd {
-          timeout-ms = <30>;
-          key-positions = <29 31 32>;
-          bindings = <&kp LC(LEFT_COMMAND)>;
-      };
-      rctrl {
-          timeout-ms = <30>;
-          key-positions = <44 43>;
-          bindings = <&mt LCTRL RCTRL>;
-      };
-      ralt {
-          timeout-ms = <30>;
-          key-positions = <43 42>;
-          bindings = <&mt LALT RALT>;
-      };
-      rcmd {
-          timeout-ms = <30>;
-          key-positions = <42 41>;
-          bindings = <&kp RIGHT_COMMAND>;
-      };
-      creturn {
-          timeout-ms = <50>;
-          key-positions = <55 56>;
-          bindings = <&kp RETURN>;
-      };
-      ctab {
-          timeout-ms = <30>;
-          key-positions = <49 50>;
-          bindings = <&kp TAB>;
-      };
-      escr {
-          timeout-ms = <30>;
-          key-positions = <29 32>;
-          bindings = <&kp ESC>;
-      };
-      c_nj {
-          timeout-ms = <40>;
-          key-positions = <42 55>;
-          bindings = <&macro_nj>;
-      };
-      c_home {
-          timeout-ms = <30>;
-          key-positions = <73 72>;
-          bindings = <&kp HOME>;
-      };
-      c_end {
-          timeout-ms = <30>;
-          key-positions = <71 74>;
-          bindings = <&kp END>;
-      };
-      c_pgup {
-          timeout-ms = <30>;
-          key-positions = <71 72>;
-          bindings = <&kp PG_UP>;
-      };
-      c_pgdn {
-          timeout-ms = <30>;
-          key-positions = <73 74>;
-          bindings = <&kp PG_DN>;
-      };
-      c_dot {
-          timeout-ms = <30>;
-          key-positions = <42 57>;
-          bindings = <&kp DOT>;
-      };
-      c_comma {
-          timeout-ms = <30>;
-          key-positions = <57 56>;
-          bindings = <&kp COMMA>;
-      };
-      c_dot2 {
-          timeout-ms = <30>;
-          key-positions = <73 56>;
-          bindings = <&kp DOT>;
-      };
-      raltctrl {
-          timeout-ms = <30>;
-          key-positions = <41 42 43>;
-          bindings = <&kp LG(LA(LEFT_CONTROL))>;
-      };
-      layer2_1 {
-          timeout-ms = <30>;
-          key-positions = <29 47>;
-          bindings = <&mo 2>;
-      };
-      layer2_2 {
-          timeout-ms = <30>;
-          key-positions = <44 58>;
-          bindings = <&mo 2>;
-    };
-      rctrl2 {
-          timeout-ms = <30>;
-          key-positions = <24 41>;
-          bindings = <&kp LCTRL>;
-      };
-};
   behaviors {
     #include "macros.dtsi"
 
@@ -158,31 +40,31 @@
 
         default_layer {
             bindings = <
-      &kp GRAVE    &kp N1     &kp N2                     &kp N3                      &kp N4  &kp N5                     &tog 1                                                                                            &kp N6  &kp N7    &kp N8  &kp N9    &kp N0              &kp MINUS            &kp EQUAL
-        &kp TAB     &kp Q      &kp W                      &kp E                       &kp R   &kp T                  &kp GRAVE                                                                                         &kp MINUS   &kp Y     &kp U   &kp I     &kp O               &kp SEMI             &kp BSLH
-  &mt LCTRL ESC     &kp A      &kp S                      &kp D                       &kp F   &kp G            &kp PRINTSCREEN    &kp LS(LC(LWIN))    &out OUT_TOG                              &kp LGUI    &kp MINUS  &kp EQUAL   &kp H     &kp J   &kp K     &kp L                  &kp Y       &kp APOSTROPHE
- &kp LEFT_SHIFT     &kp Z      &kp X                      &kp C                       &kp V   &kp B                                                          &to 1                  &kp LS(LA(LEFT_WIN))                           &kp B     &kp N   &kp M     &kp P  &mt RIGHT_SHIFT SLASH  &mt RIGHT_SHIFT DOT
-          &none  &kp SEMI  &kp LCTRL  &mt LEFT_WIN LEFT_BRACKET  &mt LEFT_ALT RIGHT_BRACKET                      &kp BACKSPACE  &mt LEFT_SHIFT DEL  &kp APOSTROPHE                       &kp RIGHT_SHIFT  &lt 1 ENTER  &kp SPACE          &kp LEFT  &kp UP  &kp DOWN              &kp RIGHT            &kp COMMA
+      &kp GRAVE              &kp N1                   &kp N2                      &kp N3                  &kp N4  &kp N5                     &tog 1                                                                                            &kp N6  &kp N7    &kp N8  &kp N9    &kp N0           &kp MINUS            &kp EQUAL
+        &kp TAB               &kp Q                    &kp W                       &kp E                   &kp R   &kp T                  &kp GRAVE                                                                                         &kp MINUS   &kp Y     &kp U   &kp I     &kp O            &kp SEMI             &kp BSLH
+  &mt LCTRL ESC               &kp A                    &kp S                       &kp D                   &kp F   &kp G            &kp PRINTSCREEN    &kp LS(LC(LWIN))    &out OUT_TOG                              &kp LGUI    &kp MINUS  &kp EQUAL   &kp H     &kp J   &kp K     &kp L           &lt 2 DOT       &kp APOSTROPHE
+ &kp LEFT_SHIFT      &ht_tp LSHFT Z                    &kp X                       &kp C                   &kp V   &kp B                                                          &to 1                  &kp LS(LA(LEFT_WIN))                           &kp B     &kp N   &kp M     &kp P  &mt LEFT_SHIFT DOT  &mt RIGHT_SHIFT DOT
+          &none  &lt 1 LEFT_BRACKET  &mt LCTRL RIGHT_BRACKET  &mt LEFT_WIN RIGHT_CONTROL  &mt LEFT_ALT RIGHT_ALT                      &kp BACKSPACE  &mt LEFT_SHIFT DEL  &kp APOSTROPHE                                 &mo 1  &lt 1 ENTER  &kp SPACE          &kp LEFT  &kp UP  &kp DOWN           &kp RIGHT            &kp COMMA
             >;
         };
 
         layer_keypad {
             bindings = <
- &kp EQUAL  &kp N1  &kp N2  &kp N3        &kp N4  &kp N5              &trans                                                                     &mo 3  &kp N6    &kp KP_NUM  &kp KP_EQUAL  &kp KP_DIVIDE  &kp KP_MULTIPLY  &kp MINUS
-   &kp TAB   &kp Q   &kp W   &kp E         &kp R   &kp T               &none                                                                     &none   &kp Y  &kp NUMBER_7  &kp NUMBER_8   &kp NUMBER_9     &kp KP_MINUS   &kp BSLH
-   &kp ESC   &kp A   &kp S   &kp D         &kp F   &kp G               &none  &kp LCTRL   &kp LALT                   &kp LGUI  &kp RCTRL         &none   &kp H  &kp NUMBER_4  &kp NUMBER_5   &kp NUMBER_6      &kp KP_PLUS    &kp SQT
- &kp LSHFT   &kp Z   &kp X   &kp C         &kp V   &kp B                                    &trans                  &kp PG_UP                            &kp N  &kp NUMBER_1  &kp NUMBER_2   &kp NUMBER_3     &kp KP_ENTER  &kp RSHFT
+     &mo 0  &kp N1  &kp N2  &kp N3        &kp N4  &kp N5              &trans                                                                     &mo 3  &kp N6    &kp KP_NUM  &kp KP_EQUAL  &kp KP_DIVIDE  &kp KP_MULTIPLY  &kp MINUS
+   &kp TAB   &mo 0   &mo 0   &mo 0         &mo 0   &kp T               &none                                                                     &none   &kp Y  &kp NUMBER_7  &kp NUMBER_8   &kp NUMBER_9     &kp KP_MINUS   &kp BSLH
+   &kp ESC   &mo 0   &mo 0   &mo 0         &mo 0   &kp G               &none  &kp LCTRL   &kp LALT                   &kp LGUI  &kp RCTRL         &none   &kp H  &kp NUMBER_4  &kp NUMBER_5   &kp NUMBER_6      &kp KP_PLUS    &kp SQT
+ &kp LSHFT   &mo 0   &mo 0   &mo 0         &mo 0   &kp B                                    &trans                  &kp PG_UP                            &kp N  &kp NUMBER_1  &kp NUMBER_2   &kp NUMBER_3     &kp KP_ENTER  &kp RSHFT
     &trans  &trans  &trans  &trans  &kp LEFT_WIN                    &kp BSPC    &kp DEL  &kp COMMA                  &kp PG_DN     &trans  &kp NUMBER_0                &kp N0     &kp COMMA        &kp DOT     &kp KP_ENTER      &mo 2
             >;
         };
 
         layer_fn {
             bindings = <
- &kp F1  &kp F2      &kp F3  &kp F4  &kp F5  &kp F6            &tog 1                                                   &mo 3  &kp F7       &kp F8         &kp F9   &kp F10          &kp F11  &kp F12
- &trans  &trans  &kp LA(F4)  &trans  &trans  &trans             &none                                                   &none  &trans       &trans         &trans    &trans        &kp COLON   &trans
- &trans  &trans      &trans  &trans  &trans  &trans             &none  &trans  &trans                  &trans  &trans   &none  &trans       &trans         &trans    &trans           &trans   &trans
- &trans  &trans      &trans  &trans  &trans  &trans                            &trans                  &trans                  &trans       &trans         &trans    &trans  &kp PRINTSCREEN   &trans
- &trans  &trans      &trans  &trans  &trans                    &trans  &trans  &trans                  &trans  &trans  &trans          &kp PAGE_UP  &kp PAGE_DOWN  &kp HOME          &kp END   &trans
+ &kp F1  &kp F2      &kp F3  &kp F4  &kp F5  &kp F6            &tog 1                                                  &kp F7  &kp F8       &kp F9          &kp F10       &kp F11          &kp F12  &kp F13
+ &trans  &trans  &kp LA(F4)  &trans  &trans  &trans             &none                                                   &none  &trans       &trans           &trans        &trans        &kp COLON   &trans
+ &trans  &trans      &trans  &trans  &trans  &trans             &none  &trans  &trans                  &trans  &trans   &none  &trans       &trans  &kp EXCLAMATION  &kp QUESTION           &trans   &trans
+ &trans  &trans      &trans  &trans  &trans  &trans                            &trans                  &trans                  &trans       &trans           &trans        &trans  &kp PRINTSCREEN   &trans
+ &trans  &trans      &trans  &trans  &trans                    &trans  &trans  &trans                  &trans  &trans  &trans          &kp PAGE_UP    &kp PAGE_DOWN      &kp HOME          &kp END   &trans
             >;
         };
 

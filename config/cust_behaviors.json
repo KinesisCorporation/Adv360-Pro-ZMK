@@ -1,1 +1,18 @@
-[]
+[
+	{
+		"code": "&ht_tp",
+		"name": "&ht_tp",
+		"params": [
+			"code"
+		],
+		"type": "UD"
+	},
+	{
+		"code": "&ht_bl",
+		"name": "&ht_bl",
+		"params": [
+			"code"
+		],
+		"type": "UD"
+	}
+]
