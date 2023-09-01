@@ -61,7 +61,7 @@
       rcmd {
           timeout-ms = <30>;
           key-positions = <42 41>;
-          bindings = <&ls 4>;
+          bindings = <&sl 4>;
       };
       creturn {
           timeout-ms = <50>;
