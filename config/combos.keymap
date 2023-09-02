@@ -1,0 +1,550 @@
+combos {
+	compatible = "zmk,combos";
+
+	combo_JPQMARKL {
+		timeout-ms = <50>;
+		key-positions = <1 65>;
+		layers = <4>;
+		bindings = <&macro_JPQMARKL>;
+	};
+
+	combo_JPSLASHL {
+		timeout-ms = <50>;
+		key-positions = <2 65>;
+		layers = <4>;
+		bindings = <&macro_JPSLASHL>;
+	};
+
+	combo_JPTILDEL {
+		timeout-ms = <50>;
+		key-positions = <3 65>;
+		layers = <4>;
+		bindings = <&macro_JPTILDEL>;
+	};
+
+	combo_JPLKAGIL {
+		timeout-ms = <50>;
+		key-positions = <4 65>;
+		layers = <4>;
+		bindings = <&macro_JPLKAGIL>;
+	};
+
+	combo_JPRKAGIL {
+		timeout-ms = <50>;
+		key-positions = <5 65>;
+		layers = <4>;
+		bindings = <&macro_JPRKAGIL>;
+	};
+
+	combo_JPLKADOL {
+		timeout-ms = <50>;
+		key-positions = <8 65>;
+		layers = <4>;
+		bindings = <&macro_JPLKADOL>;
+	};
+
+	combo_JPRKADOL {
+		timeout-ms = <50>;
+		key-positions = <9 65>;
+		layers = <4>;
+		bindings = <&macro_JPRKADOL>;
+	};
+
+	combo_JPLMARUL {
+		timeout-ms = <50>;
+		key-positions = <10 65>;
+		layers = <4>;
+		bindings = <&macro_JPLMARUL>;
+	};
+
+	combo_JPRMARUL {
+		timeout-ms = <50>;
+		key-positions = <11 65>;
+		layers = <4>;
+		bindings = <&macro_JPRMARUL>;
+	};
+
+	combo_JPLDKAGIL {
+		timeout-ms = <50>;
+		key-positions = <12 65>;
+		layers = <4>;
+		bindings = <&macro_JPLDKAGIL>;
+	};
+
+	combo_JPRDKAGIL {
+		timeout-ms = <50>;
+		key-positions = <13 65>;
+		layers = <4>;
+		bindings = <&macro_JPRDKAGIL>;
+	};
+
+	combo_XA {
+		timeout-ms = <50>;
+		key-positions = <15 65>;
+		layers = <4>;
+		bindings = <&macro_XA>;
+	};
+
+	combo_E {
+		timeout-ms = <50>;
+		key-positions = <16 65>;
+		layers = <4>;
+		bindings = <&macro_E>;
+	};
+
+	combo_RI {
+		timeout-ms = <50>;
+		key-positions = <17 65>;
+		layers = <4>;
+		bindings = <&macro_RI>;
+	};
+
+	combo_XYA {
+		timeout-ms = <50>;
+		key-positions = <18 65>;
+		layers = <4>;
+		bindings = <&macro_XYA>;
+	};
+
+	combo_RE {
+		timeout-ms = <50>;
+		key-positions = <19 65>;
+		layers = <4>;
+		bindings = <&macro_RE>;
+	};
+
+	combo_PA {
+		timeout-ms = <50>;
+		key-positions = <22 65>;
+		layers = <4>;
+		bindings = <&macro_PA>;
+	};
+
+	combo_DI {
+		timeout-ms = <50>;
+		key-positions = <23 65>;
+		layers = <4>;
+		bindings = <&macro_DI>;
+	};
+
+	combo_GU {
+		timeout-ms = <50>;
+		key-positions = <24 65>;
+		layers = <4>;
+		bindings = <&macro_GU>;
+	};
+
+	combo_DU {
+		timeout-ms = <50>;
+		key-positions = <25 65>;
+		layers = <4>;
+		bindings = <&macro_DU>;
+	};
+
+	combo_PI {
+		timeout-ms = <50>;
+		key-positions = <26 65>;
+		layers = <4>;
+		bindings = <&macro_PI>;
+	};
+
+	combo_WO {
+		timeout-ms = <50>;
+		key-positions = <29 65>;
+		layers = <4>;
+		bindings = <&macro_WO>;
+	};
+
+	combo_A {
+		timeout-ms = <50>;
+		key-positions = <30 65>;
+		layers = <4>;
+		bindings = <&macro_A>;
+	};
+
+	combo_NA {
+		timeout-ms = <50>;
+		key-positions = <31 65>;
+		layers = <4>;
+		bindings = <&macro_NA>;
+	};
+
+	combo_XYU {
+		timeout-ms = <50>;
+		key-positions = <32 65>;
+		layers = <4>;
+		bindings = <&macro_XYU>;
+	};
+
+	combo_MO {
+		timeout-ms = <50>;
+		key-positions = <33 65>;
+		layers = <4>;
+		bindings = <&macro_MO>;
+	};
+
+	combo_BA {
+		timeout-ms = <50>;
+		key-positions = <40 65>;
+		layers = <4>;
+		bindings = <&macro_BA>;
+	};
+
+	combo_DO {
+		timeout-ms = <50>;
+		key-positions = <41 65>;
+		layers = <4>;
+		bindings = <&macro_DO>;
+	};
+
+	combo_GI {
+		timeout-ms = <50>;
+		key-positions = <42 65>;
+		layers = <4>;
+		bindings = <&macro_GI>;
+	};
+
+	combo_PO {
+		timeout-ms = <50>;
+		key-positions = <43 65>;
+		layers = <4>;
+		bindings = <&macro_PO>;
+	};
+
+	combo_XU {
+		timeout-ms = <50>;
+		key-positions = <47 65>;
+		layers = <4>;
+		bindings = <&macro_XU>;
+	};
+
+	combo_JPMINUS2 {
+		timeout-ms = <50>;
+		key-positions = <48 65>;
+		layers = <4>;
+		bindings = <&macro_JPMINUS2>;
+	};
+
+	combo_RO {
+		timeout-ms = <50>;
+		key-positions = <49 65>;
+		layers = <4>;
+		bindings = <&macro_RO>;
+	};
+
+	combo_YA {
+		timeout-ms = <50>;
+		key-positions = <50 65>;
+		layers = <4>;
+		bindings = <&macro_YA>;
+	};
+
+	combo_XI {
+		timeout-ms = <50>;
+		key-positions = <51 65>;
+		layers = <4>;
+		bindings = <&macro_XI>;
+	};
+
+	combo_PU {
+		timeout-ms = <50>;
+		key-positions = <54 65>;
+		layers = <4>;
+		bindings = <&macro_PU>;
+	};
+
+	combo_ZO {
+		timeout-ms = <50>;
+		key-positions = <55 65>;
+		layers = <4>;
+		bindings = <&macro_ZO>;
+	};
+
+	combo_PE {
+		timeout-ms = <50>;
+		key-positions = <56 65>;
+		layers = <4>;
+		bindings = <&macro_PE>;
+	};
+
+	combo_BO {
+		timeout-ms = <50>;
+		key-positions = <57 65>;
+		layers = <4>;
+		bindings = <&macro_BO>;
+	};
+
+	combo_JPQMARKR {
+		timeout-ms = <50>;
+		key-positions = <1 70>;
+		layers = <4>;
+		bindings = <&macro_JPQMARKR>;
+	};
+
+	combo_JPSLASHR {
+		timeout-ms = <50>;
+		key-positions = <2 70>;
+		layers = <4>;
+		bindings = <&macro_JPSLASHR>;
+	};
+
+	combo_JPTILDER {
+		timeout-ms = <50>;
+		key-positions = <3 70>;
+		layers = <4>;
+		bindings = <&macro_JPTILDER>;
+	};
+
+	combo_JPLKAGIR {
+		timeout-ms = <50>;
+		key-positions = <4 70>;
+		layers = <4>;
+		bindings = <&macro_JPLKAGIR>;
+	};
+
+	combo_JPRKAGIR {
+		timeout-ms = <50>;
+		key-positions = <5 70>;
+		layers = <4>;
+		bindings = <&macro_JPRKAGIR>;
+	};
+
+	combo_JPLKADOR {
+		timeout-ms = <50>;
+		key-positions = <8 70>;
+		layers = <4>;
+		bindings = <&macro_JPLKADOR>;
+	};
+
+	combo_JPRKADOR {
+		timeout-ms = <50>;
+		key-positions = <9 70>;
+		layers = <4>;
+		bindings = <&macro_JPRKADOR>;
+	};
+
+	combo_JPLMARUR {
+		timeout-ms = <50>;
+		key-positions = <10 70>;
+		layers = <4>;
+		bindings = <&macro_JPLMARUR>;
+	};
+
+	combo_JPRMARUR {
+		timeout-ms = <50>;
+		key-positions = <11 70>;
+		layers = <4>;
+		bindings = <&macro_JPRMARUR>;
+	};
+
+	combo_JPLDKAGIR {
+		timeout-ms = <50>;
+		key-positions = <12 70>;
+		layers = <4>;
+		bindings = <&macro_JPLDKAGIR>;
+	};
+
+	combo_JPRDKAGIR {
+		timeout-ms = <50>;
+		key-positions = <13 70>;
+		layers = <4>;
+		bindings = <&macro_JPRDKAGIR>;
+	};
+
+	combo_GA {
+		timeout-ms = <50>;
+		key-positions = <16 70>;
+		layers = <4>;
+		bindings = <&macro_GA>;
+	};
+
+	combo_DA {
+		timeout-ms = <50>;
+		key-positions = <17 70>;
+		layers = <4>;
+		bindings = <&macro_DA>;
+	};
+
+	combo_GO {
+		timeout-ms = <50>;
+		key-positions = <18 70>;
+		layers = <4>;
+		bindings = <&macro_GO>;
+	};
+
+	combo_ZA {
+		timeout-ms = <50>;
+		key-positions = <19 70>;
+		layers = <4>;
+		bindings = <&macro_ZA>;
+	};
+
+	combo_YO {
+		timeout-ms = <50>;
+		key-positions = <22 70>;
+		layers = <4>;
+		bindings = <&macro_YO>;
+	};
+
+	combo_NI {
+		timeout-ms = <50>;
+		key-positions = <23 70>;
+		layers = <4>;
+		bindings = <&macro_NI>;
+	};
+
+	combo_RU {
+		timeout-ms = <50>;
+		key-positions = <24 70>;
+		layers = <4>;
+		bindings = <&macro_RU>;
+	};
+
+	combo_MA {
+		timeout-ms = <50>;
+		key-positions = <25 70>;
+		layers = <4>;
+		bindings = <&macro_MA>;
+	};
+
+	combo_XE {
+		timeout-ms = <50>;
+		key-positions = <26 70>;
+		layers = <4>;
+		bindings = <&macro_XE>;
+	};
+
+	combo_VU {
+		timeout-ms = <50>;
+		key-positions = <29 70>;
+		layers = <4>;
+		bindings = <&macro_VU>;
+	};
+
+	combo_JI {
+		timeout-ms = <50>;
+		key-positions = <30 70>;
+		layers = <4>;
+		bindings = <&macro_JI>;
+	};
+
+	combo_DE {
+		timeout-ms = <50>;
+		key-positions = <31 70>;
+		layers = <4>;
+		bindings = <&macro_DE>;
+	};
+
+	combo_GE {
+		timeout-ms = <50>;
+		key-positions = <32 70>;
+		layers = <4>;
+		bindings = <&macro_GE>;
+	};
+
+	combo_ZE {
+		timeout-ms = <50>;
+		key-positions = <33 70>;
+		layers = <4>;
+		bindings = <&macro_ZE>;
+	};
+
+	combo_MI {
+		timeout-ms = <50>;
+		key-positions = <40 70>;
+		layers = <4>;
+		bindings = <&macro_MI>;
+	};
+
+	combo_O {
+		timeout-ms = <50>;
+		key-positions = <41 70>;
+		layers = <4>;
+		bindings = <&macro_O>;
+	};
+
+	combo_NO {
+		timeout-ms = <50>;
+		key-positions = <42 70>;
+		layers = <4>;
+		bindings = <&macro_NO>;
+	};
+
+	combo_XYO {
+		timeout-ms = <50>;
+		key-positions = <43 70>;
+		layers = <4>;
+		bindings = <&macro_XYO>;
+	};
+
+	combo_XTU {
+		timeout-ms = <50>;
+		key-positions = <44 70>;
+		layers = <4>;
+		bindings = <&macro_XTU>;
+	};
+
+	combo_BI {
+		timeout-ms = <50>;
+		key-positions = <48 70>;
+		layers = <4>;
+		bindings = <&macro_BI>;
+	};
+
+	combo_ZU {
+		timeout-ms = <50>;
+		key-positions = <49 70>;
+		layers = <4>;
+		bindings = <&macro_ZU>;
+	};
+
+	combo_BU {
+		timeout-ms = <50>;
+		key-positions = <50 70>;
+		layers = <4>;
+		bindings = <&macro_BU>;
+	};
+
+	combo_BE {
+		timeout-ms = <50>;
+		key-positions = <51 70>;
+		layers = <4>;
+		bindings = <&macro_BE>;
+	};
+
+	combo_NU {
+		timeout-ms = <50>;
+		key-positions = <54 70>;
+		layers = <4>;
+		bindings = <&macro_NU>;
+	};
+
+	combo_YU {
+		timeout-ms = <50>;
+		key-positions = <55 70>;
+		layers = <4>;
+		bindings = <&macro_YU>;
+	};
+
+	combo_MU {
+		timeout-ms = <50>;
+		key-positions = <56 70>;
+		layers = <4>;
+		bindings = <&macro_MU>;
+	};
+
+	combo_WA {
+		timeout-ms = <50>;
+		key-positions = <57 70>;
+		layers = <4>;
+		bindings = <&macro_WA>;
+	};
+
+	combo_XO {
+		timeout-ms = <50>;
+		key-positions = <58 70>;
+		layers = <4>;
+		bindings = <&macro_XO>;
+	};
+
+};
