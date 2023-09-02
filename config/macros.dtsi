@@ -4,858 +4,735 @@ label = "macro_LCSP4";
 #binding-cells = <0>;
 bindings = <&kp LC(SPACE)>, <&tog 4>;
 };
-
 macro_JPN1: macro_JPN1{
 compatible = "zmk,behavior-macro";
 label = "macro_JPN1";
 #binding-cells = <0>;
 bindings = <&kp N1>;
 };
-
 macro_JPN2: macro_JPN2{
 compatible = "zmk,behavior-macro";
 label = "macro_JPN2";
 #binding-cells = <0>;
 bindings = <&kp N2>;
 };
-
 macro_JPN3: macro_JPN3{
 compatible = "zmk,behavior-macro";
 label = "macro_JPN3";
 #binding-cells = <0>;
 bindings = <&kp N3>;
 };
-
 macro_JPN4: macro_JPN4{
 compatible = "zmk,behavior-macro";
 label = "macro_JPN4";
 #binding-cells = <0>;
 bindings = <&kp N4>;
 };
-
 macro_JPN5: macro_JPN5{
 compatible = "zmk,behavior-macro";
 label = "macro_JPN5";
 #binding-cells = <0>;
 bindings = <&kp N5>;
 };
-
 macro_JPN6: macro_JPN6{
 compatible = "zmk,behavior-macro";
 label = "macro_JPN6";
 #binding-cells = <0>;
 bindings = <&kp N6>;
 };
-
 macro_JPN7: macro_JPN7{
 compatible = "zmk,behavior-macro";
 label = "macro_JPN7";
 #binding-cells = <0>;
 bindings = <&kp N7>;
 };
-
 macro_JPN8: macro_JPN8{
 compatible = "zmk,behavior-macro";
 label = "macro_JPN8";
 #binding-cells = <0>;
 bindings = <&kp N8>;
 };
-
 macro_JPN9: macro_JPN9{
 compatible = "zmk,behavior-macro";
 label = "macro_JPN9";
 #binding-cells = <0>;
 bindings = <&kp N9>;
 };
-
 macro_JPN0: macro_JPN0{
 compatible = "zmk,behavior-macro";
 label = "macro_JPN0";
 #binding-cells = <0>;
 bindings = <&kp N0>;
 };
-
 macro_JPMINUS1: macro_JPMINUS1{
 compatible = "zmk,behavior-macro";
 label = "macro_JPMINUS1";
 #binding-cells = <0>;
 bindings = <&kp MINUS>;
 };
-
 macro_JPPERIOD: macro_JPPERIOD{
 compatible = "zmk,behavior-macro";
 label = "macro_JPPERIOD";
 #binding-cells = <0>;
 bindings = <&kp PERIOD>;
 };
-
 macro_KA: macro_KA{
 compatible = "zmk,behavior-macro";
 label = "macro_KA";
 #binding-cells = <0>;
 bindings = <&kp K>, <&kp A>;
 };
-
 macro_TA: macro_TA{
 compatible = "zmk,behavior-macro";
 label = "macro_TA";
 #binding-cells = <0>;
 bindings = <&kp T>, <&kp A>;
 };
-
 macro_KO: macro_KO{
 compatible = "zmk,behavior-macro";
 label = "macro_KO";
 #binding-cells = <0>;
 bindings = <&kp K>, <&kp O>;
 };
-
 macro_SA: macro_SA{
 compatible = "zmk,behavior-macro";
 label = "macro_SA";
 #binding-cells = <0>;
 bindings = <&kp S>, <&kp A>;
 };
-
 macro_RA: macro_RA{
 compatible = "zmk,behavior-macro";
 label = "macro_RA";
 #binding-cells = <0>;
 bindings = <&kp R>, <&kp A>;
 };
-
 macro_TI: macro_TI{
 compatible = "zmk,behavior-macro";
 label = "macro_TI";
 #binding-cells = <0>;
 bindings = <&kp T>, <&kp I>;
 };
-
 macro_KU: macro_KU{
 compatible = "zmk,behavior-macro";
 label = "macro_KU";
 #binding-cells = <0>;
 bindings = <&kp K>, <&kp U>;
 };
-
 macro_TU: macro_TU{
 compatible = "zmk,behavior-macro";
 label = "macro_TU";
 #binding-cells = <0>;
 bindings = <&kp T>, <&kp U>;
 };
-
 macro_JPCOMMA2: macro_JPCOMMA2{
 compatible = "zmk,behavior-macro";
 label = "macro_JPCOMMA2";
 #binding-cells = <0>;
 bindings = <&kp LA(COMMA)>;
 };
-
 macro_JPCOMMA1: macro_JPCOMMA1{
 compatible = "zmk,behavior-macro";
 label = "macro_JPCOMMA1";
 #binding-cells = <0>;
 bindings = <&kp COMMA>;
 };
-
 macro_U: macro_U{
 compatible = "zmk,behavior-macro";
 label = "macro_U";
 #binding-cells = <0>;
 bindings = <&kp U>;
 };
-
 macro_SI: macro_SI{
 compatible = "zmk,behavior-macro";
 label = "macro_SI";
 #binding-cells = <0>;
 bindings = <&kp S>, <&kp I>;
 };
-
 macro_TE: macro_TE{
 compatible = "zmk,behavior-macro";
 label = "macro_TE";
 #binding-cells = <0>;
 bindings = <&kp T>, <&kp E>;
 };
-
 macro_KE: macro_KE{
 compatible = "zmk,behavior-macro";
 label = "macro_KE";
 #binding-cells = <0>;
 bindings = <&kp K>, <&kp E>;
 };
-
 macro_SE: macro_SE{
 compatible = "zmk,behavior-macro";
 label = "macro_SE";
 #binding-cells = <0>;
 bindings = <&kp S>, <&kp E>;
 };
-
 macro_HA: macro_HA{
 compatible = "zmk,behavior-macro";
 label = "macro_HA";
 #binding-cells = <0>;
 bindings = <&kp H>, <&kp A>;
 };
-
 macro_TO: macro_TO{
 compatible = "zmk,behavior-macro";
 label = "macro_TO";
 #binding-cells = <0>;
 bindings = <&kp T>, <&kp O>;
 };
-
 macro_KI: macro_KI{
 compatible = "zmk,behavior-macro";
 label = "macro_KI";
 #binding-cells = <0>;
 bindings = <&kp K>, <&kp I>;
 };
-
 macro_I: macro_I{
 compatible = "zmk,behavior-macro";
 label = "macro_I";
 #binding-cells = <0>;
 bindings = <&kp I>;
 };
-
 macro_NN: macro_NN{
 compatible = "zmk,behavior-macro";
 label = "macro_NN";
 #binding-cells = <0>;
 bindings = <&kp N>, <&kp N>;
 };
-
 macro_JPBACKSPACE: macro_JPBACKSPACE{
 compatible = "zmk,behavior-macro";
 label = "macro_JPBACKSPACE";
 #binding-cells = <0>;
 bindings = <&kp BACKSPACE>;
 };
-
 macro_JPTEN: macro_JPTEN{
 compatible = "zmk,behavior-macro";
 label = "macro_JPTEN";
 #binding-cells = <0>;
 bindings = <&kp LA(PERIOD)>;
 };
-
 macro_HI: macro_HI{
 compatible = "zmk,behavior-macro";
 label = "macro_HI";
 #binding-cells = <0>;
 bindings = <&kp H>, <&kp I>;
 };
-
 macro_SU: macro_SU{
 compatible = "zmk,behavior-macro";
 label = "macro_SU";
 #binding-cells = <0>;
 bindings = <&kp S>, <&kp U>;
 };
-
 macro_HU: macro_HU{
 compatible = "zmk,behavior-macro";
 label = "macro_HU";
 #binding-cells = <0>;
 bindings = <&kp H>, <&kp U>;
 };
-
 macro_HE: macro_HE{
 compatible = "zmk,behavior-macro";
 label = "macro_HE";
 #binding-cells = <0>;
 bindings = <&kp H>, <&kp E>;
 };
-
 macro_ME: macro_ME{
 compatible = "zmk,behavior-macro";
 label = "macro_ME";
 #binding-cells = <0>;
 bindings = <&kp M>, <&kp E>;
 };
-
 macro_SO: macro_SO{
 compatible = "zmk,behavior-macro";
 label = "macro_SO";
 #binding-cells = <0>;
 bindings = <&kp S>, <&kp O>;
 };
-
 macro_NE: macro_NE{
 compatible = "zmk,behavior-macro";
 label = "macro_NE";
 #binding-cells = <0>;
 bindings = <&kp N>, <&kp E>;
 };
-
 macro_HO: macro_HO{
 compatible = "zmk,behavior-macro";
 label = "macro_HO";
 #binding-cells = <0>;
 bindings = <&kp H>, <&kp O>;
 };
-
 macro_JPNAKATEN: macro_JPNAKATEN{
 compatible = "zmk,behavior-macro";
 label = "macro_JPNAKATEN";
 #binding-cells = <0>;
 bindings = <&kp SLASH>;
 };
-
 macro_JPEN: macro_JPEN{
 compatible = "zmk,behavior-macro";
 label = "macro_JPEN";
 #binding-cells = <0>;
 bindings = <&kp LA(BACKSLASH)>;
 };
-
 macro_JPQMARKL: macro_JPQMARKL{
 compatible = "zmk,behavior-macro";
 label = "macro_JPQMARKL";
 #binding-cells = <0>;
 bindings = <&kp QMARK>;
 };
-
 macro_JPSLASHL: macro_JPSLASHL{
 compatible = "zmk,behavior-macro";
 label = "macro_JPSLASHL";
 #binding-cells = <0>;
 bindings = <&kp LA(SLASH)>;
 };
-
 macro_JPTILDEL: macro_JPTILDEL{
 compatible = "zmk,behavior-macro";
 label = "macro_JPTILDEL";
 #binding-cells = <0>;
 bindings = <&kp TILDE>;
 };
-
 macro_JPLKAGIL: macro_JPLKAGIL{
 compatible = "zmk,behavior-macro";
 label = "macro_JPLKAGIL";
 #binding-cells = <0>;
 bindings = <&kp LBKT>;
 };
-
 macro_JPRKAGIL: macro_JPRKAGIL{
 compatible = "zmk,behavior-macro";
 label = "macro_JPRKAGIL";
 #binding-cells = <0>;
 bindings = <&kp RBKT>;
 };
-
 macro_JPLKADOL: macro_JPLKADOL{
 compatible = "zmk,behavior-macro";
 label = "macro_JPLKADOL";
 #binding-cells = <0>;
 bindings = <&kp LA(LBKT)>;
 };
-
 macro_JPRKADOL: macro_JPRKADOL{
 compatible = "zmk,behavior-macro";
 label = "macro_JPRKADOL";
 #binding-cells = <0>;
 bindings = <&kp LA(RBKT)>;
 };
-
 macro_JPLMARUL: macro_JPLMARUL{
 compatible = "zmk,behavior-macro";
 label = "macro_JPLMARUL";
 #binding-cells = <0>;
 bindings = <&kp LS(N9)>;
 };
-
 macro_JPRMARUL: macro_JPRMARUL{
 compatible = "zmk,behavior-macro";
 label = "macro_JPRMARUL";
 #binding-cells = <0>;
 bindings = <&kp LS(N0)>;
 };
-
 macro_JPLDKAGIL: macro_JPLDKAGIL{
 compatible = "zmk,behavior-macro";
 label = "macro_JPLDKAGIL";
 #binding-cells = <0>;
 bindings = <&kp LS(LBKT)>;
 };
-
 macro_JPRDKAGIL: macro_JPRDKAGIL{
 compatible = "zmk,behavior-macro";
 label = "macro_JPRDKAGIL";
 #binding-cells = <0>;
 bindings = <&kp LS(RBKT)>;
 };
-
 macro_XA: macro_XA{
 compatible = "zmk,behavior-macro";
 label = "macro_XA";
 #binding-cells = <0>;
 bindings = <&kp X>, <&kp A>;
 };
-
 macro_E: macro_E{
 compatible = "zmk,behavior-macro";
 label = "macro_E";
 #binding-cells = <0>;
 bindings = <&kp E>;
 };
-
 macro_RI: macro_RI{
 compatible = "zmk,behavior-macro";
 label = "macro_RI";
 #binding-cells = <0>;
 bindings = <&kp R>, <&kp I>;
 };
-
 macro_XYA: macro_XYA{
 compatible = "zmk,behavior-macro";
 label = "macro_XYA";
 #binding-cells = <0>;
 bindings = <&kp X>, <&kp Y>, <&kp A>;
 };
-
 macro_RE: macro_RE{
 compatible = "zmk,behavior-macro";
 label = "macro_RE";
 #binding-cells = <0>;
 bindings = <&kp R>, <&kp E>;
 };
-
 macro_PA: macro_PA{
 compatible = "zmk,behavior-macro";
 label = "macro_PA";
 #binding-cells = <0>;
 bindings = <&kp P>, <&kp A>;
 };
-
 macro_DI: macro_DI{
 compatible = "zmk,behavior-macro";
 label = "macro_DI";
 #binding-cells = <0>;
 bindings = <&kp D>, <&kp I>;
 };
-
 macro_GU: macro_GU{
 compatible = "zmk,behavior-macro";
 label = "macro_GU";
 #binding-cells = <0>;
 bindings = <&kp G>, <&kp U>;
 };
-
 macro_DU: macro_DU{
 compatible = "zmk,behavior-macro";
 label = "macro_DU";
 #binding-cells = <0>;
 bindings = <&kp D>, <&kp U>;
 };
-
 macro_PI: macro_PI{
 compatible = "zmk,behavior-macro";
 label = "macro_PI";
 #binding-cells = <0>;
 bindings = <&kp P>, <&kp I>;
 };
-
 macro_WO: macro_WO{
 compatible = "zmk,behavior-macro";
 label = "macro_WO";
 #binding-cells = <0>;
 bindings = <&kp W>, <&kp O>;
 };
-
 macro_A: macro_A{
 compatible = "zmk,behavior-macro";
 label = "macro_A";
 #binding-cells = <0>;
 bindings = <&kp A>;
 };
-
 macro_NA: macro_NA{
 compatible = "zmk,behavior-macro";
 label = "macro_NA";
 #binding-cells = <0>;
 bindings = <&kp N>, <&kp A>;
 };
-
 macro_XYU: macro_XYU{
 compatible = "zmk,behavior-macro";
 label = "macro_XYU";
 #binding-cells = <0>;
 bindings = <&kp X>, <&kp Y>, <&kp U>;
 };
-
 macro_MO: macro_MO{
 compatible = "zmk,behavior-macro";
 label = "macro_MO";
 #binding-cells = <0>;
 bindings = <&kp M>, <&kp O>;
 };
-
 macro_BA: macro_BA{
 compatible = "zmk,behavior-macro";
 label = "macro_BA";
 #binding-cells = <0>;
 bindings = <&kp B>, <&kp A>;
 };
-
 macro_DO: macro_DO{
 compatible = "zmk,behavior-macro";
 label = "macro_DO";
 #binding-cells = <0>;
 bindings = <&kp D>, <&kp O>;
 };
-
 macro_GI: macro_GI{
 compatible = "zmk,behavior-macro";
 label = "macro_GI";
 #binding-cells = <0>;
 bindings = <&kp G>, <&kp I>;
 };
-
 macro_PO: macro_PO{
 compatible = "zmk,behavior-macro";
 label = "macro_PO";
 #binding-cells = <0>;
 bindings = <&kp P>, <&kp O>;
 };
-
 macro_XU: macro_XU{
 compatible = "zmk,behavior-macro";
 label = "macro_XU";
 #binding-cells = <0>;
 bindings = <&kp X>, <&kp U>;
 };
-
 macro_JPMINUS2: macro_JPMINUS2{
 compatible = "zmk,behavior-macro";
 label = "macro_JPMINUS2";
 #binding-cells = <0>;
 bindings = <&kp MINUS>;
 };
-
 macro_RO: macro_RO{
 compatible = "zmk,behavior-macro";
 label = "macro_RO";
 #binding-cells = <0>;
 bindings = <&kp R>, <&kp O>;
 };
-
 macro_YA: macro_YA{
 compatible = "zmk,behavior-macro";
 label = "macro_YA";
 #binding-cells = <0>;
 bindings = <&kp Y>, <&kp A>;
 };
-
 macro_XI: macro_XI{
 compatible = "zmk,behavior-macro";
 label = "macro_XI";
 #binding-cells = <0>;
 bindings = <&kp X>, <&kp I>;
 };
-
 macro_PU: macro_PU{
 compatible = "zmk,behavior-macro";
 label = "macro_PU";
 #binding-cells = <0>;
 bindings = <&kp P>, <&kp U>;
 };
-
 macro_ZO: macro_ZO{
 compatible = "zmk,behavior-macro";
 label = "macro_ZO";
 #binding-cells = <0>;
 bindings = <&kp Z>, <&kp O>;
 };
-
 macro_PE: macro_PE{
 compatible = "zmk,behavior-macro";
 label = "macro_PE";
 #binding-cells = <0>;
 bindings = <&kp P>, <&kp E>;
 };
-
 macro_BO: macro_BO{
 compatible = "zmk,behavior-macro";
 label = "macro_BO";
 #binding-cells = <0>;
 bindings = <&kp B>, <&kp O>;
 };
-
 macro_JPQMARKR: macro_JPQMARKR{
 compatible = "zmk,behavior-macro";
 label = "macro_JPQMARKR";
 #binding-cells = <0>;
 bindings = <&kp QMARK>;
 };
-
 macro_JPSLASHR: macro_JPSLASHR{
 compatible = "zmk,behavior-macro";
 label = "macro_JPSLASHR";
 #binding-cells = <0>;
 bindings = <&kp LA(SLASH)>;
 };
-
 macro_JPTILDER: macro_JPTILDER{
 compatible = "zmk,behavior-macro";
 label = "macro_JPTILDER";
 #binding-cells = <0>;
 bindings = <&kp TILDE>;
 };
-
 macro_JPLKAGIR: macro_JPLKAGIR{
 compatible = "zmk,behavior-macro";
 label = "macro_JPLKAGIR";
 #binding-cells = <0>;
 bindings = <&kp LBKT>;
 };
-
 macro_JPRKAGIR: macro_JPRKAGIR{
 compatible = "zmk,behavior-macro";
 label = "macro_JPRKAGIR";
 #binding-cells = <0>;
 bindings = <&kp RBKT>;
 };
-
 macro_JPLKADOR: macro_JPLKADOR{
 compatible = "zmk,behavior-macro";
 label = "macro_JPLKADOR";
 #binding-cells = <0>;
 bindings = <&kp LA(LBKT)>;
 };
-
 macro_JPRKADOR: macro_JPRKADOR{
 compatible = "zmk,behavior-macro";
 label = "macro_JPRKADOR";
 #binding-cells = <0>;
 bindings = <&kp LA(RBKT)>;
 };
-
 macro_JPLMARUR: macro_JPLMARUR{
 compatible = "zmk,behavior-macro";
 label = "macro_JPLMARUR";
 #binding-cells = <0>;
 bindings = <&kp LS(N9)>;
 };
-
 macro_JPRMARUR: macro_JPRMARUR{
 compatible = "zmk,behavior-macro";
 label = "macro_JPRMARUR";
 #binding-cells = <0>;
 bindings = <&kp LS(N0)>;
 };
-
 macro_JPLDKAGIR: macro_JPLDKAGIR{
 compatible = "zmk,behavior-macro";
 label = "macro_JPLDKAGIR";
 #binding-cells = <0>;
 bindings = <&kp LS(LBKT)>;
 };
-
 macro_JPRDKAGIR: macro_JPRDKAGIR{
 compatible = "zmk,behavior-macro";
 label = "macro_JPRDKAGIR";
 #binding-cells = <0>;
 bindings = <&kp LS(RBKT)>;
 };
-
 macro_GA: macro_GA{
 compatible = "zmk,behavior-macro";
 label = "macro_GA";
 #binding-cells = <0>;
 bindings = <&kp G>, <&kp A>;
 };
-
 macro_DA: macro_DA{
 compatible = "zmk,behavior-macro";
 label = "macro_DA";
 #binding-cells = <0>;
 bindings = <&kp D>, <&kp A>;
 };
-
 macro_GO: macro_GO{
 compatible = "zmk,behavior-macro";
 label = "macro_GO";
 #binding-cells = <0>;
 bindings = <&kp G>, <&kp O>;
 };
-
 macro_ZA: macro_ZA{
 compatible = "zmk,behavior-macro";
 label = "macro_ZA";
 #binding-cells = <0>;
 bindings = <&kp Z>, <&kp A>;
 };
-
 macro_YO: macro_YO{
 compatible = "zmk,behavior-macro";
 label = "macro_YO";
 #binding-cells = <0>;
 bindings = <&kp Y>, <&kp O>;
 };
-
 macro_NI: macro_NI{
 compatible = "zmk,behavior-macro";
 label = "macro_NI";
 #binding-cells = <0>;
 bindings = <&kp N>, <&kp I>;
 };
-
 macro_RU: macro_RU{
 compatible = "zmk,behavior-macro";
 label = "macro_RU";
 #binding-cells = <0>;
 bindings = <&kp R>, <&kp U>;
 };
-
 macro_MA: macro_MA{
 compatible = "zmk,behavior-macro";
 label = "macro_MA";
 #binding-cells = <0>;
 bindings = <&kp M>, <&kp A>;
 };
-
 macro_XE: macro_XE{
 compatible = "zmk,behavior-macro";
 label = "macro_XE";
 #binding-cells = <0>;
 bindings = <&kp X>, <&kp E>;
 };
-
 macro_VU: macro_VU{
 compatible = "zmk,behavior-macro";
 label = "macro_VU";
 #binding-cells = <0>;
 bindings = <&kp V>, <&kp U>;
 };
-
 macro_JI: macro_JI{
 compatible = "zmk,behavior-macro";
 label = "macro_JI";
 #binding-cells = <0>;
 bindings = <&kp J>, <&kp I>;
 };
-
 macro_DE: macro_DE{
 compatible = "zmk,behavior-macro";
 label = "macro_DE";
 #binding-cells = <0>;
 bindings = <&kp D>, <&kp E>;
 };
-
 macro_GE: macro_GE{
 compatible = "zmk,behavior-macro";
 label = "macro_GE";
 #binding-cells = <0>;
 bindings = <&kp G>, <&kp E>;
 };
-
 macro_ZE: macro_ZE{
 compatible = "zmk,behavior-macro";
 label = "macro_ZE";
 #binding-cells = <0>;
 bindings = <&kp Z>, <&kp E>;
 };
-
 macro_MI: macro_MI{
 compatible = "zmk,behavior-macro";
 label = "macro_MI";
 #binding-cells = <0>;
 bindings = <&kp M>, <&kp I>;
 };
-
 macro_O: macro_O{
 compatible = "zmk,behavior-macro";
 label = "macro_O";
 #binding-cells = <0>;
 bindings = <&kp O>;
 };
-
 macro_NO: macro_NO{
 compatible = "zmk,behavior-macro";
 label = "macro_NO";
 #binding-cells = <0>;
 bindings = <&kp N>, <&kp O>;
 };
-
 macro_XYO: macro_XYO{
 compatible = "zmk,behavior-macro";
 label = "macro_XYO";
 #binding-cells = <0>;
 bindings = <&kp X>, <&kp Y>, <&kp O>;
 };
-
 macro_XTU: macro_XTU{
 compatible = "zmk,behavior-macro";
 label = "macro_XTU";
 #binding-cells = <0>;
 bindings = <&kp X>, <&kp T>, <&kp U>;
 };
-
 macro_BI: macro_BI{
 compatible = "zmk,behavior-macro";
 label = "macro_BI";
 #binding-cells = <0>;
 bindings = <&kp B>, <&kp I>;
 };
-
 macro_ZU: macro_ZU{
 compatible = "zmk,behavior-macro";
 label = "macro_ZU";
 #binding-cells = <0>;
 bindings = <&kp Z>, <&kp U>;
 };
-
 macro_BU: macro_BU{
 compatible = "zmk,behavior-macro";
 label = "macro_BU";
 #binding-cells = <0>;
 bindings = <&kp B>, <&kp U>;
 };
-
 macro_BE: macro_BE{
 compatible = "zmk,behavior-macro";
 label = "macro_BE";
 #binding-cells = <0>;
 bindings = <&kp B>, <&kp E>;
 };
-
 macro_NU: macro_NU{
 compatible = "zmk,behavior-macro";
 label = "macro_NU";
 #binding-cells = <0>;
 bindings = <&kp N>, <&kp U>;
 };
-
 macro_YU: macro_YU{
 compatible = "zmk,behavior-macro";
 label = "macro_YU";
 #binding-cells = <0>;
 bindings = <&kp Y>, <&kp U>;
 };
-
 macro_MU: macro_MU{
 compatible = "zmk,behavior-macro";
 label = "macro_MU";
 #binding-cells = <0>;
 bindings = <&kp M>, <&kp U>;
 };
-
 macro_WA: macro_WA{
 compatible = "zmk,behavior-macro";
 label = "macro_WA";
 #binding-cells = <0>;
 bindings = <&kp W>, <&kp A>;
 };
-
 macro_XO: macro_XO{
 compatible = "zmk,behavior-macro";
 label = "macro_XO";
 #binding-cells = <0>;
 bindings = <&kp X>, <&kp O>;
 };
-
