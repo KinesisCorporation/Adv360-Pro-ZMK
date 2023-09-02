@@ -151,16 +151,16 @@
         flavor = "tap-preferred";
         bindings = <&kp>, <&kp>;
     };
-        pht: positional_hold_tap {
-            compatible = "zmk,behavior-hold-tap";
-            label = "POSITIONAL_HOLD_TAP";
-            #binding-cells = <2>;
-            flavor = "hold-preferred";
-            tapping-term-ms = <400>;
-            quick-tap-ms = <200>;
-            bindings = <&kp>, <&kp>;
-            hold-trigger-key-positions = <1>; 
-        };
+    pht: positional_hold_tap {
+        compatible = "zmk,behavior-hold-tap";
+        label = "POSITIONAL_HOLD_TAP";
+        #binding-cells = <2>;
+        flavor = "hold-preferred";
+        tapping-term-ms = <400>;
+        quick-tap-ms = <200>;
+        bindings = <&kp>, <&kp>;
+        hold-trigger-key-positions = <1>; 
+    };
   };
 
     keymap {
