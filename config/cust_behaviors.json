@@ -14,5 +14,21 @@
 			"code"
 		],
 		"type": "UD"
+	},
+	{
+		"code": "&pht",
+		"name": "&pht",
+		"params": [
+			"code"
+		],
+		"type": "UD"
+	},
+	{
+		"code": "&pht2",
+		"name": "&pht2",
+		"params": [
+			"code"
+		],
+		"type": "UD"
 	}
 ]
