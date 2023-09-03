@@ -51,21 +51,21 @@
 
         layer_keypad {
             bindings = <
-    &kp F1  &kp F2  &kp F3  &kp F4        &kp F5  &kp F6              &trans                                                                    &kp F7  &kp F8    &kp KP_NUM  &kp KP_EQUAL  &kp KP_DIVIDE  &kp KP_MULTIPLY  &kp MINUS
-   &kp TAB   &mo 0   &mo 0   &mo 0         &mo 0   &kp T               &none                                                                     &none   &kp Y  &kp NUMBER_7  &kp NUMBER_8   &kp NUMBER_9     &kp KP_MINUS   &kp BSLH
-   &kp ESC   &mo 0   &mo 0   &mo 0         &mo 0   &kp G               &none  &kp LCTRL   &kp LALT                   &kp LGUI  &kp RCTRL         &none   &kp H  &kp NUMBER_4  &kp NUMBER_5   &kp NUMBER_6      &kp KP_PLUS    &kp SQT
- &kp LSHFT   &mo 0   &mo 0   &mo 0         &mo 0   &kp B                                    &trans                  &kp PG_UP                            &kp N  &kp NUMBER_1  &kp NUMBER_2   &kp NUMBER_3     &kp KP_ENTER  &kp RSHFT
-    &trans  &trans  &trans  &trans  &kp LEFT_WIN                    &kp BSPC    &kp DEL  &kp COMMA                  &kp PG_DN     &trans  &kp NUMBER_0                &kp N0     &kp COMMA        &kp DOT     &kp KP_ENTER      &mo 2
+    &kp F1  &kp F2  &kp F3  &kp F4        &kp F5  &kp F6              &trans                                                                    &kp F7                &kp F8        &kp F9       &kp F10       &kp F11       &kp F12                &kp F13
+   &kp TAB   &mo 0   &mo 0   &mo 0         &mo 0   &kp T               &none                                                                     &none       &kp KP_MULTIPLY  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp KP_MINUS               &kp BSLH
+   &kp ESC   &mo 0   &mo 0   &mo 0         &mo 0   &kp G               &none  &kp LCTRL   &kp LALT                   &kp LGUI  &kp RCTRL         &none       &kp KP_MULTIPLY  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6   &kp KP_PLUS                &kp SQT
+ &kp LSHFT   &mo 0   &mo 0   &mo 0         &mo 0   &kp B                                    &trans                  &kp PG_UP                           &kp LEFT_PARENTHESIS  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_ENTER  &kp RIGHT_PARENTHESIS
+    &trans  &trans  &trans  &trans  &kp LEFT_WIN                    &kp BSPC    &kp DEL  &kp COMMA                  &kp PG_DN     &trans  &kp NUMBER_0                              &kp N0     &kp COMMA       &kp DOT  &kp KP_ENTER                  &mo 2
             >;
         };
 
         layer_fn {
             bindings = <
- &kp F1  &kp F2      &kp F3  &kp F4  &kp F5  &kp F6            &tog 1                                                  &kp F7  &kp F8       &kp F9          &kp F10       &kp F11          &kp F12  &kp F13
- &trans  &trans  &kp LA(F4)  &trans  &trans  &trans             &none                                                   &none  &trans       &trans           &trans        &trans        &kp COLON   &trans
- &trans  &trans      &trans  &trans  &trans  &trans             &none  &trans  &trans                  &trans  &trans   &none  &trans    &kp COLON  &kp EXCLAMATION  &kp QUESTION           &trans   &trans
- &trans  &trans      &trans  &trans  &trans  &trans                            &trans                  &trans                  &trans       &trans           &trans        &trans  &kp PRINTSCREEN   &trans
- &trans  &trans      &trans  &trans  &trans                    &trans  &trans  &trans                  &trans  &trans  &trans          &kp PAGE_UP    &kp PAGE_DOWN      &kp HOME          &kp END   &trans
+ &kp F1  &kp F2      &kp F3  &kp F4  &kp F5  &kp F6            &tog 1                                                  &kp F7  &kp F8       &kp F9               &kp F10                &kp F11          &kp F12  &kp F13
+ &trans  &trans  &kp LA(F4)  &trans  &trans  &trans             &none                                                   &none  &trans       &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS        &kp COLON   &trans
+ &trans  &trans      &trans  &trans  &trans  &trans             &none  &trans  &trans                  &trans  &trans   &none  &trans    &kp COLON       &kp EXCLAMATION           &kp QUESTION           &trans   &trans
+ &trans  &trans      &trans  &trans  &trans  &trans                            &trans                  &trans                  &trans       &trans                &trans                 &trans  &kp PRINTSCREEN   &trans
+ &trans  &trans      &trans  &trans  &trans                    &trans  &trans  &trans                  &trans  &trans  &trans          &kp PAGE_UP         &kp PAGE_DOWN               &kp HOME          &kp END   &trans
             >;
         };
 
