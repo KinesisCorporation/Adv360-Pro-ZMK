@@ -49,11 +49,11 @@
 
         layer_keypad {
             bindings = <
- &kp EQUAL      &kp N1    &kp N2    &kp N3     &kp N4  &kp N5               &trans                                                             &mo 3  &kp N6  &kp NUMBER_7  &kp NUMBER_8      &kp NUMBER_9   &kp NUMBER_0  &kp MINUS
-   &kp TAB       &kp Q     &kp W    &kp UP      &kp E   &kp R                &kp T                                                             &none   &kp J         &kp L         &kp U             &kp Y  &kp SEMICOLON   &kp BSLH
-   &kp ESC  &kp LSHIFT  &kp LEFT  &kp DOWN  &kp RIGHT   &kp H                &kp G  &kp LWIN  &kp LALT                   &kp RALT   &kp RWIN   &none   &kp M         &kp N         &kp E             &kp I          &kp O    &kp SQT
- &kp LCTRL       &kp Z     &kp X     &kp C      &kp V   &kp B                                 &kp HOME                  &kp PG_UP                      &kp K         &kp H     &kp COMMA           &kp DOT      &kp SLASH  &kp RSHFT
- &kp LCTRL       &kp Y     &kp U     &kp I      &kp S                    &kp SPACE     &mo 2   &kp END                  &kp PG_DN  &kp ENTER  &tog 1              &kp DOWN        &kp UP  &kp LEFT_BRACKET       &kp RBKT  &kp RCTRL
+ &kp EQUAL      &kp N1    &kp N2    &kp N3     &kp N4  &kp N5               &trans                                                                 &mo 3  &kp N6  &kp NUMBER_7  &kp NUMBER_8      &kp NUMBER_9   &kp NUMBER_0  &kp MINUS
+   &kp TAB       &kp Q     &kp W    &kp UP      &kp E   &kp R                &kp T                                                            &kp INSERT   &kp J         &kp L         &kp U             &kp Y  &kp SEMICOLON   &kp BSLH
+   &kp ESC  &kp LSHIFT  &kp LEFT  &kp DOWN  &kp RIGHT   &kp H                &kp G  &kp LWIN  &kp LALT                   &kp RALT   &kp RWIN  &kp DELETE   &kp M         &kp N         &kp E             &kp I          &kp O    &kp SQT
+ &kp LCTRL       &kp Z     &kp X     &kp C      &kp V   &kp B                                 &kp HOME                  &kp PG_UP                          &kp K         &kp H     &kp COMMA           &kp DOT      &kp SLASH  &kp RSHFT
+ &kp LCTRL       &kp Y     &kp U     &kp I      &kp S                    &kp SPACE     &mo 2   &kp END                  &kp PG_DN  &kp ENTER      &tog 1              &kp DOWN        &kp UP  &kp LEFT_BRACKET       &kp RBKT  &kp RCTRL
             >;
         };
 
