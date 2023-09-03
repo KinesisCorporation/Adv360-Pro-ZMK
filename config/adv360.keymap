@@ -91,6 +91,7 @@
           timeout-ms = <50>;
           key-positions = <71 74>;
           bindings = <&kp END>;
+      };
       c_end2 {
           timeout-ms = <50>;
           key-positions = <56 71>;
@@ -122,7 +123,7 @@
           bindings = <&kp DOT>;
       };
       raltctrl {
-          timeout-ms = <40>;
+          timeout-ms = <50>;
           key-positions = <41 42 43>;
           bindings = <&kp LG(LA(LEFT_CONTROL))>;
       };
@@ -186,8 +187,6 @@
   };
     keymap {
         compatible = "zmk,keymap";
-
-
         default_layer {
             bindings = <
       &kp GRAVE              &kp N1                    &kp Q                       &kp T                  &kp N4  &kp N5                   &kp F1                                                                      &kp N6  &kp N7    &kp N8  &kp N9    &kp N0        &kp MINUS              &kp EQUAL
