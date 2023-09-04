@@ -19,7 +19,131 @@
 #include <dt-bindings/zmk/rgb.h>
 #include <dt-bindings/zmk/backlight.h>
 
+
 / {
+    combos {
+      compatible = "zmk,combos";
+      lctrl {
+          timeout-ms = <30>;
+          key-positions = <29 30>;
+          bindings = <&kp LCTRL>;
+      };
+      lalt {
+          timeout-ms = <30>;
+          key-positions = <30 31>;
+          bindings = <&kp LALT>;
+      };
+      df_mod {
+          timeout-ms = <50>;
+          key-positions = <31 32>;
+          bindings = <&mo 4>;
+      };
+      laltcmd {
+          timeout-ms = <30>;
+          key-positions = <30 31 32>;
+          bindings = <&kp LA(LEFT_COMMAND)>;
+      };
+      lctrlcmd {
+          timeout-ms = <30>;
+          key-positions = <29 31 32>;
+          bindings = <&kp LC(LEFT_COMMAND)>;
+      };
+      rctrl {
+          timeout-ms = <30>;
+          key-positions = <44 43>;
+          bindings = <&mt LCTRL RCTRL>;
+      };
+      ralt {
+          timeout-ms = <30>;
+          key-positions = <43 42>;
+          bindings = <&mt LALT RALT>;
+      };
+      ralt2 {
+          timeout-ms = <50>;
+          key-positions = <42 41>;
+          bindings = <&kp RALT>;
+      };
+      creturn {
+          timeout-ms = <50>;
+          key-positions = <55 56>;
+          bindings = <&kp RETURN>;
+      };
+      ctab {
+          timeout-ms = <30>;
+          key-positions = <49 50>;
+          bindings = <&kp TAB>;
+      };
+      escr {
+          timeout-ms = <30>;
+          key-positions = <29 32>;
+          bindings = <&kp ESC>;
+      };
+      c_nj {
+          timeout-ms = <60>;
+          key-positions = <42 55>;
+          bindings = <&macro_nj>;
+      };
+      c_home {
+          timeout-ms = <30>;
+          key-positions = <73 72>;
+          bindings = <&kp HOME>;
+      };
+      c_end {
+          timeout-ms = <50>;
+          key-positions = <71 74>;
+          bindings = <&kp END>;
+      };
+      c_end2 {
+          timeout-ms = <50>;
+          key-positions = <56 71>;
+          bindings = <&kp END>;
+      };
+      c_pgup {
+          timeout-ms = <50>;
+          key-positions = <71 72>;
+          bindings = <&kp PG_UP>;
+      };
+      c_pgdn {
+          timeout-ms = <50>;
+          key-positions = <73 74>;
+          bindings = <&kp PG_DN>;
+      };
+      c_dot {
+          timeout-ms = <50>;
+          key-positions = <42 57>;
+          bindings = <&kp DOT>;
+      };
+      c_comma {
+          timeout-ms = <50>;
+          key-positions = <57 56>;
+          bindings = <&kp COMMA>;
+      };
+      c_dot2 {
+          timeout-ms = <50>;
+          key-positions = <73 56>;
+          bindings = <&kp DOT>;
+      };
+      raltctrl {
+          timeout-ms = <50>;
+          key-positions = <41 42 43>;
+          bindings = <&kp LG(LA(LEFT_CONTROL))>;
+      };
+      layer2_1 {
+          timeout-ms = <30>;
+          key-positions = <29 47>;
+          bindings = <&mo 2>;
+      };
+      layer2_2 {
+          timeout-ms = <30>;
+          key-positions = <44 58>;
+          bindings = <&mo 2>;
+    };
+      rctrl2 {
+          timeout-ms = <30>;
+          key-positions = <24 41>;
+          bindings = <&kp LCTRL>;
+      };
+};
   behaviors {
     #include "macros.dtsi"
 
@@ -32,8 +156,36 @@
         flavor = "tap-preferred";
         bindings = <&kp>, <&kp>;
     };
+    bhm: balanced_homerow_mods {
+        compatible = "zmk,behavior-hold-tap";
+        label = "HOMEROW_MODS";
+        #binding-cells = <2>;
+        tapping-term-ms = <200>;
+        quick-tap-ms = <0>;
+        flavor =  "hold-preferred";
+        bindings = <&kp>, <&kp>;
+    };
+    pht: positional_hold_tap {
+        compatible = "zmk,behavior-hold-tap";
+        label = "POSITIONAL_HOLD_TAP";
+        #binding-cells = <2>;
+        flavor = "hold-preferred";
+        tapping-term-ms = <400>;
+        quick-tap-ms = <200>;
+        bindings = <&kp>, <&kp>;
+        hold-trigger-key-positions = <1>, <2>, <3>, <4>, <5>, <6>, <7>, <8>, <9>, <10>, <11>, <12>, <13>, <14>, <15>, <16>, <17>, <18>, <19>, <20>, <21>, <26>, <27>, <28>, <29>, <30>, <31>, <32>, <33>, <34>, <35>, <36>, <37>, <38>, <39>, <45>, <46>, <47>, <48>, <49>, <50>, <51>, <52>, <53>, <59>, <60>, <61>, <62>, <63>, <64>, <65>, <66>, <67>, <68>, <69>, <70>; 
+    };
+    pht2: positional_hold_tap2 {
+        compatible = "zmk,behavior-hold-tap";
+        label = "POSITIONAL_HOLD_TAP2";
+        #binding-cells = <2>;
+        flavor = "hold-preferred";
+        tapping-term-ms = <200>;
+        quick-tap-ms = <150>;
+        bindings = <&kp>, <&kp>;
+        hold-trigger-key-positions = <1>, <2>, <3>, <4>, <5>, <6>, <7>, <8>, <9>, <10>, <14>, <15>, <16>, <17>, <18>, <19>, <20>, <21>, <22>, <23>, <24>, <25>, <29>, <30>, <31>, <32>, <33>, <35>, <36>, <37>, <38>, <39>, <40>, <41>, <42>, <43>, <44>, <45>, <46>, <47>, <48>, <49>, <50>, <51>, <54>, <55>, <56>, <57>, <58>, <59>, <65>, <66>, <67>, <68>, <69>, <70>, <71>, <72>, <73>; 
+    };
   };
-
     keymap {
         compatible = "zmk,keymap";
 
