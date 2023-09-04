@@ -54,7 +54,7 @@
     &trans   &mo 0   &mo 0   &mo 0         &mo 0   &kp T               &none                                                               &none         &kp KP_DIVIDE     &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9     &kp MINUS               &kp BSLH
     &trans   &mo 0   &mo 0   &mo 0         &mo 0   &kp G               &none  &kp LCTRL   &kp LALT                   &kp LGUI  &kp RCTRL   &none       &kp KP_MULTIPLY     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6      &kp PLUS                &kp SQT
  &kp LSHFT   &mo 0   &mo 0   &mo 0         &mo 0   &kp B                                    &trans                  &kp PG_UP                     &kp LEFT_PARENTHESIS     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_ENTER  &kp RIGHT_PARENTHESIS
-    &trans  &trans  &trans  &trans  &kp LEFT_WIN                    &kp BSPC    &kp DEL  &kp COMMA                     &trans     &trans  &trans                                 &kp N0     &kp COMMA       &kp DOT  &kp KP_ENTER                  &mo 2
+    &trans  &trans  &trans  &trans  &kp LEFT_WIN                    &kp BSPC    &kp DEL  &kp COMMA                     &trans  &kp ENTER  &trans                                 &kp N0     &kp COMMA       &kp DOT  &kp KP_ENTER                  &mo 2
             >;
         };
 
