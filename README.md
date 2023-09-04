@@ -48,12 +48,12 @@ Follow the programming instruction on page 8 of the [Quick Start Guide](https://
 
 1. Extract the firmwares from the downloaded archive.
 1. Connect the left side keyboard to USB.
-1. Press Mod+macro1 to put the left side into bootloader mode; it should attach to your computer as a USB drive.
+1. Press Mod+macro1 (or DOUBLE-CLICK the Reset Button) to put the left side into bootloader mode; it should attach to your computer as a USB drive.
 1. Copy `left.uf2` to the USB drive and it will disconnect.
 1. Power off both keyboards (by unplugging them and making sure the switches are off).
 1. Turn on the left side keyboard with the switch.
 1. Connect the right side keyboard to USB to power it on.
-1. Press Mod+macro3 to put the right side into bootloader mode to attach it as a USB drive.
+1. Press Mod+macro3 (or DOUBLE-CLICK the Reset Button) to put the right side into bootloader mode to attach it as a USB drive.
 1. Copy `right.uf2` to the mounted drive.
 1. Unplug the right side keyboard and turn it back on.
 1. Enjoy!
@@ -64,6 +64,26 @@ Follow the programming instruction on page 8 of the [Quick Start Guide](https://
 
 If you are upgrading from V2 to V3, and if the flashing didn't work as expected (i.e. if you are unable to pair the keyboard via Bluetooth), then consider [resetting](https://kinesis-ergo.com/support/kb360pro/#firmware-updates) both halves of the keyboard to its native state. Make sure to use the `settings-reset.uf2` file from 
 the V3 branch of this repository. After doing this, proceed with the flashing instructions above.
+
+## Syncing with upstream
+1. Add upstream as a remote:
+   ```shell
+   git remote add upstream https://github.com/KinesisCorporation/Adv360-Pro-ZMK.git
+   ```
+2. Fetch upstream changes:
+   ```shell
+   git fetch upstream
+   ```
+3. Make sure you're on a branch you want to update. Rebase your fork on upstream:
+   ```shell
+   git rebase upstream/V3.0
+   ```
+4. If you have any merge conflicts, resolve them and then run `git rebase --continue` to
+   continue the rebase.
+5. Push your changes to your fork:
+   ```shell
+   git push -f origin
+   ```
 
 ## Other support
 
