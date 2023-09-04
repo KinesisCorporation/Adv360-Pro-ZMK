@@ -57,10 +57,10 @@
           key-positions = <43 42>;
           bindings = <&mt LALT RALT>;
       };
-      rcltr222 {
+      ralt2 {
           timeout-ms = <50>;
           key-positions = <42 41>;
-          bindings = <&kp RCTRL>;
+          bindings = <&kp RALT>;
       };
       creturn {
           timeout-ms = <50>;
@@ -84,22 +84,27 @@
       };
       c_home {
           timeout-ms = <30>;
-          key-positions = <71 72>;
+          key-positions = <73 72>;
           bindings = <&kp HOME>;
       };
       c_end {
           timeout-ms = <50>;
-          key-positions = <72 73>;
+          key-positions = <71 74>;
+          bindings = <&kp END>;
+      };
+      c_end2 {
+          timeout-ms = <50>;
+          key-positions = <56 71>;
           bindings = <&kp END>;
       };
       c_pgup {
           timeout-ms = <50>;
-          key-positions = <71 56>;
+          key-positions = <71 72>;
           bindings = <&kp PG_UP>;
       };
       c_pgdn {
           timeout-ms = <50>;
-          key-positions = <73 71>;
+          key-positions = <73 74>;
           bindings = <&kp PG_DN>;
       };
       c_dot {
@@ -117,15 +122,10 @@
           key-positions = <73 56>;
           bindings = <&kp DOT>;
       };
-      raltctrl2 {
+      raltctrl {
           timeout-ms = <50>;
           key-positions = <41 42 43>;
           bindings = <&kp LG(LA(LEFT_CONTROL))>;
-      };
-      raltctrl {
-          timeout-ms = <50>;
-          key-positions = <41 43>;
-          bindings = <&kp LA(LEFT_CONTROL)>;
       };
       layer2_1 {
           timeout-ms = <30>;
@@ -141,11 +141,6 @@
           timeout-ms = <30>;
           key-positions = <24 41>;
           bindings = <&kp LCTRL>;
-      };
-      rctrl2 {
-          timeout-ms = <50>;
-          key-positions = <30 32>;
-          bindings = <&kp LC(Z)>;
       };
 };
   behaviors {
