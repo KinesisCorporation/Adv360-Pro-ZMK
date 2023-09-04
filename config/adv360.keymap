@@ -32,11 +32,6 @@
           key-positions = <30 31>;
           bindings = <&kp LALT>;
       };
-      df_mod {
-          timeout-ms = <50>;
-          key-positions = <31 32>;
-          bindings = <&mo 4>;
-      };
       laltcmd {
           timeout-ms = <30>;
           key-positions = <30 31 32>;
