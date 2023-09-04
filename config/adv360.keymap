@@ -95,27 +95,22 @@
       };
       c_home {
           timeout-ms = <30>;
-          key-positions = <73 72>;
+          key-positions = <71 72>;
           bindings = <&kp HOME>;
       };
       c_end {
           timeout-ms = <50>;
-          key-positions = <71 74>;
-          bindings = <&kp END>;
-      };
-      c_end2 {
-          timeout-ms = <50>;
-          key-positions = <56 71>;
+          key-positions = <72 73>;
           bindings = <&kp END>;
       };
       c_pgup {
           timeout-ms = <50>;
-          key-positions = <71 72>;
+          key-positions = <71 56>;
           bindings = <&kp PG_UP>;
       };
       c_pgdn {
           timeout-ms = <50>;
-          key-positions = <73 74>;
+          key-positions = <73 71>;
           bindings = <&kp PG_DN>;
       };
       c_dot {
@@ -123,14 +118,9 @@
           key-positions = <42 57>;
           bindings = <&kp DOT>;
       };
-      c_comma {
+      c_dotdot {
           timeout-ms = <50>;
           key-positions = <57 56>;
-          bindings = <&kp COMMA>;
-      };
-      c_dot2 {
-          timeout-ms = <50>;
-          key-positions = <73 56>;
           bindings = <&kp DOT>;
       };
       raltctrl {
