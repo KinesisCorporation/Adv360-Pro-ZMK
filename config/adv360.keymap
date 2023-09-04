@@ -73,6 +73,11 @@
           key-positions = <49 50>;
           bindings = <&kp TAB>;
       };
+      c_ctrlz {
+          timeout-ms = <45>;
+          key-positions = <30 32>;
+          bindings = <&kp LC(Z)>;
+      };
       escr {
           timeout-ms = <30>;
           key-positions = <29 32>;
