@@ -78,6 +78,11 @@
           key-positions = <30 32>;
           bindings = <&kp LC(Z)>;
       };
+      c_pausebreak {
+          timeout-ms = <45>;
+          key-positions = <54 55>;
+          bindings = <&kp PAUSE_BREAK>;
+      };
       escr {
           timeout-ms = <30>;
           key-positions = <29 32>;
