@@ -22,15 +22,20 @@
 / {
     combos {
       compatible = "zmk,combos";
-      lctrl12 {
+      lctrl {
           timeout-ms = <30>;
-          key-positions = <31 32>;
+          key-positions = <29 30>;
           bindings = <&kp LCTRL>;
       };
       lalt {
           timeout-ms = <30>;
           key-positions = <30 31>;
           bindings = <&kp LALT>;
+      };
+      df_mod {
+          timeout-ms = <50>;
+          key-positions = <31 32>;
+          bindings = <&mo 4>;
       };
       laltcmd {
           timeout-ms = <30>;
@@ -52,10 +57,10 @@
           key-positions = <43 42>;
           bindings = <&mt LALT RALT>;
       };
-      rctrl3 {
+      rcltr222 {
           timeout-ms = <50>;
           key-positions = <42 41>;
-          bindings = <&kp RCRTL>;
+          bindings = <&kp RCTRL>;
       };
       creturn {
           timeout-ms = <50>;
@@ -89,7 +94,7 @@
       };
       c_pgup {
           timeout-ms = <50>;
-          key-positions = <56 71>;
+          key-positions = <71 56>;
           bindings = <&kp PG_UP>;
       };
       c_pgdn {
@@ -112,7 +117,7 @@
           key-positions = <73 56>;
           bindings = <&kp DOT>;
       };
-      raltctrlwin {
+      raltctrl2 {
           timeout-ms = <50>;
           key-positions = <41 42 43>;
           bindings = <&kp LG(LA(LEFT_CONTROL))>;
@@ -121,11 +126,6 @@
           timeout-ms = <50>;
           key-positions = <41 43>;
           bindings = <&kp LA(LEFT_CONTROL)>;
-      };
-      rctrlz {
-          timeout-ms = <50>;
-          key-positions = <30 32>;
-          bindings = <&kp LC(Z)>;
       };
       layer2_1 {
           timeout-ms = <30>;
@@ -137,6 +137,16 @@
           key-positions = <44 58>;
           bindings = <&mo 2>;
     };
+      rctrl2 {
+          timeout-ms = <30>;
+          key-positions = <24 41>;
+          bindings = <&kp LCTRL>;
+      };
+      rctrl2 {
+          timeout-ms = <50>;
+          key-positions = <30 32>;
+          bindings = <&kp LC(Z)>;
+      };
 };
   behaviors {
     #include "macros.dtsi"
@@ -177,7 +187,7 @@
         tapping-term-ms = <200>;
         quick-tap-ms = <150>;
         bindings = <&kp>, <&kp>;
-        hold-trigger-key-positions = <1>, <2>, <3>, <4>, <5>, <6>, <7>, <8>, <9>, <10>, <14>, <15>, <16>, <17>, <18>, <19>, <20>, <21>, <22>, <23>, <24>, <25>, <29>, <30>, <31>, <32>, <33>, <35>, <36>, <37>, <38>, <39>, <40>, <41>, <42>, <43>, <44>, <45>, <46>, <47>, <48>, <49>, <50>, <51>, <54>, <55>, <56>, <57>, <58>, <59>, <65>, <66>, <67>, <68>, <69>, <70>, <71>, <72>, <73>; 
+        hold-trigger-key-positions = <1>, <2>, <3>, <4>, <5>, <6>, <7>, <8>, <9>, <10>, <14>, <15>, <16>, <17>, <18>, <19>, <20>, <21>, <22>, <23>, <24>, <25>, <28>, <29>, <30>, <31>, <32>, <33>, <35>, <36>, <37>, <38>, <39>, <40>, <41>, <42>, <43>, <44>, <45>, <46>, <47>, <48>, <49>, <50>, <51>, <54>, <55>, <56>, <57>, <58>, <59>, <65>, <66>, <67>, <68>, <69>, <70>, <71>, <72>, <73>; 
     };
   };
 
