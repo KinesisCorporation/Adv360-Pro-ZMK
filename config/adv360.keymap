@@ -22,9 +22,9 @@
 / {
     combos {
       compatible = "zmk,combos";
-      lctrl {
+      lctrl12 {
           timeout-ms = <30>;
-          key-positions = <29 30>;
+          key-positions = <31 32>;
           bindings = <&kp LCTRL>;
       };
       lalt {
@@ -120,12 +120,12 @@
       raltctrl {
           timeout-ms = <50>;
           key-positions = <41 43>;
-          bindings = <&kp LA(LEFT_CONTROL))>;
+          bindings = <&kp LA(LEFT_CONTROL)>;
       };
       rctrlz {
           timeout-ms = <50>;
           key-positions = <30 32>;
-          bindings = <&kp LC(Z))>;
+          bindings = <&kp LC(Z)>;
       };
       layer2_1 {
           timeout-ms = <30>;
