@@ -30,5 +30,13 @@
 			"code"
 		],
 		"type": "UD"
+	},
+	{
+		"code": "&pht3",
+		"name": "&pht3",
+		"params": [
+			"code"
+		],
+		"type": "UD"
 	}
 ]
