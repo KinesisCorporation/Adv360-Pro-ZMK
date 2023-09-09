@@ -46,5 +46,13 @@
 			"code"
 		],
 		"type": "UD"
+	},
+	{
+		"code": "&pht4",
+		"name": "&pht4",
+		"params": [
+			"code"
+		],
+		"type": "UD"
 	}
 ]
