@@ -54,5 +54,13 @@
 			"code"
 		],
 		"type": "UD"
+	},
+	{
+		"code": "&td0_ls",
+		"name": "&td0_ls",
+		"params": [
+			"code"
+		],
+		"type": "UD"
 	}
 ]
