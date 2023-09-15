@@ -48,6 +48,16 @@
           key-positions = <29 31 32>;
           bindings = <&kp LC(LEFT_COMMAND)>;
       };
+      altf4 {
+          timeout-ms = <40>;
+          key-positions = <16 17 18>;
+          bindings = <&kp LA(F4)>;
+      };
+      ctrlshiftt{
+          timeout-ms = <40>;
+          key-positions = <16 3 18>;
+          bindings = <&kp LC(LS(T))>;
+      };
       rctrl {
           timeout-ms = <30>;
           key-positions = <44 43>;
