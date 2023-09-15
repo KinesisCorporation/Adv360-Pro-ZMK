@@ -39,11 +39,11 @@
 
         default_layer {
             bindings = <
- &kp EQUAL     &kp N1      &kp N2    &kp N3     &kp N4  &kp N5                     &tog 1                                                                                    &mo 3  &kp N6  &kp N7     &kp N8    &kp N9    &kp N0  &kp MINUS
-   &kp TAB      &kp Q       &kp W     &kp E      &kp R   &kp T              &kp LA(SPACE)                                                                     &kp LG(LS(NUMBER_4))   &kp Y   &kp U      &kp I     &kp O     &kp P   &kp BSLH
-   &kp ESC      &kp A       &kp S     &kp D      &kp F   &kp G            &kp LC(LS(TAB))  &kp LEFT_COMMAND  &kp LCTRL                   &kp LGUI   &kp LALT           &kp LC(TAB)   &kp H   &kp J      &kp K     &kp L  &kp SEMI    &kp SQT
- &kp LSHFT      &kp Z       &kp X     &kp C      &kp V   &kp B                                                &kp HOME                  &kp PG_UP                                    &kp N   &kp M  &kp COMMA   &kp DOT  &kp FSLH  &kp RSHFT
-     &mo 2  &kp GRAVE  &caps_word  &kp LEFT  &kp RIGHT                           &kp BSPC             &mo 4    &kp END                  &kp PG_DN  &kp ENTER             &kp SPACE          &kp UP   &kp DOWN  &kp LBKT  &kp RBKT      &mo 2
+ &kp EQUAL     &kp N1      &kp N2    &kp N3     &kp N4  &kp N5                     &tog 1                                                                                    &mo 3  &kp N6  &kp N7     &kp N8    &kp N9         &kp N0  &kp MINUS
+   &kp TAB      &kp Q       &kp W     &kp F      &kp P   &kp B                  &kp LG(L)                                                                     &kp LG(LS(NUMBER_4))   &kp J   &kp L      &kp U     &kp Y  &kp SEMICOLON   &kp BSLH
+   &kp ESC      &kp A       &kp R     &kp S      &kp T   &kp G            &kp LC(LS(TAB))  &kp LEFT_COMMAND  &kp LCTRL                   &kp LGUI   &kp LALT           &kp LC(TAB)   &kp M   &kp N      &kp E     &kp I          &kp O    &kp SQT
+ &kp LSHFT      &kp Z       &kp X     &kp C      &kp D   &kp V                                                &kp HOME                  &kp PG_UP                                    &kp K   &kp M  &kp COMMA   &kp DOT       &kp FSLH  &kp RSHFT
+     &mo 2  &kp GRAVE  &caps_word  &kp LEFT  &kp RIGHT                           &kp BSPC             &mo 4    &kp END                  &kp PG_DN  &kp ENTER             &kp SPACE          &kp UP   &kp DOWN  &kp LBKT       &kp RBKT      &to 5
             >;
         };
 
@@ -81,9 +81,19 @@
             bindings = <
  &trans           &trans          &trans            &trans      &trans          &trans            &trans                                                  &trans     &trans         &trans             &trans           &trans            &trans  &trans
  &trans  &kp EXCLAMATION          &kp AT          &kp HASH  &kp DOLLAR     &kp PERCENT            &trans                                                  &trans  &kp CARET  &kp AMPERSAND             &kp UP         &kp STAR         &kp GRAVE  &trans
- &trans        &kp TILDE       &kp LCTRL          &kp LALT    &kp LGUI       &kp MINUS            &trans  &trans  &trans                  &trans  &trans  &trans   &kp PLUS       &kp LEFT           &kp DOWN        &kp RIGHT         &kp EQUAL  &trans
- &trans    &kp LESS_THAN  &kp LEFT_BRACE  &kp LEFT_BRACKET    &kp LPAR  &kp UNDERSCORE                            &trans                  &trans                      &none       &kp RPAR  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp GREATER_THAN  &trans
+ &trans        &kp TILDE       &kp LCTRL          &kp LALT    &kp LGUI       &kp MINUS            &trans  &trans  &trans                  &trans  &trans  &trans  &kp EQUAL       &kp LEFT           &kp DOWN        &kp RIGHT     &kp BACKSPACE  &trans
+ &trans    &kp LESS_THAN  &kp LEFT_BRACE  &kp LEFT_BRACKET    &kp LPAR  &kp UNDERSCORE                            &trans                  &trans                   &kp PLUS       &kp RPAR  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp GREATER_THAN  &trans
  &trans           &trans          &trans            &trans      &trans                            &trans  &trans  &trans                  &trans  &trans  &trans                    &trans             &trans           &trans            &trans  &trans
+            >;
+        };
+
+        layer_QWERTY {
+            bindings = <
+ &trans  &trans  &trans  &trans  &trans  &trans            &trans                                                  &trans  &trans  &trans  &trans  &trans    &trans  &trans
+ &trans   &kp Q   &kp W   &kp E   &kp R   &kp T            &trans                                                  &trans   &kp Y   &kp U   &kp I   &kp O     &kp P  &trans
+ &trans   &kp A   &kp S   &kp D   &kp F   &kp G            &trans  &trans  &trans                  &trans  &trans  &trans   &kp H   &kp J   &kp K   &kp L  &kp SEMI  &trans
+ &trans   &kp Z   &kp X   &kp C   &kp V   &kp B                            &trans                  &trans                   &kp N   &kp M  &trans  &trans    &trans  &trans
+ &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans                  &trans  &trans  &trans          &trans  &trans  &trans    &trans   &to 0
             >;
         };
 
