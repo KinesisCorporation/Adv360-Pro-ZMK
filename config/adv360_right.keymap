@@ -6,3 +6,4 @@
 */
 
 #include "adv360.keymap"
+CONFIG_ZMK_IDLE_TIMEOUT=600000
