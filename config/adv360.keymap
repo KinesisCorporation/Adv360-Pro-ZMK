@@ -105,7 +105,7 @@
 &kp TAB               &kp Q       &kp W               &kp F            &kp P                 &kp B   &to 0                                                     &kp GRAVE  &kp J   &kp L                  &kp U            &kp Y                &trans               &kp BSLH
 &kp LC(LEFT_CONTROL)  &hm LGUI A  &hm LA(LEFT_ALT) R  &hm LC(LCTRL) S  &hm LS(LEFT_SHIFT) T  &kp G   &trans   &trans         &trans      &trans     &trans     &mo 4      &kp M   &hm RS(RIGHT_SHIFT) N  &hm RC(RCTRL) E  &hm RA(RIGHT_ALT) I  &hm RG(RIGHT_GUI) O  &kp SQT
 &kp BACKSPACE         &kp Z       &kp X               &kp C            &kp D                 &kp V                           &trans      &kp SLASH                        &kp K   &kp H                  &kp SEMICOLON    &mo 2                &trans               &trans
-&mo 2                 &kp GRAVE   &kp CAPS            &kp LEFT         &kp RIGHT                     &kp TAB  &kp BACKSPACE  &trans      &none      &kp SPACE  &kp ENTER          &kp UP                 &kp DOWN         &kp LEFT_BRACKET     &kp RIGHT_BRACKET    &trans
+&mo 2                 &kp GRAVE   &kp CAPS            &kp LEFT         &kp RIGHT                     &kp TAB  &kp BACKSPACE  &trans      &lt 1 DOT  &kp SPACE  &kp ENTER          &kp UP                 &kp DOWN         &kp LEFT_BRACKET     &kp RIGHT_BRACKET    &trans
             >;
         };
 
