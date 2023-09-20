@@ -32,6 +32,18 @@
 
             quick-tap-ms = <175>;
         };
+        lt: Layer_Tap {
+            compatible = "zmk,behavior-hold-tap";
+            label = "layer_tab";
+            bindings =
+                <&none>,
+                <&none>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <175>;
+            flavor = "tap-preferred";
+        };
     };
 
     keymap {
