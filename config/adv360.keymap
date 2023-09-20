@@ -57,11 +57,11 @@
 
         layer_fn {
             bindings = <
-&kp F1  &kp F2   &kp F3  &kp F4  &kp F5  &kp F6  &tog 1                                      &mo 3   &kp F7  &kp F8           &kp F9             &kp F10        &kp F11        &kp F12
-&trans  &kp F12  &kp F7  &kp F8  &kp F9  &trans  &none                                       &none   &trans  &trans           &trans             &trans         &trans         &trans
-&trans  &kp F11  &kp F4  &kp F5  &kp F6  &trans  &none   &trans  &trans      &trans  &trans  &none   &trans  &kp RIGHT_SHIFT  &kp RIGHT_CONTROL  &kp RIGHT_ALT  &kp RIGHT_GUI  &trans
-&trans  &kp F10  &kp F1  &kp F2  &kp F3  &trans                  &trans      &trans                  &trans  &trans           &trans             &trans         &trans         &trans
-&trans  &trans   &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans           &trans             &trans         &trans         &trans
+&kp F1  &kp F2   &kp F3  &kp F4  &kp F5  &kp F6           &tog 1                                      &mo 3   &kp F7  &kp F8           &kp F9             &kp F10        &kp F11        &kp F12
+&trans  &kp F12  &kp F7  &kp F8  &kp F9  &kp PRINTSCREEN  &none                                       &none   &trans  &trans           &trans             &trans         &trans         &trans
+&trans  &kp F11  &kp F4  &kp F5  &kp F6  &trans           &none   &trans  &trans      &trans  &trans  &none   &trans  &kp RIGHT_SHIFT  &kp RIGHT_CONTROL  &kp RIGHT_ALT  &kp RIGHT_GUI  &trans
+&trans  &kp F10  &kp F1  &kp F2  &kp F3  &trans                           &trans      &trans                  &trans  &trans           &trans             &trans         &trans         &trans
+&trans  &trans   &trans  &trans  &trans                   &trans  &trans  &trans      &trans  &trans  &trans          &trans           &trans             &trans         &trans         &trans
             >;
         };
 
@@ -85,13 +85,23 @@
             >;
         };
 
-        layer_5 {
+        coleman {
             bindings = <
-&kp EQUAL             &kp F1      &kp F2              &trans           &trans                &trans  &trans                                          &trans     &trans  &trans                 &trans           &trans               &trans               &trans
-&kp TAB               &kp Q       &kp W               &kp F            &kp P                 &kp B   &trans                                          &kp GRAVE  &kp J   &kp L                  &kp U            &kp Y                &trans               &trans
-&kp LC(LEFT_CONTROL)  &hm LGUI A  &hm LA(LEFT_ALT) R  &hm LC(LCTRL) S  &hm LS(LEFT_SHIFT) T  &kp G   &trans  &trans  &trans      &trans   &trans     &mo 4      &kp M   &hm RS(RIGHT_SHIFT) N  &hm RC(RCTRL) E  &hm RA(RIGHT_ALT) I  &hm RG(RIGHT_GUI) O  &trans
-&kp BACKSPACE         &kp Z       &kp X               &kp C            &kp D                 &kp V                   &trans      &trans                         &kp K   &kp H                  &trans           &trans               &trans               &trans
-&mo 2                 &kp GRAVE   &kp CAPS            &kp LEFT         &kp RIGHT                     &trans  &trans  &trans      &kp DOT  &kp SPACE  &kp ENTER          &kp UP                 &kp DOWN         &trans               &trans               &trans
+&kp EQUAL             &kp F1      &kp F2              &trans           &trans                &trans  &trans                                            &trans     &trans  &trans                 &trans           &trans               &trans               &trans
+&kp TAB               &kp Q       &kp W               &kp F            &kp P                 &kp B   &trans                                            &kp GRAVE  &kp J   &kp L                  &kp U            &kp Y                &trans               &trans
+&kp LC(LEFT_CONTROL)  &hm LGUI A  &hm LA(LEFT_ALT) R  &hm LC(LCTRL) S  &hm LS(LEFT_SHIFT) T  &kp G   &trans  &trans  &trans      &trans     &trans     &mo 4      &kp M   &hm RS(RIGHT_SHIFT) N  &hm RC(RCTRL) E  &hm RA(RIGHT_ALT) I  &hm RG(RIGHT_GUI) O  &trans
+&kp BACKSPACE         &kp Z       &kp X               &kp C            &kp D                 &kp V                   &trans      &trans                           &kp K   &kp H                  &trans           &trans               &trans               &trans
+&mo 2                 &kp GRAVE   &kp CAPS            &kp LEFT         &kp RIGHT                     &trans  &trans  &trans      &lt 1 DOT  &kp SPACE  &kp ENTER          &kp UP                 &kp DOWN         &trans               &trans               &trans
+            >;
+        };
+
+        sym {
+            bindings = <
+&trans  &trans     &trans         &trans       &trans     &trans    &trans                                      &trans  &trans  &trans           &trans             &trans         &trans    &trans
+&trans  &trans     &kp AMPERSAND  &kp ASTRK    &trans     &trans    &trans                                      &trans  &trans  &trans           &trans             &trans         &trans    &trans
+&trans  &kp COLON  &kp DOLLAR     &kp PERCENT  &kp CARET  &kp PLUS  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &kp RIGHT_SHIFT  &kp RIGHT_CONTROL  &kp RIGHT_ALT  &kp RGUI  &trans
+&trans  &kp TILDE  &kp EXCL       &kp AT       &kp HASH   &trans                    &trans      &trans                  &trans  &trans           &trans             &trans         &trans    &trans
+&trans  &trans     &trans         &trans       &trans               &trans  &trans  &trans      &trans  &trans  &trans          &trans           &trans             &trans         &trans    &trans
             >;
         };
     };
