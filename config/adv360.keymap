@@ -45,8 +45,8 @@
             bindings = <
 &kp EQUAL         &kp N1          &kp N2              &kp N3       &kp N4            &kp N5  &tog 1                                                       &mo 3      &kp N6  &kp N7             &kp N8       &kp N9          &kp N0               &kp MINUS
 &kp TAB           &kp Q           &kp W               &kp F        &kp P             &kp B   &to 5                                                        &kp GRAVE  &kp J   &kp L              &kp U        &kp Y           &kp P                &kp BSLH
-&kp LEFT_CONTROL  &hm LG(LGUI) A  &hm LA(LEFT_ALT) R  &hm LCTRL S  &hm LEFT_SHIFT T  &kp G   &kp ESC  &kp EQUAL      &kp EQUAL      &kp LGUI   &kp RALT   &mo 4      &kp M   &hm RIGHT_SHIFT N  &hm RCTRL E  &hm RA(RALT) I  &hm LG(RIGHT_GUI) O  &kp SQT
-&kp BACKSPACE     &kp Z           &kp X               &kp C        &kp D             &kp V                           &kp HOME       &kp SLASH                        &kp K   &kp H              &kp SEMI     &mo 2           &kp END              &kp BACKSPACE
+&kp LEFT_CONTROL  &hm LG(LGUI) A  &hm LA(LEFT_ALT) R  &hm LCTRL S  &hm LEFT_SHIFT T  &kp G   &kp ESC  &kp EQUAL      &kp EQUAL      &kp LGUI   &kp RALT   &mo 4      &kp K   &hm RIGHT_SHIFT N  &hm RCTRL E  &hm RA(RALT) I  &hm LG(RIGHT_GUI) O  &kp SQT
+&kp BACKSPACE     &kp Z           &kp X               &kp C        &kp D             &kp V                           &kp HOME       &kp SLASH                        &kp M   &kp H              &kp SEMI     &mo 2           &kp END              &kp BACKSPACE
 &mo 2             &kp GRAVE       &kp CAPS            &kp LEFT     &kp RIGHT                 &kp TAB  &kp BACKSPACE  &kp COMMA      &lt 1 DOT  &kp SPACE  &kp ENTER          &kp UP             &kp DOWN     &kp LBKT        &kp RBKT             &mo 2
             >;
         };
