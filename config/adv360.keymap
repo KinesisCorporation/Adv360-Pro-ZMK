@@ -51,9 +51,9 @@
         layer_keypad {
             bindings = <
  &trans     &kp N1          &kp N2          &kp N3     &kp N4  &kp N5               &to 0                                                      &to 4     &kp N6    &kp KP_NUM  &kp KP_EQUAL  &kp KP_DIVIDE  &kp KP_MULTIPLY  &kp MINUS
- &trans      &kp Q           &kp W           &kp E      &kp R   &kp T              &trans                                                     &trans  &kp LG(C)     &kp KP_N7     &kp KP_N8      &kp KP_N9     &kp KP_MINUS   &kp BSLH
+ &trans      &kp Q           &kp W           &kp E      &kp R   &kp T              &trans                                                     &trans  &kp LG(C)     &kp KP_N1     &kp KP_N2      &kp KP_N3     &kp KP_MINUS   &kp BSLH
  &trans     &trans          &trans          &trans     &trans  &trans              &trans  &trans  &trans                  &trans  &trans     &trans  &kp LG(V)     &kp KP_N4     &kp KP_N5      &kp KP_N6      &kp KP_PLUS    &kp SQT
- &trans      &kp Z           &kp X    &kp UP_ARROW      &kp V   &kp B                              &trans                  &trans                     &kp LG(Z)     &kp KP_N1     &kp KP_N2      &kp KP_N3     &kp KP_ENTER  &kp ENTER
+ &trans      &kp Z           &kp X    &kp UP_ARROW      &kp V   &kp B                              &trans                  &trans                     &kp LG(Z)     &kp KP_N7     &kp KP_N8      &kp KP_N9     &kp KP_ENTER  &kp ENTER
  &trans  &kp GRAVE  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT                    &kp BSPC  &trans  &trans                  &trans  &trans  &kp KP_N0             &kp KP_ENTER     &kp KP_N0     &kp KP_DOT         &kp RBKT      &to 0
             >;
         };
