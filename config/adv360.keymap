@@ -47,11 +47,11 @@
 
         layer_keypad {
             bindings = <
-&kp EQUAL  &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &trans                                                   &mo 3      &kp N6  &kp KP_NUM  &kp KP_EQUAL  &kp KP_DIVIDE  &kp KP_MULTIPLY  &kp MINUS
-&kp TAB    &kp Q      &kp W     &kp E     &kp R      &kp T   &none                                                    &none      &kp Y   &kp KP_N7   &kp KP_N8     &kp KP_N9      &kp KP_MINUS     &kp BSLH
-&kp ESC    &kp A      &kp S     &kp D     &kp F      &kp G   &none     &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &none      &kp H   &kp KP_N4   &kp KP_N5     &kp KP_N6      &kp KP_PLUS      &kp SQT
-&kp LSHFT  &kp Z      &kp X     &kp C     &kp V      &kp B                        &kp HOME      &kp PG_UP                        &kp N   &kp KP_N1   &kp KP_N2     &kp KP_N3      &kp KP_ENTER     &kp RSHFT
-&mo 2      &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT          &kp BSPC  &kp DEL    &kp END       &kp PG_DN  &kp ENTER  &kp KP_N0          &kp UP      &kp DOWN      &kp KP_DOT     &kp RBKT         &mo 2
+&kp EQUAL  &kp N1            &kp N2    &kp N3    &kp N4     &kp N5             &trans                                                   &mo 3      &kp N6  &kp KP_NUM       &kp KP_EQUAL  &kp KP_DIVIDE  &kp KP_MULTIPLY  &kp MINUS
+&kp TAB    &kp LEFT_BRACKET  &kp N7    &kp N8    &kp N9     &kp RIGHT_BRACKET  &none                                                    &none      &kp Y   &kp KP_N7        &kp KP_N8     &kp KP_N9      &kp KP_MINUS     &kp BSLH
+&kp ESC    &kp SEMI          &kp N4    &kp N5    &kp N6     &kp EQUAL          &none     &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &none      &kp H   &kp RIGHT_SHIFT  &kp RCTRL     &kp RIGHT_ALT  &kp RGUI         &kp SQT
+&kp LSHFT  &kp GRAVE         &kp N1    &kp N2    &kp N3     &kp BSLH                                &kp HOME      &kp PG_UP                        &kp N   &kp KP_N1        &kp KP_N2     &kp KP_N3      &kp KP_ENTER     &kp RSHFT
+&mo 2      &kp GRAVE         &kp CAPS  &kp LEFT  &kp RIGHT                     &kp BSPC  &kp DEL    &kp END       &kp PG_DN  &kp ENTER  &kp KP_N0          &kp UP           &kp DOWN      &kp KP_DOT     &kp RBKT         &mo 2
             >;
         };
 
@@ -87,11 +87,11 @@
 
         layer_5 {
             bindings = <
-&kp EQUAL             &kp F1      &kp F2              &trans           &trans                &trans  &trans                                         &trans     &trans  &trans                 &trans           &trans               &trans               &trans
-&kp TAB               &kp Q       &kp W               &kp F            &kp P                 &kp B   &trans                                         &trans     &kp J   &kp L                  &kp U            &kp Y                &trans               &trans
-&kp LC(LEFT_CONTROL)  &hm LGUI A  &hm LA(LEFT_ALT) R  &hm LC(LCTRL) S  &hm LS(LEFT_SHIFT) T  &kp G   &trans  &trans  &trans      &trans  &trans     &trans     &kp M   &hm RS(RIGHT_SHIFT) N  &hm RC(RCTRL) E  &hm RA(RIGHT_ALT) I  &hm RG(RIGHT_GUI) O  &trans
-&kp BACKSPACE         &kp Z       &kp X               &kp C            &kp D                 &kp V                   &trans      &trans                        &kp K   &kp H                  &trans           &trans               &trans               &trans
-&mo 2                 &trans      &trans              &trans           &trans                        &trans  &trans  &trans      &trans  &kp SPACE  &kp ENTER          &trans                 &trans           &trans               &trans               &trans
+&kp EQUAL             &kp F1      &kp F2              &trans           &trans                &trans  &trans                                          &trans     &trans  &trans                 &trans           &trans               &trans               &trans
+&kp TAB               &kp Q       &kp W               &kp F            &kp P                 &kp B   &trans                                          &kp GRAVE  &kp J   &kp L                  &kp U            &kp Y                &trans               &trans
+&kp LC(LEFT_CONTROL)  &hm LGUI A  &hm LA(LEFT_ALT) R  &hm LC(LCTRL) S  &hm LS(LEFT_SHIFT) T  &kp G   &trans  &trans  &trans      &trans   &trans     &mo 4      &kp M   &hm RS(RIGHT_SHIFT) N  &hm RC(RCTRL) E  &hm RA(RIGHT_ALT) I  &hm RG(RIGHT_GUI) O  &trans
+&kp BACKSPACE         &kp Z       &kp X               &kp C            &kp D                 &kp V                   &trans      &trans                         &kp K   &kp H                  &trans           &trans               &trans               &trans
+&mo 2                 &kp GRAVE   &kp CAPS            &kp LEFT         &kp RIGHT                     &trans  &trans  &trans      &kp DOT  &kp SPACE  &kp ENTER          &kp UP                 &kp DOWN         &trans               &trans               &trans
             >;
         };
     };
