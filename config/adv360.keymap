@@ -57,11 +57,11 @@
 
         layer_fn {
             bindings = <
-&kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6  &tog 1                                      &mo 3   &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
-&trans  &trans  &trans  &trans  &trans  &trans  &none                                       &none   &trans  &trans  &trans  &trans   &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &none   &trans  &trans      &trans  &trans  &none   &trans  &trans  &trans  &trans   &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans   &trans   &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans   &trans   &trans
+&kp F1  &kp F2   &kp F3  &kp F4  &kp F5  &kp F6  &tog 1                                      &mo 3   &kp F7  &kp F8           &kp F9             &kp F10        &kp F11        &kp F12
+&trans  &kp F12  &kp F7  &kp F8  &kp F9  &trans  &none                                       &none   &trans  &trans           &trans             &trans         &trans         &trans
+&trans  &kp F11  &kp F4  &kp F5  &kp F6  &trans  &none   &trans  &trans      &trans  &trans  &none   &trans  &kp RIGHT_SHIFT  &kp RIGHT_CONTROL  &kp RIGHT_ALT  &kp RIGHT_GUI  &trans
+&trans  &kp F10  &kp F1  &kp F2  &kp F3  &trans                  &trans      &trans                  &trans  &trans           &trans             &trans         &trans         &trans
+&trans  &trans   &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans           &trans             &trans         &trans         &trans
             >;
         };
 
@@ -87,11 +87,11 @@
 
         layer_5 {
             bindings = <
-&kp ESC  &kp F1      &kp F2              &trans           &trans                &trans  &trans                                      &trans  &trans  &trans                 &trans           &trans               &trans               &trans
-&trans   &kp Q       &kp W               &kp F            &kp P                 &kp B   &trans                                      &trans  &kp J   &kp L                  &kp U            &kp Y                &trans               &trans
-&trans   &hm LGUI A  &hm LA(LEFT_ALT) R  &hm LC(LCTRL) S  &hm LS(LEFT_SHIFT) T  &kp G   &trans  &trans  &trans      &trans  &trans  &trans  &kp M   &hm RS(RIGHT_SHIFT) N  &hm RC(RCTRL) E  &hm RA(RIGHT_ALT) I  &hm RG(RIGHT_GUI) O  &trans
-&trans   &kp Z       &kp X               &kp C            &kp D                 &kp V                   &trans      &trans                  &kp K   &kp H                  &trans           &trans               &trans               &trans
-&trans   &trans      &trans              &trans           &trans                        &trans  &trans  &trans      &trans  &trans  &trans          &trans                 &trans           &trans               &trans               &trans
+&kp EQUAL             &kp F1      &kp F2              &trans           &trans                &trans  &trans                                         &trans     &trans  &trans                 &trans           &trans               &trans               &trans
+&kp TAB               &kp Q       &kp W               &kp F            &kp P                 &kp B   &trans                                         &trans     &kp J   &kp L                  &kp U            &kp Y                &trans               &trans
+&kp LC(LEFT_CONTROL)  &hm LGUI A  &hm LA(LEFT_ALT) R  &hm LC(LCTRL) S  &hm LS(LEFT_SHIFT) T  &kp G   &trans  &trans  &trans      &trans  &trans     &trans     &kp M   &hm RS(RIGHT_SHIFT) N  &hm RC(RCTRL) E  &hm RA(RIGHT_ALT) I  &hm RG(RIGHT_GUI) O  &trans
+&kp BACKSPACE         &kp Z       &kp X               &kp C            &kp D                 &kp V                   &trans      &trans                        &kp K   &kp H                  &trans           &trans               &trans               &trans
+&mo 2                 &trans      &trans              &trans           &trans                        &trans  &trans  &trans      &trans  &kp SPACE  &kp ENTER          &trans                 &trans           &trans               &trans               &trans
             >;
         };
     };
