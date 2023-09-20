@@ -15,6 +15,10 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/rgb.h>
 
+&lt {
+    quick-tap-ms = <175>;
+};
+
 / {
     behaviors {
         #include "macros.dtsi"
