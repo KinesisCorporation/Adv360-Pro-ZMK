@@ -87,11 +87,11 @@
 
         layer_5 {
             bindings = <
-&kp ESC  &kp F1  &kp F2  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans   &kp Q   &kp W   &kp F   &kp P   &kp B   &trans                                      &trans  &kp J   &kp L   &kp U   &kp Y   &trans  &trans
-&trans   &kp A   &kp R   &kp S   &kp T   &kp G   &trans  &trans  &trans      &trans  &trans  &trans  &kp M   &kp N   &kp E   &kp I   &kp O   &trans
-&trans   &kp Z   &kp X   &kp C   &kp D   &kp V                   &trans      &trans                  &kp K   &kp H   &trans  &trans  &trans  &trans
-&trans   &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+&kp ESC  &kp F1      &kp F2              &trans           &trans                &trans  &trans                                      &trans  &trans  &trans                 &trans           &trans               &trans               &trans
+&trans   &kp Q       &kp W               &kp F            &kp P                 &kp B   &trans                                      &trans  &kp J   &kp L                  &kp U            &kp Y                &trans               &trans
+&trans   &hm LGUI A  &hm LA(LEFT_ALT) R  &hm LC(LCTRL) S  &hm LS(LEFT_SHIFT) T  &kp G   &trans  &trans  &trans      &trans  &trans  &trans  &kp M   &hm RS(RIGHT_SHIFT) N  &hm RC(RCTRL) E  &hm RA(RIGHT_ALT) I  &hm RG(RIGHT_GUI) O  &trans
+&trans   &kp Z       &kp X               &kp C            &kp D                 &kp V                   &trans      &trans                  &kp K   &kp H                  &trans           &trans               &trans               &trans
+&trans   &trans      &trans              &trans           &trans                        &trans  &trans  &trans      &trans  &trans  &trans          &trans                 &trans           &trans               &trans               &trans
             >;
         };
     };
