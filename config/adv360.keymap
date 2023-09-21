@@ -152,9 +152,9 @@
             bindings = <
         &kp F1    &kp F2          &kp F3        &kp F4       &kp F5        &kp F6        &tog 1                                                              &mo 3  &kp F7        &kp F8         &kp F9          &kp F10       &kp F11          &kp F12
         &trans    &kp GER_SQT     &kp GER_LT    &kp GER_GT   &kp GER_DQT   &kp GER_PARA  &none                                                               &none  &kp GER_EURO  &kp GER_AMPS   &kp GER_LBKT    &kp GER_RBKT  &kp GER_PERCENT  &trans
-        &trans    &kp EXCLAMATION &kp GER_MINUS &kp GER_PLUS &kp GER_EQUAL &kp GER_HASH  &none        &kp LCTRL &kp DEL  &kp LGUI  &kp RCTRL                 &none  &kp GER_PIPE  &kp GER_COLON  &kp GER_LPAR    &kp GER_RPAR  &kp GER_QUESTION &trans
-        &trans    &GER_CARET      &kp GER_SLASH &kp GER_STAR &kp GER_BSLH  &GER_BACKTICK                        &kp LALT &kp RALT                                   &kp GER_TILDE &kp GER_DOLLAR &kp GER_LBRC    &kp GER_RBRC  &kp GER_AT       &trans
-        &trans    &trans          &trans        &trans       &trans                          &kp SPACE &trans   &kp BSPC  &trans &kp RSHFT &kp RETURN                             &trans         &trans          &trans        &trans           &trans
+        &trans    &kp EXCLAMATION &kp GER_MINUS &kp GER_PLUS &kp GER_EQUAL &kp GER_HASH  &none        &trans &trans  &trans  &trans                 &none  &kp GER_PIPE  &kp GER_COLON  &kp GER_LPAR    &kp GER_RPAR  &kp GER_QUESTION &trans
+        &trans    &GER_CARET      &kp GER_SLASH &kp GER_STAR &kp GER_BSLH  &GER_BACKTICK                        &trans &trans                                   &kp GER_TILDE &kp GER_DOLLAR &kp GER_LBRC    &kp GER_RBRC  &kp GER_AT       &trans
+        &trans    &trans          &trans        &trans       &trans                          &trans &trans   &trans  &trans &trans &trans                             &trans         &trans          &trans        &trans           &trans
             >;
         };
 
