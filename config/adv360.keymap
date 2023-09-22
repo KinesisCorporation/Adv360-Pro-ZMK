@@ -43,6 +43,11 @@
           key-positions = <30 31 32>;
           bindings = <&kp LA(LEFT_COMMAND)>;
       };
+      lnumver {
+          timeout-ms = <45>;
+          key-positions = <41 24 43>;
+          bindings = <&tog 1>;
+      };
       lctrlcmd {
           timeout-ms = <30>;
           key-positions = <29 31 32>;
@@ -208,7 +213,7 @@
         tapping-term-ms = <400>;
         quick-tap-ms = <200>;
         bindings = <&mo>, <&kp>;
-        hold-trigger-key-positions = <41>, <42>, <43>, <55>, <56>, <57>, <71>, <72>, <73>; 
+        hold-trigger-key-positions = <23>, <24>, <25>, <41>, <42>, <43>, <55>, <56>, <57>, <71>, <72>, <73>; 
     };
     pht4: positional_hold_tap4 {
         compatible = "zmk,behavior-hold-tap";
