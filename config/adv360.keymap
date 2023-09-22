@@ -43,11 +43,11 @@
 
         default_layer {
             bindings = <
-&kp EQUAL         &kp N1          &kp N2              &kp N3       &kp N4            &kp N5  &tog 1                                                           &mo 3        &kp N6  &kp N7             &kp N8       &kp N9          &kp N0               &kp MINUS
-&kp TAB           &kp Q           &kp W               &kp F        &kp P             &kp G   &to 5                                                            &kp GRAVE    &kp J   &kp L              &kp U        &kp Y           &trans               &kp BSLH
-&kp LEFT_CONTROL  &hm LG(LGUI) A  &hm LA(LEFT_ALT) R  &hm LCTRL S  &hm LEFT_SHIFT T  &kp D   &kp ESC          &kp EQUAL  &kp EQUAL      &kp LGUI   &kp RALT   &mo 4        &kp H   &hm RIGHT_SHIFT N  &hm RCTRL E  &hm RA(RALT) I  &hm LG(RIGHT_GUI) O  &kp SQT
-&kp BACKSPACE     &kp Z           &kp X               &kp C        &kp V             &kp B                               &kp HOME       &kp SLASH                          &kp K   &kp M              &kp SEMI     &mo 2           &kp END              &kp BACKSPACE
-&mo 2             &kp GRAVE       &kp CAPS            &kp LEFT     &kp RIGHT                 &lt 5 BACKSPACE  &kp TAB    &kp COMMA      &lt 6 DOT  &kp SPACE  &lt 1 ENTER          &kp UP             &kp DOWN     &kp LBKT        &kp RBKT             &mo 2
+&kp EQUAL         &kp N1          &kp N2              &kp N3       &kp N4            &kp N5  &tog 1                                                               &mo 3        &kp N6  &kp N7             &kp N8       &kp N9          &kp N0               &kp MINUS
+&kp TAB           &kp Q           &kp W               &kp F        &kp P             &kp G   &to 5                                                                &kp GRAVE    &kp J   &kp L              &kp U        &kp Y           &trans               &kp BSLH
+&kp LEFT_CONTROL  &hm LG(LGUI) A  &hm LA(LEFT_ALT) R  &hm LCTRL S  &hm LEFT_SHIFT T  &kp D   &kp ESC          &kp EQUAL  &kp EQUAL      &kp LGUI   &kp RALT       &mo 4        &kp H   &hm RIGHT_SHIFT N  &hm RCTRL E  &hm RA(RALT) I  &hm LG(RIGHT_GUI) O  &kp SQT
+&kp BACKSPACE     &kp Z           &kp X               &kp C        &kp V             &kp B                               &kp HOME       &kp SLASH                              &kp K   &kp M              &kp SEMI     &mo 2           &kp END              &kp BACKSPACE
+&mo 2             &kp GRAVE       &kp CAPS            &kp LEFT     &kp RIGHT                 &lt 5 BACKSPACE  &kp TAB    &kp COMMA      &lt 6 DOT  &kp BACKSPACE  &lt 1 SPACE          &kp UP             &kp DOWN     &kp LBKT        &kp RBKT             &mo 2
             >;
         };
 
