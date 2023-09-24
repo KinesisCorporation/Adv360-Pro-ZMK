@@ -38,7 +38,7 @@
             bindings = <
   &none   &none   &none   &none   &none   &none            &none                                                   &none   &none   &none   &none   &none   &none   &none
   &none   &none   &none  &kp AT   &none   &none            &none                                                   &none   &none   &none   &none   &none   &none   &none
-  &none   &none   &none   &none   &none   &none            &none   &none   &none                   &none   &none   &none   &none   &none   &none   &none   &none   &none
+  &none   &none   &none   &kp B   &kp B   &none            &none   &none   &none                   &none   &none   &none   &none   &none   &none   &none   &none   &none
   &none   &none   &none   &none   &none   &none                            &none                   &none                   &none   &none   &none   &none   &none   &none
   &none   &none   &none   &none   &none                    &none   &none   &none                   &none   &none   &none           &none   &none   &none   &none   &none
             >;
