@@ -1,0 +1,26 @@
+[
+	{
+		"code": "&hm_l",
+		"name": "&hm_l",
+		"params": [
+			"code"
+		],
+		"type": "UD"
+	},
+	{
+		"code": "&hm_r",
+		"name": "&hm_r",
+		"params": [
+			"code"
+		],
+		"type": "UD"
+	},
+	{
+		"code": "&hm",
+		"name": "&hm",
+		"params": [
+			"code"
+		],
+		"type": "UD"
+	}
+]

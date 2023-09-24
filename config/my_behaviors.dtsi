@@ -1,0 +1,25 @@
+/ {
+  behaviors {
+    hm_l: homerow_mods_left {
+        compatible = "zmk,behavior-hold-tap";
+        label = "HOMEROW_MODS_LEFT";
+        #binding-cells = <2>;
+        tapping-term-ms = <175>;
+        quick_tap_ms = <150>;
+        flavor = "tap-preferred";
+        bindings = <&kp>, <&kp>;
+    };
+    
+    hm_r: homerow_mods_right {
+        compatible = "zmk,behavior-hold-tap";
+        label = "HOMEROW_MODS_RIGHT";
+        #binding-cells = <2>;
+        tapping-term-ms = <175>;
+        quick_tap_ms = <150>;
+        flavor = "tap-preferred";
+        bindings = <&kp>, <&kp>;
+    };
+  };
+};
+
+#define HM_L(MOD, TAP) &hm_l MOD TAP

@@ -1,36 +1,90 @@
-  macro_quotes: macro_quotes {
-    compatible = "zmk,behavior-macro";
-    label = "macro_quotes";
-    #binding-cells = <0>;
-    bindings = <&kp SQT>, <&kp SQT>, <&kp LEFT>;
-  };
-  macro_dquotes: macro_dquotes {
-    compatible = "zmk,behavior-macro";
-    label = "macro_dquotes";
-    #binding-cells = <0>;
-    bindings = <&kp DQT>, <&kp DQT>, <&kp LEFT>;
-  };
-  macro_braces: macro_braces {
-    compatible = "zmk,behavior-macro";
-    label = "macro_braces";
-    #binding-cells = <0>;
-    bindings = <&kp LBRC>, <&kp RBRC>, <&kp LEFT>;
-  };
-  macro_parens: macro_parens {
-    compatible = "zmk,behavior-macro";
-    label = "macro_parens";
-    #binding-cells = <0>;
-    bindings = <&kp LPAR>, <&kp RPAR>, <&kp LEFT>;
-  };
-  macro_brackets: macro_brackets {
-    compatible = "zmk,behavior-macro";
-    label = "macro_brackets";
-    #binding-cells = <0>;
-    bindings = <&kp LBKT>, <&kp RBKT>, <&kp LEFT>;
-  };
-  macro_kinesis: macro_kinesis {
-    compatible = "zmk,behavior-macro";
-    label = "macro_kinesis";
-    #binding-cells = <0>;
-    bindings = <&kp LS(K)>, <&kp I>, <&kp N>, <&kp E>, <&kp S>, <&kp I>, <&kp S>;
-  };
+macro_back: macro_back{
+compatible = "zmk,behavior-macro";
+label = "macro_back";
+#binding-cells = <0>;
+bindings = <&kp LC(LA(LEFT_ARROW))>;
+};
+macro_idea_prev_edit: macro_idea_prev_edit{
+compatible = "zmk,behavior-macro";
+label = "macro_idea_prev_edit";
+#binding-cells = <0>;
+bindings = <&kp LC(LS(BSPC))>;
+};
+macro_tab_next: macro_tab_next{
+compatible = "zmk,behavior-macro";
+label = "macro_tab_next";
+#binding-cells = <0>;
+bindings = <&kp LA(LG(RIGHT_ARROW))>;
+};
+macro_tab_prev: macro_tab_prev{
+compatible = "zmk,behavior-macro";
+label = "macro_tab_prev";
+#binding-cells = <0>;
+bindings = <&kp LA(LG(LEFT))>;
+};
+macro_monitor_bri_dow: macro_monitor_bri_dow{
+compatible = "zmk,behavior-macro";
+label = "macro_monitor_bri_dow";
+#binding-cells = <0>;
+bindings = <&kp LS(LG(LA(LC(F9))))>;
+};
+macro_monitor_bri_up: macro_monitor_bri_up{
+compatible = "zmk,behavior-macro";
+label = "macro_monitor_bri_up";
+#binding-cells = <0>;
+bindings = <&kp LS(LG(LA(LC(F10))))>;
+};
+macro_webex_focus_win: macro_webex_focus_win{
+compatible = "zmk,behavior-macro";
+label = "macro_webex_focus_win";
+#binding-cells = <0>;
+bindings = <&kp LA(LG(K))>, <&kp ESC>;
+};
+macro_webex_g_mute: macro_webex_g_mute{
+compatible = "zmk,behavior-macro";
+label = "macro_webex_g_mute";
+#binding-cells = <0>;
+bindings = <&kp LS(LG(M))>;
+};
+macro_idea_scratch: macro_idea_scratch{
+compatible = "zmk,behavior-macro";
+label = "macro_idea_scratch";
+#binding-cells = <0>;
+bindings = <&mt LA(F8) F8>;
+};
+macro_idea_debug: macro_idea_debug{
+compatible = "zmk,behavior-macro";
+label = "macro_idea_debug";
+#binding-cells = <0>;
+bindings = <&kp LS(F9)>;
+};
+macro_idea_run: macro_idea_run{
+compatible = "zmk,behavior-macro";
+label = "macro_idea_run";
+#binding-cells = <0>;
+bindings = <&kp LS(F10)>;
+};
+macro_idea_rename: macro_idea_rename{
+compatible = "zmk,behavior-macro";
+label = "macro_idea_rename";
+#binding-cells = <0>;
+bindings = <&kp LS(F6)>;
+};
+macro_switch_win: macro_switch_win{
+compatible = "zmk,behavior-macro";
+label = "macro_switch_win";
+#binding-cells = <0>;
+bindings = <&kp LG(GRAVE)>;
+};
+macro_lang: macro_lang{
+compatible = "zmk,behavior-macro";
+label = "macro_lang";
+#binding-cells = <0>;
+bindings = <&kp LA(SPACE)>;
+};
+macro_alt_tab: macro_alt_tab{
+compatible = "zmk,behavior-macro";
+label = "macro_alt_tab";
+#binding-cells = <0>;
+bindings = <&kp LG(TAB)>;
+};
