@@ -3,11 +3,11 @@
   "keymap": "unknown",
   "layout": "unknown",
   "layer_names": [
-    "default",
-    "fn",
-    "Layer #2",
-    "Layer #3",
-    "Layer #4"
+    "main",
+    "Red",
+    "Symbols",
+    "FKeys",
+    "QWRTY"
   ],
   "layers": [
     [
