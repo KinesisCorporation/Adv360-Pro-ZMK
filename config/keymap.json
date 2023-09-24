@@ -8,10 +8,11 @@
     "Layer #2",
     "Layer #3"
   ],
+
   "layers": [
     [
-        "&none",  "&none",  "&none",  "&none",  "&none",  "&none",           "&none",                                                              "&none",  "&none",  "&none",  "&none",  "&none",  "&none",  "&none",
-        "&none",  "&none",  "&none", "&kp AT",  "&none",  "&none",           "&none",                                                              "&none",  "&none",  "&none",  "&none",  "&none",  "&none",  "&none",
+        "&kp GRAVE","&kp N1","&kp N2","&kp N3", "&kp N4", "&kp N5",          "&kp F5",                                                             "&none",  "&kp N6", "&kp N7", "&kp N8", "&kp N9", "&kp N0", "&none",
+        "&kp TAB","&kp SQT","&kp COMMA","&kp PERIOD","&kp P","&kp Y",        "&kp EQUAL",                                                          "&kp PG_UP","&kp F","&kp G",  "&kp C",  "&kp R",  "&kp L",  "&kp HOME",
         "&none",  "&none",  "&none",  "&kp B",  "&kp B",  "&none",           "&none",  "&none",  "&none",                      "&none",  "&none",  "&none",  "&none",  "&none",  "&none",  "&none",  "&none",  "&none",
         "&none",  "&none",  "&none",  "&none",  "&none",  "&none",                               "&none",                      "&none",                      "&none",  "&none",  "&none",  "&none",  "&none",  "&none",
         "&none",  "&none",  "&none",  "&none",  "&none",                     "&none",  "&none",  "&none",                      "&none",  "&none",  "&none",            "&none",  "&none",  "&none",  "&none",  "&none"
