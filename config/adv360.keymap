@@ -69,11 +69,11 @@
 
         layer_Fn {
             bindings = <
-  &none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                 &trans                                                                          &trans   &none       &none       &none   &none   &none   &none
-  &none         &none         &none         &none         &none         &none            &bootloader                                                                     &bootloader   &none       &none       &none   &none   &none   &none
-  &none         &none         &none         &none         &none         &none                  &none   &none   &none                  &bt BT_CLR       &none  &rgb_ug RGB_MEFS_CMD 5   &none       &none       &none   &none   &none   &none
-  &none         &none         &none         &none         &none         &none                                  &none                       &none                                       &none       &none       &none   &none   &none   &none
-  &none         &none         &none         &none         &none                                &none   &none   &none                       &none  &bl BL_TOG         &rgb_ug RGB_TOG          &bl BL_INC  &bl BL_DEC   &none   &none   &none
+  &none   &none     &none     &none      &none   &none            &bootloader                                                   &none   &none  &kp F10  &kp F11  &kp F12   &none   &none
+ &trans   &none     &none     &none      &none   &none                  &none                                                   &none   &none   &kp F7   &kp F8   &kp F9   &none   &none
+ &trans  &kp UP  &kp DOWN  &kp LEFT  &kp RIGHT   &none                  &none   &to 4  &trans                  &trans  &trans   &none   &none   &kp F4   &kp F5   &kp F6   &none   &none
+ &trans   &none     &none     &none      &none   &none                                  &none                   &none                   &none   &kp F1   &kp F2   &kp F3   &none   &none
+ &trans   &none     &none     &none      &none                         &trans  &trans   &none                   &none   &none   &none            &none    &none    &none   &none   &none
             >;
         };
 
