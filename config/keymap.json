@@ -5,9 +5,9 @@
   "layer_names": [
     "base",
     "red",
-    "fn",
-    "mod",
-    "Layer #4"
+    "Symbols",
+    "Fn",
+    "QWERTY"
   ],
   "layers": [
     [
@@ -15,15 +15,15 @@
          "&kp TAB",   "&kp SQT", "&kp COMMA", "&kp PERIOD",  "&kp P",  "&kp Y",           "&kp EQUAL",                                                                   "&kp PG_UP",  "&kp F",  "&kp G",  "&kp C",    "&kp R",     "&kp L",  "&kp HOME",
          "&kp ESC",     "&kp A",     "&kp O",      "&kp E",  "&kp U",  "&kp I",             "&kp F12", "&kp LGUI", "&kp LALT",                     "&kp LGUI",  "&none", "&kp PG_DN",  "&kp D",  "&kp H",  "&kp T",    "&kp N",     "&kp S",   "&kp END",
        "&kp LSHFT", "&kp SLASH",     "&kp Q",      "&kp J",  "&kp K",  "&kp X",                                     "&kp DEL",                     "&kp HOME",                         "&kp B",  "&kp M",  "&kp W",    "&kp V",     "&kp Z", "&kp ENTER",
-       "&kp LCTRL",    "&kp UP",  "&kp DOWN",   "&kp LBKT", "&kp N9",                     "&kp SPACE", "&kp BSPC",    "&mo 1",                        "&mo 3",  "&mo 2",     "&mo 1",            "&mo 3",  "&none", "&kp LEFT", "&kp RIGHT", "&kp K_APP"
+       "&kp LCTRL",    "&kp UP",  "&kp DOWN",   "&kp LBKT", "&kp N9",                     "&kp SPACE", "&kp BSPC",    "&mo 1",                        "&mo 3",  "&mo 2",     "&mo 1",            "&none",  "&none", "&kp LEFT", "&kp RIGHT", "&kp K_APP"
     ], [
-        "&kp LA(F4)", "&kp LC(LA(N1))", "&kp LC(LA(N2))", "&kp LC(LA(N3))", "&kp LC(LA(N4))", "&kp LC(LA(N5))",                  "&none",                                                                                  "&none", "&kp LC(LA(N6))", "&kp LC(LA(N7))", "&kp LC(LA(N8))", "&kp LC(LA(N9))", "&kp LC(LA(N0))", "&kp LC(LA(MINUS))",
-       "&kp LA(ESC)",  "&kp LA(GRAVE)",      "&kp LC(X)",      "&kp LC(C)",      "&kp LC(V)",      "&kp PSCRN",                  "&none",                                                                                  "&none",          "&none",         "&kp N7",         "&kp N8",         "&kp N9",          "&none",             "&none",
-            "&trans",   "&kp LC(LA(H)",   "&kp LC(LA(J)",   "&kp LC(LA(U)",   "&kp LC(LA(R)",         "&trans",           "&bt BT_SEL 0", "&bt BT_SEL 1", "&rgb_ug RGB_TOG",                       "&trans",    "&trans", "&trans","&trans",          "&kp N4",         "&kp N5",         "&kp N6",         "&trans",         "&trans",
-      "&trans", "&kp LC(Z)",  "&kp LC(Y)",  "&kp LC(A)","&trans","&trans",  "&bt BT_SEL 2",   "&bl BL_TOG","&trans",   "&kp  N1",    "&kp N2",     "&kp N3",     "&kp EQUAL",  "&trans",
-      "&trans", "&kp LC(LA(LBKT))",  "&kp LS(LC(LA(LBKT)))",   "&kp LC(LA(RBKT))",   "&kp LS(LC(LA(RBKT)))",    "&mo 5",       "&trans","&trans",     "&trans", "&trans",  "&trans",             "&trans",  "&kp N0",     "&kp N0",   "&trans","&trans"
+        "&kp LA(F4)",   "&kp LC(LA(N1))",       "&kp LC(LA(N2))",   "&kp LC(LA(N3))",       "&kp LC(LA(N4))", "&kp LC(LA(N5))",                 "&trans",                                                                                "&trans", "&kp LC(LA(N6))", "&kp LC(LA(N7))", "&kp LC(LA(N8))", "&kp LC(LA(N9))", "&kp LC(LA(N0))", "&kp LC(LA(MINUS))",
+       "&kp LA(ESC)",    "&kp LA(GRAVE)",            "&kp LC(X)",        "&kp LC(C)",            "&kp LC(V)",      "&kp PSCRN",                 "&trans",                                                                                "&trans",         "&trans",         "&kp N7",         "&kp N8",         "&kp N9",         "&trans",             "&none",
+            "&trans",     "&kp LC(LA(H)",         "&kp LC(LA(J)",     "&kp LC(LA(U)",         "&kp LC(LA(R)",         "&trans",           "&bt BT_SEL 0", "&bt BT_SEL 1", "&rgb_ug RGB_TOG",                         "&trans", "&trans", "&trans",         "&trans",         "&kp N4",         "&kp N5",         "&kp N6",         "&trans",            "&trans",
+            "&trans",        "&kp LC(Z)",            "&kp LC(Y)",        "&kp LC(A)",               "&trans",         "&trans",                                              "&bt BT_SEL 2",                     "&bl BL_TOG",                             "&trans",         "&kp N1",         "&kp N2",         "&kp N3",      "&kp EQUAL",            "&trans",
+            "&trans", "&kp LC(LA(LBKT))", "&kp LS(LC(LA(LBKT)))", "&kp LC(LA(RBKT))", "&kp LS(LC(LA(RBKT)))",                                   "&trans",       "&trans",          "&trans",                         "&trans", "&trans", "&trans",                           "&trans",         "&kp N0",         "&kp N0",         "&trans",            "&trans"
     ], [
-      "&kp F1", "&kp F2", "&kp F3", "&kp F4", "&kp F5",         "&kp F6",           "&tog 1",                                                              "&mo 3", "&kp F7", "&kp F8", "&kp F9", "&kp F10", "&kp F11", "&kp F12",
+       "&kp F1", "&kp F2", "&kp F3", "&kp F4", "&kp F5",         "&kp F6",           "&tog 1",                                                              "&mo 3", "&kp F7", "&kp F8", "&kp F9", "&kp F10", "&kp F11", "&kp F12",
        "&trans", "&trans", "&trans", "&trans", "&trans", "&kp LC(LA(N4))",            "&none",                                                              "&none", "&trans", "&trans", "&trans",  "&trans",  "&trans",  "&trans",
        "&trans", "&trans", "&trans", "&trans", "&trans",         "&trans",            "&none", "&trans", "&trans",                     "&trans", "&trans",  "&none", "&trans", "&trans", "&trans",  "&trans",  "&trans",  "&trans",
        "&trans", "&trans", "&trans", "&trans", "&trans",         "&trans",                               "&trans",                     "&trans",                     "&trans", "&trans", "&trans",  "&trans",  "&trans",  "&trans",
