@@ -35,11 +35,11 @@
        "&trans",  "&none",    "&none",    "&none",     "&none",  "&none",                                     "&none",                      "&none",                      "&none",  "&kp F1",  "&kp F2",  "&kp F3",  "&none",  "&none",
        "&trans",  "&none",    "&none",    "&none",     "&none",                          "&trans", "&trans",  "&none",                      "&none",  "&none",  "&none",             "&none",   "&none",   "&none",  "&none",  "&none"
     ], [
-       "&trans", "&trans", "&trans", "&trans", "&trans", "&trans",           "&trans",                                                             "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans",
-      "&kp TAB",    "&kp Q",      "&kp W",      "&kp E",      "&kp R",      "&kp T",      "&trans",                                                      "&trans","&kp Y",      "&kp U",      "&kp I",      "&kp O",      "&kp P",      "&kp BSLH",
-      "&kp ESC",    "&kp A",      "&kp S",      "&kp D",      "&kp F",      "&kp G",      "&to BASE",     "&trans", "&trans",     "&trans","&trans",   "&trans", "&kp H",      "&kp J",      "&kp K",      "&kp L",      "&kp SEMI",   "&kp SQT",
-      "&kp LSHFT",  "&kp Z",      "&kp X",      "&kp C",      "&kp V",      "&kp B",                   "&trans", "&trans", "&kp N",      "&kp M",      "&kp COMMA",  "&kp DOT",    "&kp FSLH",   "&kp RSHFT",
-       "&trans", "&trans", "&trans", "&trans", "&trans",                     "&trans", "&trans", "&trans",                     "&trans", "&trans", "&trans",           "&trans", "&trans", "&trans", "&trans", "&trans"
+          "&trans", "&trans", "&trans", "&trans", "&trans", "&trans",           "&trans",                                                             "&trans", "&trans", "&trans",    "&trans",  "&trans",   "&trans",    "&trans",
+         "&kp TAB",  "&kp Q",  "&kp W",  "&kp E",  "&kp R",  "&kp T",           "&trans",                                                             "&trans",  "&kp Y",  "&kp U",     "&kp I",   "&kp O",    "&kp P",  "&kp BSLH",
+         "&kp ESC",  "&kp A",  "&kp S",  "&kp D",  "&kp F",  "&kp G",            "&to 0", "&trans", "&trans",                     "&trans", "&trans", "&trans",  "&kp H",  "&kp J",     "&kp K",   "&kp L", "&kp SEMI",   "&kp SQT",
+       "&kp LSHFT",  "&kp Z",  "&kp X",  "&kp C",  "&kp V",  "&kp B",                               "&trans",                     "&trans",                      "&kp N",  "&kp M", "&kp COMMA", "&kp DOT", "&kp FSLH", "&kp RSHFT",
+          "&trans", "&trans", "&trans", "&trans", "&trans",                     "&trans", "&trans", "&trans",                     "&trans", "&trans", "&trans",           "&trans",    "&trans",  "&trans",   "&trans",    "&trans"
     ]
   ]
 }
