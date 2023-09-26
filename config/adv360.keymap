@@ -53,11 +53,11 @@
 
         layer_keypad {
             bindings = <
-&kp EQUAL  &kp N1            &kp N2    &kp N3    &kp N4     &kp N5             &trans                                                 &mo 3      &kp N6  &kp KP_NUM       &kp KP_EQUAL  &kp KP_DIVIDE  &kp KP_MULTIPLY  &kp MINUS
-&kp TAB    &kp LEFT_BRACKET  &kp N7    &kp N8    &kp N9     &kp RIGHT_BRACKET  &none                                                  &none      &kp Y   &kp KP_N7        &kp KP_N8     &kp KP_N9      &kp KP_MINUS     &kp BSLH
-&kp ESC    &kp SEMI          &kp N4    &kp N5    &kp N6     &kp EQUAL          &none   &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &none      &kp H   &kp RIGHT_SHIFT  &kp RCTRL     &kp RIGHT_ALT  &kp RGUI         &kp SQT
-&kp LSHFT  &kp GRAVE         &kp N1    &kp N2    &kp N3     &kp BSLH                              &kp HOME      &kp PG_UP                        &kp N   &kp KP_N1        &kp KP_N2     &kp KP_N3      &kp KP_ENTER     &kp RSHFT
-&mo 2      &kp GRAVE         &kp CAPS  &kp LEFT  &kp RIGHT                     &kp N0  &kp DEL    &kp END       &kp PG_DN  &kp ENTER  &kp KP_N0          &kp UP           &kp DOWN      &kp KP_DOT     &kp RBKT         &mo 2
+&kp EQUAL  &kp N1            &kp N2    &kp N3    &kp N4     &kp N5             &trans                                                   &mo 3      &kp N6  &kp KP_NUM       &kp KP_EQUAL  &kp KP_DIVIDE  &kp KP_MULTIPLY  &kp MINUS
+&kp TAB    &kp LEFT_BRACKET  &kp N7    &kp N8    &kp N9     &kp RIGHT_BRACKET  &none                                                    &none      &kp Y   &kp KP_N7        &kp KP_N8     &kp KP_N9      &kp KP_MINUS     &kp BSLH
+&kp ESC    &kp SEMI          &kp N4    &kp N5    &kp N6     &kp EQUAL          &none   &kp LCTRL  &kp LALT        &kp LGUI   &kp RCTRL  &none      &kp H   &kp RIGHT_SHIFT  &kp RCTRL     &kp RIGHT_ALT  &kp RGUI         &kp SQT
+&kp LSHFT  &kp GRAVE         &kp N1    &kp N2    &kp N3     &kp BSLH                              &kp HOME        &kp PG_UP                        &kp N   &kp KP_N1        &kp KP_N2     &kp KP_N3      &kp KP_ENTER     &kp RSHFT
+&mo 2      &kp GRAVE         &kp CAPS  &kp LEFT  &kp RIGHT                     &kp N0  &kp MINUS  &kp PERIOD      &kp PG_DN  &kp ENTER  &kp KP_N0          &kp UP           &kp DOWN      &kp KP_DOT     &kp RBKT         &mo 2
             >;
         };
 
@@ -108,6 +108,16 @@
 &trans  &kp COLON       &kp DOLLAR     &kp PERCENT  &kp CARET             &kp PLUS         &trans                &trans                 &trans              &trans  &trans  &trans  &trans  &kp RIGHT_SHIFT  &kp RIGHT_CONTROL  &kp RIGHT_ALT  &kp RGUI  &trans
 &trans  &kp TILDE       &kp EXCL       &kp AT       &kp HASH              &kp PIPE                                                      &trans              &trans                  &trans  &trans           &trans             &trans         &trans    &trans
 &trans  &trans          &trans         &trans       &trans                                 &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDERSCORE      &trans  &trans  &trans          &trans           &trans             &trans         &trans    &trans
+            >;
+        };
+
+        layer_7 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
