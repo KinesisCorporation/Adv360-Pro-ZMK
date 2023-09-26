@@ -93,11 +93,11 @@
 
         nav {
             bindings = <
-&kp EQUAL             &kp F1      &kp F2              &trans           &trans                &trans  &trans                                                    &mo 3      &trans        &trans          &trans         &trans            &trans               &kp MINUS
-&kp TAB               &kp Q       &kp W               &kp F            &kp P                 &kp B   &to 0                                                     &kp GRAVE  &kp J         &kp L           &kp UP_ARROW   &kp Y             &trans               &kp BSLH
-&kp LC(LEFT_CONTROL)  &hm LGUI A  &hm LA(LEFT_ALT) R  &hm LC(LCTRL) S  &hm LS(LEFT_SHIFT) T  &kp G   &trans   &trans         &trans      &trans     &trans     &mo 4      &kp CAPSLOCK  &kp LEFT_ARROW  &kp DOWN       &kp RIGHT         &hm RG(RIGHT_GUI) O  &kp SQT
-&kp BACKSPACE         &kp Z       &kp X               &kp C            &kp D                 &kp V                           &trans      &kp SLASH                        &kp K         &kp H           &kp PAGE_DOWN  &kp PAGE_UP       &trans               &trans
-&mo 2                 &kp GRAVE   &kp CAPS            &kp LEFT         &kp RIGHT                     &kp TAB  &kp BACKSPACE  &trans      &lt 1 DOT  &kp SPACE  &kp ENTER                &kp UP          &kp DOWN       &kp LEFT_BRACKET  &kp RIGHT_BRACKET    &trans
+&kp EQUAL             &kp F1      &kp F2              &trans           &trans                &trans  &trans                                                    &mo 3      &trans        &trans          &trans         &trans            &trans             &kp MINUS
+&kp TAB               &kp Q       &kp W               &kp F            &kp P                 &kp B   &to 0                                                     &kp GRAVE  &kp K_REDO    &kp K_PASTE     &kp UP_ARROW   &kp K_COPY        &kp K_CUT          &kp BSLH
+&kp LC(LEFT_CONTROL)  &hm LGUI A  &hm LA(LEFT_ALT) R  &hm LC(LCTRL) S  &hm LS(LEFT_SHIFT) T  &kp G   &trans   &trans         &trans      &trans     &trans     &mo 4      &kp CAPSLOCK  &kp LEFT_ARROW  &kp DOWN       &kp RIGHT         &kp K_UNDO         &kp SQT
+&kp BACKSPACE         &kp Z       &kp X               &kp C            &kp D                 &kp V                           &trans      &kp SLASH                        &kp INSERT    &kp HOME        &kp PAGE_DOWN  &kp PAGE_UP       &kp END            &trans
+&mo 2                 &kp GRAVE   &kp CAPS            &kp LEFT         &kp RIGHT                     &kp TAB  &kp BACKSPACE  &trans      &lt 1 DOT  &kp SPACE  &kp ENTER                &kp UP          &kp DOWN       &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans
             >;
         };
 
