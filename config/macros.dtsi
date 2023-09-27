@@ -1,0 +1,12 @@
+macro_kana: macro_kana{
+compatible = "zmk,behavior-macro";
+label = "macro_kana";
+#binding-cells = <0>;
+bindings = <&macro_press &kp LEFT_ALT>, <&macro_wait_time 20>, <&macro_tap &kp GRAVE>, <&macro_wait_time 20>, <&macro_release &kp LEFT_ALT>;
+};
+macro_gs: macro_gs{
+compatible = "zmk,behavior-macro";
+label = "macro_gs";
+#binding-cells = <0>;
+bindings = <&kp G>, <&macro_wait_time 25>, <&kp S>, <&macro_wait_time 25>, <&kp N4>, <&macro_wait_time 25>, <&kp N1>, <&macro_wait_time 25>, <&kp N2>, <&macro_wait_time 25>, <&kp N3>, <&macro_wait_time 25>, <&kp N6>, <&macro_wait_time 25>, <&kp LS(P)>, <&macro_wait_time 25>, <&kp KP_PLUS>, <&macro_wait_time 25>, <&kp LS(G)>;
+};
