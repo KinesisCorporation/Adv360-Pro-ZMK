@@ -39,11 +39,11 @@
 
         default_layer {
             bindings = <
- &kp EQUAL     &kp N1      &kp N2    &kp N3     &kp N4  &kp N5                      &tog 2                                                                           &mo 4  &kp N6  &kp N7     &kp N8    &kp N9             &kp N0  &kp MINUS
-   &kp TAB      &kp Q       &kp W     &kp F      &kp P   &kp B            &kp LC(UP_ARROW)                                                                       &kp LG(L)   &kp J   &kp L      &kp U     &kp Y      &kp SEMICOLON   &kp BSLH
-   &kp ESC      &kp A       &kp R     &kp S      &kp T   &kp G             &kp LC(LS(TAB))  &kp LEFT_COMMAND  &kp LCTRL                   &kp LGUI   &kp LALT  &kp LC(TAB)   &kp M   &kp N      &kp E     &kp I              &kp O    &kp SQT
- &kp LSHFT      &kp Z       &kp X     &kp C      &kp D   &kp V                                                 &kp HOME                  &kp PG_UP                           &kp K   &kp H  &kp COMMA   &kp DOT           &kp FSLH  &kp RSHFT
-     &mo 3  &kp GRAVE  &caps_word  &kp LEFT  &kp RIGHT                            &kp BSPC             &mo 5    &kp END                  &kp PG_DN  &kp ENTER    &kp SPACE          &kp UP   &kp DOWN  &kp LBKT  &kp RIGHT_BRACKET      &to 1
+ &kp EQUAL     &kp N1      &kp N2    &kp N3     &kp N4  &kp N5                     &tog 2                                                                           &mo 4  &kp N6  &kp N7     &kp N8    &kp N9             &kp N0  &kp MINUS
+   &kp TAB      &kp Q       &kp W     &kp F      &kp P   &kp B               &kp LC(DOWN)                                                                       &kp LG(L)   &kp J   &kp L      &kp U     &kp Y      &kp SEMICOLON   &kp BSLH
+   &kp ESC      &kp A       &kp R     &kp S      &kp T   &kp G            &kp LC(LS(TAB))  &kp LEFT_COMMAND  &kp LCTRL                   &kp LGUI   &kp LALT  &kp LC(TAB)   &kp M   &kp N      &kp E     &kp I              &kp O    &kp SQT
+ &kp LSHFT      &kp Z       &kp X     &kp C      &kp D   &kp V                                                &kp HOME                  &kp PG_UP                           &kp K   &kp H  &kp COMMA   &kp DOT           &kp FSLH  &kp RSHFT
+     &mo 3  &kp GRAVE  &caps_word  &kp LEFT  &kp RIGHT                           &kp BSPC             &mo 5    &kp END                  &kp PG_DN  &kp ENTER    &kp SPACE          &kp UP   &kp DOWN  &kp LBKT  &kp RIGHT_BRACKET      &to 1
             >;
         };
 
@@ -89,11 +89,11 @@
 
         layer_NAV_Sym {
             bindings = <
- &trans          &trans          &trans            &trans                &trans     &trans            &trans                                                  &trans     &trans                 &trans             &trans             &trans                 &trans      &trans
- &trans        &kp EXCL          &kp AT          &kp HASH              &kp DLLR  &kp PRCNT            &trans                                                  &trans  &kp CARET               &kp AMPS             &kp UP           &kp STAR              &kp GRAVE      &trans
- &trans  &kp LEFT_SHIFT       &kp LCTRL          &kp LALT              &kp LGUI  &kp EQUAL            &trans  &trans  &trans                  &trans  &trans  &trans  &kp MINUS               &kp LEFT           &kp DOWN          &kp RIGHT          &kp BACKSPACE  &kp DELETE
- &trans          &kp LT  &kp LEFT_BRACE  &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS   &kp PLUS                            &trans                  &trans                  &kp UNDER  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET    &kp RIGHT_BRACE       &kp GREATER_THAN      &trans
- &trans          &trans    &kp CAPSLOCK  &kp LG(LA(LEFT))     &kp LG(LA(RIGHT))                       &trans  &trans  &trans                  &trans  &trans  &trans                    &kp LG(LA(UP))   &kp LG(LA(DOWN))  &kp LG(LA(ENTER))  &kp LG(LA(LS(ENTER)))      &trans
+ &trans          &trans          &trans            &trans                &trans     &trans                &trans                                                  &trans     &trans                 &trans             &trans             &trans                 &trans      &trans
+ &trans        &kp EXCL          &kp AT          &kp HASH              &kp DLLR  &kp PRCNT            &kp LC(UP)                                                  &trans  &kp CARET               &kp AMPS             &kp UP           &kp STAR              &kp GRAVE      &trans
+ &trans  &kp LEFT_SHIFT       &kp LCTRL          &kp LALT              &kp LGUI  &kp EQUAL                &trans  &trans  &trans                  &trans  &trans  &trans  &kp MINUS               &kp LEFT           &kp DOWN          &kp RIGHT          &kp BACKSPACE  &kp DELETE
+ &trans          &kp LT  &kp LEFT_BRACE  &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS   &kp PLUS                                &trans                  &trans                  &kp UNDER  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET    &kp RIGHT_BRACE       &kp GREATER_THAN      &trans
+ &trans          &trans    &kp CAPSLOCK  &kp LG(LA(LEFT))     &kp LG(LA(RIGHT))                           &trans  &trans  &trans                  &trans  &trans  &trans                    &kp LG(LA(UP))   &kp LG(LA(DOWN))  &kp LG(LA(ENTER))  &kp LG(LA(LS(ENTER)))      &trans
             >;
         };
 
