@@ -14,4 +14,4 @@ west build -s zmk/app -d build/right -b adv360_right -- -DZMK_CONFIG="${PWD}/con
 # Adv360 Right Kconfig file
 grep -vE '(^#|^$)' build/right/zephyr/.config
 # Rename zmk.uf2
-cp build/left/zephyr/zmk.uf2 ./firmware/${TIMESTAMP}-left.uf2 && cp build/right/zephyr/zmk.uf2 ./firmware/${TIMESTAMP}-right.uf2
+cp build/left/zephyr/zmk.uf2 "./firmware/${TIMESTAMP}-left.uf2" && cp build/right/zephyr/zmk.uf2 "./firmware/${TIMESTAMP}-right.uf2"
