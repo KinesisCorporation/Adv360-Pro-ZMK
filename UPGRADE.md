@@ -35,7 +35,7 @@ This assumes you already have [GitHub desktop](https://desktop.github.com/) down
     Open keymap.json, and for each layer remove the 8 highlighted &none behaviours including the quotes wrapping them, and the commas
 4. Edit adv 360.keymap
 
-    Open adv360.keymap and remove the 8 highlighted &none behaviours in each later
+    Open adv360.keymap and remove the 8 highlighted &none behaviours in each layer
 5. Commit your changes
 
     Returning to GitHub desktop you should see the changes you made in the bar on the left. Type an appropriate commit summary and click "Commit to *branch name*"
@@ -50,7 +50,7 @@ This assumes you already have [GitHub desktop](https://desktop.github.com/) down
 
 7. Resolve Conflicts
 
-    The conflict resolution window has powerful options to soresolve the merge conflict, you will want to clik on the down arrow next to "Open in *your text editor*" and click use the modified file from *your branch name*. In the case of this example it is called V2.0-beta. Using the file from upstream/V2.0 or upstream/V3.0 will result in none of your keymap changes being preserved. 
+    The conflict resolution window has powerful options to soresolve the merge conflict, you will want to click on the down arrow next to "Open in *your text editor*" and click use the modified file from *your branch name*. In the case of this example it is called V2.0-beta. Using the file from upstream/V2.0 or upstream/V3.0 will result in none of your keymap changes being preserved. 
     Do this for both files then you will be able to click the "Continue Merge" option
 
     ![The merge dialog showing a warning of conflicts](/assets/conflict.jpg)
