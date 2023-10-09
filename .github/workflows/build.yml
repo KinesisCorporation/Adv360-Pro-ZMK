@@ -36,11 +36,11 @@ jobs:
       - name: West Build (left)
         run: west build -s zmk/app -d build/left -b adv360_left -- -DZMK_CONFIG="${GITHUB_WORKSPACE}/config"
       - name: Adv360 Left Kconfig file
-        run: cat build/left/zephyr/.config | grep -v "^#" | grep -v "^$"
+        run: grep -vE '(^#|^$)' build/left/zephyr/.config
       - name: West Build (right)
         run: west build -s zmk/app -d build/right -b adv360_right -- -DZMK_CONFIG="${GITHUB_WORKSPACE}/config"
       - name: Adv360 Right Kconfig file
-        run: cat build/right/zephyr/.config | grep -v "^#" | grep -v "^$"
+        run: grep -vE '(^#|^$)' build/right/zephyr/.config
       - name: Rename zmk.uf2
         run: cp build/left/zephyr/zmk.uf2 left.uf2 && cp build/right/zephyr/zmk.uf2 right.uf2
       - name: Archive (Adv360)
