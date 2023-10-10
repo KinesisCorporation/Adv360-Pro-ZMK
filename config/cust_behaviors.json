@@ -1,0 +1,18 @@
+[
+	{
+		"code": "&mmv",
+		"name": "&mmv",
+		"params": [
+			"code"
+		],
+		"type": "UD"
+	},
+	{
+		"code": "&mkp",
+		"name": "&mkp",
+		"params": [
+			"code"
+		],
+		"type": "UD"
+	}
+]
