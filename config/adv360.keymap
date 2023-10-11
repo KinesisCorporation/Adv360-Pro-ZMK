@@ -77,5 +77,15 @@
             >;
         };
 
+        layer_Layer__4 {
+            bindings = <
+ &trans  &trans  &trans  &trans  &trans  &trans            &trans                                                  &trans          &trans      &trans      &trans      &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans            &trans                                                  &trans  &kp C_PREVIOUS  &kp C_PLAY  &kp C_STOP  &kp C_NEXT  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans                  &trans  &trans  &trans          &trans      &trans      &trans      &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans                            &trans                  &trans                          &trans      &trans      &trans      &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans                  &trans  &trans  &trans                      &trans      &trans      &trans  &trans  &trans
+            >;
+        };
+
     };
 };
