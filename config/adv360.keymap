@@ -40,7 +40,7 @@
         default_layer {
             bindings = <
   &kp GRAVE        &kp N1       &kp N2      &kp N3       &kp N4  &kp N5              &tog 1                                                                      &mo 3  &kp N6       &kp N7      &kp N8       &kp N9        &kp N0  &kp QUESTION
- &kp SYSREQ       &kp SQT    &kp COMMA  &kp PERIOD        &kp P   &kp Y               &none                                                                      &none   &kp F        &kp G       &kp C        &kp R         &kp L      &kp BSLH
+ &kp SYSREQ       &kp SQT    &kp COMMA  &kp PERIOD        &kp P   &kp Y              &tog 4                                                                      &none   &kp F        &kp G       &kp C        &kp R         &kp L      &kp BSLH
     &kp ESC  &mt LSHIFT A  &mt LCTRL O  &mt LALT E  &mt LMETA U   &kp I               &none  &kp DEL  &kp LALT                   &kp LGUI  &kp RCTRL  &kp K_PLAY_PAUSE   &kp D  &mt RMETA H  &mt RALT T  &mt RCTRL N  &mt RSHIFT S   &lt 1 MINUS
       &none      &kp SEMI        &kp Q       &kp J        &kp K   &kp X                               &kp HOME                  &kp PG_UP                                &kp B        &kp M       &kp W        &kp V         &kp Z     &kp SLASH
       &mo 2         &none        &none    &kp LEFT    &kp RIGHT                    &kp BSPC  &kp TAB   &kp END                  &kp PG_DN  &kp ENTER         &kp SPACE             &kp DOWN      &kp UP     &kp LBKT      &kp RBKT         &mo 2
@@ -74,6 +74,16 @@
   &none         &none         &none         &none         &none         &none                  &none   &none   &none                  &bt BT_CLR       &none  &rgb_ug RGB_MEFS_CMD 5   &none       &none       &none   &none   &none   &none
   &none         &none         &none         &none         &none         &none                                  &none                       &none                                       &none       &none       &none   &none   &none   &none
   &none         &none         &none         &none         &none                                &none   &none   &none                       &none  &bl BL_TOG         &rgb_ug RGB_TOG          &bl BL_INC  &bl BL_DEC   &none   &none   &none
+            >;
+        };
+
+        layer_qwerty {
+            bindings = <
+  &kp GRAVE        &kp N1       &kp N2      &kp N3       &kp N4  &kp N5              &tog 1                                                                      &mo 3  &kp N6       &kp N7      &kp N8       &kp N9           &kp N0  &kp QUESTION
+ &kp SYSREQ         &kp Q        &kp W       &kp E        &kp R   &kp T              &trans                                                                      &none   &kp Y        &kp U       &kp I        &kp O            &kp P      &kp BSLH
+    &kp ESC  &mt LSHIFT A  &mt LCTRL S  &mt LALT D  &mt LMETA F   &kp G               &none  &kp DEL  &kp LALT                   &kp LGUI  &kp RCTRL  &kp K_PLAY_PAUSE   &kp H  &mt RMETA J  &mt RALT K  &mt RCTRL L  &mt RSHIFT SEMI     &lt 1 SQT
+      &none         &kp Z        &kp X       &kp C        &kp V   &kp B                               &kp HOME                  &kp PG_UP                                &kp N        &kp M   &kp COMMA   &kp PERIOD        &kp SLASH         &none
+      &mo 2         &none        &none    &kp LEFT    &kp RIGHT                    &kp BSPC  &kp TAB   &kp END                  &kp PG_DN  &kp ENTER         &kp SPACE             &kp DOWN      &kp UP     &kp LBKT         &kp RBKT         &mo 2
             >;
         };
 
