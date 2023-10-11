@@ -69,11 +69,11 @@
 
         layer_mod {
             bindings = <
-  &none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                  &none                                                                          &trans   &none       &none       &none         &none         &none   &none
-  &none         &none         &none         &none         &none         &none            &bootloader                                                                     &bootloader   &none       &none    &kp C_PP         &none         &none   &none
-  &none         &none         &none         &none         &none         &none                  &none   &none   &none                  &bt BT_CLR       &none  &rgb_ug RGB_MEFS_CMD 5   &none  &kp C_PREV  &kp C_NEXT  &kp C_VOL_DN  &kp C_VOL_UP   &none
-  &none         &none         &none         &none         &none         &none                                  &none                       &none                                       &none       &none       &none         &none         &none   &none
-  &none         &none         &none         &none         &none                                &none   &none   &none                       &none  &bl BL_TOG         &rgb_ug RGB_TOG          &bl BL_INC  &bl BL_DEC         &none         &none   &none
+  &none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                  &none                                                                          &trans   &none         &none         &none         &none         &none   &none
+  &none         &none         &none         &none         &none         &none            &bootloader                                                                     &bootloader   &none         &none      &kp C_PP         &none         &none   &none
+  &none         &none         &none         &none         &none         &none                  &none   &none   &none                  &bt BT_CLR       &none  &rgb_ug RGB_MEFS_CMD 5   &none    &kp C_PREV    &kp C_NEXT  &kp C_VOL_DN  &kp C_VOL_UP   &none
+  &none         &none         &none         &none         &none         &none                                  &none                       &none                                       &none  &kp C_BRI_DN  &kp C_BRI_UP         &none         &none   &none
+  &none         &none         &none         &none         &none                                &none   &none   &none                       &none  &bl BL_TOG         &rgb_ug RGB_TOG            &bl BL_INC    &bl BL_DEC         &none         &none   &none
             >;
         };
 
