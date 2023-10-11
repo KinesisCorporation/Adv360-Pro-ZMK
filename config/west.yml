@@ -1,13 +1,13 @@
 manifest:
   remotes:
     - name: zmkfirmware
-      url-base: https://github.com/zmkfirmware
+      url-base: https://github.com/ftc/
     - name: refil
       url-base: https://github.com/refil
   projects:
     - name: zmk
-      remote: refil
-      revision: adv360-z3.2
+      remote: zmkfirmware
+      revision: mouse-ftc
       import: app/west.yml
   self:
     path: config
