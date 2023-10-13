@@ -4,59 +4,58 @@
 #include <dt-bindings/zmk/rgb.h>
 #include <dt-bindings/zmk/backlight.h>
 
+//#include "mouse.dtsi"
+
 / {
     behaviors {
-      #include "macros.dtsi"
+        #include "macros.dtsi"
 
-      hm: homerow_mods {
-          compatible = "zmk,behavior-hold-tap";
-          label = "HOMEROW_MODS";
-          #binding-cells = <2>;
-          tapping-term-ms = <200>;
-          quick_tap_ms = <175>;
-          flavor = "tap-preferred";
-          bindings = <&kp>, <&kp>;
-      };
+        hm: homerow_mods {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODS";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick_tap_ms = <175>;
+            flavor = "tap-preferred";
+            bindings =
+                <&kp>,
+                <&kp>;
+
+            hold-trigger-key-positions = <32 31 30 29 43 44 45 46>;
+        };
     };
 
-  keymap {
-    compatible = "zmk,keymap";
+    keymap {
+        compatible = "zmk,keymap";
 
-    default_layer {
-      bindings = <
-        &kp EQUAL &kp N1    &kp N2   &kp N3   &kp N4     &kp N5 &tog 1                                                           &mo 3 &kp N6 &kp N7 &kp N8    &kp N9   &kp N0   &kp MINUS
-        &kp TAB   &kp Q     &kp W    &kp E    &kp R      &kp T  &none                                                            &none &kp Y  &kp U  &kp I     &kp O    &kp P    &kp BSLH
-        &kp ESC   &kp A     &kp S    &kp D    &kp F      &kp G  &none           &kp LCTRL &kp LALT &kp LGUI  &kp RCTRL           &none &kp H  &kp J  &kp K     &kp L    &kp SEMI &kp SQT
-        &kp LSHFT &kp Z     &kp X    &kp C    &kp V      &kp B                            &kp HOME &kp PG_UP                           &kp N  &kp M  &kp COMMA &kp DOT  &kp FSLH &kp RSHFT
-        &mo 2     &kp GRAVE &kp CAPS &kp LEFT &kp RIGHT                &kp BSPC &kp DEL   &kp END  &kp PG_DN &kp ENTER &kp SPACE              &kp UP &kp DOWN  &kp LBKT &kp RBKT &mo 2
-      >;
+        default_qwerty {
+            bindings = <
+&kp EQUAL          &kp N1       &kp N2          &kp N3            &kp N4  &kp N5     &tog 0                                                                                      &tog 1  &kp N6            &kp N7           &kp N8       &kp N9              &kp N0  &kp MINUS
+  &kp TAB           &kp Q        &kp W           &kp E             &kp R   &kp T    &kp TAB                                                                                 &kp RG(TAB)   &kp Y             &kp U            &kp I        &kp O               &kp P   &kp BSLH
+  &kp ESC  &hm LEFT_GUI A  &hm LCTRL S  &hm LEFT_ALT D  &hm LEFT_SHIFT F   &kp G  &kp GRAVE  &kp LEFT_COMMAND  &kp LCTRL  &none  &none       &kp RALT  &kp RIGHT_COMMAND  &kp RG(GRAVE)   &kp H  &hm LEFT_SHIFT J  &hm RIGHT_ALT K  &hm RCTRL L  &hm RIGHT_GUI SEMI    &kp SQT
+&kp LSHFT           &kp Z        &kp X           &kp C             &kp V   &kp B      &none             &none  &kp LG(C)  &none  &none      &kp RG(Z)              &none          &none   &kp N             &kp M        &kp COMMA      &kp DOT            &kp FSLH  &kp RSHFT
+    &mo 2       &kp GRAVE     &kp LALT        &kp LEFT         &kp RIGHT           &kp BSPC         &lt 2 RET  &kp LG(V)                &kp RG(RS(Z))         &kp RETURN    &lt 2 SPACE                    &kp UP         &kp DOWN     &kp LBKT            &kp RBKT      &mo 2
+            >;
+        };
+
+        colemak {
+            bindings = <
+&trans          &trans       &trans          &trans            &trans  &trans  &trans                                                  &trans  &trans       &trans      &trans       &trans           &trans            &trans
+&trans           &kp Q        &kp W           &kp F             &kp P   &kp B  &trans                                                  &trans   &kp J        &kp L       &kp U        &kp Y    &kp SEMICOLON          &kp BSLH
+&trans  &hm LEFT_GUI A  &hm LCTRL R  &hm LEFT_ALT S  &hm LEFT_SHIFT T   &kp G  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans   &kp M  &hm RSHFT N  &hm LALT E  &hm RCTRL I  &hm RIGHT_GUI O  &kp SINGLE_QUOTE
+&trans           &kp X        &kp C           &kp D             &kp V   &kp Z   &none  &trans  &trans   &none  &trans  &trans   &kp K   &kp M   &kp K        &kp H   &kp COMMA   &kp PERIOD        &kp SLASH            &trans
+&trans          &trans       &trans          &trans            &trans          &trans  &trans  &trans                  &trans  &trans  &trans               &trans      &trans       &trans           &trans            &trans
+            >;
+        };
+
+        functions {
+            bindings = <
+&kp LS(LA(DOWN))          &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                  &trans                                                                                              &trans       &none         &none         &none         &none         &none  &kp LA(LS(DOWN))
+   &kp LG(SLASH)                 &none         &none  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9             &bootloader                                                                                         &bootloader  &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_BRI_DN  &kp C_BRI_UP     &kp RG(SLASH)
+   &kp LS(LG(K))  &kp LG(LS(NUMBER_4))        &kp N0        &kp N4        &kp N5  &kp NUMBER_6  &rgb_ug RGB_MEFS_CMD 5  &bt BT_CLR       &none  &bt BT_CLR  &bt BT_CLR  &rgb_ug RGB_MEFS_CMD 5          &none        &none       &none      &kp LEFT      &kp DOWN        &kp UP     &kp RIGHT     &kp LS(LG(K))
+   &kp LA(LC(L))             &kp LG(Z)        &kp UP  &kp NUMBER_1        &kp N2        &kp N3                   &none       &none       &none       &none       &none                   &none          &none        &none       &none         &none         &none         &none    &kp C_PLAY        &kp RSHIFT
+           &none              &kp LEFT      &kp DOWN     &kp RIGHT    &bl BL_TOG                            &kp DELETE   &kp SPACE  &bl BL_TOG                                 &rgb_ug RGB_TOG  &kp BACKSPACE    &kp SPACE                     &none         &none         &none        &trans            &trans
+            >;
+        };
     };
-    keypad {
-      bindings = <
-        &kp EQUAL &kp N1    &kp N2   &kp N3   &kp N4     &kp N5 &trans                                                           &mo 3 &kp N6 &kp KP_NUM &kp KP_EQUAL &kp KP_DIVIDE &kp KP_MULTIPLY &kp MINUS
-        &kp TAB   &kp Q     &kp W    &kp E    &kp R      &kp T  &none                                                            &none &kp Y  &kp KP_N7  &kp KP_N8    &kp KP_N9     &kp KP_MINUS    &kp BSLH
-        &kp ESC   &kp A     &kp S    &kp D    &kp F      &kp G  &none           &kp LCTRL &kp LALT &kp LGUI  &kp RCTRL           &none &kp H  &kp KP_N4  &kp KP_N5    &kp KP_N6     &kp KP_PLUS     &kp SQT
-        &kp LSHFT &kp Z     &kp X    &kp C    &kp V      &kp B                            &kp HOME &kp PG_UP                           &kp N  &kp KP_N1  &kp KP_N2    &kp KP_N3     &kp KP_ENTER    &kp RSHFT
-        &mo 2     &kp GRAVE &kp CAPS &kp LEFT &kp RIGHT                &kp BSPC &kp DEL   &kp END  &kp PG_DN &kp ENTER &kp KP_N0              &kp UP     &kp DOWN     &kp KP_DOT    &kp RBKT        &mo 2
-      >;
-    };
-    fn {
-      bindings = <
-        &kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp F6 &tog 1                                           &mo 3 &kp F7 &kp F8 &kp F9 &kp F10 &kp F11 &kp F12
-        &trans &trans &trans &trans &trans &trans  &none                                           &none &trans &trans &trans &trans  &trans  &trans
-        &trans &trans &trans &trans &trans &trans  &none        &trans &trans &trans &trans        &none &trans &trans &trans &trans  &trans  &trans
-        &trans &trans &trans &trans &trans &trans                      &trans &trans                     &trans &trans &trans &trans  &trans  &trans
-        &trans &trans &trans &trans &trans               &trans &trans &trans &trans &trans &trans              &trans &trans &trans  &trans  &trans
-      >;
-    };
-    mod {
-      bindings = <
-        &none &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &none                                                                     &trans                 &none        &none        &none        &none &none &none
-        &none &none        &none        &none        &none        &none        &bootloader                                                               &bootloader            &none        &none        &none        &none &none &none
-        &none &none        &none        &none        &none        &none        &none                   &none &none &bt BT_CLR &none                      &rgb_ug RGB_MEFS_CMD 5 &none        &none        &none        &none &none &none
-        &none &none        &none        &none        &none        &none                                      &none &none                                                        &none        &none        &none        &none &none &none
-        &none &none        &none        &none        &none                                       &none &none &none &none      &bl BL_TOG &rgb_ug RGB_TOG                                     &bl BL_INC   &bl BL_DEC   &none &none &none
-      >;
-    };
-  };
 };
