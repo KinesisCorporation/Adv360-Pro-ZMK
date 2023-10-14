@@ -17,8 +17,6 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/rgb.h>
 #include <dt-bindings/zmk/backlight.h>
-#include <dt-bindings/zmk/mouse.h>
-
 
 / {
   behaviors {
@@ -44,7 +42,7 @@
   &kp GRAVE        &kp N1       &kp N2      &kp N3       &kp N4  &kp N5     &tog 1                                                                &mo 3  &kp N6       &kp N7      &kp N8       &kp N9        &kp N0         &kp MINUS
  &kp SYSREQ       &kp SQT    &kp COMMA  &kp PERIOD        &kp P   &kp Y     &tog 4                                                                &none   &kp F        &kp G       &kp C        &kp R         &kp L          &kp BSLH
     &kp ESC  &hm LSHIFT A  &hm LCTRL O  &hm LALT E  &hm LMETA U   &kp I      &none   &kp DEL  &kp LALT                   &kp LGUI  &kp RCTRL  &kp EQUAL   &kp D  &hm RMETA H  &hm RALT T  &hm RCTRL N  &hm RSHIFT S       &lt 1 SLASH
-      &none      &kp SEMI        &kp Q       &kp J        &kp K   &kp X                       &kp HOME                  &kp PG_UP                         &kp B        &kp M       &kp W        &kp V         &kp Z  &kp K_PLAY_PAUSE
+      &none      &kp SEMI        &kp Q       &kp J        &kp K   &kp X                       &kp HOME                  &kp PG_UP                         &kp B        &kp M       &kp W        &kp V  &hm RSHIFT Z  &kp K_PLAY_PAUSE
       &mo 2         &none        &none    &kp LEFT    &kp RIGHT          &kp SPACE  &kp BSPC   &kp END                  &kp PG_DN    &kp TAB  &kp ENTER             &kp DOWN      &kp UP     &kp LBKT      &kp RBKT             &mo 2
             >;
         };
@@ -61,31 +59,31 @@
 
         layer_fn {
             bindings = <
- &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6            &tog 1                                                         &mo 3          &kp F7          &kp F8        &kp F9          &kp F10  &kp F11  &kp F12
- &trans  &trans  &trans  &trans  &trans  &trans             &none                                                         &none          &trans          &trans        &trans           &trans  &trans   &trans
- &trans  &trans  &trans  &trans  &trans  &trans             &none  &trans  &trans                  &trans     &trans      &none  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &trans   &trans
- &trans  &trans  &trans  &trans  &trans  &trans                            &trans                  &trans                                &trans          &trans        &trans           &trans  &trans   &trans
- &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans                  &trans  &mkp LCLK  &mkp RCLK          &trans          &trans        &trans           &trans  &trans
+ &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6  &tog 1                                                   &mo 3  &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
+ &trans  &trans  &trans  &trans  &trans  &trans   &none                                                   &none  &trans  &trans  &trans   &trans  &trans   &trans
+ &trans  &trans  &trans  &trans  &trans  &trans   &none  &trans  &trans                  &trans  &trans   &none  &trans  &trans  &trans   &trans  &trans   &trans
+ &trans  &trans  &trans  &trans  &trans  &trans                  &trans                  &trans                  &trans  &trans  &trans   &trans  &trans   &trans
+ &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans                  &trans  &trans  &trans          &trans  &trans   &trans  &trans   &trans
             >;
         };
 
         layer_mod {
             bindings = <
-  &none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                  &none                                                                          &trans   &none       &none       &none   &none   &none   &none
-  &none         &none         &none         &none         &none         &none            &bootloader                                                                     &bootloader   &none       &none       &none   &none   &none   &none
-  &none         &none         &none         &none         &none         &none                  &none   &none   &none                  &bt BT_CLR       &none  &rgb_ug RGB_MEFS_CMD 5   &none       &none       &none   &none   &none   &none
-  &none         &none         &none         &none         &none         &none                                  &none                       &none                                       &none       &none       &none   &none   &none   &none
-  &none         &none         &none         &none         &none                                &none   &none   &none                       &none  &bl BL_TOG         &rgb_ug RGB_TOG          &bl BL_INC  &bl BL_DEC   &none   &none   &none
+  &none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4        &none                                                                          &trans   &none       &none       &none   &none   &none   &none
+  &none         &none         &none         &none         &none         &none  &bootloader                                                                     &bootloader   &none       &none       &none   &none   &none   &none
+  &none         &none         &none         &none         &none         &none        &none   &none   &none                  &bt BT_CLR       &none  &rgb_ug RGB_MEFS_CMD 5   &none       &none       &none   &none   &none   &none
+  &none         &none         &none         &none         &none         &none                        &none                       &none                                       &none       &none       &none   &none   &none   &none
+  &none         &none         &none         &none         &none                      &none   &none   &none                       &none  &bl BL_TOG         &rgb_ug RGB_TOG          &bl BL_INC  &bl BL_DEC   &none   &none   &none
             >;
         };
 
         layer_qwerty {
             bindings = <
-  &kp GRAVE        &kp N1       &kp N2      &kp N3       &kp N4  &kp N5     &tog 1                                                                &mo 3  &kp N6       &kp N7      &kp N8       &kp N9           &kp N0         &kp MINUS
- &kp SYSREQ         &kp Q        &kp W       &kp E        &kp R   &kp T     &trans                                                                &none   &kp Y        &kp U       &kp I        &kp O            &kp P          &kp BSLH
-    &kp ESC  &hm LSHIFT A  &hm LCTRL S  &hm LALT D  &hm LMETA F   &kp G      &none   &kp DEL  &kp LALT                   &kp LGUI  &kp RCTRL  &kp EQUAL   &kp H  &hm RMETA J  &hm RALT K  &hm RCTRL L  &hm RSHIFT SEMI         &lt 1 SQT
-      &none         &kp Z        &kp X       &kp C        &kp V   &kp B                       &kp HOME                  &kp PG_UP                         &kp N        &kp M   &kp COMMA   &kp PERIOD        &kp SLASH  &kp K_PLAY_PAUSE
-      &mo 2         &none        &none    &kp LEFT    &kp RIGHT          &kp SPACE  &kp BSPC   &kp END                  &kp PG_DN    &kp TAB  &kp ENTER             &kp DOWN      &kp UP     &kp LBKT      &kp RBKT                &mo 2
+  &kp GRAVE        &kp N1       &kp N2      &kp N3       &kp N4  &kp N5     &tog 1                                                                &mo 3  &kp N6       &kp N7      &kp N8       &kp N9            &kp N0         &kp MINUS
+ &kp SYSREQ         &kp Q        &kp W       &kp E        &kp R   &kp T     &trans                                                                &none   &kp Y        &kp U       &kp I        &kp O             &kp P          &kp BSLH
+    &kp ESC  &hm LSHIFT A  &hm LCTRL S  &hm LALT D  &hm LMETA F   &kp G      &none   &kp DEL  &kp LALT                   &kp LGUI  &kp RCTRL  &kp EQUAL   &kp H  &hm RMETA J  &hm RALT K  &hm RCTRL L   &hm RSHIFT SEMI         &lt 1 SQT
+      &none         &kp Z        &kp X       &kp C        &kp V   &kp B                       &kp HOME                  &kp PG_UP                         &kp N        &kp M   &kp COMMA   &kp PERIOD  &hm RSHIFT SLASH  &kp K_PLAY_PAUSE
+      &mo 2         &none        &none    &kp LEFT    &kp RIGHT          &kp SPACE  &kp BSPC   &kp END                  &kp PG_DN    &kp TAB  &kp ENTER             &kp DOWN      &kp UP     &kp LBKT          &kp RBKT             &mo 2
             >;
         };
 
