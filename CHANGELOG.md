@@ -4,6 +4,8 @@ Here's all notable changes and commits to both the configuration repo and the ba
 Many thanks to all those who have submitted issues and pull requests to make this firmware better!
 ## Config repo
 
+20/10/2023 - Disable BLE privacy due to conflict, disable BLE battery reporting, change to point to new ZMK branch with minor update. Please note that due to the minor update the boards will need the [settings_reset.uf2](/settings-reset.uf2) file flashing onto each side prior to updating [#248](https://github.com/KinesisCorporation/Adv360-Pro-ZMK/pull/248) (adv360-z3.2-2)
+
 10/9/2023 - Further documentation refinements, add section on beta testing, document BLE privacy [#241](https://github.com/KinesisCorporation/Adv360-Pro-ZMK/pull/241)
 
 10/9/2023 - Change build actions to fix warnings from shellcheck [#242](https://github.com/KinesisCorporation/Adv360-Pro-ZMK/pull/242)
@@ -67,13 +69,23 @@ Many thanks to all those who have submitted issues and pull requests to make thi
 
 ## Base ZMK
 
-There have beeen 3 mainline branches of ZMK used for the 360 Pro so far. Beta branches are not changelogged as they are subject to frequent changes and tweaks.
+There have beeen 4 branches of ZMK used for the 360 Pro so far. Beta branches are not changelogged as they are subject to frequent changes and tweaks.
 
 | Branch | Date From | Date To | Config Branch |
 | -------- | ------- |-------|-----|
 | [adv360-beta](https://github.com/ReFil/zmk/tree/adv360-beta)   | 3/1/2022 | 9/17/2022 | V1.0 (since deleted) |
-| [adv360-z3](https://github.com/ReFil/zmk/tree/adv360-z3) | 9/17/2022 | 7/6/2023 | [V2.0](https://github.com/KinesisCorporation/Adv360-Pro-ZMK/tree/V2.0) |
-| [adv360-z3.2](https://github.com/ReFil/zmk/tree/adv360-z3.2) | 7/6/2023 | To date | [V3.0](https://github.com/KinesisCorporation/Adv360-Pro-ZMK/tree/V3.0) |
+| [adv360-z3](https://github.com/ReFil/zmk/tree/adv360-z3) | 9/17/2022 | 7/6/2023 | V2.0 (since deleted) |
+| [adv360-z3.2](https://github.com/ReFil/zmk/tree/adv360-z3.2) | 7/6/2023 | 20/10/2023 | [V3.0](https://github.com/KinesisCorporation/Adv360-Pro-ZMK/tree/V3.0) (Up to commit 82494e7) |
+| [adv360-z3.2-2](https://github.com/ReFil/zmk/tree/adv360-z3.2-2) | 20/10/2023 | To date | [V3.0](https://github.com/KinesisCorporation/Adv360-Pro-ZMK/tree/V3.0) (current) |
+
+
+### adv360-z3.2-2
+
+10/18/2023 - Disable saving certain RGB elements to flash memory to help with flash wear
+
+10/18/2023 - Re-enable BLE battery reporting in code (now disabled in config repo using the `CONFIG_BT_BAS` KConfig option)
+
+10/18/2023 - Merge latest upstream ZMK (Commit 7fe9ecd8)
 
 ### adv360-z3.2
 
