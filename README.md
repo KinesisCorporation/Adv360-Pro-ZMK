@@ -70,7 +70,10 @@ If you are upgrading from V2 to V3, and if the flashing didn't work as expected 
 the V3 branch of this repository. After doing this, proceed with the flashing instructions above.
 
 ## Bluetooth LE Privacy
-By default this firmware ships with BT Privacy enabled (To read more about BT privacy see [this article](https://novelbits.io/how-to-protect-the-privacy-of-your-bluetooth-low-energy-device/)). This was done based off feedback from MacOS users as some Macs and all iOS devices use resolvable private addresses that they cycle between (the Apple documentation can be found [here](https://developer.apple.com/accessories/Accessory-Design-Guidelines.pdf#page=194)), and when the host cycled to a new address the Advantage 360 Pro would need re-pairing. It can cause issues with some operating systems and hardware setups. To disable BT Privacy change `CONFIG_BT_PRIVACY=y` to `CONFIG_BT_PRIVACY=n` in [adv360_left_defconfig](config/boards/arm/adv360/adv360_left_defconfig#L52). Disabling this might necessitate re-pairing to the host.
+
+Since the update on 20/10/2023, BLE privacy is now disabled by default and due to an update in upstream ZMK cannot be enabled again as it will cause issues for the splits halves connecting to each other.
+
+~~By default this firmware ships with BT Privacy enabled (To read more about BT privacy see [this article](https://novelbits.io/how-to-protect-the-privacy-of-your-bluetooth-low-energy-device/)). This was done based off feedback from MacOS users as some Macs and all iOS devices use resolvable private addresses that they cycle between (the Apple documentation can be found [here](https://developer.apple.com/accessories/Accessory-Design-Guidelines.pdf#page=194)), and when the host cycled to a new address the Advantage 360 Pro would need re-pairing. It can cause issues with some operating systems and hardware setups. To disable BT Privacy change `CONFIG_BT_PRIVACY=y` to `CONFIG_BT_PRIVACY=n` in [adv360_left_defconfig](config/boards/arm/adv360/adv360_left_defconfig#L52). Disabling this might necessitate re-pairing to the host.~~
 
 ## Changelog
 
