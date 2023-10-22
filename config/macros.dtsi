@@ -1,6 +1,0 @@
-macro_tmux-lastwindow: macro_tmux-lastwindow{
-compatible = "zmk,behavior-macro";
-label = "macro_tmux-lastwindow";
-#binding-cells = <0>;
-bindings = <&kp LC(B)>, <&kp L>;
-};
