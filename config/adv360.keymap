@@ -23,15 +23,6 @@
 / {
     combos {
       compatible = "zmk,combos";
-      lctrl {
-          timeout-ms = <30>;
-          key-positions = <29 30>;
-          bindings = <&kp LCTRL>;
-      };
-      lalt {
-          timeout-ms = <30>;
-          key-positions = <30 31>;
-          bindings = <&kp LALT>;
       };
       df_mod {
           timeout-ms = <50>;
@@ -158,10 +149,20 @@
           key-positions = <24 41>;
           bindings = <&kp LCTRL>;
       };
+      leftreturn {
+          timeout-ms = <45>;
+          key-positions = <31 50>;
+          bindings = <&kp ENTER>;
+      };
       backspace22 {
           timeout-ms = <30>;
           key-positions = <48 50>;
           bindings = <&kp BACKSPACE>;
+      };
+      bluetooth_togle {
+          timeout-ms = <45>;
+          key-positions = <65 70>;
+          bindings = <&out OUT_TOG>;
       };
 };
   behaviors {
