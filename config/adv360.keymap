@@ -252,8 +252,8 @@
     &kp F1          &kp F2     &kp F3                &kp F4                 &kp F5  &kp F6              &trans                                                                       &kp F7           &kp F8  &kp LEFT_PARENTHESIS  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS     &kp EQUAL    &kp F13
     &trans     &kp PERCENT  &kp EQUAL             &kp MINUS          &kp KP_DIVIDE   &kp T               &none                                                                        &none    &kp KP_DIVIDE          &kp NUMBER_7          &kp NUMBER_8           &kp NUMBER_9     &kp MINUS   &kp BSLH
     &trans      &kp DOLLAR    &kp DOT              &kp PLUS        &kp KP_MULTIPLY   &kp G               &none  &kp LCTRL   &kp LALT                   &kp LGUI  &kp RCTRL  &kp PRINTSCREEN  &kp KP_MULTIPLY          &kp NUMBER_4          &kp NUMBER_5           &kp NUMBER_6      &kp PLUS    &kp SQT
- &kp LSHFT  &kp LEFT_SHIFT  &kp COMMA  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS   &kp B                                    &trans                  &kp PG_UP                                    &kp SPACE          &kp NUMBER_1          &kp NUMBER_2           &kp NUMBER_3  &kp KP_ENTER  &kp ENTER
-    &trans          &trans     &trans                &trans           &kp LEFT_WIN                    &kp BSPC    &kp DEL  &kp COMMA                     &trans  &kp ENTER     &kp NUMBER_0                                 &kp N0          &kp NUMBER_0                &kp DOT     &kp COMMA      &mo 2
+  &trans  &trans           &kp HOME  &kp UP  &kp HOME  &kp ENTER                                   &trans                  &kp PG_UP                                    &kp SPACE          &kp NUMBER_1          &kp NUMBER_2           &kp NUMBER_3  &kp KP_ENTER  &kp ENTER
+    &trans          &trans      &kp LEFT  &kp DOWN  &kp RIGHT                    &kp BSPC    &kp DEL  &kp COMMA                     &trans  &kp ENTER     &kp NUMBER_0                                 &kp N0          &kp NUMBER_0                &kp DOT     &kp COMMA      &mo 2
             >;
         };
 
