@@ -4,19 +4,41 @@
 #include <dt-bindings/zmk/rgb.h>
 #include <dt-bindings/zmk/backlight.h>
 
+
+#define HYPER(key) LS(LC(LA(LG(key))))
+
 / {
     behaviors {
       #include "macros.dtsi"
 
-      hm: homerow_mods {
-          compatible = "zmk,behavior-hold-tap";
-          label = "HOMEROW_MODS";
-          #binding-cells = <2>;
-          tapping-term-ms = <200>;
-          quick_tap_ms = <175>;
-          flavor = "tap-preferred";
-          bindings = <&kp>, <&kp>;
-      };
+      // lh_pht: left_hand_positional_hold_tap {
+      //     compatible = "zmk,behavior-hold-tap";
+      //     label = "LEFT_POSITIONAL_HOLD_TAP";
+      //     #binding-cells = <2>;
+      //     flavor = "tap-unless-interrupted";
+      //     tapping-term-ms = <100>;                        // <---[[produces tap if held longer than tapping-term-ms]]
+      //     quick-tap-ms = <200>;
+      //     bindings = <&kp>, <&kp>;
+      //     hold-trigger-key-positions = <
+      //     8 9 10 11 12 13
+      //     22 23 24 25 26 27
+      //     42 43 44 45 46 47
+      //     62 63 64 65 66
+      //     81 82
+      //     >;    // <---[[right-hand keys]]
+      // };
+
+
+        hm: homerow_mods {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODS";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+            retro-tap;
+        };
     };
 
   keymap {
@@ -24,11 +46,53 @@
 
     default_layer {
       bindings = <
-        &kp EQUAL &kp N1    &kp N2   &kp N3   &kp N4     &kp N5 &tog 1                                                           &mo 3 &kp N6 &kp N7 &kp N8    &kp N9   &kp N0   &kp MINUS
-        &kp TAB   &kp Q     &kp W    &kp E    &kp R      &kp T  &none                                                            &none &kp Y  &kp U  &kp I     &kp O    &kp P    &kp BSLH
-        &kp ESC   &kp A     &kp S    &kp D    &kp F      &kp G  &none           &kp LCTRL &kp LALT &kp LGUI  &kp RCTRL           &none &kp H  &kp J  &kp K     &kp L    &kp SEMI &kp SQT
-        &kp LSHFT &kp Z     &kp X    &kp C    &kp V      &kp B                            &kp HOME &kp PG_UP                           &kp N  &kp M  &kp COMMA &kp DOT  &kp FSLH &kp RSHFT
-        &mo 2     &kp GRAVE &kp CAPS &kp LEFT &kp RIGHT                &kp BSPC &kp DEL   &kp END  &kp PG_DN &kp ENTER &kp SPACE              &kp UP &kp DOWN  &kp LBKT &kp RBKT &mo 2
+/* Left Half - Numbers Row - 7 keys. Trigger positions 0 - 6. */
+&kp EQUAL &kp N1    &kp N2   &kp N3   &kp N4     &kp N5 &tog 1
+
+/* Right Half - Numbers Row - 7 keys. Trigger positions 7 - 13. */
+&kp HYPER(SQT) &kp N6 &kp N7 &kp N8    &kp N9   &kp N0   &kp MINUS
+
+/* Left Half - Q Row - 7 keys. Trigger positions 14 - 20. */
+&kp TAB   &kp Q     &kp W    &kp E    &kp R      &kp T   &kp HYPER(LEFT_BRACKET)
+
+/* Right Half - Y Row - 7 keys. Trigger positions 21 - 27. */
+&kp HYPER(EQUAL)  &kp Y  &kp U  &kp I     &kp O    &kp P    &kp BSLH
+
+/* Left Half - A Row - 7 keys. Trigger positions 28 - 34. */
+&kp ESC   &kp A     &kp S    &kp D    &kp F      &kp G &kp HYPER(RIGHT_BRACKET)
+
+/* Left Half - Thumb Cluster First Row - 2 keys. Trigger positions 35 - 36. */
+&kp LEFT_META     &kp LEFT_CONTROL
+
+/* Right Half - Thumb Cluster First Row - 2 keys. Trigger positsion 39 - 40. */
+&kp RIGHT_CONTROL  &kp RIGHT_META
+
+/* Right Half - H Row - 7 keys. Trigger positions 41 - 47. */
+&kp HYPER(MINUS)  &kp H  &kp J  &kp K     &kp L    &kp SEMI &kp SQT
+
+/* Left Half - Z Row - 6 keys. Trigger positions 48 - 53. */
+&mo 2 &kp Z     &kp X    &kp C    &hm LSHIFT V      &kp B
+
+/* Left Half - Thumb Cluster Second Row Rightmost Key - 1 keys. Trigger position 56. */
+&kp LEFT_ALT
+
+/* Right Half - Thumb Cluster Second Row Leftmost Key- 1 keys. Trigger position 59. */
+&kp RIGHT_ALT
+
+/* Right Half - N Row - 6 keys. Trigger positions 62 - 67. */
+&kp N  &kp M  &hm RSHIFT COMMA &kp DOT  &kp FSLH &mo 2
+
+/* Left Half - Last Row - 5 keys. Trigger positions 68 - 72. */
+&kp LSHFT     &kp GRAVE &mo 3 &kp LEFT &kp RIGHT
+
+/* Left Half - Thumb Cluster Last Row - 3 keys. Trigger positions 73 - 75. */
+&kp BACKSPACE  &kp HYPER(COMMA)  &kp HYPER(GRAVE)
+
+/* Right Half - Thumb Cluster Last Row - 3 keys. Trigger positions 76 - 78. */
+&kp HYPER(BACKSLASH)  &kp ENTER  &kp SPACE
+
+/* Right Half - Last Row - 5 keys. Trigger positions 79 - 83 */
+&kp UP &kp DOWN  &kp LBKT &kp RBKT &none
       >;
     };
     keypad {
@@ -42,11 +106,54 @@
     };
     fn {
       bindings = <
-        &kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp F6 &tog 1                                           &mo 3 &kp F7 &kp F8 &kp F9 &kp F10 &kp F11 &kp F12
-        &trans &trans &trans &trans &trans &trans  &none                                           &none &trans &trans &trans &trans  &trans  &trans
-        &trans &trans &trans &trans &trans &trans  &none        &trans &trans &trans &trans        &none &trans &trans &trans &trans  &trans  &trans
-        &trans &trans &trans &trans &trans &trans                      &trans &trans                     &trans &trans &trans &trans  &trans  &trans
-        &trans &trans &trans &trans &trans               &trans &trans &trans &trans &trans &trans              &trans &trans &trans  &trans  &trans
+/* Left Half - Numbers Row - 7 keys */
+&kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp F6 &tog 1
+
+/* Right Half - Numbers Row - 7 keys */
+&mo 3 &kp F7 &kp F8 &kp F9 &kp F10 &kp F11 &kp F12
+
+/* Left Half - Q Row - 7 keys */
+ &trans  &trans &trans &kp HYPER(E) &kp HYPER(R)   &kp HYPER(T) &none
+
+
+/* Right Half - Y Row - 7 keys */
+&none  &kp HYPER(Y)  &trans  &trans   &trans   &trans   &trans
+
+/* Left Half - A Row - 7 keys */
+&trans  &kp HYPER(A)  &kp HYPER(S)   &kp HYPER(D)   &kp HYPER(F)  &kp HYPER(G)         &none
+
+/* Left Half - Thumb Cluster First Row - 2 keys */
+&trans &trans
+
+/* Right Half - Thumb Cluster First Row - 2 keys */
+&trans &trans
+
+/* Right Half - H Row - 7 keys */
+&none  &kp HYPER(H)  &kp HYPER(J)  &kp HYPER(K)  &kp HYPER(L)  &trans  &trans
+
+/* Left Half - Z Row - 6 keys */
+&trans  &kp HYPER(Z)  &trans &kp HYPER(C) &trans &kp HYPER(B)
+
+/* Left Half - Thumb Cluster Second Row Rightmost Key - 1 keys */
+&kp HOME
+
+/* Right Half - Thumb Cluster Second Row Leftmost Key- 1 keys */
+&kp PAGE_UP
+
+/* Right Half - N Row - 6 keys */
+&trans &trans &trans &trans  &trans  &trans
+
+/* Left Half - Last Row - 5 keys */
+&trans &trans &trans &trans &trans
+
+/* Left Half - Thumb Cluster Last Row - 3 keys */
+&kp DELETE &trans   &kp END
+
+/* Right Half - Thumb Cluster Last Row - 3 keys */
+&kp PAGE_DOWN  &trans  &trans
+
+/* Right Half - Last Row - 5 keys */
+&trans &trans &trans  &trans  &trans
       >;
     };
     mod {
