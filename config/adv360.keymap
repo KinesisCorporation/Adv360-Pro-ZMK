@@ -48,11 +48,11 @@
 
         layer_red {
             bindings = <
-  &kp LA(F4)    &kp LC(LA(N1))        &kp LC(LA(N2))    &kp LC(LA(N3))        &kp LC(LA(N4))  &kp LC(LA(N5))                   &trans                                                                    &trans  &kp LC(LA(N6))  &kp LC(LA(N7))  &kp LC(LA(N8))  &kp LC(LA(N9))  &kp LC(LA(N0))  &kp LC(LA(MINUS))
- &kp LA(ESC)     &kp LA(GRAVE)             &kp LC(X)         &kp LC(C)             &kp LC(V)       &kp PSCRN            &macro_tmux_1                                                                    &trans          &trans          &kp N7          &kp N8          &kp N9          &trans             &trans
-      &trans     &kp LC(LA(H))         &kp LC(LA(J))     &kp LC(LA(K))         &kp LC(LA(L))          &trans                    &none  &bt BT_SEL 0  &bt BT_SEL 1                  &bt BT_SEL 3  &trans  &trans          &trans          &kp N4          &kp N5          &kp N6          &trans             &trans
-      &trans         &kp LC(Z)             &kp LC(Y)         &kp LC(A)         &kp LC(LA(C))   &kp LC(LA(P))                                         &bt BT_SEL 2                         &none                          &trans          &kp N1          &kp N2          &kp N3       &kp EQUAL             &trans
-      &trans  &kp LC(LA(LBKT))  &kp LS(LC(LA(LBKT)))  &kp LC(LA(RBKT))  &kp LS(LC(LA(RBKT)))                                   &trans        &trans        &trans                        &trans  &trans  &trans                          &trans          &kp N0          &kp N0          &trans             &trans
+  &kp LA(F4)    &kp LC(LA(N1))        &kp LC(LA(N2))    &kp LC(LA(N3))        &kp LC(LA(N4))  &kp LC(LA(N5))            &trans                                                                    &trans  &kp LC(LA(N6))  &kp LC(LA(N7))  &kp LC(LA(N8))  &kp LC(LA(N9))  &kp LC(LA(N0))  &kp LC(LA(MINUS))
+ &kp LA(ESC)     &kp LA(GRAVE)             &kp LC(X)         &kp LC(C)             &kp LC(V)       &kp PSCRN             &none                                                                    &trans          &trans          &kp N7          &kp N8          &kp N9          &trans             &trans
+      &trans     &kp LC(LA(H))         &kp LC(LA(J))     &kp LC(LA(K))         &kp LC(LA(L))          &trans             &none  &bt BT_SEL 0  &bt BT_SEL 1                  &bt BT_SEL 3  &trans  &trans          &trans          &kp N4          &kp N5          &kp N6          &trans             &trans
+      &trans         &kp LC(Z)             &kp LC(Y)         &kp LC(A)         &kp LC(LA(C))   &kp LC(LA(P))                                  &bt BT_SEL 2                         &none                          &trans          &kp N1          &kp N2          &kp N3       &kp EQUAL             &trans
+      &trans  &kp LC(LA(LBKT))  &kp LS(LC(LA(LBKT)))  &kp LC(LA(RBKT))  &kp LS(LC(LA(RBKT)))                            &trans        &trans        &trans                        &trans  &trans  &trans                          &trans          &kp N0          &kp N0          &trans             &trans
             >;
         };
 
