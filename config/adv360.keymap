@@ -68,11 +68,11 @@
 
         layer_Fn {
             bindings = <
-  &none   &none     &none     &none      &none   &none            &bootloader                                                   &none   &none  &kp F10  &kp F11  &kp F12   &none   &none
- &trans   &none     &none     &none      &none   &none                  &none                                                   &none   &none   &kp F7   &kp F8   &kp F9   &none   &none
- &trans  &kp UP  &kp DOWN  &kp LEFT  &kp RIGHT   &none                  &none   &to 4  &trans                  &trans  &trans   &none   &none   &kp F4   &kp F5   &kp F6   &none   &none
- &trans   &none     &none     &none      &none   &none                                  &none                   &none                   &none   &kp F1   &kp F2   &kp F3   &none   &none
- &trans   &none     &none     &none      &none                         &trans  &trans   &none                   &none   &none   &none            &none    &none    &none   &none   &none
+  &none   &none     &none     &none      &none   &none            &bootloader                                                  &kp LC(LA(LS(F6)))   &none  &kp F10  &kp F11  &kp F12   &none   &none
+ &trans   &none     &none     &none      &none   &none                  &none                                                  &kp LC(LA(LS(F5)))   &none   &kp F7   &kp F8   &kp F9   &none   &none
+ &trans  &kp UP  &kp DOWN  &kp LEFT  &kp RIGHT   &none                  &none   &to 4  &trans                  &trans  &trans  &kp LC(LA(LS(F4)))   &none   &kp F4   &kp F5   &kp F6   &none   &none
+ &trans   &none     &none     &none      &none   &none                                  &none                   &none                               &none   &kp F1   &kp F2   &kp F3   &none   &none
+ &trans   &none     &none     &none      &none                         &trans  &trans   &none                   &none   &none               &none            &none    &none    &none   &none   &none
             >;
         };
 
