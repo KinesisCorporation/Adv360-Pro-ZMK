@@ -65,9 +65,9 @@
             bindings = <
 &none  &kp N1     &kp N2    &kp N3     &kp N4     &kp N5          &mo 3      &mo 2     &kp N6     &kp N7    &kp N8       &kp N9     &kp N0  &none
 &caps_word   &kp Q      &kp W     &kp E      &kp R      &kp T    &kp RIGHT        &kp UP      &kp Y      &kp U     &kp I    &kp O        &kp P        &kp DEL
-&kp TAB   &kp A      &kp S     &kp D      &kp F      &kp G    &kp LEFT         &kp LCTRL &kp LEFT_ALT    &kp RIGHT_ALT      &kp RCTRL    &kp DOWN   &kp H   &kp J  &kp K  &kp L  &kp SEMI  &kp SQT
-&kp LSHIFT   &kp Z      &kp X     &kp C      &kp V      &kp B    &none         &none  &hm LS(LC(LA(LGUI))) HOME  &none  &none &hm RS(RC(RIGHT_ALT)) PG_UP       &none      &none   &kp N   &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RSHIFT
-&mo 5  &kp LGUI &kp GRAVE  &kp BSLH  &kp EQUAL  &kp SPACE   &hmo 1 ESC         &hmo 4 END                   &hmo 4 PG_DN   &hmo 1 ENTER  &kp BSPC   &kp MINUS   &kp LBKT  &kp RBKT  &kp RGUI  &mo 5
+&kp TAB   &kp A      &kp S     &kp D      &kp F      &kp G    &kp LEFT         &hm LCTRL TAB &hmc LEFT_ALT 0    &hm RIGHT_ALT DEL      &hm RCTRL SQT    &kp DOWN   &kp H   &kp J  &kp K  &kp L  &kp SEMI  &kp SQT
+&kp LSHIFT   &kp Z      &kp X     &kp C      &kp V      &kp B    &none         &none  &hmo 1 HOME  &none  &none &hmo 1 PG_UP       &none      &none   &kp N   &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RSHIFT
+&mo 5  &kp LGUI &kp GRAVE  &kp BSLH  &kp EQUAL  &kp SPACE   &hm LSHIFT ESC         &hm LS(LC(LA(LGUI)))  END                   &hm RS(RC(RIGHT_ALT)) PG_DN   &hm RSHIFT ENTER  &kp BSPC   &kp MINUS   &kp LBKT  &kp RBKT  &kp RGUI  &mo 5
             >;
         };
 
