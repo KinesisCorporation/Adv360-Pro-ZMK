@@ -4,6 +4,8 @@ Here's all notable changes and commits to both the configuration repo and the ba
 Many thanks to all those who have submitted issues and pull requests to make this firmware better!
 ## Config repo
 
+11/2/2023 - Update the documentation to note the new configuration options, other miscellaneous improvements based on feedback [#260](https://github.com/KinesisCorporation/Adv360-Pro-ZMK/pull/260) 
+
 10/30/2023 - Update the [settings_reset.uf2](/settings-reset.uf2) file to improve reset behaviour with the new update
 
 10/20/2023 - Disable BLE privacy due to conflict, disable BLE battery reporting, change to point to new ZMK branch with minor update. Please note that due to the minor update the boards will need the [settings_reset.uf2](/settings-reset.uf2) file flashing onto each side prior to updating [#248](https://github.com/KinesisCorporation/Adv360-Pro-ZMK/pull/248) (adv360-z3.2-2)
