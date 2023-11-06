@@ -39,11 +39,11 @@
 
         default_layer {
             bindings = <
-  &kp GRAVE        &kp N1       &kp N2      &kp N3       &kp N4  &kp N5     &tog 1                                                                &mo 3  &kp N6       &kp N7      &kp N8       &kp N9            &kp N0  &kp MINUS
- &kp SYSREQ         &kp Q        &kp W       &kp E        &kp R   &kp T     &tog 4                                                                &none   &kp Y        &kp U       &kp I        &kp O             &kp P   &kp BSLH
-    &kp ESC  &hm LSHIFT A  &hm LCTRL S  &hm LALT D  &hm LMETA F   &kp G      &none   &kp DEL  &kp LALT                   &kp LGUI  &kp K_APP  &kp EQUAL   &kp H  &hm RMETA J  &hm RALT K  &hm RCTRL L        &lt 2 SEMI  &lt 1 SQT
-      &none         &kp Z        &kp X       &kp C        &kp V   &kp B                       &kp HOME                  &kp PG_UP                         &kp N        &kp M   &kp COMMA   &kp PERIOD  &hm RSHIFT SLASH   &kp C_PP
-      &mo 1         &none        &none    &kp LEFT    &kp RIGHT          &kp SPACE  &kp BSPC   &kp END                  &kp PG_DN    &kp TAB  &kp ENTER             &kp DOWN      &kp UP     &kp LBKT          &kp RBKT      &mo 2
+ &kp GRAVE        &kp N1       &kp N2      &kp N3       &kp N4  &kp N5     &tog 1                                                                &mo 3  &kp N6       &kp N7      &kp N8       &kp N9            &kp N0  &kp MINUS
+ &kp PSCRN         &kp Q        &kp W       &kp E        &kp R   &kp T     &tog 4                                                                &none   &kp Y        &kp U       &kp I        &kp O             &kp P   &kp BSLH
+   &kp ESC  &hm LSHIFT A  &hm LCTRL S  &hm LALT D  &hm LMETA F   &kp G      &none   &kp DEL  &kp LALT                   &kp LGUI  &kp K_APP  &kp EQUAL   &kp H  &hm RMETA J  &hm RALT K  &hm RCTRL L        &lt 2 SEMI  &lt 1 SQT
+     &none         &kp Z        &kp X       &kp C        &kp V   &kp B                       &kp HOME                  &kp PG_UP                         &kp N        &kp M   &kp COMMA   &kp PERIOD  &hm RSHIFT SLASH   &kp C_PP
+     &mo 1         &none        &none    &kp LEFT    &kp RIGHT          &kp SPACE  &kp BSPC   &kp END                  &kp PG_DN    &kp TAB  &kp ENTER             &kp DOWN      &kp UP     &kp LBKT          &kp RBKT      &mo 2
             >;
         };
 
@@ -79,7 +79,7 @@
         gamer_mode {
             bindings = <
   &kp GRAVE  &kp N1  &kp N2    &kp N3     &kp N4     &kp N5     &trans                                                               &mo 3   &kp N6       &kp N7     &kp N8       &kp N9            &kp N0  &kp MINUS
- &kp SYSREQ   &kp Q   &kp W     &kp E      &kp R      &kp T     &trans                                                              &trans    &kp Y        &kp U      &kp I        &kp O             &kp P   &kp BSLH
+  &kp PSCRN   &kp Q   &kp W     &kp E      &kp R      &kp T     &trans                                                              &trans    &kp Y        &kp U      &kp I        &kp O             &kp P   &kp BSLH
     &kp ESC   &kp A   &kp S     &kp D      &kp F      &kp G     &trans  &kp DEL   &kp LALT                  &kp LGUI  &kp K_APP  &kp EQUAL    &kp H  &hm RMETA J      &kp K        &kp L          &kp SEMI  &lt 1 SQT
  &kp LSHIFT   &kp Z   &kp X     &kp C      &kp V      &kp B                       &kp HOME                 &kp PG_UP                          &kp N        &kp M  &kp COMMA   &kp PERIOD  &hm RSHIFT SLASH   &kp C_PP
   &kp LCTRL  &trans   &none  &kp LEFT  &kp RIGHT             &kp SPACE  &kp BSPC   &kp END                 &kp PG_DN    &kp TAB  &kp ENTER              &kp DOWN     &kp UP     &kp LBKT          &kp RBKT      &mo 2
