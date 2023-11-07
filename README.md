@@ -78,6 +78,10 @@ Since the update on 20/10/2023, BLE privacy is now disabled by default and due t
 
 Recent updates to MacOS have improved the behaviour for devices without BLE privacy and caused regressions with privacy enabled (e.g. being unable to enter the password on the filevault screen) so BLE privacy is not necessary any more.
 
+## N-Key Rollover
+
+By default this keyboard has NKRO enabled, however for compatibility reasons the higher ranges are not enabled. If you want to use F13-F24 or the INTL1-9 keys with NKRO enabled you can change `CONFIG_ZMK_HID_KEYBOARD_EXTENDED_REPORT=n` to `CONFIG_ZMK_HID_KEYBOARD_EXTENDED_REPORT=y` in [adv360_left_defconfig](/config/boards/arm/adv360/adv360_left_defconfig#L65)
+
 ## Battery reporting
 
 By default reporting the battery level over BLE is disabled as this can cause some computers to spontaneously wake up repeatedly. If you'd like to enable this functionality change `CONFIG_BT_BAS=n` to  `CONFIG_BT_BAS=y` in [adv360_left_defconfig](/config/boards/arm/adv360/adv360_left_defconfig#L58). Please note that a known bug in windows prevents the battery level from updating by default, it is only updated when the board is paired. A workaround is to set `CONFIG_BT_GATT_ENFORCE_SUBSCRIPTION=n` in [adv360_left_defconfig](/config/boards/arm/adv360/adv360_left_defconfig). This may cause unexpected results on other OSes
