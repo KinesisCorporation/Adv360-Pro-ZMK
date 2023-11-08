@@ -2,7 +2,7 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    - name: refil
+    - name: AlexGirardDev
       url-base: https://github.com/AlexGirardDev
   projects:
     - name: zmk
