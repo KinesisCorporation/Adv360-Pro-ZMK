@@ -4,6 +4,8 @@ Here's all notable changes and commits to both the configuration repo and the ba
 Many thanks to all those who have submitted issues and pull requests to make this firmware better!
 ## Config repo
 
+11/7/2023 - Add and document a new configuration option for extended NKRO ranges [#264](https://github.com/KinesisCorporation/Adv360-Pro-ZMK/pull/264) 
+
 11/2/2023 - Update the documentation to note the new configuration options, other miscellaneous improvements based on feedback [#260](https://github.com/KinesisCorporation/Adv360-Pro-ZMK/pull/260) 
 
 10/30/2023 - Update the [settings_reset.uf2](/settings-reset.uf2) file to improve reset behaviour with the new update
@@ -84,6 +86,14 @@ There have beeen 4 branches of ZMK used for the 360 Pro so far. Beta branches ar
 
 
 ### adv360-z3.2-2
+
+11/7/2023 - Put HID max NKRO usage on a config option for compatibility (`CONFIG_ZMK_HID_KEYBOARD_EXTENDED_REPORT`)
+
+11/1/2023 - Increase behaviour queue size to permit longer macro sequences to be run
+
+11/1/2023 - Change order of RGB initialisation to prevent situations where lighting could get stuck in battery reporting mode
+
+10/27/2023 - Change HID max NKRO usage to allow usage of F13-F24 and other rarely used keycodes with NKRO enabled 
 
 10/18/2023 - Disable saving certain RGB elements to flash memory to help with flash wear
 
