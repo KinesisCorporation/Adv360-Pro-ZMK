@@ -2,8 +2,8 @@
 
 # Get the date, first 4 chars of branch name and short commit hash
 date=$(date -u +"%Y%m%d")
-branch=${1:-(git rev-parse --abbrev-ref HEAD | cut -c1-4)}
-commit=${2:-(git rev-parse --short HEAD)}
+branch=${1:-$(git rev-parse --abbrev-ref HEAD | cut -c1-4)}
+commit=${2:-$(git rev-parse --short HEAD)}
 
 # Function to transform characters to ZMK key behaviours
 transform_char() {

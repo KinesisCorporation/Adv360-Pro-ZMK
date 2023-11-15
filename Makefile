@@ -13,7 +13,7 @@ endif
 .PHONY: all clean
 
 all:
-	$(shell bin/get_version.sh)
+	$(shell bin/get_version.sh >> /dev/null)
 	$(DOCKER) build --tag zmk --file Dockerfile .
 	$(DOCKER) run --rm -it --name zmk \
 		-v $(PWD)/firmware:/app/firmware$(SELINUX1) \
