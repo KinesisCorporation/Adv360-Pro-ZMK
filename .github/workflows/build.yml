@@ -11,6 +11,15 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
+      - name: Get version data
+        id: get_info
+        run: |
+          timestamp=$(date +"%Y%m%d%H%M")
+          commit=$(echo "${{ github.sha }}" | cut -c1-7)
+          file_prefix=$timestamp-$commit
+          branch_name=$(echo "${{ github.ref }}" | awk -F'/' '{print $3}' | cut -c1-4)
+          echo "file_prefix=$file_prefix" >> $GITHUB_OUTPUT
+          bin/get_version.sh $branch_name $commit
       - name: Cache west modules
         uses: actions/cache@v3
         env:
@@ -42,11 +51,11 @@ jobs:
       - name: Adv360 Right Kconfig file
         run: grep -vE '(^#|^$)' build/right/zephyr/.config
       - name: Rename zmk.uf2
-        run: cp build/left/zephyr/zmk.uf2 left.uf2 && cp build/right/zephyr/zmk.uf2 right.uf2
+        run: cp build/left/zephyr/zmk.uf2 ${{ steps.get_info.outputs.file_prefix }}-left.uf2 && cp build/right/zephyr/zmk.uf2 ${{ steps.get_info.outputs.file_prefix }}-right.uf2
       - name: Archive (Adv360)
         uses: actions/upload-artifact@v3
         with:
           name: firmware
           path: |
-            left.uf2
-            right.uf2
+            ${{ steps.get_info.outputs.file_prefix }}-left.uf2
+            ${{ steps.get_info.outputs.file_prefix }}-right.uf2
