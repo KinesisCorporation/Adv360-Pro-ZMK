@@ -1,5 +1,6 @@
 DOCKER := $(shell { command -v podman || command -v docker; })
-TIMESTAMP := $(shell date -u +"%Y%m%d%H%M%S")
+TIMESTAMP := $(shell date -u +"%Y%m%d%H%M")
+COMMIT := $(shell git rev-parse --short HEAD 2>/dev/null)
 detected_OS := $(shell uname)  # Classify UNIX OS
 ifeq ($(strip $(detected_OS)),Darwin) #We only care if it's OS X
 SELINUX1 :=
@@ -12,11 +13,13 @@ endif
 .PHONY: all clean
 
 all:
+	$(shell bin/get_version.sh >> /dev/null)
 	$(DOCKER) build --tag zmk --file Dockerfile .
 	$(DOCKER) run --rm -it --name zmk \
 		-v $(PWD)/firmware:/app/firmware$(SELINUX1) \
 		-v $(PWD)/config:/app/config:ro$(SELINUX2) \
 		-e TIMESTAMP=$(TIMESTAMP) \
+		-e COMMIT=$(COMMIT) \
 		zmk
 
 clean:
