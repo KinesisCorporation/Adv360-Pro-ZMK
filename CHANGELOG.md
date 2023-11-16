@@ -4,6 +4,8 @@ Here's all notable changes and commits to both the configuration repo and the ba
 Many thanks to all those who have submitted issues and pull requests to make this firmware better!
 ## Config repo
 
+11/16/2023 - Update changelog with base ZMK update [#268](https://github.com/KinesisCorporation/Adv360-Pro-ZMK/pull/268)
+
 11/15/2023 - Add and document the new automatic versioning system [#267](https://github.com/KinesisCorporation/Adv360-Pro-ZMK/pull/267) 
 
 11/7/2023 - Add and document a new configuration option for extended NKRO ranges [#264](https://github.com/KinesisCorporation/Adv360-Pro-ZMK/pull/264) 
@@ -88,6 +90,8 @@ There have beeen 4 branches of ZMK used for the 360 Pro so far. Beta branches ar
 
 
 ### adv360-z3.2-2
+
+11/16/2023 - Fix race condition in the bluetooth code causing issues with split connectivity
 
 11/7/2023 - Put HID max NKRO usage on a config option for compatibility (`CONFIG_ZMK_HID_KEYBOARD_EXTENDED_REPORT`)
 
