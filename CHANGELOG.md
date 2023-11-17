@@ -4,6 +4,8 @@ Here's all notable changes and commits to both the configuration repo and the ba
 Many thanks to all those who have submitted issues and pull requests to make this firmware better!
 ## Config repo
 
+11/17/2022 - Update keymap.json to reflect new versioning macro [#269](https://github.com/KinesisCorporation/Adv360-Pro-ZMK/pull/269)
+
 11/16/2023 - Update changelog with base ZMK update [#268](https://github.com/KinesisCorporation/Adv360-Pro-ZMK/pull/268)
 
 11/15/2023 - Add and document the new automatic versioning system [#267](https://github.com/KinesisCorporation/Adv360-Pro-ZMK/pull/267) 
