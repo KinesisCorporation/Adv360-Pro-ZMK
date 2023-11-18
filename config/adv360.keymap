@@ -33,6 +33,11 @@
           key-positions = <50 31>;
           bindings = <&kp ENTER>;
       };
+      leftm {
+          timeout-ms = <40>;
+          key-positions = <50 51>;
+          bindings = <&kp M>;
+      };
       rf1 {
           timeout-ms = <40>;
           key-positions = <23 22>;
@@ -57,6 +62,16 @@
           timeout-ms = <40>;
           key-positions = <24 25>;
           bindings = <&kp F5>;
+      };
+      rf6 {
+          timeout-ms = <40>;
+          key-positions = <25 44>;
+          bindings = <&kp F6>;
+      };
+      rf7 {
+          timeout-ms = <40>;
+          key-positions = <24 58>;
+          bindings = <&kp F7>;
       };
       lout {
           timeout-ms = <40>;
@@ -113,10 +128,20 @@
           key-positions = <55 57>;
           bindings = <&kp RETURN>;
       };
-      ctab {
-          timeout-ms = <30>;
+      cleft_click {
+          timeout-ms = <40>;
           key-positions = <49 50>;
-          bindings = <&kp TAB>;
+          bindings = <&kp KP_N0>;
+      };
+      cright_click {
+          timeout-ms = <40>;
+          key-positions = <48 49>;
+          bindings = <&kp KP_ENTER>;
+      };
+      cnumberlock {
+          timeout-ms = <30>;
+          key-positions = <48 49 50>;
+          bindings = <&kp KP_NUM>;
       };
       c_ctrlz {
           timeout-ms = <45>;
