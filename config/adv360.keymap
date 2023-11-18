@@ -346,7 +346,7 @@
             bindings = <
  &trans  &trans           &trans  &trans  &trans  &trans            &trans                                                           &trans    &trans        &trans     &trans  &trans  &trans  &trans
  &trans  &trans       &kp LA(F4)  &trans  &trans  &trans            &trans                                                           &trans    &trans        &trans     &trans  &trans  &trans  &trans
- &trans  &trans  &kp PRINTSCREEN   &kp A  &trans  &trans            &trans  &trans  &trans                  &trans  &trans  &kp PRINTSCREEN  &kp HOME  &kp UP_ARROW    &kp END  &trans  &trans  &trans
+ &trans  &trans  &kp PRINTSCREEN   &kp A  &trans  &trans            &trans  &trans  &trans                  &trans  &trans  &kp PRINTSCREEN  &kp COLON  &kp UP_ARROW    &kp END  &trans  &trans  &trans
  &trans  &trans           &kp HOME  &kp UP  &kp HOME  &kp ENTER                            &trans                  &trans                           &kp LEFT_BRACKET      &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE   &trans  &trans
  &trans  &trans           &kp LEFT  &kp DOWN  &kp RIGHT                    &trans  &trans  &trans                  &trans  &trans           &trans               &kp LS(COMMA)  &kp LS(DOT)  &trans  &trans  &trans
             >;
