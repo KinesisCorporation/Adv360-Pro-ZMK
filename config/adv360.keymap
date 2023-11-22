@@ -91,8 +91,8 @@
             bindings = <
  &kp EQUAL     &kp N1    &kp N2    &kp N3     &kp N4  &kp N5                       &tog 1                                                                                  &mo 3  &kp N6    &kp N7     &kp N8    &kp N9    &kp N0  &kp MINUS
    &kp TAB      &kp Q     &kp W     &kp E      &kp R   &kp T              &kp C_VOLUME_UP                                                                               &kp HOME   &kp Y     &kp U      &kp I     &kp O     &kp P   &kp BSLH
-   &kp ESC      &kp A     &kp S     &kp D      &kp F   &kp G            &kp C_VOLUME_DOWN      &kp LEFT_ALT    &kp HOME   &none   &none       &kp LGUI  &kp RCTRL        &kp END   &kp H     &kp J      &kp K     &kp L  &kp SEMI    &kp SQT
- &kp LSHFT      &kp Z     &kp X     &kp C      &kp V   &kp B                        &none             &none       &mo 1   &none   &none      &kp PG_UP      &none          &none   &kp N     &kp M  &kp COMMA   &kp DOT  &kp FSLH  &kp RSHFT
+   &kp ESC      &kp A     &kp S     &kp D      &kp F   &kp G            &kp C_VOLUME_DOWN      &kp LEFT_ALT    &kp HOME                       &kp LGUI  &kp RCTRL        &kp END   &kp H     &kp J      &kp K     &kp L  &kp SEMI    &kp SQT
+ &kp LSHFT      &kp Z     &kp X     &kp C      &kp V   &kp B                                                      &mo 1                      &kp PG_UP                             &kp N     &kp M  &kp COMMA   &kp DOT  &kp FSLH  &kp RSHFT
      &mo 2  &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT                            &kp SPACE  &kp LEFT_CONTROL  &kp DELETE                  &kp RIGHT_ALT  &kp ENTER  &kp BACKSPACE          &kp DOWN     &kp UP  &kp LBKT  &kp RBKT      &mo 2
             >;
         };
@@ -101,8 +101,8 @@
             bindings = <
  &kp EQUAL     &kp N1    &kp N2    &kp N3     &kp N4  &kp N5              &trans                                                                         &mo 3  &kp N6  &kp KP_NUM  &kp KP_EQUAL  &kp KP_DIVIDE  &kp KP_MULTIPLY  &kp MINUS
    &kp TAB      &kp Q     &kp W     &kp E      &kp R   &kp T               &none                                                                         &none   &kp Y   &kp KP_N7     &kp KP_N8      &kp KP_N9     &kp KP_MINUS   &kp BSLH
-   &kp ESC      &kp A     &kp S     &kp D      &kp F   &kp G               &none  &kp LCTRL  &kp LALT   &none   &none     &kp KP_MINUS  &kp KP_PLUS      &none   &kp H   &kp KP_N4     &kp KP_N5      &kp KP_N6        &kp COLON    &kp SQT
- &kp LSHFT      &kp Z     &kp X     &kp C      &kp V   &kp B               &none      &none  &kp HOME   &none   &none  &kp KP_MULTIPLY        &none      &none   &kp N   &kp KP_N1     &kp KP_N2      &kp KP_N3     &kp KP_ENTER  &kp RSHFT
+   &kp ESC      &kp A     &kp S     &kp D      &kp F   &kp G               &none  &kp LCTRL  &kp LALT                     &kp KP_MINUS  &kp KP_PLUS      &none   &kp H   &kp KP_N4     &kp KP_N5      &kp KP_N6        &kp COLON    &kp SQT
+ &kp LSHFT      &kp Z     &kp X     &kp C      &kp V   &kp B                                 &kp HOME                  &kp KP_MULTIPLY                           &kp N   &kp KP_N1     &kp KP_N2      &kp KP_N3     &kp KP_ENTER  &kp RSHFT
      &mo 2  &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT                    &kp BSPC    &kp DEL   &kp END                    &kp BACKSPACE    &kp ENTER  &kp KP_N0              &kp UP      &kp DOWN     &kp KP_DOT         &kp RBKT      &mo 2
             >;
         };
@@ -111,8 +111,8 @@
             bindings = <
  &kp F1           &kp F2            &kp F3                &kp F4                 &kp F5          &kp F6            &tog 1                                                   &mo 3    &kp F7    &kp F8  &kp F9    &kp F10  &kp F11  &kp F12
  &trans  &kp EXCLAMATION       &kp AT_SIGN        &kp LEFT_BRACE        &kp RIGHT_BRACE          &trans             &none                                                   &none    &trans    &trans  &trans     &trans   &trans   &trans
- &trans    &kp AMPERSAND        &kp DOLLAR  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDERSCORE             &none  &trans  &trans   &none   &none  &trans  &trans   &none  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT   &trans   &trans
- &trans         &kp HASH         &kp CARET      &kp LEFT_BRACKET      &kp RIGHT_BRACKET          &trans             &none   &none  &trans   &none   &none  &trans   &none   &none    &trans    &trans  &trans     &trans   &trans   &trans
+ &trans    &kp AMPERSAND        &kp DOLLAR  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDERSCORE             &none  &trans  &trans                  &trans  &trans   &none  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT   &trans   &trans
+ &trans         &kp HASH         &kp CARET      &kp LEFT_BRACKET      &kp RIGHT_BRACKET          &trans                            &trans                  &trans                    &trans    &trans  &trans     &trans   &trans   &trans
  &trans           &trans  &kp C_PLAY_PAUSE            &kp C_PREV             &kp C_NEXT                            &trans  &trans  &trans                  &trans  &trans  &trans              &trans  &trans     &trans   &trans   &trans
             >;
         };
@@ -121,8 +121,8 @@
             bindings = <
   &none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                             &none                                                                              &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4   &none
   &none         &none         &none         &none         &none         &none                       &bootloader                                                                         &bootloader         &none         &none         &none         &none         &none   &none
-  &none         &none         &none         &none         &none         &none            &rgb_ug RGB_MEFS_CMD 5  &bt BT_CLR   &none   &none   &none  &bt BT_CLR  &bt BT_CLR  &rgb_ug RGB_MEFS_CMD 5         &none         &none         &none         &none         &none   &none
-  &none         &none         &none         &none         &none         &none                             &none       &none   &none   &none   &none       &none       &none                   &none         &none         &none         &none         &none         &none   &none
+  &none         &none         &none         &none         &none         &none            &rgb_ug RGB_MEFS_CMD 5  &bt BT_CLR   &none                  &bt BT_CLR  &bt BT_CLR  &rgb_ug RGB_MEFS_CMD 5         &none         &none         &none         &none         &none   &none
+  &none         &none         &none         &none         &none         &none                                                 &none                       &none                                             &none         &none         &none         &none         &none   &none
   &none         &none         &none    &bl BL_INC    &bl BL_DEC                                 &rgb_ug RGB_TOG  &bl BL_TOG   &none                       &none  &bl BL_TOG         &rgb_ug RGB_TOG                  &bl BL_INC    &bl BL_DEC         &none         &none   &none
             >;
         };
@@ -131,8 +131,8 @@
             bindings = <
  &trans           &kp B  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4                &none                                                            &trans  &trans  &trans  &trans  &trans  &trans  &trans
  &trans         &kp TAB         &kp Q         &kp W         &kp E         &kp R                &kp T                                                            &trans  &trans  &trans  &trans  &trans  &trans  &trans
- &trans  &kp LEFT_SHIFT         &kp A         &kp S         &kp D         &kp F                &kp G            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
- &trans          &trans         &kp Z         &kp X         &kp C         &kp V               &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &kp LEFT_SHIFT         &kp A         &kp S         &kp D         &kp F                &kp G            &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans          &trans         &kp Z         &kp X         &kp C         &kp V                                         &trans                  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
  &trans          &trans        &trans        &trans        &trans                          &kp SPACE  &kp LEFT_CONTROL  &trans                  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
@@ -141,8 +141,8 @@
             bindings = <
  &trans  &trans  &trans  &trans  &trans  &trans            &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans  &trans
  &trans  &trans  &trans  &trans  &trans  &trans            &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans  &trans
- &trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
- &trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans                            &trans                  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans                  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
