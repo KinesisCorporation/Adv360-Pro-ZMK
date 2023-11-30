@@ -25,7 +25,7 @@
       compatible = "zmk,combos";
       lenter {
           timeout-ms = <40>;
-          key-positions = <32 51>;
+          key-positions = <32 33>;
           bindings = <&kp N>;
       };
       leftn {
@@ -90,7 +90,7 @@
       };
       lnumver {
           timeout-ms = <45>;
-          key-positions = <41 24 43>;
+          key-positions = <41 24 25>;
           bindings = <&tog 1>;
       };
       lctrlcmd {
@@ -316,7 +316,7 @@
             bindings = <
  &kp F1     &kp F2         &kp F3  &kp F4  &kp F5  &kp F6            &trans                                                           &kp F7            &kp F8             &kp F9               &kp F10                &kp F11          &kp F12  &kp F13
  &trans     &trans     &kp LA(F4)  &trans  &trans  &trans             &none                                                            &none            &trans             &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS        &kp COLON   &trans
- &trans     &trans         &trans  &trans  &trans  &trans             &none  &trans  &trans                  &trans  &trans            &none  &kp LEFT_BRACKET  &kp RIGHT_BRACKET       &kp EXCLAMATION           &kp QUESTION           &trans   &trans
+ &trans     &trans         &trans  &trans  &trans  &trans             &none  &trans  &trans                  &trans  &trans            &none  &kp LEFT_BRACKET  &kp LEFT_BRACKET       &kp RIGHT_BRACKET           &kp QUESTION           &trans   &trans
  &trans  &kp LC(Z)  &kp LC(LS(Z))  &trans  &trans  &trans                            &trans                  &trans                             &kp LEFT_BRACE    &kp RIGHT_BRACE         &kp LS(COMMA)            &kp LS(DOT)  &kp PRINTSCREEN   &trans
  &trans     &trans         &trans  &trans  &trans                    &trans  &trans  &trans                  &trans  &trans  &kp PRINTSCREEN                       &kp APOSTROPHE         &kp PAGE_DOWN               &kp HOME          &kp END   &trans
             >;
