@@ -41,7 +41,7 @@
       leftn {
           timeout-ms = <40>;
           key-positions = <50 31>;
-          bindings = <&kp ENTER>;
+          bindings = <&kp SPACE>;
       };
       leftm {
           timeout-ms = <40>;
