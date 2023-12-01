@@ -58,6 +58,11 @@
           key-positions = <23 24>;
           bindings = <&kp F2>;
       };
+      lf2 {
+          timeout-ms = <40>;
+          key-positions = <17 18>;
+          bindings = <&kp F2>;
+      };
       rf3 {
           timeout-ms = <40>;
           key-positions = <23 25>;
