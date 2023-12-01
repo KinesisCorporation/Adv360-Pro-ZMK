@@ -23,6 +23,16 @@
 / {
     combos {
       compatible = "zmk,combos";
+      linsert {
+          timeout-ms = <40>;
+          key-positions = <18 33>;
+          bindings = <&kp INSERT>;
+      };
+      Rinsert {
+          timeout-ms = <40>;
+          key-positions = <23 40>;
+          bindings = <&kp INSERT>;
+      };
       lenter {
           timeout-ms = <40>;
           key-positions = <32 33>;
