@@ -28,10 +28,15 @@
           key-positions = <18 33>;
           bindings = <&kp INSERT>;
       };
-      Rinsert {
+      Rminus {
           timeout-ms = <40>;
           key-positions = <23 40>;
-          bindings = <&kp INSERT>;
+          bindings = <&kp MINUS>;
+      };
+      Requil {
+          timeout-ms = <40>;
+          key-positions = <41 54>;
+          bindings = <&kp EQUIL>;
       };
       lenter {
           timeout-ms = <40>;
