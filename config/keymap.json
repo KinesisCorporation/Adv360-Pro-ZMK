@@ -23,9 +23,9 @@
        "&trans", "&trans", "&trans", "&trans", "&trans",                     "&trans", "&trans", "&trans",                     "&trans", "&trans", "&trans",                  "&kp UP",     "&kp DOWN",    "&kp KP_DOT",         "&kp DEL", "&trans"
     ], [
        "&kp F1", "&kp F2",   "&kp F3", "&kp F4",     "&kp F5", "&kp F6",                  "&tog 1",                                                                    "&mo 3", "&kp F7",     "&kp F8", "&kp F9",  "&kp F10", "&kp F11", "&kp F12",
-       "&trans", "&trans", "&kp K_PP", "&trans",     "&trans", "&trans",            "&kp K_VOL_UP",                                                             "&kp C_VOL_UP", "&trans",     "&trans", "&trans", "&kp K_PP",  "&trans",  "&trans",
-       "&trans", "&trans",   "&trans", "&trans",     "&trans", "&trans",            "&kp K_VOL_DN", "&trans", "&trans",                     "&trans", "&trans", "&kp K_VOL_DN", "&trans",     "&trans", "&trans",   "&trans",  "&trans",  "&trans",
-       "&trans", "&trans",   "&trans", "&trans", "&kp K_MUTE", "&trans",                                      "&trans",                     "&trans",                           "&trans", "&kp K_MUTE", "&trans",   "&trans",  "&trans",  "&trans",
+       "&trans", "&trans", "&kp C_PP", "&trans",     "&trans", "&trans",            "&kp C_VOL_UP",                                                             "&kp C_VOL_UP", "&trans",     "&trans", "&trans", "&kp C_PP",  "&trans",  "&trans",
+       "&trans", "&trans",   "&trans", "&trans",     "&trans", "&trans",            "&kp C_VOL_DN", "&trans", "&trans",                     "&trans", "&trans", "&kp C_VOL_DN", "&trans",     "&trans", "&trans",   "&trans",  "&trans",  "&trans",
+       "&trans", "&trans",   "&trans", "&trans", "&kp C_MUTE", "&trans",                                      "&trans",                     "&trans",                           "&trans", "&kp C_MUTE", "&trans",   "&trans",  "&trans",  "&trans",
        "&trans", "&trans",   "&trans", "&trans",     "&trans",                     "&kp BACKSPACE", "&trans", "&trans",                     "&trans", "&trans",    "&kp SPACE",               "&trans", "&trans",   "&trans",  "&trans",  "&trans"
     ], [
         "&none", "&bt BT_SEL 0", "&bt BT_SEL 1", "&bt BT_SEL 2", "&bt BT_SEL 3", "&bt BT_SEL 4",                 "&none",                                                                                     "&trans",  "&none",      "&none",      "&none",      "&none",  "&none",  "&none",
