@@ -51,7 +51,7 @@
  &kp EQUAL     &kp N1    &kp N2    &kp N3     &kp N4   &kp N5               &tog 4                                                                                   &mo 3   &kp N6   &kp N7     &kp N8    &kp N9    &kp N0            &kp MINUS
    &kp TAB      &kp Q     &kp W     &kp F      &kp P    &kp B               &tog 6                                                                                  &tog 1    &kp J    &kp L      &kp U     &kp Y  &kp SEMI             &kp BSLH
  &hm LEFT_GUI ESC    &hm LCTRL A   &hms LSHFT R   &lt 5 S    &lt 1 T  &hm LALT G                &sl 7  &kp LCTRL           &kp LALT   &none   &none        &kp RIGHT_ALT  &kp RCTRL    &tog 5  &hm RALT M  &lt 4 N    &lt 6 E   &hms RSHFT I   &hm RCTRL O  &hm RIGHT_GUI SINGLE_QUOTE
- &kp LSHFT      &kp Z     &kp X     &kp C      &kp D    &kp V                &none      &none  &mt LEFT_GUI HOME   &none   &none  &mt RIGHT_GUI PG_UP      &none     &none    &kp K    &kp H  &kp COMMA   &kp DOT  &kp FSLH            &kp RSHFT
+ &sk LSHFT      &kp Z     &kp X     &kp C      &hm TAB D    &kp V                &none      &none  &mt LEFT_GUI HOME   &none   &none  &mt RIGHT_GUI PG_UP      &none     &none    &kp K    &kp H  &kp COMMA   &kp DOT  &kp FSLH            &sk RSHFT
 &macro_excel_note  &kp GRAVE  &caps_word  &kp LEFT  &kp RIGHT                     &kp SPACE    &kp DEL            &kp END                            &kp PG_DN  &kp ENTER  &kp BSPC            &kp UP   &kp DOWN  &kp LBKT  &kp RBKT                &mo 2
             >;
         };
@@ -118,10 +118,10 @@
 
         layer_Winkey_Left {
             bindings = <
- &trans  &kp KP_MULTIPLY  &kp KP_SLASH     &kp KP_EQUAL  &kp KP_NUMLOCK  &trans               &trans                                                       &trans  &trans  &trans  &trans  &trans  &trans  &trans
- &trans     &kp KP_MINUS     &kp LG(N9)        &kp LG(N8)       &kp LG(N7)  &trans               &trans                                                       &trans  &trans  &trans  &trans  &trans  &trans  &trans
- &trans      &kp KP_PLUS     &kp LG(N6)        &kp LG(N5)       &kp LG(N4)  &trans               &trans  &trans  &trans  &trans  &trans  &trans     &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
- &trans     &kp KP_ENTER     &kp LG(N3)  &kp LG(N2)       &kp LG(N1)  &trans               &trans  &trans  &trans  &trans  &trans  &trans     &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &kp KP_MULTIPLY  &kp KP_SLASH     &kp KP_EQUAL  &kp KP_NUMLOCK  &kp LG(UP)               &trans                                                       &trans  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans     &kp KP_MINUS     &kp LG(N9)        &kp LG(N8)       &kp LG(N7)  &kp LG(LEFT)               &trans                                                       &trans  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans      &kp KP_PLUS     &kp LG(N6)        &kp LG(N5)       &kp LG(N4)  &kp LG(RIGHT)               &trans  &trans  &trans  &trans  &trans  &trans     &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans     &kp KP_ENTER     &kp LG(N3)  &kp LG(N2)       &kp LG(N1)  &kp LG(DOWN)              &trans  &trans  &trans  &trans  &trans  &trans     &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
  &trans           &trans    &kp KP_DOT           &trans          &trans                    &kp KP_N0  &trans  &trans                  &trans  &kp SPACE  &kp BSPC          &trans  &trans  &trans  &trans  &trans
             >;
         };
