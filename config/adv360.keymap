@@ -18,6 +18,10 @@
 #include <dt-bindings/zmk/rgb.h>
 #include <dt-bindings/zmk/backlight.h>
 
+&sl {
+    release-after-ms = <2000>;
+};
+
 / {
   behaviors {
     #include "macros.dtsi"
@@ -39,9 +43,6 @@
         flavor = "balanced";
         bindings = <&kp>, <&kp>;
         retro-tap;
-    };
-    &sl {
-        release-after-ms = <2000>;
     };
   };
 
