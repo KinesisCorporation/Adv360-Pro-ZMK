@@ -40,11 +40,10 @@
         bindings = <&kp>, <&kp>;
         retro-tap;
     };
+    &sl {
+        release-after-ms = <2000>;
+    };
   };
-
-&sl {
-    release-after-ms = <2000>;
-};
 
     keymap {
         compatible = "zmk,keymap";
