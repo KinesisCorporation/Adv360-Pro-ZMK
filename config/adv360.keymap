@@ -13,7 +13,6 @@
 #include <dt-bindings/zmk/backlight.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/rgb.h>
 
@@ -493,6 +492,18 @@
             tapping-term-ms = <200>;
             bindings = <&mo 3>, <&kp PRINTSCREEN>;
         };
+
+        pht5_semicolon: pht5_semicolon {
+            compatible = "zmk,behavior-hold-tap";
+            label = "PHT5_SEMICOLON";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <400>;
+            quick-tap-ms = <200>;
+            bindings = <&to>, <&kp>;
+
+            hold-trigger-key-positions = <43 42 41 55 56 57 25 24 54 40>;
+        };
     };
 
     keymap {
@@ -500,11 +511,11 @@
 
         default_layer {
             bindings = <
-&kp GRAVE      &kp N1              &kp N2     &kp NUMBER_3                &kp N4        &kp N5  &kp F1                                                                                                               &kp N6         &kp N7  &kp N8    &kp N9  &kp N0    &kp MINUS          &kp EQUAL
-&kp TAB        &kp Q               &kp W      &kp E                       &kp R         &kp T   &kp KP_ENTER                                                                                                         &kp F12        &kp Y   &kp U     &kp I   &kp O     &kp P              &kp BSLH
-&mt LCTRL ESC  &kp A               &kp S      &kp D                       &kp F         &kp G   &kp KP_N0                 &kp F4              &kp F7      &mt LS(LA(LEFT_CONTROL)) F9  &mt LC(LS(LEFT_COMMAND)) F10  &kp F11        &kp H   &kp J     &kp K   &kp L     &lt 2 SEMICOLON    &kp APOSTROPHE
-&kp LSHFT      &pht RSHFT Z        &kp X      &kp C                       &kp V         &kp B                                                 &kt F6      &mt LG(LA(LSHFT)) F8                                                      &kp B   &kp N     &kp M   &kp P     &pht2 LSHFT COMMA  &mt RIGHT_SHIFT SLASH
-&td0_ls        &lt 1 LEFT_BRACKET  &kp LCTRL  &mt LEFT_WIN RIGHT_CONTROL  &kp LEFT_ALT          &hm LA(LSHIFT) BACKSPACE  &mt LEFT_SHIFT DEL  &kp F5      &tog 1                       &pht4 5 ENTER                 &pht3 1 SPACE          &kp LEFT  &kp UP  &kp DOWN  &kp RIGHT          &kp SEMICOLON
+&kp GRAVE      &kp N1              &kp N2     &kp NUMBER_3                &kp N4        &kp N5  &kp F1                                                                                                                                     &kp N6         &kp N7  &kp N8    &kp N9  &kp N0    &kp MINUS          &kp EQUAL
+&kp TAB        &kp Q               &kp W      &kp E                       &kp R         &kp T   &kp KP_ENTER                                                                                                                               &kp F12        &kp Y   &kp U     &kp I   &kp O     &kp P              &kp BSLH
+&mt LCTRL ESC  &kp A               &kp S      &kp D                       &kp F         &kp G   &kp KP_N0                 &mt LS(LC(LEFT_WIN)) F4  &mt LS(LA(LCTRL)) F7         &mt LS(LA(LEFT_CONTROL)) F9  &mt LC(LS(LEFT_COMMAND)) F10  &kp F11        &kp H   &kp J     &kp K   &kp L     &lt 2 SEMICOLON    &kp APOSTROPHE
+&kp LSHFT      &pht RSHFT Z        &kp X      &kp C                       &kp V         &kp B                                                      &mt LS(LG(LEFT_ALT)) F6      &mt LG(LA(LSHFT)) F8                                                      &kp B   &kp N     &kp M   &kp P     &pht2 LSHFT COMMA  &mt RIGHT_SHIFT SLASH
+&td0_ls        &lt 1 LEFT_BRACKET  &kp LCTRL  &mt LEFT_WIN RIGHT_CONTROL  &kp LEFT_ALT          &hm LA(LSHIFT) BACKSPACE  &mt LEFT_SHIFT DEL       &kp F5                       &tog 1                       &pht4 5 ENTER                 &pht3 1 SPACE          &kp LEFT  &kp UP  &kp DOWN  &kp RIGHT          &kp SEMICOLON
             >;
         };
 
@@ -550,11 +561,11 @@
 
         layer_shortcut {
             bindings = <
-&trans  &trans  &trans           &trans    &trans     &trans     &trans                                      &trans           &trans            &trans             &trans          &trans           &trans  &trans
-&trans  &trans  &kp LA(F4)       &trans    &trans     &trans     &trans                                      &trans           &trans            &trans             &trans          &trans           &trans  &trans
-&trans  &trans  &kp PRINTSCREEN  &kp A     &trans     &trans     &trans  &trans  &trans      &trans  &trans  &kp PRINTSCREEN  &kp COLON         &kp UP_ARROW       &kp END         &trans           &trans  &trans
-&trans  &trans  &kp HOME         &kp UP    &kp HOME   &kp ENTER                  &trans      &trans                           &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE  &trans  &trans
-&trans  &trans  &kp LEFT         &kp DOWN  &kp RIGHT             &trans  &trans  &trans      &trans  &trans  &trans                             &kp LS(COMMA)      &kp LS(DOT)     &trans           &trans  &trans
+&trans  &trans  &trans      &trans        &trans     &trans     &trans                                      &trans           &trans            &trans             &trans          &trans           &trans  &trans
+&trans  &trans  &kp LA(F4)  &trans        &trans     &trans     &trans                                      &trans           &trans            &trans             &trans          &trans           &trans  &trans
+&trans  &trans  &kp HOME    &kp UP_ARROW  &kp END    &trans     &trans  &trans  &trans      &trans  &trans  &kp PRINTSCREEN  &kp COLON         &kp UP_ARROW       &kp END         &trans           &trans  &trans
+&trans  &trans  &kp LEFT    &kp DOWN      &kp RIGHT  &kp ENTER                  &trans      &trans                           &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE  &trans  &trans
+&trans  &trans  &kp LEFT    &kp DOWN      &kp RIGHT             &trans  &trans  &trans      &trans  &trans  &trans                             &kp LS(COMMA)      &kp LS(DOT)     &trans           &trans  &trans
             >;
         };
     };
