@@ -246,25 +246,13 @@
         c_dotdot {
             timeout-ms = <50>;
             key-positions = <57 56>;
-            bindings = <&kp DOT>;
+            bindings = <&kp COMMA>;
         };
 
         raltctrl {
             timeout-ms = <50>;
             key-positions = <41 42 43>;
             bindings = <&kp LG(LA(LEFT_CONTROL))>;
-        };
-
-        layer2_1 {
-            timeout-ms = <30>;
-            key-positions = <29 47>;
-            bindings = <&mo 2>;
-        };
-
-        layer2_2 {
-            timeout-ms = <30>;
-            key-positions = <44 58>;
-            bindings = <&mo 2>;
         };
 
         rctrl2 {
@@ -277,6 +265,17 @@
             timeout-ms = <30>;
             key-positions = <48 50>;
             bindings = <&kp BACKSPACE>;
+        };
+
+        Mod.r_ctrl.alt {
+            bindings = <&kp LA(LCTRL)>;
+            key-positions = <41 43>;
+        };
+
+        f.l_f5 {
+            bindings = <&kp F5>;
+            key-positions = <16 17>;
+            timeout-ms = <0>;
         };
     };
 
