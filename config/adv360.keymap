@@ -45,6 +45,15 @@
         bindings = <&kp>, <&kp>;
         //retro-tap;
     };
+     num_word: behavior_num_word {
+		compatible = "zmk,behavior-caps-word";
+		label = "NUM_WORD";
+		#binding-cells = <0>;
+        layers = <1>;                                // insert location of numbers layer here
+		continue-list = <BACKSPACE DELETE DOT COMMA>;  // adjust as desired
+        ignore-numbers;                                // numbers don't deactivate the layer
+	};
+
   };
 
     keymap {
@@ -54,8 +63,8 @@
         default_layer {
             bindings = <
  &kp EQUAL     &kp N1    &kp N2    &kp N3     &kp N4   &kp N5               &tog 4                                                                                   &mo 3   &kp N6   &kp N7     &kp N8    &kp N9    &kp N0            &kp MINUS
-   &kp TAB      &kp Q     &kp W     &kp F      &kp P    &kp B               &tog 6                                                                                  &tog 1    &kp J    &kp L      &kp U     &kp Y  &kp SEMI             &kp BSLH
- &hm LEFT_GUI ESC    &hm LCTRL A   &hm LSHFT R   &lt 5 S    &lt 1 T  &hm LALT G                &sl 7  &kp LCTRL           &kp LALT   &none   &none        &kp RIGHT_ALT  &kp RCTRL    &tog 5  &hm RALT M  &lt 4 N    &lt 6 E   &hm RSHFT I   &hm RCTRL O  &hm RIGHT_GUI SINGLE_QUOTE
+   &kp TAB      &kp Q     &kp W     &kp F      &kp P    &kp B               &tog 6                                                                                  &num_word    &kp J    &kp L      &kp U     &kp Y  &kp SEMI             &kp BSLH
+ &hm LEFT_GUI ESC    &hm LCTRL A   &hms LSHFT R   &lt 5 S    &lt 1 T  &hm LALT G                &sl 7  &kp LCTRL           &kp LALT   &none   &none        &kp RIGHT_ALT  &kp RCTRL    &tog 5  &hm RALT M  &lt 4 N    &lt 6 E   &hms RSHFT I   &hm RCTRL O  &hm RIGHT_GUI SINGLE_QUOTE
  &sk LSHFT      &kp Z     &kp X     &kp C      &hm TAB D    &kp V                &none      &none  &mt LEFT_GUI HOME   &none   &none  &mt RIGHT_GUI PG_UP      &none     &none    &kp K    &kp H  &kp COMMA   &kp DOT  &kp FSLH            &sk RSHFT
 &macro_excel_note  &kp GRAVE  &caps_word  &kp LEFT  &kp RIGHT                     &kp SPACE    &kp DEL            &kp END                            &kp PG_DN  &kp ENTER  &kp BSPC            &kp UP   &kp DOWN  &kp LBKT  &kp RBKT                &mo 2
             >;
