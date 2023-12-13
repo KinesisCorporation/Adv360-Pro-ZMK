@@ -34,25 +34,25 @@
         quick_tap_ms = <175>;
         flavor = "balanced";
         bindings = <&kp>, <&kp>;
-        //require-prior-idle-ms = <125>;
+        require-prior-idle-ms = <125>;
     };
      hms: homerow_mods_shift {
         compatible = "zmk,behavior-hold-tap";
         label = "HOMEROW_MODS_SHIFT";
         #binding-cells = <2>;
-        tapping-term-ms = <125>;
+        tapping-term-ms = <200>;
         flavor = "balanced";
         bindings = <&kp>, <&kp>;
         //retro-tap;
     };
-     num_word: behavior_num_word {
-		compatible = "zmk,behavior-caps-word";
+     //num_word: behavior_num_word {
+	//	compatible = "zmk,behavior-caps-word";
 	//	label = "NUM_WORD";
-		#binding-cells = <0>;
+	//	#binding-cells = <0>;
         //layers = <1>;                                // insert location of numbers layer here
-		continue-list = <BACKSPACE DELETE DOT COMMA>;  // adjust as desired
+	//	continue-list = <BACKSPACE DELETE DOT COMMA>;  // adjust as desired
         //ignore-numbers;                                // numbers don't deactivate the layer
-	};
+	//};
 
   };
 
