@@ -33,8 +33,8 @@
         tapping-term-ms = <200>;
         quick_tap_ms = <175>;
         flavor = "balanced";
+	require-prior-idle-ms = <125>;
         bindings = <&kp>, <&kp>;
-        //require-prior-idle-ms = <125>;
     };
      hms: homerow_mods_shift {
         compatible = "zmk,behavior-hold-tap";
