@@ -34,7 +34,7 @@
         quick_tap_ms = <175>;
         flavor = "balanced";
         bindings = <&kp>, <&kp>;
-        require-prior-idle-ms = <125>;
+        //require-prior-idle-ms = <125>;
     };
      hms: homerow_mods_shift {
         compatible = "zmk,behavior-hold-tap";
