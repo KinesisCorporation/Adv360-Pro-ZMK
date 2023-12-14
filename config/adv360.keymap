@@ -46,7 +46,7 @@
         //retro-tap;
     };
      //num_word: behavior_num_word {
-	//	compatible = "zmk,behavior-caps-word";
+	//	compatible = "zmk,behavior-caps-word"; // test
 	//	label = "NUM_WORD";
 	//	#binding-cells = <0>;
         //layers = <1>;                                // insert location of numbers layer here
