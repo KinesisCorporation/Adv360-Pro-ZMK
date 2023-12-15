@@ -4,6 +4,8 @@ Here's all notable changes and commits to both the configuration repo and the ba
 Many thanks to all those who have submitted issues and pull requests to make this firmware better!
 ## Config repo
 
+12/15/2023 - Add PR template [#293](https://github.com/KinesisCorporation/Adv360-Pro-ZMK/pull/293)
+
 12/6/2023 - Update versioning script to use bash from $PATH [#287](https://github.com/KinesisCorporation/Adv360-Pro-ZMK/pull/287)
 
 12/5/2023 - Update Bluetooth settings in light of user feedback [#289](https://github.com/KinesisCorporation/Adv360-Pro-ZMK/pull/289)
