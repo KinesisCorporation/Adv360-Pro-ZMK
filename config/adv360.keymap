@@ -38,11 +38,11 @@
 
         default_layer {
             bindings = <
-&kp EQUAL         &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &tog 2                                                                          &mo 4      &kp N6  &kp N7  &kp N8     &kp N9    &kp N0    &kp MINUS
-&kp TAB           &kp Q      &kp W     &kp E     &kp R      &kp T   &none                                                                           &none      &kp Y   &kp U   &kp I      &kp O     &kp P     &kp BSLH
-&kp LEFT_CONTROL  &kp A      &kp S     &kp D     &lt 1 F    &kp G   &none     &kp PG_DN         &kp LALT              &kp ESC            &kp PG_UP  &none      &kp H   &kp J   &kp K      &kp L     &kp SEMI  &kp SQT
-&kp LSHFT         &kp Z      &kp X     &kp C     &kp V      &kp B                               &kp LEFT_COMMAND      &kp RIGHT_COMMAND                        &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
-&mo 3             &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT          &kp BSPC  &kp LEFT_CONTROL  &kp ESC               &kp TAB            &kp ENTER  &kp SPACE          &kp UP  &kp DOWN   &kp LBKT  &kp RBKT  &mo 3
+&kp EQUAL                        &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &tog 2                                                                          &mo 4      &kp N6  &kp N7  &kp N8     &kp N9    &kp N0    &kp MINUS
+&kp TAB                          &kp Q      &kp W     &kp E     &kp R      &kp T   &none                                                                           &none      &kp Y   &kp U   &kp I      &kp O     &kp P     &kp BSLH
+&kp LEFT_CONTROL                 &kp A      &kp S     &kp D     &lt 1 F    &kp G   &none     &kp PG_DN         &kp LALT              &kp ESC            &kp PG_UP  &none      &kp H   &kp J   &kp K      &kp L     &kp SEMI  &kp SQT
+&mt LEFT_SHIFT LEFT_PARENTHESIS  &kp Z      &kp X     &kp C     &kp V      &kp B                               &kp LEFT_COMMAND      &kp RIGHT_COMMAND                        &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH  &mt RIGHT_SHIFT RIGHT_PARENTHESIS
+&mo 3                            &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT          &kp BSPC  &kp LEFT_CONTROL  &kp ESC               &kp TAB            &kp ENTER  &kp SPACE          &kp UP  &kp DOWN   &kp LBKT  &kp RBKT  &mo 3
             >;
         };
 
