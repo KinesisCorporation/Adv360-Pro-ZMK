@@ -30,13 +30,7 @@
                 , <&macro_release &kp LSHFT>
                 ;
         };
-    };
-
-
-
-
-    
-    };
+    };    
 
     keymap {
         compatible = "zmk,keymap";
