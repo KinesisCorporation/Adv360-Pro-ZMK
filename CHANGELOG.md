@@ -4,6 +4,8 @@ Here's all notable changes and commits to both the configuration repo and the ba
 Many thanks to all those who have submitted issues and pull requests to make this firmware better!
 ## Config repo
 
+1/16/2024 - Change the makefile to fis WSL2 compatibility [#335](https://github.com/KinesisCorporation/Adv360-Pro-ZMK/pull/335)
+
 1/14/2024 - Update base ZMK, change KConfig attributes to support, Enable experimental BLE features for improved stability [#326](https://github.com/KinesisCorporation/Adv360-Pro-ZMK/pull/326)
 
 12/27/2023 - Change how the characters are used in the versioning script for improved MacOS experience [#303](https://github.com/KinesisCorporation/Adv360-Pro-ZMK/pull/303)
