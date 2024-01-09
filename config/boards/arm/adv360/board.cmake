@@ -1,5 +1,5 @@
 #
-# Copyright (c) 2021 Polarity Works
+# Copyright (c) 2022 The ZMK Contributors
 # SPDX-License-Identifier: MIT
 #
 
