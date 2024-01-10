@@ -149,14 +149,13 @@
     keymap {
         compatible = "zmk,keymap";
 
-
         default_layer {
             bindings = <
- &kp EQUAL    &kp N1        &two       &kp N3      &four  &kp N5                           &none                                                                       &none      &six      &seven       &eight       &nine             &zero          &pe
-   &kp ESC     &kp Q       &kp D        &kp R      &kp W   &kp B                           &none                                                                       &none     &kp J       &kp F        &kp U       &kp P  &kp LEFT_BRACKET    &kp SLASH
-   &kp TAB     &kp A  &mt LALT S  &mt LCTRL H      &kp T   &kp G                           &none  &kp LGUI               &none                   &none      &none      &none     &kp Y       &kp N  &mt RCTRL E  &mt LALT O             &kp I          &sq
-      &pbs     &kp Z       &kp X        &kp M      &kp C   &kp V                                            &kp K_CONTEXT_MENU                   &none                           &kp K       &kp L     &kp SEMI    &kp APOS              &scc  &kp PAGE_UP
-     &mo 2  &kp HOME     &kp END     &kp LEFT  &kp RIGHT                    &mt BACKSPACE LSHIFT   &kp DEL     &kp PRINTSCREEN                  &tog 1  &kp ENTER  &kp SPACE                &kp UP     &kp DOWN        &clt              &pgt  &kp PAGE_UP
+ &kp EQUAL    &kp N1        &two       &kp N3      &four  &kp N5                           &none                                                                       &none      &six      &seven       &eight       &nine             &zero            &pe
+   &kp ESC     &kp Q       &kp D        &kp R      &kp W   &kp B                           &none                                                                       &none     &kp J       &kp F        &kp U       &kp P  &kp LEFT_BRACKET      &kp SLASH
+   &kp TAB     &kp A  &mt LALT S  &mt LCTRL H      &kp T   &kp G                           &none  &kp LGUI               &none                   &none      &none      &none     &kp Y       &kp N  &mt RCTRL E  &mt LALT O             &kp I            &sq
+      &pbs     &kp Z       &kp X        &kp M      &kp C   &kp V                                            &kp K_CONTEXT_MENU                   &none                           &kp K       &kp L     &kp SEMI    &kp APOS              &scc    &kp PAGE_UP
+     &mo 2  &kp HOME     &kp END     &kp LEFT  &kp RIGHT                    &mt LSHIFT BACKSPACE   &kp DEL     &kp PRINTSCREEN                  &tog 1  &kp ENTER  &kp SPACE                &kp UP     &kp DOWN        &clt              &pgt  &kp PAGE_DOWN
             >;
         };
 
