@@ -1,23 +1,6 @@
 [
 	{
 		"names": [
-			"two"
-		],
-		"description": "two",
-		"clarify": false,
-		"documentation": "",
-		"os": {
-			"windows": true,
-			"linux": true,
-			"android": true,
-			"macos": true,
-			"ios": true
-		},
-		"footnotes": {},
-		"type": "UD"
-	},
-	{
-		"names": [
 			"&two"
 		],
 		"description": "&two",
@@ -55,23 +38,6 @@
 			"&six"
 		],
 		"description": "&six",
-		"clarify": false,
-		"documentation": "",
-		"os": {
-			"windows": true,
-			"linux": true,
-			"android": true,
-			"macos": true,
-			"ios": true
-		},
-		"footnotes": {},
-		"type": "UD"
-	},
-	{
-		"names": [
-			"&four"
-		],
-		"description": "&four",
 		"clarify": false,
 		"documentation": "",
 		"os": {
