@@ -33,6 +33,7 @@
         bindings = <&kp>, <&kp>;
     };
   };
+};
 
     /* Custom Defined Behaviors */
 / {
@@ -141,9 +142,10 @@
         mods = <(MOD_LSFT|MOD_RSFT)>;
     };
   };
-
+};
 
     /* Macro to emit sequences */
+/ {
   macros {
     parens: both_parens {
         compatible = "zmk,behavior-macro";
