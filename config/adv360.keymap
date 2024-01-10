@@ -79,11 +79,11 @@
 
         default_layer {
             bindings = <
-&kp EQUAL     &kp N1               &kp N2     &kp N3    &kp N4     &kp N5  &tog 1                                                                &mo 3          &kp N6  &kp N7  &kp N8     &kp N9    &kp N0                     &kp MINUS
-&lt 2 TAB     &kp Q                &kp W      &kp E     &kp R      &kp T   &kp LS(LG(C))                                                         &kp F12        &kp Y   &kp U   &kp I      &kp O     &kp P                      &lt 2 BACKSLASH
-&hm LGUI ESC  &hm LS(LA(LCTRL)) A  &kp S      &kp D     &kp F      &kp G   &kp LS(LA(LC(LG(Z))))  &kp LGUI   &kp LALT      &kp LGUI   &kp RCTRL  &kp LG(ENTER)  &kp H   &kp J   &kp K      &kp L     &hm LS(LA(LC(LGUI))) APOS  &hm RGUI APOS
-&kp LSHFT     &hm LALT Z           &kp X      &kp C     &kp V      &kp B                                     &kp HOME      &kp PG_UP                            &kp N   &kp M   &kp COMMA  &kp DOT   &hm RALT BSLH              &kp RSHFT
-&mo 3         &kp GRAVE            &kp GLOBE  &kp LEFT  &kp RIGHT          &kp BSPC               &kp LCTRL  &kp END       &kp PG_DN  &kp ENTER  &kp SPACE              &kp UP  &kp DOWN   &kp LBKT  &kp RBKT                   &mo 3
+&kp EQUAL     &kp N1               &kp N2        &kp N3    &kp N4     &kp N5  &tog 1                                                                &mo 3          &kp N6  &kp N7  &kp N8     &kp N9    &kp N0                     &kp MINUS
+&lt 2 TAB     &kp Q                &kp W         &kp E     &kp R      &kp T   &kp LS(LG(C))                                                         &kp F12        &kp Y   &kp U   &kp I      &kp O     &kp P                      &lt 2 BACKSLASH
+&hm LGUI ESC  &hm LS(LA(LCTRL)) A  &kp S         &kp D     &kp F      &kp G   &kp LS(LA(LC(LG(Z))))  &kp LGUI   &kp LALT      &kp LGUI   &kp RCTRL  &kp LG(ENTER)  &kp H   &kp J   &kp K      &kp L     &hm LS(LA(LC(LGUI))) APOS  &hm RGUI APOS
+&kp LSHFT     &hm LALT Z           &kp X         &kp C     &kp V      &kp B                                     &kp HOME      &kp PG_UP                            &kp N   &kp M   &kp COMMA  &kp DOT   &hm RALT BSLH              &kp RSHFT
+&mo 3         &kp GRAVE            &kp CAPSLOCK  &kp LEFT  &kp RIGHT          &kp BSPC               &kp LCTRL  &kp END       &kp PG_DN  &kp ENTER  &kp SPACE              &kp UP  &kp DOWN   &kp LBKT  &kp RBKT                   &mo 3
             >;
         };
 
