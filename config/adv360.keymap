@@ -83,7 +83,7 @@
 &lt 2 TAB     &kp Q                &kp W              &kp E     &kp R      &kp T   &none                                                    &kp F12        &kp Y   &kp U   &kp I      &kp O     &kp P                      &lt 2 BACKSLASH
 &mt LCMD ESC  &hm LS(LA(LCTRL)) A  &kp S              &kp D     &kp F      &kp G   &none     &kp LGUI   &kp LALT      &kp LGUI   &kp RCTRL  &kp LG(ENTER)  &kp H   &kp J   &kp K      &kp L     &mt LS(LA(LC(LGUI))) SEMI  &mt LGUI APOS
 &kp LSHFT     &mt LALT Z           &kp X              &kp C     &kp V      &kp B                        &kp HOME      &kp PG_UP                            &kp N   &kp M   &kp COMMA  &kp DOT   &mt RALT FSLH              &kp RSHFT
-&mo 3         &kp GRAVE            &kp LA(LC(LG(N)))  &kp LEFT  &kp RIGHT          &kp BSPC  &kp LCTRL  &kp END       &kp PG_DN  &kp ENTER  &kp SPACE              &kp UP  &kp DOWN   &kp LBKT  &kp RBKT                   &mo 3
+&mo 3         &kp GLOBE            &kp LA(LC(LG(N)))  &kp LEFT  &kp RIGHT          &kp BSPC  &kp LCTRL  &kp END       &kp PG_DN  &kp ENTER  &kp SPACE              &kp UP  &kp DOWN   &kp LBKT  &kp RBKT                   &mo 3
             >;
         };
 
