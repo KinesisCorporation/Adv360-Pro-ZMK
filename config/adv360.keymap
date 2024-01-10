@@ -31,14 +31,48 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        left_bracket {
+            bindings = <&kp LEFT_BRACKET>;
+            key-positions = <41 42>;
+        };
+
+        right_bracket {
+            bindings = <&kp RIGHT_BRACKET>;
+            key-positions = <41 43>;
+        };
+
+        grave {
+            bindings = <&kp GRAVE>;
+            key-positions = <41 24 43>;
+        };
+
+        notification_center {
+            bindings = <&kp LA(LC(LG(N)))>;
+            key-positions = <0 5>;
+        };
+
+        do_not_disturb {
+            bindings = <&kp LA(LC(LG(D)))>;
+            key-positions = <13 0>;
+        };
+
+        misson_control {
+            bindings = <&kp LG(LC(LS(GRAVE)))>;
+            key-positions = <0 1>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
         default_layer {
             bindings = <
 &kp EQUAL     &kp N1               &kp N2             &kp N3    &kp N4     &kp N5  &tog 1                                                   &mo 3          &kp N6  &kp N7  &kp N8     &kp N9    &kp N0                     &kp MINUS
-&lt 1 TAB     &kp Q                &kp W              &kp E     &kp R      &kp T   &none                                                    &kp F12        &kp Y   &kp U   &kp I      &kp O     &kp P                      &lt 2 BACKSLASH
-&mt LCMD ESC  &mt LS(LA(LCTRL)) A  &kp S              &kp D     &kp F      &kp G   &none     &kp LGUI   &kp LALT      &kp LGUI   &kp RCTRL  &kp LG(ENTER)  &kp H   &kp J   &kp K      &kp L     &mt LA(LS(LC(LCMD))) SEMI  &lt 1 APOS
+&lt 2 TAB     &kp Q                &kp W              &kp E     &kp R      &kp T   &none                                                    &kp F12        &kp Y   &kp U   &kp I      &kp O     &kp P                      &lt 2 BACKSLASH
+&mt LCMD ESC  &hm LS(LA(LCTRL)) A  &kp S              &kp D     &kp F      &kp G   &none     &kp LGUI   &kp LALT      &kp LGUI   &kp RCTRL  &kp LG(ENTER)  &kp H   &kp J   &kp K      &kp L     &hm LS(LA(LC(LGUI))) SEMI  &mt LGUI APOS
 &kp LSHFT     &mt LALT Z           &kp X              &kp C     &kp V      &kp B                        &kp HOME      &kp PG_UP                            &kp N   &kp M   &kp COMMA  &kp DOT   &mt RALT FSLH              &kp RSHFT
 &mo 3         &kp GRAVE            &kp LA(LC(LG(N)))  &kp LEFT  &kp RIGHT          &kp BSPC  &kp LCTRL  &kp END       &kp PG_DN  &kp ENTER  &kp SPACE              &kp UP  &kp DOWN   &kp LBKT  &kp RBKT                   &mo 3
             >;
@@ -46,7 +80,7 @@
 
         layer_keypad {
             bindings = <
-&kp EQUAL  &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &trans                                                   &mo 3      &kp N6  &kp KP_NUM  &kp KP_EQUAL  &kp KP_DIVIDE  &kp KP_MULTIPLY  &kp MINUS
+&kp EQUAL  &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &trans                                                   &trans     &kp N6  &kp KP_NUM  &kp KP_EQUAL  &kp KP_DIVIDE  &kp KP_MULTIPLY  &kp MINUS
 &kp TAB    &kp Q      &kp W     &kp E     &kp R      &kp T   &none                                                    &none      &kp Y   &kp KP_N7   &kp KP_N8     &kp KP_N9      &kp KP_MINUS     &kp BSLH
 &kp ESC    &kp A      &kp S     &kp D     &kp F      &kp G   &tog 4    &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &tog 4     &kp H   &kp KP_N4   &kp KP_N5     &kp KP_N6      &kp KP_PLUS      &kp SQT
 &kp LSHFT  &kp Z      &kp X     &kp C     &kp V      &kp B                        &kp HOME      &kp PG_UP                        &kp N   &kp KP_N1   &kp KP_N2     &kp KP_N3      &kp KP_ENTER     &kp RSHFT
@@ -56,11 +90,11 @@
 
         layer_fn {
             bindings = <
-&kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6  &tog 1                                      &mo 3   &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
-&trans  &trans  &trans  &trans  &trans  &trans  &none                                       &none   &trans  &trans  &trans  &trans   &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &none   &trans  &trans      &trans  &trans  &none   &trans  &trans  &trans  &trans   &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans   &trans   &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans   &trans   &trans
+&kp F1  &kp F2      &kp F3        &kp F4        &kp F5            &kp F6  &tog 4                                      &tog 4  &kp F7  &kp F8          &kp F9        &kp F10    &kp F11  &kp F12
+&trans  &trans      &kp C_VOL_DN  &kp C_VOL_UP  &kp C_MUTE        &trans  &none                                       &none   &trans  &trans          &kp UP_ARROW  &trans     &trans   &trans
+&trans  &kp C_PREV  &kp C_NEXT    &kp C_STOP    &kp C_PLAY_PAUSE  &trans  &none   &trans  &trans      &trans  &trans  &none   &trans  &kp LEFT_ARROW  &kp DOWN      &kp RIGHT  &trans   &trans
+&trans  &trans      &trans        &trans        &trans            &trans                  &trans      &trans                  &trans  &trans          &trans        &trans     &trans   &trans
+&trans  &trans      &trans        &trans        &trans                    &trans  &trans  &trans      &trans  &trans  &trans          &trans          &trans        &trans     &trans   &trans
             >;
         };
 
