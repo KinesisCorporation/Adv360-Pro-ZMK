@@ -108,11 +108,11 @@
 
         layer_mod {
             bindings = <
-&none   &kp LS(LA(LC(LG(N1))))  &kp LS(LA(LC(LG(N2))))  &kp LS(LA(LC(LG(N3))))  &kp LS(LA(LC(LG(N4))))  &kp LS(LA(LC(LG(N5))))  &trans                                  &trans  &kp LS(LA(LC(LG(N6))))  &kp LS(LA(LC(LG(N7))))  &kp LS(LA(LC(LG(N8))))  &kp LS(LA(LC(LG(N9))))  &kp LS(LA(LC(LG(N0))))  &none
-&none   &kp LS(LA(LC(LG(F5))))  &kp LS(LA(LC(LG(F6))))  &none                   &none                   &kp LG(LS(N))           &none                                   &none   &kp LS(LA(LC(LG(F1))))  &kp LS(LA(LC(LG(F2))))  &kp LS(LA(LC(LG(F3))))  &kp LS(LA(LC(LG(F4))))  &kp LG(P)               &none
-&tog 0  &none                   &none                   &none                   &none                   &none                   &none   &none  &none      &none  &none  &none   &none                   &none                   &none                   &none                   &none                   &none
-&none   &kp LS(LA(LC(LG(F7))))  &kp LS(LA(LC(LG(F8))))  &none                   &none                   &none                                  &none      &none                 &none                   &none                   &none                   &none                   &none                   &none
-&none   &none                   &none                   &none                   &none                                           &none   &none  &none      &none  &none  &none                           &none                   &none                   &none                   &none                   &none
+&none   &kp LS(LA(LC(LG(N1))))  &kp LS(LA(LC(LG(N2))))  &kp LS(LA(LC(LG(N3))))  &kp LS(LA(LC(LG(N4))))  &kp LS(LA(LC(LG(N5))))  &trans                                   &trans  &kp LS(LA(LC(LG(N6))))  &kp LS(LA(LC(LG(N7))))  &kp LS(LA(LC(LG(N8))))  &kp LS(LA(LC(LG(N9))))  &kp LS(LA(LC(LG(N0))))  &none
+&none   &kp LS(LA(LC(LG(F5))))  &kp LS(LA(LC(LG(F6))))  &none                   &none                   &kp LG(LS(N))           &none                                    &none   &kp LS(LA(LC(LG(F1))))  &kp LS(LA(LC(LG(F2))))  &kp LS(LA(LC(LG(F3))))  &kp LS(LA(LC(LG(F4))))  &kp LG(P)               &none
+&tog 0  &none                   &none                   &none                   &none                   &none                   &none   &none  &none      &none  &none   &none   &none                   &none                   &none                   &none                   &none                   &none
+&none   &kp LS(LA(LC(LG(F7))))  &kp LS(LA(LC(LG(F8))))  &none                   &none                   &none                                  &none      &none                  &none                   &none                   &none                   &none                   &none                   &none
+&none   &none                   &none                   &none                   &none                                           &none   &none  &none      &none  &trans  &none                           &none                   &none                   &none                   &none                   &none
             >;
         };
 
