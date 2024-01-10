@@ -34,17 +34,217 @@
     };
   };
 
+    /* Custom Defined Behaviors */
+/ {
+  behaviors {
+    two: two_at {
+        compatible = "zmk,behavior-mod-morph";
+        label = "2 AT";
+        #binding-cells = <0>;
+        bindings = <&kp N2>, <&kp RA(N2)>;
+        mods = <(MOD_LSFT|MOD_RSFT)>;
+    };
+    
+    four: four_dollar {
+        compatible = "zmk,behavior-mod-morph";
+        label = "4 DOLLAR";
+        #binding-cells = <0>;
+        bindings = <&kp N4>, <&kp RA(N4)>;
+        mods = <(MOD_LSFT|MOD_RSFT)>;
+    };
+    
+    six: six_hat {
+        compatible = "zmk,behavior-mod-morph";
+        label = "6 HAT";
+        #binding-cells = <0>;
+        bindings = <&kp N6>, <&kp LS(RBRC)>;
+        mods = <(MOD_LSFT|MOD_RSFT)>;
+    };
+    
+    seven: seven_and {
+        compatible = "zmk,behavior-mod-morph";
+        label = "7 AMPAND";
+        #binding-cells = <0>;
+        bindings = <&kp N7>, <&kp LS(N6)>;
+        mods = <(MOD_LSFT|MOD_RSFT)>;
+    };
+    
+    eight: eight_times {
+        compatible = "zmk,behavior-mod-morph";
+        label = "8 STAR";
+        #binding-cells = <0>;
+        bindings = <&kp N8>, <&kp LS(BSLH)>;
+        mods = <(MOD_LSFT|MOD_RSFT)>;
+    };
+    
+    nine: nine_left_paren {
+        compatible = "zmk,behavior-mod-morph";
+        label = "9 LPAREN";
+        #binding-cells = <0>;
+        bindings = <&kp N9>, <&kp LS(N8)>;
+        mods = <(MOD_LSFT|MOD_RSFT)>;
+    };
+    
+    zero: zero_right_paren {
+        compatible = "zmk,behavior-mod-morph";
+        label = "0 RPAREN";
+        #binding-cells = <0>;
+        bindings = <&kp N0>, <&kp LS(N9)>;
+        mods = <(MOD_LSFT|MOD_RSFT)>;
+    };
+    
+    pe: plus_equal {
+        compatible = "zmk,behavior-mod-morph";
+        label = "PLUS EQUAL";
+        #binding-cells = <0>;
+        bindings = <&kp MINUS>, <&kp LS(N0)>;
+        mods = <(MOD_LSFT|MOD_RSFT)>;
+    };
+    
+    sq: slash_question {
+        compatible = "zmk,behavior-mod-morph";
+        label = "SLASH QUESTION";
+        #binding-cells = <0>;
+        bindings = <&kp LS(N7)>, <&kp LS(MINUS)>;
+        mods = <(MOD_LSFT|MOD_RSFT)>;
+    };
+
+    pbs: pipe_backslash {
+        compatible = "zmk,behavior-mod-morph";
+        label = "PIPE BACKSLASH";
+        #binding-cells = <0>;
+        bindings = <&kp RA(NUBS)>, <&kp RA(MINUS)>;
+        mods = <(MOD_LSFT|MOD_RSFT)>;
+    };
+
+    clt: comma_less_than {
+        compatible = "zmk,behavior-mod-morph";
+        label = "COLON LESS-THAN";
+        #binding-cells = <0>;
+        bindings = <&kp COMMA>, <&kp NUBS>;
+        mods = <(MOD_LSFT|MOD_RSFT)>;
+    };
+    
+    pgt: period_greater_than {
+        compatible = "zmk,behavior-mod-morph";
+        label = "DOT GREATER-THAN";
+        #binding-cells = <0>;
+        bindings = <&kp DOT>, <&kp LS(NUBS)>;
+        mods = <(MOD_LSFT|MOD_RSFT)>;
+    };
+    
+    scc: semi_colon_colon {
+        compatible = "zmk,behavior-mod-morph";
+        label = "SEMI-COLON COLON";
+        #binding-cells = <0>;
+        bindings = <&kp LS(COMMA)>, <&kp LS(DOT)>;
+        mods = <(MOD_LSFT|MOD_RSFT)>;
+    };
+  };
+
+
+    /* Macro to emit sequences */
+  macros {
+    parens: both_parens {
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        bindings
+            = <&macro_press &kp LSHFT>
+            , <&macro_tap &kp N8 &kp N9>
+            , <&macro_release &kp LSHFT>
+            , <&macro_tap &kp LEFT>
+            ;
+    };
+    
+    brackets: both_brackets {
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        bindings
+            = <&macro_press &kp RALT>
+            , <&macro_tap &kp N8 &kp N9>
+            , <&macro_release &kp RALT>
+            , <&macro_tap &kp LEFT>
+            ;
+    };
+    
+    braces: both_braces {
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        bindings
+            = <&macro_press &kp RALT>
+            , <&macro_tap &kp N7 &kp N0>
+            , <&macro_release &kp RALT>
+            , <&macro_tap &kp LEFT>
+            ;
+    };
+    
+    jjensen: jjensen_email {
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        bindings
+            = <&macro_tap &kp J &kp O &kp H &kp A &kp N>
+            , <&macro_tap &kp RA(N2)>
+            , <&macro_tap &kp J &kp J &kp E &kp N &kp E &kp N>
+            , <&macro_tap &kp DOT &kp S &kp E>
+            ;
+    };
+    
+    user: user_id {
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        bindings
+            = <&macro_tap &kp LS(A) &kp N4 &kp N2 &kp N6 &kp N8 &kp N1 &kp N9>
+            ;
+    };
+    
+    email: volvo_email {
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        bindings
+            = <&email_1>
+            , <&email_2>
+            ;
+    };
+
+    email_1: volvo_email_1 {
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        bindings
+            = <&macro_tap &kp J &kp O &kp H &kp A &kp N>
+            , <&macro_tap &kp DOT &kp J &kp E &kp N &kp S &kp E &kp N>
+            ;
+    };
+    email_2: volvo_emaill_2 {
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        bindings
+            = <&macro_tap &kp RA(N2)>
+            , <&macro_tap &kp C &kp O &kp N &kp S &kp U &kp L &kp T &kp A &kp N &kp T>
+            , <&macro_tap &kp DOT &kp V &kp O &kp L &kp V &kp O>
+            , <&macro_tap &kp DOT &kp C &kp O &kp M>
+            ;
+    };
+    
+    my_pass: my_pass {
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        bindings
+            = <&macro_tap &kp LS(A)>;
+    };
+  };
+};
+
     keymap {
         compatible = "zmk,keymap";
 
 
         default_layer {
             bindings = <
- &kp EQUAL    &kp N1    &kp &two       &kp N3  &kp &four  &kp N5                           &none                                                                       &none  &kp &six  &kp &seven   &kp &eight   &kp &nine         &kp &zero      &kp &pe
+ &kp EQUAL    &kp N1        &two       &kp N3      &four  &kp N5                           &none                                                                       &none      &six      &seven       &eight       &nine             &zero          &pe
    &kp ESC     &kp Q       &kp D        &kp R      &kp W   &kp B                           &none                                                                       &none     &kp J       &kp F        &kp U       &kp P  &kp LEFT_BRACKET    &kp SLASH
-   &kp TAB     &kp A  &mt LALT S  &mt LCTRL H      &kp T   &kp G                           &none  &kp LGUI               &none                   &none      &none      &none     &kp Y       &kp N  &mt RCTRL E  &mt LALT O             &kp I      &kp &sq
-  &kp &pbs     &kp Z       &kp X        &kp M      &kp C   &kp V                                            &kp K_CONTEXT_MENU                   &none                           &kp K       &kp L     &kp SEMI    &kp APOS          &kp &scc  &kp PAGE_UP
-     &mo 2  &kp HOME     &kp END     &kp LEFT  &kp RIGHT                    &mt BACKSPACE LSHIFT   &kp DEL     &kp PRINTSCREEN                  &tog 1  &kp ENTER  &kp SPACE                &kp UP     &kp DOWN    &kp &clt          &kp &pgt  &kp PAGE_UP
+   &kp TAB     &kp A  &mt LALT S  &mt LCTRL H      &kp T   &kp G                           &none  &kp LGUI               &none                   &none      &none      &none     &kp Y       &kp N  &mt RCTRL E  &mt LALT O             &kp I          &sq
+      &pbs     &kp Z       &kp X        &kp M      &kp C   &kp V                                            &kp K_CONTEXT_MENU                   &none                           &kp K       &kp L     &kp SEMI    &kp APOS              &scc  &kp PAGE_UP
+     &mo 2  &kp HOME     &kp END     &kp LEFT  &kp RIGHT                    &mt BACKSPACE LSHIFT   &kp DEL     &kp PRINTSCREEN                  &tog 1  &kp ENTER  &kp SPACE                &kp UP     &kp DOWN        &clt              &pgt  &kp PAGE_UP
             >;
         };
 
@@ -61,12 +261,11 @@
         layer_mod {
             bindings = <
       &kp F1        &kp F2        &kp F3        &kp F4        &kp F5        &kp F6            &none                                                                           &none        &kp F7  &kp F8      &kp F9       &kp F10  &kp F11      &kp F12
-  &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4            &none                                                                           &none  &kp &jjensen   &none   &kp &user  &kp &my_pass    &none        &none
- &bootloader         &none         &none         &none         &none         &none            &none   &none   &none                       &none       &none  &rgb_ug RGB_MEFS_CMD 5         &none   &none  &kp &email         &none    &none  &bootloader
+  &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4            &none                                                                           &none      &jjensen   &none       &user      &my_pass    &none        &none
+ &bootloader         &none         &none         &none         &none         &none            &none   &none   &none                       &none       &none  &rgb_ug RGB_MEFS_CMD 5         &none   &none      &email         &none    &none  &bootloader
       &reset         &none         &none         &none         &none         &none                            &none                  &bl BL_INC                                             &none   &none       &none         &none    &none       &reset
       &trans         &none         &none         &none         &none                          &none   &none   &none                  &bl BL_DEC  &bl BL_TOG         &rgb_ug RGB_TOG                 &none       &none         &none    &none        &none
             >;
         };
-
     };
 };
