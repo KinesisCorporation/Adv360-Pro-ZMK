@@ -79,7 +79,7 @@
             bindings = <
 &kp EQUAL     &kp N1               &kp N2             &kp N3    &kp N4     &kp N5  &tog 1                                                   &mo 3          &kp N6  &kp N7  &kp N8     &kp N9    &kp N0                     &kp MINUS
 &lt 2 TAB     &kp Q                &kp W              &kp E     &kp R      &kp T   &none                                                    &kp F12        &kp Y   &kp U   &kp I      &kp O     &kp P                      &lt 2 BACKSLASH
-&mt LCMD ESC  &hm LS(LA(LCTRL)) A  &kp S              &kp D     &kp F      &kp G   &none     &kp LGUI   &kp LALT      &kp LGUI   &kp RCTRL  &kp LG(ENTER)  &kp H   &kp J   &kp K      &kp L     &hm LS(LA(LC(LGUI))) SEMI  &mt LGUI APOS
+&mt LCMD ESC  &mt LS(LA(LCTRL)) A  &kp S              &kp D     &kp F      &kp G   &none     &kp LGUI   &kp LALT      &kp LGUI   &kp RCTRL  &kp LG(ENTER)  &kp H   &kp J   &kp K      &kp L     &mt LS(LA(LC(LGUI))) SEMI  &mt LGUI APOS
 &kp LSHFT     &mt LALT Z           &kp X              &kp C     &kp V      &kp B                        &kp HOME      &kp PG_UP                            &kp N   &kp M   &kp COMMA  &kp DOT   &mt RALT FSLH              &kp RSHFT
 &mo 3         &kp GRAVE            &kp LA(LC(LG(N)))  &kp LEFT  &kp RIGHT          &kp BSPC  &kp LCTRL  &kp END       &kp PG_DN  &td        &kp SPACE              &kp UP  &kp DOWN   &kp LBKT  &kp RBKT                   &mo 3
             >;
@@ -107,11 +107,11 @@
 
         layer_mod {
             bindings = <
-&none   &kp LS(LA(LC(LG(N1))))  &kp LS(LA(LC(LG(N2))))  &kp LS(LA(LC(LG(N3))))  &kp LS(LA(LC(LG(N4))))  &kp LS(LA(LC(LG(N5))))  &trans                                    &trans  &kp LS(LA(LC(LG(N6))))  &kp LS(LA(LC(LG(N7))))  &kp LS(LA(LC(LG(N8))))  &kp LS(LA(LC(LG(N9))))  &kp LS(LA(LC(LG(N0))))  &none
-&none   &kp LS(LA(LC(LG(F5))))  &kp LS(LA(LC(LG(F6))))  &none                   &none                   &kp LG(LS(N))           &none                                     &none   &kp LS(LA(LC(LG(F1))))  &kp LS(LA(LC(LG(F2))))  &kp LS(LA(LC(LG(F3))))  &kp LS(LA(LC(LG(F4))))  &kp LG(P)               &none
-&tog 0  &none                   &none                   &none                   &none                   &none                   &none   &none   &none      &none  &none   &none   &none                   &none                   &none                   &none                   &none                   &none
-&none   &kp LS(LA(LC(LG(F7))))  &kp LS(LA(LC(LG(F8))))  &none                   &none                   &none                                   &none      &none                  &none                   &none                   &none                   &none                   &none                   &none
-&none   &none                   &none                   &none                   &none                                           &none   &tog 0  &none      &none  &tog 0  &none                           &none                   &none                   &none                   &none                   &none
+&none   &kp LS(LA(LC(LG(N1))))  &kp LS(LA(LC(LG(N2))))  &kp LS(LA(LC(LG(N3))))  &kp LS(LA(LC(LG(N4))))  &kp LS(LA(LC(LG(N5))))  &trans                                  &trans  &kp LS(LA(LC(LG(N6))))  &kp LS(LA(LC(LG(N7))))  &kp LS(LA(LC(LG(N8))))  &kp LS(LA(LC(LG(N9))))  &kp LS(LA(LC(LG(N0))))  &none
+&none   &kp LS(LA(LC(LG(F5))))  &kp LS(LA(LC(LG(F6))))  &none                   &none                   &kp LG(LS(N))           &none                                   &none   &kp LS(LA(LC(LG(F1))))  &kp LS(LA(LC(LG(F2))))  &kp LS(LA(LC(LG(F3))))  &kp LS(LA(LC(LG(F4))))  &kp LG(P)               &none
+&tog 0  &none                   &none                   &none                   &none                   &none                   &none   &none  &none      &none  &none  &none   &none                   &none                   &none                   &none                   &none                   &none
+&none   &kp LS(LA(LC(LG(F7))))  &kp LS(LA(LC(LG(F8))))  &none                   &none                   &none                                  &none      &none                 &none                   &none                   &none                   &none                   &none                   &none
+&none   &none                   &none                   &none                   &none                                           &none   &none  &none      &none  &none  &none                           &none                   &none                   &none                   &none                   &none
             >;
         };
 
