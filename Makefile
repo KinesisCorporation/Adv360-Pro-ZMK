@@ -11,6 +11,7 @@ all:
 		-e TIMESTAMP=$(TIMESTAMP) \
 		zmk
 
+
 clean:
 	rm -f firmware/*.uf2
 	$(DOCKER) image rm zmk docker.io/zmkfirmware/zmk-build-arm:stable
