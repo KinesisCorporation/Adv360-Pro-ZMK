@@ -73,7 +73,7 @@
             key-positions = <0 1>;
         };
 
-        app_windows {
+        appwindows {
             bindings = <&kp LC(LA(LS(LG(GRAVE))))>;
             key-positions = <0 2>;
         };
@@ -83,12 +83,12 @@
             key-positions = <0 42>;
         };
 
-        kinit_ipa {
+        kiipa {
             bindings = <&kiipa>;
-            key-positions = <0 43>;
+            key-positions = <0 56>;
         };
 
-        show_desktop {
+        desktop {
             bindings = <&kp F11>;
             key-positions = <0 12>;
         };
