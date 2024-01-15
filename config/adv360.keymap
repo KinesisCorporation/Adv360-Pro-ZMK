@@ -72,6 +72,42 @@
             bindings = <&kp LG(LC(LS(GRAVE)))>;
             key-positions = <0 1>;
         };
+
+        app_windows {
+            bindings = <&kp LC(LA(LS(LG(GRAVE))))>;
+            key-positions = <0 2>;
+        };
+
+        kinit {
+            bindings = <&kinit>;
+            key-positions = <0 42>;
+        };
+
+        kinit_ipa {
+            bindings = <&kinit_ipa>;
+            key-positions = <0 43>;
+        };
+
+        show_desktop {
+            bindings = <&kp F11>;
+            key-positions = <0 12>;
+        };
+    };
+
+    macros {
+        kinit: kinit {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp K &kp I &kp N &kp I &kp T &kp SPACE &kp D &kp W &kp I &kp L &kp D &kp E &kp AT &kp LS(R) &kp LS(E) &kp LS(D) &kp LS(H) &kp LS(A) &kp LS(T) &kp DOT &kp LS(C) &kp LS(O) &kp LS(M)>;
+            label = "KINIT";
+        };
+
+        kinit_ipa: kinit_ipa {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp K &kp I &kp N &kp I &kp T &kp SPACE &kp D &kp W &kp I &kp L &kp D &kp E &kp AT &kp LS(I) &kp LS(P) &kp LS(A) &kp DOT &kp LS(R) &kp LS(E) &kp LS(D) &kp LS(H) &kp LS(A) &kp LS(T) &kp DOT &kp LS(C) &kp LS(O) &kp LS(M)>;
+            label = "KINIT_IPA";
+        };
     };
 
     keymap {
