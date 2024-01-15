@@ -74,7 +74,7 @@
         };
 
         appwindows {
-            bindings = <&kp LC(LA(LS(LG(GRAVE))))>;
+            bindings = <&kp F13>;
             key-positions = <0 2>;
         };
 
@@ -85,12 +85,12 @@
 
         kiipa {
             bindings = <&kiipa>;
-            key-positions = <0 56>;
+            key-positions = <32 42>;
         };
 
         desktop {
             bindings = <&kp F11>;
-            key-positions = <0 12>;
+            key-positions = <12 32>;
         };
     };
 
@@ -136,10 +136,10 @@
         layer_fn {
             bindings = <
 &kp F1  &kp F2      &kp F3        &kp F4        &kp F5            &kp F6  &tog 4                                      &tog 4  &kp F7  &kp F8          &kp F9        &kp F10    &kp F11  &kp F12
-&trans  &trans      &kp C_VOL_DN  &kp C_VOL_UP  &kp C_MUTE        &trans  &none                                       &none   &trans  &trans          &kp UP_ARROW  &trans     &trans   &trans
-&trans  &kp C_PREV  &kp C_NEXT    &kp C_STOP    &kp C_PLAY_PAUSE  &trans  &none   &trans  &trans      &trans  &trans  &none   &trans  &kp LEFT_ARROW  &kp DOWN      &kp RIGHT  &trans   &trans
-&trans  &trans      &trans        &trans        &trans            &trans                  &trans      &trans                  &trans  &trans          &trans        &trans     &trans   &trans
-&trans  &trans      &trans        &trans        &trans                    &trans  &trans  &trans      &trans  &trans  &trans          &trans          &trans        &trans     &trans   &trans
+&trans  &trans      &kp C_VOL_DN  &kp C_VOL_UP  &kp C_MUTE        &trans  &none                                       &none   &trans  &trans          &kp UP_ARROW  &trans     &kp F13  &kp F14
+&trans  &kp C_PREV  &kp C_NEXT    &kp C_STOP    &kp C_PLAY_PAUSE  &trans  &none   &trans  &trans      &trans  &trans  &none   &trans  &kp LEFT_ARROW  &kp DOWN      &kp RIGHT  &kp F15  &kp F16
+&trans  &trans      &trans        &trans        &trans            &trans                  &trans      &trans                  &trans  &trans          &trans        &trans     &kp F17  &kp F18
+&trans  &trans      &trans        &trans        &trans                    &trans  &trans  &trans      &trans  &trans  &trans          &trans          &trans        &trans     &kp F19  &kp F20
             >;
         };
 
