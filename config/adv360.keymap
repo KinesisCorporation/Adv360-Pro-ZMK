@@ -84,7 +84,7 @@
         };
 
         kinit_ipa {
-            bindings = <&kinit_ipa>;
+            bindings = <&kiipa>;
             key-positions = <0 43>;
         };
 
@@ -102,11 +102,11 @@
             label = "KINIT";
         };
 
-        kinit_ipa: kinit_ipa {
+        kiipa: kiipa {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&none &kp K &kp I &kp N &kp I &kp T &kp SPACE &kp D &kp W &kp I &kp L &kp D &kp E &kp AT &kp LS(I) &kp LS(P) &kp LS(A) &kp DOT &kp LS(R) &kp LS(E) &kp LS(D) &kp LS(H) &kp LS(A) &kp LS(T) &kp DOT &kp LS(C) &kp LS(O) &kp LS(M)>;
-            label = "KINIT_IPA";
+            label = "KIIPA";
         };
     };
 
