@@ -90,11 +90,11 @@
 
         layer_Dofus {
             bindings = <
-  &trans  &trans  &trans  &trans  &trans  &trans                          &trans                                                                    &trans  &trans  &trans  &trans  &trans  &trans  &trans
- &kp TAB  &trans  &trans  &trans  &trans  &trans                          &trans                                                                    &trans  &trans  &trans  &trans  &trans  &trans  &trans
- &kp ESC  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5                          &kp N6           &kp LEFT_ALT     &trans                  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-  &trans  &trans  &trans  &trans  &trans  &trans                                                            &kp F1                  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-  &trans  &trans  &trans  &kp F5  &kp F6                    &macro_left_click_f6  &macro_right_click_f6  &kp LCTRL                  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+  &trans  &trans  &trans  &trans  &trans  &trans            &trans                                                           &trans  &trans  &trans  &trans  &trans  &trans  &trans
+ &kp TAB  &trans  &trans  &trans  &trans  &trans            &trans                                                           &trans  &trans  &trans  &trans  &trans  &trans  &trans
+ &kp ESC  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5            &kp N6  &kp LEFT_ALT     &trans                  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+  &trans  &trans  &trans  &trans  &trans  &trans                                     &kp F1                  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+  &trans  &trans  &trans  &kp F5  &kp F6                    &kp F5        &kp F6  &kp LCTRL                  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
 
