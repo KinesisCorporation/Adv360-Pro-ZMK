@@ -47,11 +47,11 @@
 
         layer_keypad {
             bindings = <
-  &none      &none    &kp N2    &kp N3     &kp N4  &kp N5               &none                                                                 &none  &kp N6  &kp KP_NUM  &kp KP_EQUAL  &kp KP_DIVIDE         &none   &none
-  &none      &kp Q     &kp W     &kp E      &kp R   &kp T               &none                                                                 &none   &kp Y   &kp KP_N7     &kp KP_N8      &kp KP_N9  &kp KP_MINUS   &none
-  &none      &kp A     &kp S     &kp D      &kp F   &kp G               &none  &kp LCTRL  &kp LALT                   &kp LGUI  &kp RCTRL      &none   &kp H   &kp KP_N4     &kp KP_N5      &kp KP_N6   &kp KP_PLUS   &none
-  &none      &kp Z     &kp X     &kp C      &kp V   &kp B                                 &kp HOME                  &kp PG_UP                         &kp N   &kp KP_N1     &kp KP_N2      &kp KP_N3  &kp KP_ENTER   &none
-  &none  &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT                    &kp BSPC    &kp DEL   &kp END                  &kp PG_DN  &kp ENTER  &kp KP_N0              &kp UP      &kp DOWN     &kp KP_DOT      &kp RBKT   &none
+  &none             &none          &trans         &trans        &trans        &trans               &none                                                                 &none         &trans          &trans                &trans                 &trans              &none   &none
+  &none      &kp NUMBER_1    &kp NUMBER_2   &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5               &none                                                                 &none   &kp NUMBER_7    &kp NUMBER_8          &kp NUMBER_9           &kp NUMBER_0          &kp EQUAL   &none
+  &none   &kp EXCLAMATION  &kp UNDERSCORE      &kp MINUS    &kp DOLLAR      &kp PLUS               &none  &kp LCTRL  &kp LALT                   &kp LGUI  &kp RCTRL      &none  &kp BACKSPACE  &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &kp RIGHT_BRACE   &none
+  &none  &kp SINGLE_QUOTE       &kp GRAVE  &kp AMPERSAND     &kp SLASH  &kp NUMBER_6                                 &kp HOME                  &kp PG_UP                                &kp N      &kp DELETE              &kp STAR       &kp LEFT_BRACKET  &kp RIGHT_BRACKET   &none
+  &none          &kp HASH     &kp PERCENT   &kp QUESTION         &none                          &kp BSPC    &kp DEL   &kp END                  &kp PG_DN  &kp ENTER  &kp KP_N0                          &none             &kp COMMA             &kp PERIOD       &kp CAPSLOCK   &none
             >;
         };
 
