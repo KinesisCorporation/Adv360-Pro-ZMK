@@ -50,18 +50,18 @@
   &none             &none          &trans         &trans        &trans        &trans               &none                                                                 &none         &trans          &trans                &trans                 &trans              &none   &none
   &none      &kp NUMBER_1    &kp NUMBER_2   &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5               &none                                                                 &none   &kp NUMBER_7    &kp NUMBER_8          &kp NUMBER_9           &kp NUMBER_0          &kp EQUAL   &none
   &none   &kp EXCLAMATION  &kp UNDERSCORE      &kp MINUS    &kp DOLLAR      &kp PLUS               &none  &kp LCTRL  &kp LALT                   &kp LGUI  &kp RCTRL      &none  &kp BACKSPACE  &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &kp RIGHT_BRACE   &none
-  &none  &kp SINGLE_QUOTE       &kp GRAVE  &kp AMPERSAND     &kp SLASH  &kp NUMBER_6                                 &kp HOME                  &kp PG_UP                                &kp N      &kp DELETE              &kp STAR       &kp LEFT_BRACKET  &kp RIGHT_BRACKET   &none
+  &none  &kp SINGLE_QUOTE       &kp GRAVE  &kp AMPERSAND     &kp SLASH  &kp NUMBER_6                                 &kp HOME                  &kp PG_UP                           &kp DELETE        &kp STAR      &kp LEFT_BRACKET      &kp RIGHT_BRACKET  &kp DOUBLE_QUOTES   &none
   &none          &kp HASH     &kp PERCENT   &kp QUESTION         &none                          &kp BSPC    &kp DEL   &kp END                  &kp PG_DN  &kp ENTER  &kp KP_N0                          &none             &kp COMMA             &kp PERIOD       &kp CAPSLOCK   &none
             >;
         };
 
         layer_fn {
             bindings = <
-  &none   &none  &kp F3  &kp F4  &kp F5  &kp F6            &tog 1                                                   &none  &kp F7  &kp F8  &kp F9  &kp F10   &none   &none
-  &none  &trans  &trans  &trans  &trans  &trans             &none                                                   &none  &trans  &trans  &trans   &trans  &trans   &none
-  &none  &trans  &trans  &trans  &trans  &trans             &none  &trans  &trans                  &trans  &trans   &none  &trans  &trans  &trans   &trans  &trans   &none
-  &none  &trans  &trans  &trans  &trans  &trans                            &trans                  &trans                  &trans  &trans  &trans   &trans  &trans   &none
-  &none  &trans  &trans  &trans  &trans                    &trans  &trans  &trans                  &trans  &trans  &trans          &trans  &trans   &trans  &trans   &none
+  &none   &none   &trans   &trans   &trans           &trans             &none                                                   &none          &trans          &trans        &trans           &trans   &none   &none
+  &none  &kp F1   &kp F2   &kp F3   &kp F4  &kp PRINTSCREEN             &none                                                   &none           &none         &kp END      &kp HOME            &none  &trans   &none
+  &none  &kp F5   &kp F6   &kp F7   &kp F8  &kp PAUSE_BREAK             &none  &trans  &trans                  &trans  &trans   &none  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans   &none
+  &none  &kp F9  &kp F10  &kp F11  &kp F12            &none                            &trans                  &trans                          &trans   &kp PAGE_DOWN   &kp PAGE_UP           &trans  &trans   &none
+  &none  &trans   &trans   &trans   &trans                             &trans  &trans  &trans                  &trans  &trans  &trans                           &none         &none           &trans  &trans   &none
             >;
         };
 
