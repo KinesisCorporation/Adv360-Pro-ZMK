@@ -64,13 +64,31 @@ Follow the programming instruction on page 8 of the [Quick Start Guide](https://
 
 > Note: There are also physical reset buttons on both keyboards which can be used to enter and exit the bootloader mode. Their location is described in section 2.7 on page 9 in the [User Manual](https://kinesis-ergo.com/wp-content/uploads/Advantage360-ZMK-KB360-PRO-Users-Manual-v3-10-23.pdf) and use is described in section 5.9 on page 14. 
 
+> Note: Some operating systems wont always treat the drive as ejected after the settings-reset file is flashed, this doesn't mean that the flashing process has failed.
+
 ### Upgrading from V2 to V3
 
-If you are upgrading from V2 to V3, and if the flashing didn't work as expected (i.e. if you are unable to pair the keyboard via Bluetooth), then consider [resetting](https://kinesis-ergo.com/support/kb360pro/#firmware-updates) both halves of the keyboard to its native state. Make sure to use the `settings-reset.uf2` file from 
-the V3 branch of this repository. After doing this, proceed with the flashing instructions above.
+If you encounter a git conflict when updating your repository to V3.0 please follow the instructions on how to resolve it [here](UPGRADE.md).
+
+Updating from V2.0 based firmwares to V3.0 based firmwares can be a rather complex process. There are reset files for every major firmware revision as well as documentation on the update process available [here](https://kinesis-ergo.com/support/kb360pro/#firmware-updates).
+
+## Versioning
+
+Starting on 11/15/2023 the Advantage 360 Pro will now automatically record the compilation date, branch and Git commit hash in a macro that can be accessed with Mod+V. This will type out the following string: YYYYMMDD-XXXX-YYYYYY, where XXXX is the first 4 characters of the Git branch and YYYYYY is the Git commit hash. In addition to this the builds compiled by GitHub actions are now timestamped and also record the commit hash in the filename. 
 
 ## Bluetooth LE Privacy
-By default this firmware ships with BT Privacy enabled (To read more about BT privacy see [this article](https://novelbits.io/how-to-protect-the-privacy-of-your-bluetooth-low-energy-device/)). This was done based off feedback from MacOS users as some Macs and all iOS devices use resolvable private addresses that they cycle between (the Apple documentation can be found [here](https://developer.apple.com/accessories/Accessory-Design-Guidelines.pdf#page=194)), and when the host cycled to a new address the Advantage 360 Pro would need re-pairing. It can cause issues with some operating systems and hardware setups. To disable BT Privacy change `CONFIG_BT_PRIVACY=y` to `CONFIG_BT_PRIVACY=n` in [adv360_left_defconfig](config/boards/arm/adv360/adv360_left_defconfig#L52). Disabling this might necessitate re-pairing to the host.
+
+Since the update on 20/10/2023, BLE privacy is now disabled by default and due to an update in upstream ZMK cannot be enabled again as it will cause issues for the split halves connecting to each other. 
+
+Recent updates to MacOS have improved the behaviour for devices without BLE privacy and caused regressions with privacy enabled (e.g. being unable to enter the password on the filevault screen) so BLE privacy is not necessary any more.
+
+## N-Key Rollover
+
+By default this keyboard has NKRO enabled, however for compatibility reasons the higher ranges are not enabled. If you want to use F13-F24 or the INTL1-9 keys with NKRO enabled you can change `CONFIG_ZMK_HID_KEYBOARD_EXTENDED_REPORT=n` to `CONFIG_ZMK_HID_KEYBOARD_EXTENDED_REPORT=y` in [adv360_left_defconfig](/config/boards/arm/adv360/adv360_left_defconfig#L65)
+
+## Battery reporting
+
+By default reporting the battery level over BLE is disabled as this can cause some computers to spontaneously wake up repeatedly. If you'd like to enable this functionality change `CONFIG_BT_BAS=n` to  `CONFIG_BT_BAS=y` in [adv360_left_defconfig](/config/boards/arm/adv360/adv360_left_defconfig#L58). Please note that a known bug in windows prevents the battery level from updating by default, it is only updated when the board is paired. A workaround is to set `CONFIG_BT_GATT_ENFORCE_SUBSCRIPTION=n` in [adv360_left_defconfig](/config/boards/arm/adv360/adv360_left_defconfig). This may cause unexpected results on other OSes
 
 ## Changelog
 
