@@ -4,7 +4,7 @@ Here's all notable changes and commits to both the configuration repo and the ba
 Many thanks to all those who have submitted issues and pull requests to make this firmware better!
 ## Config repo
 
-1/17/2023 - Handle makefile variables differently on MacOS to fix  issue introduced with WSL2 fix [#338](https://github.com/KinesisCorporation/Adv360-Pro-ZMK/pull/338)
+1/17/2023 - Handle makefile variables differently on MacOS to fix  issue introduced with WSL2 fix [#339](https://github.com/KinesisCorporation/Adv360-Pro-ZMK/pull/339)
 
 1/16/2024 - Change the makefile to fis WSL2 compatibility [#335](https://github.com/KinesisCorporation/Adv360-Pro-ZMK/pull/335)
 
