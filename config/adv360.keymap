@@ -40,11 +40,11 @@
 
         default_layer {
             bindings = <
-  &none   &none   &none      &none        &none   &none              &none                                                                                          &mo 3   &none     &none      &none          &none     &none   &none
-  &none   &kp Q   &kp W      &kp E        &kp R   &kp T              &none                                                                                          &none   &kp Y     &kp U      &kp I          &kp O     &kp P   &none
-  &none   &kp A   &kp S      &kp D        &kp F   &kp G              &none  &kp LEFT_SHIFT  &kp LEFT_CONTROL                  &kp RIGHT_CONTROL  &kp RIGHT_SHIFT    &none   &kp H     &kp J      &kp K          &kp L   &kp RET   &none
-  &none   &kp Z   &kp X      &kp C        &kp V   &kp B                                                &mo 2                       &kp QUESTION                             &kp N     &kp M  &kp COMMA        &kp DOT  &kp SEMI   &none
-  &none   &none  &kp AT  &kp GRAVE  &kp PERCENT                    &kp ESC       &kp SPACE      &kp LEFT_ALT                      &kp RIGHT_ALT            &mo 1  &kp TAB          &kp STAR   &kp PIPE  &kp BACKSLASH     &none   &none
+  &none   &none   &none         &none   &none   &none              &none                                                                                          &mo 3   &none   &none      &none          &none     &none   &none
+  &none   &kp Q   &kp W         &kp E   &kp R   &kp T              &none                                                                                          &none   &kp Y   &kp U      &kp I          &kp O     &kp P   &none
+  &none   &kp A   &kp S         &kp D   &kp F   &kp G              &none  &kp LEFT_SHIFT  &kp LEFT_CONTROL                  &kp RIGHT_CONTROL  &kp RIGHT_SHIFT    &none   &kp H   &kp J      &kp K          &kp L   &kp RET   &none
+  &none   &kp Z   &kp X         &kp C   &kp V   &kp B                                                &mo 2                      &kp RIGHT_ALT                             &kp N   &kp M  &kp COMMA        &kp DOT  &kp SEMI   &none
+  &none   &none  &kp AT  &kp QUESTION   &none                    &kp ESC       &kp SPACE      &kp LEFT_ALT                              &none            &mo 1  &kp TAB           &none   &kp PIPE  &kp BACKSLASH     &none   &none
             >;
         };
 
@@ -53,8 +53,8 @@
   &none             &none          &trans        &trans        &trans        &trans             &none                                                   &none         &trans          &trans                &trans                 &trans              &none   &none
   &none      &kp NUMBER_1    &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5             &none                                                   &none   &kp NUMBER_7    &kp NUMBER_8          &kp NUMBER_9           &kp NUMBER_0          &kp EQUAL   &none
   &none   &kp EXCLAMATION  &kp UNDERSCORE     &kp MINUS    &kp DOLLAR      &kp PLUS             &none  &trans  &trans                  &trans  &trans   &none  &kp BACKSPACE  &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &kp RIGHT_BRACE   &none
-  &none  &kp SINGLE_QUOTE        &kp HASH     &kp TILDE     &kp SLASH  &kp NUMBER_6                            &trans                  &trans                     &kp DELETE   &kp AMPERSAND      &kp LEFT_BRACKET      &kp RIGHT_BRACKET  &kp DOUBLE_QUOTES   &none
-  &none             &none           &none         &none     &kp CARET                          &trans  &trans  &trans                  &trans  &trans  &trans                          &none                 &none                  &none              &none   &none
+  &none  &kp SINGLE_QUOTE       &kp GRAVE     &kp TILDE     &kp SLASH  &kp NUMBER_6                            &trans                  &trans                     &kp DELETE   &kp AMPERSAND      &kp LEFT_BRACKET      &kp RIGHT_BRACKET  &kp DOUBLE_QUOTES   &none
+  &none             &none        &kp HASH   &kp PERCENT         &none                          &trans  &trans  &trans                  &trans  &trans  &trans                          &none              &kp STAR              &kp CARET              &none   &none
             >;
         };
 
