@@ -40,11 +40,11 @@
 
         default_layer {
             bindings = <
-  &none   &none   &none         &none           &none   &none              &none                                                                                      &mo 3   &none            &none      &none          &none     &none   &none
-  &none   &kp Q   &kp W         &kp E           &kp R   &kp T              &none                                                                                      &none   &kp Y            &kp U      &kp I          &kp O     &kp P   &none
-  &none   &kp A   &kp S         &kp D           &kp F   &kp G              &none  &kp LEFT_CONTROL  &kp LEFT_ALT                  &kp RIGHT_ALT  &kp RIGHT_CONTROL    &none   &kp H            &kp J      &kp K          &kp L   &kp RET   &none
-  &none   &kp Z   &kp X         &kp C           &kp V   &kp B                                              &mo 2                          &mo 2                               &kp N            &kp M  &kp COMMA        &kp DOT  &kp SEMI   &none
-  &none   &none  &kp AT  &kp QUESTION  &kp LEFT_SHIFT                    &kp ESC         &kp SPACE         &none                          &none              &mo 1  &kp TAB          &kp RIGHT_SHIFT   &kp PIPE  &kp BACKSLASH     &none   &none
+  &none   &none   &none         &none           &none   &none              &none                                                                                   &mo 3   &none            &none      &none          &none     &none   &none
+  &none   &kp Q   &kp W         &kp E           &kp R   &kp T              &none                                                                                   &none   &kp Y            &kp U      &kp I          &kp O     &kp P   &none
+  &none   &kp A   &kp S         &kp D           &kp F   &kp G              &none  &kp SPACE  &kp LEFT_CONTROL                  &kp RIGHT_ALT  &kp RIGHT_CONTROL    &none   &kp H            &kp J      &kp K          &kp L   &kp RET   &none
+  &none   &kp Z   &kp X         &kp C           &kp V   &kp B                                           &mo 2                          &mo 2                               &kp N            &kp M  &kp COMMA        &kp DOT  &kp SEMI   &none
+  &none   &none  &kp AT  &kp QUESTION  &kp LEFT_SHIFT                    &kp ESC      &mo 1      &kp LEFT_ALT                          &none              &mo 1  &kp TAB          &kp RIGHT_SHIFT   &kp PIPE  &kp BACKSLASH     &none   &none
             >;
         };
 
