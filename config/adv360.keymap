@@ -19,9 +19,7 @@
 #include <dt-bindings/zmk/backlight.h>
 #include <dt-bindings/zmk/keys.h>
 
-&mt {
-    tapping-term-ms = <400>;
-};
+
 
 / {
   behaviors {
@@ -38,6 +36,10 @@
         bindings = <&kp>, <&kp>;
     };
   };
+
+    &mt {
+        tapping-term-ms = <400>;
+    };
 
     keymap {
         compatible = "zmk,keymap";
