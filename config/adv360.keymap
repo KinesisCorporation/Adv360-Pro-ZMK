@@ -19,6 +19,10 @@
 #include <dt-bindings/zmk/backlight.h>
 #include <dt-bindings/zmk/keys.h>
 
+&mt {
+    tapping-term-ms = <400>;
+};
+
 / {
   behaviors {
     #include "macros.dtsi"
