@@ -32,13 +32,13 @@ macro_dprspw: macro_dprspw{
 compatible = "zmk,behavior-macro";
 label = "macro_dprspw";
 #binding-cells = <0>;
-bindings = <&kp PERIOD>, <&kp LS(K)>, <&kp LS(N)>, <&kp PERIOD>, <&kp LS(S)>, <&kp T>, <&kp U>, <&kp T>, <&kp T>, <&kp G>, <&kp A>, <&kp R>, <&kp T>, <&kp PERIOD>, <&kp N2>, <&kp N0>, <&kp N2>, <&kp N3>, <&kp EXCL>;
+bindings = <&kp MINUS>, <&kp LS(K)>, <&kp LS(N)>, <&kp PERIOD>, <&kp LS(S)>, <&kp T>, <&kp U>, <&kp T>, <&kp T>, <&kp G>, <&kp A>, <&kp R>, <&kp T>, <&kp PERIOD>, <&kp N2>, <&kp N0>, <&kp N2>, <&kp N4>, <&kp MINUS>;
 };
 macro_dprswin: macro_dprswin{
 compatible = "zmk,behavior-macro";
 label = "macro_dprswin";
 #binding-cells = <0>;
-bindings = <&kp B>, <&kp N8>, <&kp N9>, <&kp S>, <&kp D>, <&kp K>, <&kp TAB>, <&kp PERIOD>, <&kp LS(K)>, <&kp LS(N)>, <&kp PERIOD>, <&kp LS(S)>, <&kp T>, <&kp U>, <&kp T>, <&kp T>, <&kp G>, <&kp A>, <&kp R>, <&kp T>, <&kp PERIOD>, <&kp N2>, <&kp N0>, <&kp N2>, <&kp N3>, <&kp EXCL>;
+bindings = <&kp B>, <&kp N8>, <&kp N9>, <&kp S>, <&kp D>, <&kp K>, <&kp TAB>, <&kp MINUS>, <&kp LS(K)>, <&kp LS(N)>, <&kp PERIOD>, <&kp LS(S)>, <&kp T>, <&kp U>, <&kp T>, <&kp T>, <&kp G>, <&kp A>, <&kp R>, <&kp T>, <&kp PERIOD>, <&kp N2>, <&kp N0>, <&kp N2>, <&kp N4>, <&kp MINUS>;
 };
 macro_quotes: macro_quotes{
 compatible = "zmk,behavior-macro";
