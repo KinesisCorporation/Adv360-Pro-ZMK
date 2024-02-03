@@ -40,31 +40,31 @@
 
         default_layer {
             bindings = <
-  &none   &none   &none  &kp LEFT_SHIFT  &kp LEFT_ALT   &none                       &mo 3                                                                     &mo 3   &none  &kp RIGHT_ALT  &kp RIGHT_SHIFT          &none     &none   &none
-  &none   &kp Q   &kp W           &kp E         &kp R   &kp T                       &none                                                                     &none   &kp Y          &kp U            &kp I          &kp O     &kp P   &none
-  &none   &kp A   &kp S           &kp D         &kp F   &kp G                       &none     &kp SPACE   &none                   &none    &mo 1              &none   &kp H          &kp J            &kp K          &kp L   &kp RET   &none
-  &none   &kp Z   &kp X           &kp C         &kp V   &kp B                                             &none                   &none                               &kp N          &kp M        &kp COMMA        &kp DOT  &kp SEMI   &none
-  &none   &none  &kp AT    &kp QUESTION     &kp CARET                    &kp LEFT_CONTROL  &lt 2 ESCAPE   &none                   &none  &kp TAB  &kp RIGHT_CONTROL               &kp STAR         &kp PIPE  &kp BACKSLASH     &none   &none
+  &none      &none  &kp QUESTION  &kp LEFT_SHIFT  &kp SINGLE_QUOTE  &kp CAPSLOCK                       &none                                                                                &none  &kp CAPSLOCK  &kp DOUBLE_QUOTES  &kp RIGHT_SHIFT  &kp EQUAL          &none   &none
+  &none      &kp Q         &kp W           &kp E             &kp R         &kp T                       &none                                                                                &none         &kp Y              &kp U            &kp I      &kp O          &kp P   &none
+  &none      &kp A         &kp S           &kp D             &kp F         &kp G                       &none  &kp LEFT_ALT       &mo 3                              &mo 3  &kp RIGHT_ALT    &none         &kp H              &kp J            &kp K      &kp L        &kp RET   &none
+  &none      &kp Z         &kp X           &kp C             &kp V         &kp B                                                 &mo 2                              &mo 2                                 &kp N              &kp M        &kp COMMA    &kp DOT       &kp SEMI   &none
+  &none  &kp CARET      &kp AMPS        &kp HASH          &kp STAR                          &kp LEFT_CONTROL     &kp SPACE  &kp ESCAPE                  &kp RIGHT_CONTROL          &mo 1  &kp TAB                      &kp PERCENT         &kp PIPE  &kp GRAVE  &kp BACKSLASH   &none
             >;
         };
 
         layer_num_symbl {
             bindings = <
-  &none             &none          &trans        &trans        &trans         &none             &none                                                   &none          &none          &trans                &trans                 &trans              &none   &none
-  &none      &kp NUMBER_1    &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5             &none                                                   &none   &kp NUMBER_6    &kp NUMBER_7          &kp NUMBER_8           &kp NUMBER_9       &kp NUMBER_0   &none
-  &none   &kp EXCLAMATION  &kp UNDERSCORE     &kp MINUS    &kp DOLLAR      &kp PLUS             &none  &trans  &trans                  &trans  &trans   &none  &kp BACKSPACE  &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &kp RIGHT_BRACE   &none
-  &none  &kp SINGLE_QUOTE       &kp GRAVE     &kp TILDE     &kp SLASH   &kp PERCENT                            &trans                  &trans                     &kp DELETE       &kp EQUAL      &kp LEFT_BRACKET      &kp RIGHT_BRACKET  &kp DOUBLE_QUOTES   &none
-  &none             &none        &kp HASH        &trans        &trans                          &trans  &trans  &trans                  &trans  &trans  &trans                  &kp AMPERSAND                &trans                 &trans              &none   &none
+  &none           &none           &trans        &trans        &trans        &trans             &none                                                   &none        &trans          &trans                &trans                 &trans            &none   &none
+  &none    &kp NUMBER_1     &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5             &none                                                   &none  &kp NUMBER_6    &kp NUMBER_7          &kp NUMBER_8           &kp NUMBER_9     &kp NUMBER_0   &none
+  &none  &kp UNDERSCORE        &kp TILDE     &kp MINUS     &kp SLASH        &trans             &none  &trans  &trans                  &trans  &trans   &none        &trans  &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE   &none
+  &none          &trans  &kp EXCLAMATION    &kp DOLLAR      &kp PLUS        &trans                            &trans                  &trans                        &trans   &kp BACKSPACE      &kp LEFT_BRACKET      &kp RIGHT_BRACKET           &trans   &none
+  &none          &trans           &trans        &trans        &trans                          &trans  &trans  &trans                  &trans  &trans  &trans                       &kp DEL                &trans                 &trans           &trans   &none
             >;
         };
 
         layer_FN_NAV {
             bindings = <
-  &none   &none   &trans   &trans   &trans            &none             &none                                                   &none           &none          &trans        &trans           &trans   &none   &none
-  &none  &kp F1   &kp F2   &kp F3   &kp F4  &kp PRINTSCREEN             &none                                                   &none           &none         &kp END      &kp HOME            &none   &none   &none
-  &none  &kp F5   &kp F6   &kp F7   &kp F8  &kp PAUSE_BREAK             &none  &trans  &trans                  &trans  &trans   &none  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW   &none   &none
-  &none  &kp F9  &kp F10  &kp F11  &kp F12            &none                            &trans                  &trans                           &none   &kp PAGE_DOWN   &kp PAGE_UP            &none   &none   &none
-  &none   &none   &trans   &trans   &trans                             &trans  &trans  &trans                  &trans  &trans  &trans                          &trans        &trans           &trans   &none   &none
+  &none   &none   &trans   &trans   &trans           &trans             &none                                                   &none          &trans          &trans        &trans           &trans   &none   &none
+  &none  &kp F1   &kp F2   &kp F3   &kp F4  &kp PRINTSCREEN             &none                                                   &none          &trans         &kp END      &kp HOME           &trans  &trans   &none
+  &none  &kp F5   &kp F6   &kp F7   &kp F8  &kp PAUSE_BREAK             &none  &trans  &trans                  &trans  &trans   &none  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans   &none
+  &none  &kp F9  &kp F10  &kp F11  &kp F12           &trans                            &trans                  &trans                          &trans   &kp PAGE_DOWN   &kp PAGE_UP           &trans  &trans   &none
+  &none  &trans   &trans   &trans   &trans                             &trans  &trans  &trans                  &trans  &trans  &trans                          &trans        &trans           &trans  &trans   &none
             >;
         };
 
