@@ -40,11 +40,11 @@
 
         default_layer {
             bindings = <
- &kp EQUAL     &kp N1    &kp N2    &kp N3     &kp N4  &kp N5                             &mo 1                                                                                &mo 3  &kp N6  &kp N7     &kp N8    &kp N9    &kp N0  &kp MINUS
-   &kp TAB      &kp Q     &kp W     &kp E      &kp R   &kp T            &macro_alfred_clipboar                                                                          &kp PAGE_UP   &kp Y   &kp U      &kp I     &kp O     &kp P   &kp BSLH
-   &kp ESC      &kp A     &kp S     &kp D      &kp F   &kp G                             &mo 4   &kp LCTRL        &kp LALT                  &kp RIGHT_ALT  &kp RCTRL  &kp PAGE_DOWN   &kp H   &kp J      &kp K     &kp L  &kp SEMI    &kp SQT
- &kp LSHFT      &kp Z     &kp X     &kp C      &kp V   &kp B                                                &kp KP_NUMLOCK                        &kp ESC                             &kp N   &kp M  &kp COMMA   &kp DOT  &kp FSLH  &kp RSHFT
-     &mo 2  &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT                                  &kp BSPC  &kp DELETE    &kp LEFT_WIN                  &kp RIGHT_WIN  &kp ENTER      &kp SPACE          &kp UP   &kp DOWN  &kp LBKT  &kp RBKT      &mo 2
+ &kp EQUAL            &kp N1              &kp N2          &kp N3              &kp N4  &kp N5                             &mo 1                                                                                &mo 3  &kp N6               &kp N7           &kp N8               &kp N9                     &kp N0  &kp MINUS
+   &kp TAB             &kp Q               &kp W           &kp E               &kp R   &kp T            &macro_alfred_clipboar                                                                          &kp PAGE_UP   &kp Y                &kp U            &kp I                &kp O                      &kp P   &kp BSLH
+   &kp ESC  &mt LEFT_SHIFT A  &mt LEFT_CONTROL S  &mt LEFT_ALT D  &mt LEFT_COMMAND F   &kp G                             &mo 4   &kp LCTRL        &kp LALT                  &kp RIGHT_ALT  &kp RCTRL  &kp PAGE_DOWN   &kp H  &mt RIGHT_COMMAND J  &mt RIGHT_ALT K  &mt RIGHT_CONTROL L  &mt RIGHT_SHIFT SEMICOLON    &kp SQT
+ &kp LSHFT             &kp Z               &kp X           &kp C               &kp V   &kp B                                                &kp KP_NUMLOCK                        &kp ESC                             &kp N                &kp M        &kp COMMA              &kp DOT                   &kp FSLH  &kp RSHFT
+     &mo 2         &kp GRAVE            &kp CAPS        &kp LEFT           &kp RIGHT                                  &kp BSPC  &kp DELETE    &kp LEFT_WIN                  &kp RIGHT_WIN  &kp ENTER      &kp SPACE                       &kp UP         &kp DOWN             &kp LBKT                   &kp RBKT      &mo 2
             >;
         };
 
