@@ -35,14 +35,33 @@ Certain ZMK features (e.g. combos) require knowing the exact key positions in th
 * Install make using `sudo apt-get install make` inside the WSL2 instance.
 * The repository can be cloned directly into the WSL2 instance or accessed through the C: mount point WSL provides by default (`/mnt/c/path-to-repo`).
 
-### Build firmware
+#### macOS specific
 
-1. Execute `make`.
-2. Check the `firmware` directory for the latest firmware build.
+On macOS [brew](https://brew.sh) can be used to install the required components.
+
+* docker
+* [colima](https://github.com/abiosoft/colima) can be used as the docker engine
+
+```shell
+brew install docker colima
+colima start
+```
+> Note: On Apple Silicon (ARM based) systems you need to make sure to start colima with the correct architecture for the container being used.
+> ```
+> colima start --arch x86_64
+> ```
+
+
+### Build firmware locally
+
+1. Execute `make` to build firmware for both halves or `make left` to only build firmware for the left hand side.
+2. Check the `firmware` directory for the latest firmware build. The first part of the filename is the timestamp when the firmware was built.
 
 ### Cleanup
 
-The built docker container and compiled firmware files can be deleted with `make clean`. This might be necessary if you updated your fork from V2.0 to V3.0 and are encountering build failures. 
+The built docker container and compiled firmware files can be deleted with `make clean`. This might be necessary if you updated your fork from V2.0 to V3.0 and are encountering build failures.
+
+Creating the docker container takes some time. Therefore `make clean_firmware` can be used to only clean firmware without removing the docker container. Similarly `make clean_image` can be used to remove the docker container without removing compiled firmware files.
 
 ## Flashing firmware
 
