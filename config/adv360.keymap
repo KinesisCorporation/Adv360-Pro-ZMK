@@ -50,11 +50,11 @@
 
         layer_num_symbl {
             bindings = <
-  &none         &none          &trans        &trans        &trans        &trans             &none                                                   &none        &trans          &trans                &trans                 &trans            &none   &none
-  &none  &kp NUMBER_1    &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5             &none                                                   &none  &kp NUMBER_6    &kp NUMBER_7          &kp NUMBER_8           &kp NUMBER_9     &kp NUMBER_0   &none
-  &none     &kp TILDE  &kp UNDERSCORE     &kp MINUS     &kp SLASH      &kp PLUS             &none  &trans  &trans                  &trans  &trans   &none        &trans  &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE   &none
-  &none     &kp CARET   &kp BACKSLASH   &kp PERCENT    &kp DOLLAR        &trans                            &trans                  &trans                        &trans       &kp GRAVE      &kp LEFT_BRACKET      &kp RIGHT_BRACKET           &trans   &none
-  &none        &trans          &trans        &trans        &trans                          &trans  &trans  &trans                  &trans  &trans  &trans                 &kp BACKSPACE            &kp DELETE                 &trans           &trans   &none
+  &none         &none          &trans        &trans        &trans        &trans             &none                                                   &none         &trans          &trans                &trans                 &trans            &none   &none
+  &none  &kp NUMBER_1    &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5             &none                                                   &none   &kp NUMBER_6    &kp NUMBER_7          &kp NUMBER_8           &kp NUMBER_9     &kp NUMBER_0   &none
+  &none     &kp TILDE  &kp UNDERSCORE     &kp MINUS     &kp SLASH      &kp PLUS             &none  &trans  &trans                  &trans  &trans   &none  &kp BACKSPACE  &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE   &none
+  &none     &kp CARET   &kp BACKSLASH   &kp PERCENT    &kp DOLLAR        &trans                            &trans                  &trans                     &kp DELETE       &kp GRAVE      &kp LEFT_BRACKET      &kp RIGHT_BRACKET           &trans   &none
+  &none        &trans          &trans        &trans        &trans                          &trans  &trans  &trans                  &trans  &trans  &trans                         &trans                &trans                 &trans           &trans   &none
             >;
         };
 
