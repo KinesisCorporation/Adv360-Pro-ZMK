@@ -40,21 +40,21 @@
 
         default_layer {
             bindings = <
-  &none             &none     &none  &kp LEFT_SHIFT  &kp DELETE   &none                &mo 3                                                                                     &mo 3   &none    &kp BACKSPACE  &kp RIGHT_SHIFT      &none              &none   &none
-  &none             &kp Q     &kp W           &kp E       &kp R   &kp T                &none                                                                                     &none   &kp Y            &kp U            &kp I      &kp O              &kp P   &none
-  &none             &kp A     &kp S           &kp D       &kp F   &kp G                &none  &kp LEFT_ALT      &kp CAPSLOCK                       &kp CAPSLOCK  &kp RIGHT_ALT   &none   &kp H            &kp J            &kp K      &kp L            &kp RET   &none
-  &none             &kp Z     &kp X           &kp C       &kp V   &kp B                                                &mo 2                              &mo 2                          &kp N            &kp M        &kp COMMA    &kp DOT           &kp SEMI   &none
-  &none  &kp SINGLE_QUOTE  &kp HASH    &kp QUESTION    &kp STAR                    &kp SPACE       &kp ESC  &kp LEFT_CONTROL                  &kp RIGHT_CONTROL        &kp TAB   &mo 1          &kp EXCLAMATION         &kp PIPE  &kp EQUAL  &kp DOUBLE_QUOTES   &none
+  &none             &none     &none  &kp LEFT_SHIFT     &none   &none                &mo 3                                                                                     &mo 3   &none            &none  &kp RIGHT_SHIFT      &none              &none   &none
+  &none             &kp Q     &kp W           &kp E     &kp R   &kp T                &none                                                                                     &none   &kp Y            &kp U            &kp I      &kp O              &kp P   &none
+  &none             &kp A     &kp S           &kp D     &kp F   &kp G                &none  &kp LEFT_ALT      &kp CAPSLOCK                       &kp CAPSLOCK  &kp RIGHT_ALT   &none   &kp H            &kp J            &kp K      &kp L            &kp RET   &none
+  &none             &kp Z     &kp X           &kp C     &kp V   &kp B                                                &mo 2                              &mo 2                          &kp N            &kp M        &kp COMMA    &kp DOT           &kp SEMI   &none
+  &none  &kp SINGLE_QUOTE  &kp HASH    &kp QUESTION  &kp STAR                    &kp SPACE       &kp ESC  &kp LEFT_CONTROL                  &kp RIGHT_CONTROL        &kp TAB   &mo 1          &kp EXCLAMATION         &kp PIPE  &kp EQUAL  &kp DOUBLE_QUOTES   &none
             >;
         };
 
         layer_num_symbl {
             bindings = <
-  &none         &none          &trans        &trans        &trans        &trans             &none                                                   &none        &trans          &trans                &trans                 &trans            &none   &none
-  &none  &kp NUMBER_1    &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5             &none                                                   &none  &kp NUMBER_6    &kp NUMBER_7          &kp NUMBER_8           &kp NUMBER_9     &kp NUMBER_0   &none
-  &none     &kp TILDE  &kp UNDERSCORE     &kp MINUS     &kp SLASH      &kp PLUS             &none  &trans  &trans                  &trans  &trans   &none        &trans  &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE   &none
-  &none     &kp CARET   &kp BACKSLASH   &kp PERCENT    &kp DOLLAR        &trans                            &trans                  &trans                        &trans       &kp GRAVE      &kp LEFT_BRACKET      &kp RIGHT_BRACKET           &trans   &none
-  &none        &trans          &trans        &trans        &trans                          &trans  &trans  &trans                  &trans  &trans  &trans                        &trans                &trans                 &trans           &trans   &none
+  &none         &none          &trans        &trans        &trans        &trans             &none                                                   &none         &trans          &trans                &trans                 &trans            &none   &none
+  &none  &kp NUMBER_1    &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5             &none                                                   &none   &kp NUMBER_6    &kp NUMBER_7          &kp NUMBER_8           &kp NUMBER_9     &kp NUMBER_0   &none
+  &none     &kp TILDE  &kp UNDERSCORE     &kp MINUS     &kp SLASH      &kp PLUS             &none  &trans  &trans                  &trans  &trans   &none  &kp BACKSPACE  &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE   &none
+  &none     &kp CARET   &kp BACKSLASH   &kp PERCENT    &kp DOLLAR        &trans                            &trans                  &trans                     &kp DELETE       &kp GRAVE      &kp LEFT_BRACKET      &kp RIGHT_BRACKET           &trans   &none
+  &none        &trans          &trans        &trans        &trans                          &trans  &trans  &trans                  &trans  &trans  &trans                         &trans                &trans                 &trans           &trans   &none
             >;
         };
 
