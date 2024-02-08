@@ -51,9 +51,9 @@
         layer_num_symbl {
             bindings = <
   &none           &trans          &trans     &trans       &trans  &trans            &trans                                                  &trans  &trans          &trans                &trans                 &trans           &trans   &none
-  &none  &kp EXCLAMATION     &kp AT_SIGN   &kp HASH   &kp DOLLAR  &trans             &none                                                  &trans  &trans          &trans              &kp STAR              &kp EQUAL           &trans   &none
+  &none        &kp GRAVE     &kp AT_SIGN   &kp HASH   &kp DOLLAR  &trans             &none                                                  &trans  &trans          &trans              &kp STAR              &kp EQUAL           &trans   &none
   &none        &kp TILDE  &kp UNDERSCORE  &kp MINUS    &kp SLASH  &trans             &none  &trans  &trans                  &trans  &trans  &trans  &trans  &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE   &none
-  &none        &kp GRAVE       &kp CARET   &kp PLUS  &kp PERCENT  &trans                            &trans                  &trans                  &trans   &kp AMPERSAND      &kp LEFT_BRACKET      &kp RIGHT_BRACKET    &kp BACKSLASH   &none
+  &none  &kp EXCLAMATION       &kp CARET   &kp PLUS  &kp PERCENT  &trans                            &trans                  &trans                  &trans   &kp AMPERSAND      &kp LEFT_BRACKET      &kp RIGHT_BRACKET    &kp BACKSLASH   &none
   &none            &none          &trans     &trans       &trans                    &trans  &trans  &trans                  &trans  &trans  &trans                  &trans                &trans                 &trans            &none   &none
             >;
         };
