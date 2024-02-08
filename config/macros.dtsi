@@ -1,3 +1,15 @@
+macro_macro_paste: macro_macro_paste{
+compatible = "zmk,behavior-macro";
+label = "macro_macro_paste";
+#binding-cells = <0>;
+bindings = <&kp LCTRL>, <&kp V>;
+};
+macro_macro_copy: macro_macro_copy{
+compatible = "zmk,behavior-macro";
+label = "macro_macro_copy";
+#binding-cells = <0>;
+bindings = <&kp LCTRL>, <&kp C>;
+};
 macro_macro_bt_work: macro_macro_bt_work{
 compatible = "zmk,behavior-macro";
 label = "macro_macro_bt_work";
