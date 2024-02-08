@@ -40,11 +40,11 @@
 
         default_layer {
             bindings = <
-           &none  &kp NUMBER_1      &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5                &none                                                                                    &none  &kp NUMBER_6   &kp NUMBER_7  &kp NUMBER_8       &kp NUMBER_9  &kp NUMBER_0           &none
-           &none         &kp Q             &kp W         &kp E         &kp R         &kp T                &none                                                                                    &none         &kp Y          &kp U         &kp I              &kp O         &kp P           &none
-           &none         &kp A             &kp S         &kp D         &kp F         &kp G                &none        &kp DELETE  &kp CAPSLOCK                  &kp CAPSLOCK      &kp BACKSPACE   &none         &kp H          &kp J         &kp K              &kp L       &kp RET           &none
- &kp RIGHT_SHIFT         &kp Z             &kp X         &kp C         &kp V         &kp B                                                &mo 2                         &mo 2                                    &kp N          &kp M     &kp COMMA            &kp DOT      &kp SEMI  &kp LEFT_SHIFT
-           &none         &mo 3  &kp SINGLE_QUOTE  &kp QUESTION  &kp LEFT_ALT                          &kp SPACE  &kp LEFT_CONTROL    &kp ESCAPE                       &kp TAB  &kp RIGHT_CONTROL   &mo 1                &kp RIGHT_ALT      &kp PIPE  &kp DOUBLE_QUOTES         &mo 3           &none
+           &none  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5                &mo 3                                                                                    &mo 3  &kp NUMBER_6   &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0           &none
+           &none         &kp Q         &kp W         &kp E         &kp R         &kp T                &none                                                                                    &none         &kp Y          &kp U         &kp I         &kp O         &kp P           &none
+           &none         &kp A         &kp S         &kp D         &kp F         &kp G                &none        &kp DELETE  &kp CAPSLOCK                  &kp CAPSLOCK      &kp BACKSPACE   &none         &kp H          &kp J         &kp K         &kp L       &kp RET           &none
+ &kp RIGHT_SHIFT         &kp Z         &kp X         &kp C         &kp V         &kp B                                                &mo 2                         &mo 2                                    &kp N          &kp M     &kp COMMA       &kp DOT      &kp SEMI  &kp LEFT_SHIFT
+           &none         &none         &none  &kp QUESTION  &kp LEFT_ALT                          &kp SPACE  &kp LEFT_CONTROL    &kp ESCAPE                       &kp TAB  &kp RIGHT_CONTROL   &mo 1                &kp RIGHT_ALT      &kp PIPE         &none         &none           &none
             >;
         };
 
@@ -54,7 +54,7 @@
   &none         &kp GRAVE     &kp AT_SIGN   &kp HASH   &kp DOLLAR  &trans             &none                                                   &none  &trans  &kp EXCLAMATION              &kp STAR              &kp EQUAL      &kp BACKSLASH   &none
   &none         &kp TILDE  &kp UNDERSCORE  &kp MINUS    &kp SLASH  &trans             &none  &trans  &trans                  &trans  &trans   &none  &trans   &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &kp RIGHT_BRACE   &none
  &trans  &kp SINGLE_QUOTE       &kp CARET   &kp PLUS  &kp PERCENT  &trans                            &trans                  &trans                  &trans    &kp AMPERSAND      &kp LEFT_BRACKET      &kp RIGHT_BRACKET  &kp DOUBLE_QUOTES  &trans
-  &none             &none          &trans     &trans       &trans                    &trans  &trans  &trans                  &trans  &trans  &trans                   &trans                &trans                 &trans              &none   &none
+  &none             &none           &none     &trans       &trans                    &trans  &trans  &trans                  &trans  &trans  &trans                   &trans                &trans                  &none              &none   &none
             >;
         };
 
@@ -64,7 +64,7 @@
   &none  &kp F1   &kp F2   &kp F3   &kp F4  &kp PRINTSCREEN             &none                                                   &none          &trans         &kp END      &kp HOME           &trans  &trans   &none
   &none  &kp F5   &kp F6   &kp F7   &kp F8  &kp PAUSE_BREAK             &none  &trans  &trans                  &trans  &trans   &none  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans   &none
   &none  &kp F9  &kp F10  &kp F11  &kp F12           &trans                            &trans                  &trans                          &trans   &kp PAGE_DOWN   &kp PAGE_UP           &trans  &trans   &none
-  &none   &none   &trans   &trans   &trans                             &trans  &trans  &trans                  &trans  &trans  &trans                          &trans        &trans           &trans   &none   &none
+  &none   &none    &none   &trans   &trans                             &trans  &trans  &trans                  &trans  &trans  &trans                          &trans        &trans            &none   &none   &none
             >;
         };
 
@@ -74,7 +74,7 @@
   &none        &trans        &trans        &trans        &trans        &trans            &bootloader                                                      &bootloader      &trans      &trans      &trans           &trans  &trans   &none
   &none        &trans        &trans        &trans        &trans        &trans                 &trans  &trans  &bt BT_CLR                  &trans  &trans        &none  &bl BL_TOG  &bl BL_DEC  &bl BL_INC  &rgb_ug RGB_TOG  &trans   &none
  &trans        &trans        &trans        &trans        &trans        &trans                                     &trans                  &trans                           &trans      &trans      &trans           &trans  &trans  &trans
-  &none         &none        &trans        &trans        &trans                               &trans  &trans      &trans                  &trans  &trans       &trans                  &trans      &trans           &trans   &none   &none
+  &none         &none         &none        &trans        &trans                               &trans  &trans      &trans                  &trans  &trans       &trans                  &trans      &trans            &none   &none   &none
             >;
         };
 
