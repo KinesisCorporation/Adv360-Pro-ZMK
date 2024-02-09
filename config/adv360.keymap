@@ -50,11 +50,11 @@
 
         layer_num_symbl {
             bindings = <
-  &none            &trans       &trans     &trans       &trans  &trans            &trans                                                  &trans  &trans           &trans                &trans                 &trans             &trans   &none
-  &none         &kp CARET  &kp AT_SIGN   &kp HASH  &kp PERCENT  &trans             &none                                                   &none  &trans    &kp AMPERSAND              &kp STAR              &kp EQUAL      &kp BACKSLASH   &none
-  &none    &kp UNDERSCORE    &kp TILDE  &kp MINUS    &kp SLASH  &trans             &none  &trans  &trans                  &trans  &trans   &none  &trans   &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &kp RIGHT_BRACE   &none
- &trans  &kp SINGLE_QUOTE    &kp GRAVE   &kp PLUS   &kp DOLLAR  &trans                            &trans                  &trans                  &trans  &kp EXCLAMATION      &kp LEFT_BRACKET      &kp RIGHT_BRACKET  &kp DOUBLE_QUOTES  &trans
-  &none             &none        &none     &trans       &trans                    &trans  &trans  &trans                  &trans  &trans  &trans                   &trans                &trans                  &none              &none   &none
+  &none            &trans          &trans     &trans       &trans  &trans            &trans                                                  &trans  &trans          &trans                &trans                 &trans             &trans   &none
+  &none         &kp CARET     &kp AT_SIGN   &kp HASH  &kp PERCENT  &trans             &none                                                   &none  &trans   &kp AMPERSAND              &kp STAR              &kp EQUAL      &kp BACKSLASH   &none
+  &none   &kp EXCLAMATION  &kp UNDERSCORE  &kp MINUS   &kp DOLLAR  &trans             &none  &trans  &trans                  &trans  &trans   &none  &trans  &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &kp RIGHT_BRACE   &none
+ &trans  &kp SINGLE_QUOTE       &kp GRAVE  &kp TILDE    &kp SLASH  &trans                            &trans                  &trans                  &trans        &kp PLUS      &kp LEFT_BRACKET      &kp RIGHT_BRACKET  &kp DOUBLE_QUOTES  &trans
+  &none             &none           &none     &trans       &trans                    &trans  &trans  &trans                  &trans  &trans  &trans                  &trans                &trans                  &none              &none   &none
             >;
         };
 
