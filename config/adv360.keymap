@@ -60,11 +60,11 @@
 
         layer_FN_NAV {
             bindings = <
-  &none   &none   &trans   &trans   &trans           &trans            &trans                                                  &trans          &trans          &trans        &trans           &trans   &none   &none
-  &none  &kp F1   &kp F2   &kp F3   &kp F4  &kp PRINTSCREEN             &none                                                   &none          &trans         &kp END      &kp HOME           &trans  &trans   &none
-  &none  &kp F5   &kp F6   &kp F7   &kp F8  &kp PAUSE_BREAK             &none  &trans  &trans                  &trans  &trans   &none  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans   &none
-  &none  &kp F9  &kp F10  &kp F11  &kp F12           &trans                            &trans                  &trans                          &trans   &kp PAGE_DOWN   &kp PAGE_UP           &trans  &trans   &none
-  &none   &none    &none   &trans   &trans                             &trans  &trans  &trans                  &trans  &trans  &trans                          &trans        &trans            &none   &none   &none
+  &none   &kp F1   &kp F2           &kp F3           &kp F4  &kp F5            &trans                                                  &trans          &kp F6          &kp F7        &kp F8           &kp F9  &kp F10   &none
+  &none   &trans   &trans           &trans           &trans  &trans             &none                                                   &none          &trans         &kp END      &kp HOME           &trans   &trans   &none
+  &none  &kp F11  &kp F12  &kp PRINTSCREEN  &kp PAUSE_BREAK  &trans             &none  &trans  &trans                  &trans  &trans   &none  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW   &trans   &none
+  &none   &trans   &trans           &trans           &trans  &trans                            &trans                  &trans                          &trans   &kp PAGE_DOWN   &kp PAGE_UP           &trans   &trans   &none
+  &none    &none    &none           &trans           &trans                    &trans  &trans  &trans                  &trans  &trans  &trans                          &trans        &trans            &none    &none   &none
             >;
         };
 
