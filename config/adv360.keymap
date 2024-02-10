@@ -10,31 +10,42 @@
 
     behaviors {
       #include "macros.dtsi"
-		as: auto_shift {
-			compatible = "zmk,behavior-hold-tap";
-			label = "AUTO_SHIFT";
-			#binding-cells = <2>;
-			tapping_term_ms = <200>;
-			quick_tap_ms = <0>;
-			flavor = "tap-preferred";
-			bindings = <&kp>, <&kp>;
-		};
-		ttd: terminal_tap_dance {
-			 compatible = "zmk,behavior-tap-dance";
-			 label = "TERMINAL_TAP_DANCE";
-			 #binding-cells = <0>;
-			tapping-term-ms = <200>;
-			bindings = <&term_new>, <&term_new_tab>;
-		};
-		hm: homerow_mods {
-		  compatible = "zmk,behavior-hold-tap";
-		  label = "HOMEROW_MODS";
-		  #binding-cells = <2>;
-		  tapping-term-ms = <200>;
-		  quick_tap_ms = <175>;
-		  flavor = "tap-preferred";
-		  bindings = <&kp>, <&kp>;
-		};
+      #include "version.dtsi"
+      #ifndef VERSION_MACRO
+      macro_ver: macro_ver {
+        compatible = "zmk,behavior-macro";
+        label = "macro_version";
+        #binding-cells = <0>;
+        bindings = <&kp RET>;
+      };
+      #endif
+
+      hm: homerow_mods {
+          compatible = "zmk,behavior-hold-tap";
+          label = "HOMEROW_MODS";
+          #binding-cells = <2>;
+          tapping-term-ms = <200>;
+          quick_tap_ms = <175>;
+          flavor = "tap-preferred";
+          bindings = <&kp>, <&kp>;
+      };
+
+      as: auto_shift {
+        compatible = "zmk,behavior-hold-tap";
+          label = "AUTO_SHIFT";
+          #binding-cells = <2>;
+          tapping_term_ms = <200>;
+          quick_tap_ms = <0>;
+          flavor = "tap-preferred";
+          bindings = <&kp>, <&kp>;
+      };
+      ttd: terminal_tap_dance {
+           compatible = "zmk,behavior-tap-dance";
+           label = "TERMINAL_TAP_DANCE";
+           #binding-cells = <0>;
+          tapping-term-ms = <200>;
+          bindings = <&term_new>, <&term_new_tab>;
+      };
     };
 
   keymap {
