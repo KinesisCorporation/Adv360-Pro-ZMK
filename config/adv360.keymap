@@ -40,11 +40,11 @@
 
         default_layer {
             bindings = <
-        &kp EQUAL  &macro_macro_w1  &macro_macro_w2    &kp UP_ARROW         &kp DOWN  &kp N5                       &tog 1                                                                                 &mo 3  &kp N6        &kp N7         &kp N8            &kp N9             &kp N0     &kp MINUS
-          &kp TAB            &kp Q            &kp W           &kp E            &kp R   &kp T                        &none                                                                                 &none   &kp Y         &kp U          &kp I             &kp O              &kp P      &kp BSLH
- &kp LEFT_CONTROL            &kp A            &kp S           &kp D          &lt 1 F   &kp G            &macro_macro_helm         &kp F5      &kp F6                            &kp F7      &kp F12       &none   &kp H         &kp J          &kp K             &kp L           &kp SEMI       &kp SQT
-          &kp ESC            &kp Z            &kp X           &kp C            &kp V   &kp B                                                 &kp F11                            &kp F8                            &kp N         &kp M        &kp DOT         &kp COMMA          &kp SLASH  &kp LEFT_ALT
-            &kp N            &kp M     &kp CAPSLOCK  &kp LEFT_ARROW  &kp RIGHT_ARROW                         &kp LEFT_GUI  &kp BACKSPACE  &kp LSHIFT                  &kp LEFT_CONTROL  &lt 2 SPACE  &kp RETURN          &kp LEFT_GUI  &kp BACKSPACE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET   &lt 2 SPACE
+        &kp EQUAL  &macro_macro_w1  &macro_macro_w2    &kp UP_ARROW         &kp DOWN  &kp N5                       &tog 1                                                                                   &mo 3  &kp N6        &kp N7         &kp N8            &kp N9             &kp N0     &kp MINUS
+          &kp TAB            &kp Q            &kp W           &kp E            &kp R   &kp T                        &none                                                                                   &none   &kp Y         &kp U          &kp I             &kp O              &kp P      &kp BSLH
+ &kp LEFT_CONTROL            &kp A            &kp S           &kp D          &lt 1 F   &kp G            &macro_macro_helm         &kp F5      &kp F6                            &kp F7      &kp F12         &none   &kp H         &kp J          &kp K             &kp L           &kp SEMI       &kp SQT
+          &kp ESC            &kp Z            &kp X           &kp C            &kp V   &kp B                                                 &kp F11                      &kp CAPSLOCK                              &kp N         &kp M        &kp DOT         &kp COMMA          &kp SLASH  &kp LEFT_ALT
+            &kp N            &kp M            &none  &kp LEFT_ARROW  &kp RIGHT_ARROW                         &kp LEFT_GUI  &kp BACKSPACE  &kp LSHIFT                  &kp LEFT_CONTROL  &lt 2 SPACE  &kp KP_ENTER          &kp UP_ARROW  &kp BACKSPACE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET   &lt 2 SPACE
             >;
         };
 
@@ -53,8 +53,8 @@
  &kp EQUAL        &kp N1        &kp N2        &kp N3        &kp N4  &kp N5               &trans                                                              &mo 3    &kp N6    &kp KP_NUM  &kp KP_EQUAL  &kp KP_DIVIDE  &kp KP_MULTIPLY  &kp MINUS
    &kp TAB        &kp N1         &kp W         &kp E         &kp R   &kp T                &none                                                              &none     &kp Y     &kp KP_N7     &kp KP_N8      &kp KP_N9     &kp KP_MINUS   &kp BSLH
    &kp ESC         &kp A         &kp S         &kp D         &kp F   &kp G                &none  &kp LCTRL   &kp LALT                  &kp LGUI  &kp RCTRL   &none     &none  &kp NUMBER_1  &kp NUMBER_2   &kp NUMBER_3     &kp NUMBER_4    &kp SQT
- &kp LSHFT         &kp Z         &kp X         &kp C         &kp V   &kp B                                      &none                     &none                     &kp HOME         &none         &none      &kp PG_UP            &none      &none
-     &none  &kp NUMBER_5  &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8                    &kp RSHFT      &mo 2  &kp GRAVE                  &kp CAPS      &none   &none                &kp BSPC       &kp DEL        &kp END        &kp PG_DN  &kp ENTER
+ &kp LSHFT         &kp Z         &kp X         &kp C         &kp V   &kp B                                      &none                     &none                     &kp HOME  &kp NUMBER_5  &kp NUMBER_6   &kp NUMBER_7     &kp NUMBER_8      &none
+     &none  &kp NUMBER_5  &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8                    &kp RSHFT      &mo 2  &kp GRAVE                  &kp CAPS      &none   &none            &kp NUMBER_9  &kp NUMBER_0        &kp END        &kp PG_DN  &kp ENTER
             >;
         };
 
