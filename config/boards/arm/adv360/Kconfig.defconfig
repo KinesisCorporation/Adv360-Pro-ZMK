@@ -6,7 +6,7 @@
 if BOARD_ADV360_LEFT
 
     config ZMK_KEYBOARD_NAME
-    default "Adv360 Pro"
+    default "Advantage360_Pro"
 
     config ZMK_SPLIT_ROLE_CENTRAL
     default y
