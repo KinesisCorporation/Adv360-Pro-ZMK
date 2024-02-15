@@ -10,7 +10,7 @@ jobs:
     name: Build
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: Get version data
         id: get_info
         run: |
@@ -21,7 +21,7 @@ jobs:
           echo "file_prefix=$file_prefix" >> $GITHUB_OUTPUT
           bin/get_version.sh $branch_name $commit
       - name: Cache west modules
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         env:
           cache-name: cache-zephyr-modules
         with:
@@ -53,7 +53,7 @@ jobs:
       - name: Rename zmk.uf2
         run: cp build/left/zephyr/zmk.uf2 ${{ steps.get_info.outputs.file_prefix }}-left.uf2 && cp build/right/zephyr/zmk.uf2 ${{ steps.get_info.outputs.file_prefix }}-right.uf2
       - name: Archive (Adv360)
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: firmware
           path: |
