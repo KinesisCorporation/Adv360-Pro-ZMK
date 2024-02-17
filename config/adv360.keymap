@@ -40,11 +40,11 @@
 
         default_layer {
             bindings = <
-    &kp CAPSLOCK  &kp NUMBER_1  &kp NUMBER_2    &kp NUMBER_3     &kp NUMBER_4  &kp NUMBER_5                  &mo 2                                                                                            &mo 2  &kp NUMBER_6    &kp NUMBER_7  &kp NUMBER_8      &kp NUMBER_9       &kp NUMBER_0     &kp BACKSLASH
-       &kp TILDE         &kp Q         &kp W           &kp E            &kp R         &kp T               &kp HOME                                                                                          &kp END         &kp Y           &kp U         &kp I             &kp O              &kp P         &kp EQUAL
-        &kp PIPE         &kp A         &kp S           &kp D            &kp F         &kp G            &kp PAGE_UP        &kp DELETE         &none                          &none      &kp BACKSPACE  &kp PAGE_DOWN         &kp H           &kp J         &kp K             &kp L      &kp SEMICOLON  &kp SINGLE_QUOTE
+    &kp CAPSLOCK  &kp NUMBER_1  &kp NUMBER_2    &kp NUMBER_3     &kp NUMBER_4  &kp NUMBER_5                  &mo 2                                                                                            &mo 2  &kp NUMBER_6    &kp NUMBER_7  &kp NUMBER_8      &kp NUMBER_9       &kp NUMBER_0             &none
+       &kp GRAVE         &kp Q         &kp W           &kp E            &kp R         &kp T               &kp HOME                                                                                          &kp END         &kp Y           &kp U         &kp I             &kp O              &kp P         &kp EQUAL
+   &kp BACKSLASH         &kp A         &kp S           &kp D            &kp F         &kp G            &kp PAGE_UP        &kp DELETE         &none                          &none      &kp BACKSPACE  &kp PAGE_DOWN         &kp H           &kp J         &kp K             &kp L      &kp SEMICOLON  &kp SINGLE_QUOTE
  &kp RIGHT_SHIFT         &kp Z         &kp X           &kp C            &kp V         &kp B                                           &kp LEFT_ALT                  &kp RIGHT_ALT                                           &kp N           &kp M     &kp COMMA           &kp DOT          &kp SLASH    &kp LEFT_SHIFT
-           &mo 1     &kp GRAVE     &kp MINUS  &kp LEFT_ARROW  &kp RIGHT_ARROW                            &kp SPACE  &kp LEFT_CONTROL    &kp ESCAPE                        &kp TAB  &kp RIGHT_CONTROL     &kp RETURN                &kp DOWN_ARROW  &kp UP_ARROW  &kp LEFT_BRACKET  &kp RIGHT_BRACKET             &mo 1
+           &mo 1         &none     &kp MINUS  &kp LEFT_ARROW  &kp RIGHT_ARROW                            &kp SPACE  &kp LEFT_CONTROL    &kp ESCAPE                        &kp TAB  &kp RIGHT_CONTROL     &kp RETURN                &kp DOWN_ARROW  &kp UP_ARROW  &kp LEFT_BRACKET  &kp RIGHT_BRACKET             &mo 1
             >;
         };
 
