@@ -70,11 +70,11 @@
 
         layer_symbols {
             bindings = <
- &trans           &trans          &trans     &trans       &trans     &trans            &trans                                                  &trans  &trans          &trans                &trans                 &trans           &trans  &trans
- &trans  &kp EXCLAMATION     &kp AT_SIGN   &kp HASH   &kp DOLLAR  &kp CARET            &trans                                                  &trans   &none        &kp STAR      &kp LEFT_BRACKET      &kp RIGHT_BRACKET        &kp EQUAL  &trans
- &trans        &kp TILDE  &kp UNDERSCORE  &kp MINUS    &kp SLASH   &kp PLUS            &trans  &trans  &trans                  &trans  &trans  &trans   &none  &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &trans
- &trans        &kp GRAVE           &none      &none  &kp PERCENT      &none                            &trans                  &trans                   &none   &kp AMPERSAND                 &none                  &none    &kp BACKSLASH  &trans
- &trans           &trans          &trans     &trans       &trans                       &trans  &trans  &trans                  &trans  &trans  &trans                  &trans                &trans                 &trans           &trans  &trans
+ &trans     &trans          &trans           &trans       &trans     &trans            &trans                                                  &trans         &trans                &trans                 &trans         &trans  &trans  &trans
+ &trans      &none     &kp AT_SIGN         &kp HASH   &kp DOLLAR  &kp CARET            &trans                                                  &trans          &none  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS      &kp EQUAL   &none  &trans
+ &trans  &kp TILDE  &kp UNDERSCORE        &kp MINUS    &kp SLASH   &kp PLUS            &trans  &trans  &trans                  &trans  &trans  &trans  &kp BACKSLASH        &kp LEFT_BRACE        &kp RIGHT_BRACE       &kp STAR   &none  &trans
+ &trans      &none       &kp GRAVE  &kp EXCLAMATION  &kp PERCENT      &none                            &trans                  &trans                          &none      &kp LEFT_BRACKET      &kp RIGHT_BRACKET  &kp AMPERSAND   &none  &trans
+ &trans     &trans          &trans           &trans       &trans                       &trans  &trans  &trans                  &trans  &trans  &trans                               &trans                 &trans         &trans  &trans  &trans
             >;
         };
 
