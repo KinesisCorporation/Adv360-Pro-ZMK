@@ -40,11 +40,11 @@
 
         default_layer {
             bindings = <
-    &kp CAPSLOCK       &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5                  &mo 2                                                                                            &mo 2  &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9      &kp NUMBER_0           &none
-           &none              &kp Q         &kp W         &kp E         &kp R         &kp T               &kp HOME                                                                                          &kp END         &kp Y         &kp U         &kp I         &kp O             &kp P           &none
-           &none              &kp A         &kp S         &kp D         &kp F         &kp G            &kp PAGE_UP        &kp DELETE         &none                          &none      &kp BACKSPACE  &kp PAGE_DOWN         &kp H         &kp J         &kp K         &kp L     &kp SEMICOLON           &none
- &kp RIGHT_SHIFT              &kp Z         &kp X         &kp C         &kp V         &kp B                                           &kp LEFT_ALT                  &kp RIGHT_ALT                                           &kp N         &kp M     &kp COMMA       &kp DOT         &kp COLON  &kp LEFT_SHIFT
-           &mo 1  &kp DOUBLE_QUOTES  &kp QUESTION         &mo 3         &none                            &kp SPACE  &kp LEFT_CONTROL    &kp ESCAPE                        &kp TAB  &kp RIGHT_CONTROL     &kp RETURN                       &none         &mo 3      &kp PIPE  &kp SINGLE_QUOTE           &mo 1
+   &kp CAPSLOCK       &kp NUMBER_1    &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5                  &mo 2                                                                                            &mo 2  &kp NUMBER_6    &kp NUMBER_7  &kp NUMBER_8     &kp NUMBER_9      &kp NUMBER_0            &none
+   &kp QUESTION              &kp Q           &kp W         &kp E         &kp R         &kp T               &kp HOME                                                                                          &kp END         &kp Y           &kp U         &kp I            &kp O             &kp P         &kp PIPE
+ &kp LEFT_SHIFT              &kp A           &kp S         &kp D         &kp F         &kp G            &kp PAGE_UP        &kp DELETE         &none                          &none      &kp BACKSPACE  &kp PAGE_DOWN         &kp H           &kp J         &kp K            &kp L     &kp SEMICOLON  &kp RIGHT_SHIFT
+          &none              &kp Z           &kp X         &kp C         &kp V         &kp B                                           &kp LEFT_ALT                  &kp RIGHT_ALT                                           &kp N           &kp M     &kp COMMA          &kp DOT         &kp COLON            &none
+          &mo 1  &kp DOUBLE_QUOTES  &kp LEFT_ARROW         &mo 3  &kp UP_ARROW                            &kp SPACE  &kp LEFT_CONTROL    &kp ESCAPE                        &kp TAB  &kp RIGHT_CONTROL     &kp RETURN                &kp DOWN_ARROW         &mo 3  &kp RIGHT_ARROW  &kp SINGLE_QUOTE            &mo 1
             >;
         };
 
@@ -70,11 +70,11 @@
 
         layer_symbols {
             bindings = <
- &trans     &trans          &trans           &trans       &trans     &trans            &trans                                                  &trans         &trans                &trans                 &trans         &trans  &trans  &trans
- &trans      &none     &kp AT_SIGN         &kp HASH   &kp DOLLAR  &kp CARET            &trans                                                  &trans          &none  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS      &kp EQUAL   &none  &trans
- &trans  &kp TILDE  &kp UNDERSCORE        &kp MINUS    &kp SLASH   &kp PLUS            &trans  &trans  &trans                  &trans  &trans  &trans  &kp BACKSLASH        &kp LEFT_BRACE        &kp RIGHT_BRACE       &kp STAR   &none  &trans
- &trans      &none       &kp GRAVE  &kp EXCLAMATION  &kp PERCENT      &none                            &trans                  &trans                          &none      &kp LEFT_BRACKET      &kp RIGHT_BRACKET  &kp AMPERSAND   &none  &trans
- &trans     &trans          &trans           &trans       &trans                       &trans  &trans  &trans                  &trans  &trans  &trans                               &trans                 &trans         &trans  &trans  &trans
+ &trans     &trans          &trans           &trans       &trans     &trans            &trans                                                  &trans  &trans                &trans                 &trans         &trans  &trans  &trans
+ &trans      &none     &kp AT_SIGN         &kp HASH   &kp DOLLAR  &kp CARET            &trans                                                  &trans   &none  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS      &kp EQUAL   &none  &trans
+ &trans  &kp TILDE  &kp UNDERSCORE        &kp MINUS    &kp SLASH   &kp PLUS            &trans  &trans  &trans                  &trans  &trans  &trans   &none        &kp LEFT_BRACE        &kp RIGHT_BRACE       &kp STAR   &none  &trans
+ &trans      &none       &kp GRAVE  &kp EXCLAMATION  &kp PERCENT      &none                            &trans                  &trans                   &none      &kp LEFT_BRACKET      &kp RIGHT_BRACKET  &kp AMPERSAND   &none  &trans
+ &trans     &trans          &trans           &trans       &trans                       &trans  &trans  &trans                  &trans  &trans  &trans                        &trans                 &trans         &trans  &trans  &trans
             >;
         };
 
