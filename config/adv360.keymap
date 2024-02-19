@@ -71,9 +71,9 @@
         layer_symbols {
             bindings = <
  &trans     &trans          &trans     &trans       &trans  &trans            &trans                                                  &trans  &trans          &trans                &trans                 &trans           &trans  &trans
- &trans      &none       &kp GRAVE   &kp PLUS   &kp DOLLAR   &none            &trans                                                  &trans   &none   &kp AMPERSAND              &kp STAR              &kp EQUAL            &none  &trans
- &trans  &kp TILDE  &kp UNDERSCORE  &kp MINUS    &kp SLASH   &none            &trans  &trans  &trans                  &trans  &trans  &trans   &none  &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &trans
- &trans  &kp CARET     &kp AT_SIGN   &kp HASH  &kp PERCENT   &none                            &trans                  &trans                   &none        &kp PIPE      &kp LEFT_BRACKET      &kp RIGHT_BRACKET    &kp BACKSLASH  &trans
+ &trans     &trans       &kp GRAVE   &kp PLUS   &kp DOLLAR  &trans            &trans                                                  &trans  &trans   &kp AMPERSAND              &kp STAR              &kp EQUAL            &none  &trans
+ &trans  &kp TILDE  &kp UNDERSCORE  &kp MINUS    &kp SLASH  &trans            &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &trans
+ &trans  &kp CARET     &kp AT_SIGN   &kp HASH  &kp PERCENT  &trans                            &trans                  &trans                  &trans        &kp PIPE      &kp LEFT_BRACKET      &kp RIGHT_BRACKET    &kp BACKSLASH  &trans
  &trans     &trans          &trans     &trans       &trans                    &trans  &trans  &trans                  &trans  &trans  &trans                  &trans                &trans                 &trans           &trans  &trans
             >;
         };
