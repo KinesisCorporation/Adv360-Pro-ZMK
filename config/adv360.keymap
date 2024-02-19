@@ -70,11 +70,11 @@
 
         layer_symbols {
             bindings = <
- &trans     &trans          &trans     &trans       &trans     &trans            &trans                                                  &trans         &trans         &trans                &trans                 &trans    &trans  &trans
- &trans      &none       &kp GRAVE   &kp PLUS   &kp DOLLAR      &none            &trans                                                  &trans          &none       &kp STAR  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS     &none  &trans
- &trans  &kp TILDE  &kp UNDERSCORE  &kp MINUS    &kp SLASH  &kp CARET            &trans  &trans  &trans                  &trans  &trans  &trans  &kp BACKSLASH      &kp EQUAL        &kp LEFT_BRACE        &kp RIGHT_BRACE  &kp PIPE  &trans
- &trans      &none     &kp AT_SIGN   &kp HASH  &kp PERCENT      &none                            &trans                  &trans                          &none  &kp AMPERSAND      &kp LEFT_BRACKET      &kp RIGHT_BRACKET     &none  &trans
- &trans     &trans          &trans     &trans       &trans                       &trans  &trans  &trans                  &trans  &trans  &trans                        &trans                &trans                 &trans    &trans  &trans
+ &trans     &trans          &trans     &trans       &trans     &trans            &trans                                                  &trans  &trans          &trans                &trans                 &trans           &trans  &trans
+ &trans      &none       &kp GRAVE   &kp PLUS   &kp DOLLAR  &kp CARET            &trans                                                  &trans   &none   &kp AMPERSAND              &kp STAR              &kp EQUAL            &none  &trans
+ &trans  &kp TILDE  &kp UNDERSCORE  &kp MINUS    &kp SLASH      &none            &trans  &trans  &trans                  &trans  &trans  &trans   &none  &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &trans
+ &trans      &none     &kp AT_SIGN   &kp HASH  &kp PERCENT      &none                            &trans                  &trans                   &none        &kp PIPE      &kp LEFT_BRACKET      &kp RIGHT_BRACKET    &kp BACKSLASH  &trans
+ &trans     &trans          &trans     &trans       &trans                       &trans  &trans  &trans                  &trans  &trans  &trans                  &trans                &trans                 &trans           &trans  &trans
             >;
         };
 
