@@ -70,11 +70,11 @@
 
         layer_symbols {
             bindings = <
- &trans          &trans       &trans     &trans       &trans  &trans            &trans                                                  &trans  &trans         &trans         &kp LESS_THAN       &kp GREATER_THAN         &trans  &trans
- &trans          &trans    &kp GRAVE   &kp PLUS   &kp DOLLAR  &trans            &trans                                                  &trans  &trans       &kp STAR        &kp LEFT_BRACE        &kp RIGHT_BRACE         &trans  &trans
- &trans  &kp UNDERSCORE    &kp TILDE  &kp MINUS    &kp SLASH  &trans            &trans  &trans  &trans                  &trans  &trans  &trans  &trans      &kp EQUAL  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS       &kp PIPE  &trans
- &trans       &kp CARET  &kp AT_SIGN   &kp HASH  &kp PERCENT  &trans                            &trans                  &trans                  &trans  &kp AMPERSAND      &kp LEFT_BRACKET      &kp RIGHT_BRACKET  &kp BACKSLASH  &trans
- &trans          &trans       &trans     &trans       &trans                    &trans  &trans  &trans                  &trans  &trans  &trans                 &trans                &trans                 &trans         &trans  &trans
+ &trans     &trans          &trans     &trans       &trans  &trans            &trans                                                  &trans  &trans         &trans         &kp LESS_THAN       &kp GREATER_THAN         &trans  &trans
+ &trans     &trans       &kp GRAVE   &kp PLUS   &kp DOLLAR  &trans            &trans                                                  &trans  &trans       &kp STAR        &kp LEFT_BRACE        &kp RIGHT_BRACE         &trans  &trans
+ &trans  &kp TILDE  &kp UNDERSCORE  &kp MINUS    &kp SLASH  &trans            &trans  &trans  &trans                  &trans  &trans  &trans  &trans      &kp EQUAL  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS       &kp PIPE  &trans
+ &trans  &kp CARET     &kp AT_SIGN   &kp HASH  &kp PERCENT  &trans                            &trans                  &trans                  &trans  &kp AMPERSAND      &kp LEFT_BRACKET      &kp RIGHT_BRACKET  &kp BACKSLASH  &trans
+ &trans     &trans          &trans     &trans       &trans                    &trans  &trans  &trans                  &trans  &trans  &trans                 &trans                &trans                 &trans         &trans  &trans
             >;
         };
 
