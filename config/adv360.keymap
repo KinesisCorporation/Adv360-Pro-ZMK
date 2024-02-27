@@ -19,6 +19,7 @@
 #include <dt-bindings/zmk/backlight.h>
 
 / {
+
   behaviors {
     #include "macros.dtsi"
 
@@ -30,6 +31,7 @@
         quick_tap_ms = <175>;
         flavor = "tap-preferred";
         bindings = <&kp>, <&kp>;
+
     };
   };
 
