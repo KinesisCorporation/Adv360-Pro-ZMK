@@ -136,3 +136,9 @@ Further support resources can be found on Kinesis.com:
 
 In the event of a hardware issue it may be necessary to open a support ticket directly with Kinesis as opposed to a GitHub issue in this repository.
 * https://kinesis-ergo.com/support/kb360pro/#ticket
+
+## Use this site to configure
+https://kinesiscorporation.github.io/Adv360-Pro-GUI/
+
+### Medium Article about key mappings
+https://arslan.io/2022/10/22/review-of-the-kinesis-advantage360-professional/
