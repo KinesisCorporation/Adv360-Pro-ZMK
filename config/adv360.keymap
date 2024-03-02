@@ -25,6 +25,7 @@
           quick_tap_ms = <175>;
           flavor = "tap-preferred";
           bindings = <&kp>, <&kp>;
+          global_quick_tap
       };
     };
 
