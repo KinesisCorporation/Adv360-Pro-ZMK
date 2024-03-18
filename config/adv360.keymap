@@ -40,11 +40,11 @@
 
         default_layer {
             bindings = <
-          &none      &kp NUMBER_1     &kp NUMBER_2    &kp NUMBER_3     &kp NUMBER_4  &kp NUMBER_5                  &mo 2                                                                                          &mo 2  &kp NUMBER_6    &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9       &kp NUMBER_0            &none
-          &none             &kp Q            &kp W           &kp E            &kp R         &kp T               &kp HOME                                                                                        &kp END         &kp Y           &kp U         &kp I         &kp O              &kp P            &none
- &kp LEFT_SHIFT             &kp A            &kp S           &kp D            &kp F         &kp G            &kp PAGE_UP  &kp DELETE      &kp LEFT_ALT                      &kp RIGHT_ALT  &kp BACKSPACE  &kp PAGE_DOWN         &kp H           &kp J         &kp K         &kp L          &kp COLON  &kp RIGHT_SHIFT
-          &mo 1             &kp Z            &kp X           &kp C            &kp V         &kp B                                     &kp LEFT_CONTROL                  &kp RIGHT_CONTROL                                       &kp N           &kp M     &kp COMMA       &kp DOT      &kp SEMICOLON            &mo 1
-   &kp CAPSLOCK  &kp SINGLE_QUOTE  &kp EXCLAMATION  &kp LEFT_ARROW  &kp RIGHT_ARROW                            &kp SPACE       &mo 3        &kp ESCAPE                            &kp TAB          &mo 3     &kp RETURN                &kp DOWN_ARROW  &kp UP_ARROW  &kp QUESTION  &kp DOUBLE_QUOTES     &kp CAPSLOCK
+   &kp K_VOLUME_UP2      &kp NUMBER_1     &kp NUMBER_2    &kp NUMBER_3     &kp NUMBER_4  &kp NUMBER_5                  &mo 2                                                                                          &mo 2  &kp NUMBER_6    &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9       &kp NUMBER_0  &kp C_BRIGHTNESS_INC
+ &kp K_VOLUME_DOWN2             &kp Q            &kp W           &kp E            &kp R         &kp T               &kp HOME                                                                                        &kp END         &kp Y           &kp U         &kp I         &kp O              &kp P  &kp C_BRIGHTNESS_DEC
+     &kp LEFT_SHIFT             &kp A            &kp S           &kp D            &kp F         &kp G            &kp PAGE_UP  &kp DELETE      &kp LEFT_ALT                      &kp RIGHT_ALT  &kp BACKSPACE  &kp PAGE_DOWN         &kp H           &kp J         &kp K         &kp L          &kp COLON       &kp RIGHT_SHIFT
+              &mo 1             &kp Z            &kp X           &kp C            &kp V         &kp B                                     &kp LEFT_CONTROL                  &kp RIGHT_CONTROL                                       &kp N           &kp M     &kp COMMA       &kp DOT      &kp SEMICOLON                 &mo 1
+       &kp CAPSLOCK  &kp SINGLE_QUOTE  &kp EXCLAMATION  &kp LEFT_ARROW  &kp RIGHT_ARROW                            &kp SPACE       &mo 3        &kp ESCAPE                            &kp TAB          &mo 3     &kp RETURN                &kp DOWN_ARROW  &kp UP_ARROW  &kp QUESTION  &kp DOUBLE_QUOTES          &kp CAPSLOCK
             >;
         };
 
