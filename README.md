@@ -141,4 +141,4 @@ In the event of a hardware issue it may be necessary to open a support ticket di
 https://kinesiscorporation.github.io/Adv360-Pro-GUI/
 
 ### Medium Article about key mappings
-https://arslan.io/2022/10/22/review-of-the-kinesis-advantage360-professional/
+https://arslan.io/2023/10/22/review-of-the-kinesis-advantage360-professional/
