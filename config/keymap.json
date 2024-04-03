@@ -10,11 +10,11 @@
   ],
   "layers": [
     [
-       "&kp EQUAL",    "&kp N1",   "&kp N2",   "&kp N3",    "&kp N4", "&kp N5",             "&tog 1",                                                                               "&mo 3", "&kp N6", "&kp N7",    "&kp N8",   "&kp N9",   "&kp N0", "&kp MINUS",
+       "&kp EQUAL",    "&kp N1",   "&kp N2",   "&kp N3",    "&kp N4", "&kp N5",              "&none",                                                                               "&mo 3", "&kp N6", "&kp N7",    "&kp N8",   "&kp N9",   "&kp N0", "&kp MINUS",
          "&kp TAB",     "&kp Q",    "&kp W",    "&kp F",     "&kp P",  "&kp G",              "&none",                                                                               "&none",  "&kp J",  "&kp L",     "&kp U",    "&kp Y", "&kp SEMI",  "&kp BSLH",
-         "&kp ESC",     "&kp A",    "&kp R",    "&kp S",     "&kp T",  "&kp D",              "&none", "&kp LGUI", "&kp LALT",                     "&kp RIGHT_ALT",  "&kp RGUI",     "&none",  "&kp H",  "&kp N",     "&kp E",    "&kp I",    "&kp O",   "&kp SQT",
+         "&kp ESC",     "&kp A",    "&kp R",    "&kp S",     "&kp T",  "&kp D",              "&mo 1", "&kp LGUI", "&kp LALT",                     "&kp RIGHT_ALT",  "&kp RGUI",     "&none",  "&kp H",  "&kp N",     "&kp E",    "&kp I",    "&kp O",   "&kp SQT",
        "&kp LSHFT",     "&kp Z",    "&kp X",    "&kp C",     "&kp V",  "&kp B",                                   "&kp HOME",                         "&kp PG_UP",                            "&kp K",  "&kp M", "&kp COMMA",  "&kp DOT", "&kp FSLH", "&kp RSHFT",
-           "&mo 2", "&kp GRAVE", "&kp CAPS", "&kp LEFT", "&kp RIGHT",                     "&kp BSPC",  "&kp DEL",  "&kp END",                         "&kp PG_DN", "&kp ENTER", "&kp SPACE",           "&kp UP",  "&kp DOWN", "&kp LBKT", "&kp RBKT",     "&mo 2"
+           "&none", "&kp GRAVE", "&kp CAPS", "&kp LEFT", "&kp RIGHT",                     "&kp BSPC",  "&kp DEL",  "&kp END",                         "&kp PG_DN", "&kp ENTER", "&kp SPACE",           "&kp UP",  "&kp DOWN", "&kp LBKT", "&kp RBKT",     "&mo 2"
     ], [
        "&trans", "&trans", "&trans", "&trans", "&trans", "&trans",           "&trans",                                                                "&trans", "&trans", "&kp KP_NUM", "&kp KP_EQUAL", "&kp KP_DIVIDE", "&kp KP_MULTIPLY", "&trans",
        "&trans", "&trans", "&trans", "&trans", "&trans", "&trans",            "&none",                                                                 "&none", "&trans",  "&kp KP_N7",    "&kp KP_N8",     "&kp KP_N9",    "&kp KP_MINUS", "&trans",
