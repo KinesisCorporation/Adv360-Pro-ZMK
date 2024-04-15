@@ -4,6 +4,8 @@ Here's all notable changes and commits to both the configuration repo and the ba
 Many thanks to all those who have submitted issues and pull requests to make this firmware better!
 ## Config repo
 
+4/7/2024 - Add documentation for new layer colors, and configurable modifier indicator color [#431](https://github.com/KinesisCorporation/Adv360-Pro-ZMK/pull/431)
+
 4/5/2024 - Update base ZMK, remove deprecated attributes, change flashing cmake [#424](https://github.com/KinesisCorporation/Adv360-Pro-ZMK/pull/424)
 
 14/3/2024 - Fix Makefile errors that prevent builds on macOS [#409](https://github.com/KinesisCorporation/Adv360-Pro-ZMK/pull/409)
@@ -114,6 +116,10 @@ There have beeen 5 branches of ZMK used for the 360 Pro so far. Beta branches ar
 | [adv360-z3.5](https://github.com/ReFil/zmk/tree/adv360-z3.5) | 4/5/2024 | To date | [V3.0](https://github.com/KinesisCorporation/Adv360-Pro-ZMK/tree/V3.0) (Current) |
 
 ### adv360-z3.5
+
+4/15/2024 - Clarify list of available BT profile colors [#20](https://github.com/ReFil/zmk/pull/20), fix CI for pulls [#21](https://github.com/ReFil/zmk/pull/21) (Commit b0c91d3)
+
+4/10/2024 - Add colors for all 32 layers [#18](https://github.com/ReFil/zmk/pull/18), enable configuration of modifier indicator color [#19](https://github.com/ReFil/zmk/pull/19), fix battery level display [#17](https://github.com/ReFil/zmk/pull/17) (Commit 2fcd15d)
 
 4/8/2024 - Refactor CI to target 360 Pro exclusively
 
