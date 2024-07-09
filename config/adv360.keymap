@@ -85,7 +85,7 @@
  &trans  &trans  &trans  &trans  &trans  &trans             &none                                                   &none  &trans            &trans             &trans            &trans             &trans   &trans
  &trans  &trans  &trans  &trans  &trans  &trans             &none  &trans  &trans                  &trans  &trans   &none  &trans  &kp LEFT_BRACKET     &kp LEFT_BRACE   &kp RIGHT_BRACE  &kp RIGHT_BRACKET   &trans
  &trans  &trans  &trans  &trans  &trans  &trans                            &trans                  &trans                  &trans            &trans             &trans            &trans             &trans   &trans
- &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans                  &trans  &trans  &trans           &kp K_VOLUME_UP  &kp K_VOLUME_DOWN  &kp K_PLAY_PAUSE             &trans   &trans
+ &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans                  &trans  &trans  &trans           &kp C_VOLUME_UP  &kp C_VOLUME_DOWN  &kp C_PLAY_PAUSE             &trans   &trans
             >;
         };
 
