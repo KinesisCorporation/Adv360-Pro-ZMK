@@ -6,6 +6,16 @@
 #include <dt-bindings/zmk/backlight.h>
 #include <dt-bindings/zmk/pointing.h>
 
+#define HYPER LS(LC(LA(LGUI)))
+#define HYP(key) LS(LC(LA(LG(key))))
+#define LCA(key) LC(LA(key))
+#define RCA(key) RC(RA(key))
+
+&mt {
+    tapping-term-ms = <210>;
+    flavor = "tap-preferred";
+};
+
 / {
     behaviors {
       #include "macros.dtsi"
