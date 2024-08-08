@@ -40,11 +40,11 @@
 
         default_layer {
             bindings = <
- &kp EQUAL     &kp N1        &kp N2    &kp N3     &kp N4  &kp N5                &mo 1                                                                       &mo 3  &kp N6  &kp N7     &kp N8    &kp N9    &kp N0         &kp MINUS
-   &kp TAB      &kp Q         &kp W     &kp E      &kp R   &kp T            &kp LC(C)                                                                   &kp LC(X)   &kp Z   &kp U      &kp I     &kp O     &kp P          &kp BSLH
-   &kp ESC      &kp A         &kp S     &kp D      &kp F   &kp G            &kp LC(V)  &kp LCTRL  &kp LALT                      &kp LGUI  &kp RCTRL  &kp LEFT_WIN   &kp H   &kp J      &kp K     &kp L  &kp SEMI  &kp SINGLE_QUOTE
- &kp LSHFT      &kp Y         &kp X     &kp C      &kp V   &kp B                                  &kp HOME                  &kp LEFT_ALT                            &kp N   &kp M  &kp COMMA   &kp DOT  &kp FSLH         &kp RSHFT
-     &mo 2  &kp GRAVE  &kp LEFT_ALT  &kp LEFT  &kp RIGHT                     &kp BSPC    &kp DEL   &kp END                         &mo 2  &kp ENTER     &kp SPACE          &kp UP   &kp DOWN  &kp LBKT  &kp RBKT             &mo 2
+ &kp EQUAL     &kp N1        &kp N2    &kp N3     &kp N4  &kp N5                        &mo 1                                                                     &mo 3  &kp N6  &kp N7     &kp N8    &kp N9    &kp N0         &kp MINUS
+   &kp TAB      &kp Q         &kp W     &kp E      &kp R   &kp T                &kp LC(MINUS)                                                                &kp LS(F7)   &kp Z   &kp U      &kp I     &kp O     &kp P          &kp BSLH
+   &kp ESC      &kp A         &kp S     &kp D      &kp F   &kp G            &kp LC(LS(MINUS))  &kp LCTRL  &kp LALT                      &kp LGUI  &kp RCTRL      &kp F7   &kp H   &kp J      &kp K     &kp L  &kp SEMI  &kp SINGLE_QUOTE
+ &kp LSHFT      &kp Y         &kp X     &kp C      &kp V   &kp B                                          &kp HOME                  &kp LEFT_ALT                          &kp N   &kp M  &kp COMMA   &kp DOT  &kp FSLH         &kp RSHFT
+     &mo 2  &kp GRAVE  &kp LEFT_ALT  &kp LEFT  &kp RIGHT                             &kp BSPC    &kp DEL   &kp END                        &tog 2  &kp ENTER   &kp SPACE          &kp UP   &kp DOWN  &kp LBKT  &kp RBKT             &mo 2
             >;
         };
 
@@ -60,11 +60,11 @@
 
         layer_fn {
             bindings = <
- &kp F11   &kp F1     &kp F2     &kp F3     &kp F4     &kp F5            &tog 1                                                   &mo 3  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &kp F12
-  &trans   &kp F6     &kp F7     &kp F8     &kp F9    &kp F10             &none                                                   &none  &trans  &trans  &trans  &trans   &trans   &trans
-  &trans  &kp F11    &kp F12     &trans     &trans     &trans             &none  &trans  &trans                  &trans  &trans   &none  &trans  &trans  &trans  &trans   &trans   &trans
-  &trans   &trans  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LG(V)                            &trans                  &trans                  &trans  &trans  &trans  &trans   &trans   &trans
-  &trans   &trans     &trans     &trans     &trans                       &trans  &trans  &trans                  &trans  &trans  &trans          &trans  &trans  &trans   &trans   &trans
+ &kp F11     &kp F1     &kp F2     &kp F3     &kp F4     &kp F5            &tog 1                                                   &mo 3  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &kp F12
+  &trans     &kp F6     &kp F7     &kp F8     &kp F9    &kp F10             &none                                                   &none  &trans  &trans  &trans  &trans  &kp F11   &trans
+  &trans  &kp LC(A)  &kp LC(S)  &kp LC(D)  &kp LC(F)  &kp LC(G)             &none  &trans  &trans                  &trans  &trans   &none  &trans  &trans  &trans  &trans   &trans   &trans
+  &trans  &kp LC(Y)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LG(V)                            &trans                  &trans                  &trans  &trans  &trans  &trans   &trans   &trans
+  &trans  &kp LC(Z)     &trans     &trans     &trans                       &trans  &trans  &trans                  &trans  &trans  &trans          &trans  &trans  &trans   &trans   &trans
             >;
         };
 
