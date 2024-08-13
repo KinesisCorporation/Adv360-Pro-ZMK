@@ -43,7 +43,7 @@
 &kp GRAVE                &kp Q        &kp W      &kp E         &kp R         &kp T   &none                                                                        &none                   &kp Y   &kp U     &kp I      &kp O     &kp P            &kp BSLH
 &hm LEFT_COMMAND ESCAPE  &kp A        &kp S      &kp D         &kp F         &kp G   &none      &kp LCTRL      &kp LALT      &kp RIGHT_ALT  &kp RCTRL             &none                   &kp H   &kp J     &kp K      &kp L     &lt 2 SEMICOLON  &kp SQT
 &kp LSHFT                &kp Z        &kp X      &kp C         &kp V         &kp B                             &kp HOME      &kp PG_UP                                                    &kp N   &kp M     &kp COMMA  &kp DOT   &kp FSLH         &kp RSHFT
-&kp MINUS                &lt 1 UNDER  &kp TILDE  &kp LS(LPAR)  &kp LS(RPAR)          &kp SPACE  &kp BACKSPACE  &kp CAPS      &kp PG_DN      &hm LEFT_COMMAND TAB  &hm LEFT_CONTROL ENTER          &kp LBKT  &kp RBKT   &kp LEFT  &kp RIGHT        &kp EQUAL
+&mt LEFT_CONTROL MINUS   &lt 1 UNDER  &kp TILDE  &kp LS(LPAR)  &kp LS(RPAR)          &kp SPACE  &kp BACKSPACE  &kp CAPS      &kp PG_DN      &hm LEFT_COMMAND TAB  &hm LEFT_CONTROL ENTER          &kp LBKT  &kp RBKT   &kp LEFT  &kp RIGHT        &kp EQUAL
             >;
         };
 
