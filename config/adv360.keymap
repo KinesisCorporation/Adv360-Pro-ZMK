@@ -14,9 +14,6 @@
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/bt.h>
-#include <dt-bindings/zmk/rgb.h>
-#include <dt-bindings/zmk/backlight.h>
 
 / {
   behaviors {
@@ -43,7 +40,7 @@
  &kp EQUAL     &kp N1        &kp N2    &kp N3     &kp N4  &kp N5                        &mo 1                                                                 &mo 3  &kp N6  &kp N7     &kp N8    &kp N9    &kp N0         &kp MINUS
    &kp TAB      &kp Q         &kp W     &kp E      &kp R   &kp T                &kp LC(MINUS)                                                            &kp LS(F7)   &kp Z   &kp U      &kp I     &kp O     &kp P          &kp BSLH
    &kp ESC      &kp A         &kp S     &kp D      &kp F   &kp G            &kp LC(LS(MINUS))  &kp LCTRL  &kp LALT                  &kp LGUI  &kp RCTRL      &kp F7   &kp H   &kp J      &kp K     &kp L  &kp SEMI  &kp SINGLE_QUOTE
- &kp LSHFT      &kp Y         &kp X     &kp C      &kp V   &kp B                                          &kp HOME                    &tog 1                          &kp N   &kp M  &kp COMMA   &kp DOT  &kp FSLH         &kp RSHFT
+ &kp LSHFT      &kp Y         &kp X     &kp C      &kp V   &kp B                                          &kp HOME                     &mo 3                          &kp N   &kp M  &kp COMMA   &kp DOT  &kp FSLH         &kp RSHFT
      &mo 2  &kp GRAVE  &kp LEFT_ALT  &kp LEFT  &kp RIGHT                             &kp BSPC    &kp DEL   &kp END                    &tog 2  &kp ENTER   &kp SPACE          &kp UP   &kp DOWN  &kp LBKT  &kp RBKT             &mo 2
             >;
         };
@@ -70,11 +67,11 @@
 
         layer_mod {
             bindings = <
-  &none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                  &none                                                                          &trans   &none       &none       &none   &none   &none   &none
-  &none         &none         &none         &none         &none         &none            &bootloader                                                                     &bootloader   &none       &none       &none   &none   &none   &none
-  &none         &none         &none         &none         &none         &none                  &none   &none   &none                  &bt BT_CLR       &none  &rgb_ug RGB_MEFS_CMD 5   &none       &none       &none   &none   &none   &none
-  &none         &none         &none         &none    &macro_ver         &none                                  &none                       &none                                       &none       &none       &none   &none   &none   &none
-  &none         &none         &none         &none         &none                                &none   &none   &none                       &none  &bl BL_TOG         &rgb_ug RGB_TOG          &bl BL_INC  &bl BL_DEC   &none   &none   &none
+  &none      &none      &none   &none   &none   &none                  &none                                                       &trans   &none      &none   &none      &none   &none   &none
+  &none      &none      &none   &none   &none   &none            &bootloader                                                  &bootloader   &none  &kp RA(Y)   &none  &kp RA(P)   &none   &none
+  &none  &kp RA(Q)  &kp RA(S)   &none   &none   &none                  &none   &none   &none                   &none   &none        &none   &none      &none   &none      &none   &none   &none
+  &none      &none      &none   &none   &none   &none                                  &none                   &none                        &none      &none   &none      &none   &none   &none
+  &none      &none      &none   &none   &none                          &none   &none   &none                   &none   &none        &none              &none   &none      &none   &none   &none
             >;
         };
 
