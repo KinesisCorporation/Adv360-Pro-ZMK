@@ -42,8 +42,6 @@ bindings = <&kp LS(K)>, <&kp I>, <&kp N>, <&kp E>, <&kp S>, <&kp I>, <&kp S>;
             compatible = "zmk,behavior-macro";
             label = "macro_umlaut_a";
             #binding-cells = <0>;
-            wait-ms = <40>;
-            tap-ms = <40>;
             bindings = <&macro_press &kp LALT>
                         , <&macro_tap &kp KP_N0 &kp KP_N2 &kp KP_N2 &kp KP_N8>
                         , <&macro_release &kp LALT>;
@@ -54,8 +52,6 @@ bindings = <&kp LS(K)>, <&kp I>, <&kp N>, <&kp E>, <&kp S>, <&kp I>, <&kp S>;
             compatible = "zmk,behavior-macro";
             label = "macro_umlaut_o";
             #binding-cells = <0>;
-            wait-ms = <40>;
-            tap-ms = <40>;
             bindings = <&macro_press &kp LALT>
                         , <&macro_tap &kp KP_N0 &kp KP_N2 &kp KP_N4 &kp KP_N6>
                         , <&macro_release &kp LALT>;
@@ -66,8 +62,6 @@ bindings = <&kp LS(K)>, <&kp I>, <&kp N>, <&kp E>, <&kp S>, <&kp I>, <&kp S>;
             compatible = "zmk,behavior-macro";
             label = "macro_umlaut_u";
             #binding-cells = <0>;
-            wait-ms = <40>;
-            tap-ms = <40>;
             bindings = <&macro_press &kp LALT>
                         , <&macro_tap &kp KP_N0 &kp KP_N2 &kp KP_N5 &kp KP_N2>
                         , <&macro_release &kp LALT>;
@@ -78,8 +72,6 @@ bindings = <&kp LS(K)>, <&kp I>, <&kp N>, <&kp E>, <&kp S>, <&kp I>, <&kp S>;
             compatible = "zmk,behavior-macro";
             label = "macro_sz";
             #binding-cells = <0>;
-            wait-ms = <40>;
-            tap-ms = <40>;
             bindings = <&macro_press &kp LALT>
                         , <&macro_tap &kp KP_N0 &kp KP_N2 &kp KP_N2 &kp KP_N3>
                         , <&macro_release &kp LALT>;
