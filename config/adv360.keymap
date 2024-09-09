@@ -30,7 +30,7 @@
         bindings = <&kp>, <&kp>;
     };
 
-    unicode: unicode_behavior  {
+    unicode_behavior: unicode  {
         compatible = "zmk,behavior-unicode";
     };
 

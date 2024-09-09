@@ -39,26 +39,26 @@ bindings = <&kp LS(K)>, <&kp I>, <&kp N>, <&kp E>, <&kp S>, <&kp I>, <&kp S>;
             compatible = "zmk,behavior-macro";
             label = "macro_umlaut_a";
             #binding-cells = <0>;
-            bindings = <&unicode 0x00E4>;  // Unicode for 'ä'
+            bindings = <&unicode_behavior 0x00E4>;  // Unicode for 'ä'
         };
 
         macro_umlaut_o: macro_umlaut_o {
             compatible = "zmk,behavior-macro";
             label = "macro_umlaut_o";
             #binding-cells = <0>;
-            bindings = <&unicode 0x00F6>;  // Unicode for 'ö'
+            bindings = <&unicode_behavior 0x00F6>;  // Unicode for 'ö'
         };
 
         macro_umlaut_u: macro_umlaut_u {
             compatible = "zmk,behavior-macro";
             label = "macro_umlaut_u";
             #binding-cells = <0>;
-            bindings = <&unicode 0x00FC>;  // Unicode for 'ü'
+            bindings = <&unicode_behavior 0x00FC>;  // Unicode for 'ü'
         };
 
         macro_sz: macro_sz {
             compatible = "zmk,behavior-macro";
             label = "macro_sz";
             #binding-cells = <0>;
-            bindings = <&unicode 0x00DF>;  // Unicode for 'ß'
+            bindings = <&unicode_behavior 0x00DF>;  // Unicode for 'ß'
         };
