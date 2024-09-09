@@ -67,11 +67,11 @@
 
         layer_mod {
             bindings = <
-  &none      &none      &none   &none   &none   &none                  &none                                                       &trans   &none      &none   &none      &none   &none   &none
-  &none      &none      &none   &none   &none   &none            &bootloader                                                  &bootloader   &none  &kp RA(Y)   &none  &kp RA(P)   &none   &none
-  &none  &kp RA(Q)  &kp RA(S)   &none   &none   &none                  &none   &none   &none                   &none   &none        &none   &none      &none   &none      &none   &none   &none
-  &none      &none      &none   &none   &none   &none                                  &none                   &none                        &none      &none   &none      &none   &none   &none
-  &none      &none      &none   &none   &none                          &none   &none   &none                   &none   &none        &none              &none   &none      &none   &none   &none
+  &none            &none      &none   &none   &none   &none                  &none                                                       &trans   &none            &none   &none            &none   &none   &none
+  &none            &none      &none   &none   &none   &none            &bootloader                                                  &bootloader   &none  &macro_umlaut_u   &none  &macro_umlaut_o   &none   &none
+  &none  &macro_umlaut_a  &macro_sz   &none   &none   &none                  &none   &none   &none                   &none   &none        &none   &none            &none   &none            &none   &none   &none
+  &none            &none      &none   &none   &none   &none                                  &none                   &none                        &none            &none   &none            &none   &none   &none
+  &none            &none      &none   &none   &none                          &none   &none   &none                   &none   &none        &none                    &none   &none            &none   &none   &none
             >;
         };
 
