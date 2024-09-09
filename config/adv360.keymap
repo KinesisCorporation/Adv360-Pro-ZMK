@@ -29,6 +29,11 @@
         flavor = "tap-preferred";
         bindings = <&kp>, <&kp>;
     };
+
+    zmk,unicode: unicode {
+        compatible = "zmk,behavior-unicode";
+    };
+
   };
 
     keymap {
