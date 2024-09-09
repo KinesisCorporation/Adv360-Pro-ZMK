@@ -32,6 +32,7 @@
 
     unicode_behavior: unicode  {
         compatible = "zmk,behavior-unicode";
+        #binding-cells = <1>;
     };
 
   };
