@@ -40,28 +40,28 @@ label = "macro_kinesis";
 bindings = <&kp LS(K)>, <&kp I>, <&kp N>, <&kp E>, <&kp S>, <&kp I>, <&kp S>;
 };
 
-&macro_umlaut_a {
+macro_umlaut_a : macro_umlaut_a {
     compatible = "zmk,behavior-macro";
     label = "Umlaut Ä";
     #binding-cells = <0>;
     bindings = <&kp U_00E4>;  // Unicode for 'ä'
 };
 
-&macro_umlaut_o {
+macro_umlaut_o : macro_umlaut_o {
     compatible = "zmk,behavior-macro";
     label = "Umlaut Ö";
     #binding-cells = <0>;
     bindings = <&kp U_00F6>;  // Unicode for 'ö'
 };
 
-&macro_umlaut_u {
+macro_umlaut_u : macro_umlaut_u {
     compatible = "zmk,behavior-macro";
     label = "Umlaut Ü";
     #binding-cells = <0>;
     bindings = <&kp U_00FC>;  // Unicode for 'ü'
 };
 
-&macro_sz {
+macro_sz : macro_sz {
     compatible = "zmk,behavior-macro";
     label = "Sharp S ß";
     #binding-cells = <0>;
