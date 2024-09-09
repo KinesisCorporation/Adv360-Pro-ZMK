@@ -14,7 +14,6 @@
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/behavior-unicode.dtsi>
 
 
 / {
@@ -31,12 +30,6 @@
         flavor = "tap-preferred";
         bindings = <&kp>, <&kp>;
     };
-
-    unicode_behavior: unicode  {
-        compatible = "zmk,behavior-unicode";
-        #binding-cells = <1>;
-    };
-
   };
 
     keymap {

@@ -35,30 +35,52 @@ label = "macro_kinesis";
 bindings = <&kp LS(K)>, <&kp I>, <&kp N>, <&kp E>, <&kp S>, <&kp I>, <&kp S>;
 };
 
+
+
+// Macro for "ä" (Alt + 0228)
         macro_umlaut_a: macro_umlaut_a {
             compatible = "zmk,behavior-macro";
             label = "macro_umlaut_a";
             #binding-cells = <0>;
-            bindings = <&unicode_behavior 0x00E4>;  // Unicode for 'ä'
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings = <&macro_press &kp LALT>
+                        , <&macro_tap &kp KP_N0 &kp KP_N2 &kp KP_N2 &kp KP_N8>
+                        , <&macro_release &kp LALT>;
         };
 
+        // Macro for "ö" (Alt + 0246)
         macro_umlaut_o: macro_umlaut_o {
             compatible = "zmk,behavior-macro";
             label = "macro_umlaut_o";
             #binding-cells = <0>;
-            bindings = <&unicode_behavior 0x00F6>;  // Unicode for 'ö'
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings = <&macro_press &kp LALT>
+                        , <&macro_tap &kp KP_N0 &kp KP_N2 &kp KP_N4 &kp KP_N6>
+                        , <&macro_release &kp LALT>;
         };
 
+        // Macro for "ü" (Alt + 0252)
         macro_umlaut_u: macro_umlaut_u {
             compatible = "zmk,behavior-macro";
             label = "macro_umlaut_u";
             #binding-cells = <0>;
-            bindings = <&unicode_behavior 0x00FC>;  // Unicode for 'ü'
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings = <&macro_press &kp LALT>
+                        , <&macro_tap &kp KP_N0 &kp KP_N2 &kp KP_N5 &kp KP_N2>
+                        , <&macro_release &kp LALT>;
         };
 
+        // Macro for "ß" (Alt + 0223)
         macro_sz: macro_sz {
             compatible = "zmk,behavior-macro";
             label = "macro_sz";
             #binding-cells = <0>;
-            bindings = <&unicode_behavior 0x00DF>;  // Unicode for 'ß'
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings = <&macro_press &kp LALT>
+                        , <&macro_tap &kp KP_N0 &kp KP_N2 &kp KP_N2 &kp KP_N3>
+                        , <&macro_release &kp LALT>;
         };
