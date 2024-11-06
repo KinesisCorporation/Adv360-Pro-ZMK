@@ -223,16 +223,9 @@
     display-name = "Double Click";
   };
 
-  macro_terminal_real: macro_terminal_real{
-    compatible = "zmk,behavior-macro";
-    label = "macro_terminal_real";
-    #binding-cells = <0>;
-    bindings = <&kp LEFT_GUI(SPACE)>;
-  };
-  
   macro_terminal: macro_terminal{
     compatible = "zmk,behavior-macro";
     label = "macro_terminal";
     #binding-cells = <0>;
-    bindings = <&kp LEFT_ALT(SPACE)>, <&kp S>, <&kp L>, <&kp A>, <&kp C>, <&kp K>, <&kp ENTER>;
+    bindings = <&kp LG(SPACE)>;
   };
