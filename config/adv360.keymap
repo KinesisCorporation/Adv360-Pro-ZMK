@@ -60,11 +60,11 @@
 
         layer_fn {
             bindings = <
- &kp C_VOLUME_UP  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5            &tog 1                                                   &mo 3  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &kp C_VOLUME_DOWN
-          &trans  &trans  &trans  &trans  &trans  &trans            &tog 4                                                   &none  &trans  &trans  &trans  &trans   &trans             &trans
-          &trans  &trans  &trans  &trans  &trans  &trans             &none  &trans  &trans                  &trans  &trans   &none  &trans  &trans  &trans  &trans   &trans             &trans
-          &trans  &trans  &trans  &trans  &trans  &trans                            &trans                  &trans                  &trans  &trans  &trans  &trans   &trans             &trans
-          &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans                  &trans  &trans  &trans          &trans  &trans  &trans   &trans             &trans
+ &kp C_VOLUME_UP  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5            &tog 1                                                   &mo 3  &kp F6  &kp F7  &kp F8            &kp F9  &kp F10  &kp C_VOLUME_DOWN
+          &trans  &trans  &trans  &trans  &trans  &trans            &tog 4                                                   &none  &trans  &trans  &trans            &trans   &trans             &trans
+          &trans  &trans  &trans  &trans  &trans  &trans             &none  &trans  &trans                  &trans  &trans   &none  &trans  &trans  &trans            &trans   &trans             &trans
+          &trans  &trans  &trans  &trans  &trans  &trans                            &trans                  &trans                  &trans  &trans  &trans  &kp C_PLAY_PAUSE   &trans             &trans
+          &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans                  &trans  &trans  &trans          &trans  &trans            &trans   &trans             &trans
             >;
         };
 
