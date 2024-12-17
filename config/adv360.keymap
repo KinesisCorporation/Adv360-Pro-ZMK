@@ -142,7 +142,7 @@
         &bootloader &none           &none        &none        &none           &none        &none                                               &none       &none                  &none           &none        &none        &none        &bootloader
         &none       &bt BT_SEL 0    &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3    &bt BT_SEL 4 &none                                               &none       &rgb_ug RGB_MEFS_CMD 5 &rgb_ug RGB_TOG &bl BL_TOG   &bl BL_INC   &bl BL_DEC   &none
         &none       &kp LCTRL       &kp LALT     &kp LGUI     &kp LSHFT       &kp CAPS     &none         &none  &none     &none  &none         &none       &kp C_MUTE             &kp C_VOL_DN    &kp C_BRI_DN &kp C_BRI_UP &kp C_VOL_UP &none
-        &none       &none           &none        &none        &tog GAM        &tog DEFWIN                       &none     &none                            &kp C_PP               &kp C_PREV      &kp C_NEXT   &none        &none        &none
+        &none       &tog GAM        &none        &none        &none           &tog DEFWIN                       &none     &none                            &kp C_PP               &kp C_PREV      &kp C_NEXT   &none        &none        &none
         &none       &none           &none        &none        &none                               &trans &trans &trans    &trans &trans &trans                                    &none           &none        &none        &none        &none
       >;
     };
@@ -158,9 +158,9 @@
     gam {
       bindings = <
         &none    &none      &none      &none       &none    &none    &none                                                   &none    &none    &none    &none       &none         &none         &none
-        &none    &tog GAM   &none      &kp W       &none    &none    &none                                                   &none    &none    &none    &none       &none         &none         &none
+        &none    &kp ESC    &none      &kp W       &none    &none    &none                                                   &none    &none    &none    &none       &none         &none         &none
         &none    &none      &kp A      &kp S       &kp D    &none    &none                 &none &none    &none &none        &none    &none    &none    &none       &none         &none         &none
-        &none    &none      &none      &kp LCTRL   &none    &none                                &none    &none                       &none    &none    &none       &none         &none         &none
+        &none    &tog GAM   &none      &kp LCTRL   &none    &none                                &none    &none                       &none    &none    &none       &none         &none         &none
         &none    &none      &none      &none       &none                     &kp LSHFT &kp SPACE &none    &none &none &none                    &none    &none       &none         &none         &none
       >;
     };
