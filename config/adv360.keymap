@@ -73,15 +73,15 @@
         #include "version.dtsi"
 
         HML(hmo,  "LAYER_HOLD", 200, KEYS_NONE)
-        HMH(hmlr, "LAYER_TAP_LEFT", 150, KEYS_NONE)
-        HMH(hmll, "LAYER_TAP_RIGHT", 150, KEYS_NONE)
+        HMH(hmlr, "LAYER_TAP_LEFT", 175, KEYS_NONE)
+        HMH(hmll, "LAYER_TAP_RIGHT", 175, KEYS_NONE)
 
-        HMT(hmt, "MODS_THUMB", 150, KEYS_NONE)
-        HMT(hmr, "MODS_RIGHT", 150, KEYS_LEFT THUMBS_LEFT)
-        HMT(hml, "MODS_LEFT",  150, KEYS_RIGHT THUMBS_RIGHT)
+        HMT(hmt, "MODS_THUMB", 175, KEYS_NONE)
+        HMT(hmr, "MODS_RIGHT", 175, KEYS_LEFT THUMBS_LEFT)
+        HMT(hml, "MODS_LEFT",  175, KEYS_RIGHT THUMBS_RIGHT)
 
-        HMT(hmrs, "MODS_RIGHT_SLOW", 180, KEYS_LEFT)
-        HMT(hmls, "MODS_LEFT_SLOW",  180, KEYS_RIGHT)
+        HMT(hmrs, "MODS_RIGHT_SLOW", 200, KEYS_LEFT)
+        HMT(hmls, "MODS_LEFT_SLOW",  200, KEYS_RIGHT)
     };
 
     keymap {
@@ -89,7 +89,7 @@
 
       default_layer {
         bindings = <
-          &kp PSCRN  &kp N1     &kp N2      &kp N3       &kp N4       &kp N5 &mo 3                                                                 &mo 2    &kp N6 &kp N7       &kp N8     &kp N9    &kp N0    &kp PSCRN
+          &kp PSCRN  &kp N1     &kp N2      &kp N3       &kp N4       &kp N5 &mo 3                                                                 &mo 2    &kp N6 &kp N7       &kp N8     &kp N9    &kp N0    &kp SLCK
           &kp CAPS   &kp Q      &kp W       &kp E        &kp R        &kp T  &kp RIGHT                                                             &kp UP   &kp Y  &kp U        &kp I      &kp O     &kp P     &kp DEL
           &kp TAB    &kp A      &kp S       &kp D        &hml LSHFT F &kp G  &kp LEFT  &hmt LALT TAB  &hmt LGUI CAPS &hmt RGUI DEL &hmt RALT SQT   &kp DOWN &kp H  &hmr RSHFT J &kp K      &kp L     &kp SEMI  &kp SQT
           &kp LSHFT  &kp Z      &kp X       &kp C        &kp V        &kp B                           &hmo 3 HOME    &hmo 2 PG_UP                           &kp N  &kp M        &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
@@ -98,20 +98,26 @@
       };
       fn {
         bindings = <
-          &kp F11 &kp F1  &kp F2   &kp F3    &kp F4    &kp F5    &kp C_PP                                       &kp C_MUTE     &kp F6      &kp F7       &kp F8       &kp F9       &kp F10     &kp F12
-          &trans  &trans  &trans   &trans    &trans    &trans    &kp C_NEXT                                     &kp C_VOL_UP   &kp HOME    &kp PG_DN    &kp PG_UP    &kp END      &kp INS     &none
-          &trans  &trans  &trans   &trans    &trans    &trans    &kp C_PREV    &trans &trans &trans &trans      &kp C_VOL_DN   &kp LEFT    &kp DOWN     &kp UP       &kp RIGHT    &kp SLCK    &none
-          &trans  &trans  &trans   &trans    &trans    &trans                         &trans &trans                            &kp K_UNDO  &kp K_CUT    &kp K_COPY   &kp K_PASTE  &kp K_REDO  &none
-          &trans  &trans  &trans   &trans    &trans                     &trans &trans &trans &trans &trans &trans                          &none        &none        &none        &none       &none
+          &kp F11 &kp F1  &kp F2    &kp F3     &kp F4     &kp F5    &kp C_PP                                       &kp C_MUTE     &kp F6       &kp F7       &kp F8       &kp F9        &kp F10  &kp F12
+          &trans  &trans  &trans    &trans     &trans     &trans    &kp C_NEXT                                     &kp C_VOL_UP   &kp HOME     &kp PG_DN    &kp PG_UP    &kp END       &none    &none
+          &trans  &trans  &trans    &trans     &trans     &trans    &kp C_PREV    &trans &trans &trans &trans      &kp C_VOL_DN   &kp LEFT     &kp DOWN     &kp UP       &kp RIGHT     &none    &none
+          &trans  &trans  &trans    &trans     &trans     &trans                         &trans &trans                            &kp LC(LEFT) &kp LC(DOWN) &kp LC(UP)   &kp LC(RIGHT) &none    &none
+          &none   &none   &kp  C_PP &kp C_PREV &kp C_NEXT                  &trans &trans &trans &trans &trans &trans                           &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE    &none    &none
         >;
+
+        // &kp F10 &kp F1 &kp F2         &kp F3       &kp F3          &kp F5           &kp C_PP                                          &kp C_MUTE    &kp F6       &kp F7       &kp F8       &kp F9        &kp F10  &kp F12
+        // &none   &none  &mkp MB1       &mkp MB2     &mkp MB3        &mkp MB4         &kp C_NEXT                                        &kp C_VOL_UP  &kp HOME     &kp PG_DN    &kp PG_UP    &kp END       &none    &none
+        // &none   &none  &mmv MOVE_LEFT &mmv MOVE_UP &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp C_PREV    &trans &trans &trans &trans         &kp C_VOL_DN  &kp LEFT     &kp DOWN     &kp UP       &kp RIGHT     &none    &none
+        // &none   &none  &msc SCRL_LEFT &msc SCRL_UP &msc SCRL_DOWN  &msc SCRL_RIGHT                       &trans &trans                              &kp LC(LEFT) &kp LC(DOWN) &kp LC(UP)   &kp LC(RIGHT) &none    &none
+        // &none   &none  &kp  C_PP      &kp C_PREV   &kp C_NEXT                              &trans &trans &trans &trans &trans &trans                             &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE    &none    &none
       };
       mod {
         bindings = <
           &bt BT_CLR  &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &bl BL_TOG                              &bl BL_TOG &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &bt BT_CLR
-          &bootloader &none        &none        &none        &none        &none        &bl BL_SET 5                            &bl BL_INC &none       &none        &none        &none        &none         &bootloader
-          &none       &none        &none        &none        &none        &none        &bl BL_CYCLE  &none &none &none &none   &bl BL_DEC &none       &none        &none        &none        &none         &none
-          &none       &none        &none        &none        &none   &none                                 &none &none                    &none       &none        &none        &none        &none         &none
-          &none       &none        &none        &none        &none                             &none &none &none &none &none &none                    &none        &none        &none        &none         &none
+          &bootloader &none        &none        &none        &none        &none        &bl BL_SET 5                            &bl BL_INC &none        &none        &none        &none        &none         &bootloader
+          &none       &none        &none        &none        &none        &none        &bl BL_CYCLE  &none &none &none &none   &bl BL_DEC &none        &none        &none        &none        &none         &none
+          &none       &none        &none        &none        &none        &none                            &none &none                    &none        &none        &none        &none        &none         &none
+          &none       &none        &none        &bl BL_OFF   &bl BL_ON                         &none &none &none &none &none &none                     &bl BL_DEC   &bl BL_INC   &none        &none         &none
         >;
       };
       keypad {
