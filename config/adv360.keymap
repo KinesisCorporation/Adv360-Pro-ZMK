@@ -78,31 +78,41 @@
 
         home_layer {
             bindings = <
-&kp ESC    &kp TILDE       &kp LBKT    &kp LBRC     &kp LPAR      &kp PERCENT  &kp                                         &kp      &kp CARET  &kp RPAR      &kp RBRC     &kp RBKT        &kp DLLR         &kp BSPC
-&kp TAB    &kp Q           &kp W       &kp F        &kp P         &kp B        &kp                                         &kp      &kp J      &kp L         &kp U        &kp Y           &kp SQT          &kp
-&kp LCTRL  &hm LEFT_GUI A  &hm LALT R  &hm LCTRL S  &hm LSHIFT T  &kp G        &kp      &kp        &kp      &kp  &kp       &kp      &kp M      &hm RSHIFT N  &hm RCTRL E  &hm LEFT_ALT I  &hm RIGHT_GUI O  &kp RET
-&kp LSHFT  &kp Z           &kp X       &kp C        &kp D         &kp V                            &kp      &kp                     &kp K      &kp H         &kp COMMA    &kp DOT         &kp FSLH         &kp RSHFT
-&kp        &kp             &kp         &kp          &kp                        &kp ESC  &kp SPACE  &kp      &kp  &kp BSPC  &kp RET             &kp           &kp          &kp             &kp              &kp
+&kp ESC    &kp TILDE       &kp LBKT    &kp LBRC      &kp LPAR            &kp PERCENT  &none                                             &none      &kp CARET  &kp RPAR             &kp RBRC           &kp RBKT        &kp DLLR         &kp BSPC
+&kp TAB    &kp Q           &kp W       &kp F         &kp P               &kp B        &none                                             &none      &kp J      &kp L                &kp U              &kp Y           &kp SQT          &kp BSLH
+&kp LCTRL  &hm LEFT_GUI A  &hm LALT R  &hm LSHIFT S  &hm LEFT_CONTROL T  &kp G        &none      &none      &none      &none  &none     &none      &kp M      &hm RIGHT_CONTROL N  &hm RIGHT_SHIFT E  &hm LEFT_ALT I  &hm RIGHT_GUI O  &kp RET
+&kp LSHFT  &kp Z           &kp X       &kp C         &kp D               &kp V                              &none      &none                       &kp K      &kp H                &kp COMMA          &kp DOT         &kp FSLH         &kp RSHFT
+&none      &none           &none       &none         &none                            &lt 5 ESC  &kp SPACE  &none      &none  &kp BSPC  &lt 6 RET             &none                &none              &none           &none            &none
             >;
         };
 
         sym_num_layer {
             bindings = <
-&none  &none  &none     &none      &none      &none   &none                                            &none       &none            &none            &none            &none            &none            &none
-&none  &none  &kp AMPS  &kp STAR   &kp LT     &kp GT  &none                                            &none       &none            &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_EQUAL     &none
-&none  &none  &kp DLLR  &kp PRCNT  &kp CARET  &none   &none  &none  &none      &none  &none            &none       &kp KP_MULTIPLY  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS      &none
-&none  &none  &kp EXCL  &kp AT     &kp HASH   &none                 &none      &none                               &kp KP_DIVIDE    &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_SUBTRACT  &none
-&none  &none  &none     &none      &none              &none  &none  &none      &none  &kp KP_NUMBER_0  &kp KP_DOT                   &none            &none            &none            &none            &none
+&none  &none      &none     &none      &none      &none   &none                                            &none       &none            &kp KP_NUMBER_0  &kp KP_COMMA     &kp KP_DOT       &none            &none
+&none  &kp GRAVE  &kp AMPS  &kp STAR   &kp LT     &kp GT  &none                                            &none       &none            &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_EQUAL     &none
+&none  &kp PIPE   &kp DLLR  &kp PRCNT  &kp CARET  &none   &none  &none  &none      &none  &none            &none       &kp KP_MULTIPLY  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS      &none
+&none  &none      &kp EXCL  &kp AT     &kp HASH   &none                 &none      &none                               &kp KP_DIVIDE    &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_SUBTRACT  &none
+&none  &none      &none     &none      &none              &none  &none  &none      &none  &kp KP_NUMBER_0  &kp KP_DOT                   &none            &none            &none            &none            &none
             >;
         };
 
-        navigation_layer {
+        nav_layer {
             bindings = <
 &trans  &trans  &trans    &trans    &trans     &trans     &trans                                      &trans  &trans  &trans    &trans     &trans     &trans     &trans
 &trans  &trans  &kp HOME  &kp UP    &kp END    &kp PG_UP  &trans                                      &trans  &trans  &trans    &trans     &trans     &trans     &trans
 &trans  &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &kp PG_DN  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &trans
 &trans  &trans  &trans    &trans    &trans     &trans                     &trans      &trans                  &trans  &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &trans
 &trans  &trans  &trans    &trans    &trans                &trans  &trans  &trans      &trans  &trans  &trans          &trans    &trans     &trans     &trans     &trans
+            >;
+        };
+
+        config_layer {
+            bindings = <
+&none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none                                                  &trans                  &none  &none       &none       &none  &none  &none
+&none  &none         &none         &none         &none         &none         &bootloader                                            &bootloader             &none  &none       &none       &none  &none  &none
+&none  &none         &none         &none         &none         &none         &none        &none  &none      &bt BT_CLR  &none       &rgb_ug RGB_MEFS_CMD 5  &none  &none       &none       &none  &none  &none
+&none  &none         &none         &none         &macro_ver    &none                             &none      &none                                           &none  &none       &none       &none  &none  &none
+&none  &none         &none         &none         &none                       &none        &none  &none      &none       &bl BL_TOG  &rgb_ug RGB_TOG                &bl BL_INC  &bl BL_DEC  &none  &none  &none
             >;
         };
     };
