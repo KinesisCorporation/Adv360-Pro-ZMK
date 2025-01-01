@@ -78,15 +78,5 @@
             >;
         };
 
-        layer_Shortcuts {
-            bindings = <
- &trans  &trans          &trans         &trans          &trans  &trans            &trans                                                         &trans  &trans    &trans    &trans     &trans  &trans  &trans
- &trans  &trans          &trans         &trans   &macro_braces  &trans            &trans                                                         &trans  &trans    &trans    &kp UP     &trans  &trans  &trans
- &trans  &trans  &macro_dquotes  &macro_quotes  &macro_alt+tab  &trans            &trans  &trans  &trans                  &trans      &trans     &trans  &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &trans
- &trans  &trans       &kp K_CUT     &kp K_COPY     &kp K_PASTE  &trans                            &trans                  &trans                         &trans    &trans    &trans     &trans  &trans  &trans
- &trans  &trans          &trans         &trans          &trans                    &trans  &trans  &trans                  &trans  &kp DELETE  &kp ENTER            &trans    &trans     &trans  &trans  &trans
-            >;
-        };
-
     };
 };

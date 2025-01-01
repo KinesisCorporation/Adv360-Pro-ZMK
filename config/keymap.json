@@ -6,8 +6,7 @@
     "base",
     "keypad",
     "fn",
-    "mod",
-    "Shortcuts"
+    "mod"
   ],
   "layers": [
     [
@@ -34,12 +33,6 @@
         "&none",        "&none",        "&none",        "&none",        "&none",        "&none",                 "&none",  "&none",  "&none",                     "&bt BT_CLR",      "&none", "&rgb_ug RGB_MEFS_CMD 5",  "&none",      "&none",      "&none",  "&none",  "&none",  "&none",
         "&none",        "&none",        "&none",        "&none",   "&macro_ver",        "&none",                                     "&none",                          "&none",                                          "&none",      "&none",      "&none",  "&none",  "&none",  "&none",
         "&none",        "&none",        "&none",        "&none",        "&none",                                 "&none",  "&none",  "&none",                          "&none", "&bl BL_TOG",        "&rgb_ug RGB_TOG",           "&bl BL_INC", "&bl BL_DEC",  "&none",  "&none",  "&none"
-    ], [
-       "&trans", "&trans",         "&trans",        "&trans",         "&trans", "&trans",           "&trans",                                                                    "&trans", "&trans",   "&trans",   "&trans",    "&trans", "&trans", "&trans",
-       "&trans", "&trans",         "&trans",        "&trans",  "&macro_braces", "&trans",           "&trans",                                                                    "&trans", "&trans",   "&trans",   "&kp UP",    "&trans", "&trans", "&trans",
-       "&trans", "&trans", "&macro_dquotes", "&macro_quotes", "&macro_alt+tab", "&trans",           "&trans", "&trans", "&trans",                     "&trans",     "&trans",    "&trans", "&trans", "&kp LEFT", "&kp DOWN", "&kp RIGHT", "&trans", "&trans",
-       "&trans", "&trans",      "&kp K_CUT",    "&kp K_COPY",    "&kp K_PASTE", "&trans",                               "&trans",                     "&trans",                            "&trans",   "&trans",   "&trans",    "&trans", "&trans", "&trans",
-       "&trans", "&trans",         "&trans",        "&trans",         "&trans",                     "&trans", "&trans", "&trans",                     "&trans", "&kp DELETE", "&kp ENTER",             "&trans",   "&trans",    "&trans", "&trans", "&trans"
     ]
   ]
 }
