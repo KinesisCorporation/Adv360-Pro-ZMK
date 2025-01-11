@@ -35,9 +35,9 @@
       bindings = <
         &kp EQUAL &kp N1    &kp N2    &kp N3   &kp N4     &kp N5 &kp PSCRN                                                                  &mo 3 &kp N6 &kp N7 &kp N8    &kp N9   &kp N0   &kp BSLH
         &kp TAB   &kp SEMI  &kp COMMA &kp DOT  &kp P      &kp Y  &none                                                                      &none &kp F  &kp G  &kp C     &kp R    &kp L    &kp FSLH
-        &kp ESC   &kp A     &kp O     &kp E    &kp U      &kp I  &none                &kp LCTRL  &kp LALT   &kp RALT   &kp RCTRL            &none &kp D  &kp H  &kp T     &kp N    &kp S    &kp MINUS
+        &kp ESC   &kp A     &kp O     &kp E    &kp U      &kp I  &none                &kp LMETA  &kp LALT   &kp RALT   &kp RMETA            &none &kp D  &kp H  &kp T     &kp N    &kp S    &kp MINUS
         &kp LSHFT &kp SQT   &kp Q     &kp J    &kp K      &kp X                                  &kp PG_DN  &kp PG_UP                             &kp B  &kp M  &kp W     &kp V    &kp Z    &kp RSHFT
-        &mo 2     &kp GRAVE &none   &kp LEFT &kp RIGHT                      &kp BSPC  &kp DEL    &kp LMETA  &kp RMETA  &kp ENTER &kp SPACE               &kp UP &kp DOWN  &kp LBKT &kp RBKT &mo 2
+        &mo 2     &kp GRAVE &none   &kp LEFT &kp RIGHT                      &kp BSPC  &kp DEL    &kp LCTRL  &kp RCTRL  &kp ENTER &kp SPACE               &kp UP &kp DOWN  &kp LBKT &kp RBKT &mo 2
       >;
     };
     media {
