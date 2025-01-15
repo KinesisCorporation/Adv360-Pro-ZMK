@@ -1,3 +1,9 @@
+macro_snip: macro_snip{
+compatible = "zmk,behavior-macro";
+label = "macro_snip";
+#binding-cells = <0>;
+bindings = <&kp RIGHT_WIN>, <&kp LEFT_SHIFT>, <&kp S>;
+};
 macro_shift+ins: macro_shift+ins{
 compatible = "zmk,behavior-macro";
 label = "macro_shift+ins";
