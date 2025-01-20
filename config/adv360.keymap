@@ -54,6 +54,13 @@
         bindings = <&to 5>, <&to 4>;
         mods = <MOD_LSFT>;
     };
+
+    tlmm: thumb_layer_mod_morph {
+        compatible = "zmk,behavior-mod-morph";
+        #binding-cells = <0>;
+        bindings = <&mo 8>, <&kp DEL>;
+        mods = <MOD_LSFT>;
+    };
   };
 
   combos {
@@ -88,8 +95,8 @@
  &kp EQUAL      &kp N1        &kp N2        &kp N3        &kp N4              &kp N5              &tog 1                                                                        &mo 3                 &kp N6  &kp N7    &kp N8      &kp N9    &kp N0    &kp MINUS
  &kp TAB        &kp Q         &kp W         &kp E         &kp R               &kp T               &lmm                                                                          &to 4                 &kp Y   &kp U     &kp I       &kp O     &kp P     &kp BSLH
  &kp ESC        &kp A         &hml LALT S   &hml LCTRL D  &hml LSHIFT F       &kp G               &mo 7              &kp LCTRL  &kp LALT                  &kp LGUI   &kp RCTRL  &to 7                 &kp H   &kp J     &kp K       &kp L     &kp SEMI  &kp SQT
- &kp LSHFT      &kp Z         &kp X         &kp C         &kp V               &kp B               				                      &kp HOME   	              &kp PG_UP      		                          &kp N   &kp M     &kp COMMA   &kp DOT   &kp FSLH  &kp RSHFT
- &mo 2          &kp GRAVE     &kp CAPS      &kp LEFT      &kp RIGHT                               &kp BSPC           &kp DEL    &kp END                   &kp PG_DN  &kp ENTER  &kp SPACE                     &kp DOWN  &kp UP      &kp LBKT  &kp RBKT  &mo 2
+ &kp LSHFT      &kp Z         &kp X         &kp C         &kp V               &kp B               				                &kp HOME   	              &kp PG_UP      		                      &kp N   &kp M     &kp COMMA   &kp DOT   &kp FSLH  &kp RSHFT
+ &mo 2          &kp GRAVE     &kp CAPS      &kp LEFT      &kp RIGHT                               &kp BSPC           &tlmm      &kp END                   &kp PG_DN  &kp ENTER  &kp SPACE                     &kp DOWN  &kp UP      &kp LBKT  &kp RBKT  &mo 2
             >;
         };
 
@@ -98,7 +105,7 @@
  &kp EQUAL     &kp N1    &kp N2    &kp N3     &kp N4  &kp N5              &trans                                                                 &mo 3        &kp N6  &kp KP_NUM  &kp KP_EQUAL      &kp KP_DIVIDE     &kp KP_MULTIPLY &kp MINUS
    &kp TAB      &kp Q     &kp W     &kp E      &kp R   &kp T               &none                                                                 &none        &kp Y   &kp KP_N7     &kp KP_N8       &kp KP_N9         &kp KP_MINUS    &kp BSLH
    &kp ESC      &kp A     &kp S     &kp D      &kp F   &kp G               &none  &kp LCTRL   &kp LALT                  &kp LGUI  &kp RCTRL      &none        &kp H   &kp KP_N4     &kp KP_N5       &kp KP_N6         &kp KP_PLUS     &kp SQT
- &kp LSHFT      &kp Z     &kp X     &kp C      &kp V   &kp B               		                &kp HOME   		            &kp PG_UP      		                    &kp N   &kp KP_N1     &kp KP_N2       &kp KP_N3         &kp KP_ENTER    &kp RSHFT
+ &kp LSHFT      &kp Z     &kp X     &kp C      &kp V   &kp B               		              &kp HOME   		        &kp PG_UP      		                  &kp N   &kp KP_N1     &kp KP_N2       &kp KP_N3         &kp KP_ENTER    &kp RSHFT
      &mo 2  &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT                    &kp BSPC    &kp DEL   &kp END                   &kp PG_DN  &kp ENTER  &kp KP_N0               &kp UP        &kp DOWN        &kp KP_DOT        &kp RBKT        &mo 2
             >;
         };
@@ -108,7 +115,7 @@
  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6             &tog 1                                                      &mo 3             &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
  &trans  &trans  &trans  &trans  &trans  &trans             &none                                                       &none             &trans  &trans  &trans   &trans   &trans   &trans
  &trans  &trans  &trans  &trans  &trans  &trans             &none  &trans   &trans                    &trans  &trans    &none             &trans  &trans  &trans   &trans   &trans   &trans
- &trans  &trans  &trans  &trans  &trans  &trans             		            &trans   		              &trans   	                          &trans  &trans  &trans   &trans   &trans   &trans
+ &trans  &trans  &trans  &trans  &trans  &trans             		        &trans   		          &trans   	                          &trans  &trans  &trans   &trans   &trans   &trans
  &trans  &trans  &trans  &trans  &trans                     &trans  &trans  &trans                    &trans  &trans    &trans                    &trans  &trans   &trans   &trans   &trans
             >;
         };
@@ -125,21 +132,21 @@
 
         layer_PDX {
             bindings = <
- &trans  &ht NUMBER_1 F1    &ht NUMBER_2 F2     &ht NUMBER_3 F3   &ht NUMBER_4 F4   &ht NUMBER_5 F5             &trans                                                          &trans            &ht NUMBER_6 F6   &ht NUMBER_7 F7   &ht NUMBER_8 F8   &ht NUMBER_9 F9   &ht NUMBER_0 F10    &trans
- &trans  &trans             &trans              &trans            &trans            &trans                      &to 0                                                           &to 0             &trans            &trans            &trans            &trans            &trans              &trans
- &trans  &trans             &trans              &trans            &trans            &trans                      &trans      &trans       &trans                 &trans  &trans  &trans            &trans            &trans            &trans            &trans            &trans              &trans
- &trans  &trans             &trans              &trans            &trans            &trans                      			                   &kp KP_PLUS  	        &trans  	  	                    &trans            &trans            &trans            &trans            &trans              &trans
- &trans  &trans             &trans              &trans            &trans                                        &kp ENTER   &kp SPACE    &kp KP_MINUS           &trans  &trans  &trans                              &trans            &trans            &trans            &trans              &trans
+ &trans  &ht NUMBER_1 F1    &ht NUMBER_2 F2     &ht NUMBER_3 F3   &ht NUMBER_4 F4   &ht NUMBER_5 F5       &trans                                                          &trans            &ht NUMBER_6 F6   &ht NUMBER_7 F7   &ht NUMBER_8 F8   &ht NUMBER_9 F9   &ht NUMBER_0 F10    &trans
+ &trans  &trans             &trans              &trans            &trans            &trans                &to 0                                                           &to 0             &trans            &trans            &trans            &trans            &trans              &trans
+ &trans  &trans             &trans              &trans            &trans            &trans                &trans      &trans       &trans                 &trans  &trans  &trans            &trans            &trans            &trans            &trans            &trans              &trans
+ &trans  &trans             &trans              &trans            &trans            &trans                			               &kp KP_PLUS  	      &trans  	  	                    &trans            &trans            &trans            &trans            &trans              &trans
+ &trans  &trans             &trans              &trans            &trans                                  &kp ENTER   &kp SPACE    &kp KP_MINUS           &trans  &trans  &trans                              &trans            &trans            &trans            &trans              &trans
             >;
         };
 
 	      layer_gaming {
             bindings = <
- &trans  &trans      &trans   &trans  &trans  &trans        &kp T                                                             &trans          &trans    &trans  &trans  &trans  &trans  &trans
- &trans  &kp TAB     &kp Q    &kp W   &kp E   &kp R         &to 0                                                             &trans          &trans    &trans  &trans  &trans  &trans  &trans
- &trans  &kp LSHIFT  &nkp A   &kp S   &nkp D  &kp F         &kp G       &trans      &kp C_PP      &trans    &trans            &trans          &trans    &trans  &trans  &trans  &trans  &trans
- &trans  &kp LCTRL   &kp Z    &kp X   &kp C   &kp V        			                    &kp SLCK  	  &trans    			                            &trans    &trans  &trans  &trans  &trans  &trans
- &trans  &trans      &trans   &trans  &trans                &kp LCTRL   &kp SPACE   &kp B         &trans  &macro_gaming_chat  &trans                    &trans  &trans  &trans  &trans  &trans
+ &trans  &trans      &trans   &trans  &trans  &trans        &kp T                                                                   &trans          &trans    &trans  &trans  &trans  &trans  &trans
+ &trans  &kp TAB     &kp Q    &kp W   &kp E   &kp R         &to 0                                                                   &trans          &trans    &trans  &trans  &trans  &trans  &trans
+ &trans  &kp LSHIFT  &nkp A   &kp S   &nkp D  &kp F         &kp G       &trans      &kp C_PP      &trans        &trans              &trans          &trans    &trans  &trans  &trans  &trans  &trans
+ &trans  &kp LCTRL   &kp Z    &kp X   &kp C   &kp V        			                &kp SLCK  	  &trans        			                        &trans    &trans  &trans  &trans  &trans  &trans
+ &trans  &trans      &trans   &trans  &trans                &kp LCTRL   &kp SPACE   &kp B         &macro_heart  &macro_gaming_chat  &trans                    &trans  &trans  &trans  &trans  &trans
        	    >;	
       	};
 
@@ -155,11 +162,21 @@
 
         layer_navigation {
             bindings = <
- &none &none  &none  &none  &none  &none            &none                                                                    &none          &none       &none       &none     &none        &none    &none
- &none &none  &none  &none  &none  &none            &none                                                                    &none          &none       &none       &none     &none        &none    &none
- &none &none  &none  &none  &none  &none            &none     &kp C_MUTE      &none                       &none  &none       &to 0          &kp LEFT    &kp DOWN    &kp UP    &kp RIGHT    &none    &none
- &none &none  &none  &none  &none  &none                                      &kp C_PREV                  &none   	                        &none       &none       &none     &none        &none    &none
- &none &none  &none  &none  &none                   &kp C_PP  &kp SLCK        &kp C_NEXT                  &none  &none       &none                      &none       &none     &none        &none    &none
+ &none &none  &none  &none  &none  &none            &none                                                                                   &none          &none       &none       &none     &none        &none    &none
+ &none &none  &none  &none  &none  &none            &none                                                                                   &none          &none       &none       &none     &none        &none    &none
+ &none &none  &none  &none  &none  &none            &none     &kp C_MUTE      &kp C_PP                    &none       &none                 &to 0          &kp LEFT    &kp DOWN    &kp UP    &kp RIGHT    &none    &none
+ &none &none  &none  &none  &none  &none                                      &kp SLCK                    &kp C_NEXT   	                                   &none       &none       &none     &none        &none    &none
+ &none &none  &none  &none  &none                   &none     &none           &none                       &kp C_PREV  &none       &none                                &none       &none     &none        &none    &none
+            >;
+        };
+
+        layer_applications {
+            bindings = <
+ &none      &none  &none  &none  &none                   &none            &none                                                                                    &none                &none        &none       &none        &none      &none    &none
+ &none      &none  &none  &none  &none                   &none            &none                                                                                    &none                &none        &none       &none        &none      &none    &none
+ &none      &none  &none  &none  &kp LG(LC(LA(A)))       &none            &none     &none           &none                         &none  &none                     &none                &none        &none       &none        &none      &none    &none
+ &kp LSHFT  &none  &none  &none  &none                   &none                                      &none                         &none   	                                           &none        &none       &none        &none      &none    &none
+ &none      &none  &none  &none  &none                                    &none     &none           &none                         &none  &kp LG(LC(LA(B)))         &kp LG(LC(LA(C)))                 &none       &none        &none      &none    &none
             >;
         };
     };
