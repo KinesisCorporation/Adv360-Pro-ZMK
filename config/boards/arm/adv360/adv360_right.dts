@@ -38,6 +38,6 @@
     };
 };
 
-&default_transform {
+&matrix_transform0 {
         col-offset = <10>;
     };
