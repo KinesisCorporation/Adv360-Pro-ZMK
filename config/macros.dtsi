@@ -34,8 +34,7 @@
     #binding-cells = <0>;
     bindings = <&kp LS(K)>, <&kp I>, <&kp N>, <&kp E>, <&kp S>, <&kp I>, <&kp S>;
   };
-
-remove_word_macro: remove_line_macro {
+remove_word_macro: remove_word_macro {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
     wait-ms = <50>;  // Optional: Adjust the wait time as needed
@@ -44,7 +43,7 @@ remove_word_macro: remove_line_macro {
         &kp BACKSPACE                  // Press Backspace while Command is held
         &macro_release &kp LEFT_ALT  // Release Command
     >;
-    label = "REMOVE_LINE_MACRO";
+    label = "REMOVE_WORD_MACRO";
 };
 
 remove_line_macro: remove_line_macro {
