@@ -20,7 +20,7 @@
         remove_word_macro: remove_word_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_ALT>, <&macro_wait_time 100>, <&kp BACKSPACE>;
+            bindings = <&kp LEFT_ALT>, <&macro_wait_time 50>, <&kp BACKSPACE>;
 
             label = "REMOVE_WORD_MACRO";
         };
@@ -29,15 +29,19 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&kp BACKSPACE>,
-                <&macro_tap_time 2000>,
                 <&kp LEFT_COMMAND>,
-                <&macro_wait_time 100>,
+                <&macro_wait_time 50>,
                 <&kp BACKSPACE>;
 
             label = "REMOVE_LINE_MACRO";
         };
 
+        todo_macro: todo_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp FSLH &kp FSLH &kp SPACE &kp LS(T) &kp LS(O) &kp LS(D) &kp LS(O) &kp SPACE &kp LBKT &kp LS(R) &kp LS(H) &kp RIGHT_BRACKET &kp COLON &kp SPACE>;
+            label = "TODO_MACRO";
+        };
 
         #endif
 
