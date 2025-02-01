@@ -48,7 +48,7 @@
             #binding-cells = <0>;
             bindings =
                 <&kp T>,
-                <&macro_wait_time 400>,
+                <&macro_tap_time 400>,
                 <&kp FSLH &kp FSLH &kp SPACE &kp LS(T) &kp LS(O) &kp LS(D) &kp LS(O) &kp SPACE &kp LBKT &kp LS(R) &kp LS(H) &kp LBRC &kp COLON &kp SPACE>;
 
             label = "TODO_MACRO";
