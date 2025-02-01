@@ -4,13 +4,15 @@ Here's all notable changes and commits to both the configuration repo and the ba
 Many thanks to all those who have submitted issues and pull requests to make this firmware better!
 ## Config repo
 
+11/27/2024 - Fix misattributed PR link in changelog [#590](https://github.com/KinesisCorporation/Adv360-Pro-ZMK/pull/590)
+
 4/16/2024 - Fix changelog dates [#448](https://github.com/KinesisCorporation/Adv360-Pro-ZMK/pull/448)
 
 4/15/2024 - Remove redundant info from documentation [#445](https://github.com/KinesisCorporation/Adv360-Pro-ZMK/pull/445)
 
 4/7/2024 - Add documentation for new layer colors, and configurable modifier indicator color [#431](https://github.com/KinesisCorporation/Adv360-Pro-ZMK/pull/431)
 
-4/5/2024 - Update base ZMK, remove deprecated attributes, change flashing cmake [#424](https://github.com/KinesisCorporation/Adv360-Pro-ZMK/pull/424)
+4/5/2024 - Update base ZMK, remove deprecated attributes, change flashing cmake [#426](https://github.com/KinesisCorporation/Adv360-Pro-ZMK/pull/426)
 
 3/14/2024 - Fix Makefile errors that prevent builds on macOS [#409](https://github.com/KinesisCorporation/Adv360-Pro-ZMK/pull/409)
 
