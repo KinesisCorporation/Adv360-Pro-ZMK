@@ -24,7 +24,7 @@
                 <&kp BACKSPACE>,
                 <&macro_wait_time 200>,
                 <&kp LEFT_ALT>,
-                <&macro_wait_time 50>,
+                <&macro_wait_time 100>,
                 <&kp BACKSPACE>;
 
             label = "REMOVE_WORD_MACRO";
@@ -37,7 +37,7 @@
                 <&kp BACKSPACE>,
                 <&macro_wait_time 2000>,
                 <&kp LEFT_COMMAND>,
-                <&macro_wait_time 50>,
+                <&macro_wait_time 100>,
                 <&kp BACKSPACE>;
 
             label = "REMOVE_LINE_MACRO";
