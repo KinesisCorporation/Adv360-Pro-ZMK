@@ -22,9 +22,9 @@
             #binding-cells = <0>;
             bindings =
                 <&kp BACKSPACE>,
-                <&macro_wait_time 50>,
+                <&macro_wait_time 200>,
                 <&kp LEFT_ALT>,
-                <&macro_wait_time 5>,
+                <&macro_wait_time 50>,
                 <&kp BACKSPACE>;
 
             label = "REMOVE_WORD_MACRO";
@@ -35,9 +35,9 @@
             #binding-cells = <0>;
             bindings =
                 <&kp BACKSPACE>,
-                <&macro_wait_time 500>,
+                <&macro_wait_time 2000>,
                 <&kp LEFT_COMMAND>,
-                <&macro_wait_time 5>,
+                <&macro_wait_time 50>,
                 <&kp BACKSPACE>;
 
             label = "REMOVE_LINE_MACRO";
