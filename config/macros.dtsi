@@ -1,14 +1,3 @@
-macro_heart: macro_heart{
-  compatible = "zmk,behavior-macro";
-  label = "macro_heart";
-  #binding-cells = <0>;
-  bindings 
-    = <&macro_press &kp RALT>
-    , <&macro_tap &kp KP_N3>
-    , <&macro_release &kp RALT>
-  ;
-};
-
 macro_gaming_chat: macro_gaming_chat {
   compatible = "zmk,behavior-macro";
   label = "macro_gaming_chat";

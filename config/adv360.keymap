@@ -142,11 +142,11 @@
 
 	      layer_gaming {
             bindings = <
- &trans  &trans      &trans   &trans  &trans  &trans        &kp T                                                                   &trans          &trans    &trans  &trans  &trans  &trans  &trans
- &trans  &kp TAB     &kp Q    &kp W   &kp E   &kp R         &to 0                                                                   &trans          &trans    &trans  &trans  &trans  &trans  &trans
- &trans  &kp LSHIFT  &nkp A   &kp S   &nkp D  &kp F         &kp G       &trans      &kp C_PP      &trans        &trans              &trans          &trans    &trans  &trans  &trans  &trans  &trans
- &trans  &kp LCTRL   &kp Z    &kp X   &kp C   &kp V        			                &kp SLCK  	  &trans        			                        &trans    &trans  &trans  &trans  &trans  &trans
- &trans  &trans      &trans   &trans  &trans                &kp LCTRL   &kp SPACE   &kp B         &macro_heart  &macro_gaming_chat  &trans                    &trans  &trans  &trans  &trans  &trans
+ &trans  &trans      &trans   &trans  &trans  &trans        &kp T                                                                               &trans          &trans    &trans  &trans  &trans  &trans  &trans
+ &trans  &kp TAB     &kp Q    &kp W   &kp E   &kp R         &to 0                                                                               &trans          &trans    &trans  &trans  &trans  &trans  &trans
+ &trans  &kp LSHIFT  &nkp A   &kp S   &nkp D  &kp F         &kp G       &trans      &ht LALT C_PP           &trans        &trans                &trans          &trans    &trans  &trans  &trans  &trans  &trans
+ &trans  &kp LCTRL   &kp Z    &kp X   &kp C   &kp V        			                &kp LG(LC(LA(M)))  	    &trans        			                            &trans    &trans  &trans  &trans  &trans  &trans
+ &trans  &trans      &trans   &trans  &trans                &kp LCTRL   &kp SPACE   &kp B                   &trans        &macro_gaming_chat    &trans                    &trans  &trans  &trans  &trans  &trans
        	    >;	
       	};
 
@@ -154,8 +154,8 @@
             bindings = <
  &to 0                    &trans  &trans  &trans  &trans  &trans             &none                                                                             &none          &trans  &trans  &trans   &trans   &trans   &trans
  &trans                   &trans  &trans  &trans  &trans  &trans             &to 5                                                                             &none          &trans  &trans  &trans   &trans   &trans   &trans
- &macro_gaming_chat_esc   &trans  &trans  &trans  &trans  &trans             &macro_heart  &trans  &trans                  &trans  &trans                      &none          &trans  &trans  &trans   &trans   &trans   &trans
- &trans                   &trans  &trans  &trans  &trans  &trans                                   &trans                  &trans   	                                        &trans  &trans  &trans   &trans   &trans   &trans
+ &macro_gaming_chat_esc   &trans  &trans  &trans  &trans  &trans             &trans        &trans  &trans                  &trans  &trans                      &none          &trans  &trans  &trans   &trans   &trans   &trans
+ &trans                   &trans  &trans  &trans  &trans  &trans                                   &trans                  &trans   	                                      &trans  &trans  &trans   &trans   &trans   &trans
  &trans                   &trans  &trans  &trans  &trans                     &trans        &trans  &trans                  &trans  &macro_gaming_chat_disable  &trans                 &trans  &trans   &trans   &trans   &trans
             >;
         };
@@ -165,7 +165,7 @@
  &none &none  &none  &none  &none  &none            &none                                                                                   &none          &none       &none       &none     &none        &none    &none
  &none &none  &none  &none  &none  &none            &none                                                                                   &none          &none       &none       &none     &none        &none    &none
  &none &none  &none  &none  &none  &none            &none     &kp C_MUTE      &kp C_PP                    &none       &none                 &to 0          &kp LEFT    &kp DOWN    &kp UP    &kp RIGHT    &none    &none
- &none &none  &none  &none  &none  &none                                      &kp SLCK                    &kp C_NEXT   	                                   &none       &none       &none     &none        &none    &none
+ &none &none  &none  &none  &none  &none                                      &kp LG(LC(LA(M)))           &kp C_NEXT   	                                   &none       &none       &none     &none        &none    &none
  &none &none  &none  &none  &none                   &none     &none           &none                       &kp C_PREV  &none       &none                                &none       &none     &none        &none    &none
             >;
         };
@@ -175,7 +175,7 @@
  &none      &none  &none  &none  &none                   &none            &none                                                                                    &none                &none        &none       &none        &none      &none    &none
  &none      &none  &none  &none  &none                   &none            &none                                                                                    &none                &none        &none       &none        &none      &none    &none
  &none      &none  &none  &none  &kp LG(LC(LA(A)))       &none            &none     &none           &none                         &none  &none                     &none                &none        &none       &none        &none      &none    &none
- &kp LSHFT  &none  &none  &none  &none                   &none                                      &none                         &none   	                                           &none        &none       &none        &none      &none    &none
+ &kp LSHFT  &none  &none  &none  &none                   &none                                      &none                         &none   	                                            &none        &none       &none        &none      &none    &none
  &none      &none  &none  &none  &none                                    &none     &none           &none                         &none  &kp LG(LC(LA(B)))         &kp LG(LC(LA(C)))                 &none       &none        &none      &none    &none
             >;
         };
