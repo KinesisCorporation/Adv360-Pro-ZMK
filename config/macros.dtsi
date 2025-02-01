@@ -42,16 +42,17 @@
             label = "REMOVE_WORD_MACRO";
         };
 
-        remove_line_macro: remove_line_macro {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&mt LEFT_COMMAND>,
-                <&macro_wait_time 50>,
-                <&kp BACKSPACE>;
-
-            label = "REMOVE_LINE_MACRO";
-        };
+remove_line_macro: remove_line_macro {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    wait-ms = <50>;  // Optional: Adjust the wait time as needed
+    bindings = <
+        &macro_press &kp LEFT_COMMAND  // Press and hold Command
+        &kp BACKSPACE                  // Press Backspace while Command is held
+        &macro_release &kp LEFT_COMMAND  // Release Command
+    >;
+    label = "REMOVE_LINE_MACRO";
+};
 
         todo_macro: todo_macro {
             compatible = "zmk,behavior-macro";
