@@ -22,7 +22,7 @@
             #binding-cells = <0>;
             bindings =
                 <&kp BACKSPACE>,
-                <&macro_wait_time 200>,
+                <&macro_tap_time 200>,
                 <&kp LEFT_ALT>,
                 <&macro_wait_time 100>,
                 <&kp BACKSPACE>;
@@ -35,12 +35,23 @@
             #binding-cells = <0>;
             bindings =
                 <&kp BACKSPACE>,
-                <&macro_wait_time 2000>,
+                <&macro_tap_time 2000>,
                 <&kp LEFT_COMMAND>,
                 <&macro_wait_time 100>,
                 <&kp BACKSPACE>;
 
             label = "REMOVE_LINE_MACRO";
+        };
+
+        todo_macro: todo_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&kp T>,
+                <&macro_wait_time 400>,
+                <&kp FSLH &kp FSLH &kp SPACE &kp LS(T) &kp LS(O) &kp LS(D) &kp LS(O) &kp SPACE &kp LBKT &kp LS(R) &kp LS(H) &kp LBRC &kp COLON &kp SPACE>;
+
+            label = "TODO_MACRO";
         };
 
         #endif
