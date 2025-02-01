@@ -17,6 +17,32 @@
             bindings = <&kp RET>;
         };
 
+        remove_word_macro: remove_word_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&kp BACKSPACE>,
+                <&macro_wait_time 50>,
+                <&kp LEFT_ALT>,
+                <&macro_wait_time 5>,
+                <&kp BACKSPACE>;
+
+            label = "REMOVE_WORD_MACRO";
+        };
+
+        remove_line_macro: remove_line_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&kp BACKSPACE>,
+                <&macro_wait_time 500>,
+                <&kp LEFT_COMMAND>,
+                <&macro_wait_time 5>,
+                <&kp BACKSPACE>;
+
+            label = "REMOVE_LINE_MACRO";
+        };
+
         #endif
 
         hm: homerow_mods {
