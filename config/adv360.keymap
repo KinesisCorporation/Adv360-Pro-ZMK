@@ -38,12 +38,6 @@
             label = "REMOVE_LINE_MACRO";
         };
 
-        todo_macro: todo_macro {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp FSLH &kp FSLH &kp SPACE &kp LS(T) &kp LS(O) &kp LS(D) &kp LS(O) &kp SPACE &kp LBKT &kp LS(R) &kp LS(H) &kp LBRC &kp COLON &kp SPACE>;
-            label = "TODO_MACRO";
-        };
 
         #endif
 
