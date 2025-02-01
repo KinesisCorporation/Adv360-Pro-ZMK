@@ -23,10 +23,7 @@ macro_emoticonmenu: macro_emoticonmenu{
 compatible = "zmk,behavior-macro";
 label = "macro_emoticonmenu";
 #binding-cells = <0>;
-bindings
-= <&macro_press &kp LGUI &kp LSHIFT>
-, <&macro_tap &kp N4>
-, <&macro_release &kp LGUI &kp LSHIFT>;
+bindings = <&macro_press &kp LGUI &kp LSHIFT>, <&macro_tap &kp N4>, <&macro_release &kp LGUI &kp LSHIFT>;
 };
 
 macro_layer_4: macro_layer_4{
