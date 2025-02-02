@@ -11,7 +11,7 @@ macro_shruggy1: macro_shruggy{
 compatible = "zmk,behavior-macro";
 label = "macro_shruggy";
 #binding-cells = <0>;
-bindings = <HIGH_PIPE>, <&kp BSLH>, <&kp UNDER>, <&kp LPAR>, <&kp SMILE>, <&kp RPAR>, <&kp UNDER>, <&kp FSLH>, <HIGH_PIPE>;
+bindings = <HIGH_PIPE>, <&kp BSLH>;
 };
 
 macro_shruggy2: macro_shruggy2{
