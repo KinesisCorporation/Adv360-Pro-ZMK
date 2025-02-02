@@ -118,9 +118,9 @@ bindings = <&kp LS(E)>, <&kp LS(T)>, <&kp LS(S)>;
 };
 
 
-macro_all_delete: macro_all_delete{
+macro_alldelete: macro_alldelete{
 compatible = "zmk,behavior-macro";
-label = "macro_all_delete";
+label = "macro_alldelete";
 #binding-cells = <0>;
 bindings = <&kp LCMD(A)>, <&kp DEL>;
 };
