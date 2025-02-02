@@ -5,6 +5,22 @@
 /* ツ */
 #define SMILE &uc U+30C4
 
+/* Shruggy: ¯\_(ツ)_/¯ */
+
+macro_shruggy1: macro_shruggy{
+compatible = "zmk,behavior-macro";
+label = "macro_shruggy";
+#binding-cells = <0>;
+bindings = <HIGH_PIPE>, <&kp BSLH>, <&kp UNDER>, <&kp LPAR>, <&kp SMILE>, <&kp RPAR>, <&kp UNDER>, <&kp FSLH>, <HIGH_PIPE>;
+};
+
+macro_shruggy2: macro_shruggy2{
+compatible = "zmk,behavior-macro";
+label = "macro_shruggy2";
+#binding-cells = <0>;
+bindings = <SHRUG_EMOJI>;
+};
+
 macro_md_url: macro_md_url{
 compatible = "zmk,behavior-macro";
 label = "macro_md_url";
