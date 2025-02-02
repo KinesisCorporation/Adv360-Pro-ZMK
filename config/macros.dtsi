@@ -121,7 +121,7 @@ macro_ets3: macro_ets3{
 compatible = "zmk,behavior-macro";
 label = "macro_ets2";
 #binding-cells = <0>;
-bindings = <&kp LS(E)>, <&kp LS(T)>, <&kp DEL>;
+bindings = <&kp LS(E)>, <&kp LCMD(A)>, <&kp DEL>;
 };
 
 /*
