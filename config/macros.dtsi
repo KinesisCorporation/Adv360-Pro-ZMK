@@ -140,9 +140,9 @@ label = "macro_browser_previous_tab";
 bindings = <&kp LCTRL(TAB)>;
 };
 
-macro_browser_previous_tab: macro_browser_previous_tab{
+macro_browser_previous_tab2: macro_browser_previous_tab2{
 compatible = "zmk,behavior-macro";
-label = "macro_browser_previous_tab";
+label = "macro_browser_previous_tab2";
 #binding-cells = <0>;
 bindings = <&kp LCTRL(TAB)>;
 };
