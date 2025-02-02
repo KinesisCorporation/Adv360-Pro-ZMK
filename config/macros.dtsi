@@ -7,12 +7,14 @@
 
 /* Shruggy: ¯\_(ツ)_/¯ */
 
+/*
 macro_shruggy1: macro_shruggy1{
 compatible = "zmk,behavior-macro";
 label = "macro_shruggy1";
 #binding-cells = <0>;
 bindings = <HIGH_PIPE>;
 };
+*/
 
 macro_shruggy2: macro_shruggy2{
 compatible = "zmk,behavior-macro";
