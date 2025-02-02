@@ -16,7 +16,7 @@ macro_md_image: macro_md_image{
 compatible = "zmk,behavior-macro";
 label = "macro_md_image";
 #binding-cells = <0>;
-bindings = <&kp EXCL>, <&kp LBKT>, <&kp RBKT>, <&kp LPAR>, <&kp RPAR>, <&kp LEFT> <&kp LC(V)>;
+bindings = <&kp EXCL>, <&kp LBKT>, <&kp RBKT>, <&kp LPAR>, <&kp RPAR>, <&kp LEFT>, <&kp LC(V)>;
 };
 
 macro_screenshot: macro_screenshot{
