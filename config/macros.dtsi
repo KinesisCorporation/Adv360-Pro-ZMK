@@ -117,22 +117,15 @@ label = "macro_ets2";
 bindings = <&kp LS(E)>, <&kp LS(T)>, <&kp LS(S)>;
 };
 
-macro_ets3: macro_ets3{
+/* cmd + a to highlight all then delete */
+macro_all_delete: macro_all_delete{
 compatible = "zmk,behavior-macro";
-label = "macro_ets2";
+label = "macro_all_delete";
 #binding-cells = <0>;
-bindings = <&kp LS(E)>, <&kp LG(A)>, <&kp DEL>;
+bindings = <&kp LG(A)>, <&kp DEL>;
 };
 
 /*
-macro_ets3: macro_ets3{
-compatible = "zmk,behavior-macro";
-label = "macro_ets3";
-#binding-cells = <0>;
-bindings = <&kp LCMD(A)>, <&kp DEL>;
-};
-
-
 macro_browser_next_tab: macro_browser_next_tab{
 compatible = "zmk,behavior-macro";
 label = "macro_browser_next_tab";
