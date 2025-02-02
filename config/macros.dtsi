@@ -144,8 +144,3 @@ label = "macro_browser_previous_tab";
 #binding-cells = <0>;
 bindings = <&kp LCTRL(TAB)>;
 };
-
-¯\_(ツ)_/¯
-
-
-CTRL+Z, +X, +C, +V for undo, cut, copy paste. And CTRL+BKSPC for delete word.
