@@ -117,7 +117,7 @@ label = "macro_ets2";
 bindings = <&kp LS(E)>, <&kp LS(T)>, <&kp LS(S)>;
 };
 
-/*
+
 macro_all_delete: macro_all_delete{
 compatible = "zmk,behavior-macro";
 label = "macro_all_delete";
@@ -125,7 +125,7 @@ label = "macro_all_delete";
 bindings = <&kp LCMD(A)>, <&kp DEL>;
 };
 
-
+/*
 macro_browser_next_tab: macro_browser_next_tab{
 compatible = "zmk,behavior-macro";
 label = "macro_browser_next_tab";
