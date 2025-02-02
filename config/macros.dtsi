@@ -48,13 +48,11 @@ remove_word_macro: remove_word_macro {
 };
 
 remove_line_macro: remove_line_macro {
-    compatible = "zmk,behavior-macro";
+ compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
-    wait-ms = <50>;  // Optional: Adjust the wait time as needed
     bindings = <
         &macro_press &kp LEFT_COMMAND  // Press and hold Command
-        &kp BACKSPACE                  // Press Backspace while Command is held
-&macro_pause_for_release
+        &kp BACKSPACE                  // Press Backspace
         &macro_release &kp LEFT_COMMAND  // Release Command
     >;
     label = "REMOVE_LINE_MACRO";
