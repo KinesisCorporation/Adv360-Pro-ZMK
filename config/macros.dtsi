@@ -1,3 +1,10 @@
+#define SHRUG_EMOJI &uc 1F937
+/* ¯ */
+#define HIGH_PIPE &uc U+00AF
+
+/* ツ */
+#define SMILE &uc U+30C4
+
 macro_md_url: macro_md_url{
 compatible = "zmk,behavior-macro";
 label = "macro_md_url";
@@ -9,7 +16,7 @@ macro_md_image: macro_md_image{
 compatible = "zmk,behavior-macro";
 label = "macro_md_image";
 #binding-cells = <0>;
-bindings = <&kp EXCL>, <&kp LBKT>, <&kp RBKT>, <&kp LPAR>, <&kp RPAR>, <&kp LEFT>;
+bindings = <&kp EXCL>, <&kp LBKT>, <&kp RBKT>, <&kp LPAR>, <&kp RPAR>, <&kp LEFT> <&kp LC(V)>;
 };
 
 macro_screenshot: macro_screenshot{
@@ -109,3 +116,36 @@ label = "macro_ets2";
 #binding-cells = <0>;
 bindings = <&kp LS(E)>, <&kp LS(T)>, <&kp LS(S)>;
 };
+
+macro_all_delete: macro_all_delete{
+compatible = "zmk,behavior-macro";
+label = "macro_all_delete";
+#binding-cells = <0>;
+bindings = <&kp LCMD(A)>, <&kp DEL>;
+};
+
+macro_browser_next_tab: macro_browser_next_tab{
+compatible = "zmk,behavior-macro";
+label = "macro_browser_next_tab";
+#binding-cells = <0>;
+bindings = <&kp LS(LCTRL(TAB))>;
+};
+
+macro_browser_previous_tab: macro_browser_previous_tab{
+compatible = "zmk,behavior-macro";
+label = "macro_browser_previous_tab";
+#binding-cells = <0>;
+bindings = <&kp LCTRL(TAB)>;
+};
+
+macro_browser_previous_tab: macro_browser_previous_tab{
+compatible = "zmk,behavior-macro";
+label = "macro_browser_previous_tab";
+#binding-cells = <0>;
+bindings = <&kp LCTRL(TAB)>;
+};
+
+¯\_(ツ)_/¯
+
+
+CTRL+Z, +X, +C, +V for undo, cut, copy paste. And CTRL+BKSPC for delete word.
