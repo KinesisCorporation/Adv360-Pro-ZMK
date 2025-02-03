@@ -14,7 +14,7 @@ label = "macro_shruggy1";
 #binding-cells = <0>;
 bindings = <HIGH_PIPE>;
 };
-*/
+
 
 macro_shruggy2: macro_shruggy2{
 compatible = "zmk,behavior-macro";
@@ -22,7 +22,7 @@ label = "macro_shruggy2";
 #binding-cells = <0>;
 bindings = <&SHRUG_EMOJI>;
 };
-
+*/
 
 macro_md_url: macro_md_url{
 compatible = "zmk,behavior-macro";
