@@ -1,0 +1,61 @@
+#define SHRUG_EMOJI &uc 1F937
+
+/* ¯ */
+#define HIGH_PIPE &uc U+00AF
+
+/* ツ */
+#define SMILE &uc U+30C4
+
+/* Shruggy: ¯\_(ツ)_/¯ */
+macro_shruggy1: macro_shruggy1 {
+            compatible = "zmk,behavior-macro";
+            label = "macro_shruggy1";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LALT>
+                , <&macro_tap &kp KP_N0 &kp KP_N1 &kp KP_N7 &kp KP_N5>
+                , <&macro_release &kp LALT>
+                , <&macro_tap &kp MINUS &kp BSLH>
+                , <&macro_press &kp LALT>
+                , <&macro_tap &kp KP_N0 &kp KP_N8 &kp KP_N3>
+                , <&macro_release &kp LALT>
+                , <&macro_tap &kp FSLH>
+                ;
+        };
+
+/*
+macro_shruggy1: macro_shruggy1{
+compatible = "zmk,behavior-macro";
+label = "macro_shruggy1";
+#binding-cells = <0>;
+bindings = <HIGH_PIPE>;
+};
+
+macro_shruggy2: macro_shruggy2{
+compatible = "zmk,behavior-macro";
+label = "macro_shruggy2";
+#binding-cells = <0>;
+bindings = <&SHRUG_EMOJI>;
+};
+*/
+
+macro_example_kinesis: macro_example_kinesis{
+compatible = "zmk,behavior-macro";
+label = "macro_example_kinesis";
+#binding-cells = <0>;
+bindings = <&kp LS(K)>, <&kp I>, <&kp N>, <&kp E>, <&kp S>, <&kp I>, <&kp S>;
+};
+
+macro_example1: macro_example1{
+compatible = "zmk,behavior-macro";
+label = "macro_example1";
+#binding-cells = <0>;
+bindings = <&kp LS(E)>, <&kp LS(T)>, <&kp LS(S)>;
+};
+
+macro_example2: macro_example2{
+compatible = "zmk,behavior-macro";
+label = "macro_example2";
+#binding-cells = <0>;
+bindings = <&kp LS(E)>, <&kp LS(T)>, <&kp LS(S)>;
+};
