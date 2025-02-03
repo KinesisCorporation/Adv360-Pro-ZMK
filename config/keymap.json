@@ -37,7 +37,7 @@
     ], [
        "&trans",        "&trans",          "&trans",        "&trans",          "&trans",         "&trans",           "&tog 1",                                                              "&mo 3", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans",
        "&trans",        "&trans",          "&trans",        "&trans",          "&trans",         "&trans",           "&tog 0",                                                              "&mo 2", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans",
-       "&trans", "&macro_quotes",  "&macro_dquotes", "&macro_parens", "&macro_brackets", "&macro_kinesis",           "&tog 2", "&trans", "&trans",                     "&trans", "&trans",  "&mo 4", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans",
+       "&trans", "&macro_singlequotes_back",  "&macro_doublequotes_back", "&macro_parentheses_back", "&macro_brackets_back", "&macro_braces_back",           "&tog 2", "&trans", "&trans",                     "&trans", "&trans",  "&mo 4", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans",
        "&trans", "&macro_md_url", "&macro_md_image",        "&trans",          "&trans",         "&trans",                               "&trans",                     "&trans",                     "&trans", "&trans", "&trans", "&trans", "&trans", "&trans",
         "&none",        "&trans",          "&trans",        "&trans",          "&trans",                             "&trans", "&trans", "&trans",                     "&trans", "&trans", "&trans",           "&trans", "&trans", "&trans", "&trans", "&trans"
     ]
