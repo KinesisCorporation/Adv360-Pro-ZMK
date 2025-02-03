@@ -76,5 +76,5 @@ macro_example_shruggy1: macro_example_shruggy1 {
             label = "macro_example_shruggy1";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LALT>;
+                = <&macro_press &kp A>;
         };
