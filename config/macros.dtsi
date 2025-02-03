@@ -12,7 +12,10 @@ macro_unicode: macro_unicode{
 compatible = "zmk,behavior-macro";
 label = "macro_unicode";
 #binding-cells = <0>;
-bindings = <&macro_press &kp LALT>;
+bindings = <&macro_press &kp LALT>
+    , <&macro_tap     &kp KP_N0 &kp KP_N1 &kp KP_N6 &kp KP_N3>
+    , <&macro_release &kp LALT>
+    ;
 };
 
 /*
