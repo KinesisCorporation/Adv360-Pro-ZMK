@@ -73,7 +73,7 @@
             bindings = <
  &none         &bt BT_SEL 0    &bt BT_SEL 1     &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                  &none                                                                          &trans   &none       &none       &none   &none   &none   &none
  &none         &kp C_BRI_DN    &kp C_BRI_UP       &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP            &bootloader                                                                     &bootloader   &none       &none       &none   &none   &none   &none
- &none    &macro_add_delete           &none            &none         &none         &none                  &none   &none   &none                       &bt BT_CLR  &none  &rgb_ug RGB_MEFS_CMD 5   &none       &none       &none   &none   &none   &none
+ &none    &macro_all_delete           &none            &none         &none         &none                  &none   &none   &none                       &bt BT_CLR  &none  &rgb_ug RGB_MEFS_CMD 5   &none       &none       &none   &none   &none   &none
  &none    &macro_screenshot           &none            &none    &macro_ver         &none                                  &none                       &none                                       &none       &none       &none   &none   &none   &none
  &none                &none           &none            &none         &none                             &kp BSPC   &none   &none                       &none       &bl BL_TOG         &rgb_ug RGB_TOG          &bl BL_INC  &bl BL_DEC   &none   &none   &none
             >;
