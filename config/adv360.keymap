@@ -22,7 +22,6 @@
   behaviors {
     #include "macros.dtsi"
     #include "version.dtsi"
-    #include "examples.dtsi"
 
     hm: homerow_mods {
         compatible = "zmk,behavior-hold-tap";
@@ -71,21 +70,21 @@
 
         layer_mod {
             bindings = <
- &none         &bt BT_SEL 0    &bt BT_SEL 1     &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                  &none                                                                          &trans   &none       &none       &none   &none   &none   &none
- &none         &kp C_BRI_DN    &kp C_BRI_UP       &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP            &bootloader                                                                     &bootloader   &none       &none       &none   &none   &none   &none
- &none    &macro_all_delete           &none            &none         &none         &none                  &none   &none   &none                       &bt BT_CLR  &none  &rgb_ug RGB_MEFS_CMD 5   &none       &none       &none   &none   &none   &none
- &none    &macro_screenshot           &none            &none    &macro_ver         &none                                  &none                       &none                                       &none       &none       &none   &none   &none   &none
- &none                &none           &none            &none         &none                             &kp BSPC   &none   &none                       &none       &bl BL_TOG         &rgb_ug RGB_TOG          &bl BL_INC  &bl BL_DEC   &none   &none   &none
+  &none       &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2                 &bt BT_SEL 3             &bt BT_SEL 4                  &none                                                                              &trans   &none       &none       &none   &none   &none   &none
+  &none       &kp C_BRI_DN  &kp C_BRI_UP    &kp C_MUTE                 &kp C_VOL_DN             &kp C_VOL_UP            &bootloader                                                                         &bootloader   &none       &none       &none   &none   &none   &none
+  &none  &macro_all_delete         &none         &none  &macro_browser_previous_tab  &macro_browser_next_tab                  &none       &none   &none                  &bt BT_CLR       &none  &rgb_ug RGB_MEFS_CMD 5   &none       &none       &none   &none   &none   &none
+  &none  &macro_screenshot         &none         &none                   &macro_ver                    &none                                      &none                       &none                                       &none       &none       &none   &none   &none   &none
+  &none              &none         &none         &none                        &none                                        &kp BSPC  &kp DELETE   &none                       &none  &bl BL_TOG         &rgb_ug RGB_TOG          &bl BL_INC  &bl BL_DEC   &none   &none   &none
             >;
         };
 
         layer_markdown {
             bindings = <
- &none                     &none                     &none                    &none  &macro_browser_previous_tab  &macro_browser_next_tab  &tog 1                                                   &mo 3  &trans  &trans  &trans  &trans  &trans  &trans
- &none                     &none                     &none                    &none                        &none                    &none  &tog 0                                                   &mo 2  &trans  &trans  &trans  &trans  &trans  &trans
- &none  &macro_singlequotes_back  &macro_doublequotes_back  &macro_parentheses_back         &macro_brackets_back       &macro_braces_back  &tog 2  &trans  &trans                  &trans  &trans   &mo 4  &trans  &trans  &trans  &trans  &trans  &trans
- &none             &macro_md_url           &macro_md_image                    &none                        &none                    &none                   &none                  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
- &none                     &none                     &none                    &none                        &none                            &none   &none   &none                  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+ &trans         &trans           &trans         &trans           &trans          &trans            &tog 1                                                   &mo 3  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans         &trans           &trans         &trans           &trans          &trans            &tog 0                                                   &mo 2  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &macro_quotes   &macro_dquotes  &macro_parens  &macro_brackets  &macro_kinesis            &tog 2  &trans  &trans                  &trans  &trans   &mo 4  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &macro_md_url  &macro_md_image         &trans           &trans          &trans                            &trans                  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+  &none         &trans           &trans         &trans           &trans                            &trans  &trans  &trans                  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
 

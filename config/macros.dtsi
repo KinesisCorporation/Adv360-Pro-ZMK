@@ -1,83 +1,69 @@
-/* cmd + a to highlight all then delete */
 macro_all_delete: macro_all_delete{
 compatible = "zmk,behavior-macro";
 label = "macro_all_delete";
 #binding-cells = <0>;
 bindings = <&kp LG(A)>, <&kp DEL>;
 };
-
 macro_braces_back: macro_braces_back{
 compatible = "zmk,behavior-macro";
 label = "macro_braces_back";
 #binding-cells = <0>;
 bindings = <&kp LBRC>, <&kp RBRC>, <&kp LEFT>;
 };
-
 macro_brackets_back: macro_brackets_back{
 compatible = "zmk,behavior-macro";
 label = "macro_brackets_back";
 #binding-cells = <0>;
 bindings = <&kp LBKT>, <&kp RBKT>, <&kp LEFT>;
 };
-
-/* in browser, move to next tab */
 macro_browser_next_tab: macro_browser_next_tab{
 compatible = "zmk,behavior-macro";
 label = "macro_browser_next_tab";
 #binding-cells = <0>;
 bindings = <&kp LC(TAB)>;
 };
-
-/* in browser, move to previous tab */
 macro_browser_previous_tab: macro_browser_previous_tab{
 compatible = "zmk,behavior-macro";
 label = "macro_browser_previous_tab";
 #binding-cells = <0>;
 bindings = <&kp LS(LC(TAB))>;
 };
-
 macro_emoticonmenu: macro_emoticonmenu{
 compatible = "zmk,behavior-macro";
 label = "macro_emoticonmenu";
 #binding-cells = <0>;
 bindings = <&macro_press &kp LGUI &kp LSHIFT>, <&macro_tap &kp N4>, <&macro_release &kp LGUI &kp LSHIFT>;
 };
-
 macro_md_url: macro_md_url{
 compatible = "zmk,behavior-macro";
 label = "macro_md_url";
 #binding-cells = <0>;
 bindings = <&kp LBKT>, <&kp RBKT>, <&kp LPAR>, <&kp RPAR>, <&kp LEFT>;
 };
-
 macro_md_image: macro_md_image{
 compatible = "zmk,behavior-macro";
 label = "macro_md_image";
 #binding-cells = <0>;
 bindings = <&kp EXCL>, <&kp LBKT>, <&kp RBKT>, <&kp LPAR>, <&kp RPAR>, <&kp LEFT>, <&kp LC(V)>;
 };
-
 macro_screenshot: macro_screenshot{
 compatible = "zmk,behavior-macro";
 label = "macro_screenshot";
 #binding-cells = <0>;
 bindings = <&macro_press &kp LGUI &kp LCTRL>, <&macro_tap &kp SPACE>, <&macro_release &kp LGUI &kp LCTRL>;
 };
-
 macro_singlequotes_back: macro_singlequotes_back{
 compatible = "zmk,behavior-macro";
 label = "macro_singlequotes_back";
 #binding-cells = <0>;
 bindings = <&kp SQT>, <&kp SQT>, <&kp LEFT>;
 };
-
 macro_doublequotes_back: macro_doublequotes_back{
 compatible = "zmk,behavior-macro";
 label = "macro_doublequotes_back";
 #binding-cells = <0>;
 bindings = <&kp DQT>, <&kp DQT>, <&kp LEFT>;
 };
-
 macro_parentheses_back: macro_parentheses_back{
 compatible = "zmk,behavior-macro";
 label = "macro_parentheses_back";
