@@ -71,9 +71,9 @@ label = "macro_parentheses_back";
 bindings = <&kp LPAR>, <&kp RPAR>, <&kp LEFT>;
 };
 
-macro_shruggy1: macro_shruggy1 {
+macro_example_shruggy1: macro_example_shruggy1 {
             compatible = "zmk,behavior-macro";
-            label = "macro_shruggy1";
+            label = "macro_example_shruggy1";
             #binding-cells = <0>;
             bindings
                 = <&macro_press &kp LALT>
