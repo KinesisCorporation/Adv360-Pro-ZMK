@@ -54,12 +54,16 @@ jobs:
         run: cp build/left/zephyr/zmk.uf2 ${{ steps.get_info.outputs.file_prefix }}-left.uf2 && cp build/right/zephyr/zmk.uf2 ${{ steps.get_info.outputs.file_prefix }}-right.uf2
       - name: Log multiline
         run: |
-         echo "Line 1"
-         echo "$(date +'%Y%m%d-%H%M%S')"
+          echo "Line 1"
+          echo "$(date +'%Y%m%d-%H%M%S')"
+          echo "sha_short=$(git rev-parse --short HEAD)" >> $GITHUB_OUTPUT
+          echo $GITHUB_OUTPUT
+          echo "sha_short=$(git rev-parse --short HEAD)" >> $GITHUB_OUTPUT
+          run: echo "Short SHA is ${{ env.SHORT_SHA }}"
       - name: Archive (Adv360)
         uses: actions/upload-artifact@v4
         with:
-          name: firmware-${{ github.sha::5 }}
+          name: firmware-${{ github.sha }}
           path: |
             ${{ steps.get_info.outputs.file_prefix }}-left.uf2
             ${{ steps.get_info.outputs.file_prefix }}-right.uf2
