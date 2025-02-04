@@ -1,9 +1,3 @@
-macro_layer_1: macro_layer_1{
-compatible = "zmk,behavior-macro";
-label = "macro_layer_1";
-#binding-cells = <0>;
-bindings = <&kp L>, <&kp SPACE>, <&kp N1>;
-};
 macro_all_delete: macro_all_delete{
 compatible = "zmk,behavior-macro";
 label = "macro_all_delete";

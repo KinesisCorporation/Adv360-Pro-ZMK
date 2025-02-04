@@ -1,0 +1,30 @@
+macro_layer_0: macro_layer_0{
+compatible = "zmk,behavior-macro";
+label = "macro_layer_0";
+#binding-cells = <0>;
+bindings = <&kp L>, <&kp A>,<&kp Y>,<&kp E>,<&kp R>,<&kp SPACE>, <&kp N0>;
+};
+macro_layer_1: macro_layer_1{
+compatible = "zmk,behavior-macro";
+label = "macro_layer_1";
+#binding-cells = <0>;
+bindings = <&kp L>, <&kp A>,<&kp Y>,<&kp E>,<&kp R>,<&kp SPACE>, <&kp N1>;
+};
+macro_layer_2: macro_layer_2{
+compatible = "zmk,behavior-macro";
+label = "macro_layer_2";
+#binding-cells = <0>;
+bindings = <&kp L>, <&kp A>,<&kp Y>,<&kp E>,<&kp R>,<&kp SPACE>, <&kp N2>;
+};
+macro_layer_3: macro_layer_3{
+compatible = "zmk,behavior-macro";
+label = "macro_layer_3";
+#binding-cells = <0>;
+bindings = <&kp L>, <&kp A>,<&kp Y>,<&kp E>,<&kp R>,<&kp SPACE>, <&kp N3>;
+};
+macro_layer_4: macro_layer_4{
+compatible = "zmk,behavior-macro";
+label = "macro_layer_4";
+#binding-cells = <0>;
+bindings = <&kp L>, <&kp A>,<&kp Y>,<&kp E>,<&kp R>,<&kp SPACE>, <&kp N4>;
+};
