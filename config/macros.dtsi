@@ -70,6 +70,19 @@ label = "macro_parentheses_back";
 #binding-cells = <0>;
 bindings = <&kp LPAR>, <&kp RPAR>, <&kp LEFT>;
 };
+macro_tab_next: macro_tab_previous {
+            label = "macro_tab_next";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LCTRL>
+                , <&macro_press &kp LSHFT>
+                , <&macro_tap &kp TAB>
+                , <&macro_release &kp LSHFT>
+                , <&macro_release &kp LCTRL>
+                ;
+        };
+
 macro_tab_next: macro_tab_next {
             label = "macro_tab_next";
             compatible = "zmk,behavior-macro";
@@ -80,7 +93,6 @@ macro_tab_next: macro_tab_next {
                 , <&macro_release &kp LCTRL>
                 ;
         };
-
 
 macro_layer_0: macro_layer_0{
 compatible = "zmk,behavior-macro";
