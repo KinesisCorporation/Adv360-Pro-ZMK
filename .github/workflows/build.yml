@@ -56,11 +56,11 @@ jobs:
         run: |
           echo "Line 1"
           echo "$(date +'%Y%m%d-%H%M%S')"
-          echo $(git rev-parse --short ${{ github.sha }})
+          echo "datetime=$(date +'%Y%m%d-%H%M%S')" >> $GITHUB_ENV
       - name: Archive (Adv360)
         uses: actions/upload-artifact@v4
         with:
-          name: firmware-$(date +'%Y%m%d-%H%M%S')
+          name: firmware-${{ env.datetime }}
           path: |
             ${{ steps.get_info.outputs.file_prefix }}-left.uf2
             ${{ steps.get_info.outputs.file_prefix }}-right.uf2
