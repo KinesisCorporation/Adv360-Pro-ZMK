@@ -4,9 +4,21 @@ Here's all notable changes and commits to both the configuration repo and the ba
 Many thanks to all those who have submitted issues and pull requests to make this firmware better!
 ## Config repo
 
-18/2/2024 - Fix version.dtsi reset after build when running local builds [#385](https://github.com/KinesisCorporation/Adv360-Pro-ZMK/pull/385)
+11/27/2024 - Fix misattributed PR link in changelog [#590](https://github.com/KinesisCorporation/Adv360-Pro-ZMK/pull/590)
 
-12/2/2024 - Update GitHub build workflow to use the latest actions [#376](https://github.com/KinesisCorporation/Adv360-Pro-ZMK/pull/376)
+4/16/2024 - Fix changelog dates [#448](https://github.com/KinesisCorporation/Adv360-Pro-ZMK/pull/448)
+
+4/15/2024 - Remove redundant info from documentation [#445](https://github.com/KinesisCorporation/Adv360-Pro-ZMK/pull/445)
+
+4/7/2024 - Add documentation for new layer colors, and configurable modifier indicator color [#431](https://github.com/KinesisCorporation/Adv360-Pro-ZMK/pull/431)
+
+4/5/2024 - Update base ZMK, remove deprecated attributes, change flashing cmake [#426](https://github.com/KinesisCorporation/Adv360-Pro-ZMK/pull/426)
+
+3/14/2024 - Fix Makefile errors that prevent builds on macOS [#409](https://github.com/KinesisCorporation/Adv360-Pro-ZMK/pull/409)
+
+2/18/2024 - Fix version.dtsi reset after build when running local builds [#385](https://github.com/KinesisCorporation/Adv360-Pro-ZMK/pull/385)
+
+2/12/2024 - Update GitHub build workflow to use the latest actions [#376](https://github.com/KinesisCorporation/Adv360-Pro-ZMK/pull/376)
 
 2/2/2024 - Makefile enhancements (build left side firmware only, separate clean targets for firmware and docker, reset of version.dtsi after build) [#363](https://github.com/KinesisCorporation/Adv360-Pro-ZMK/pull/363)
 
@@ -105,9 +117,23 @@ There have beeen 5 branches of ZMK used for the 360 Pro so far. Beta branches ar
 | [adv360-beta](https://github.com/ReFil/zmk/tree/adv360-beta)   | 3/1/2022 | 9/17/2022 | V1.0 (since deleted) |
 | [adv360-z3](https://github.com/ReFil/zmk/tree/adv360-z3) | 9/17/2022 | 7/6/2023 | V2.0 (since deleted) |
 | [adv360-z3.2](https://github.com/ReFil/zmk/tree/adv360-z3.2) | 7/6/2023 | 20/10/2023 | [V3.0](https://github.com/KinesisCorporation/Adv360-Pro-ZMK/tree/V3.0) (Up to commit 82494e7) |
-| [adv360-z3.2-2](https://github.com/ReFil/zmk/tree/adv360-z3.2-2) | 20/10/2023 | 1/14/2024 | [V3.0](https://github.com/KinesisCorporation/Adv360-Pro-ZMK/tree/V3.0) (Up to commit XXXXXXX) |
-| [adv360-z3.2-3](https://github.com/ReFil/zmk/tree/adv360-z3.2-3) | 1/14/2024 | To date | [V3.0](https://github.com/KinesisCorporation/Adv360-Pro-ZMK/tree/V3.0) (current) |
+| [adv360-z3.2-2](https://github.com/ReFil/zmk/tree/adv360-z3.2-2) | 20/10/2023 | 1/14/2024 | [V3.0](https://github.com/KinesisCorporation/Adv360-Pro-ZMK/tree/V3.0) (Up to commit 4a5003a) |
+| [adv360-z3.2-3](https://github.com/ReFil/zmk/tree/adv360-z3.2-3) | 1/14/2024 | 4/5/2024 | [V3.0](https://github.com/KinesisCorporation/Adv360-Pro-ZMK/tree/V3.0) (Up to commit 742d19e) |
+| [adv360-z3.5](https://github.com/ReFil/zmk/tree/adv360-z3.5) | 4/5/2024 | To date | [V3.0](https://github.com/KinesisCorporation/Adv360-Pro-ZMK/tree/V3.0) (Current) |
 
+### adv360-z3.5
+
+4/15/2024 - Clarify list of available BT profile colors [#20](https://github.com/ReFil/zmk/pull/20), fix CI for pulls [#21](https://github.com/ReFil/zmk/pull/21) (Commit b0c91d3)
+
+4/10/2024 - Add colors for all 32 layers [#18](https://github.com/ReFil/zmk/pull/18), enable configuration of modifier indicator color [#19](https://github.com/ReFil/zmk/pull/19), fix battery level display [#17](https://github.com/ReFil/zmk/pull/17) (Commit 2fcd15d)
+
+4/8/2024 - Refactor CI to target 360 Pro exclusively
+
+4/8/2024 - Fix CI failures
+
+3/27/2024 - Update ZMK event to new format
+
+3/27/2024 - Rebase off latest upstream ZMK (Commit 94c3b9a)
 
 ### adv360-z3.2-3
 
