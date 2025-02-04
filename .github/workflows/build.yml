@@ -55,11 +55,11 @@ jobs:
       - name: Log multiline
         run: |
          echo "Line 1"
-         echo "$(date +'%Y-%m-%d')"
+         echo "$(date +'%Y%m%d-%H%M%S')"
       - name: Archive (Adv360)
         uses: actions/upload-artifact@v4
         with:
-          name: firmware-${{ github.sha }}
+          name: firmware-${{ github.sha::5 }}
           path: |
             ${{ steps.get_info.outputs.file_prefix }}-left.uf2
             ${{ steps.get_info.outputs.file_prefix }}-right.uf2
