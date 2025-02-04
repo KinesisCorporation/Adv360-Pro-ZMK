@@ -56,7 +56,8 @@ jobs:
         run: |
           echo "Line 1"
           echo "$(date +'%Y%m%d-%H%M%S')"
-          echo ${{ github.sha }}.substr(0,5)
+          echo "${{ github.sha }}" >> $GITHUB_SHA_OUTPUT
+          echo $GITHUB_SHA_OUTPUT
       - name: Archive (Adv360)
         uses: actions/upload-artifact@v4
         with:
