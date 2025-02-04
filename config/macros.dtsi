@@ -70,8 +70,8 @@ label = "macro_parentheses_back";
 #binding-cells = <0>;
 bindings = <&kp LPAR>, <&kp RPAR>, <&kp LEFT>;
 };
-macro_tab_next: macro_tab_previous {
-            label = "macro_tab_next";
+macro_tab_previous: macro_tab_previous {
+            label = "macro_tab_previous";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
