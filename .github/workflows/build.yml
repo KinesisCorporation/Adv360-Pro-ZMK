@@ -56,8 +56,7 @@ jobs:
         run: |
           echo "Line 1"
           echo "$(date +'%Y%m%d-%H%M%S')"
-          echo "SHORT_SHA=$("${{ github.sha }}".SubString(0, 8))" >> $env:GITHUB_ENV
-          echo "Short SHA is ${{ env.SHORT_SHA }}"
+          echo ${ GITHUB_SHA}
       - name: Archive (Adv360)
         uses: actions/upload-artifact@v4
         with:
