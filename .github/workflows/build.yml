@@ -60,7 +60,7 @@ jobs:
       - name: Archive (Adv360)
         uses: actions/upload-artifact@v4
         with:
-          name: firmware-"$(date +'%Y%m%d-%H%M%S')"
+          name: firmware-$(date +'%Y%m%d-%H%M%S')
           path: |
             ${{ steps.get_info.outputs.file_prefix }}-left.uf2
             ${{ steps.get_info.outputs.file_prefix }}-right.uf2
