@@ -55,7 +55,7 @@ jobs:
       - name: Log multiline
         run: |
          echo "Line 1"
-         echo "Line 2"
+         echo "$(date +'%Y-%m-%d')"
       - name: Archive (Adv360)
         uses: actions/upload-artifact@v4
         with:
