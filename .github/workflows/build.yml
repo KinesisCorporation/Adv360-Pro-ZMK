@@ -59,7 +59,7 @@ jobs:
           echo "sha_short=$(git rev-parse --short HEAD)" >> $GITHUB_OUTPUT
           echo $GITHUB_OUTPUT
           echo "sha_short=$(git rev-parse --short HEAD)" >> $GITHUB_OUTPUT
-          run: echo "Short SHA is ${{ env.SHORT_SHA }}"
+          echo "Short SHA is ${{ env.SHORT_SHA }}"
       - name: Archive (Adv360)
         uses: actions/upload-artifact@v4
         with:
