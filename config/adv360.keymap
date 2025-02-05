@@ -2,7 +2,10 @@
 #include <dt-bindings/zmk/backlight.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/rgb.h>
+
+&mt { tapping-term-ms = <100>; };
 
 / {
     behaviors {
@@ -10,11 +13,11 @@
       #include "version.dtsi"
       #ifndef VERSION_MACRO
 
-        macro_ver: macro_ver {
+        macro0: macro_ver {
             compatible = "zmk,behavior-macro";
-            label = "macro_version";
+            label = "copy";
             #binding-cells = <0>;
-            bindings = <&kp RET>;
+            bindings = <&macro_tap>, <&kp LG(C)>;
         };
 
         #endif
@@ -28,16 +31,21 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
-    };
 
-    combos {
-        compatible = "zmk,combos";
+        mouse-stuff:
 
-        hyper {
-            bindings = <&none>;
-            key-positions = <37 38 53>;
+        mouse-stuff {
+            compatible = "zmk,behavior-mouse-key-press";
+            label = "MOUSE-STUFF";
+            #binding-cells = <1>;
         };
+
+        mouse-stuff:
+
+        mouse-stuff { compatible = "zmk,behavior-mouse-key-press"; };
     };
+
+    combos { compatible = "zmk,combos"; };
 
     macros {
     };
@@ -47,11 +55,11 @@
 
         default_layer {
             bindings = <
-&kp EQUAL          &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &tog 1                                                                       &mo 3      &kp N6  &kp N7  &kp N8     &kp N9    &kp N0    &kp MINUS
-&kp K_SCROLL_UP    &kp Q      &kp W     &kp E     &kp R      &kp T   &none                                                                        &none      &kp Y   &kp U   &kp I      &kp O     &kp P     &kp BSLH
-&kp K_SCROLL_DOWN  &kp A      &kp S     &kp D     &kp F      &kp G   &none     &kp LCTRL  &kp LALT              &kp RIGHT_ALT      &mt RCTRL ESC  &none      &kp H   &kp J   &kp K      &kp L     &kp SEMI  &kp SQT
-&kp LSHFT          &kp Z      &kp X     &kp C     &kp V      &kp B                        &kp LEFT_COMMAND      &kp RIGHT_COMMAND                            &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH  &kp RIGHT_SHIFT
-&mo 2              &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT          &kp BSPC  &kp TAB    &kp LEFT_SHIFT        &kp RIGHT_SHIFT    &kp ENTER      &kp SPACE          &kp UP  &kp DOWN   &kp LBKT  &kp RBKT  &mo 2
+&kp EQUAL       &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &tog 1                                                                            &mo 3      &kp N6  &kp N7  &kp N8     &kp N9    &kp N0    &kp MINUS
+&msc SCRL_UP    &kp Q      &kp W     &kp E     &kp R      &kp T   &none                                                                             &none      &kp Y   &kp U   &kp I      &kp O     &kp P     &kp BSLH
+&msc SCRL_DOWN  &kp A      &kp S     &kp D     &kp F      &kp G   &none     &mt LCTRL ESCAPE  &kp LALT            &kp RIGHT_ALT      &mt RCTRL ESC  &none      &kp H   &kp J   &kp K      &kp L     &kp SEMI  &kp SQT
+&kp LSHFT       &kp Z      &kp X     &kp C     &kp V      &kp B                               &kp LEFT_META       &kp RIGHT_COMMAND                            &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH  &kp TAB
+&mo 2           &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT          &kp BSPC  &kp TAB           &kp LEFT_SHIFT      &kp RIGHT_SHIFT    &kp ENTER      &kp SPACE          &kp UP  &kp DOWN   &kp LBKT  &kp RBKT  &mo 2
             >;
         };
 
@@ -80,7 +88,7 @@
 &none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none                                                  &trans                  &none  &none       &none       &none  &none  &none
 &none  &none         &none         &none         &none         &none         &bootloader                                            &bootloader             &none  &none       &none       &none  &none  &none
 &none  &none         &none         &none         &none         &none         &none        &none  &none      &bt BT_CLR  &none       &rgb_ug RGB_MEFS_CMD 5  &none  &none       &none       &none  &none  &none
-&none  &none         &none         &none         &macro_ver    &none                             &none      &none                                           &none  &none       &none       &none  &none  &none
+&none  &none         &none         &none         &macro0       &none                             &none      &none                                           &none  &none       &none       &none  &none  &none
 &none  &none         &none         &none         &none                       &none        &none  &none      &none       &bl BL_TOG  &rgb_ug RGB_TOG                &bl BL_INC  &bl BL_DEC  &none  &none  &none
             >;
         };
