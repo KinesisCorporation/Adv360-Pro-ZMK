@@ -42,7 +42,7 @@
     bindings = <&macro_press &kp LEFT_ALT> // Press and hold Command
       , <&kp BACKSPACE>                  // Press Backspace while Command is held
       , <&macro_release &kp LEFT_ALT>  // Release Command
-    >;
+    ;
     label = "REMOVE_WORD_MACRO";
   };
 
@@ -50,19 +50,18 @@
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
     //    wait-ms = <1000>;  // Wait time between actions
-    bindings = <
-      , <&macro_press &kp LEFT_COMMAND>  // Press and hold Command
+    bindings = <&macro_press &kp LEFT_COMMAND>  // Press and hold Command
       , <&kp BACKSPACE                  // Press Backspace
       , <&macro_wait_time 500>
       , <&macro_release &kp LEFT_COMMAND>  // Release Command
-    >;
+    ;
     label = "REMOVE_LINE_MACRO";
   };
 
   todo_macro: todo_macro {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
-    wait-ms = <1000>;  // Wait time between actions
+    wait-ms = <500>;  // Wait time between actions
     bindings = <&kp FSLH &kp FSLH &kp SPACE &kp LS(T) &kp LS(O) &kp LS(D) &kp LS(O) &kp SPACE &kp LBKT &kp LS(R) &kp LS(H) &kp RIGHT_BRACKET &kp COLON &kp SPACE>;
     label = "TODO_MACRO";
   };
