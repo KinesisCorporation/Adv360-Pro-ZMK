@@ -44,6 +44,7 @@
       , <&macro_release &kp LEFT_ALT>  // Release Command
       , <&macro_wait_time 20>
       , <&macro_release &kp LEFT_ALT>  // Release Command
+      , <&macro_release &kp BACKSPACE>  // Release Command
     ;
     label = "REMOVE_WORD_MACRO";
   };
@@ -57,6 +58,7 @@
       , <&macro_release &kp LEFT_COMMAND>  // Release Command
       , <&macro_wait_time 20>
       , <&macro_release &kp LEFT_COMMAND>  // Release Command
+      , <&macro_release &kp BACKSPACE>  // Release Command
     ;
     label = "REMOVE_LINE_MACRO";
   };
