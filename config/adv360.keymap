@@ -34,11 +34,6 @@
 
         mouse-stuff:
 
-        mouse-stuff {
-            compatible = "zmk,behavior-mouse-key-press";
-            label = "MOUSE-STUFF";
-            #binding-cells = <1>;
-        };
 
         mouse-stuff:
 
