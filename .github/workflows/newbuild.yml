@@ -1,16 +1,16 @@
-on: [push, pull_request, workflow_dispatch]
-
 name: Build
+
+on: [push, pull_request, workflow_dispatch]
 
 jobs:
   build:
     runs-on: ubuntu-latest
     container:
       image: zmkfirmware/zmk-build-arm:stable
-    name: Build
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
       - name: Get version data
         id: get_info
         run: |
@@ -20,6 +20,7 @@ jobs:
           branch_name=$(echo "${{ github.ref }}" | awk -F'/' '{print $3}' | cut -c1-4)
           echo "file_prefix=$file_prefix" >> $GITHUB_OUTPUT
           bin/get_version.sh $branch_name $commit
+
       - name: Cache west modules
         uses: actions/cache@v4
         env:
@@ -36,22 +37,33 @@ jobs:
             ${{ runner.os }}-build-${{ env.cache-name }}-
             ${{ runner.os }}-build-
             ${{ runner.os }}-
+
       - name: West Init
         run: west init -l config
+
       - name: West Update
         run: west update
+
       - name: West Zephyr export
         run: west zephyr-export
+
       - name: West Build (left)
         run: west build -s zmk/app -d build/left -b adv360_left -- -DZMK_CONFIG="${GITHUB_WORKSPACE}/config"
+
       - name: Adv360 Left Kconfig file
         run: grep -vE '(^#|^$)' build/left/zephyr/.config
+
       - name: West Build (right)
         run: west build -s zmk/app -d build/right -b adv360_right -- -DZMK_CONFIG="${GITHUB_WORKSPACE}/config"
+
       - name: Adv360 Right Kconfig file
         run: grep -vE '(^#|^$)' build/right/zephyr/.config
+
       - name: Rename zmk.uf2
-        run: cp build/left/zephyr/zmk.uf2 ${{ steps.get_info.outputs.file_prefix }}-left.uf2 && cp build/right/zephyr/zmk.uf2 ${{ steps.get_info.outputs.file_prefix }}-right.uf2
+        run: |
+          cp build/left/zephyr/zmk.uf2 ${{ steps.get_info.outputs.file_prefix }}-left.uf2
+          cp build/right/zephyr/zmk.uf2 ${{ steps.get_info.outputs.file_prefix }}-right.uf2
+
       - name: Archive (Adv360)
         uses: actions/upload-artifact@v4
         with:
