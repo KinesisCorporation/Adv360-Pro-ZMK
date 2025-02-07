@@ -169,6 +169,7 @@ bindings = <&kp L>, <&kp A>, <&kp Y>, <&kp E>, <&kp R>, <&kp SPACE>, <&kp N4>;
 macro_md_code_block: macro_md_code_block {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
+    label = "Markdown Code Block";
     bindings = <&kp GRAVE>
         , <&kp GRAVE>
         , <&kp GRAVE>
@@ -179,7 +180,6 @@ macro_md_code_block: macro_md_code_block {
         , <&kp LEFT>
         , <&kp LEFT>
         , <&kp LEFT>;
-    display-name = "Markdown Code Block";
 };
 
 /*
