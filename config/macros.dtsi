@@ -49,6 +49,7 @@ label = "macro_md_image";
 bindings
     = <&kp LESS_THAN>
     , <&kp SPACE>
+    ;
 };
 macro_screenshot: macro_screenshot{
 compatible = "zmk,behavior-macro";
