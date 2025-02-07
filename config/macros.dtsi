@@ -224,7 +224,7 @@ Mac_Mission_Control: Mac_ShowAW {
     label = "Mac Show All Windows";
 };
 
-/*
+
 Mac_Snip_Tool: Mac_Snip {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
@@ -238,7 +238,7 @@ Mac_Spotlight_Search: Mac_Spotlight_Search {
     bindings = <&kp LG(SPACE)>;
     label = "Mac Spotlight Search";
 };
-
+/*
 Mac_Close_Program: Mac_Close_Program {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
