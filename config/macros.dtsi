@@ -28,6 +28,32 @@ label = "macro_browser_previous_tab";
 #binding-cells = <0>;
 bindings = <&kp LS(LC(TAB))>;
 };
+
+
+macro_tab_previous: macro_tab_previous {
+            label = "macro_tab_previous";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LCTRL>
+                , <&macro_press &kp LSHFT>
+                , <&macro_tap &kp TAB>
+                , <&macro_release &kp LSHFT>
+                , <&macro_release &kp LCTRL>
+                ;
+        };
+
+macro_tab_next: macro_tab_next {
+            label = "macro_tab_next";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LCTRL>
+                , <&macro_tap &kp TAB>
+                , <&macro_release &kp LCTRL>
+                ;
+        };
+
 macro_emoticonmenu: macro_emoticonmenu{
 compatible = "zmk,behavior-macro";
 label = "macro_emoticonmenu";
