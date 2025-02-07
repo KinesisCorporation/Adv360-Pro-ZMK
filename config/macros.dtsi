@@ -75,11 +75,11 @@ label = "macro_md_image";
 bindings
     = <&kp LESS_THAN>
     , <&kp SPACE>
-        , <&kp w>
-        , <&kp i>
-        , <&kp d>
-        , <&kp t>
-        , <&kp h>
+        , <&kp W>
+        , <&kp I>
+        , <&kp D>
+        , <&kp T>
+        , <&kp H>
         , <&kp EQUAL>
         , <&kp DOUBLEQUOTE>
         , <&kp N8>
