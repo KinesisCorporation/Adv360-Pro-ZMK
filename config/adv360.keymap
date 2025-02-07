@@ -8,6 +8,7 @@
 #define EXPAND_AND_STRINGIFY(x) STRINGIFY(x)
 
 #define KEYS_NONE
+#define HYPER LS(LC(LA(LGUI)))
 
 #define KEYS_LEFT 0 1 2 3 4 5 6 \
                   14 15 16 17 18 19 20 \
@@ -27,11 +28,11 @@
 
 #define THUMBS THUMBS_LEFT THUMBS_RIGHT
 
-#define HMT(ID, NAME, TERM, KEYS) \
+#define HMT(ID, NAME, TERM, QTAP, KEYS) \
     ID: mod_tap_##ID  { \
         compatible = "zmk,behavior-hold-tap"; \
         label = NAME; \
-        quick_tap_ms = <0>; \
+        quick_tap_ms = <QTAP>; \
         tapping-term-ms = <TERM>; \
         flavor = "tap-preferred"; \
         #binding-cells = <2>; \
@@ -39,26 +40,14 @@
         hold-trigger-key-positions = <KEYS>; \
     };
 
-#define HMH(ID, NAME, TERM, KEYS) \
+#define HMH(ID, NAME, TERM, QTAP, KEYS) \
     ID: layer_tap_##ID { \
         compatible = "zmk,behavior-hold-tap"; \
         label = NAME; \
-        quick_tap_ms = <0>; \
+        quick_tap_ms = <QTAP>; \
         tapping-term-ms = <TERM>; \
         flavor = "tap-preferred"; \
         #binding-cells = <2>; \
-        bindings = <&mo>, <&kp>; \
-        hold-trigger-key-positions = <KEYS>; \
-    };
-
-#define HML(ID, NAME, TERM, KEYS) \
-    ID: layer_hold_##ID { \
-        compatible = "zmk,behavior-hold-tap"; \
-        label = NAME; \
-        #binding-cells = <2>; \
-        quick_tap_ms = <0>; \
-        tapping-term-ms = <TERM>; \
-        flavor = "hold-preferred"; \
         bindings = <&mo>, <&kp>; \
         hold-trigger-key-positions = <KEYS>; \
     };
@@ -72,16 +61,22 @@
         #include "macros.dtsi"
         #include "version.dtsi"
 
-        HML(hmo,  "LAYER_HOLD", 200, KEYS_NONE)
-        HMH(hmlr, "LAYER_TAP_LEFT", 175, KEYS_NONE)
-        HMH(hmll, "LAYER_TAP_RIGHT", 175, KEYS_NONE)
+        HMH(lkp, "LAYER_TAP",  130,  0,  KEYS_NONE)
+        HMT(hmt, "MODS_THUMB", 150, 175, KEYS_NONE)
 
-        HMT(hmt, "MODS_THUMB", 175, KEYS_NONE)
-        HMT(hmr, "MODS_RIGHT", 175, KEYS_LEFT THUMBS_LEFT)
-        HMT(hml, "MODS_LEFT",  175, KEYS_RIGHT THUMBS_RIGHT)
+        HMT(hmr, "MODS_RIGHT", 130, 0, KEYS_LEFT  THUMBS_LEFT)
+        HMT(hml, "MODS_LEFT",  130, 0, KEYS_RIGHT THUMBS_RIGHT)
 
-        HMT(hmrs, "MODS_RIGHT_SLOW", 200, KEYS_LEFT)
-        HMT(hmls, "MODS_LEFT_SLOW",  200, KEYS_RIGHT)
+        lcw: layer_caps_word {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODS_CAPS";
+            #binding-cells = <2>;
+            quick_tap_ms = <0>;
+            tapping-term-ms = <145>;
+            flavor = "tap-preferred";
+            bindings = <&mo>, <&caps_word>;
+            hold-trigger-key-positions = <KEYS_RIGHT>;
+        };
     };
 
     keymap {
@@ -89,17 +84,17 @@
 
       default_layer {
         bindings = <
-          &kp PSCRN  &kp N1     &kp N2      &kp N3       &kp N4       &kp N5 &mo 3                                                                 &mo 2    &kp N6 &kp N7       &kp N8     &kp N9    &kp N0    &kp SLCK
-          &kp CAPS   &kp Q      &kp W       &kp E        &kp R        &kp T  &kp RIGHT                                                             &kp UP   &kp Y  &kp U        &kp I      &kp O     &kp P     &kp DEL
-          &kp TAB    &kp A      &kp S       &kp D        &hml LSHFT F &kp G  &kp LEFT  &hmt LALT TAB  &hmt LGUI CAPS &hmt RGUI DEL &hmt RALT SQT   &kp DOWN &kp H  &hmr RSHFT J &kp K      &kp L     &kp SEMI  &kp SQT
-          &kp LSHFT  &kp Z      &kp X       &kp C        &kp V        &kp B                           &hmo 3 HOME    &hmo 2 PG_UP                           &kp N  &kp M        &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
-          &mo 4      &caps_word &kp GRAVE   &kp BSLH     &kp EQUAL           &kp SPACE &hmt LCTRL ESC &hmo 1 END     &hmo 1 PG_DN &hmt RCTRL ENTER &kp BSPC        &kp MINUS    &kp LBKT   &kp RBKT  &kp DEL   &mo 4
+          &kp PSCRN  &kp N1    &kp N2     &kp N3    &kp N4       &kp N5 &mo 3                                                                   &mo 2    &kp N6 &kp N7       &kp N8     &kp N9    &kp N0      &kp SLCK
+          &kp CAPS   &kp Q     &kp W      &kp E     &kp R        &kp T  &kp RIGHT                                                               &kp UP   &kp Y  &kp U        &kp I      &kp O     &kp P       &kp DEL
+          &kp TAB    &kp A     &kp S      &kp D     &hml LSHFT F &kp G  &kp LEFT  &hmt LGUI TAB  &hmt HYPER CAPS &hmt HYPER DEL &hmt RGUI SQT   &kp DOWN &kp H  &hmr RSHFT J &kp K      &kp L     &kp SEMI    &kp SQT
+          &kp LSHFT  &kp Z     &kp X      &kp C     &kp V        &kp B                           &lkp 1 HOME    &lkp 1 PG_UP                             &kp N  &kp M        &kp COMMA  &kp DOT   &kp FSLH    &kp RSHFT
+          &mo 4      &lcw 3 0  &kp GRAVE  &kp BSLH  &kp EQUAL     &hmt LALT SPACE &hmt LCTRL ESC &lkp 1 END     &lkp 1 PG_DN &hmt RCTRL ENTER &hmt RALT BSPC    &kp MINUS    &kp LBKT   &kp RBKT  &lkp 2 DEL  &mo 4
         >;
       };
       fn {
         bindings = <
           &kp F11 &kp F1  &kp F2    &kp F3     &kp F4     &kp F5    &kp C_PP                                       &kp C_MUTE     &kp F6       &kp F7       &kp F8       &kp F9        &kp F10  &kp F12
-          &trans  &trans  &trans    &trans     &trans     &trans    &kp C_NEXT                                     &kp C_VOL_UP   &kp HOME     &kp PG_DN    &kp PG_UP    &kp END       &none    &none
+          &trans  &mkp MB1         &mkp MB2       &mkp MB3        &mkp MB4    &kp C_NEXT                                     &kp C_VOL_UP   &kp HOME     &kp PG_DN    &kp PG_UP    &kp END       &none    &none
           &trans  &trans  &trans    &trans     &trans     &trans    &kp C_PREV    &trans &trans &trans &trans      &kp C_VOL_DN   &kp LEFT     &kp DOWN     &kp UP       &kp RIGHT     &none    &none
           &trans  &trans  &trans    &trans     &trans     &trans                         &trans &trans                            &kp LC(LEFT) &kp LC(DOWN) &kp LC(UP)   &kp LC(RIGHT) &none    &none
           &none   &none   &kp  C_PP &kp C_PREV &kp C_NEXT                  &trans &trans &trans &trans &trans &trans                           &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE    &none    &none
@@ -113,7 +108,7 @@
       };
       mod {
         bindings = <
-          &bt BT_CLR  &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &bl BL_TOG                              &bl BL_TOG &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &bt BT_CLR
+          &bt BT_CLR  &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &bl BL_TOG                              &bl BL_TOG &bt BT_DISC 0 &bt BT_DISC 1 &bt BT_DISC 2 &bt BT_DISC 3 &bt BT_DISC 4 &bt BT_CLR_ALL
           &bootloader &none        &none        &none        &none        &none        &bl BL_SET 5                            &bl BL_INC &none        &none        &none        &none        &none         &bootloader
           &none       &none        &none        &none        &none        &none        &bl BL_CYCLE  &none &none &none &none   &bl BL_DEC &none        &none        &none        &none        &none         &none
           &none       &none        &none        &none        &none        &none                            &none &none                    &none        &none        &none        &none        &none         &none
