@@ -164,7 +164,7 @@ bindings = <&kp L>, <&kp A>, <&kp Y>, <&kp E>, <&kp R>, <&kp SPACE>, <&kp N4>;
 
 };
 
-/*
+
 
 macro_md_code_block: macro_md_code_block {
     compatible = "zmk,behavior-macro";
@@ -182,7 +182,7 @@ macro_md_code_block: macro_md_code_block {
     display-name = "Markdown Code Block";
 };
 
-
+/*
 
 Mac_Cut: Mac_Cut {
     compatible = "zmk,behavior-macro";
