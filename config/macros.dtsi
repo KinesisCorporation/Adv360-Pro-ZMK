@@ -224,6 +224,7 @@ Mac_Mission_Control: Mac_ShowAW {
     label = "Mac Show All Windows";
 };
 
+/*
 Mac_Snip_Tool: Mac_Snip {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
@@ -252,9 +253,11 @@ Mac_Strike_Through_Text: Mac_Strike_Through_Text {
     label = "Mac Strikethrough Text";
 };
 
+
 Double_Click: Double_Click {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
     bindings = <&mkp MB1 &mkp MB1>;
     label = "Double Click";
 };
+*/
