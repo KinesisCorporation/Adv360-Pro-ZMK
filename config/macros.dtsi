@@ -238,7 +238,7 @@ Mac_Spotlight_Search: Mac_Spotlight_Search {
     bindings = <&kp LG(SPACE)>;
     label = "Mac Spotlight Search";
 };
-/*
+
 Mac_Close_Program: Mac_Close_Program {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
@@ -246,6 +246,7 @@ Mac_Close_Program: Mac_Close_Program {
     label = "Mac Close Program";
 };
 
+/*
 Mac_Strike_Through_Text: Mac_Strike_Through_Text {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
