@@ -71,7 +71,7 @@ bindings
     , <&kp LEFT>
     , <&kp LEFT>
     , <&kp LEFT>
-    , <&kp LC<V>
+    , <&kp LG<V>
 };
 macro_screenshot: macro_screenshot{
 compatible = "zmk,behavior-macro";
