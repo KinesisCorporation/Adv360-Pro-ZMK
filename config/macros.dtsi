@@ -229,3 +229,10 @@
     #binding-cells = <0>;
     bindings = <&kp LG(SPACE)>;
   };
+
+  macro_slack: macro_slack{
+    compatible = "zmk,behavior-macro";
+    label = "macro_slack";
+    #binding-cells = <0>;
+    bindings = <&kp LA(SPACE)> <&kp S> <&kp L> <&kp A> <&kp C> <&kp K> <&kp ENTER>;
+  };
