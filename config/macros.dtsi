@@ -75,6 +75,29 @@ label = "macro_md_image";
 bindings
     = <&kp LESS_THAN>
     , <&kp SPACE>
+        , <&kp w>
+        , <&kp i>
+        , <&kp d>
+        , <&kp t>
+        , <&kp h>
+        , <&kp EQUAL>
+        , <&kp DOUBLEQUOTE>
+        , <&kp N8>
+        , <&kp DOUBLEQUOTE>
+        , <&kp SPACE>
+        , <&kp s>
+        , <&kp r>
+        , <&kp c>
+        , <&kp EQUAL>
+        , <&kp DOUBLEQUOTE>
+        , <&kp DOUBLEQUOTE>
+        , <&kp SPACE>
+        , <&kp BSLH>
+        , <&kp GREATER_THAN>
+        , <&kp LEFT>
+        , <&kp LEFT>
+        , <&kp LEFT>
+        , <&kp LG<V>
     ;
 };
 macro_screenshot: macro_screenshot{
