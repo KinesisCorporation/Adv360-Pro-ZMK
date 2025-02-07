@@ -81,16 +81,16 @@ bindings
         , <&kp T>
         , <&kp H>
         , <&kp EQUAL>
-        , <&kp DOUBLEQUOTE>
+        , <&kp DOUBLEQUOTES>
         , <&kp N8>
-        , <&kp DOUBLEQUOTE>
+        , <&kp DOUBLEQUOTES>
         , <&kp SPACE>
-        , <&kp s>
-        , <&kp r>
-        , <&kp c>
+        , <&kp S>
+        , <&kp R>
+        , <&kp C>
         , <&kp EQUAL>
-        , <&kp DOUBLEQUOTE>
-        , <&kp DOUBLEQUOTE>
+        , <&kp DOUBLEQUOTES>
+        , <&kp DOUBLEQUOTES>
         , <&kp SPACE>
         , <&kp BSLH>
         , <&kp GREATER_THAN>
