@@ -74,30 +74,38 @@ label = "macro_md_image";
 #binding-cells = <0>;
 bindings
     = <&kp LESS_THAN>
+    , <&kp I>
+    , <&kp M>
+    , <&kp G>
     , <&kp SPACE>
-        , <&kp W>
-        , <&kp I>
-        , <&kp D>
-        , <&kp T>
-        , <&kp H>
-        , <&kp EQUAL>
-        , <&kp DQT>
-        , <&kp N8>
-        , <&kp DQT>
-        , <&kp SPACE>
-        , <&kp S>
-        , <&kp R>
-        , <&kp C>
-        , <&kp EQUAL>
-        , <&kp DQT>
-        , <&kp DQT>
-        , <&kp SPACE>
-        , <&kp BSLH>
-        , <&kp GREATER_THAN>
-        , <&kp LEFT>
-        , <&kp LEFT>
-        , <&kp LEFT>
-        , <&kp LG(C)>
+    , <&kp W>
+    , <&kp I>
+    , <&kp D>
+    , <&kp T>
+    , <&kp H>
+    , <&kp EQUAL>
+    , <&kp DQT>
+    , <&kp N8>
+    , <&kp N0>
+    , <&kp N0>
+    , <&kp P>
+    , <&kp X>
+    , <&kp DQT>
+    , <&kp SPACE>
+    , <&kp S>
+    , <&kp R>
+    , <&kp C>
+    , <&kp EQUAL>
+    , <&kp DQT>
+    , <&kp DQT>
+    , <&kp SPACE>
+    , <&kp BSLH>
+    , <&kp GREATER_THAN>
+    , <&kp LEFT>
+    , <&kp LEFT>
+    , <&kp LEFT>
+    , <&kp LEFT>
+    , <&kp LG(C)>
     ;
 };
 macro_screenshot: macro_screenshot{
@@ -154,4 +162,98 @@ label = "macro_layer_4";
 #binding-cells = <0>;
 bindings = <&kp L>, <&kp A>, <&kp Y>, <&kp E>, <&kp R>, <&kp SPACE>, <&kp N4>;
 
+};
+
+macro_md_code_block: macro_md_code_block {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings = <&kp GRAVE>
+        , <&kp GRAVE>
+        , <&kp GRAVE>
+        , <&kp GRAVE>
+        , <&kp ENTER>
+        , <&kp GRAVE>
+        , <&kp GRAVE>
+        , <&kp LEFT>
+        , <&kp LEFT>
+        , <&kp LEFT>;
+    display-name = "Markdown Code Block";
+};
+
+
+Mac_Cut: Mac_Cut {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings = <&kp LG(X)>;
+    display-name = "Mac Cut";
+};
+
+Mac_Copy: Mac_Copy {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings = <&kp LG(C)>;
+    display-name = "Mac Copy";
+};
+
+Mac_Paste: Mac_Paste {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings = <&kp LG(V)>;
+    display-name = "Mac Paste";
+};
+
+Mac_Undo: Mac_Undo {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings = <&kp LG(Z)>;
+    display-name = "Mac Undo";
+};
+
+Mac_Select_All: Mac_SelAll {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings = <&kp LG(A)>;
+    display-name = "Mac Select All";
+};
+
+Mac_Mission_Control: Mac_ShowAW {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings = <&kp LC(UP_ARROW)>;
+    display-name = "Mac Show All Windows";
+};
+
+Mac_Snip_Tool: Mac_Snip {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings = <&kp LC(LG(LS(NUMBER_4)))>;
+    display-name = "Mac Screen Snip";
+};
+
+Mac_Spotlight_Search: Mac_Spotlight_Search {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings = <&kp LG(SPACE)>;
+    display-name = "Mac Spotlight Search";
+};
+
+Mac_Close_Program: Mac_Close_Program {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings = <&kp LG(Q)>;
+    display-name = "Mac Close Program";
+};
+
+Mac_Strike_Through_Text: Mac_Strike_Through_Text {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings = <&kp LG(LS(X))>;
+    display-name = "Mac Strikethrough Text";
+};
+
+Double_Click: Double_Click {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings = <&mkp MB1 &mkp MB1>;
+    display-name = "Double Click";
 };
