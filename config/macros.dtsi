@@ -90,14 +90,14 @@ bindings
         , <&kp C>
         , <&kp EQUAL>
         , <&kp DQT>
-        , <&kp DQT  >
+        , <&kp DQT>
         , <&kp SPACE>
         , <&kp BSLH>
         , <&kp GREATER_THAN>
         , <&kp LEFT>
         , <&kp LEFT>
         , <&kp LEFT>
-        , <&kp LG<V>
+        , <&kp LG(C)>
     ;
 };
 macro_screenshot: macro_screenshot{
