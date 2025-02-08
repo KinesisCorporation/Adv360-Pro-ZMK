@@ -261,12 +261,13 @@ macro_Double_Click: macro_Double_Click {
     bindings = <&mkp MB1 &mkp MB1>;
     label = "Double Click";
 };
-// Custom double-tap behavior for space to enter
-dt_spc: double_tap_space {
+*/
+/* Custom double-tap behavior for space to enter */
+macro_Double_Click: macro_Double_Click {
     compatible = "zmk,behavior-tap-dance";
-    label = "DOUBLE_TAP_SPACE";
+    label = "macro_Double_Click";
     #binding-cells = <0>;
     tapping-term-ms = <200>;
-    bindings = <&kp SPACE>, <&kp ENTER>;
+    bindings = <&kp MB1>, <&kp MB1>;
 };
 
