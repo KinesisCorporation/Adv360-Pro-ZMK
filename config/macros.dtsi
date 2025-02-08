@@ -182,42 +182,42 @@ macro_md_code_block: macro_md_code_block {
         , <&kp LEFT>;
 };
 
-Mac_Cut: Mac_Cut {
+macro_Cut: macro_Cut {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
+    label = "Macbook Cut";
     bindings = <&kp LG(X)>;
-    label = "Mac Cut";
 };
 
-Mac_Copy: Mac_Copy {
+macro_Copy: macro_Copy {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
-    bindings = <&kp LG(C)>;
     label = "Mac Copy";
+    bindings = <&kp LG(C)>;
 };
 
-Mac_Paste: Mac_Paste {
+macro_Paste: macro_Paste {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
     bindings = <&kp LG(V)>;
     label = "Mac Paste";
 };
 
-Mac_Undo: Mac_Undo {
+macro_Undo: macro_Undo {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
     bindings = <&kp LG(Z)>;
     label = "Mac Undo";
 };
 
-Mac_Select_All: Mac_SelAll {
+macro_Select_All: macro_SelAll {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
     bindings = <&kp LG(A)>;
     label = "Mac Select All";
 };
 
-Mac_Mission_Control: Mac_ShowAW {
+macro_Mission_Control: macro_ShowAW {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
     bindings = <&kp LC(UP_ARROW)>;
@@ -225,21 +225,21 @@ Mac_Mission_Control: Mac_ShowAW {
 };
 
 
-Mac_Snip_Tool: Mac_Snip {
+macro_Snip_Tool: macro_Snip {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
     bindings = <&kp LC(LG(LS(NUMBER_4)))>;
     label = "Mac Screen Snip";
 };
 
-Mac_Spotlight_Search: Mac_Spotlight_Search {
+macro_Spotlight_Search: macro_Spotlight_Search {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
     bindings = <&kp LG(SPACE)>;
     label = "Mac Spotlight Search";
 };
 
-Mac_Close_Program: Mac_Close_Program {
+macro_Close_Program: macro_Close_Program {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
     bindings = <&kp LG(Q)>;
@@ -247,18 +247,26 @@ Mac_Close_Program: Mac_Close_Program {
 };
 
 /*
-Mac_Strike_Through_Text: Mac_Strike_Through_Text {
+macro_Strike_Through_Text: macro_Strike_Through_Text {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
     bindings = <&kp LG(LS(X))>;
     label = "Mac Strikethrough Text";
 };
 
-
-Double_Click: Double_Click {
+/*
+macro_Double_Click: macro_Double_Click {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
     bindings = <&mkp MB1 &mkp MB1>;
     label = "Double Click";
 };
-*/
+// Custom double-tap behavior for space to enter
+dt_spc: double_tap_space {
+    compatible = "zmk,behavior-tap-dance";
+    label = "DOUBLE_TAP_SPACE";
+    #binding-cells = <0>;
+    tapping-term-ms = <200>;
+    bindings = <&kp SPACE>, <&kp ENTER>;
+};
+
