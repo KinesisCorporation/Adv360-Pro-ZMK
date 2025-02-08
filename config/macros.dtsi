@@ -262,7 +262,7 @@ macro_Double_Click: macro_Double_Click {
     label = "Double Click";
 };
 */
-/* Custom double-tap behavior for space to enter */
+/* Custom double-tap behavior for space to enter
 macro_Double_Click: macro_Double_Click {
     compatible = "zmk,behavior-tap-dance";
     label = "macro_Double_Click";
@@ -270,4 +270,4 @@ macro_Double_Click: macro_Double_Click {
     tapping-term-ms = <200>;
     bindings = <&kp MB1>, <&kp MB1>;
 };
-
+*/
