@@ -16,7 +16,7 @@ cp build/left/zephyr/zmk.uf2 "./firmware/${TIMESTAMP}-${COMMIT}-left-clique.uf2"
 # Build right side if selected
 if [ "${BUILD_RIGHT}" = true ]; then
     # West Build (right)
-    west build -s zmk/app -p -d build/right -b adv360_right -S studio-rpc-usb-uart -- -DZMK_CONFIG="${PWD}/config" -DCONFIG_ZMK_STUDIO=y
+    west build -s zmk/app -p -d build/right -b adv360_right -- -DZMK_CONFIG="${PWD}/config"
     # Adv360 Right Kconfig file
     grep -vE '(^#|^$)' build/right/zephyr/.config
     # Rename zmk.uf2
