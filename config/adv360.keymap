@@ -58,7 +58,7 @@
     tlmm: thumb_layer_mod_morph {
         compatible = "zmk,behavior-mod-morph";
         #binding-cells = <0>;
-        bindings = <&mo 8>, <&kp DEL>;
+        bindings = <&sk LG(LC(LALT))>, <&kp DEL>;
         mods = <MOD_LSFT>;
     };
   };
