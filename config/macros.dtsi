@@ -273,7 +273,7 @@ word_select: word_select {
         <&macro_release &kp LALT>;
 };
 
-: tap_dance_c {
+td_c: tap_dance_c {
     compatible = "zmk,behavior-tap-dance";
     label = "TAP_DANCE_C";
     #binding-cells = <0>;
