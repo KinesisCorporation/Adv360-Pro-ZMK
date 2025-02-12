@@ -11,37 +11,24 @@ label = "macro_braces_back";
 bindings = <&kp LBRC>, <&kp RBRC>, <&kp LEFT>;
 };
 macro_brackets_back: macro_brackets_back{
-compatible = "zmk,behavior-macro";
-label = "macro_brackets_back";
-#binding-cells = <0>;
-bindings = <&kp LBKT>, <&kp RBKT>, <&kp LEFT>;
+  compatible = "zmk,behavior-macro";
+  label = "macro_brackets_back";
+  #binding-cells = <0>;
+  bindings = <&kp LBKT>, <&kp RBKT>, <&kp LEFT>;
 };
-macro_browser_next_tab: macro_browser_next_tab{
-compatible = "zmk,behavior-macro";
-label = "macro_browser_next_tab";
-#binding-cells = <0>;
-bindings = <&kp LC(TAB)>;
-};
-macro_browser_previous_tab: macro_browser_previous_tab{
-compatible = "zmk,behavior-macro";
-label = "macro_browser_previous_tab";
-#binding-cells = <0>;
-bindings = <&kp LS(LC(TAB))>;
-};
-
 
 macro_tab_previous: macro_tab_previous {
-            label = "macro_tab_previous";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LCTRL>
-                , <&macro_press &kp LSHFT>
-                , <&macro_tap &kp TAB>
-                , <&macro_release &kp LSHFT>
-                , <&macro_release &kp LCTRL>
-                ;
-        };
+  label = "macro_tab_previous";
+  compatible = "zmk,behavior-macro";
+  #binding-cells = <0>;
+  bindings
+     = <&macro_press &kp LCTRL>
+     , <&macro_press &kp LSHFT>
+     , <&macro_tap &kp TAB>
+     , <&macro_release &kp LSHFT>
+     , <&macro_release &kp LCTRL>
+     ;
+};
 
 macro_tab_next: macro_tab_next {
             label = "macro_tab_next";
@@ -55,16 +42,17 @@ macro_tab_next: macro_tab_next {
         };
 
 macro_emoticonmenu: macro_emoticonmenu{
-compatible = "zmk,behavior-macro";
-label = "macro_emoticonmenu";
-#binding-cells = <0>;
-bindings = <&macro_press &kp LGUI &kp LSHIFT>, <&macro_tap &kp N4>, <&macro_release &kp LGUI &kp LSHIFT>;
+  compatible = "zmk,behavior-macro";
+  label = "macro_emoticonmenu";
+  #binding-cells = <0>;
+  bindings = <&macro_press &kp LGUI &kp LSHIFT>, <&macro_tap &kp N4>, <&macro_release &kp LGUI &kp LSHIFT>;
 };
+
 macro_md_url: macro_md_url{
-compatible = "zmk,behavior-macro";
-label = "macro_md_url";
-#binding-cells = <0>;
-bindings = <&kp LBKT>, <&kp RBKT>, <&kp LPAR>, <&kp RPAR>, <&kp LEFT>;
+  compatible = "zmk,behavior-macro";
+  label = "macro_md_url";
+  #binding-cells = <0>;
+  bindings = <&kp LBKT>, <&kp RBKT>, <&kp LPAR>, <&kp RPAR>, <&kp LEFT>, <&kp LEFT>, <&kp LEFT>;
 };
 
 /* <img src="databricks_architecture.png" width="800" /> */
@@ -271,3 +259,24 @@ macro_Double_Click: macro_Double_Click {
     bindings = <&kp MB1>, <&kp MB1>;
 };
 */
+
+word_select: word_select {
+    compatible = "zmk,behavior-macro";
+    label = "WORD_SELECT";
+    #binding-cells = <0>;
+    bindings =
+        <&macro_press &kp LALT>,
+        <&macro_tap &kp RIGHT>,
+        <&macro_press &kp LSHIFT>,
+        <&macro_tap &kp LEFT>,
+        <&macro_release &kp LSHIFT>,
+        <&macro_release &kp LALT>;
+};
+
+: tap_dance_c {
+    compatible = "zmk,behavior-tap-dance";
+    label = "TAP_DANCE_C";
+    #binding-cells = <0>;
+    tapping-term-ms = <300>;
+    bindings = <&kp C>, <&word_select>;
+};
