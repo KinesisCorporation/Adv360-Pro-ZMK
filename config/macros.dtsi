@@ -336,12 +336,11 @@ td_enter: tap_dance_enter {
 };
 
 // Layer toggle: tap once for momentary, twice to toggle
-/*
 td_layer: tap_dance_layer {
     compatible = "zmk,behavior-tap-dance";
     label = "TAP_DANCE_LAYER";
-    #binding-cells = <1>;
+    #binding-cells = <0>;
     tapping-term-ms = <200>;
     bindings = <&mo>, <&tog>;
 };
-*/
+
