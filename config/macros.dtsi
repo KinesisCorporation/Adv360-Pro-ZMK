@@ -280,3 +280,49 @@ td_c: tap_dance_c {
     tapping-term-ms = <300>;
     bindings = <&kp C>, <&word_select>;
 };
+
+// Shift key: tap once for shift, twice for caps lock
+td_shift: tap_dance_shift {
+    compatible = "zmk,behavior-tap-dance";
+    label = "TAP_DANCE_SHIFT";
+    #binding-cells = <0>;
+    tapping-term-ms = <200>;
+    bindings = <&kp LSHIFT>, <&caps_word>;
+};
+
+// Backspace: tap once for backspace, twice for delete word
+td_bspc: tap_dance_backspace {
+    compatible = "zmk,behavior-tap-dance";
+    label = "TAP_DANCE_BACKSPACE";
+    #binding-cells = <0>;
+    tapping-term-ms = <200>;
+    bindings = <&kp BACKSPACE>,
+              <&macro_press &kp LALT &kp BACKSPACE>;
+};
+
+// Quote key: tap once for single quote, twice for double quote
+td_quote: tap_dance_quote {
+    compatible = "zmk,behavior-tap-dance";
+    label = "TAP_DANCE_QUOTE";
+    #binding-cells = <0>;
+    tapping-term-ms = <200>;
+    bindings = <&kp SQT>, <&kp DQT>;
+};
+
+// Enter: tap once for enter, twice for shift+enter (new line)
+td_enter: tap_dance_enter {
+    compatible = "zmk,behavior-tap-dance";
+    label = "TAP_DANCE_ENTER";
+    #binding-cells = <0>;
+    tapping-term-ms = <200>;
+    bindings = <&kp ENTER>, <&kp LS(ENTER)>;
+};
+
+// Layer toggle: tap once for momentary, twice to toggle
+td_layer: tap_dance_layer {
+    compatible = "zmk,behavior-tap-dance";
+    label = "TAP_DANCE_LAYER";
+    #binding-cells = <1>;
+    tapping-term-ms = <200>;
+    bindings = <&mo>, <&tog>;
+};
