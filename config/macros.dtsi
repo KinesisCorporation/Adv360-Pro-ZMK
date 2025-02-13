@@ -96,6 +96,23 @@ bindings
     , <&kp LG(C)>
     ;
 };
+
+macro_shruggy1: macro_shruggy1 {
+            compatible = "zmk,behavior-macro";
+            label = "macro_shruggy1";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LALT>
+                , <&macro_tap &kp KP_N0 &kp KP_N1 &kp KP_N7 &kp KP_N5>
+                , <&macro_release &kp LALT>
+                , <&macro_tap &kp MINUS &kp BSLH>
+                , <&macro_press &kp LALT>
+                , <&macro_tap &kp KP_N0 &kp KP_N8 &kp KP_N3>
+                , <&macro_release &kp LALT>
+                , <&macro_tap &kp FSLH>
+                ;
+        };
+
 macro_screenshot: macro_screenshot{
 compatible = "zmk,behavior-macro";
 label = "macro_screenshot";
