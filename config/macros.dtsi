@@ -290,12 +290,49 @@ word_select: word_select {
         <&macro_release &kp LALT>;
 };
 
-td_c: tap_dance_c {
+td_triple_c: tap_dance_triple_c {
     compatible = "zmk,behavior-tap-dance";
-    label = "TAP_DANCE_C";
+    label = "TAP_DANCE_TRIPLE_C";
     #binding-cells = <0>;
-    tapping-term-ms = <300>;
-    bindings = <&kp C>, <&word_select>;
+    tapping-term-ms = <200>;
+    bindings =
+      <&kp C>
+      , <&kp LS(C)>
+      , <&macro_press &kp LGUI &kp A>
+      ;
+};
+
+td_triple_a: tap_dance_triple_a {
+    compatible = "zmk,behavior-tap-dance";
+    label = "TAP_DANCE_TRIPLE_A";
+    #binding-cells = <0>;
+    tapping-term-ms = <200>;
+    bindings =
+        <&kp A>,           // Single tap: 'a'
+        <&kp LS(A)>,       // Double tap: 'A'
+        <&macro_press &kp LGUI &kp A>;  // Triple tap: Alt+A
+};
+
+td_triple_v: tap_dance_triple_v {
+    compatible = "zmk,behavior-tap-dance";
+    label = "TAP_DANCE_TRIPLE_V";
+    #binding-cells = <0>;
+    tapping-term-ms = <200>;
+    bindings =
+        <&kp V>,           // Single tap: 'a'
+        <&kp LS(V)>,       // Double tap: 'A'
+        <&macro_press &kp LGUI &kp V>;  // Triple tap: Alt+A
+};
+
+td_triple_z: tap_dance_triple_z {
+    compatible = "zmk,behavior-tap-dance";
+    label = "TAP_DANCE_TRIPLE_Z";
+    #binding-cells = <0>;
+    tapping-term-ms = <200>;
+    bindings =
+        <&kp Z>,           // Single tap: 'a'
+        <&kp LS(Z)>,       // Double tap: 'A'
+        <&macro_press &kp LGUI &kp Z>;  // Triple tap: Alt+A
 };
 
 // Shift key: tap once for shift, twice for caps lock
