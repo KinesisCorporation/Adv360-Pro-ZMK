@@ -322,7 +322,7 @@ td_triple_v: tap_dance_triple_v {
     bindings =
         <&kp V>,           // Single tap: 'a'
         <&kp LS(V)>,       // Double tap: 'A'
-        <&macro_press &kp LGUI &kp V>;  // Triple tap: Alt+A
+        <&kp LG(V)>        // Triple tap: Alt+A
 };
 
 td_triple_z: tap_dance_triple_z {
@@ -333,7 +333,7 @@ td_triple_z: tap_dance_triple_z {
     bindings =
         <&kp Z>,           // Single tap: 'a'
         <&kp LS(Z)>,       // Double tap: 'A'
-        <&macro_press &kp LGUI &kp Z>;  // Triple tap: Alt+A
+        <&kp LG(Z)>        // Triple tap: Alt+A
 };
 
 // Shift key: tap once for shift, twice for caps lock
