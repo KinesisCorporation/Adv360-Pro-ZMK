@@ -298,7 +298,7 @@ td_triple_c: tap_dance_triple_c {
     bindings =
       <&kp C>
       , <&kp LS(C)>
-      , <&macro_press &kp LGUI &kp A>
+      , <&kp LG(C)>
       ;
 };
 
@@ -310,7 +310,8 @@ td_triple_a: tap_dance_triple_a {
     bindings =
         <&kp A>,           // Single tap: 'a'
         <&kp LS(A)>,       // Double tap: 'A'
-        <&macro_press &kp LGUI &kp A>;  // Triple tap: Alt+A
+        <&kp LG(A)>        // Triple tap: Alt+A
+        ;
 };
 
 td_triple_v: tap_dance_triple_v {
