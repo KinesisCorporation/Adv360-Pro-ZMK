@@ -6,6 +6,8 @@
 
 There is a web based GUI available for editing the keymap. It is available at https://kinesiscorporation.github.io/Adv360-Pro-GUI. This repository is also compatible with certain other web based ZMK keymap editors however they may have keycodes or behaviours that are not implemented on the 360 Pro and could cause unusual behaviour or build failures. Furthermore changes made on other keymap editors may not be compatible if one goes back to using the Kinesis GUI.
 
+To clear settings set by Clique or ZMK Studio, modify `CONFIG_ZMK_SETTINGS_RESET_ON_START=n` to `CONFIG_ZMK_SETTINGS_RESET_ON_START=y` in `config/boards/arm/adv360/adv360_right_defconfig` and `config/boards/arm/adv360/adv360_right_defconfig`, build and flash once.
+
 Certain ZMK features (e.g. combos) require knowing the exact key positions in the matrix. They can be found in both image and text format [here](assets/key-positions.md)
 
 ## Building the Firmware with GitHub Actions
