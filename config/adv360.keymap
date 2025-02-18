@@ -61,11 +61,11 @@
         #include "macros.dtsi"
         #include "version.dtsi"
 
-        HMH(lkp, "LAYER_TAP",  130,  0,  KEYS_NONE)
-        HMT(hmt, "MODS_THUMB", 150, 175, KEYS_NONE)
+        HMH(lkp, "LAYER_TAP",  125,  0,  KEYS_NONE)
+        HMT(hmt, "MODS_THUMB", 160, 180, KEYS_NONE)
 
-        HMT(hmr, "MODS_RIGHT", 130, 0, KEYS_LEFT  THUMBS_LEFT)
-        HMT(hml, "MODS_LEFT",  130, 0, KEYS_RIGHT THUMBS_RIGHT)
+        HMT(hmr, "MODS_RIGHT", 125, 0, KEYS_LEFT  THUMBS_LEFT)
+        HMT(hml, "MODS_LEFT",  125, 0, KEYS_RIGHT THUMBS_RIGHT)
 
         lcw: layer_caps_word {
             compatible = "zmk,behavior-hold-tap";
@@ -94,7 +94,7 @@
       fn {
         bindings = <
           &kp F11 &kp F1  &kp F2    &kp F3     &kp F4     &kp F5    &kp C_PP                                       &kp C_MUTE     &kp F6       &kp F7       &kp F8       &kp F9        &kp F10  &kp F12
-          &trans  &mkp MB1         &mkp MB2       &mkp MB3        &mkp MB4    &kp C_NEXT                                     &kp C_VOL_UP   &kp HOME     &kp PG_DN    &kp PG_UP    &kp END       &none    &none
+          &trans  &trans  &trans    &trans     &trans     &trans    &kp C_NEXT                                     &kp C_VOL_UP   &kp HOME     &kp PG_DN    &kp PG_UP    &kp END       &none    &none
           &trans  &trans  &trans    &trans     &trans     &trans    &kp C_PREV    &trans &trans &trans &trans      &kp C_VOL_DN   &kp LEFT     &kp DOWN     &kp UP       &kp RIGHT     &none    &none
           &trans  &trans  &trans    &trans     &trans     &trans                         &trans &trans                            &kp LC(LEFT) &kp LC(DOWN) &kp LC(UP)   &kp LC(RIGHT) &none    &none
           &none   &none   &kp  C_PP &kp C_PREV &kp C_NEXT                  &trans &trans &trans &trans &trans &trans                           &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE    &none    &none
