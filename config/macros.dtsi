@@ -55,6 +55,27 @@ macro_md_url: macro_md_url{
   bindings = <&kp LBKT>, <&kp RBKT>, <&kp LPAR>, <&kp RPAR>, <&kp LEFT>, <&kp LEFT>, <&kp LEFT>;
 };
 
+macro_md_choices: macro_md_choices{
+  compatible = "zmk,behavior-macro";
+  label = "macro_md_choices";
+  #binding-cells = <0>;
+  bindings = <&kp POUND>, <&kp POUND>, <&kp SPACE>, <&kp LS(C)>, <&kp H>, <&kp O>, <&kp I>, <&kp C>, <&kp E>, <&kp S>;
+};
+
+macro_md_answer: macro_md_answer{
+  compatible = "zmk,behavior-macro";
+  label = "macro_md_answer";
+  #binding-cells = <0>;
+  bindings = <&kp POUND>, <&kp POUND>, <&kp SPACE>, <&kp LS(A)>, <&kp N>, <&kp S>, <&kp W>, <&kp E>, <&kp R>;
+};
+
+macro_md_explanation: macro_md_explanation{
+  compatible = "zmk,behavior-macro";
+  label = "macro_md_explanation";
+  #binding-cells = <0>;
+  bindings = <&kp POUND>, <&kp POUND>, <&kp SPACE>, <&kp LS(E)>, <&kp X>, <&kp P>, <&kp L>, <&kp A>, <&kp N>, <&kp A>, <&kp T>, <&kp I>, <&kp O>, <&kp N>;
+};
+
 /* <img src="databricks_architecture.png" width="800" /> */
 macro_md_image: macro_md_image{
 compatible = "zmk,behavior-macro";
@@ -322,7 +343,7 @@ td_triple_v: tap_dance_triple_v {
     bindings =
         <&kp V>,           // Single tap: 'a'
         <&kp LS(V)>,       // Double tap: 'A'
-        <&kp LG(V)>        // Triple tap: Alt+A
+        <&kp LG(V)>;       // Triple tap: Alt+A
 };
 
 td_triple_z: tap_dance_triple_z {
@@ -333,7 +354,7 @@ td_triple_z: tap_dance_triple_z {
     bindings =
         <&kp Z>,           // Single tap: 'a'
         <&kp LS(Z)>,       // Double tap: 'A'
-        <&kp LG(Z)>        // Triple tap: Alt+A
+        <&kp LG(Z)>;       // Triple tap: Alt+A
 };
 
 // Shift key: tap once for shift, twice for caps lock
@@ -382,3 +403,32 @@ td_layer: tap_dance_layer {
     bindings = <&mo>, <&tog>;
 };
 
+macro_close_file: macro_close_file {
+  compatible = "zmk,behavior-macro";
+  label = "macro_close_file";
+  #binding-cells = <0>;
+  bindings = <&mt LEFT_CONTROL K>, <&mt LEFT_CONTROL W>;
+};
+
+macro_email_yahoo: macro_email_yahoo {
+  compatible = "zmk,behavior-macro";
+  label = "macro_email_yahoo";
+  #binding-cells = <0>;
+  bindings = <&kp E>, <&kp T>, <&kp S>, <&kp N0>, <&kp N4>, <&kp U>, <&kp G>, <&kp A>, <&kp AT>, <&kp Y>, <&kp A>, <&kp H>, <&kp O>, <&kp O>, <&kp PERIOD>, <&kp C>, <&kp O>, <&kp M>;
+};
+
+macro_email_gmail: macro_email_gmail{
+  compatible = "zmk,behavior-macro";
+  label = "macro_email_gmail";
+  #binding-cells = <0>;
+  bindings = <&kp E>, <&kp T>, <&kp S>, <&kp N0>, <&kp N4>, <&kp U>, <&kp G>, <&kp A>, <&kp AT>, <&kp G>, <&kp M>, <&kp A>, <&kp I>, <&kp L>, <&kp PERIOD>, <&kp C>, <&kp O>, <&kp M>;
+};
+
+      skq: sticky_key_quick_release {
+        compatible = "zmk,behavior-sticky-key";
+        #binding-cells = <1>;
+        bindings = <&kp>;
+        release-after-ms = <1000>;
+        quick-release;
+        ignore-modifiers;
+      };
