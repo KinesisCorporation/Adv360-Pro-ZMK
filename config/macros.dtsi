@@ -75,6 +75,6 @@
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
     wait-ms = <2>;  // Wait time between actions
-      bindings = <&kp LS(S) &kp LS(e) &kp LS(c) &kp LS(u) &kp LS(r) &kp LS(e) &kp LS(A)&kp LS(c) &kp LS(c) &kp LS(e) &kp LS(s) &kp LS(s)>;
+      bindings = <&kp LS(S) &kp LS(e) &kp LS(c) &kp LS(u) &kp LS(r) &kp LS(e) &kp LS(A) &kp LS(c) &kp LS(c) &kp LS(e) &kp LS(s) &kp LS(s)>;
     label = "SECURE_ACCESS_MACRO";
   };
