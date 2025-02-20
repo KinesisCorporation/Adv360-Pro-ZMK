@@ -71,7 +71,7 @@
     label = "TODO_MACRO";
   };
 
-  secure_access: todo_macro {
+  secure_access: secure_access {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
     wait-ms = <2>;  // Wait time between actions
