@@ -74,7 +74,7 @@
   secure_access_macro: secure_access_macro {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
-    wait-ms = <2>;
+    wait-ms = <2>;  // Wait time between actions
     bindings = <&kp LS(S) &kp e &kp c &kp u &kp r &kp e &kp LS(A) &kp c &kp c &kp e &kp s &kp s>;
     label = "SECURE_ACCESS_MACRO";
   };
