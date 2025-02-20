@@ -70,3 +70,11 @@
     bindings = <&kp FSLH &kp FSLH &kp SPACE &kp LS(T) &kp LS(O) &kp LS(D) &kp LS(O) &kp SPACE &kp LBKT &kp LS(R) &kp LS(H) &kp RIGHT_BRACKET &kp COLON>;
     label = "TODO_MACRO";
   };
+
+  secure_access: todo_macro {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    wait-ms = <2>;  // Wait time between actions
+      bindings = <&kp LS(S) &kp LS(e) &kp LS(c) &kp LS(u) &kp LS(r) &kp LS(e) &kp LS(A)&kp LS(c) &kp LS(c) &kp LS(e) &kp LS(s) &kp LS(s)>;
+    label = "SECURE_ACCESS_MACRO";
+  };
