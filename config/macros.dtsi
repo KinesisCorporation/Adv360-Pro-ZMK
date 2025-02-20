@@ -432,3 +432,613 @@ macro_email_gmail: macro_email_gmail{
         quick-release;
         ignore-modifiers;
       };
+
+
+
+        vim_i: vim_i {
+            compatible = "zmk,behavior-mod-morph";
+            label = "VIM_I";
+            bindings = <&to 0>, <&vim_I>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        vim_o: vim_o {
+            compatible = "zmk,behavior-mod-morph";
+            label = "VIM_O";
+            bindings = <&next_line_enter>, <&previous_line_enter>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        vim_c_r: vim_c_r {
+            compatible = "zmk,behavior-mod-morph";
+            label = "VIM_C_R";
+            #binding-cells = <0>;
+            bindings = <&none>, <&kp LG(LS(Z))>;
+
+            mods = <(MOD_LCTL|MOD_RCTL)>;
+        };
+
+        vim_backspace: vim_backspace {
+            compatible = "zmk,behavior-mod-morph";
+            label = "VIM_BACKSPACE";
+            bindings = <&kp LA(BACKSPACE)>, <&kp LA(DELETE)>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LALT|MOD_RALT)>;
+        };
+
+        slashandbackslash: slashandbackslash {
+            compatible = "zmk,behavior-mod-morph";
+            label = "SLASHANDBACKSLASH";
+            bindings = <&kp SLASH>, <&kp BACKSLASH>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LALT|MOD_RALT)>;
+        };
+
+        quote: quote {
+            compatible = "zmk,behavior-mod-morph";
+            label = "QUOTE";
+            bindings = <&kp SINGLE_QUOTE>, <&kp GRAVE>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LALT|MOD_RALT)>;
+        };
+
+        coma_semi: coma_semi {
+            compatible = "zmk,behavior-mod-morph";
+            label = "COMA_SEMI";
+            bindings = <&kp COMMA>, <&kp SEMI>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LALT|MOD_RALT)>;
+            keep-mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        dot_colon: dot_colon {
+            compatible = "zmk,behavior-mod-morph";
+            label = "DOT_COLON";
+            bindings = <&kp PERIOD>, <&kp COLON>, <&kp LA(COLON)>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LALT|MOD_RALT)>;
+            keep-mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        q_grave: q_grave {
+            compatible = "zmk,behavior-mod-morph";
+            label = "Q_GRAVE";
+            bindings = <&kp Q>, <&kp GRAVE>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LALT|MOD_RALT)>;
+        };
+
+        home: home {
+            compatible = "zmk,behavior-mod-morph";
+            label = "HOME";
+            bindings = <&kp LG(LEFT)>, <&kp HOME>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        end: end {
+            compatible = "zmk,behavior-mod-morph";
+            label = "END";
+            bindings = <&kp LG(RIGHT)>, <&kp END>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RALT)>;
+        };
+
+        quote_grave: quote_grave {
+            compatible = "zmk,behavior-mod-morph";
+            label = "QUOTE_GRAVE";
+            bindings = <&kp SINGLE_QUOTE>, <&kp GRAVE>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LALT|MOD_RALT)>;
+        };
+
+        hm_quotes: hm_quotes {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HM_QUOTES";
+            bindings = <&kp>, <&quote_grave>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <200>;
+            flavor = "tap-preferred";
+        };
+
+        dot_comma: dot_comma {
+            compatible = "zmk,behavior-mod-morph";
+            label = "DOT_COMMA";
+            bindings = <&kp DOT>, <&kp COMMA>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        multiply: multiply {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MULTIPLY";
+            bindings = <&kp ASTERISK>, <&kp LEFT_BRACE>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        divide: divide {
+            compatible = "zmk,behavior-mod-morph";
+            label = "divide";
+            bindings = <&kp SLASH>, <&kp LEFT_PARENTHESIS>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        num_7: num_7 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "num_7";
+            bindings = <&kp N7>, <&kp RIGHT_BRACE>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        equals_thic_arrow: equals_thic_arrow {
+            compatible = "zmk,behavior-mod-morph";
+            label = "EQUALS_THIC_ARROW";
+            bindings = <&kp EQUAL>, <&thic_arrow>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        num_0: num_0 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "NUM_0";
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            bindings = <&kp N0>, <&kp LEFT_BRACKET>;
+        };
+
+        num_1: num_1 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "NUM_1";
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            bindings = <&kp N1>, <&kp RIGHT_BRACKET>;
+        };
+
+        num_2: num_2 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "NUM_2";
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            bindings = <&kp N2>, <&kp COMMA>;
+        };
+
+        num_3: num_3 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "NUM_3";
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            bindings = <&kp N3>, <&kp DOT>;
+        };
+
+        num_5: num_5 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "NUM_5";
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+            bindings = <&hm RIGHT_GUI N5>, <&kp LT>;
+        };
+
+        num_6: num_6 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "NUM_6";
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+            bindings = <&hm RIGHT_ALT NUMBER_6>, <&kp GT>;
+        };
+
+        hm_quote_minus: hm_quote_minus {
+            compatible = "zmk,behavior-mod-morph";
+            label = "HM_QUOTE_MINUS";
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+            bindings = <&hm RCTRL MINUS>, <&kp DOUBLE_QUOTES>;
+        };
+
+        num_4: num_4 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "NUM_4";
+            bindings = <&hm RIGHT_SHIFT N4>, <&kp RIGHT_PARENTHESIS>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        always_tilde: always_tilde {
+            compatible = "zmk,behavior-mod-morph";
+            label = "ALWAYS_TILDE";
+            bindings = <&kp LA(N)>, <&kp LA(N)>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        num_8: num_8 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "NUM_8";
+            bindings = <&kp N8>, <&kp LA(LS(NUMBER_2))>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        w_euro: w_euro {
+            compatible = "zmk,behavior-mod-morph";
+            label = "W_EURO";
+            bindings = <&kp W>, <&kp LS(LA(NUMBER_2))>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LALT|MOD_RALT)>;
+        };
+
+        a_grave_ctrl: a_grave_ctrl {
+            compatible = "zmk,behavior-mod-morph";
+            label = "A_GRAVE_CTRL";
+            bindings = <&hm LCTRL A>, <&kp A>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LALT|MOD_RALT)>;
+        };
+
+        always_grave: always_grave {
+            compatible = "zmk,behavior-mod-morph";
+            label = "ALWAYS_GRAVE";
+            bindings = <&kp GRAVE>, <&kp GRAVE>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        always_acute: always_acute {
+            compatible = "zmk,behavior-mod-morph";
+            label = "ALWAYS_ACUTE";
+            bindings = <&kp LA(E)>, <&kp LA(E)>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LALT|MOD_LSFT|MOD_RSFT)>;
+        };
+
+        always_circ: always_circ {
+            compatible = "zmk,behavior-mod-morph";
+            label = "ALWAYS_CIRC";
+            bindings = <&kp LA(I)>, <&kp LA(I)>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        cmd_num_4: cmd_num_4 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "CMD_NUM_4";
+            bindings = <&num_4>, <&kp NUMBER_4>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LGUI|MOD_RGUI)>;
+            keep-mods = <(MOD_RGUI|MOD_LGUI)>;
+        };
+
+        cmd_num_5: cmd_num_5 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "CMD_NUM_5";
+            bindings = <&num_5>, <&kp N5>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LGUI|MOD_RGUI)>;
+            keep-mods = <(MOD_RGUI|MOD_LGUI)>;
+        };
+
+        cmd_num_1: cmd_num_1 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "CMD_NUM_1";
+            bindings = <&num_1>, <&kp NUMBER_1>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LGUI|MOD_RGUI)>;
+            keep-mods = <(MOD_RGUI|MOD_LGUI)>;
+        };
+
+        cmd_num_3: cmd_num_3 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "CMD_NUM_3";
+            bindings = <&num_3>, <&kp NUMBER_3>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LGUI|MOD_RGUI)>;
+            keep-mods = <(MOD_RGUI|MOD_LGUI)>;
+        };
+
+        cmd_num_2: cmd_num_2 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "CMD_NUM_2";
+            bindings = <&num_2>, <&kp NUMBER_2>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LGUI|MOD_RGUI)>;
+            keep-mods = <(MOD_RGUI|MOD_LGUI)>;
+        };
+
+        cmd_num_6: cmd_num_6 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "CMD_NUM_6";
+            bindings = <&num_6>, <&kp NUMBER_6>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LGUI|MOD_RGUI)>;
+            keep-mods = <(MOD_RGUI|MOD_LGUI)>;
+        };
+
+        cmd_num_7: cmd_num_7 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "CMD_NUM_7";
+            bindings = <&num_7>, <&kp N7>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LGUI|MOD_RGUI)>;
+            keep-mods = <(MOD_RGUI|MOD_LGUI)>;
+        };
+
+        cmd_num_8: cmd_num_8 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "CMD_NUM_8";
+            bindings = <&num_8>, <&kp N8>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LGUI|MOD_RGUI)>;
+            keep-mods = <(MOD_RGUI|MOD_LGUI)>;
+        };
+
+        cmd_w_euro: cmd_w_euro {
+            compatible = "zmk,behavior-mod-morph";
+            label = "CMD_W_EURO";
+            bindings = <&w_euro>, <&kp W>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LGUI|MOD_RGUI|MOD_LCTL|MOD_LSFT|MOD_RCTL|MOD_RSFT)>;
+            keep-mods = <(MOD_LCTL|MOD_LSFT|MOD_LALT|MOD_LGUI|MOD_RALT|MOD_RGUI|MOD_RSFT|MOD_RCTL)>;
+        };
+
+        shift_tap: shift_tap {
+            compatible = "zmk,behavior-hold-tap";
+            label = "SHIFT_TAP";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <150>;
+            flavor = "tap-preferred";
+            quick-tap-ms = <200>;
+        };
+
+        plus_gte: plus_gte {
+            compatible = "zmk,behavior-mod-morph";
+            label = "PLUS_GTE";
+            bindings = <&kp PLUS>, <&gte>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        minus_lte: minus_lte {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MINUS_LTE";
+            bindings = <&kp MINUS>, <&lte>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        p_question: p_question {
+            compatible = "zmk,behavior-mod-morph";
+            label = "P_QUESTION";
+            bindings = <&kp P>, <&kp QUESTION>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LALT|MOD_RALT)>;
+        };
+
+        switch_layout: switch_layout {
+            compatible = "zmk,behavior-tap-dance";
+            label = "SWITCH_LAYOUT";
+            #binding-cells = <0>;
+            bindings = <&to 1>, <&to 0>;
+        };
+    };
+
+    macros {
+        aacute: aacute {
+            compatible = "zmk,behavior-macro";
+            label = "AACUTE";
+            #binding-cells = <0>;
+            bindings = <&always_acute &kp A>;
+        };
+
+        eacute: eacute {
+            compatible = "zmk,behavior-macro";
+            label = "EACUTE";
+            #binding-cells = <0>;
+            bindings = <&always_acute &kp E>;
+        };
+
+        iacute: iacute {
+            compatible = "zmk,behavior-macro";
+            label = "IACUTE";
+            #binding-cells = <0>;
+            bindings = <&always_acute &kp I>;
+        };
+
+        oacute: oacute {
+            compatible = "zmk,behavior-macro";
+            label = "OACUTE";
+            #binding-cells = <0>;
+            bindings = <&always_acute &kp O>;
+        };
+
+        uacute: uacute {
+            compatible = "zmk,behavior-macro";
+            label = "UACUTE";
+            #binding-cells = <0>;
+            bindings = <&always_acute &kp U>;
+        };
+
+        acirc: acirc {
+            compatible = "zmk,behavior-macro";
+            label = "ACIRC";
+            #binding-cells = <0>;
+            bindings = <&always_circ &kp A>;
+        };
+
+        ecirc: ecirc {
+            compatible = "zmk,behavior-macro";
+            label = "ECIRC";
+            #binding-cells = <0>;
+            bindings = <&always_circ &kp E>;
+        };
+
+        icirc: icirc {
+            compatible = "zmk,behavior-macro";
+            label = "ICIRC";
+            #binding-cells = <0>;
+            bindings = <&always_circ &kp I>;
+        };
+
+        ocirc: ocirc {
+            compatible = "zmk,behavior-macro";
+            label = "OCIRC";
+            #binding-cells = <0>;
+            bindings = <&always_circ &kp O>;
+        };
+
+        ucirc: ucirc {
+            compatible = "zmk,behavior-macro";
+            label = "UCIRC";
+            #binding-cells = <0>;
+            bindings = <&always_circ &kp U>;
+        };
+
+        atilde: atilde {
+            compatible = "zmk,behavior-macro";
+            label = "ATILDE";
+            #binding-cells = <0>;
+            bindings = <&always_tilde &kp A>;
+        };
+
+        otilde: otilde {
+            compatible = "zmk,behavior-macro";
+            label = "OTILDE";
+            #binding-cells = <0>;
+            bindings = <&always_tilde &kp O>;
+        };
+
+        ao: ao {
+            compatible = "zmk,behavior-macro";
+            label = "AO";
+            #binding-cells = <0>;
+            bindings = <&always_tilde &kp A &kp O>;
+        };
+
+        oes: oes {
+            compatible = "zmk,behavior-macro";
+            label = "OES";
+            #binding-cells = <0>;
+            bindings = <&always_tilde &kp O &kp E &kp S>;
+        };
+
+        vim_word: vim_word {
+            compatible = "zmk,behavior-macro";
+            label = "VIM_WORD";
+            #binding-cells = <0>;
+            bindings = <&kp LA(RIGHT) &kp LA(RIGHT) &kp LA(LEFT)>;
+        };
+
+        previous_line_enter: previous_line_enter {
+            compatible = "zmk,behavior-macro";
+            label = "PREVIOUS_LINE_ENTER";
+            #binding-cells = <0>;
+            bindings = <&kp LG(LEFT) &kp LS(ENTER) &kp LEFT>;
+        };
+
+        vim_I: vim_I {
+            compatible = "zmk,behavior-macro";
+            label = "VIM_I";
+            #binding-cells = <0>;
+            bindings = <&kp LG(LEFT_ARROW) &to 0>;
+        };
+
+        aes: aes {
+            compatible = "zmk,behavior-macro";
+            label = "AES";
+            #binding-cells = <0>;
+            bindings = <&always_tilde &kp A &kp E &kp S>;
+        };
+
+        esc_0: esc_0 {
+            compatible = "zmk,behavior-macro";
+            label = "ESC_0";
+            #binding-cells = <0>;
+            bindings = <&to 0 &kp ESCAPE>;
+        };
+
+        next_line_enter: next_line_enter {
+            compatible = "zmk,behavior-macro";
+            label = "NEXT_LINE_ENTER";
+            #binding-cells = <0>;
+            bindings = <&kp LG(RIGHT) &kp ENTER>;
+        };
+
+        thic_arrow: thic_arrow {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp EQUAL &kp GT>;
+            label = "THIC_ARROW";
+        };
+
+        thin_arrow: thin_arrow {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp MINUS &kp GT>;
+            label = "THIN_ARROW";
+        };
+
+        agrave: agrave {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&always_grave &kp A>;
+            label = "AGRAVE";
+        };
+
+        gte: gte {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp GT &kp EQUAL>;
+            label = "GTE";
+        };
+
+        lte: lte {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LT &kp EQUAL>;
+            label = "LTE";
+        };
+    };
+
