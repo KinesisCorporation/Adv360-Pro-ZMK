@@ -12,7 +12,7 @@ endif
 .PHONY: all left clean_firmware clean_image clean
 
 all:
-	$(shell bin/get_version.sh >> /dev/null)
+	$(shell bin/get_version_local.sh clique >> /dev/null)
 	$(DOCKER) build --tag zmk --file Dockerfile .
 	$(DOCKER) run --rm -it --name zmk \
 		-v $(PWD)/firmware:/app/firmware$(SELINUX1) \
@@ -24,7 +24,7 @@ all:
 	git checkout config/version.dtsi
 
 left:
-	$(shell bin/get_version.sh >> /dev/null)
+	$(shell bin/get_version_local.sh clique >> /dev/null)
 	$(DOCKER) build --tag zmk --file Dockerfile .
 	$(DOCKER) run --rm -it --name zmk \
 		-v $(PWD)/firmware:/app/firmware$(SELINUX1) \
