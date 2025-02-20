@@ -433,7 +433,7 @@ macro_email_gmail: macro_email_gmail{
         ignore-modifiers;
       };
 
-
+/*
 
         vim_i: vim_i {
             compatible = "zmk,behavior-mod-morph";
@@ -1041,4 +1041,4 @@ macro_email_gmail: macro_email_gmail{
             label = "LTE";
         };
     };
-
+*/
