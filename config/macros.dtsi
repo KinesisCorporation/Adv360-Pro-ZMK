@@ -963,6 +963,7 @@ macro_email_gmail: macro_email_gmail{
             #binding-cells = <0>;
             bindings = <&always_tilde &kp O &kp E &kp S>;
         };
+*/
 
         vim_word: vim_word {
             compatible = "zmk,behavior-macro";
@@ -970,7 +971,7 @@ macro_email_gmail: macro_email_gmail{
             #binding-cells = <0>;
             bindings = <&kp LA(RIGHT) &kp LA(RIGHT) &kp LA(LEFT)>;
         };
-
+/*
         previous_line_enter: previous_line_enter {
             compatible = "zmk,behavior-macro";
             label = "PREVIOUS_LINE_ENTER";
