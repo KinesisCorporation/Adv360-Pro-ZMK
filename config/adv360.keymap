@@ -96,7 +96,7 @@
        vim_layer {
             bindings = <
             &trans                   &trans         &trans         &trans          &trans        &trans    &tog 0                                                    &tog 3      &trans        &trans                &trans                  &trans               &trans            &trans
-       &kp GRAVE           &kp Q     &kp W            &kp E          &kp R     &kp T      &tog 0                                                                  &mo 2   &kp Y           &kp U         &kp I     &kp O     &kp P   &kp BSLH
+            &trans                &vim_word  &kp LA(RIGHT)  &kp LS(LG(Z))           &none    &kp K_COPY    &tog 1                                                    &tog 2      &kp LG(Z)     &vim_o                &kp K_PASTE             &trans               &trans            &trans
          &kp TAB    &td_triple_a     &kp S            &kp D          &kp F     &kp G       &mo 2  &kp LCTRL  &kp PG_UP                  &kp PG_DN  &kp RCTRL      &mo 4   &kp H           &kp J         &kp K     &kp L  &kp SEMI    &td_quote
       &skq LSHFT    &td_triple_z     &kp X     &td_triple_c   &td_triple_v     &kp B                          &kp LALT                   &kp RALT                         &kp N           &kp M     &kp COMMA   &kp DOT  &kp FSLH  &skq RSHFT
   &macro_layer_0         &kp ESC  &kp CAPS         &kp LEFT      &kp RIGHT              &td_bspc    &kp DEL   &kp LGUI                   &kp RGUI  &kp ENTER  &kp SPACE          &kp DOWN_ARROW  &kp UP_ARROW  &kp LBKT  &kp RBKT      &mo 2
