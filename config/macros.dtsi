@@ -75,6 +75,6 @@
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
     wait-ms = <2>;
-    bindings = <&kp LS(T) &kp LS(O) &kp LS(D)>;
+    bindings = <&kp LS(T) &kp o &kp LS(D)>;
     label = "SECURE_ACCESS_MACRO";
   };
