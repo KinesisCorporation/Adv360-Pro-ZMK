@@ -247,7 +247,8 @@ macro_Mission_Control: macro_ShowAW {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
     bindings = <&kp LC(UP_ARROW)>;
-    label = "Mac Show All Windows";
+
+        };    label = "Mac Show All Windows";
 };
 
 
