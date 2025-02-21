@@ -48,6 +48,7 @@ endif # USB
 config ZMK_BATTERY_VOLTAGE_DIVIDER
     default y
 
+
 config SPI
     default y
 
