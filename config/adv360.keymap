@@ -27,11 +27,11 @@
         default_layer {
             display-name = "Base";
             bindings = <
-&kp BACKSLASH  &kp N1            &kp N2             &kp N3        &kp N4    &kp N5         &tog 1                                                          &mo 3      &kp N6      &kp N7    &kp N8     &kp N9          &kp N0           &kp EQUAL
-&kp TAB        &kp Q             &kp W              &kp E         &kp R     &kp T          &none                                                           &none      &kp Y       &kp U     &kp I      &kp O           &kp P            &kp SLASH
-&kp ESC        &kp A             &kp S              &kp D         &kp F     &kp G          &none     &kp LEFT_GUI  &kp HOME          &kp PG_UP  &kp CLCK   &none      &kp PERIOD  &kp H     &kp J      &kp K           &kp L            &kp SQT
-&kp LSHFT      &kp Z             &kp X              &kp C         &kp V     &kp SEMICOLON                          &kp END           &kp PG_DN                        &kp COMMA   &kp B     &kp N      &kp M           &kp MINUS        &kp RSHFT
-&kp LCTRL      &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp UP_ARROW  &kp DOWN                 &kp BSPC  &kp DEL       &kp LEFT_ALT      &kp RCTRL  &kp ENTER  &kp SPACE              &kp LEFT  &kp RIGHT  &kp LEFT_BRACE  &kp RIGHT_BRACE  &mo 2
+&kp BACKSLASH  &kp N1            &kp N2             &kp N3          &kp N4           &kp N5         &tog 1                                                          &mo 3      &kp N6      &kp N7    &kp N8          &kp N9        &kp N0     &kp EQUAL
+&kp TAB        &kp Q             &kp W              &kp E           &kp R            &kp T          &none                                                           &none      &kp Y       &kp U     &kp I           &kp O         &kp P      &kp SLASH
+&kp ESC        &kp A             &kp S              &kp D           &kp F            &kp G          &none     &kp LEFT_GUI  &kp HOME          &kp PG_UP  &kp CLCK   &none      &kp PERIOD  &kp H     &kp J           &kp K         &kp L      &kp SQT
+&kp LSHFT      &kp Z             &kp X              &kp C           &kp V            &kp SEMICOLON                          &kp END           &kp PG_DN                        &kp COMMA   &kp B     &kp N           &kp M         &kp MINUS  &kp RSHFT
+&kp LCTRL      &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE                 &kp BSPC  &kp DEL       &kp LEFT_ALT      &kp RCTRL  &kp ENTER  &kp SPACE              &kp LEFT  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &mo 2
             >;
         };
 
