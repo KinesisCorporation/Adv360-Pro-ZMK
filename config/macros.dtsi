@@ -190,8 +190,6 @@ bindings = <&kp L>, <&kp A>, <&kp Y>, <&kp E>, <&kp R>, <&kp SPACE>, <&kp N4>;
 
 };
 
-
-
 macro_md_code_block: macro_md_code_block {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
@@ -200,7 +198,6 @@ macro_md_code_block: macro_md_code_block {
         , <&kp GRAVE>
         , <&kp GRAVE>
         , <&kp GRAVE>
-        , <&kp ENTER>
         , <&kp GRAVE>
         , <&kp GRAVE>
         , <&kp LEFT>
@@ -424,14 +421,14 @@ macro_email_gmail: macro_email_gmail{
   bindings = <&kp E>, <&kp T>, <&kp S>, <&kp N0>, <&kp N4>, <&kp U>, <&kp G>, <&kp A>, <&kp AT>, <&kp G>, <&kp M>, <&kp A>, <&kp I>, <&kp L>, <&kp PERIOD>, <&kp C>, <&kp O>, <&kp M>;
 };
 
-      skq: sticky_key_quick_release {
-        compatible = "zmk,behavior-sticky-key";
-        #binding-cells = <1>;
-        bindings = <&kp>;
-        release-after-ms = <1000>;
-        quick-release;
-        ignore-modifiers;
-      };
+  skq: sticky_key_quick_release {
+    compatible = "zmk,behavior-sticky-key";
+    #binding-cells = <1>;
+    bindings = <&kp>;
+    release-after-ms = <1000>;
+    quick-release;
+    ignore-modifiers;
+  };
 
 /*
 

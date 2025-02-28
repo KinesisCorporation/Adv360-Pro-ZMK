@@ -24,6 +24,51 @@
 };
 
 / {
+  combos {
+    compatible = "zmk,combos";
+
+    // combo_bracket_round_l {
+    //   timeout-ms = <COMBO_TERM_FAST>;
+    //   require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
+    //   key-positions = <LM2 LM1>;
+    //   layers = <BASE BASE_QWERTY SYM NUM NUM_WORD>;
+    //   bindings = <&kp LPAR>;
+    // };
+    /*
+    combo_esc {
+      timeout-ms = <30>;
+      key-positions = <30 31>; // S D
+      layers = <QWERTY COLEMAK CANARY KEYPAD>;
+      bindings = <&kp ESC>;
+    };
+
+    combo_tab {
+      timeout-ms = <30>;
+      key-positions = <31 32>; // D F
+      layers = <QWERTY COLEMAK CANARY KEYPAD>;
+      bindings = <&kp TAB>;
+    };
+
+    combo_bspc {
+      timeout-ms = <30>;
+      key-positions = <41 42>; // J K
+      layers = <QWERTY COLEMAK CANARY GAME EXT KEYPAD>;
+      bindings = <&kp BSPC>;
+    };
+
+    combo_enter {
+      timeout-ms = <30>;
+      key-positions = <42 43>; // K L
+      layers = <QWERTY COLEMAK CANARY GAME EXT KEYPAD>;
+      bindings = <&kp ENTER>;
+    };
+    */
+  };
+};
+
+
+/ {
+
   behaviors {
     #include "macros.dtsi"
     #include "version.dtsi"
