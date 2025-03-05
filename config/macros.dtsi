@@ -1,15 +1,20 @@
+/*
+  Select all text and delete it
+*/
 macro_all_delete: macro_all_delete{
 compatible = "zmk,behavior-macro";
 label = "macro_all_delete";
 #binding-cells = <0>;
 bindings = <&kp LG(A)>, <&kp DEL>;
 };
+
 macro_braces_back: macro_braces_back{
 compatible = "zmk,behavior-macro";
 label = "macro_braces_back";
 #binding-cells = <0>;
 bindings = <&kp LBRC>, <&kp RBRC>, <&kp LEFT>;
 };
+
 macro_brackets_back: macro_brackets_back{
   compatible = "zmk,behavior-macro";
   label = "macro_brackets_back";
@@ -17,6 +22,9 @@ macro_brackets_back: macro_brackets_back{
   bindings = <&kp LBKT>, <&kp RBKT>, <&kp LEFT>;
 };
 
+/*
+  Browser, Intellij tab navigation to the left (previous tab) tab
+*/
 macro_tab_previous: macro_tab_previous {
   label = "macro_tab_previous";
   compatible = "zmk,behavior-macro";
@@ -30,6 +38,9 @@ macro_tab_previous: macro_tab_previous {
      ;
 };
 
+/*
+  Browser, Intellij tab navigation to the right (next tab) tab
+*/
 macro_tab_next: macro_tab_next {
             label = "macro_tab_next";
             compatible = "zmk,behavior-macro";
@@ -40,6 +51,7 @@ macro_tab_next: macro_tab_next {
                 , <&macro_release &kp LCTRL>
                 ;
         };
+
 
 macro_emoticonmenu: macro_emoticonmenu{
   compatible = "zmk,behavior-macro";
@@ -83,30 +95,13 @@ label = "macro_md_image";
 #binding-cells = <0>;
 bindings
     = <&kp LESS_THAN>
-    , <&kp I>
-    , <&kp M>
-    , <&kp G>
+    , <&kp I>, <&kp M>, <&kp G>
     , <&kp SPACE>
-    , <&kp W>
-    , <&kp I>
-    , <&kp D>
-    , <&kp T>
-    , <&kp H>
+    , <&kp W>, <&kp I>, <&kp D>, <&kp T>, <&kp H>
     , <&kp EQUAL>
-    , <&kp DQT>
-    , <&kp N8>
-    , <&kp N0>
-    , <&kp N0>
-    , <&kp P>
-    , <&kp X>
-    , <&kp DQT>
+    , <&kp DQT>, <&kp N8>, <&kp N0>, <&kp N0>, <&kp P>, <&kp X>, <&kp DQT>
     , <&kp SPACE>
-    , <&kp S>
-    , <&kp R>
-    , <&kp C>
-    , <&kp EQUAL>
-    , <&kp DQT>
-    , <&kp DQT>
+    , <&kp S>, <&kp R>, <&kp C>, <&kp EQUAL>, <&kp DQT>, <&kp DQT>
     , <&kp SPACE>
     , <&kp BSLH>
     , <&kp GREATER_THAN>
@@ -118,7 +113,7 @@ bindings
     ;
 };
 
-macro_shruggy1: macro_shruggy1 {
+macro_shruggy: macro_shruggy {
             compatible = "zmk,behavior-macro";
             label = "macro_shruggy1";
             #binding-cells = <0>;
@@ -157,37 +152,6 @@ compatible = "zmk,behavior-macro";
 label = "macro_parentheses_back";
 #binding-cells = <0>;
 bindings = <&kp LPAR>, <&kp RPAR>, <&kp LEFT>;
-};
-macro_layer_0: macro_layer_0{
-compatible = "zmk,behavior-macro";
-label = "macro_layer_0";
-#binding-cells = <0>;
-bindings = <&kp L>, <&kp A>, <&kp Y>, <&kp E>, <&kp R>, <&kp SPACE>, <&kp N0>;
-};
-macro_layer_1: macro_layer_1{
-compatible = "zmk,behavior-macro";
-label = "macro_layer_1";
-#binding-cells = <0>;
-bindings = <&kp L>, <&kp A>, <&kp Y>, <&kp E>, <&kp R>, <&kp SPACE>, <&kp N1>;
-};
-macro_layer_2: macro_layer_2{
-compatible = "zmk,behavior-macro";
-label = "macro_layer_2";
-#binding-cells = <0>;
-bindings = <&kp L>, <&kp A>, <&kp Y>, <&kp E>, <&kp R>, <&kp SPACE>, <&kp N2>;
-};
-macro_layer_3: macro_layer_3{
-compatible = "zmk,behavior-macro";
-label = "macro_layer_3";
-#binding-cells = <0>;
-bindings = <&kp L>, <&kp A>, <&kp Y>, <&kp E>, <&kp R>, <&kp SPACE>, <&kp N3>;
-};
-macro_layer_4: macro_layer_4{
-compatible = "zmk,behavior-macro";
-label = "macro_layer_4";
-#binding-cells = <0>;
-bindings = <&kp L>, <&kp A>, <&kp Y>, <&kp E>, <&kp R>, <&kp SPACE>, <&kp N4>;
-
 };
 
 macro_md_code_block: macro_md_code_block {

@@ -34,35 +34,35 @@
     //   layers = <BASE BASE_QWERTY SYM NUM NUM_WORD>;
     //   bindings = <&kp LPAR>;
     // };
-    /*
+
     combo_esc {
       timeout-ms = <30>;
       key-positions = <30 31>; // S D
-      layers = <QWERTY COLEMAK CANARY KEYPAD>;
+      layers = <0>;
       bindings = <&kp ESC>;
     };
 
     combo_tab {
       timeout-ms = <30>;
       key-positions = <31 32>; // D F
-      layers = <QWERTY COLEMAK CANARY KEYPAD>;
+      layers = <0>;
       bindings = <&kp TAB>;
     };
 
     combo_bspc {
       timeout-ms = <30>;
       key-positions = <41 42>; // J K
-      layers = <QWERTY COLEMAK CANARY GAME EXT KEYPAD>;
+      layers = <0>;
       bindings = <&kp BSPC>;
     };
 
     combo_enter {
       timeout-ms = <30>;
       key-positions = <42 43>; // K L
-      layers = <QWERTY COLEMAK CANARY GAME EXT KEYPAD>;
+      layers = <0>;
       bindings = <&kp ENTER>;
     };
-    */
+
   };
 };
 
@@ -72,6 +72,7 @@
   behaviors {
     #include "macros.dtsi"
     #include "version.dtsi"
+    #include "macro_layers.dtsi"
 
     hm: homerow_mods {
         compatible = "zmk,behavior-hold-tap";
@@ -128,11 +129,11 @@
 
         layer_mod {
             bindings = <
-          &none       &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2         &bt BT_SEL 3         &bt BT_SEL 4            &none                                            &trans            &none                    &none       &none        &none   &none   &none
-          &none       &kp C_BRI_DN  &kp C_BRI_UP    &kp C_MUTE         &kp C_VOL_DN         &kp C_VOL_UP      &bootloader                                            &bootloader       &none                    &none       &none        &none   &none   &none
-          &none  &macro_all_delete         &macro_email_gmail    &macro_email_yahoo  &macro_tab_previous  &macro_tab_next       &none   &none     &none  &bt BT_CLR  &none             &rgb_ug RGB_MEFS_CMD 5   &none       &none        &none   &none   &none   &none
-          &none  &macro_screenshot         &none         &none           &macro_ver         &word_select                                &none     &none                                &none                    &none       &none        &none   &none   &none
- &macro_layer_3              &none         &none      &kp LEFT            &kp RIGHT                              &kp BSPC  &kp DELETE   &none     &none  &bl BL_TOG  &rgb_ug RGB_TOG                            &bl BL_INC  &bl BL_DEC   &none   &none   &none
+          &none       &bt BT_SEL 0         &bt BT_SEL 1         &bt BT_SEL 2         &bt BT_SEL 3         &bt BT_SEL 4            &none                                            &trans            &none                    &none       &none        &none   &none   &none
+          &none       &kp C_BRI_DN         &kp C_BRI_UP           &kp C_MUTE         &kp C_VOL_DN         &kp C_VOL_UP      &bootloader                                            &bootloader       &none                    &none       &none        &none   &none   &none
+          &none  &macro_all_delete   &macro_email_gmail   &macro_email_yahoo  &macro_tab_previous  &macro_tab_next       &none   &none     &none  &bt BT_CLR  &none             &rgb_ug RGB_MEFS_CMD 5   &none       &none        &none   &none   &none   &none
+          &none  &macro_screenshot                &none       &macro_shruggy           &macro_ver         &word_select                                &none     &none                                &none                    &none       &none        &none   &none   &none
+ &macro_layer_3              &none                &none             &kp LEFT            &kp RIGHT                              &kp BSPC  &kp DELETE   &none     &none  &bl BL_TOG  &rgb_ug RGB_TOG                            &bl BL_INC  &bl BL_DEC   &none   &none   &none
             >;
         };
 
