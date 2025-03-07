@@ -18,53 +18,12 @@
 #include <dt-bindings/zmk/rgb.h>
 #include <dt-bindings/zmk/backlight.h>
 #include <dt-bindings/zmk/mouse.h>
+#include "combos.dtsi"
 
 &sl {
     release-after-ms = <2000>;
 };
 
-/ {
-  combos {
-    compatible = "zmk,combos";
-
-    // combo_bracket_round_l {
-    //   timeout-ms = <COMBO_TERM_FAST>;
-    //   require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
-    //   key-positions = <LM2 LM1>;
-    //   layers = <BASE BASE_QWERTY SYM NUM NUM_WORD>;
-    //   bindings = <&kp LPAR>;
-    // };
-
-    combo_esc {
-      timeout-ms = <30>;
-      key-positions = <30 31>; // S D
-      layers = <0>;
-      bindings = <&kp ESC>;
-    };
-
-    combo_tab {
-      timeout-ms = <30>;
-      key-positions = <31 32>; // D F
-      layers = <0>;
-      bindings = <&kp TAB>;
-    };
-
-    combo_bspc {
-      timeout-ms = <30>;
-      key-positions = <41 42>; // J K
-      layers = <0>;
-      bindings = <&kp BSPC>;
-    };
-
-    combo_enter {
-      timeout-ms = <30>;
-      key-positions = <42 43>; // K L
-      layers = <0>;
-      bindings = <&kp ENTER>;
-    };
-
-  };
-};
 
 
 / {
@@ -103,7 +62,7 @@
        &kp GRAVE     &kp Q     &kp W      &kp E          &kp R     &kp T       &mo 5                                                    &mo 3   &kp Y           &kp U         &kp I     &kp O     &kp P   &kp BSLH
          &kp TAB     &kp A     &kp S      &kp D          &kp F     &kp G       &mo 6  &kp LCTRL  &kp PG_UP    &kp PG_DN  &kp RCTRL      &mo 4   &kp H           &kp J         &kp K     &kp L  &kp SEMI    &td_quote
       &skq LSHFT     &kp Z     &kp X      &kp C          &kp V     &kp B                          &kp LALT     &kp RALT                         &kp N           &kp M     &kp COMMA   &kp DOT  &kp FSLH  &skq RSHFT
-  &macro_layer_0   &kp ESC  &kp CAPS   &kp LEFT      &kp RIGHT              &td_bspc    &kp DEL   &kp LGUI     &kp RGUI  &kp ENTER  &kp SPACE          &kp DOWN_ARROW  &kp UP_ARROW  &kp LBKT  &kp RBKT      &mo 2
+           &mo 7   &kp ESC  &kp CAPS   &kp LEFT      &kp RIGHT              &td_bspc    &kp DEL   &kp LGUI     &kp RGUI  &kp ENTER  &kp SPACE          &kp DOWN_ARROW  &kp UP_ARROW  &kp LBKT  &kp RBKT      &mo 2
             >;
         };
 

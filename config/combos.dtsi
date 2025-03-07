@@ -1,0 +1,33 @@
+/{
+  combos {
+    compatible = "zmk,combos";
+    combo_esc {
+      timeout-ms = <30>;
+      key-positions = <30 31>; // S D
+      layers = <0>;
+      bindings = <&kp ESC>;
+    };
+
+    combo_tab {
+      timeout-ms = <30>;
+      key-positions = <31 32>; // D F
+      layers = <0>;
+      bindings = <&kp TAB>;
+    };
+
+    combo_bspc {
+      timeout-ms = <30>;
+      key-positions = <41 42>; // J K
+      layers = <0>;
+      bindings = <&kp BSPC>;
+    };
+
+    combo_enter {
+      timeout-ms = <30>;
+      key-positions = <42 43>; // K L
+      layers = <0>;
+      bindings = <&kp ENTER>;
+    };
+
+  };
+};
