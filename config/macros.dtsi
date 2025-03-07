@@ -82,7 +82,7 @@
   vim_save_all_macro: vim_save_all_macro {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
-    wait-ms = <2>;
+    wait-ms = <20>;
     bindings = <&kp COLON>, <&kp W>, <&kp A>, <&kp ENTER>;
     label = "VIM_SAVE_ALL_MACRO";
   };
