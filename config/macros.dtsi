@@ -83,6 +83,6 @@
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
     wait-ms = <2>;
-    bindings = <&kp :>, <&kp W>, <&kp A>, <&kp ENTER>;
+    bindings = <&kp COLON>, <&kp W>, <&kp A>, <&kp ENTER>;
     label = "VIM_SAVE_ALL_MACRO";
   };
