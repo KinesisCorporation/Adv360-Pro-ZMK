@@ -78,3 +78,11 @@
     bindings = <&kp LS(S)>, <&kp E>, <&kp C>, <&kp U>, <&kp R>, <&kp E>, <&kp LS(A)>, <&kp C>, <&kp C>, <&kp E>, <&kp S>, <&kp S>;
     label = "SECURE_ACCESS_MACRO";
   };
+
+  vim_save_all_macro : vim_save_all_macro {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    wait-ms = <2>;
+    bindings = <&kp :>, <&kp W>, <&kp A>, <&kp ENTER>;
+    label = "VIM_SAVE_ALL_MACRO";
+  };
