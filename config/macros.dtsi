@@ -79,7 +79,7 @@
     label = "SECURE_ACCESS_MACRO";
   };
 
-  vim_save_all_macro : vim_save_all_macro {
+  vim_save_all_macro: vim_save_all_macro {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
     wait-ms = <2>;
