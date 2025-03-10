@@ -1,3 +1,25 @@
+/**
+ * Key positions
+
+#define KEYS_LEFT  0  1  2  3  4  5  6 \
+                  14 15 16 17 18 19 20 \
+                  28 29 30 31 32 33 34 \
+                     46 47 48 49 50 51 \
+                        60 61 62 63 64
+
+#define KEYS_RIGHT  7  8  9 10 11 12 13 \
+                   21 22 23 24 25 26 27 \
+                   39 40 41 42 43 44 45 \
+                      54 55 56 57 58 59 \
+                         71 72 73 74 75
+
+#define THUMBS_LEFT 35 36 52 65 66 67
+
+#define THUMBS_RIGHT 37 38 53 68 69 70
+
+*/
+
+
 /{
   combos {
     compatible = "zmk,combos";
@@ -29,5 +51,32 @@
       bindings = <&kp ENTER>;
     };
 
+    combo_left_bracket {
+      timeout-ms = <30>;
+      key-positions = <23 24>; // U I
+      layers = <0>;
+      bindings = <&kp LBKT>;
+    };
   };
+
+    /* The following macro is used to generate a combo for
+     * the 3 thumb keys on the left and right hand.
+     * The macro takes 3 arguments:
+     *  - The key code to output
+     *  - The layer to output on
+     *  - The key positions for the combo
+     * and generates a combo like this:
+     *  combo_<kp_code>_<layer> {
+     *    timeout-ms = <30>;
+     *    key-positions = <key_positions>;
+     *    layers = <layer>;
+     *    bindings = <&kp <kp_code>>;
+     *  };
+     */
+  combo_right_bracket {
+      timeout-ms = <30>;
+      key-positions = <24 25>; // I O
+      layers = <0>;
+      bindings = <&kp RBKT>;
+    };
 };
