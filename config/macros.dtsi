@@ -91,21 +91,20 @@
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
     wait-ms = <2>;
-    bindings = <&macro_press &kp LEFT_COMMAND>  // Press and hold Command
-      , <&kp SPACE>                  // Press Backspace
-      , <&macro_wait_time 20>
-      , <&macro_release &kp LEFT_COMMAND>  // Release Command
-      , <&macro_wait_time 200>
+    bindings = 
+      <&macro_press &kp LEFT_COMMAND>, <&kp SPACE>  // Open Spotlight
+      , <&macro_release &kp LEFT_COMMAND>  // Release Command early
+      , <&macro_wait_time 400>  // Increase wait for Spotlight focus
       , <&kp S>
-      , <&macro_wait_time 10>
+      , <&macro_wait_time 50>
       , <&kp L>
-      , <&macro_wait_time 10>
+      , <&macro_wait_time 50>
       , <&kp A>
-      , <&macro_wait_time 10>
+      , <&macro_wait_time 50>
       , <&kp C>
-      , <&macro_wait_time 10>
+      , <&macro_wait_time 50>
       , <&kp K>
-      , <&macro_wait_time 10>
+      , <&macro_wait_time 100>  // Small buffer before pressing Enter
       , <&kp ENTER>
     ;
     label = "SPOTLIGHT_OPEN_SLACK";
