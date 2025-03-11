@@ -94,11 +94,13 @@
     bindings = <&macro_press &kp LEFT_COMMAND>  // Press and hold Command
       , <&kp SPACE>                  // Press Backspace
       , <&macro_wait_time 10>
-      , <&macro_release &kp SPACE>  // Release Command
+      , <&macro_release &kp LEFT_COMMAND>  // Release Command
       , <&macro_wait_time 10>
-      , <&macro_release &kp SPACE>  // Release Command
+      , <&macro_release &kp LEFT_COMMAND>  // Release Command
       , <&kp S>, <&kp L>, <&kp A>, <&kp C>, <&kp K>
       , <&kp ENTER>
     ;
-    label = "SPOTLIGHT_OPEN_SLACK_MACRO";
+    label = "SPOTLIGHT_OPEN_SLACK";
   };
+
+
