@@ -106,7 +106,7 @@
       , <&kp C>
       , <&macro_wait_time 50>
       , <&kp K>
-      , <&macro_wait_time 200>  // Small buffer before pressing Enter
+      , <&macro_wait_time 200>
       , <&kp ENTER>
     ;
     label = "SPOTLIGHT_OPEN_SLACK";
