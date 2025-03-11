@@ -97,7 +97,17 @@
       , <&macro_release &kp LEFT_COMMAND>  // Release Command
       , <&macro_wait_time 10>
       , <&macro_release &kp LEFT_COMMAND>  // Release Command
-      , <&kp S>, <&kp L>, <&kp A>, <&kp C>, <&kp K>
+      , <&macro_wait_time 200>
+      , <&kp S>
+      , <&macro_wait_time 10>
+      , <&kp L>
+      , <&macro_wait_time 10>
+      , <&kp A>
+      , <&macro_wait_time 10>
+      , <&kp C>
+      , <&macro_wait_time 10>
+      , <&kp K>
+      , <&macro_wait_time 200>
       , <&kp ENTER>
     ;
     label = "SPOTLIGHT_OPEN_SLACK";
