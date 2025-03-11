@@ -94,7 +94,11 @@
     bindings = 
       <&macro_press &kp LEFT_COMMAND>, <&kp SPACE>  // Open Spotlight
       , <&macro_release &kp LEFT_COMMAND>  // Release Command early
-      , <&macro_wait_time 2000>  // Increase wait for Spotlight focus
+      , <&macro_wait_time 50>
+      , <&macro_release &kp LEFT_COMMAND>  // Release Command early
+      , <&macro_wait_time 50>
+      , <&kp NONE>  // Reset state
+      , <&macro_wait_time 400>  // Increase wait for Spotlight focus
       , <&kp S>
       , <&macro_wait_time 50>
       , <&kp L>
@@ -104,7 +108,7 @@
       , <&kp C>
       , <&macro_wait_time 50>
       , <&kp K>
-      , <&macro_wait_time 100>  // Small buffer before pressing Enter
+      , <&macro_wait_time 200>  // Small buffer before pressing Enter
       , <&kp ENTER>
     ;
     label = "SPOTLIGHT_OPEN_SLACK";
