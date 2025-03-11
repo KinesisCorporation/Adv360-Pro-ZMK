@@ -96,8 +96,6 @@
       , <&macro_release &kp LEFT_COMMAND>  // Release Command early
       , <&macro_wait_time 50>
       , <&macro_release &kp LEFT_COMMAND>  // Release Command early
-      , <&macro_wait_time 50>
-      , <&kp NONE>  // Reset state
       , <&macro_wait_time 400>  // Increase wait for Spotlight focus
       , <&kp S>
       , <&macro_wait_time 50>
