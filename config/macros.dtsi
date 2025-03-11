@@ -93,9 +93,7 @@
     wait-ms = <2>;
     bindings = <&macro_press &kp LEFT_COMMAND>  // Press and hold Command
       , <&kp SPACE>                  // Press Backspace
-      , <&macro_wait_time 10>
-      , <&macro_release &kp LEFT_COMMAND>  // Release Command
-      , <&macro_wait_time 10>
+      , <&macro_wait_time 20>
       , <&macro_release &kp LEFT_COMMAND>  // Release Command
       , <&macro_wait_time 200>
       , <&kp S>
@@ -107,7 +105,7 @@
       , <&kp C>
       , <&macro_wait_time 10>
       , <&kp K>
-      , <&macro_wait_time 200>
+      , <&macro_wait_time 10>
       , <&kp ENTER>
     ;
     label = "SPOTLIGHT_OPEN_SLACK";
