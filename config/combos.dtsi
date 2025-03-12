@@ -53,9 +53,16 @@
 
     combo_left_bracket {
       timeout-ms = <30>;
-      key-positions = <23 24>; // U I
+      key-positions = <23 41>; // U J
       layers = <0>;
       bindings = <&kp LBKT>;
+    };
+
+    combo_right_bracket {
+      timeout-ms = <30>;
+      key-positions = <25 43>; // O L
+      layers = <0>;
+      bindings = <&kp RBKT>;
     };
   };
 
