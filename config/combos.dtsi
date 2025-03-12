@@ -72,4 +72,20 @@
       layers = <0>;
       bindings = <&kp RBKT>;
     };
+
+  combo_left_round_bracket {
+      timeout-ms = <30>;
+      key-positions = <43 57>; // L .
+      layers = <0>;
+      bindings = <&kp LBKT>;
+    };
+
+
+  combo_grave {
+      timeout-ms = <30>;
+      key-positions = <16 30>; // W S
+      layers = <0>;
+    bindings = <&kp GRAVE>;
+    };
+
 };
