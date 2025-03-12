@@ -66,23 +66,9 @@
     };
   };
 
-    /* The following macro is used to generate a combo for
-     * the 3 thumb keys on the left and right hand.
-     * The macro takes 3 arguments:
-     *  - The key code to output
-     *  - The layer to output on
-     *  - The key positions for the combo
-     * and generates a combo like this:
-     *  combo_<kp_code>_<layer> {
-     *    timeout-ms = <30>;
-     *    key-positions = <key_positions>;
-     *    layers = <layer>;
-     *    bindings = <&kp <kp_code>>;
-     *  };
-     */
-  combo_right_bracket {
+  combo_right_round_bracket {
       timeout-ms = <30>;
-      key-positions = <24 25>; // I O
+      key-positions = <41 55>; // J M
       layers = <0>;
       bindings = <&kp RBKT>;
     };
