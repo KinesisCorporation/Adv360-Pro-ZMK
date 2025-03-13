@@ -88,4 +88,12 @@
     bindings = <&kp GRAVE>;
     };
 
+
+  combo_sticky_layer_2 {
+      timeout-ms = <30>;
+      key-positions = <73 74>; // ESC LEFT ARROW
+      layers = <0>;
+      bindings = <&sl 2>;
+    };
+
 };

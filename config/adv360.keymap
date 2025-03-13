@@ -50,7 +50,7 @@
 
 /* layer 0 -> base, letters */
 /* layer 1 -> keypad */
-/* layer 2 -> function */
+/* layer 2 -> function - combo: ESC, LARROW */
 /* layer 3 -> mod, various functions */
 /* layer 4 -> markdown */
 /* layer 5 -> vim */
@@ -79,11 +79,11 @@
 
         layer_fn {
             bindings = <
-          &none   &kp F1  &kp F2  &kp F3  &kp F4  &kp F5    &tog 1                                                &mo 2    &kp F6  &kp F7  &kp F8   &kp 9     &kp F10   &none
-          &none   &none   &none   &none   &none   &none      &mo 5                                                &mo 3    &none   &none   &kp F7   &kp F8    &kp F9    &none
-          &none   &none   &none   &none   &none   &none      &mo 6  &none  &none                  &none  &none    &mo 4    &none   &none   &kp F4   &kp F5    &kp F6    &none
-          &none   &none   &none   &none   &none   &none                    &none                  &none                    &none   &none   &kp F1   &kp F2    &kp F3    &none
- &macro_layer_2   &none   &none   &none   &none           &kp BSPC  &none  &none                  &none  &kp RET  &kp F10          &none   &none    &none     &none     &none
+          &none    &kp F1  &kp F2  &kp F3  &kp F4  &kp F5     &tog 1                                                &mo 2    &kp F6  &kp F7  &kp F8   &kp 9     &kp F10   &none
+          &none   &kp F11  &kp 12   &none   &none    &none     &mo 5                                                &mo 3    &none   &none   &kp F7   &kp F8    &kp F9    &none
+          &none     &none   &none   &none   &none    &none     &mo 6  &none  &none                  &none  &none    &mo 4    &none   &none   &kp F4   &kp F5    &kp F6    &none
+          &none     &none   &none   &none   &none    &none                    &none                  &none                    &none   &none   &kp F1   &kp F2    &kp F3    &none
+ &macro_layer_2     &none   &none   &none   &none           &kp BSPC  &none  &none                  &none  &kp RET  &kp F10          &none   &none    &none     &none     &none
             >;
         };
 
