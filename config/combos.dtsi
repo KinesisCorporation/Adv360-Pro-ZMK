@@ -80,14 +80,19 @@
       bindings = <&kp LBKT>;
     };
 
-
   combo_grave {
       timeout-ms = <30>;
       key-positions = <16 30>; // W S
       layers = <0>;
-    bindings = <&kp GRAVE>;
+      bindings = <&kp GRAVE>;
     };
 
+  combo_grave2 {
+      timeout-ms = <30>;
+      key-positions = <16 17>; // W E
+      layers = <0>;
+      bindings = <&kp GRAVE>;
+    };
 
   combo_sticky_layer_2 {
       timeout-ms = <30>;
