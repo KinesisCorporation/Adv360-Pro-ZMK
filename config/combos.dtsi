@@ -67,35 +67,35 @@
   };
 
   combo_right_round_bracket {
-      timeout-ms = <30>;
+      timeout-ms = <60>;
       key-positions = <41 55>; // J M
       layers = <0>;
       bindings = <&kp RBKT>;
     };
 
   combo_left_round_bracket {
-      timeout-ms = <30>;
+      timeout-ms = <60>;
       key-positions = <43 57>; // L .
       layers = <0>;
       bindings = <&kp LBKT>;
     };
 
   combo_grave {
-      timeout-ms = <30>;
+      timeout-ms = <60>;
       key-positions = <16 30>; // W S
       layers = <0>;
       bindings = <&kp GRAVE>;
     };
 
   combo_grave2 {
-      timeout-ms = <30>;
+      timeout-ms = <60>;
       key-positions = <16 17>; // W E
       layers = <0>;
       bindings = <&kp GRAVE>;
     };
 
   combo_sticky_layer_2 {
-      timeout-ms = <30>;
+      timeout-ms = <60>;
       key-positions = <73 74>; // ESC LEFT ARROW
       layers = <0>;
       bindings = <&sl 2>;
