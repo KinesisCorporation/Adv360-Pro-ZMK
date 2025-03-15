@@ -87,6 +87,7 @@
     label = "VIM_SAVE_ALL_MACRO";
   };
 
+    // This does not work (only spotlight is oppeining but nothing is typing there)
   spotlight_open_slack_macro: spotlight_open_slack_macro {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
