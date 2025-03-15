@@ -71,6 +71,14 @@
     label = "TODO_MACRO";
   };
 
+  todo_escaped_macro: todo_escaped_macro {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    wait-ms = <2>;  // Wait time between actions
+    bindings = <&kp BSLH &kp FSLH &kp BSLH &kp FSLH &kp SPACE &kp LS(T) &kp LS(O) &kp LS(D) &kp LS(O) &kp SPACE &kp BSLH &kp LBKT &kp LS(R) &kp LS(H) &kp BSLH &kp RIGHT_BRACKET &kp BSLH &kp COLON>;
+    label = "TODO_ESCAPED_MACRO";
+  };
+
   secure_access_macro: secure_access_macro {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
