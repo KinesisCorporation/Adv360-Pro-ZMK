@@ -346,6 +346,15 @@ td_quote: tap_dance_quote {
     bindings = <&kp SQT>, <&kp DQT>;
 };
 
+
+td_bslh: tap_dance_bslh {
+    compatible = "zmk,behavior-tap-dance";
+    label = "TAP_DANCE_BSLH";
+    #binding-cells = <0>;
+    tapping-term-ms = <200>;
+    bindings = <&kp BSLH>, <&kp BSLH>;
+};
+
 // Enter: tap once for enter, twice for shift+enter (new line)
 td_enter: tap_dance_enter {
     compatible = "zmk,behavior-tap-dance";
