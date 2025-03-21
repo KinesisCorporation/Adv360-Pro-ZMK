@@ -352,9 +352,16 @@ td_bslh: tap_dance_bslh {
     label = "TAP_DANCE_BSLH";
     #binding-cells = <0>;
     tapping-term-ms = <200>;
-    bindings = <&kp BSLH>, <&kp BSLH>;
+    bindings = <&kp BSLH>, <&kp PIPE>;
 };
 
+td_minus: tap_dance_minus {
+    compatible = "zmk,behavior-tap-dance";
+    label = "TAP_DANCE_MINUS";
+    #binding-cells = <0>;
+    tapping-term-ms = <200>;
+    bindings = <&kp MINUS>, <&kp UNDERSCORE>;
+};
 // Enter: tap once for enter, twice for shift+enter (new line)
 td_enter: tap_dance_enter {
     compatible = "zmk,behavior-tap-dance";
