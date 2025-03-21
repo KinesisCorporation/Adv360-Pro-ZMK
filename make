@@ -46,7 +46,10 @@ check_colima_status
 call_make
 stop_colima
 
-git add . && GIT_ADD_SUCCESS=$?
+if [ $COLIMA_BUILD_SUCCESS -eq 0 ]; then
+    git add .
+    GIT_ADD_SUCCESS=$?
+fi
 
 if [ $GIT_ADD_SUCCESS -eq 0 ]; then
     git commit -m "$GIT_COMMIT_MESSAGE"
