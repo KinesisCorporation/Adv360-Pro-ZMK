@@ -38,7 +38,7 @@
     };
 
     combo_bspc {
-      timeout-ms = <30>;
+      timeout-ms = <50>;
       key-positions = <41 42>; // J K
       layers = <0>;
       bindings = <&kp BSPC>;
@@ -70,14 +70,14 @@
       timeout-ms = <60>;
       key-positions = <41 55>; // J M
       layers = <0>;
-      bindings = <&kp RBKT>;
+      bindings = <&kp LBKT>;
     };
 
   combo_left_round_bracket {
       timeout-ms = <60>;
       key-positions = <43 57>; // L .
       layers = <0>;
-      bindings = <&kp LBKT>;
+      bindings = <&kp RBKT>;
     };
 
   combo_grave {

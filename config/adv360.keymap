@@ -59,7 +59,7 @@
 
         default_layer {
             bindings = <
-       &kp EQUAL    &kp N1    &kp N2     &kp N3         &kp N4    &kp N5       &mo 4                                                    &mo 2   &kp N6          &kp N7        &kp N8    &kp N9    &kp N0  &kp MINUS
+       &kp EQUAL    &kp N1    &kp N2     &kp N3         &kp N4    &kp N5       &tog 1                                                   &mo 2   &kp N6          &kp N7        &kp N8    &kp N9    &kp N0  &td_minus
        &kp GRAVE     &kp Q     &kp W      &kp E          &kp R     &kp T       &mo 5                                                    &mo 3   &kp Y           &kp U         &kp I     &kp O     &kp P   &td_bslh 
          &kp TAB     &kp A     &kp S      &kp D          &kp F     &kp G       &mo 6  &kp LCTRL  &kp PG_UP    &kp PG_DN  &kp RCTRL      &mo 4   &kp H           &kp J         &kp K     &kp L  &kp SEMI    &td_quote
       &skq LSHFT     &kp Z     &kp X      &kp C          &kp V     &kp B                          &kp LALT     &kp RALT                         &kp N           &kp M     &kp COMMA   &kp DOT  &kp FSLH  &skq RSHFT
@@ -67,9 +67,11 @@
             >;
         };
 
+/* layer 1 -> keypad */
+
         layer_keypad {
             bindings = <
-      &kp EQUAL   &kp N1    &kp N2        &kp N3         &kp N4  &kp N5     &tog 1                                                     &mo 2  &kp N6  &kp KP_NUM  &kp KP_EQUAL  &kp KP_DIVIDE  &kp KP_MULTIPLY  &kp MINUS
+      &kp EQUAL   &kp N1    &kp N2        &kp N3         &kp N4  &kp N5      &mo 4                                                     &mo 2  &kp N6  &kp KP_NUM  &kp KP_EQUAL  &kp KP_DIVIDE  &kp KP_MULTIPLY  &kp MINUS
       &kp GRAVE    &none     &none         &none          &none   &none      &mo 5                                                     &mo 3   &none   &kp KP_N7     &kp KP_N8      &kp KP_N9     &kp KP_MINUS   &kp BSLH
         &kp TAB    &none     &none         &none          &none   &none      &mo 6  &kp LCTRL  &kp PG_UP     &kp PG_DN  &kp RCTRL      &mo 4   &none   &kp KP_N4     &kp KP_N5      &kp KP_N6      &kp KP_PLUS    &kp SQT
       &kp LSHFT    &none     &none         &none          &none   &none                         &kp LALT      &kp RALT                         &none   &kp KP_N1     &kp KP_N2      &kp KP_N3     &kp KP_ENTER  &kp RSHFT
