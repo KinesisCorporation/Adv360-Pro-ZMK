@@ -34,7 +34,7 @@
       timeout-ms = <30>;
       key-positions = <31 32>; // D F
       layers = <0>;
-      bindings = <&kp TAB>;
+      bindings = <&kp GRAVE>;
     };
 
     combo_bspc {
