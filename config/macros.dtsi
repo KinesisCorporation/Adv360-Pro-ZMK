@@ -166,7 +166,12 @@ macro_md_code_block: macro_md_code_block {
         , <&kp GRAVE>
         , <&kp LEFT>
         , <&kp LEFT>
-        , <&kp LEFT>;
+        , <&kp LEFT>
+        , <&kp ENTER>
+        , <&kp ENTER>
+        , <&kp ENTER>
+        , <&kp LEFT>
+        ;
 };
 
 macro_Cut: macro_Cut {
