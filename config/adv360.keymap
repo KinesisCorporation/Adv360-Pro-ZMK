@@ -58,20 +58,20 @@
 /* layer 6 -> mouse */
 /* layer 7 -> macros */
 
-        default_layer {
-            bindings = <
-       &kp EQUAL    &kp N1    &kp N2     &kp N3         &kp N4    &kp N5       &tog 1                                                   &mo 2   &kp N6          &kp N7        &kp N8    &kp N9    &kp N0  &td_minus
-       &kp GRAVE     &kp Q     &kp W      &kp E          &kp R     &kp T       &mo 5                                                    &mo 3   &kp Y           &kp U         &kp I     &kp O     &kp P   &td_bslh 
-         &kp TAB     &kp A     &kp S      &kp D          &kp F     &kp G       &mo 6  &kp LCTRL  &kp PG_UP    &kp PG_DN  &kp RCTRL      &mo 4   &kp H           &kp J         &kp K     &kp L  &kp SEMI    &td_quote
-      &skq LSHFT     &kp Z     &kp X      &kp C          &kp V     &kp B                          &kp LALT     &kp RALT                         &kp N           &kp M     &kp COMMA   &kp DOT  &kp FSLH  &skq RSHFT
-           &mo 7   &kp ESC  &kp CAPS   &kp LEFT      &kp RIGHT              &td_bspc    &kp DEL   &kp LGUI     &kp RGUI  &kp ENTER  &kp SPACE          &kp DOWN_ARROW  &kp UP_ARROW  &kp LBKT  &kp RBKT      &mo 7
-            >;
-        };
+default_layer {
+  bindings = <
+       &kp EQUAL    &kp N1    &kp N2     &kp N3         &kp N4    &kp N5       &tog 1                                                 &mo 2       &kp N6      &kp N7        &kp N8    &kp N9    &kp N0  &td_minus
+       &kp GRAVE     &kp Q     &kp W      &kp E          &kp R     &kp T       &mo 5                                                  &mo 3       &kp Y       &kp U         &kp I     &kp O     &kp P   &td_bslh 
+         &kp TAB     &kp A     &kp S      &kp D          &kp F     &kp G       &mo 6  &kp LCTRL  &kp PG_UP     &kp PG_DN  &kp RCTRL   &mo 4       &kp H       &kp J         &kp K     &kp L  &kp SEMI    &td_quote
+      &skq LSHFT     &kp Z     &kp X      &kp C          &kp V     &kp B                          &kp LALT     &kp RALT                           &kp N       &kp M     &kp COMMA   &kp DOT  &kp FSLH  &skq RSHFT
+           &mo 7   &kp ESC  &kp CAPS   &kp LEFT      &kp RIGHT              &td_bspc    &kp DEL   &kp LGUI     &kp RGUI   &kp ENTER   &kp SPACE               &kp DOWN_ARROW  &kp UP_ARROW  &kp LBKT  &kp RBKT      &mo 7
+  >;
+};
 
 /* layer 1 -> keypad */
 
-        layer_keypad {
-            bindings = <
+layer_keypad {
+  bindings = <
       &kp EQUAL   &kp N1    &kp N2        &kp N3         &kp N4  &kp N5      &mo 4                                                     &mo 2  &kp N6  &kp KP_NUM  &kp KP_EQUAL  &kp KP_DIVIDE  &kp KP_MULTIPLY  &kp MINUS
       &kp GRAVE    &none     &none         &none          &none   &none      &mo 5                                                     &mo 3   &none   &kp KP_N7     &kp KP_N8      &kp KP_N9     &kp KP_MINUS   &kp BSLH
         &kp TAB    &none     &none         &none          &none   &none      &mo 6  &kp LCTRL  &kp PG_UP     &kp PG_DN  &kp RCTRL      &mo 4   &none   &kp KP_N4     &kp KP_N5      &kp KP_N6      &kp KP_PLUS    &kp SQT
@@ -130,11 +130,11 @@
 
        layer_mouse {
             bindings = <
-            &none  &none &none &none &none  &none   &tog 0                                    &mo 2    &none             &none                   &none             &none             &none      &none
-            &none  &none &none &none &none  &none   &tog 1                                    &mo 3    &none             &none                   &none             &none             &none      &none
-            &none  &none &none &none &none  &none    &mo 2   &trans  &trans   &trans  &trans  &mo 4    &none             &mkp LCLK               &kp LA(DOWN_ARROW)   &kp LA(UP_ARROW)     &mkp RCLK  &none
-            &none  &none &none &none &none  &none                    &trans   &trans                   &none             &none                   &none             &none             &none      &none
-            &none  &none &none &none &none  &none  &trans    &trans  &trans   &trans  &trans  &trans   &kp LA(UP_ARROW)  &kp LA(DOWN_ARROW)      &none             &none             &none      &none
+            &none  &none &none &none &none  &none   &trans                                    &trans    &none             &none                   &none             &none             &none      &none
+            &none  &none &none &none &none  &none   &trans                                    &trans    &none             &none                   &none             &none             &none      &none
+            &none  &none &none &none &none  &none   &trans   &trans  &trans   &trans  &trans  &trans    &none             &mkp LCLK               &kp LA(DOWN_ARROW)   &kp LA(UP_ARROW)     &mkp RCLK  &none
+            &none  &none &none &none &none  &none                    &trans   &trans                    &none             &none                   &none             &none             &none      &none
+            &none  &none &none &none &none  &none   &trans   &trans  &trans   &trans  &trans  &trans    &kp LA(UP_ARROW)  &kp LA(DOWN_ARROW)      &none             &none             &none      &none
             >;
         };
 
@@ -142,11 +142,11 @@
 
        layer_macros {
             bindings = <
-            &none  &none           &none          &none          &none           &none              &tog 0          &mo 2    &none   &none   &none   &none   &none      &none
-            &none  &macro_espn     &macro_youtube &macro_ww      &none           &none              &tog 1          &mo 3    &none   &none   &none   &none   &none      &none
-            &none  &macro_copilot  &macro_gemini  &macro_claude  &macro_chatgpt  &macro_perplexity  &mo 2   &trans  &mo 4    &none   &none   &none   &none   &none      &none
-            &none  &none           &none          &none          &none           &none                      &trans  &trans           &none   &none   &none   &none      &none
-            &none  &none           &none          &none          &none           &none              &trans  &trans  &trans   &trans  &trans  &trans  &none   &none      &none
+            &none  &none           &none          &none          &none           &none              &trans             &mo 2    &none   &none   &none   &none   &none      &none
+            &none  &macro_espn     &macro_youtube &macro_ww      &none           &none              &trans             &mo 3    &none   &none   &none   &none   &none      &none
+            &none  &macro_copilot  &macro_gemini  &macro_claude  &macro_chatgpt  &macro_perplexity  &trans   &trans    &mo 4    &none   &none   &none   &none   &none      &none
+            &none  &none           &none          &none          &none           &none                       &trans    &trans           &none   &none   &none   &none      &none
+            &none  &none           &none          &none          &none           &none              &trans   &trans    &trans   &trans  &trans  &trans  &none   &none      &none
             >;
         };
 
