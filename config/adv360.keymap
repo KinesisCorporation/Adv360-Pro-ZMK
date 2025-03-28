@@ -80,6 +80,7 @@
             >;
         };
 
+/* layer 2 -> function - combo: ESC, LARROW */
         layer_fn {
             bindings = <
           &none    &kp F1  &kp F2  &kp F3  &kp F4  &kp F5     &tog 1                                                &mo 2    &kp F6  &kp F7  &kp F8   &kp 9     &kp F10   &none
@@ -90,6 +91,7 @@
             >;
         };
 
+/* layer 3 -> mod, various functions */
         layer_mod {
             bindings = <
           &none       &bt BT_SEL 0         &bt BT_SEL 1         &bt BT_SEL 2         &bt BT_SEL 3         &bt BT_SEL 4            &none                                                 &trans                   &none    &none       &none        &none   &none   &none
@@ -100,6 +102,7 @@
             >;
         };
 
+/* layer 4 -> markdown */
         layer_markdown {
             bindings = <
           &none                     &none                     &none                    &none                 &none               &none   &tog 1                                               &mo 2   &none  &none  &none  &none  &none  &none
