@@ -60,59 +60,6 @@ macro_emoticonmenu: macro_emoticonmenu{
   bindings = <&macro_press &kp LGUI &kp LSHIFT>, <&macro_tap &kp N4>, <&macro_release &kp LGUI &kp LSHIFT>;
 };
 
-macro_md_url: macro_md_url{
-  compatible = "zmk,behavior-macro";
-  label = "macro_md_url";
-  #binding-cells = <0>;
-  bindings = <&kp LBKT>, <&kp RBKT>, <&kp LPAR>, <&kp RPAR>, <&kp LEFT>, <&kp LEFT>, <&kp LEFT>;
-};
-
-macro_md_choices: macro_md_choices{
-  compatible = "zmk,behavior-macro";
-  label = "macro_md_choices";
-  #binding-cells = <0>;
-  bindings = <&kp POUND>, <&kp POUND>, <&kp SPACE>, <&kp LS(C)>, <&kp H>, <&kp O>, <&kp I>, <&kp C>, <&kp E>, <&kp S>;
-};
-
-macro_md_answer: macro_md_answer{
-  compatible = "zmk,behavior-macro";
-  label = "macro_md_answer";
-  #binding-cells = <0>;
-  bindings = <&kp POUND>, <&kp POUND>, <&kp SPACE>, <&kp LS(A)>, <&kp N>, <&kp S>, <&kp W>, <&kp E>, <&kp R>;
-};
-
-macro_md_explanation: macro_md_explanation{
-  compatible = "zmk,behavior-macro";
-  label = "macro_md_explanation";
-  #binding-cells = <0>;
-  bindings = <&kp POUND>, <&kp POUND>, <&kp SPACE>, <&kp LS(E)>, <&kp X>, <&kp P>, <&kp L>, <&kp A>, <&kp N>, <&kp A>, <&kp T>, <&kp I>, <&kp O>, <&kp N>;
-};
-
-/* <img src="databricks_architecture.png" width="800" /> */
-macro_md_image: macro_md_image{
-compatible = "zmk,behavior-macro";
-label = "macro_md_image";
-#binding-cells = <0>;
-bindings
-    = <&kp LESS_THAN>
-    , <&kp I>, <&kp M>, <&kp G>
-    , <&kp SPACE>
-    , <&kp W>, <&kp I>, <&kp D>, <&kp T>, <&kp H>
-    , <&kp EQUAL>
-    , <&kp DQT>, <&kp N8>, <&kp N0>, <&kp N0>, <&kp P>, <&kp X>, <&kp DQT>
-    , <&kp SPACE>
-    , <&kp S>, <&kp R>, <&kp C>, <&kp EQUAL>, <&kp DQT>, <&kp DQT>
-    , <&kp SPACE>
-    , <&kp BSLH>
-    , <&kp GREATER_THAN>
-    , <&kp LEFT>
-    , <&kp LEFT>
-    , <&kp LEFT>
-    , <&kp LEFT>
-    , <&kp LG(C)>
-    ;
-};
-
 macro_shruggy: macro_shruggy {
             compatible = "zmk,behavior-macro";
             label = "macro_shruggy1";

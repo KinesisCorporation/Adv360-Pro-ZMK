@@ -33,6 +33,7 @@
     #include "version.dtsi"
     #include "macro_layers.dtsi"
     #include "macro_urls.dtsi"
+    #include "macro_markdown.dtsi"
 
     hm: homerow_mods {
         compatible = "zmk,behavior-hold-tap";
