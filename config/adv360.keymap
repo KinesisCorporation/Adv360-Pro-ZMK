@@ -1,11 +1,8 @@
-
 /*
  * Copyright (c) 2020 The ZMK Contributors
  *
  * SPDX-License-Identifier: MIT
  */
-
-
 /* THIS FILE WAS GENERATED!
  *
  * This file was generated automatically. You may or may not want to
@@ -14,79 +11,34 @@
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/bt.h>
-#include <dt-bindings/zmk/rgb.h>
-#include <dt-bindings/zmk/backlight.h>
 
 / {
-  behaviors {
-    #include "macros.dtsi"
+    behaviors {
+        #include "macros.dtsi"
     #include "version.dtsi"
 
-    hm: homerow_mods {
-        compatible = "zmk,behavior-hold-tap";
-        label = "HOMEROW_MODS";
-        #binding-cells = <2>;
-        tapping-term-ms = <180>;
-        quick_tap_ms = <175>;
-        flavor = "tap-preferred";
-        bindings = <&kp>, <&kp>;
+        hm: homerow_mods {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODS";
+            #binding-cells = <2>;
+            tapping-term-ms = <180>;
+            quick_tap_ms = <175>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+        };
     };
-  };
 
     keymap {
         compatible = "zmk,keymap";
 
-
         default_layer {
             bindings = <
- &kp C_PLAY   &kp CARET    &kp PLUS     &kp LBRC     &kp LPAR  &kp MINUS               &tog 1                                                                &tog 4  &kp EQUAL     &kp RPAR     &kp RBRC   &kp ASTRK     &kp DOLLAR  &kp C_MUTE
-  &kp TILDE       &kp Q       &kp W        &kp E        &kp R      &kp T             &kp AMPS                                                              &kp PIPE      &kp Y        &kp U        &kp I       &kp O          &kp P    &kp BSLH
-    &kp ESC  &hm LGUI A  &hm LALT S  &hm LSHFT D  &hm LCTRL F      &kp G             &kp EXCL  &caps_word  &kp CAPS                  &kp INSERT   &kp DEL    &kp AT      &kp H  &hm RCTRL J  &hm RSHFT K  &hm LALT L  &hm RGUI SEMI    &kp APOS
-   &kp LBKT       &kp Z       &kp X        &kp C        &kp V      &kp B                                   &kp HOME                   &kp PG_UP                          &kp N        &kp M    &kp COMMA     &kp DOT       &kp FSLH    &kp RBKT
-      &mo 2   &kp GRAVE    &kp HASH  &kp LEFT    &kp RIGHT                       &kp SPACE  &lt 1 TAB   &kp END                   &kp PG_DN  &kp RET   &kp BSPC                &kp DOWN     &kp UP      &kp UNDER      &kp PERCENT       &mo 2
+&kp PLUS    &kp N1      &kp N2      &kp N3        &kp N4               &kp N5                   &kp                                        &kp            &kp N6                    &kp N7               &kp N8        &kp N9      &kp N0      &kp EQUAL
+&kp         &kp Q       &kp W       &kp F         &kp P                &kp B                    &kp                                        &kp            &kp J                     &kp L                &kp U         &kp Y       &kp SEMI    &kp
+&kp ESCAPE  &hm LGUI A  &hm LALT R  &hm LSHIFT S  &hm LCTRL T          &hm LA(LC(LG(LSHFT))) G  &kp        &kp      &kp      &kp  &kp      &kp            &hm LA(LC(LG(LSHIFT))) M  &hm RCTRL N          &hm RSHFT E   &hm LALT I  &hm RGUI O  &kp SINGLE_QUOTE
+&kp UNDER   &kp Z       &kp X       &kp C         &hm LC(LA(LSHFT)) D  &kp V                                        &kp      &kp                          &kp L                     &hm LA(LC(LSHFT)) H  &kp COMMA     &kp DOT     &kp FSLH    &kp MINUS
+&kp         &kp         &kp LBRC    &kp LEFT      &kp RIGHT                                     &kp SPACE  &kp TAB  &kp      &kp  &kp RET  &kp BACKSPACE                            &kp DOWN_ARROW       &kp UP_ARROW  &kp RBRC    &kp         &kp
             >;
         };
-
-        layer_num {
-            bindings = <
- &trans  &trans  &trans  &trans  &trans  &trans            &trans                                                        &trans  &trans        &trans        &trans        &trans  &trans  &trans
- &trans  &trans  &trans  &trans  &trans  &trans            &trans                                                        &trans  &trans  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &trans  &trans
- &trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans                  &trans        &trans  &trans  &trans  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &trans  &trans
- &trans  &trans  &trans  &trans  &trans  &trans                            &trans                  &trans                        &trans        &kp N1        &kp N2        &kp N3  &trans  &trans
- &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans                  &trans  &trans  &kp NUMBER_0                &trans        &trans        &trans  &trans  &trans
-            >;
-        };
-
-        layer_fn {
-            bindings = <
-  &kp F1   &kp F2   &kp F3   &kp F4   &kp F5   &kp F6            &trans                                                  &trans   &kp F7        &kp F8        &kp F9  &kp F10  &kp F11  &kp F12
- &kp F13  &kp F14  &kp F15  &kp F16  &kp F17  &kp F18            &trans                                                  &trans  &kp F19       &kp F20       &kp F21  &kp F22  &kp F23  &kp F24
-  &trans   &trans   &trans   &trans   &trans   &trans            &trans  &trans  &trans                  &trans  &trans  &trans   &trans    &kp C_PREV    &kp C_NEXT   &trans   &trans   &trans
-  &trans   &trans   &trans   &trans   &trans   &trans                            &trans                  &trans                   &trans  &kp C_VOL_DN  &kp C_VOL_UP   &trans   &trans   &trans
-  &trans   &trans   &trans   &trans   &trans                     &trans  &trans  &trans                  &trans  &trans  &trans           &kp C_BRI_DN  &kp C_BRI_UP   &trans   &trans   &trans
-            >;
-        };
-
-        layer_mod {
-            bindings = <
-  &none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                  &none                                                                          &trans   &none       &none       &none   &none   &none   &none
-  &none         &none         &none         &none         &none         &none            &bootloader                                                                     &bootloader   &none       &none       &none   &none   &none   &none
-  &none         &none         &none         &none         &none         &none                  &none   &none   &none                  &bt BT_CLR       &none  &rgb_ug RGB_MEFS_CMD 5   &none       &none       &none   &none   &none   &none
-  &none         &none         &none         &none    &macro_ver         &none                                  &none                       &none                                       &none       &none       &none   &none   &none   &none
- &trans         &none         &none         &none         &none                                &none   &none   &none                       &none  &bl BL_TOG         &rgb_ug RGB_TOG          &bl BL_INC  &bl BL_DEC   &none   &none  &trans
-            >;
-        };
-
-        layer_gaming {
-            bindings = <
-  &kp LBKT  &kp N1  &kp N2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5            &kp EQUAL                                                      &trans  &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0   &kp RBKT
-    &trans  &trans  &trans        &trans        &trans        &trans               &trans                                                      &trans        &trans        &trans        &trans        &trans        &trans     &trans
-    &trans   &kp A   &kp S         &kp D         &kp F        &trans               &trans  &kp LALT  &kp LGUI                  &trans  &trans  &trans        &trans         &kp J         &kp K         &kp L      &kp SEMI     &trans
- &kp LSHFT  &trans  &trans        &trans        &trans        &trans                                   &trans                  &trans                        &trans        &trans        &trans        &trans        &trans  &kp RSHFT
- &kp LCTRL  &trans  &trans        &trans        &trans                            &trans   &kp TAB   &trans                  &trans  &trans  &trans                      &trans        &trans        &trans        &trans     &trans
-            >;
-        };
-
     };
 };
