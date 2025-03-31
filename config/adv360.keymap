@@ -16,14 +16,14 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LG(SPACE) &kp C &kp H &kp R &kp O &kp M &kp E &kp ENTER>;
-            label = "CHROME_SWITCH";
+            label = "chrome_switch";
         };
 
         intelli_j_switch: intelli_j_switch {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LG(SPACE) &kp I &kp N &kp T &kp ENTER>;
-            label = "INTELLI_J_SWITCH";
+            label = "intelli_j_switch";
         };
 
         #endif
