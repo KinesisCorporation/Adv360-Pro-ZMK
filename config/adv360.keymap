@@ -33,11 +33,61 @@
 
         default_layer {
             bindings = <
-&kp PLUS    &kp N1      &kp N2      &kp N3        &kp N4               &kp N5                   &kp                                        &kp            &kp N6                    &kp N7               &kp N8        &kp N9      &kp N0      &kp EQUAL
-&kp         &kp Q       &kp W       &kp F         &kp P                &kp B                    &kp                                        &kp            &kp J                     &kp L                &kp U         &kp Y       &kp SEMI    &kp
-&kp ESCAPE  &hm LGUI A  &hm LALT R  &hm LSHIFT S  &hm LCTRL T          &hm LA(LC(LG(LSHFT))) G  &kp        &kp      &kp      &kp  &kp      &kp            &hm LA(LC(LG(LSHIFT))) M  &hm RCTRL N          &hm RSHFT E   &hm LALT I  &hm RGUI O  &kp SINGLE_QUOTE
-&kp UNDER   &kp Z       &kp X       &kp C         &hm LC(LA(LSHFT)) D  &kp V                                        &kp      &kp                          &kp L                     &hm LA(LC(LSHFT)) H  &kp COMMA     &kp DOT     &kp FSLH    &kp MINUS
-&kp         &kp         &kp LBRC    &kp LEFT      &kp RIGHT                                     &kp SPACE  &kp TAB  &kp      &kp  &kp RET  &kp BACKSPACE                            &kp DOWN_ARROW       &kp UP_ARROW  &kp RBRC    &kp         &kp
+&kp PLUS    &kp N1      &kp N2      &kp N3        &kp N4               &kp N5                   &kp DELETE                                                                 &tog 5           &kp N6                    &kp N7               &kp N8        &kp N9      &kp N0      &kp EQUAL
+&kp PIPE    &kp Q       &kp W       &kp F         &kp P                &kp B                    &kp HOME                                                                   &kp C_NEXT       &kp J                     &kp L                &kp U         &kp Y       &kp SEMI    &kp BACKSLASH
+&kp ESCAPE  &hm LGUI A  &hm LALT R  &hm LSHIFT S  &hm LCTRL T          &hm LA(LC(LG(LSHFT))) G  &kp END      &kp TILDE  &kp GRAVE          &kp C_VOL_UP  &kp C_PLAY_PAUSE  &kp C_PREVIOUS   &hm LA(LC(LG(LSHIFT))) M  &hm RCTRL N          &hm RSHFT E   &hm LALT I  &hm RGUI O  &kp SINGLE_QUOTE
+&kp UNDER   &kp Z       &kp X       &kp C         &hm LC(LA(LSHFT)) D  &kp V                                            &kp PAGE_UP        &kp C_MUTE                                       &kp K                     &hm LA(LC(LSHFT)) H  &kp COMMA     &kp DOT     &kp FSLH    &kp MINUS
+&kp LBKT    &kp LBRC    &kp LPAR    &kp LEFT      &kp RIGHT                                     &lt 1 SPACE  &lt 3 TAB  &kp PAGE_DOWN      &kp C_VOL_DN  &lt 4 RET         &lt 2 BACKSPACE                            &kp DOWN_ARROW       &kp UP_ARROW  &kp RPAR    &kp RBRC    &kp RBKT
+            >;
+        };
+
+        layer_1 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        layer_2 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        layer_3 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        layer_4 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        layer_5 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
