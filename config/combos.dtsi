@@ -69,28 +69,28 @@
 
   combo_left_brace {
     timeout-ms = <60>;
-    key-positions = <22 40>; // Y H
+    key-positions = <22 23>; // Y U
     layers = <0>;
     bindings = <&kp LBRC>;
   };
 
   combo_right_brace {
     timeout-ms = <60>;
-    key-positions = <26 44>; // P ;
+    key-positions = <43 44>; // O P
     layers = <0>;
     bindings = <&kp RBRC>;
   };
 
   combo_left_round_bracket {
       timeout-ms = <60>;
-      key-positions = <41 55>; // J M
+      key-positions = <40 41>; // H J
       layers = <0>;
       bindings = <&kp LPAR>;
     };
 
   combo_right_round_bracket {
       timeout-ms = <60>;
-      key-positions = <43 57>; // L .
+      key-positions = <43 44>; // L ;
       layers = <0>;
       bindings = <&kp RPAR>;
     };
