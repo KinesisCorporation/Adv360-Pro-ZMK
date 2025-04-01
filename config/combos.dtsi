@@ -66,18 +66,32 @@
     };
   };
 
-  combo_right_round_bracket {
-      timeout-ms = <60>;
-      key-positions = <41 55>; // J M
-      layers = <0>;
-      bindings = <&kp LBKT>;
-    };
+  combo_left_brace {
+    timeout-ms = <60>;
+    key-positions = <22 40>; // Y H
+    layers = <0>;
+    bindings = <&kp LBRC>;
+  };
+
+  combo_right_brace {
+    timeout-ms = <60>;
+    key-positions = <26 44>; // P ;
+    layers = <0>;
+    bindings = <&kp RBRC>;
+  };
 
   combo_left_round_bracket {
       timeout-ms = <60>;
+      key-positions = <41 55>; // J M
+      layers = <0>;
+      bindings = <&kp LPAR>;
+    };
+
+  combo_right_round_bracket {
+      timeout-ms = <60>;
       key-positions = <43 57>; // L .
       layers = <0>;
-      bindings = <&kp RBKT>;
+      bindings = <&kp RPAR>;
     };
 
   combo_grave {

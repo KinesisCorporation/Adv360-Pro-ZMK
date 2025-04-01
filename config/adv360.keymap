@@ -68,55 +68,58 @@ default_layer {
   >;
 };
 
-/* layer 1 -> keypad */
 
+/* layer 1 -> keypad */
 layer_keypad {
   bindings = <
-      &kp EQUAL   &kp N1    &kp N2        &kp N3         &kp N4  &kp N5      &mo 4                                                     &mo 2  &kp N6  &kp KP_NUM  &kp KP_EQUAL  &kp KP_DIVIDE  &kp KP_MULTIPLY  &kp MINUS
+      &kp EQUAL   &kp N1    &kp N2        &kp N3         &kp N4  &kp N5      &tog 1                                                     &mo 2  &kp N6  &kp KP_NUM  &kp KP_EQUAL  &kp KP_DIVIDE  &kp KP_MULTIPLY  &kp MINUS
       &kp GRAVE    &none     &none         &none          &none   &none      &mo 5                                                     &mo 3   &none   &kp KP_N7     &kp KP_N8      &kp KP_N9     &kp KP_MINUS   &kp BSLH
         &kp TAB    &none     &none         &none          &none   &none      &mo 6  &kp LCTRL  &kp PG_UP     &kp PG_DN  &kp RCTRL      &mo 4   &none   &kp KP_N4     &kp KP_N5      &kp KP_N6      &kp KP_PLUS    &kp SQT
       &kp LSHFT    &none     &none         &none          &none   &none                         &kp LALT      &kp RALT                         &none   &kp KP_N1     &kp KP_N2      &kp KP_N3     &kp KP_ENTER  &kp RSHFT
  &macro_layer_1  &kp ESC  &kp CAPS  &kp LC(LEFT)  &kp RC(RIGHT)           &kp BSPC    &kp DEL   &kp LGUI      &kp RGUI  &kp ENTER  &kp KP_N0            &kp DOWN  &kp UP_ARROW     &kp KP_DOT         &kp RBKT      &mo 2
-            >;
-        };
+  >;
+};
+
 
 /* layer 2 -> function - combo: ESC, LARROW */
-        layer_fn {
-            bindings = <
+layer_fn {
+  bindings = <
           &none    &kp F1  &kp F2  &kp F3  &kp F4  &kp F5     &tog 1                                                &mo 2    &kp F6  &kp F7  &kp F8   &kp 9     &kp F10   &none
           &none   &kp F11  &kp 12   &none   &none    &none     &mo 5                                                &mo 3    &none   &none   &kp F7   &kp F8    &kp F9    &none
           &none     &none   &none   &none   &none    &none     &mo 6  &none  &none                  &none  &none    &mo 4    &none   &none   &kp F4   &kp F5    &kp F6    &none
           &none     &none   &none   &none   &none    &none                    &none                  &none                    &none   &none   &kp F1   &kp F2    &kp F3    &none
  &macro_layer_2     &none   &none   &none   &none           &kp BSPC  &none  &none                  &none  &kp RET  &kp F10          &none   &none    &none     &none     &none
-            >;
-        };
+  >;
+};
+
 
 /* layer 3 -> mod, various functions */
-        layer_mod {
-            bindings = <
+layer_mod {
+  bindings = <
           &none       &bt BT_SEL 0         &bt BT_SEL 1         &bt BT_SEL 2         &bt BT_SEL 3         &bt BT_SEL 4            &none                                                 &trans                   &none    &none       &none        &none   &none   &none
           &none       &kp C_BRI_DN         &kp C_BRI_UP           &kp C_MUTE         &kp C_VOL_DN         &kp C_VOL_UP      &bootloader                                                 &bootloader              &none    &none       &none        &none   &none   &none
           &none  &macro_all_delete   &macro_email_gmail   &macro_email_yahoo  &macro_tab_previous      &macro_tab_next            &none       &none   &none     &bt BT_CLR   &none      &rgb_ug RGB_MEFS_CMD 5   &none    &none       &none        &none   &none   &none
           &none  &macro_screenshot                &none       &macro_shruggy           &macro_ver         &word_select                                &none     &none                                            &none    &none       &none        &none   &none   &none
  &macro_layer_3              &none                &none             &kp LEFT            &kp RIGHT                              &kp BSPC  &kp DELETE   &none     &none        &bl BL_TOG  &rgb_ug RGB_TOG                  &bl BL_INC  &bl BL_DEC   &none   &none   &none
-            >;
-        };
+  >;
+};
+
 
 /* layer 4 -> markdown */
-        layer_markdown {
-            bindings = <
+layer_markdown {
+  bindings = <
           &none                     &none                     &none                    &none                 &none               &none   &tog 1                                               &mo 2   &none  &none  &none  &none  &none  &none
           &none         &macro_md_choices          &macro_md_answer    &macro_md_explanation                 &none               &none   &tog 2                                               &mo 3   &none  &none  &none  &none  &none  &none
           &none  &macro_singlequotes_back  &macro_doublequotes_back  &macro_parentheses_back  &macro_brackets_back  &macro_braces_back    &mo 5  &none  &none                  &none  &none   &mo 4   &none  &none  &none  &none  &none  &none
           &none             &macro_md_url           &macro_md_image     &macro_md_code_block                 &none               &none                  &none                  &none                  &none  &none  &none  &none  &none  &none
  &macro_layer_4                     &none                     &none                    &none                 &none                        &none  &none  &none                  &none  &none   &none          &none  &none  &none  &none  &none
-            >;
-        };
+  >;
+};
+
 
 /* layer 5 -> vim */
-
-       layer_vim {
-            bindings = <
+layer_vim {
+  bindings = <
             &none                   &none           &none          &none           &none         &none    &tog 0                                                &tog 2      &none         &none                 &none                   &none                &none             &none
             &none                &vim_word  &kp LA(RIGHT)  &kp LS(LG(Z))    &word_select    &kp K_COPY    &tog 1                                                &tog 3      &kp LG(Z)     &vim_o                &kp K_PASTE             &none                &none             &none
             &none  &hm LEFT_CONTROL ESCAPE       &kp LALT   &kp LEFT_GUI  &kp LEFT_SHIFT         &none    &tog 2   &none      &none       &none     &none       &tog 4      &kp LEFT      &hm RIGHT_SHIFT DOWN  &hm RIGHT_GUI UP_ARROW  &hm RIGHT_ALT RIGHT  &hm RCTRL ESCAPE  &none
