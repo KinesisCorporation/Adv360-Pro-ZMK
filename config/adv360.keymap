@@ -57,6 +57,7 @@
 /* layer 5 -> vim */
 /* layer 6 -> mouse */
 /* layer 7 -> macros */
+/* layer 8 -> symbols */
 
 default_layer {
   bindings = <
@@ -153,6 +154,21 @@ layer_vim {
             >;
         };
 
+/* layer 8 -> symbols */
+
+       layer_symbols {
+            bindings = <
+            &none  &none           &none          &none          &none           &none              &trans                      &trans    &none   &none   &none   &none   &none      &none
+            &none  &none           &none          &none          &none           &none              &trans                      &trans    &none   &none   &none   &none   &none      &none
+            &none  &none           &none          &none          &none           &none              &trans   &trans    &trans   &trans    &none   &none   &none   &none   &none
+            &none  &none           &none          &none          &none           &none                       &trans    &trans             &none   &none   &none   &none   &none
+            &none  &none           &none          &none          &none                              &trans   &trans    &trans   &trans            &none   &none   &none   &none
+            >;
+        };
+
     };
+
+
+
 };
 
