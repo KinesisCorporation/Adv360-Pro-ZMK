@@ -68,7 +68,7 @@
 
 
   combo_left_brace {
-    timeout-ms = <60>;
+    timeout-ms = <200>;
     key-positions = <22 23>; // Y U
     layers = <0>;
     bindings = <&kp LBRC>;
