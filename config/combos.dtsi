@@ -66,6 +66,7 @@
     };
   };
 
+
   combo_left_brace {
     timeout-ms = <60>;
     key-positions = <22 40>; // Y H
