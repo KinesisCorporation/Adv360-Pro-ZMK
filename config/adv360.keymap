@@ -28,65 +28,83 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        lpar {
+            bindings = <&kp LPAR>;
+            key-positions = <18 17>;
+            layers = <0>;
+        };
+
+        lbrc {
+            bindings = <&kp LBRC>;
+            key-positions = <17 16>;
+            layers = <0>;
+        };
+
+        rpar {
+            bindings = <&kp RPAR>;
+            key-positions = <23 24>;
+            layers = <0>;
+        };
+
+        rbrc {
+            bindings = <&kp RBRC>;
+            key-positions = <24 25>;
+            layers = <0>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
         default_layer {
             bindings = <
-&kp PLUS    &kp N1      &kp N2      &kp N3        &kp N4               &kp N5                   &kp DELETE                                                                 &tog 5           &kp N6                    &kp N7               &kp N8        &kp N9      &kp N0      &kp EQUAL
-&kp PIPE    &kp Q       &kp W       &kp F         &kp P                &kp B                    &kp HOME                                                                   &kp C_NEXT       &kp J                     &kp L                &kp U         &kp Y       &kp SEMI    &kp BACKSLASH
-&kp ESCAPE  &hm LGUI A  &hm LALT R  &hm LSHIFT S  &hm LCTRL T          &hm LA(LC(LG(LSHFT))) G  &kp END      &kp TILDE  &kp GRAVE          &kp C_VOL_UP  &kp C_PLAY_PAUSE  &kp C_PREVIOUS   &hm LA(LC(LG(LSHIFT))) M  &hm RCTRL N          &hm RSHFT E   &hm LALT I  &hm RGUI O  &kp SINGLE_QUOTE
-&kp UNDER   &kp Z       &kp X       &kp C         &hm LC(LA(LSHFT)) D  &kp V                                            &kp PAGE_UP        &kp C_MUTE                                       &kp K                     &hm LA(LC(LSHFT)) H  &kp COMMA     &kp DOT     &kp FSLH    &kp MINUS
-&kp LBKT    &kp LBRC    &kp LPAR    &kp LEFT      &kp RIGHT                                     &lt 1 SPACE  &lt 3 TAB  &kp PAGE_DOWN      &kp C_VOL_DN  &lt 4 RET         &lt 2 BACKSPACE                            &kp DOWN_ARROW       &kp UP_ARROW  &kp RPAR    &kp RBRC    &kp RBKT
+&kp PLUS    &kp N1      &kp N2      &kp N3        &kp N4               &kp N5                   &kp DELETE                                                                &tog 4           &kp N6                    &kp N7               &kp N8        &kp N9      &kp N0      &kp EQUAL
+&kp PIPE    &kp Q       &kp W       &kp F         &kp P                &kp B                    &kp HOME                                                                  &kp C_NEXT       &kp J                     &kp L                &kp U         &kp Y       &kp SEMI    &kp BACKSLASH
+&kp ESCAPE  &hm LGUI A  &hm LALT R  &hm LSHIFT S  &hm LCTRL T          &hm LA(LC(LG(LSHFT))) G  &kp END     &kp TILDE  &kp GRAVE          &kp C_VOL_UP  &kp C_PLAY_PAUSE  &kp C_PREVIOUS   &hm LA(LC(LG(LSHIFT))) M  &hm RCTRL N          &hm RSHFT E   &hm LALT I  &hm RGUI O  &kp SINGLE_QUOTE
+&kp UNDER   &kp Z       &kp X       &kp C         &hm LC(LA(LSHFT)) D  &kp V                                           &kp PAGE_UP        &kp C_MUTE                                       &kp K                     &hm LA(LC(LSHFT)) H  &kp COMMA     &kp DOT     &kp FSLH    &kp MINUS
+&kp LBKT    &kp LBRC    &kp LPAR    &kp LEFT      &kp RIGHT                                     &kp SPACE   &lt 1 TAB  &kp PAGE_DOWN      &kp C_VOL_DN  &lt 3 RET         &lt 2 BACKSPACE                            &kp DOWN_ARROW       &kp UP_ARROW  &kp RPAR    &kp RBRC    &kp RBKT
             >;
         };
 
-        layer_1 {
+        keypad {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+&trans  &trans    &trans    &trans     &trans             &trans                 &trans                                          &trans        &trans     &trans        &trans        &trans        &trans     &trans
+&trans  &trans    &trans    &trans     &trans             &trans                 &trans                                          &trans        &kp EQUAL  &kp N7        &kp N8        &kp N9        &trans     &trans
+&trans  &kp LGUI  &kp LALT  &kp LSHFT  &kp LCTRL          &kp LA(LC(LG(LSHFT)))  &trans  &trans  &trans      &trans  &trans      &trans        &kp PLUS   &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp MINUS  &trans
+&trans  &trans    &trans    &trans     &kp LA(LC(LSHFT))  &trans                                 &trans      &trans                            &kp MINUS  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp SLASH  &trans
+&trans  &trans    &trans    &trans     &trans                                    &trans  &trans  &trans      &trans  &kp DELETE  &kp NUMBER_0             &trans        &trans        &trans        &trans     &trans
             >;
         };
 
-        layer_2 {
+        symbols {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+&trans  &trans     &trans     &trans     &trans     &trans             &trans                                            &trans  &trans                 &trans             &trans         &trans            &trans    &trans
+&trans  &kp AT     &kp PIPE   &kp LBRC   &kp LPAR   &kp CARET          &trans                                            &trans  &kp DOLLAR             &kp RPAR           &kp RBRC       &kp BACKSLASH     &trans    &trans
+&trans  &kp EXCL   &kp SLASH  &kp MINUS  &kp PLUS   &kp EQUAL          &trans      &trans    &trans      &trans  &trans  &trans  &kp LA(LC(LG(RSHFT)))  &kp RCTRL          &kp RSHFT      &kp LALT          &kp RGUI  &trans
+&trans  &kp POUND  &kp AMPS   &kp UNDER  &kp ASTRK  &kp DOUBLE_QUOTES                        &trans      &trans                  &kp SINGLE_QUOTE       &kp LA(LC(RSHFT))  &kp LESS_THAN  &kp GREATER_THAN  &trans    &trans
+&trans  &trans     &trans     &trans     &trans                        &caps_word  &kp CAPS  &trans      &trans  &trans  &trans                         &trans             &trans         &trans            &trans    &trans
             >;
         };
 
-        layer_3 {
+        funcs {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans   &trans   &trans   &trans        &trans                                      &trans  &trans                 &trans             &trans     &trans      &trans    &trans
+&trans  &kp F1  &kp F2   &kp F3   &kp F4   &kp C_VOL_UP  &trans                                      &trans  &trans                 &kp C_PREVIOUS     &kp C_PP   &kp C_NEXT  &trans    &trans
+&trans  &kp F5  &kp F6   &kp F7   &kp F8   &kp C_MUTE    &trans  &trans  &trans      &trans  &trans  &trans  &kp LA(LC(LG(RSHFT)))  &kp RCTRL          &kp RSHFT  &kp LALT    &kp RGUI  &trans
+&trans  &kp F9  &kp F10  &kp F11  &kp F12  &kp C_VOL_DN                  &trans      &trans                  &trans                 &kp LA(LC(RSHFT))  &trans     &trans      &trans    &trans
+&trans  &trans  &trans   &trans   &trans                 &trans  &trans  &trans      &trans  &trans  &trans                         &trans             &trans     &trans      &trans    &trans
             >;
         };
 
-        layer_4 {
+        gaming {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
-            >;
-        };
-
-        layer_5 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp A   &kp R   &kp S   &kp T   &kp G   &trans  &trans  &trans      &trans  &trans  &trans  &kp M   &kp N   &kp E   &kp I   &kp O   &trans
+&trans  &trans  &trans  &trans  &kp D   &trans                  &trans      &trans                  &trans  &kp H   &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
