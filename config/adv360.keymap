@@ -166,6 +166,17 @@ layer_vim {
             >;
         };
 
+/* layer 9 -> aerospace */
+       layer_aerospace {
+            bindings = <
+            &none  &none           &none          &none          &none           &none              &trans             &mo 2    &none   &none   &none   &none   &none      &none
+            &none  &macro_espn     &macro_youtube &macro_ww      &none           &none              &trans             &mo 3    &none   &none   &none   &none   &none      &none
+            &none  &macro_copilot  &macro_gemini  &macro_claude  &macro_chatgpt  &macro_perplexity  &trans   &trans    &mo 4    &none   &none   &none   &none   &none      &none
+            &none  &none           &none          &none          &none           &none                       &trans    &trans           &none   &none   &none   &none      &none
+            &none  &none           &none          &none          &none           &none              &trans   &trans    &trans   &trans  &trans  &trans  &none   &none      &none
+            >;
+        };
+
     };
 
 
