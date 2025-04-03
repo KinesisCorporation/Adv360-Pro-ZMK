@@ -171,7 +171,7 @@ layer_vim {
             bindings = <
             &none           &none  &none  &none  &none  &none  &trans                      &trans    &none      &none   &none   &none      &none      &none
             &none           &none  &none  &none  &none  &none  &trans                      &trans    &kp EQUAL  &none   &none   &none      &kp MINUS  &none
-            &none           &none  &none  &none  &none  &none  &trans   &trans    &trans   &trans    &none      &none   &none   &none      &none      &none
+            &none           &none  &none  &none  &none  &none  &trans   &trans    &trans   &trans    &kp H      &kp J   &kp K   &kp L      &none      &none
             &mt LALT LSHFT  &none  &none  &none  &none  &none           &trans    &trans             &none      &none   &none   &none      &none      &none
             &none           &none  &none  &none  &none         &trans   &trans    &trans   &trans    &none      &none   &none   &none      &none      &none
             >;
