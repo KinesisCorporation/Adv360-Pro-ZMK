@@ -161,7 +161,7 @@ layer_vim {
             &none            &none  &none  &none  &none  &none  &trans                     &trans  &none      &none      &none      &none  &none  &none
             &none            &none  &none  &none  &none  &none  &trans                     &trans  &kp EQUAL  &kp LPAR   &kp RBKT   &none  &none  &none
             &none            &none  &none  &none  &none  &none  &trans  &trans    &trans   &trans  &none      &kp LBRC   &kp RBKT   &none  &none  &none
-            &none            &none  &none  &none  &none  &none          &trans    &trans           &none      &kp LBKT   &kp RBKT   &none  &none  &none  
+            &none            &none  &none  &none  &none  &none          &trans    &trans           &none      &kp LBKT   &kp RBKT   &none  &none  &none
             &none            &none  &none  &none  &none         &none   &trans    &trans   &trans             &none      &none      &none  &none  &none
             >;
         };
