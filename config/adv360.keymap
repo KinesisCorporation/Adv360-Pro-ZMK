@@ -169,11 +169,11 @@ layer_vim {
 /* layer 9 -> aerospace */
        layer_aerospace {
             bindings = <
-            &none           &none  &none  &none  &none  &none  &trans                      &trans    &none      &none   &none   &none      &none      &none
-            &none           &none  &none  &none  &none  &none  &trans                      &trans    &kp EQUAL  &none   &none   &none      &kp MINUS  &none
-            &kp TAB           &none  &none  &none  &none  &none  &trans   &trans    &trans   &trans    &kp H      &kp J   &kp K   &kp L      &kp SEMI      &none
-            &mt LALT LSHFT  &none  &none  &none  &none  &none           &trans    &trans             &none      &none   &none   &none      &none      &none
-            &none           &none  &none  &none  &none         &trans   &trans    &trans   &trans    &none      &none   &none   &none      &none      &none
+            &none           &none     &none  &none  &none  &none  &trans                      &trans    &none      &none   &none   &none      &none      &none
+            &none           &none     &none  &none  &none  &none  &trans                      &trans    &kp EQUAL  &none   &none   &none      &kp MINUS  &none
+            &kp TAB         &none     &none  &none  &none  &none  &trans   &trans    &trans   &trans    &kp H      &kp J   &kp K   &kp L      &kp SEMI   &none
+            &mt LALT LSHFT  &kp LALT  &none  &none  &none  &none           &trans    &trans             &none      &none   &none   &none      &none      &none
+            &none           &none     &none  &none  &none         &trans   &trans    &trans   &trans    &none      &none   &none   &none      &none      &none
             >;
         };
 
