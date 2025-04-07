@@ -58,6 +58,7 @@
 /* layer 6 -> mouse */
 /* layer 7 -> macros */
 /* layer 8 -> symbols */
+/* layer 9 -> aerospace */
 
 default_layer {
   bindings = <
@@ -65,7 +66,7 @@ default_layer {
        &kp GRAVE     &kp Q     &kp W      &kp E          &kp R     &kp T       &mo 5                                                  &mo 3       &kp Y       &kp U         &kp I     &kp O     &kp P   &td_bslh 
          &kp TAB     &kp A     &kp S      &kp D          &kp F     &kp G       &mo 6  &kp LCTRL  &kp PG_UP     &kp PG_DN  &kp RCTRL   &mo 4       &kp H       &kp J         &kp K     &kp L  &kp SEMI    &td_quote
       &skq LSHFT     &kp Z     &kp X      &kp C          &kp V     &kp B                          &kp LALT     &kp RALT                           &kp N       &kp M     &kp COMMA   &kp DOT  &kp FSLH  &skq RSHFT
-           &mo 7   &kp ESC  &kp CAPS   &kp LEFT      &kp RIGHT              &td_bspc    &kp DEL   &kp LGUI     &kp RGUI   &kp ENTER   &kp SPACE               &kp DOWN_ARROW  &kp UP_ARROW  &kp LBKT  &kp RBKT      &mo 7
+           &mo 9   &mo 8  &kp CAPS   &kp LEFT      &kp RIGHT              &td_bspc    &kp DEL   &kp LGUI     &kp RGUI   &kp ENTER   &kp SPACE               &kp DOWN_ARROW  &kp UP_ARROW  &kp LBKT  &kp RBKT      &mo 7
   >;
 };
 
