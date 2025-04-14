@@ -71,4 +71,10 @@ macro_ww: macro_ww {
     bindings = <&kp LG(L)>, <&kp D &kp O &kp C &kp S &kp DOT &kp G &kp O &kp O &kp G &kp L &kp E &kp DOT &kp C &kp O &kp M &kp FSLH &kp S &kp P &kp R &kp E &kp A &kp D &kp S &kp H &kp E &kp E &kp T &kp S &kp FSLH &kp D &kp FSLH &kp N1 &kp Y &kp K &kp N3 &kp N8 &kp R &kp N5 &kp X &kp N6 &kp W &kp B &kp V &kp N8 &kp K &kp T &kp V &kp E &kp C &kp N1 &kp I &kp UNDER &kp R &kp N0 &kp N6 &kp F &kp W &kp UNDER &kp N7 &kp J &kp X &kp N7 &kp Y &kp LS(D) &kp N4 &kp J &kp G &kp V &kp V &kp N3 &kp N3 &kp A &kp K &kp Y &kp N8 &kp FSLH &kp E &kp D &kp I &kp T &kp QMARK &kp G &kp I &kp D &kp EQUAL &kp N0 &kp POUND &kp G &kp I &kp D &kp EQUAL &kp N0>, <&kp RETURN>;
 };
 
-
+/* https://www.heb.com/search?esc=true&q= */
+macro_heb: macro_heb {
+    compatible = "zmk,behavior-macro";
+    label = "macro_heb";
+    #binding-cells = <0>;
+    bindings = <&kp LG(L)>, <&kp H &kp E &kp B &kp DOT &kp C &kp O &kp M &kp FSLH &kp S &kp E &kp A &kp R &kp C &kp H &kp QMARK &kp E &kp C &kp S &kp EQUAL &kp T &kp R &kp U &kp AMPERSAND &kp Q &kp EQUAL>, <&kp RETURN>;
+};
