@@ -177,18 +177,6 @@ layer_vim {
                 &none &none &none &none &none       &none &none &none    &none &none &none       &none &none &none &none &none
             >;
         };
-
-/* layer 10 -> gaming - Optimized for WASD and common gaming controls */
-        layer_gaming {
-            bindings = <
-            &kp ESC         &kp N1    &kp N2 &kp N3 &kp N4 &kp N5 &kp N6                      &trans    &none      &none   &none   &none      &none      &none
-            &kp TAB         &kp Q     &kp W  &kp E  &kp R  &kp T  &kp Y                       &trans    &none      &none   &none   &none      &none      &none
-            &kp LSHFT       &kp A     &kp S  &kp D  &kp F  &kp G  &kp SPACE &trans    &trans   &trans    &none      &none   &none   &none      &none      &none
-            &kp LCTRL       &kp Z     &kp X  &kp C  &kp V  &kp B           &trans    &trans             &none      &none   &none   &none      &none      &none
-            &mo 0           &kp LALT  &kp M  &kp N  &kp COMMA         &trans   &trans    &trans   &trans               &none   &none   &none      &none      &none
-            >;
-        };
-
     };
 
 
