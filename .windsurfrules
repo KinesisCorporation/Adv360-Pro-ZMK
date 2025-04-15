@@ -1,0 +1,69 @@
+# ZMK Keyboard Firmware Project Rules
+
+project_type: zmk_firmware
+project_name: Adv360-Pro-ZMK
+
+# Core file paths
+core_files:
+  keymap: config/adv360.keymap
+  macros: config/macro_urls.dtsi
+  combos: config/combos.dtsi
+  build_script:
+    command: make
+    arguments:
+      - $COMMIT_MESSAGE
+
+# Implementation rules
+rules:
+  keymap_modifications:
+    - location: config/adv360.keymap
+    - syntax: zmk_key_binding
+    - maintain_layer_structure: true
+    - require_documentation: true
+
+  macro_definitions:
+    - location: config/macro_urls.dtsi
+    - follow_naming_convention: true
+    - require_documentation: true
+    - require_testing: true
+
+  build_process:
+    - use_make_script: true
+    - verify_firmware_size: true
+    - test_split_keyboard: true
+    - follow_version_control: true
+
+  quality_standards:
+    - test_key_combinations: true
+    - verify_bluetooth: true
+    - check_rgb_functionality: true
+    - verify_mouse_layer: true
+
+  safety_protocols:
+    - backup_firmware: true
+    - protect_bootloader: true
+    - isolate_testing: true
+    - document_changes: true
+
+# Version control
+version_control:
+  commit_prefixes:
+    - [keymap]
+    - [macros]
+    - [build]
+  branch_strategy:
+    main: V3.0
+
+# Documentation
+documentation:
+  code_comments:
+    - document_layers: true
+    - explain_behaviors: true
+    - note_dependencies: true
+    - include_examples: true
+  
+  change_tracking:
+    - update_changelog: true
+    - document_upgrades: true
+    - note_breaking_changes: true
+    - include_test_results: true
