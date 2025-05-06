@@ -222,4 +222,3 @@
     bindings = <&mkp MB1 &mkp MB1>;
     display-name = "Double Click";
   };
-
