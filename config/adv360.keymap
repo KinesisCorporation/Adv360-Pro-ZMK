@@ -47,7 +47,7 @@
         compatible = "zmk,behavior-tap-dance";
         #binding-cells = <0>;
         tapping-term-ms = <200>;
-        bindings = <&C_PLAY_PAUSE>, <&C_NEXT>, <&C_PREV>;
+        bindings = <&kp C_PLAY_PAUSE>, <&kp C_NEXT>, <&kp C_PREV>;
       };
 
     };
