@@ -68,7 +68,7 @@
     compatible = "zmk,behavior-macro";
     label = "macro_log_time_mgt";
     #binding-cells = <0>;
-    bindings = <&kp TAB>, <&kp TAB>, <&kp UP>, <&kp UP>, <&kp ENTER>, <&kp TAB>, <&kp TAB>, <&kp ENTER>;
+    bindings = <&kp TAB>, <&kp TAB>, <&kp UP>, <&kp UP>, <&kp UP>, <&kp ENTER>, <&kp TAB>, <&kp TAB>, <&kp ENTER>;
   };
   macro_log_time_cr: macro_log_time_cr {
     compatible = "zmk,behavior-macro";
