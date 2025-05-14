@@ -67,7 +67,6 @@ echo $formatted_result
 echo '#define VERSION_MACRO' > "config/version.dtsi"
 echo 'macro_ver: macro_ver {' >> "config/version.dtsi"
 echo 'compatible = "zmk,behavior-macro";' >> "config/version.dtsi"
-echo 'display-name = "Version Macro";' >> "config/version.dtsi"
 echo '#binding-cells = <0>;' >> "config/version.dtsi"
 echo "bindings = $formatted_result;" >> "config/version.dtsi"
 echo '};' >> "config/version.dtsi"
