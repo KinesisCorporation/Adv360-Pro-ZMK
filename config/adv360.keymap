@@ -42,6 +42,11 @@
             key-positions = <46 30>;
             layers = <0>;
         };
+
+        secondprint {
+            bindings = <&kp PSCRN>;
+            key-positions = <60 68>;
+        };
     };
 
     keymap {
