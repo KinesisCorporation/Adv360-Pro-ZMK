@@ -4,7 +4,13 @@ Here's all notable changes and commits to both the configuration repo and the ba
 Many thanks to all those who have submitted issues and pull requests to make this firmware better!
 ## Config repo
 
+<<<<<<< HEAD
 1/17/2025 - Update base ZMK, add changes to support Kinesis Clique, update RGB parameters and enable pointing support [#630](https://github.com/KinesisCorporation/Adv360-Pro-ZMK/pull/630)
+=======
+2/9/2025 - Minor changes to the local build process to improve local building experience, Remove preprocessor commands in keymap file [#643](https://github.com/KinesisCorporation/Adv360-Pro-ZMK/pull/643)
+
+2/6/2025 - Update base ZMK, add changes to support Kinesis Clique, update RGB parameters and enable pointing support [#630](https://github.com/KinesisCorporation/Adv360-Pro-ZMK/pull/630)
+>>>>>>> 091a5d44c3db759fefde89ccb6cf5a21d1e2ef64
 
 11/27/2024 - Fix misattributed PR link in changelog [#590](https://github.com/KinesisCorporation/Adv360-Pro-ZMK/pull/590)
 
@@ -121,11 +127,25 @@ There have beeen 5 branches of ZMK used for the 360 Pro so far. Beta branches ar
 | [adv360-z3.2](https://github.com/ReFil/zmk/tree/adv360-z3.2) | 7/6/2023 | 20/10/2023 | [V3.0](https://github.com/KinesisCorporation/Adv360-Pro-ZMK/tree/V3.0) (Up to commit 82494e7) |
 | [adv360-z3.2-2](https://github.com/ReFil/zmk/tree/adv360-z3.2-2) | 20/10/2023 | 1/14/2024 | [V3.0](https://github.com/KinesisCorporation/Adv360-Pro-ZMK/tree/V3.0) (Up to commit 4a5003a) |
 | [adv360-z3.2-3](https://github.com/ReFil/zmk/tree/adv360-z3.2-3) | 1/14/2024 | 4/5/2024 | [V3.0](https://github.com/KinesisCorporation/Adv360-Pro-ZMK/tree/V3.0) (Up to commit 742d19e) |
+<<<<<<< HEAD
 | [adv360-z3.5](https://github.com/ReFil/zmk/tree/adv360-z3.5) | 4/5/2024 | 1/17/2025 | [V3.0](https://github.com/KinesisCorporation/Adv360-Pro-ZMK/tree/V3.0) (Up to commit 8988c99) |
 | [adv360-z3.5-2](https://github.com/ReFil/zmk/tree/adv360-z3.5-2) | 1/17/2025 | To Date | [V3.0](https://github.com/KinesisCorporation/Adv360-Pro-ZMK/tree/V3.0) (Current) |
 
 ### adv360-z3.5-2
 
+=======
+| [adv360-z3.5](https://github.com/ReFil/zmk/tree/adv360-z3.5) | 4/5/2024 | 2/6/2025 | [V3.0](https://github.com/KinesisCorporation/Adv360-Pro-ZMK/tree/V3.0) (Up to commit 8988c99) |
+| [adv360-z3.5-2](https://github.com/ReFil/zmk/tree/adv360-z3.5-2) | 2/6/2025 | To Date | [V3.0](https://github.com/KinesisCorporation/Adv360-Pro-ZMK/tree/V3.0) (Current) |
+
+### adv360-z3.5-2
+
+1/26/2025 - Change mouse key press metadata to suit clique
+
+1/25/2025 - Add new battery indication behavior
+
+1/22/2025 - Send RGB effect over to the peripheral
+
+>>>>>>> 091a5d44c3db759fefde89ccb6cf5a21d1e2ef64
 1/14/2025 - Prevent ext power from saving to flash
 
 1/14/2025 - Transmit RGB "on" state over the bluetooth connection
