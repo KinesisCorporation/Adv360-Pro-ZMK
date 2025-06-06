@@ -40,9 +40,9 @@
             bindings = <
 &kp EQUAL  &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &tog 1                                                                                   &mo 3       &kp N6  &kp N7  &kp N8     &kp N9    &kp N0    &kp MINUS
 &kp TAB    &kp Q      &kp W     &kp E     &kp R      &kp T   &todo_escaped_macro                                                               &kp MINUS &kp Y   &kp U   &kp I      &kp O     &kp P     &kp BSLH
-&kp ESC    &kp A      &kp S     &kp D     &kp F      &kp G   &todo_macro    &remove_word_macro  &remove_line_macro                       &none    &secure_access_macro   &kp EQUAL &kp H   &kp J   &kp K      &kp L     &kp SEMI  &kp SQT
-&kp LSHFT  &kp Z      &kp X     &kp C     &kp V      &kp B   &kp LEFT_GUI                                                      &vim_save_all_macro             &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
-&mo 2      &kp GRAVE  &none     &kp LEFT  &kp RIGHT  &kp BSPC &kp LCTRL &kp LALT                                               &kp ESCAPE &kp ENTER  &kp SPACE         &kp DOWN &kp UP    &kp LBKT  &kp RBKT  &mo 2
+&kp ESC    &kp A      &kp S     &kp D     &kp F      &kp G   &todo_macro    &remove_word_macro  &remove_line_macro                       &rabbit_macro  &secure_access_macro   &kp EQUAL &kp H   &kp J   &kp K      &kp L     &kp SEMI  &kp SQT
+&kp LSHFT  &kp Z      &kp X     &kp C     &kp V      &kp B   &kp LEFT_GUI                                                           &vim_save_all_macro             &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
+&mo 2      &kp GRAVE  &none     &kp LEFT  &kp RIGHT  &kp BSPC &kp LCTRL &kp LALT                                                    &kp ESCAPE &kp ENTER  &kp SPACE         &kp DOWN &kp UP    &kp LBKT  &kp RBKT  &mo 2
             >;
         };
 

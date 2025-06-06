@@ -87,6 +87,14 @@
     label = "SECURE_ACCESS_MACRO";
   };
 
+  rabbit_macro: rabbit_macro {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    wait-ms = <2>;
+    bindings = <&kp LS(R)>, <&kp A>, <&kp B>, <&kp B>, <&kp I>, <&kp T>;
+    label = "RABBIT_MACRO";
+  };
+
   vim_save_all_macro: vim_save_all_macro {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
