@@ -91,6 +91,7 @@
   macro_lead_acceptance: macro_lead_acceptance {
     compatible = "zmk,behavior-macro";
     label = "macro_lead_acceptance";
+    wait-ms = <50>;
     #binding-cells = <0>;
     bindings = <&kp PERIOD>, <&kp L>, <&kp E>, <&kp A>, <&kp D>, <&kp SPACE>, <&kp A>, <&kp C>, <&kp ENTER>, <&kp A>, <&kp N>, <&kp S>, <&kp H>, <&kp SPACE>, <&kp D>, <&kp DOWN>, <&kp ENTER>, <&kp ENTER>;
   };
