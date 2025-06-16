@@ -1,0 +1,123 @@
+/*
+Todo:
+* check for macros lead keys
+* clean up all layouts add trans / none and use better spacing
+* add hyper and fancy zones shortcuts / macros
+* use os specific defines for shortcuts
+*/
+#include "keymap_german.h"
+
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/rgb.h>
+#include <dt-bindings/zmk/backlight.h>
+
+#define DEFAULT 0
+#define LOWER   1
+#define RAISE   2
+#define ADJ     3
+#define KPAD    4
+#define FN      5
+
+// Shortcut definitions
+// Windows
+#define WLOCK LEFT_GUI(L)  // Lock Screen
+#define WNWIN LS(LA(ESC))  // Focus to previous window
+#define WPWIN LA(ESC)      // Focus to next window
+#define WTASK LC(LS(ESC))  // Task Manager
+#define WPSCR RG(LS(S))    // Screnshot using screenshot tool
+
+/ {
+    behaviors {
+      #include "macros.dtsi"
+      #include "version.dtsi"
+      #ifndef VERSION_MACRO
+      macro_ver: macro_ver {
+        compatible = "zmk,behavior-macro";
+        label = "macro_version";
+        #binding-cells = <0>;
+        bindings = <&kp RET>;
+      };
+      #endif
+
+      hm: homerow_mods {
+          compatible = "zmk,behavior-hold-tap";
+          label = "HOMEROW_MODS";
+          #binding-cells = <2>;
+          tapping-term-ms = <200>;
+          quick_tap_ms = <175>;
+          flavor = "tap-preferred";
+          bindings = <&kp>, <&kp>;
+      };
+    };
+
+    // Tre-layer support
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+        tri_layer {
+            if-layers = <LOWER RAISE>;
+            then-layer = <ADJ>;
+        };
+    };
+
+    keymap {
+      compatible = "zmk,keymap";
+
+      default_layer {
+        bindings = <
+          &kp ESC   &kp DE_1     &kp DE_2     &kp DE_3      &kp DE_4         &kp DE_5 &tog KPAD                                                                    &mo ADJ     &kp DE_6   &kp DE_7  &kp DE_8  &kp DE_9 &kp DE_0    &kp DE_SS
+          &kp TAB   &kp Q        &kp W        &kp E         &kp R            &kp T    &kp WPSCR                                                                    &none       &kp DE_Z   &kp U     &kp I     &kp O    &kp P       &kp DE_UDIA
+          &kp BSPC  &kp A        &kp S        &kp D         &kp F            &kp G    &kp WPWIN           &kp LCTRL &none             &none     &kp RCTRL          &kp WNWIN   &kp H      &kp J     &kp K     &kp L    &kp DE_ODIA &kp DE_ADIA
+          &kp LSHFT &kp DE_Y     &kp X        &kp C         &kp V            &kp B              &none     &none     &none &none &none &kp PG_UP &none     &none                &kp N      &kp M     &kp COMMA &kp DOT  &kp FSLH    &kp RSHFT
+          &mo FN     &caps_word   &kp LEFT_GUI &kp LEFT_ALT  &kp LEFT_CONTROL                   &mo LOWER &kp ENTER &none             &kp BSPC  &kp SPACE &mo RAISE            &kp RCTRL  &kp RALT  &kp RGUI &none    &mo FN
+        >;
+      };
+      LOWER {
+        bindings = <
+          &kp DE_TILD &kp DE_1    &kp DE_2    &kp DE_3     &kp DE_4    &kp DE_5    &none                                                                        &none &kp DE_6   &kp DE_7    &kp DE_8    &kp DE_9    &kp DE_0    &none
+          &kp DE_SQT  &none       &kp W       &kp E        &kp R       &kp T       &none                                                                        &none &kp DE_Z   &kp U       &kp I       &kp O       &kp P       &kp DE_UDIA
+          &kp BSPC    &kp DE_EXCL &kp DE_AT   &kp DE_HASH  &kp DE_DLR  &kp DE_PERC &none          &kp LCTRL &kp LALT             &kp LGUI  &kp RCTRL            &none &kp DE_GRV &kp DE_AMPS &kp DE_STAR &kp DE_LPAR &kp DE_RPAR &kp DE_PIPE
+          &kp LSHFT   &kp DE_EQL  &kp DE_MINS &kp DE_PLUS  &kp DE_LBRC &kp DE_RBRC       &none    &none     &kp HOME &none &none &kp PG_UP &none     &none            &kp DE_LBKT&kp DE_RBKT &kp DE_RABK &kp DE_LABK &kp DE_BSLH &kp RSHFT
+          &none       &kp GRAVE   &kp CAPS    &kp LEFT     &kp RIGHT                     &trans   &trans    &kp END              &kp PG_DN &trans    &trans           &kp UP     &kp DOWN    &kp RBKT    &kp LBKT    &none
+        >;
+      };
+      RAISE {
+        bindings = <
+          &kp ESC   &kp DE_1  &kp DE_2  &kp DE_3  &kp DE_4   &kp DE_5 &none                                                                                  &none        &kp DE_6     &kp DE_7     &kp DE_8  &kp DE_9      &kp DE_0     &none
+          &kp TAB   &none     &kp PSCRN &none     &kp LC(R)  &none    &kp WTASK                                                                              &none        &kp LC(DE_Z) &kp RA(LEFT) &kp UP    &kp LA(RIGHT) &kp RC(BSPC) &none
+          &kp BSPC  &none     &none     &none     &none      &none    &kp C_VOL_DN             &kp LCTRL &kp LALT                 &kp LGUI  &kp RCTRL        &kp C_VOL_UP &none        &kp LEFT     &kp DOWN  &kp RIGHT     &kp DEL      &kp BSPC
+          &kp LSHFT &none     &kp LC(X) &kp LC(C) &kp LC(V)  &none                   &none     &none     &kp HOME  &none    &none &kp PG_UP &none     &none               &none        &none        &none     &none         &none        &kp RSHFT
+          &none     &none     &none     &none     &none                              &trans    &trans    &kp END                  &kp PG_DN &trans    &trans              &none        &kp DOWN     &kp LBKT  &kp RBKT      &none
+        >;
+      };
+      ADJ {
+        bindings = <
+          &none &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &none                                                                                                          &trans                 &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &none
+          &none &none        &none        &none        &none        &none        &bootloader                                                                                                    &bootloader            &none        &none        &none        &none        &none        &none
+          &none &none        &none        &none        &none        &none        &rgb_ug RGB_MEFS_CMD 5                 &bt BT_CLR &bt BT_CLR             &bt BT_CLR &bt BT_CLR                 &rgb_ug RGB_MEFS_CMD 5 &none        &none        &kp C_MUTE   &none        &none        &none
+          &none &none        &none        &none        &macro_ver   &none                               &none           &none      &none      &none &none &none      &none      &none                                  &none        &kp C_PREV   &kp C_PP     &kp C_NEXT   &none        &none
+          &none &none        &none        &bl BL_INC   &bl BL_DEC                                       &rgb_ug RGB_TOG &bl BL_TOG &none                  &none      &bl BL_TOG &rgb_ug RGB_TOG                                     &bl BL_INC   &bl BL_DEC   &none        &none        &none
+        >;
+      };
+      KPAD {
+        bindings = <
+          &kp EQUAL &kp N1    &kp N2   &kp N3   &kp N4     &kp N5 &trans                                                                       &mo ADJ &kp N6 &kp KP_NUM &kp KP_EQUAL &kp KP_DIVIDE &kp KP_MULTIPLY &kp MINUS
+          &kp TAB   &kp Q     &kp W    &kp E    &kp R      &kp T  &none                                                                        &none   &kp Y  &kp KP_N7  &kp KP_N8    &kp KP_N9     &kp KP_MINUS    &kp BSLH
+          &kp ESC   &kp A     &kp S    &kp D    &kp F      &kp G  &none           &kp LCTRL &kp LALT             &kp LGUI  &kp RCTRL           &none   &kp H  &kp KP_N4  &kp KP_N5    &kp KP_N6     &kp KP_PLUS     &kp SQT
+          &kp LSHFT &kp Z     &kp X    &kp C    &kp V      &kp B         &none    &none     &kp HOME &none &none &kp PG_UP &none     &none             &kp N  &kp KP_N1  &kp KP_N2    &kp KP_N3     &kp KP_ENTER    &kp RSHFT
+          &mo 2     &kp GRAVE &kp CAPS &kp LEFT &kp RIGHT                &trans   &trans    &trans               &kp PG_DN &trans    &trans            &kp UP  &kp DOWN  &kp KP_DOT   &kp RBKT      &mo FN
+        >;
+      };
+      FN {
+        bindings = <
+          &kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp F6  &none                                                       &none &kp F7 &kp F8 &kp F9 &kp F10 &kp F11 &kp F12
+          &trans &trans &trans &trans &trans &trans  &none                                                       &none &trans &trans &trans &trans  &trans  &trans
+          &trans &trans &trans &trans &trans &trans  &none        &trans &trans             &trans &trans        &none &trans &trans &trans &trans  &trans  &trans
+          &trans &trans &trans &trans &trans &trans        &none  &none  &trans &none &none &trans &none  &none        &trans &trans &trans &trans  &trans  &trans
+          &trans &trans &trans &trans &trans               &trans &trans &trans             &trans &trans &trans              &trans &trans &trans  &trans  &trans
+        >;
+      };
+    };
+  };
+  
