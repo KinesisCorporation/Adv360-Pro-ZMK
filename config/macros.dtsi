@@ -34,30 +34,6 @@
     #binding-cells = <0>;
     bindings = <&kp LS(K)>, <&kp I>, <&kp N>, <&kp E>, <&kp S>, <&kp I>, <&kp S>;
   };
-  slack_macro: slack_macro {
-    compatible = "zmk,behavior-macro";
-    label = "slack_macroo";
-    #binding-cells = <0>;
-    bindings = <
-        &macro_tap
-        &kp RC(RG(I))
-        &macro_wait_time 200
-        &macro_tap
-        &kp RG(K)
-    >;
-  };
-  slack_macro1: slack_macro1 {
-      compatible = "zmk,behavior-macro";
-      label = "slack_macrooo";
-      #binding-cells = <0>;
-      bindings = <
-          &macro_tap
-          &kp RC(RG(I))
-          &macro_wait_time 200
-          &macro_tap
-          &kp RG(K)
-      >;
-  };
   Win_Cut: Windows_Cut {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
