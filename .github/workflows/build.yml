@@ -43,7 +43,7 @@ jobs:
       - name: West Zephyr export
         run: west zephyr-export
       - name: West Build (left)
-        run: west build -s zmk/app -d build/left -b adv360_left -- -S zmk-usb-logging -DZMK_CONFIG="${GITHUB_WORKSPACE}/config"
+        run: west build -s zmk/app -d build/left -b adv360_left -- -DZMK_CONFIG="${GITHUB_WORKSPACE}/config"
       - name: Adv360 Left Kconfig file
         run: grep -vE '(^#|^$)' build/left/zephyr/.config
       - name: West Build (right)
