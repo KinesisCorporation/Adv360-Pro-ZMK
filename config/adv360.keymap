@@ -10,12 +10,14 @@
         #include "version.dtsi"
 
         #ifndef VERSION_MACRO
+
         macro_ver: macro_ver {
             compatible = "zmk,behavior-macro";
             label = "macro_version";
             #binding-cells = <0>;
             bindings = <&kp RET>;
         };
+
         #endif
 
         hm: homerow_mods {
@@ -41,6 +43,7 @@
             compatible = "zmk,behavior-hold-tap";
             label = "THB";
             bindings = <&kp>, <&kp>;
+
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             flavor = "balanced";
@@ -85,11 +88,11 @@
 
         c-layer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans         &kp RC(RG(UP_ARROW))  &trans             &trans           &trans         &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans         &kp RC(RG(F))         &kp RC(RG(U))      &kp RC(RG(Y))    &trans         &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &kp RC(RG(M))  &kp RC(RG(N))         &kp RC(RG(E))      &kp RC(RG(I))    &kp RC(RG(O))  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans         &kp RG(RC(H))         &kp LC(LG(LS(C)))  &kp RC(RG(DOT))  &kp RC(RG(K))  &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans                 &trans                &trans             &trans           &trans         &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans         &kp RC(RG(UP_ARROW))  &kp RC(RG(HASH))    &kp RC(RG(AT_SIGN))  &trans         &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &kp RC(RG(J))  &kp RC(RG(F))         &kp RC(RG(U))       &kp RC(RG(Y))        &trans         &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &kp RC(RG(M))  &kp RC(RG(N))         &kp RC(RG(E))       &kp RC(RG(I))        &kp RC(RG(O))  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans         &kp RG(RC(H))         &kp LC(LG(LS(C)))   &kp RC(RG(DOT))      &kp RC(RG(K))  &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans                 &kp RC(RG(EXCL))      &kp RC(RG(DOLLAR))  &trans               &trans         &trans
             >;
         };
 
