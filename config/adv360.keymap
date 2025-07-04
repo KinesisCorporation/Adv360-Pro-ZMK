@@ -100,7 +100,7 @@
 &trans     &kp Q      &kp W     &kp E     &kp R      &kp T   &none                                                    &none      &kp Y   &kp U         &kp I      &kp O             &kp P         &kp BSLH
 &trans     &kp A      &kp S     &kp D     &kp F      &kp G   &none     &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &none      &kp H   &kp J         &kp K      &kp L             &kp COLON     &kp SQT
 &trans     &kp Z      &kp X     &kp C     &kp V      &kp B                        &kp HOME      &kp PG_UP                        &kp N   &kp M         &kp COMMA  &kp PERIOD        &kp SLASH     &kp RSHFT
-&to 0      &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT          &kp BSPC  &kp DEL    &kp END       &kp PG_DN  &kp ENTER  &kp SPACE          &kp UP        &kp DOWN   &kp LEFT_BRACKET  &kp RBKT      &mo 2
+&trans     &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT          &kp BSPC  &kp DEL    &kp END       &kp PG_DN  &kp ENTER  &kp SPACE          &kp UP        &kp DOWN   &kp LEFT_BRACKET  &kp RBKT      &trans
             >;
 
             label = "qwerty";
@@ -118,11 +118,11 @@
 
         TestSuperKey {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                         &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                         &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &mt F8 F8  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                     &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans     &trans          &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                       &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                       &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp F13  &trans      &trans  &kp F8  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                   &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans   &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
