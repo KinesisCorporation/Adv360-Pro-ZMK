@@ -44,11 +44,11 @@
 
         default_layer {
             bindings = <
-&kp EQUAL  &kp N1            &kp N2          &kp N3       &kp N4       &kp N5  &tog 1                                                    &mo 3      &kp N6  &kp N7       &kp N8       &kp N9           &kp N0      &kp MINUS
-&kp TAB    &kp SINGLE_QUOTE  &kp COMMA       &kp PERIOD   &kp P        &kp Y   &kp LC(V)                                                 &kp F11    &kp F   &kp G        &kp C        &kp R            &kp L       &kp SLASH
-&kp ESC    &hm LWIN A        &hm LEFT_ALT O  &hm LSHFT E  &hm RCTRL U  &kp I   &kp LC(C)  &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &kp F12    &kp D   &hm RCTRL H  &hm RSHFT T  &hm RIGHT_ALT N  &hm RWIN S  &kp BACKSLASH
-&td        &kp SEMICOLON     &kp Q           &kp J        &kp K        &kp X                         &kp HOME      &kp PG_UP                        &kp B   &kp M        &kp W        &kp V            &kp Z       &kp RSHFT
-&tog 4     &kp GRAVE         &kp CAPS        &kp LEFT     &kp RIGHT            &kp BSPC   &kp DEL    &kp END       &kp PG_DN  &kp ENTER  &kp SPACE          &kp UP       &kp DOWN     &kp LBKT         &kp RBKT    &mo 2
+&kp EQUAL  &kp N1            &kp N2          &kp N3       &kp N4       &kp N5  &tog 1                                                  &mo 3      &kp N6  &kp N7       &kp N8       &kp N9           &kp N0      &kp MINUS
+&kp TAB    &kp SINGLE_QUOTE  &kp COMMA       &kp PERIOD   &kp P        &kp Y   &kp LC(V)                                               &kp F11    &kp F   &kp G        &kp C        &kp R            &kp L       &kp SLASH
+&kp ESC    &hm LWIN A        &hm LEFT_ALT O  &hm LSHFT E  &hm RCTRL U  &kp I   &kp LC(C)  &kp F8   &kp LALT      &kp LGUI   &kp F8     &kp F12    &kp D   &hm RCTRL H  &hm RSHFT T  &hm RIGHT_ALT N  &hm RWIN S  &kp BACKSLASH
+&td        &kp SEMICOLON     &kp Q           &kp J        &kp K        &kp X                       &kp HOME      &kp PG_UP                        &kp B   &kp M        &kp W        &kp V            &kp Z       &kp RSHFT
+&tog 4     &kp GRAVE         &kp CAPS        &kp LEFT     &kp RIGHT            &kp BSPC   &kp DEL  &kp END       &kp PG_DN  &kp ENTER  &kp SPACE          &kp UP       &kp DOWN     &kp LBKT         &kp RBKT    &mo 2
             >;
         };
 
@@ -68,7 +68,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans  &none                                       &kp F11  &trans  &trans  &trans  &trans  &trans   &trans
 &trans  &tog 1  &tog 4  &tog 5  &tog 6  &trans  &none   &trans  &trans      &trans  &trans  &kp F12  &trans  &trans  &trans  &trans  &trans   &trans
 &trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                   &trans  &trans  &trans  &trans  &trans   &trans
-&tog 5  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans           &trans  &trans  &tog 7  &tog 6   &trans
+&tog 5  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans           &trans  &trans  &tog 0  &tog 6   &trans
             >;
         };
 
@@ -113,16 +113,6 @@
 &trans  &kp A   &kp O   &kp E   &kp U   &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &kp H   &kp T   &kp N   &kp S   &trans
 &trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
-            >;
-        };
-
-        TestSuperKey {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                       &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                       &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp F13  &trans      &trans  &kp F8  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                   &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans   &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
