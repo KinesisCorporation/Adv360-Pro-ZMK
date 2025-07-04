@@ -1,14 +1,15 @@
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/backlight.h>
-#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/rgb.h>
+#include <dt-bindings/zmk/stp.h>
+#include <dt-bindings/zmk/backlight.h>
+#include <dt-bindings/zmk/pointing.h>
 
 / {
     behaviors {
-        #include "macros.dtsi"
-        #include "version.dtsi"
-        #ifndef VERSION_MACRO
+      #include "macros.dtsi"
+      #include "version.dtsi"
 
         macro_ver: macro_ver {
             compatible = "zmk,behavior-macro";
@@ -39,81 +40,64 @@
     macros {
     };
 
-    keymap {
-        compatible = "zmk,keymap";
-
-        default_layer {
-            bindings = <
-&kp EQUAL  &kp N1            &kp N2          &kp N3       &kp N4       &kp N5  &tog 1                                                  &mo 3      &kp N6  &kp N7       &kp N8       &kp N9           &kp N0      &kp MINUS
-&kp TAB    &kp SINGLE_QUOTE  &kp COMMA       &kp PERIOD   &kp P        &kp Y   &kp LC(V)                                               &kp F11    &kp F   &kp G        &kp C        &kp R            &kp L       &kp SLASH
-&kp ESC    &hm LWIN A        &hm LEFT_ALT O  &hm LSHFT E  &hm RCTRL U  &kp I   &kp LC(C)  &kp F8   &kp LALT      &kp LGUI   &kp F8     &kp F12    &kp D   &hm RCTRL H  &hm RSHFT T  &hm RIGHT_ALT N  &hm RWIN S  &kp BACKSLASH
-&td        &kp SEMICOLON     &kp Q           &kp J        &kp K        &kp X                       &kp HOME      &kp PG_UP                        &kp B   &kp M        &kp W        &kp V            &kp Z       &kp RSHFT
-&tog 4     &kp GRAVE         &kp CAPS        &kp LEFT     &kp RIGHT            &kp BSPC   &kp DEL  &kp END       &kp PG_DN  &kp ENTER  &kp SPACE          &kp UP       &kp DOWN     &kp LBKT         &kp RBKT    &mo 2
-            >;
-        };
-
-        keypad {
-            bindings = <
-&kp EQUAL  &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &trans                                                   &mo 3      &kp N6  &kp KP_NUM  &kp KP_EQUAL  &kp KP_DIVIDE  &kp KP_MULTIPLY  &kp MINUS
-&kp TAB    &kp Q      &kp W     &kp E     &kp R      &kp T   &none                                                    &none      &kp Y   &kp KP_N7   &kp KP_N8     &kp KP_N9      &kp KP_MINUS     &kp BSLH
-&kp ESC    &kp A      &kp S     &kp D     &kp F      &kp G   &none     &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &none      &kp H   &kp KP_N4   &kp KP_N5     &kp KP_N6      &kp KP_PLUS      &kp SQT
-&kp LSHFT  &kp Z      &kp X     &kp C     &kp V      &kp B                        &kp HOME      &kp PG_UP                        &kp N   &kp KP_N1   &kp KP_N2     &kp KP_N3      &kp KP_ENTER     &kp RSHFT
-&mo 2      &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT          &kp BSPC  &kp DEL    &kp END       &kp PG_DN  &kp ENTER  &kp KP_N0          &kp UP      &kp DOWN      &kp KP_DOT     &kp RBKT         &mo 2
-            >;
-        };
-
-        fn {
-            bindings = <
-&trans  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &trans                                      &mo 3    &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &none                                       &kp F11  &trans  &trans  &trans  &trans  &trans   &trans
-&trans  &to 1   &to 4   &to 5   &to 6   &trans  &none   &trans  &trans      &trans  &trans  &kp F12  &trans  &trans  &trans  &trans  &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                   &trans  &trans  &trans  &trans  &trans   &trans
-&tog 5  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans           &trans  &trans  &trans  &to 6    &trans
-            >;
-        };
-
-        mod {
-            bindings = <
-&none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none                                                  &trans                  &none  &none       &none       &none  &none  &none
-&none  &none         &none         &none         &none         &none         &bootloader                                            &bootloader             &none  &none       &none       &none  &none  &none
-&none  &none         &none         &none         &none         &none         &none        &none  &none      &bt BT_CLR  &none       &rgb_ug RGB_MEFS_CMD 5  &none  &none       &none       &none  &none  &none
-&none  &none         &none         &none         &macro_ver    &none                             &none      &none                                           &none  &none       &none       &none  &none  &none
-&to 5  &none         &none         &none         &none                       &none        &none  &none      &none       &bl BL_TOG  &rgb_ug RGB_TOG                &bl BL_INC  &bl BL_DEC  &none  &none  &none
-            >;
-        };
-
-        Debug {
-            bindings = <
-&trans  &kp F1      &kp F2           &kp F3      &kp F4      &kp F5  &trans                                      &trans  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &trans
-&trans  &kp LC(F5)  &kp LS(LC(F10))  &kp LS(F8)  &kp LA(F8)  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans   &trans
-&trans  &kp LC(F2)  &kp F9           &kp F8      &kp F5      &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans   &trans
-&trans  &trans      &trans           &kp F7      &trans      &trans                  &trans      &trans                  &trans  &trans  &trans  &trans  &trans   &trans
-&trans  &trans      &trans           &trans      &trans              &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans   &mo 2
-            >;
-
-            label = "debugging";
-        };
-
-        QWERTY {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &mo 3   &trans  &trans  &trans     &trans      &trans     &trans
-&trans  &kp Q   &kp W   &kp E   &kp R   &kp T   &trans                                      &trans  &kp Y   &kp U   &kp I      &kp O       &kp P      &kp SLASH
-&trans  &kp A   &kp S   &kp D   &kp F   &kp G   &trans  &trans  &trans      &trans  &trans  &trans  &kp H   &kp J   &kp K      &kp L       &kp COLON  &kp BACKSLASH
-&trans  &kp Z   &kp X   &kp C   &kp V   &kp B                   &trans      &trans                  &kp N   &kp M   &kp COMMA  &kp PERIOD  &kp SLASH  &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans     &trans      &trans     &mo 2
-            >;
-
-            label = "qwerty";
-        };
-
-        NoHomeRowMod {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp A   &kp O   &kp E   &kp U   &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &kp H   &kp T   &kp N   &kp S   &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &mo 2
-            >;
-        };
+    default_layer {
+      display-name = "Base";
+      bindings = <
+        &kp EQUAL &kp N1    &kp N2   &kp N3   &kp N4     &kp N5 &tog 1                                                           &mo 3 &kp N6 &kp N7 &kp N8    &kp N9   &kp N0   &kp MINUS
+        &kp TAB   &kp Q     &kp W    &kp E    &kp R      &kp T  &none                                                            &none &kp Y  &kp U  &kp I     &kp O    &kp P    &kp BSLH
+        &kp ESC   &kp A     &kp S    &kp D    &kp F      &kp G  &none           &kp LCTRL &kp LALT &kp LGUI  &kp RCTRL           &none &kp H  &kp J  &kp K     &kp L    &kp SEMI &kp SQT
+        &kp LSHFT &kp Z     &kp X    &kp C    &kp V      &kp B                            &kp HOME &kp PG_UP                           &kp N  &kp M  &kp COMMA &kp DOT  &kp FSLH &kp RSHFT
+        &mo 2     &kp GRAVE &kp CAPS &kp LEFT &kp RIGHT                &kp BSPC &kp DEL   &kp END  &kp PG_DN &kp ENTER &kp SPACE              &kp UP &kp DOWN  &kp LBKT &kp RBKT &mo 2
+      >;
     };
+    keypad {
+      display-name = "Kp";
+      bindings = <
+        &kp EQUAL &kp N1    &kp N2   &kp N3   &kp N4     &kp N5 &trans                                                           &mo 3 &kp N6 &kp KP_NUM &kp KP_EQUAL &kp KP_DIVIDE &kp KP_MULTIPLY &kp MINUS
+        &kp TAB   &kp Q     &kp W    &kp E    &kp R      &kp T  &none                                                            &none &kp Y  &kp KP_N7  &kp KP_N8    &kp KP_N9     &kp KP_MINUS    &kp BSLH
+        &kp ESC   &kp A     &kp S    &kp D    &kp F      &kp G  &none           &kp LCTRL &kp LALT &kp LGUI  &kp RCTRL           &none &kp H  &kp KP_N4  &kp KP_N5    &kp KP_N6     &kp KP_PLUS     &kp SQT
+        &kp LSHFT &kp Z     &kp X    &kp C    &kp V      &kp B                            &kp HOME &kp PG_UP                           &kp N  &kp KP_N1  &kp KP_N2    &kp KP_N3     &kp KP_ENTER    &kp RSHFT
+        &mo 2     &kp GRAVE &kp CAPS &kp LEFT &kp RIGHT                &kp BSPC &kp DEL   &kp END  &kp PG_DN &kp ENTER &kp KP_N0              &kp UP     &kp DOWN     &kp KP_DOT    &kp RBKT        &mo 2
+      >;
+    };
+    fn {
+      display-name = "Fn";
+      bindings = <
+        &kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp F6 &tog 1                                           &mo 3 &kp F7 &kp F8 &kp F9 &kp F10 &kp F11 &kp F12
+        &trans &trans &trans &trans &trans &trans  &none                                           &none &trans &trans &trans &trans  &trans  &trans
+        &trans &trans &trans &trans &trans &trans  &none        &trans &trans &trans &trans        &none &trans &trans &trans &trans  &trans  &trans
+        &trans &trans &trans &trans &trans &trans                      &trans &trans                     &trans &trans &trans &trans  &trans  &trans
+        &trans &trans &trans &trans &trans               &trans &trans &trans &trans &trans &trans              &trans &trans &trans  &trans  &trans
+      >;
+    };
+    mod {
+      display-name = "Mod";
+      bindings = <
+        &none &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &none                                                                     &trans                 &none        &none        &none        &none &none &none
+        &none &none        &none        &none        &none        &none        &bootloader                                                               &bootloader            &none        &none        &none        &none &none &none
+        &studio_unlock &none        &none        &none        &none        &none        &none                   &none &none &bt BT_CLR &none                      &stp STP_BAT &none        &none        &none        &none &none &none
+        &none &none        &none        &none        &macro_ver   &none                                      &none &none                                                        &none        &none        &none        &none &none &none
+        &none &none        &none        &none        &none                                       &none &none &none &none      &bl BL_TOG &rgb_ug RGB_TOG                                     &bl BL_INC   &bl BL_DEC   &none &none &none
+      >;
+    };
+    extra1 { 
+      display-name = "Red";    
+      status = "reserved";
+    };
+
+    extra2 { 
+      display-name = "Purple";    
+      status = "reserved";
+    };
+
+    extra3 { 
+      display-name = "Cyan";    
+      status = "reserved";
+    };
+
+    extra4 { 
+      display-name = "Yellow";    
+      status = "reserved";
+    };
+  };
 };
