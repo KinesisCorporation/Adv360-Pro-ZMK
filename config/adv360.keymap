@@ -68,7 +68,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans  &none                                       &kp F11  &trans  &trans  &trans  &trans  &trans   &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &none   &trans  &trans      &trans  &trans  &kp F12  &trans  &trans  &trans  &trans  &trans   &trans
 &trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                   &trans  &trans  &trans  &trans  &trans   &trans
-&tog 5  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans           &trans  &trans  &trans  &tog 6   &trans
+&tog 5  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans           &trans  &trans  &tog 7  &tog 6   &trans
             >;
         };
 
@@ -113,6 +113,16 @@
 &trans  &kp A   &kp O   &kp E   &kp U   &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &kp H   &kp T   &kp N   &kp S   &trans
 &trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        TestSuperKey {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                           &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                           &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &mt F13 F13  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                       &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans       &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
