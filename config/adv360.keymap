@@ -33,7 +33,7 @@
 
     default_layer {
       bindings = <
-        &kp ESC   &kp N1         &kp N2   &kp N3          &kp N4     &kp N5 &tog 1                                                                 &mo 3           &kp N6 &kp N7 &kp N8           &kp N9   &kp N0           &kp MINUS
+        &kp ESC   &kp N1         &kp N2   &kp N3          &kp N4     &kp N5 &mo 3                                                                  &mo 3           &kp N6 &kp N7 &kp N8           &kp N9   &kp N0           &kp MINUS
         &kp TAB   &kp Q          &kp W    &kp E           &kp R      &kp T  &kp F9                                                                 &kp C_VOL_UP    &kp Y  &kp U  &kp I            &kp O    &kp P            &kp BSLH
         &mo 1     &kp A          &kp S    &hm LSHIFT D    &kp F      &kp G  &kp F8              &kp LGUI  &kp LALT &kp DEL     &mo 2               &kp C_VOL_DN    &kp H  &kp J  &hm LSHIFT K     &kp L    &kp SEMI         &kp SQT
         &kp LSHFT &kp Z          &kp X    &kp C           &kp V      &kp B                                &kp HOME &kp PG_UP                                       &kp N  &kp M  &kp COMMA        &kp DOT  &kp FSLH         &kp RSHFT
@@ -53,18 +53,18 @@
       bindings = <
         &trans &kp F1                 &kp F2      &kp F3             &kp F4                   &kp F5                   &tog 1                                          &mo 3                &kp F6 &kp F7              &kp F8 &kp F9           &kp F10      &kp F11
         &trans &trans                 &trans      &trans             &macro_log_time_research &macro_log_time_meeting  &none                                           &kp C_BRIGHTNESS_INC &trans &trans              &trans &kp LC(LA(DEL))  &macro_pass  &kp F12
-        &trans &macro_lead_acceptance &macro_spec &trans             &trans                   &trans                   &none        &trans &trans &trans &trans        &kp C_BRIGHTNESS_DEC &trans &trans              &trans &trans           &trans       &trans
+        &trans &macro_lead_acceptance &macro_spec &trans             &trans                   &trans                   &none        &trans &trans &trans &trans        &kp C_BRIGHTNESS_DEC &trans &trans              &trans &trans           &trans       &kp F13
         &trans &trans                 &trans      &macro_log_time_cr &trans                   &trans                                       &trans &trans                                    &trans &macro_log_time_mgt &trans &trans           &trans       &trans
-        &trans &trans                 &trans      &trans             &trans                                                  &trans &trans &trans &trans &trans &trans                             &trans              &trans &trans           &trans       &bootloader
+        &trans &trans                 &trans      &trans             &trans                                                  &trans &trans &trans &trans &trans &trans                             &trans              &trans &trans           &trans       &trans
       >;
     };
     mod {
       bindings = <
-        &none &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &none                                                                     &trans                 &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &none
-        &none &none        &none        &none        &none        &none        &none                                                                     &none                  &none        &none        &none        &none        &none        &none
-        &none &none        &none        &none        &none        &none        &none                   &none &none &bt BT_CLR &none                      &rgb_ug RGB_MEFS_CMD 5 &none        &none        &none        &none        &none        &none
-        &none &none        &none        &none        &macro_ver   &none                                      &none &none                                                        &none        &none        &none        &none        &none        &none
-        &none &none        &none        &none        &none                                       &none &none &none &none      &bl BL_TOG &rgb_ug RGB_TOG                                     &bl BL_INC   &bl BL_DEC   &none        &none        &none
+        &none &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &trans                                                                         &trans                 &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &none
+        &none &none        &none        &none        &none        &none        &rgb_ug RGB_MEFS_CMD 5                                                         &rgb_ug RGB_MEFS_CMD 5 &none        &none        &none        &none        &none        &none
+        &none &none        &none        &none        &none        &none        &bootloader                  &none &none &bt BT_CLR &none                      &bootloader            &none        &none        &none        &none        &none        &none
+        &none &none        &none        &none        &macro_ver   &none                                           &none &none                                                        &none        &none        &none        &none        &none        &none
+        &none &none        &none        &none        &none                                            &none &none &none &none      &bl BL_TOG &rgb_ug RGB_TOG                                     &bl BL_INC   &bl BL_DEC   &none        &none        &none
       >;
     };
   };
