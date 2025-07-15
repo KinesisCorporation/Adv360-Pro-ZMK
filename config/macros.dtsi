@@ -99,13 +99,17 @@
     compatible = "zmk,behavior-macro-one-param";
     label = "WIN_DOUBLE_TAP";
     #binding-cells = <1>;
-    tap-ms = <50>;  // Ensures each tap (press + release) lasts long enough to register
-    wait-ms = <50>; // Adds delay after each action in the sequence
+    tap-ms = <0>;  // Disable default tap duration since we're handling manually
+    wait-ms = <0>; // Disable default wait since we're using explicit waits
     bindings = <
         &macro_press &kp LGUI
-        &macro_param_1to1 &kp MACRO_PLACEHOLDER
-        &macro_wait_time 100  // Brief pause between the two taps for better OS recognition
-        &macro_param_1to1 &kp MACRO_PLACEHOLDER
+        &macro_param_1to1 &macro_press &kp MACRO_PLACEHOLDER
+        &macro_wait_time 60  // Brief hold for the first "tap" to register as a press
+        &macro_param_1to1 &macro_release &kp MACRO_PLACEHOLDER
+        &macro_wait_time 120  // Pause between taps to ensure separation
+        &macro_param_1to1 &macro_press &kp MACRO_PLACEHOLDER
+        &macro_wait_time 60  // Hold for the second "tap"
+        &macro_param_1to1 &macro_release &kp MACRO_PLACEHOLDER
         &macro_release &kp LGUI
     >;
   };
