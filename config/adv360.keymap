@@ -45,7 +45,7 @@
       bindings = <
         &kp EQUAL       &kp N1    &kp N2            &kp N3           &kp N4           &kp N5            &trans                                                                             &mo 3 &kp N6           &kp KP_NUM &macro_select_star &kp KP_DIVIDE &kp KP_MULTIPLY &kp MINUS
         &kp TAB         &kp Q     &kp W             &kp E            &kp R            &kp T             &trans                                                                             &none &macro_braces    &kp KP_N7  &kp KP_N8          &kp KP_N9     &kp AT          &kp BSLH
-        &kp ESC         &kp A     &hm LG(N1) &macro_kinesis        &kp LG(N2)       &kp LG(N3)       &kp LG(N4)        &kp LG(N5)           &kp LCTRL &kp LALT &kp LGUI  &kp RCTRL                        &none &macro_parens    &kp KP_N4  &kp KP_N5          &kp KP_N6     &kp EQUAL    &macro_gpt
+        &kp ESC         &kp A     &hm macro_kinesis LG(N1)        &kp LG(N2)       &kp LG(N3)       &kp LG(N4)        &kp LG(N5)           &kp LCTRL &kp LALT &kp LGUI  &kp RCTRL                        &none &macro_parens    &kp KP_N4  &kp KP_N5          &kp KP_N6     &kp EQUAL    &macro_gpt
         &kp CAPS        &kp Z     &kp LG(N6)        &kp LG(N7)       &kp LG(N8)       &kp B                                            &kp HOME &kp PG_UP                                        &macro_brackets  &kp KP_N1  &kp KP_N2          &kp KP_N3     &kp KP_PLUS     &kp RSHFT
         &bootloader     &kp GRAVE &kp CAPS          &kp LC(LS(TAB))  &kp LC(TAB)                                    &kp BSPC &kp ENTER &kp END  &kp PG_DN &macro_log_time_4_tabs &kp KP_N0                        &kp UP     &kp DOWN           &kp KP_DOT    &kp RBKT        &mo 2
       >;
