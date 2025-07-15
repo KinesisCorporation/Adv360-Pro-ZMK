@@ -95,3 +95,16 @@
     #binding-cells = <0>;
     bindings = <&kp PERIOD>, <&kp L>, <&kp E>, <&kp A>, <&kp D>, <&kp SPACE>, <&kp A>, <&kp C>, <&kp ENTER>, <&kp A>, <&kp N>, <&kp S>, <&kp H>, <&kp SPACE>, <&kp D>, <&kp DOWN>, <&kp ENTER>, <&kp ENTER>;
   };
+  win_double_tap: win_double_tap {
+    compatible = "zmk,behavior-macro-one-param";
+    label = "WIN_DOUBLE_TAP";
+    #binding-cells = <1>;
+    bindings = <
+        &macro_press &kp LGUI
+        &macro_param_1to1
+        &kp MACRO_PLACEHOLDER
+        &macro_param_1to1
+        &kp MACRO_PLACEHOLDER
+        &macro_release &kp LGUI
+    >;
+};
