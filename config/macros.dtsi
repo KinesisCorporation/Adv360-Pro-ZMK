@@ -95,9 +95,3 @@
     #binding-cells = <0>;
     bindings = <&kp PERIOD>, <&kp L>, <&kp E>, <&kp A>, <&kp D>, <&kp SPACE>, <&kp A>, <&kp C>, <&kp ENTER>, <&kp A>, <&kp N>, <&kp S>, <&kp H>, <&kp SPACE>, <&kp D>, <&kp DOWN>, <&kp ENTER>, <&kp ENTER>;
   };
-  macro_win1_1: macro_win1_1 {
-    compatible = "zmk,behavior-macro";
-    label = "MACRO_WIN1_1";
-    #binding-cells = <0>;
-    bindings = <&macro_press LGUI>, <&macro_tap N1>, <&macro_release LGUI>;
-  };
