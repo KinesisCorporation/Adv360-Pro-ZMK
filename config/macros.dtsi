@@ -95,11 +95,3 @@
     #binding-cells = <0>;
     bindings = <&kp PERIOD>, <&kp L>, <&kp E>, <&kp A>, <&kp D>, <&kp SPACE>, <&kp A>, <&kp C>, <&kp ENTER>, <&kp A>, <&kp N>, <&kp S>, <&kp H>, <&kp SPACE>, <&kp D>, <&kp DOWN>, <&kp ENTER>, <&kp ENTER>;
   };
-  macro_second_window: macro_second_window {
-    compatible = "zmk,behavior-macro";
-    label = "macro_second_window";
-    #binding-cells = <1>;
-    bindings = <&kp LG>;
-    bindings-continued = <&kp 0 &kp 0>;  // repeat passed key twice
-    bindings-release = <&kp NULL>;
-  };
