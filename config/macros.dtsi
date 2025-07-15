@@ -114,17 +114,16 @@
     >;
   };
   win_single_tap: win_single_tap {
-            compatible = "zmk,behavior-macro-one-param";
-            label = "WIN_SINGLE_TAP";
-            #binding-cells = <1>;
-            tap-ms = <0>;
-            wait-ms = <0>;
-            bindings = <
-                &press &kp LGUI
-                &param_1to1 &press &kp MACRO_PLACEHOLDER
-                &wait_time 60
-                &param_1to1 &release &kp MACRO_PLACEHOLDER
-                &release &kp LGUI
-            >;
-        };
-    };
+    compatible = "zmk,behavior-macro-one-param";
+    label = "WIN_SINGLE_TAP";
+    #binding-cells = <1>;
+    tap-ms = <0>;
+    wait-ms = <0>;
+    bindings = <
+        &press &kp LGUI
+        &param_1to1 &press &kp MACRO_PLACEHOLDER
+        &wait_time 60
+        &param_1to1 &release &kp MACRO_PLACEHOLDER
+        &release &kp LGUI
+    >;
+  };
