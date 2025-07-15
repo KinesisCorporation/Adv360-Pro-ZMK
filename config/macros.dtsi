@@ -121,9 +121,11 @@
     wait-ms = <0>;
     bindings = <
         &macro_press &kp LGUI
+        &macro_wait_time 30
         &macro_param_1to1 &macro_press &kp MACRO_PLACEHOLDER
         &macro_wait_time 60
         &macro_param_1to1 &macro_release &kp MACRO_PLACEHOLDER
+        &macro_wait_time 30
         &macro_release &kp LGUI
     >;
   };
