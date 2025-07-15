@@ -35,7 +35,7 @@
 
             bindings = <        // Each entry is one tap, two taps, etc.
                 &kp LG(<&kp>)     // single tap → Win + 1
-                &kp LG(<&kp>)          // double tap → just 1
+                &macro_second_window <&kp>          // double tap → just 1
                 &kp LG(<&kp>)          // triple tap → 2 (optional)
             >;
         };
