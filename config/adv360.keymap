@@ -78,11 +78,11 @@
 
         character_2 {
             bindings = <
-&trans  &trans         &trans           &trans             &trans                 &trans  &trans                                           &trans       &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2      &bt BT_SEL 3  &bt BT_SEL 4  &rgb_ug RGB_MEFS_CMD 5
-&trans  &trans         &kp AMPERSAND    &kp AT_SIGN        &kp TILDE              &trans  &bootloader                                      &bootloader  &trans        &trans        &trans            &trans        &trans        &trans
-&trans  &kp BACKSLASH  &kp LEFT_BRACE   &kp LEFT_BRACKET   &kp LEFT_PARENTHESIS   &trans  &trans       &trans  &trans      &trans  &trans  &trans       &trans        &trans        &kp LESS_THAN     &trans        &trans        &trans
-&trans  &trans         &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS  &trans                       &trans      &trans                       &trans        &trans        &kp GREATER_THAN  &trans        &trans        &trans
-&trans  &trans         &trans           &trans             &trans                         &trans       &trans  &trans      &trans  &trans  &trans                     &trans        &trans            &trans        &trans        &bl BL_TOG
+&trans  &trans         &trans           &trans             &trans                 &trans                           &trans                                           &trans       &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2      &bt BT_SEL 3  &bt BT_SEL 4  &rgb_ug RGB_MEFS_CMD 5
+&trans  &trans         &kp AMPERSAND    &kp AT_SIGN        &kp TILDE              &kp RS(RA(RC(RG(POUND))))        &bootloader                                      &bootloader  &trans        &trans        &trans            &trans        &trans        &trans
+&trans  &kp BACKSLASH  &kp LEFT_BRACE   &kp LEFT_BRACKET   &kp LEFT_PARENTHESIS   &kp RS(RA(RC(RG(EXCLAMATION))))  &trans       &trans  &trans      &trans  &trans  &trans       &trans        &trans        &kp LESS_THAN     &trans        &trans        &trans
+&trans  &trans         &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS  &trans                                                &trans      &trans                       &trans        &trans        &kp GREATER_THAN  &trans        &trans        &trans
+&trans  &trans         &trans           &trans             &trans                                                  &trans       &trans  &trans      &trans  &trans  &trans                     &trans        &trans            &trans        &trans        &bl BL_TOG
             >;
         };
 
