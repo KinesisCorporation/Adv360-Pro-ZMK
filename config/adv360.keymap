@@ -48,7 +48,7 @@
         &kp TAB   &kp Q          &kp W    &kp E           &kp R      &kp T  &kp F9                                                                 &kp C_VOL_UP    &kp Y  &kp U  &kp I            &kp O    &kp P            &kp BSLH
         &mo 1     &kp A          &kp S    &hm LSHIFT D    &kp F      &kp G  &kp F8              &kp LGUI  &kp LALT &kp DEL     &mo 2               &kp C_VOL_DN    &kp H  &kp J  &hm LSHIFT K     &kp L    &kp SEMI         &kp SQT
         &kp LSHFT &kp Z          &kp X    &kp C           &kp V      &kp B                                &kp HOME &kp PG_UP                                       &kp N  &kp M  &kp COMMA        &kp DOT  &kp FSLH         &kp RSHFT
-        &kp LSHFT &kp GRAVE      &kp CAPS &kp LEFT        &kp RIGHT                    &kp BSPC &kp LCTRL &kp END  &kp PG_DN   &kp ENTER &kp SPACE                        &kp UP &kp DOWN         &kp LBKT &kp RBKT         &mo 2
+        &kp LSHFT &kp GRAVE      &kp CAPS &kp LEFT        &kp RIGHT                    &kp BSPC &kp LCTRL &kp END  &kp PG_DN   &kp ENTER &kp SPACE                        &kp UP &kp DOWN         &kp LBKT &kp RBKT         &kp PRINTSCREEN
       >;
     };
     keypad {
@@ -73,18 +73,9 @@
       bindings = <
         &none &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &trans                                                                         &trans                 &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &none
         &none &none        &none        &none        &none        &none        &rgb_ug RGB_MEFS_CMD 5                                                         &rgb_ug RGB_MEFS_CMD 5 &none        &none        &none        &none        &none        &none
-        &none &none        &none        &none        &none        &none        &bootloader                  &none &none &bt BT_CLR &none                      &bootloader            &none        &none        &none        &tog 4       &none        &none
+        &none &none        &none        &none        &none        &none        &bootloader                  &none &none &bt BT_CLR &none                      &bootloader            &none        &none        &none        &none        &none        &none
         &none &none        &none        &none        &macro_ver   &none                                           &none &none                                                        &none        &none        &none        &none        &none        &none
         &none &none        &none        &none        &none                                            &none &none &none &none      &bl BL_TOG &rgb_ug RGB_TOG                                     &bl BL_INC   &bl BL_DEC   &none        &none        &none
-      >;
-    };
-    ubuntu_layer {
-      bindings = <
-        &kp ESC   &kp N1         &kp N2   &kp N3          &kp N4     &kp N5 &mo 3                                                                  &mo 3           &kp N6 &kp N7 &kp N8           &kp N9   &kp N0           &kp MINUS
-        &kp TAB   &kp Q          &kp W    &kp E           &kp R      &kp T  &kp F9                                                                 &kp C_VOL_UP    &kp Y  &kp U  &kp I            &kp O    &kp P            &kp BSLH
-        &mo 1     &kp B          &kp S    &hm LSHIFT D    &kp F      &kp G  &kp F8              &kp LGUI  &kp LALT &kp DEL     &mo 2               &kp C_VOL_DN    &kp H  &kp J  &hm LSHIFT K     &kp L    &kp SEMI         &kp SQT
-        &kp LSHFT &kp Z          &kp X    &kp C           &kp V      &kp B                                &kp HOME &kp PG_UP                                       &kp N  &kp M  &kp COMMA        &kp DOT  &kp FSLH         &kp RSHFT
-        &kp LSHFT &kp GRAVE      &kp CAPS &kp LEFT        &kp RIGHT                    &kp BSPC &kp LCTRL &kp END  &kp PG_DN   &kp ENTER &kp SPACE                        &kp UP &kp DOWN         &kp LBKT &kp RBKT         &mo 2
       >;
     };
   };
