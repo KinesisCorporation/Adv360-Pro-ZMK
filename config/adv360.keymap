@@ -93,7 +93,7 @@
     &trans  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5               &trans                                                        &trans  &trans  &trans  &trans  &trans  &trans  &trans
     &trans   &kp Q   &kp W   &kp E   &kp R   &kp T               &trans                                                        &trans  &trans  &trans  &trans  &trans  &trans  &trans
     &trans   &kp A   &kp S   &kp D   &kp F   &kp G               &trans   &kp LGUI   &kp LALT                  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
- &kp LSHFT   &kp Z   &kp X   &kp C   &kp V   &kp B                                  &kp LCTRL                  &studio_unlock          &trans  &trans  &trans  &trans  &trans  &trans
+ &kp LSHFT   &kp Z   &kp X   &kp C   &kp V   &kp B                                  &kp LCTRL                  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
     &trans  &trans  &trans  &trans   &kp M                    &kp SPACE  &kp ENTER     &trans                  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
