@@ -58,7 +58,7 @@
 
         default_layer {
             bindings = <
-&kp C_VOLUME_UP  &kp N1   &kp LG(LEFT_BRACKET)  &kp UP_ARROW    &kp LS(ENTER)  &kp N5  &tog 0                                                                              &mo 5                  &kp N6  &kp N7      &kp DOWN           &kp LS(LG(F))      &kp N0     &kp MINUS
+&kp C_VOLUME_UP  &kp F15  &kp LG(LEFT_BRACKET)  &kp UP_ARROW    &kp LS(ENTER)  &kp N5  &tog 0                                                                              &mo 5                  &kp N6  &kp N7      &kp DOWN           &kp LS(LG(F))      &kp F16    &kp MINUS
 &kp C_VOL_DN     &kp TAB  &kp W                 &kp L           &kp P          &kp B   &none                                                                               &kp F18                &kp J   &kp F       &kp U              &kp Y              &kp LG(F)  &kp BSLH
 &kp F14          &kp A    &kp R                 &kp S           &kp T          &kp G   &caps_word     &kp LCTRL    &kp LALT                   &kp LGUI       &kp LEFT_ALT  &kp F12                &kp M   &tlb 2 N    &tlb 4 E           &kp I              &kp O      &kp RIGHT
 &kp LSHFT        &kp Z    &kp V                 &tlb 3 C        &kp D          &kp X                               &none                      &none                                               &kp Q   &kp H       &tlb 1 ESCAPE      &kp KP_DOT         &kp K      &kp LEFT_SHIFT
