@@ -115,3 +115,113 @@ jobs:
           path: |
             ${{ steps.get_info.outputs.file_prefix }}-left.uf2
             ${{ steps.get_info.outputs.file_prefix }}-right.uf2
+
+  create-release:
+    needs: [build, build-clique]
+    runs-on: ubuntu-latest
+    if: github.event_name == 'push' && (github.ref == 'refs/heads/latest' || startsWith(github.ref, 'refs/tags/'))
+    name: Create Release
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Get release info
+        id: release_info
+        run: |
+          # Get short commit hash
+          commit_short=$(echo "${{ github.sha }}" | cut -c1-7)
+
+          # Check if we're on a tag
+          if [[ "${{ github.ref }}" == refs/tags/* ]]; then
+            release_tag="${{ github.ref_name }}"
+            release_name="Release ${{ github.ref_name }}"
+          else
+            # Use commit-based naming for non-tag pushes
+            timestamp=$(date +"%Y%m%d%H%M")
+            release_tag="v${timestamp}-${commit_short}"
+            release_name="Build ${timestamp}-${commit_short}"
+          fi
+
+          echo "release_tag=$release_tag" >> $GITHUB_OUTPUT
+          echo "release_name=$release_name" >> $GITHUB_OUTPUT
+          echo "file_prefix=${timestamp}-${commit_short}" >> $GITHUB_OUTPUT
+
+      - name: Download Legacy firmware
+        uses: actions/download-artifact@v4
+        with:
+          name: firmware-no-clique
+          path: ./firmware-legacy
+
+      - name: Download Clique firmware
+        uses: actions/download-artifact@v4
+        with:
+          name: firmware-clique
+          path: ./firmware-clique
+
+      - name: Prepare release assets
+        run: |
+          mkdir -p release-assets
+
+          # Rename files for clarity in release
+          for file in firmware-legacy/*.uf2; do
+            basename=$(basename "$file")
+            # Add 'legacy' identifier
+            newname="${basename%-left.uf2}-legacy-left.uf2"
+            newname="${newname%-right.uf2}-legacy-right.uf2"
+            if [[ "$basename" == *"-left.uf2" ]]; then
+              cp "$file" "release-assets/${basename%-left.uf2}-legacy-left.uf2"
+            elif [[ "$basename" == *"-right.uf2" ]]; then
+              cp "$file" "release-assets/${basename%-right.uf2}-legacy-right.uf2"
+            fi
+          done
+
+          # Copy clique versions
+          for file in firmware-clique/*.uf2; do
+            basename=$(basename "$file")
+            # Add 'clique' identifier
+            if [[ "$basename" == *"-left.uf2" ]]; then
+              cp "$file" "release-assets/${basename%-left.uf2}-clique-left.uf2"
+            elif [[ "$basename" == *"-right.uf2" ]]; then
+              cp "$file" "release-assets/${basename%-right.uf2}-clique-right.uf2"
+            fi
+          done
+
+          ls -la release-assets/
+
+      - name: Generate release notes
+        id: release_notes
+        run: |
+          echo "## Firmware Build" > release_notes.md
+          echo "" >> release_notes.md
+          echo "**Commit:** ${{ github.sha }}" >> release_notes.md
+          echo "**Branch:** ${{ github.ref_name }}" >> release_notes.md
+          echo "" >> release_notes.md
+          echo "### Firmware Files" >> release_notes.md
+          echo "" >> release_notes.md
+          echo "#### Legacy (Standard) Version" >> release_notes.md
+          echo "- \`*-legacy-left.uf2\` - Left keyboard firmware" >> release_notes.md
+          echo "- \`*-legacy-right.uf2\` - Right keyboard firmware" >> release_notes.md
+          echo "" >> release_notes.md
+          echo "#### Clique (ZMK Studio) Version" >> release_notes.md
+          echo "- \`*-clique-left.uf2\` - Left keyboard firmware with ZMK Studio support" >> release_notes.md
+          echo "- \`*-clique-right.uf2\` - Right keyboard firmware" >> release_notes.md
+          echo "" >> release_notes.md
+          echo "### Recent Changes" >> release_notes.md
+          echo "" >> release_notes.md
+          # Get last 5 commit messages
+          git log -5 --pretty=format:"- %s (%h)" >> release_notes.md
+
+      - name: Create Release
+        uses: softprops/action-gh-release@v1
+        with:
+          tag_name: ${{ steps.release_info.outputs.release_tag }}
+          name: ${{ steps.release_info.outputs.release_name }}
+          body_path: release_notes.md
+          draft: false
+          prerelease: false
+          files: |
+            release-assets/*.uf2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
