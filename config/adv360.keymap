@@ -18,37 +18,40 @@
 
 / {
     behaviors {
-      #include "macros.dtsi"
+        #include "macros.dtsi"
       #include "version.dtsi"
 
-      hm: homerow_mods {
-          compatible = "zmk,behavior-hold-tap";
-          label = "HOMEROW_MODS";
-          #binding-cells = <2>;
-          tapping-term-ms = <200>;
-          quick_tap_ms = <175>;
-          flavor = "tap-preferred";
-          bindings = <&kp>, <&kp>;
-      };
+        hm: homerow_mods {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODS";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick_tap_ms = <175>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+        };
 
-      hyper_del: hyper_del {
-          compatible = "zmk,behavior-hold-tap";
-          #binding-cells = <2>;
-          flavor = "tap-preferred";
-          tapping-term-ms = <200>;
-          quick-tap-ms = <125>;
-          bindings = <&hyper>, <&kp>;
-      };
+        hyper_del: hyper_del {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <350>;
+            quick-tap-ms = <175>;
+            bindings = <&hyper>, <&kp>;
+        };
     };
 
     macros {
-      hyper: hyper {
-          compatible = "zmk,behavior-macro";
-          #binding-cells = <0>;
-          bindings = <&macro_press &kp LSHFT &kp LCTRL &kp LALT &kp LGUI>
-                  , <&macro_pause_for_release>
-                  , <&macro_release &kp LSHFT &kp LCTRL &kp LALT &kp LGUI>;
-      };
+        hyper: hyper {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LSHFT &kp LCTRL &kp LALT &kp LGUI>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&kp LSHFT &kp LCTRL &kp LALT &kp LGUI>;
+        };
     };
 
     keymap {
@@ -56,10 +59,10 @@
 
         default_layer {
             bindings = <
-&kp EQUAL  &kp N1     &kp N2        &kp N3    &kp N4     &kp N5  &tog 1                                                                      &mo 3      &kp N6  &kp N7  &kp N8     &kp N9    &kp N0    &kp MINUS
-&kp TAB    &kp Q      &kp W         &kp E     &kp R      &kp T   &none                                                                       &none      &kp Y   &kp U   &kp I      &kp O     &kp P     &kp BSLH
-&kp ESC    &kp A      &kp S         &kp D     &kp F      &kp G   &none     &kp LGUI                     &kp LCTRL      &kp RGUI   &kp RALT   &none      &kp H   &kp J   &kp K      &kp L     &kp SEMI  &kp SQT
-&kp LSHFT  &kp Z      &kp X         &kp C     &kp V      &kp B                                          &kp HOME       &kp PG_UP                        &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
+&kp EQUAL  &kp N1     &kp N2        &kp N3    &kp N4     &kp N5  &tog 1                                                           &mo 3      &kp N6  &kp N7  &kp N8     &kp N9    &kp N0    &kp MINUS
+&kp TAB    &kp Q      &kp W         &kp E     &kp R      &kp T   &none                                                            &none      &kp Y   &kp U   &kp I      &kp O     &kp P     &kp BSLH
+&kp ESC    &kp A      &kp S         &kp D     &kp F      &kp G   &none     &kp LGUI          &kp LCTRL      &kp RGUI   &kp RALT   &none      &kp H   &kp J   &kp K      &kp L     &kp SEMI  &kp SQT
+&kp LSHFT  &kp Z      &kp X         &kp C     &kp V      &kp B                               &kp HOME       &kp PG_UP                        &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
 &mo 2      &kp GRAVE  &kp CAPSLOCK  &kp LEFT  &kp RIGHT          &kp BSPC  &hyper_del 0 DEL  &kp END        &kp PG_DN  &kp ENTER  &kp SPACE          &kp UP  &kp DOWN   &kp LBKT  &kp RBKT  &mo 2
             >;
         };
