@@ -40,8 +40,8 @@
         default_layer {
             bindings = <
 &kp EQUAL         &kp N1     &kp N2     &kp N3    &kp N4     &kp N5  &kp F7                                                                                                  &mo 2       &kp N6  &kp N7    &kp N8        &kp N9    &kp N0         &kp MINUS
-&hm TAB LEFT_ALT  &kp Q      &kp W      &kp E     &kp R      &kp T   &mo 1                                                                                                   &mo 1       &kp Y   &kp U     &kp I         &kp O     &kp P          &hm BSLH RIGHT_ALT
-&mt LCTRL ESC     &kp A      &kp S      &kp D     &kp F      &kp G   &kp F8    &kp LEFT_GUI  &mt LEFT_ALT ENTER                &kp RIGHT_ALT                  &kp RIGHT_GUI  &caps_word  &kp H   &kp J     &kp K         &kp L     &kp SEMICOLON  &hm RIGHT_CONTROL SQT
+&mt TAB LEFT_ALT  &kp Q      &kp W      &kp E     &kp R      &kp T   &mo 1                                                                                                   &mo 1       &kp Y   &kp U     &kp I         &kp O     &kp P          &mt BSLH RIGHT_ALT
+&mt LCTRL ESC     &kp A      &kp S      &kp D     &kp F      &kp G   &kp F8    &kp LEFT_GUI  &mt LEFT_ALT ENTER                &kp RIGHT_ALT                  &kp RIGHT_GUI  &caps_word  &kp H   &kp J     &kp K         &kp L     &kp SEMICOLON  &mt RIGHT_CONTROL SQT
 &kp LSHFT         &kp Z      &kp X      &kp C     &kp V      &kp B                           &mt LEFT_CONTROL C_VOLUME_UP      &mt RIGHT_CONTROL C_VOLUME_UP                             &kp N   &kp M     &kp COMMA     &kp DOT   &kp FSLH       &kp RSHFT
 &mt LEFT_ALT F9   &kp GRAVE  &kp UNDER  &kp LEFT  &kp RIGHT          &kp BSPC  &kp DELETE    &kp C_VOLUME_DOWN                 &kp C_VOLUME_DOWN              &kp ENTER      &kp SPACE           &kp DOWN  &kp UP_ARROW  &kp LBKT  &kp RBKT       &mt RIGHT_ALT F1
             >;
