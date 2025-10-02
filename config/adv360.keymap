@@ -49,11 +49,11 @@
 
         Functionality {
             bindings = <
-&none   &kp F1  &kp F2                    &kp F3  &kp F4  &kp F5      &trans                                             &trans  &kp F6             &kp F7                &kp F8                    &kp F9                 &kp F10  &none
-&trans  &trans  &trans                    &trans  &trans  &bl BL_INC  &trans                                             &trans  &kp C_VOLUME_UP    &trans                &trans                    &trans                 &trans   &trans
-&trans  &trans  &kp RG(LS(LC(NUMBER_4)))  &trans  &trans  &bl BL_DEC  &trans  &trans  &trans             &trans  &trans  &trans  &kp C_VOLUME_DOWN  &kp C_PREVIOUS        &kp C_PLAY_PAUSE          &kp C_NEXT             &trans   &trans
-&trans  &trans  &trans                    &trans  &trans  &trans                      &trans             &trans                  &trans             &kp LA(LC(LG(LEFT)))  &kp LA(LC(LG(C)))         &kp LA(LC(LG(RIGHT)))  &trans   &trans
-&trans  &trans  &trans                    &trans  &trans              &trans  &trans  &kp RG(LC(Q))      &trans  &trans  &trans                     &kp LC(LA(LG(DOWN)))  &kp LC(LA(LG(UP_ARROW)))  &trans                 &trans   &trans
+&none   &kp F1  &kp F2                    &kp F3  &kp F4  &kp F5      &trans                                             &trans  &kp F6                    &kp F7                &kp F8                    &kp F9                     &kp F10  &none
+&trans  &trans  &trans                    &trans  &trans  &bl BL_INC  &trans                                             &trans  &kp C_VOLUME_UP           &kp C_PREV            &kp C_PAUSE               &kp C_NEXT                 &trans   &trans
+&trans  &trans  &kp RG(LS(LC(NUMBER_4)))  &trans  &trans  &bl BL_DEC  &trans  &trans  &trans             &trans  &trans  &trans  &kp C_VOLUME_DOWN         &kp LA(LC(LG(LEFT)))  &kp LA(LC(LG(C)))         &kp LA(LC(LG(RIGHT)))      &trans   &trans
+&trans  &trans  &trans                    &trans  &trans  &trans                      &trans             &trans                  &kp LS(LA(LC(LG(LEFT))))  &kp LA(LC(LG(P)))     &kp LA(LC(LG(R)))         &kp LA(LC(LG(LS(RIGHT))))  &trans   &trans
+&trans  &trans  &trans                    &trans  &trans              &trans  &trans  &kp RG(LC(Q))      &trans  &trans  &trans                            &kp LC(LA(LG(DOWN)))  &kp LC(LA(LG(UP_ARROW)))  &trans                     &trans   &trans
             >;
         };
 
