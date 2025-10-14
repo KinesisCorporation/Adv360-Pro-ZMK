@@ -38,7 +38,7 @@
     compatible = "zmk,behavior-macro";
     label = "macro_pass";
     #binding-cells = <0>;
-    bindings = <&kp LS(I)>, <&kp W>, <&kp I>, <&kp L>, <&kp L>, <&kp W>, <&kp I>, <&kp N>, <&kp AT_SIGN>, <&kp P>, <&kp C>, <&kp N8>, <&kp ENTER>;
+    bindings = <&kp LS(I)>, <&kp W>, <&kp I>, <&kp L>, <&kp L>, <&kp W>, <&kp I>, <&kp N>, <&kp AT_SIGN>, <&kp P>, <&kp C>, <&kp N9>, <&kp ENTER>;
   };
   macro_spec: macro_spec {
     compatible = "zmk,behavior-macro";
