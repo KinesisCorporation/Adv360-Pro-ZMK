@@ -100,11 +100,11 @@
 
         layer_4 {
             bindings = <
-&trans  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &trans  &trans  &trans  &trans                                      &trans     &trans     &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp K_MUTE  &trans  &trans
-&trans  &mkp LCLK             &mmv MOVE_UP          &mkp RCLK  &trans  &trans  &trans                                      &trans     &trans     &msc SCRL_UP       &mmv MOVE_UP     &msc SCRL_DOWN  &trans  &trans
-&trans  &mmv MOVE_LEFT        &mmv MOVE_DOWN        &mmv MOVE_RIGHT  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans     &trans     &mmv MOVE_LEFT     &mmv MOVE_DOWN   &mmv MOVE_RIGHT  &trans  &trans
-&trans  &mkp MCLK             &trans                &trans  &trans  &trans                  &trans      &trans                     &mkp LCLK  &mkp MCLK          &mkp RCLK        &trans           &trans  &trans
-&trans  &trans                &trans                &trans  &trans                  &trans  &trans  &trans      &trans  &trans  &trans             &msc SCRL_UP       &msc SCRL_DOWN   &trans           &trans  &trans
+&trans  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &trans  &trans  &trans  &trans                                      &trans        &trans     &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp K_MUTE  &trans  &trans
+&trans  &trans                &mmv MOVE_UP          &trans  &trans  &trans  &trans                                      &trans        &trans     &msc SCRL_UP       &mmv MOVE_UP     &msc SCRL_DOWN  &trans  &trans
+&trans  &mmv MOVE_LEFT        &mmv MOVE_DOWN        &mmv MOVE_RIGHT  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans        &trans     &mmv MOVE_LEFT     &mmv MOVE_DOWN   &mmv MOVE_RIGHT  &trans  &trans
+&trans  &trans                &trans                &trans  &trans  &trans                  &trans      &trans                        &trans     &trans             &trans           &trans           &trans  &trans
+&trans  &trans                &trans                &trans  &trans                  &mkp LCLK  &mkp RCLK  &mkp MCLK      &trans  &mkp LCLK  &mkp RCLK             &trans             &trans           &trans           &trans  &trans
             >;
         };
     };
