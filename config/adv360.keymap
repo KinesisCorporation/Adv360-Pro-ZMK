@@ -61,10 +61,10 @@
         default_layer {
             bindings = <
 &kp EQUAL          &kp N1     &kp N2        &kp N3    &kp N4     &kp N5  &tog 1                                                           &mo 3      &kp N6  &kp N7  &kp N8     &kp N9    &kp N0    &kp MINUS
-&kp TAB            &kp Q      &kp W         &kp E     &kp R      &kp T   &none                                                            &mo 4      &kp Y   &kp U   &kp I      &kp O     &kp P     &kp BSLH
+&kp TAB            &kp Q      &kp W         &kp E     &kp R      &kp T   &mo 2                                                            &mo 4      &kp Y   &kp U   &kp I      &kp O     &kp P     &kp BSLH
 &mt RS(TILDE) ESC  &kp A      &kp S         &kp D     &kp F      &kp G   &none     &kp LGUI          &kp ENTER      &kp RGUI   &kp RALT   &none      &kp H   &kp J   &kp K      &kp L     &kp SEMI  &kp SQT
 &kp LSHFT          &kp Z      &kp X         &kp C     &kp V      &kp B                               &kp HOME       &kp PG_UP                        &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
-&mo 2              &kp GRAVE  &kp CAPSLOCK  &kp LEFT  &kp RIGHT          &kp BSPC  &hyper_del 0 DEL  &kp END        &kp PG_DN  &kp SPACE  &kp RCTRL          &kp UP  &kp DOWN   &kp LBKT  &kp RBKT  &mo 2
+&kp LCTRL          &kp GRAVE  &kp CAPSLOCK  &kp LEFT  &kp RIGHT          &kp BSPC  &hyper_del 0 DEL  &kp END        &kp PG_DN  &kp SPACE  &kp RCTRL          &kp UP  &kp DOWN   &kp LBKT  &kp RBKT  &kp LCTRL
             >;
         };
 
