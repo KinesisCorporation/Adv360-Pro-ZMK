@@ -15,6 +15,7 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/rgb.h>
+#include <dt-bindings/zmk/mouse.h>
 
 / {
     behaviors {
@@ -99,11 +100,11 @@
 
         layer_4 {
             bindings = <
-&trans  &trans             &trans  &trans                &trans  &trans                &trans                                      &trans  &trans  &trans      &trans  &trans           &trans  &trans
-&trans  &kp C_VOLUME_DOWN  &trans  &trans                &trans  &trans                &trans                                      &trans  &trans  &trans      &trans  &trans           &trans  &trans
-&trans  &trans             &trans  &kp C_BRIGHTNESS_DEC  &trans  &trans                &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans      &trans  &kp C_VOLUME_UP  &trans  &trans
-&trans  &trans             &trans  &trans                &trans  &kp C_BRIGHTNESS_INC                  &trans      &trans                  &trans  &kp K_MUTE  &trans  &trans           &trans  &trans
-&trans  &trans             &trans  &trans                &trans                        &trans  &trans  &trans      &trans  &trans  &trans          &trans      &trans  &trans           &trans  &trans
+&trans  &trans             &trans         &trans                &trans         &trans                &trans                                      &trans     &trans     &trans         &trans         &trans           &trans  &trans
+&trans  &kp C_VOLUME_DOWN  &mmv MOVE_UP   &trans                &trans         &trans                &trans                                      &trans     &trans     &trans         &mmv MOVE_UP   &trans           &trans  &trans
+&trans  &mmv MOVE_LEFT     &mmv MOVE_DOWN &kp C_BRIGHTNESS_DEC  &mmv MOVE_RIGHT &trans                &trans  &trans  &trans      &trans  &trans  &trans     &trans     &mmv MOVE_LEFT &mmv MOVE_DOWN &kp C_VOLUME_UP  &mmv MOVE_RIGHT &trans
+&trans  &trans             &trans         &trans                &trans         &kp C_BRIGHTNESS_INC                  &trans      &trans                     &mkp LCLK  &kp K_MUTE     &mkp RCLK      &trans           &trans  &trans
+&trans  &trans             &trans         &trans                &trans                               &trans  &trans  &trans      &trans  &trans  &mkp MCLK          &msc SCRL_UP   &msc SCRL_DOWN &trans           &trans  &trans
             >;
         };
     };
