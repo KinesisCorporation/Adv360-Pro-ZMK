@@ -46,11 +46,11 @@
     #binding-cells = <0>;
     bindings = <&kp LC(B)>, <&kp LC(U)>, <&kp LS(S)>, <&kp C>, <&kp O>, <&kp P>, <&kp E>, <&kp COLON>, <&kp ENTER>, <&kp LC(B)>, <&kp LC(U)>, <&kp LS(LC(B))>, <&kp ENTER>, <&kp ENTER>, <&kp LC(B)>, <&kp LC(U)>, <&kp LS(D)>, <&kp E>, <&kp V>, <&kp SPACE>, <&kp LS(N)>, <&kp O>, <&kp T>, <&kp E>, <&kp S>, <&kp COLON>, <&kp ENTER>, <&kp LC(B)>, <&kp LC(U)>, <&kp LS(LC(B))>, <&kp UP>, <&kp UP>;
   };
-  macro_gpt: macro_gpt {
+  macro_python_comment: macro_python_comment {
     compatible = "zmk,behavior-macro";
-    label = "macro_gpt";
+    label = "macro_python_comment";
     #binding-cells = <0>;
-    bindings = <&kp GRAVE>, <&kp GRAVE>, <&kp GRAVE>, <&kp LS(ENTER)>, <&kp LS(ENTER)>, <&kp LS(ENTER)>, <&kp GRAVE>, <&kp GRAVE>, <&kp GRAVE>, <&kp UP>, <&kp UP>;
+    bindings = <&kp DQT>, <&kp DQT>, <&kp DQT>, <&kp ENTER>, <&kp ENTER>, <&kp DQT>, <&kp DQT>, <&kp DQT>, <&kp UP>;
   };
   macro_select_star: macro_select_star {
     compatible = "zmk,behavior-macro";
@@ -94,6 +94,34 @@
     wait-ms = <50>;
     #binding-cells = <0>;
     bindings = <&kp PERIOD>, <&kp L>, <&kp E>, <&kp A>, <&kp D>, <&kp SPACE>, <&kp A>, <&kp C>, <&kp ENTER>, <&kp A>, <&kp N>, <&kp S>, <&kp H>, <&kp SPACE>, <&kp D>, <&kp DOWN>, <&kp ENTER>, <&kp ENTER>;
+  };
+  macro_next_line: macro_next_line {
+    compatible = "zmk,behavior-macro";
+    label = "macro_next_line";
+    wait-ms = <20>;
+    #binding-cells = <0>;
+    bindings = <&kp END>, <&kp ENTER>;
+  };
+  macro_up: macro_up {
+    compatible = "zmk,behavior-macro";
+    label = "macro_up";
+    wait-ms = <20>;
+    #binding-cells = <0>;
+    bindings = <&kp UP>, <&kp UP>, <&kp UP>, <&kp UP>, <&kp UP>;
+  };
+  macro_down: macro_down {
+    compatible = "zmk,behavior-macro";
+    label = "macro_down";
+    wait-ms = <20>;
+    #binding-cells = <0>;
+    bindings = <&kp DOWN>, <&kp DOWN>, <&kp DOWN>, <&kp DOWN>, <&kp DOWN>;
+  };
+  macro_python_class: macro_python_class {
+    compatible = "zmk,behavior-macro";
+    label = "macro_python_class";
+    wait-ms = <50>;
+    #binding-cells = <0>;
+    bindings = <&kp D>, <&kp E>, <&kp F>, <&kp SPACE>, <&kp UNDER>, <&kp UNDER>, <&kp I>, <&kp N>, <&kp I>, <&kp T>, <&kp UNDER>, <&kp UNDER>, <&kp LPAR>, <&kp RPAR>, <&kp LEFT>, <&kp S>, <&kp E>, <&kp L>, <&kp F>, <&kp RIGHT>, <&kp COLON>, <&kp ENTER>, <&kp S>, <&kp E>, <&kp L>, <&kp F>;
   };
   win_double_tap: win_double_tap {
     compatible = "zmk,behavior-macro-one-param";
