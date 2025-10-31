@@ -123,6 +123,13 @@
     #binding-cells = <0>;
     bindings = <&kp D>, <&kp E>, <&kp F>, <&kp SPACE>, <&kp UNDER>, <&kp UNDER>, <&kp I>, <&kp N>, <&kp I>, <&kp T>, <&kp UNDER>, <&kp UNDER>, <&kp LPAR>, <&kp RPAR>, <&kp LEFT>, <&kp S>, <&kp E>, <&kp L>, <&kp F>, <&kp RIGHT>, <&kp COLON>, <&kp ENTER>, <&kp S>, <&kp E>, <&kp L>, <&kp F>;
   };
+  macro_return: macro_return {
+    compatible = "zmk,behavior-macro";
+    label = "macro_return";
+    wait-ms = <20>;
+    #binding-cells = <0>;
+    bindings = <&kp R>, <&kp E>, <&kp T>, <&kp U>, <&kp R>, <&kp N>, <&kp SPACE>;
+  };
   win_double_tap: win_double_tap {
     compatible = "zmk,behavior-macro-one-param";
     label = "WIN_DOUBLE_TAP";
