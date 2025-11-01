@@ -64,7 +64,7 @@
       bindings = <
         &trans &kp F1                 &kp F2      &kp F3             &kp F4                   &kp F5                   &tog 1                                          &mo 3                &kp F6 &kp F7              &kp F8                &kp F9           &kp F10      &kp F11
         &trans &trans                 &trans      &trans             &macro_log_time_research &macro_log_time_meeting  &none                                           &kp C_BRIGHTNESS_INC &trans &trans              &macro_python_class   &kp LC(LA(DEL))  &macro_pass  &kp F12
-        &trans &macro_lead_acceptance &macro_spec &trans             &trans                   &trans                   &none        &trans &trans &trans &trans        &kp C_BRIGHTNESS_DEC &trans &trans              &trans                &trans           &trans       &kp F13
+        &trans &macro_lead_acceptance &macro_spec &macro_debug       &trans                   &trans                   &none        &trans &trans &trans &trans        &kp C_BRIGHTNESS_DEC &trans &trans              &trans                &trans           &trans       &kp F13
         &trans &trans                 &trans      &macro_log_time_cr &trans                   &trans                                       &trans &trans                                    &trans &macro_log_time_mgt &trans                &trans           &trans       &trans
         &trans &trans                 &trans      &trans             &trans                                                  &trans &trans &trans &trans &trans &trans                             &trans              &trans                &trans           &trans       &trans
       >;
