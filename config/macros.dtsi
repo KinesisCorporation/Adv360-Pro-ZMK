@@ -135,7 +135,7 @@
     label = "macro_debug";
     wait-ms = <20>;
     #binding-cells = <0>;
-    bindings = <&kp P>, <&kp R>, <&kp I>, <&kp N>, <&kp T>, <&kp KP_LPAR>, <&kp DQT>, <&kp H>, <&kp E>, <&kp L>, <&kp L>, <&kp O>, <&kp DQT>, <&kp COMMA>, <&kp SPACE>, <&kp LBRC>, <&kp K>, <&k COLON>, <&kp SPACE>, <&kp V>, <&kp F>, <&kp O>, <&kp R>, <&kp SPACE>, <&kp K>, <&kp COMMA>, <&kp V>, <&kp SPACE>, <&kp I>, <&kp N>, <&kp SPACE>, <&kp L>, <&kp O>, <&kp C>, <&kp A>, <&kp L>, <&kp S>, <&kp LPAR>, <&kp RPAR>, <&kp PERIOD>, <&kp I>, <&kp T>, <&kp E>, <&kp M>, <&kp S>, <&kp LPAR>, <&kp RPAR>, <&kp SPACE>, <&kp I>, <&kp F>, <&kp SPACE>, <&kp K>, <&kp SPACE>, <&kp EXCL>, <&kp KP_EQUAL>, <&kp SPACE>, <&kp DQT>, <&kp S>, <&kp E>, <&kp L>, <&kp F>, <&kp DQT>, <&kp RBRC>, <&kp RPAR>;
+    bindings = <&kp P>, <&kp R>, <&kp I>, <&kp N>, <&kp T>, <&kp LPAR>, <&kp DQT>, <&kp H>, <&kp E>, <&kp L>, <&kp L>, <&kp O>, <&kp DQT>, <&kp COMMA>, <&kp SPACE>, <&kp LBRC>, <&kp K>, <&kp COLON>, <&kp SPACE>, <&kp V>, <&kp F>, <&kp O>, <&kp R>, <&kp SPACE>, <&kp K>, <&kp COMMA>, <&kp V>, <&kp SPACE>, <&kp I>, <&kp N>, <&kp SPACE>, <&kp L>, <&kp O>, <&kp C>, <&kp A>, <&kp L>, <&kp S>, <&kp LPAR>, <&kp RPAR>, <&kp PERIOD>, <&kp I>, <&kp T>, <&kp E>, <&kp M>, <&kp S>, <&kp LPAR>, <&kp RPAR>, <&kp SPACE>, <&kp I>, <&kp F>, <&kp SPACE>, <&kp K>, <&kp SPACE>, <&kp EXCL>, <&kp KP_EQUAL>, <&kp SPACE>, <&kp DQT>, <&kp S>, <&kp E>, <&kp L>, <&kp F>, <&kp DQT>, <&kp RBRC>, <&kp RPAR>;
   };
   win_double_tap: win_double_tap {
     compatible = "zmk,behavior-macro-one-param";
