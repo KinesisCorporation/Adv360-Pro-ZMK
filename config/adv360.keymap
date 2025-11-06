@@ -15,9 +15,10 @@
           compatible = "zmk,behavior-hold-tap";
           label = "HOMEROW_MODS";
           #binding-cells = <2>;
+          flavor = "balanced";          // better for HRMs than tap-preferred
           tapping-term-ms = <200>;
-          quick_tap_ms = <175>;
-          flavor = "tap-preferred";
+          quick-tap-ms = <175>;         // <-- hyphens here
+          hold-trigger-on-release;      // improves same-hand chords
           bindings = <&kp>, <&kp>;
       };
     };
