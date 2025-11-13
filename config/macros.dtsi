@@ -63,7 +63,7 @@
     label = "macro_log_time";
     #binding-cells = <0>;
     wait-ms = <50>;
-    bindings = <&kp PERIOD>, <&kp L>, <&kp O>, <&kp G>, <&kp ENTER>, <&kp TAB>, <&kp TAB>, <&kp TAB>, <&kp TAB>, <&kp N1>, <&kp N5>, <&kp M>, <&kp LEFT>, <&kp LS(HOME)>;
+    bindings = <&kp PERIOD>, <&macro_wait_time 500>, <&kp L>, <&kp O>, <&kp G>, <&kp ENTER>, <&macro_wait_time 500>, <&kp TAB>, <&kp TAB>, <&kp TAB>, <&kp TAB>, <&kp N1>, <&kp N5>, <&kp M>, <&kp LEFT>, <&kp LS(HOME)>;
   };
   macro_log_time_mgt: macro_log_time_mgt {
     compatible = "zmk,behavior-macro";
