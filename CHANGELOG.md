@@ -94,7 +94,7 @@ Many thanks to all those who have submitted issues and pull requests to make thi
 
 10/11/2022 - Set manufacturer information over BLE [#28](https://github.com/KinesisCorporation/Adv360-Pro-ZMK/pull/28)
 
-10/9/2022 - Cleanup of keymap [#24](https://github.com/KinesisCorporation/Adv360-Pro-ZMK/pull/)
+10/9/2022 - Cleanup of keymap [#24](https://github.com/KinesisCorporation/Adv360-Pro-ZMK/pull/24)
 
 10/7/2022 - Add USB VID, PID and Manufacturer information to config files
 
