@@ -22,10 +22,6 @@
 
 / {
   behaviors {
-
-    #include "macros.dtsi"
-
-
     hml: homerow_mods_left {
         compatible = "zmk,behavior-hold-tap";
         label = "HOMEROW_MODS_LEFT";
@@ -83,6 +79,35 @@
         timeout-ms = <70>;
         key-positions = <36 52>;
         bindings = <&kp F13>;
+    };
+  };
+
+  macros {
+    macro_gaming_chat: macro_gaming_chat {
+      compatible = "zmk,behavior-macro";
+      label = "macro_gaming_chat";
+      #binding-cells = <0>;
+      bindings 
+        = <&macro_tap &kp RETURN &to 6>
+      ; 
+    };
+
+    macro_gaming_chat_disable: macro_gaming_chat_disable {
+      compatible = "zmk,behavior-macro";
+      label = "macro_gaming_chat_disable";
+      #binding-cells = <0>;
+      bindings 
+        = <&macro_tap &kp RETURN &to 5>
+      ; 
+    };
+    
+    macro_gaming_chat_esc: macro_gaming_chat_esc {
+      compatible = "zmk,behavior-macro";
+      label = "macro_gaming_chat_esc";
+      #binding-cells = <0>;
+      bindings 
+        = <&macro_tap &kp ESC &to 5>
+      ; 
     };
   };
 
