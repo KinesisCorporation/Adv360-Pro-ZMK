@@ -1,0 +1,46 @@
+/ {
+  combos {
+    compatible = "zmk,combos";
+
+    /* jk 同時押しで Esc */
+    esc_jk {
+      timeout-ms = <35>;
+      key-positions = <J K>;
+      bindings = <&kp ESC>;
+      layers = <1>;
+    };
+
+    /* df 同時押しで dd (行削除) */
+    dd_df {
+      timeout-ms = <35>;
+      key-positions = <D F>;
+      bindings = <&macro_dd>;
+      layers = <1>;
+    };
+
+    /* gh 同時押しで gg (ファイル先頭) */
+    gg_gh {
+      timeout-ms = <35>;
+      key-positions = <G H>;
+      bindings = <&macro_gg>;
+      layers = <1>;
+    };
+
+    /* ui 同時押しで iw (inside word) */
+    iw_ui {
+      timeout-ms = <35>;
+      key-positions = <U I>;
+      bindings = <&macro_iw>;
+      layers = <1>;
+    };
+
+    /* uo 同時押しで aw (around word) */
+    aw_uo {
+      timeout-ms = <35>;
+      key-positions = <U O>;
+      bindings = <&macro_aw>;
+      layers = <1>;
+    };
+  };
+};
+
