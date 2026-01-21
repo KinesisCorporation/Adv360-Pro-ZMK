@@ -4,6 +4,8 @@ Here's all notable changes and commits to both the configuration repo and the ba
 Many thanks to all those who have submitted issues and pull requests to make this firmware better!
 ## Config repo
 
+11/7/2025 - Update README, replacing outdated layout editing information with current options [#768](https://github.com/KinesisCorporation/Adv360-Pro-ZMK/pull/768)
+
 2/9/2025 - Minor changes to the local build process to improve local building experience, Remove preprocessor commands in keymap file [#643](https://github.com/KinesisCorporation/Adv360-Pro-ZMK/pull/643)
 
 2/6/2025 - Update base ZMK, add changes to support Kinesis Clique, update RGB parameters and enable pointing support [#630](https://github.com/KinesisCorporation/Adv360-Pro-ZMK/pull/630)
