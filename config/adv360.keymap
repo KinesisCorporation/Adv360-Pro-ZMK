@@ -20,6 +20,34 @@
           flavor = "tap-preferred";
           bindings = <&kp>, <&kp>;
       };
+
+      // Left-hand home row mods (timeless configuration)
+      hml: homerow_mods_left {
+          compatible = "zmk,behavior-hold-tap";
+          label = "HOMEROW_MODS_LEFT";
+          #binding-cells = <2>;
+          flavor = "balanced";
+          tapping-term-ms = <200>;
+          quick-tap-ms = <150>;
+          require-prior-idle-ms = <100>;
+          bindings = <&kp>, <&kp>;
+          hold-trigger-key-positions = <7 8 9 10 11 12 13 21 22 23 24 25 26 27 36 37 38 39 40 41 49 50 51 52 53 54 55 64 65 66 67 68 69 70 71>;
+          hold-trigger-on-release;
+      };
+
+      // Right-hand home row mods (timeless configuration)
+      hmr: homerow_mods_right {
+          compatible = "zmk,behavior-hold-tap";
+          label = "HOMEROW_MODS_RIGHT";
+          #binding-cells = <2>;
+          flavor = "balanced";
+          tapping-term-ms = <200>;
+          quick-tap-ms = <150>;
+          require-prior-idle-ms = <100>;
+          bindings = <&kp>, <&kp>;
+          hold-trigger-key-positions = <0 1 2 3 4 5 6 14 15 16 17 18 19 20 28 29 30 31 32 33 34 35 42 43 44 45 46 47 48 56 57 58 59 60 61 62 63>;
+          hold-trigger-on-release;
+      };
     };
 
   keymap {
@@ -28,11 +56,11 @@
     default_layer {
       display-name = "Base";
       bindings = <
-        &kp EQUAL &kp N1    &kp N2   &kp N3   &kp N4     &kp N5 &tog 1                                                           &mo 3 &kp N6 &kp N7 &kp N8    &kp N9   &kp N0   &kp MINUS
-        &kp TAB   &kp Q     &kp W    &kp E    &kp R      &kp T  &none                                                            &none &kp Y  &kp U  &kp I     &kp O    &kp P    &kp BSLH
-        &kp ESC   &kp A     &kp S    &kp D    &kp F      &kp G  &none           &kp LCTRL &kp LALT &kp LGUI  &kp RCTRL           &none &kp H  &kp J  &kp K     &kp L    &kp SEMI &kp SQT
-        &kp LSHFT &kp Z     &kp X    &kp C    &kp V      &kp B                            &kp HOME &kp PG_UP                           &kp N  &kp M  &kp COMMA &kp DOT  &kp FSLH &kp RSHFT
-        &mo 2     &kp GRAVE &kp CAPS &kp LEFT &kp RIGHT                &kp BSPC &kp DEL   &kp END  &kp PG_DN &kp ENTER &kp SPACE              &kp UP &kp DOWN  &kp LBKT &kp RBKT &mo 2
+        &kp EQUAL &kp N1    &kp N2   &kp N3   &kp N4           &kp N5 &tog 1                                                                    &mo 3     &kp N6 &kp N7          &kp N8          &kp N9          &kp N0             &kp MINUS
+        &kp TAB   &kp Q     &kp W    &kp E    &kp R            &kp T  &kp HOME                                                                  &kp PG_UP &kp Y  &kp U           &kp I           &kp O           &kp P              &kp LBKT
+        &kp ESC   &hml LALT A &hml LCTRL S &hml LSHFT D &hml LGUI F &kp G  &kp END    &kp LCTRL &kp LALT &kp LGUI  &kp RCTRL                     &kp PG_DN &kp H  &hmr RGUI J     &hmr RSHFT K    &hmr RCTRL L    &hmr RALT SEMI     &kp SQT
+        &sl 2     &kp Z     &kp X    &kp C    &kp V            &kp B                            &kp LALT &kp LGUI                                         &kp N  &kp M           &kp COMMA       &kp DOT         &kp FSLH           &sl 2
+        &kp LALT  &kp GRAVE &kp TAB  &none    &sl 4                          &kp BSPC &sl 2     &sl 5    &sl 2     &kp ENTER &kp SPACE                           &sl 2          &kp TAB         &kp LBKT        &kp RBKT           &sl 5
       >;
     };
     keypad {
@@ -46,13 +74,13 @@
       >;
     };
     fn {
-      display-name = "Fn";
+      display-name = "Sym";
       bindings = <
-        &kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp F6 &tog 1                                           &mo 3 &kp F7 &kp F8 &kp F9 &kp F10 &kp F11 &kp F12
-        &trans &trans &trans &trans &trans &trans  &none                                           &none &trans &trans &trans &trans  &trans  &trans
-        &trans &trans &trans &trans &trans &trans  &none        &trans &trans &trans &trans        &none &trans &trans &trans &trans  &trans  &trans
-        &trans &trans &trans &trans &trans &trans                      &trans &trans                     &trans &trans &trans &trans  &trans  &trans
-        &trans &trans &trans &trans &trans               &trans &trans &trans &trans &trans &trans              &trans &trans &trans  &trans  &trans
+        &kp F1    &kp F2    &kp F3     &kp F4     &kp F5       &kp F6 &tog 1                                                              &mo 3     &kp F7    &kp F8     &kp F9    &kp F10      &kp F11         &kp F12
+        &trans    &no_lbkt  &kp LS(N6) &kp LS(EQUAL) &kp LS(MINUS) &kp LS(N3) &none                                                       &none     &kp LS(N7) &kp LS(N1) &no_at    &no_bsls     &trans          &trans
+        &kp LGUI  &kp LS(N6) &kp LS(FSLH) &kp LS(RA(N8)) &no_rbrc  &no_lbrc &none    &kp LCTRL &kp LSHFT &kp LSHFT &kp LGUI               &none     &kp FSLH  &kp LS(N8) &kp LS(N9) &kp RA(N8)  &kp RA(N9)      &trans
+        &to 0     &trans    &trans     &no_pipe   &no_tilde    &kp LS(N5)                      &kp LSHFT &kp RSHFT                                  &no_dllr  &no_rbkt   &kp LS(N0) &kp MINUS   &trans          &to 0
+        &trans    &trans    &trans     &trans     &trans                      &trans &trans    &kp LALT  &trans    &kp LALT  &kp LSHFT                        &trans     &trans     &trans      &trans          &trans
       >;
     };
     mod {
@@ -65,14 +93,26 @@
         &none &none        &none        &none        &none                                       &none &none &none &none      &bl BL_TOG &rgb_ug RGB_TOG                                     &bl BL_INC   &bl BL_DEC   &none &none &none
       >;
     };
-    extra1 { 
-      display-name = "Red";    
-      status = "reserved";
+    fn2 { 
+      display-name = "Nav";    
+      bindings = <
+        &trans    &trans    &trans   &trans   &trans     &trans &trans                                                                  &trans    &trans       &trans      &trans      &trans       &trans          &trans
+        &trans    &trans    &trans   &trans   &trans     &trans &trans                                                                  &trans    &kp LG(N0)   &kp LG(N6)  &kp LG(N7)  &kp LG(N8)   &kp LG(N9)      &trans
+        &kp TAB   &kp LALT  &kp LEFT &kp UP   &kp DOWN   &kp RIGHT &trans  &kp LGUI  &kp LCTRL &kp RCTRL &kp LGUI                        &trans    &kp LG(N1)   &kp LG(N3)  &kp LG(N2)  &kp LG(N4)   &kp LG(N5)      &trans
+        &to 0     &trans    &trans   &trans   &trans     &trans                      &kp LSHFT &kp RSHFT                                          &trans       &trans      &trans      &trans       &trans          &to 0
+        &trans    &trans    &trans   &trans   &trans                      &none     &trans    &kp LALT  &kp RALT  &kp RSHFT &kp RSHFT                          &trans      &trans      &trans       &trans          &trans
+      >;
     };
 
-    extra2 { 
-      display-name = "Purple";    
-      status = "reserved";
+    fn3 { 
+      display-name = "Vim";    
+      bindings = <
+        &trans    &trans    &trans   &trans   &trans       &trans &trans                                                                    &trans    &trans     &trans     &trans     &trans       &trans          &trans
+        &trans    &trans    &trans   &trans   &trans       &trans &kp HOME                                                                  &trans    &trans     &trans     &trans     &trans       &trans          &trans
+        &kp TAB   &hml LALT A &hml LCTRL S &hml LSHFT D &sl 2 &trans &none  &kp LGUI  &kp LCTRL &kp RCTRL &kp LGUI                           &kp END   &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT    &trans          &trans
+        &to 0     &trans    &trans   &trans   &trans       &trans                    &kp LSHFT &kp LSHFT                                              &trans     &kp PG_DN  &kp PG_UP  &trans       &trans          &to 0
+        &trans    &trans    &trans   &trans   &trans                      &trans    &trans    &trans    &kp LALT  &trans    &trans                              &trans     &trans     &trans       &trans          &trans
+      >;
     };
 
     extra3 { 

@@ -222,3 +222,76 @@
     bindings = <&mkp MB1 &mkp MB1>;
     display-name = "Double Click";
   };
+
+  // Norwegian keyboard symbol macros for macOS
+  // [ = Option+8
+  no_lbkt: no_lbkt {
+    compatible = "zmk,behavior-macro";
+    label = "NO_LBKT";
+    #binding-cells = <0>;
+    bindings = <&kp RA(N8)>;
+  };
+
+  // ] = Option+9
+  no_rbkt: no_rbkt {
+    compatible = "zmk,behavior-macro";
+    label = "NO_RBKT";
+    #binding-cells = <0>;
+    bindings = <&kp RA(N9)>;
+  };
+
+  // { = Option+7
+  no_lbrc: no_lbrc {
+    compatible = "zmk,behavior-macro";
+    label = "NO_LBRC";
+    #binding-cells = <0>;
+    bindings = <&kp RA(N7)>;
+  };
+
+  // } = Option+0
+  no_rbrc: no_rbrc {
+    compatible = "zmk,behavior-macro";
+    label = "NO_RBRC";
+    #binding-cells = <0>;
+    bindings = <&kp RA(N0)>;
+  };
+
+  // | = Grave key on Norwegian
+  no_pipe: no_pipe {
+    compatible = "zmk,behavior-macro";
+    label = "NO_PIPE";
+    #binding-cells = <0>;
+    bindings = <&kp GRAVE>;
+  };
+
+  // \ = Option+Shift+7
+  no_bsls: no_bsls {
+    compatible = "zmk,behavior-macro";
+    label = "NO_BSLS";
+    #binding-cells = <0>;
+    bindings = <&kp RA(LS(N7))>;
+  };
+
+  // ~ = Shift+Grave (or Option+¨ on some layouts)
+  no_tilde: no_tilde {
+    compatible = "zmk,behavior-macro";
+    label = "NO_TILDE";
+    #binding-cells = <0>;
+    bindings = <&kp LS(GRAVE)>;
+  };
+
+  // @ = Option+' (apostrophe) on Norwegian macOS, or just RA(N2) might work
+  no_at: no_at {
+    compatible = "zmk,behavior-macro";
+    label = "NO_AT";
+    #binding-cells = <0>;
+    bindings = <&kp RA(N2)>;
+  };
+
+  // $ = Option+4
+  no_dllr: no_dllr {
+    compatible = "zmk,behavior-macro";
+    label = "NO_DLLR";
+    #binding-cells = <0>;
+    bindings = <&kp RA(N4)>;
+  };
