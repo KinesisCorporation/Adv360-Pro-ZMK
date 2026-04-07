@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Adv360 Pro Keymap Viewer</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  background: #1a1a2e;
+  color: #dddddd;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  padding: 20px;
+}
+h1 { text-align: center; margin-bottom: 10px; font-size: 1.4em; color: #aaaacc; }
+.tabs {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+.tab {
+  padding: 8px 20px;
+  border: 1px solid #444;
+  border-radius: 6px;
+  background: #2a2a4a;
+  color: #aaa;
+  cursor: pointer;
+  font-size: 14px;
+  user-select: none;
+}
+.tab:hover { background: #3a3a5a; color: #ddd; }
+.tab.active { background: #553366; border-color: #885599; color: #dda0dd; }
+.hint { text-align: center; color: #555; font-size: 12px; margin-bottom: 12px; }
+.svg-container {
+  display: flex;
+  justify-content: center;
+  overflow: auto;
+}
+.legend {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 20px;
+  padding: 12px;
+  border-top: 1px solid #333;
+}
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  color: #999;
+}
+.legend-swatch {
+  width: 16px;
+  height: 16px;
+  border-radius: 3px;
+  border: 1px solid;
+}
+.tooltip {
+  position: fixed;
+  background: #2a2a3e;
+  border: 1px solid #555;
+  border-radius: 6px;
+  padding: 8px 12px;
+  font-size: 12px;
+  color: #ccc;
+  pointer-events: none;
+  z-index: 1000;
+  max-width: 300px;
+  display: none;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+}
+.tt-title { font-weight: bold; color: #eee; margin-bottom: 4px; }
+.tt-row { margin: 2px 0; }
+.tt-row span { color: #aaa; }
+.tt-detail { margin-top: 4px; padding-top: 4px; border-top: 1px solid #444; color: #999; font-size: 11px; }
+.key:hover rect { filter: brightness(1.3); }
+</style>
+</head>
+<body>
+<h1>Kinesis Advantage 360 Pro — Keymap</h1>
+<div class="tabs" id="tabs"></div>
+<div class="hint">Press 1–4 to switch layers</div>
+<div class="svg-container" id="svg-container"></div>
+<div class="legend" id="legend"></div>
+<div class="tooltip" id="tooltip"></div>
+
+<script>
+// === Physical layout from info.json ===
+const LAYOUT = [
+  { x: 0, y: 0.25, w: 1.25 },
+  { x: 1.25, y: 0.25 },
+  { x: 2.25, y: 0 },
+  { x: 3.25, y: 0 },
+  { x: 4.25, y: 0 },
+  { x: 5.25, y: 0 },
+  { x: 6.25, y: 0 },
+  { x: 10.75, y: 0 },
+  { x: 11.75, y: 0 },
+  { x: 12.75, y: 0 },
+  { x: 13.75, y: 0 },
+  { x: 14.75, y: 0 },
+  { x: 15.75, y: 0.25 },
+  { x: 16.75, y: 0.25, w: 1.25 },
+
+  { x: 0, y: 1.25, w: 1.25 },
+  { x: 1.25, y: 1.25 },
+  { x: 2.25, y: 1 },
+  { x: 3.25, y: 1 },
+  { x: 4.25, y: 1 },
+  { x: 5.25, y: 1 },
+  { x: 6.25, y: 1 },
+  { x: 10.75, y: 1 },
+  { x: 11.75, y: 1 },
+  { x: 12.75, y: 1 },
+  { x: 13.75, y: 1 },
+  { x: 14.75, y: 1 },
+  { x: 15.75, y: 1.25 },
+  { x: 16.75, y: 1.25, w: 1.25 },
+
+  { x: 0, y: 2.25, w: 1.25 },
+  { x: 1.25, y: 2.25 },
+  { x: 2.25, y: 2 },
+  { x: 3.25, y: 2 },
+  { x: 4.25, y: 2 },
+  { x: 5.25, y: 2 },
+  { x: 6.25, y: 2 },
+  { x: 6.75, y: 4, r: 15, rx: 5.25, ry: 4 },
+  { x: 7.75, y: 4, r: 15, rx: 5.25, ry: 4 },
+  { x: 9.25, y: 4, r: -15, rx: 12.75, ry: 4 },
+  { x: 10.25, y: 4, r: -15, rx: 12.75, ry: 4 },
+  { x: 10.75, y: 2 },
+  { x: 11.75, y: 2 },
+  { x: 12.75, y: 2 },
+  { x: 13.75, y: 2 },
+  { x: 14.75, y: 2 },
+  { x: 15.75, y: 2.25 },
+  { x: 16.75, y: 2.25, w: 1.25 },
+
+  { x: 0, y: 3.25, w: 1.25 },
+  { x: 1.25, y: 3.25 },
+  { x: 2.25, y: 3 },
+  { x: 3.25, y: 3 },
+  { x: 4.25, y: 3 },
+  { x: 5.25, y: 3 },
+  { x: 7.75, y: 5, r: 15, rx: 5.25, ry: 4 },
+  { x: 9.25, y: 5, r: -15, rx: 12.75, ry: 4 },
+  { x: 11.75, y: 3 },
+  { x: 12.75, y: 3 },
+  { x: 13.75, y: 3 },
+  { x: 14.75, y: 3 },
+  { x: 15.75, y: 3.25 },
+  { x: 16.75, y: 3.25, w: 1.25 },
+
+  { x: 0, y: 4.25, w: 1.25 },
+  { x: 1.25, y: 4.25 },
+  { x: 2.25, y: 4 },
+  { x: 3.25, y: 4 },
+  { x: 4.25, y: 4 },
+  { x: 5.75, y: 5, r: 15, rx: 5.25, ry: 4, h: 2 },
+  { x: 6.75, y: 5, r: 15, rx: 5.25, ry: 4, h: 2 },
+  { x: 7.75, y: 6, r: 15, rx: 5.25, ry: 4 },
+  { x: 9.25, y: 6, r: -15, rx: 12.75, ry: 4 },
+  { x: 10.25, y: 5, r: -15, rx: 12.75, ry: 4, h: 2 },
+  { x: 11.25, y: 5, r: -15, rx: 12.75, ry: 4, h: 2 },
+  { x: 12.75, y: 4 },
+  { x: 13.75, y: 4 },
+  { x: 14.75, y: 4 },
+  { x: 15.75, y: 4.25 },
+  { x: 16.75, y: 4.25, w: 1.25 }
+];
+
+// === Behavior definitions ===
+const BEHAVIORS = {
+  td_cwl: { type: 'td', name: 'Caps Word / Lock', bindings: ['CapsWord', 'Caps'], desc: 'Tap: Caps Word, Double-tap: Caps Lock', tapping_term: 200 },
+  td_fn: { type: 'td', name: 'Fn Layer', bindings: ['sl 2', 'tog 2'], desc: 'Tap: Momentary Fn, Double-tap: Toggle Fn', tapping_term: 200 },
+  td_pp: { type: 'td', name: 'Play/Pause', bindings: ['Play/Pause', 'Next', 'Prev'], desc: 'Tap: Play/Pause, Double-tap: Next, Triple-tap: Prev', tapping_term: 200 },
+  ht: { type: 'ht', name: 'Hold-Tap', flavor: 'hold-preferred', tapping_term: 200, quick_tap: 175 },
+  skq: { type: 'sk', name: 'Sticky Key', release_after: 700, quick_release: true, ignore_modifiers: true }
+};
+
+// === ZMK code to label mapping ===
+const ZMK_LABELS = {
+  EQUAL: '=', MINUS: '-', BSLH: '\\', SQT: "'", SEMI: ';', FSLH: '/',
+  GRAVE: '` ~',
+  N1: '1', N2: '2', N3: '3', N4: '4', N5: '5', N6: '6', N7: '7', N8: '8', N9: '9', N0: '0',
+  LSHFT: 'LShift', RSHFT: 'RShift', LCTRL: 'LCtrl', RCTRL: 'RCtrl',
+  LGUI: 'GUI', RGUI: 'RGUI', LALT: 'LAlt', RALT: 'RAlt',
+  BSPC: 'Bksp', DEL: 'Del', ESC: 'Esc', CAPS: 'Caps',
+  TAB: 'Tab', SPACE: 'Space', ENTER: 'Enter', RET: 'Enter',
+  LEFT: '\u2190', RIGHT: '\u2192', UP: '\u2191', DOWN: '\u2193',
+  C_PLAY_PAUSE: 'Play/Pause', C_NEXT: 'Next', C_PREV: 'Prev',
+  C_VOL_UP: 'Vol+', C_VOL_DN: 'Vol-',
+  KP_NUM: 'NumLk', KP_EQUAL: 'KP=', KP_DIVIDE: 'KP/', KP_MULTIPLY: 'KP*',
+  KP_N0: 'KP0', KP_N1: 'KP1', KP_N2: 'KP2', KP_N3: 'KP3', KP_N4: 'KP4',
+  KP_N5: 'KP5', KP_N6: 'KP6', KP_N7: 'KP7', KP_N8: 'KP8', KP_N9: 'KP9',
+  KP_DOT: 'KP.', KP_ENTER: 'KPEnt', KP_MINUS: 'KP-', KP_PLUS: 'KP+',
+  PG_UP: 'PgUp', PG_DN: 'PgDn', HOME: 'Home', END: 'End',
+  COMMA: ',', DOT: '.', LBKT: '[', RBKT: ']',
+  LBRC: '{', RBRC: '}', LPAR: '(', RPAR: ')',
+  F1: 'F1', F2: 'F2', F3: 'F3', F4: 'F4', F5: 'F5', F6: 'F6',
+  F7: 'F7', F8: 'F8', F9: 'F9', F10: 'F10', F11: 'F11', F12: 'F12'
+};
+
+const MODIFIER_KEYS = new Set(['LSHFT','RSHFT','LCTRL','RCTRL','LALT','RALT','LGUI','RGUI']);
+const MEDIA_KEYS = new Set(['C_PLAY_PAUSE','C_NEXT','C_PREV','C_VOL_UP','C_VOL_DN']);
+
+function classify(code) {
+  if (MEDIA_KEYS.has(code)) return 'media';
+  if (MODIFIER_KEYS.has(code)) return 'mod';
+  return 'kp';
+}
+
+function zmkLabel(code) {
+  return ZMK_LABELS[code] || code;
+}
+
+// Check if a kp code is a Hyper combo: LC(LA(LS(LG(...))))
+function parseHyperCombo(code) {
+  const m = code.match(/^LC\(LA\(LS\(LG(?:UI)?\((.+)\)\)\)\)$/);
+  if (!m) {
+    const m2 = code.match(/^LC\(LA\(LS\(LGUI\)\)\)$/);
+    if (m2) return { isHyper: true, inner: null };
+    return { isHyper: false };
+  }
+  return { isHyper: true, inner: m[1] };
+}
+
+function parseLGCombo(code) {
+  const m = code.match(/^LG\((.+)\)$/);
+  if (!m) return null;
+  return m[1];
+}
+
+function resolveKpCode(code) {
+  // Check Hyper combos
+  const hyper = parseHyperCombo(code);
+  if (hyper.isHyper) {
+    if (hyper.inner === null) return { label: 'Hyper', type: 'mod' };
+    const innerLabel = zmkLabel(hyper.inner);
+    const shortLabels = { '\u2190': 'H\u2190', '\u2192': 'H\u2192', '\u2191': 'H\u2191', '\u2193': 'H\u2193',
+      'Enter': 'HEnt', '[': 'H[', ']': 'H]' };
+    return { label: shortLabels[innerLabel] || ('H' + innerLabel), type: 'kp' };
+  }
+  // Check LG() combos
+  const lgInner = parseLGCombo(code);
+  if (lgInner) {
+    return { label: '\u2318' + zmkLabel(lgInner), type: 'kp' };
+  }
+  return { label: zmkLabel(code), type: classify(code) };
+}
+
+// === Layer bindings ===
+// Each layer has exactly 76 bindings in the order matching LAYOUT
+
+function makeBinding(type, label, opts) {
+  return Object.assign({ type, label }, opts || {});
+}
+
+function kpBinding(code) {
+  const resolved = resolveKpCode(code);
+  return makeBinding(resolved.type, resolved.label);
+}
+
+function btBinding(label) {
+  return makeBinding('bt', label);
+}
+
+// Base layer (index 0)
+const BASE = [
+  // Row 0: 14 keys
+  kpBinding('EQUAL'), kpBinding('N1'), kpBinding('N2'), kpBinding('N3'), kpBinding('N4'), kpBinding('N5'),
+  makeBinding('layer', 'Tog Kp', { tooltip: 'Toggle Keypad layer' }),
+  makeBinding('layer', 'Mo Mod', { tooltip: 'Momentary Mod layer' }),
+  kpBinding('N6'), kpBinding('N7'), kpBinding('N8'), kpBinding('N9'), kpBinding('N0'), kpBinding('MINUS'),
+  // Row 1: 14 keys
+  kpBinding('TAB'), kpBinding('Q'), kpBinding('W'), kpBinding('E'), kpBinding('R'), kpBinding('T'),
+  makeBinding('td', 'CW/Caps', { ref: 'td_cwl', tooltip: BEHAVIORS.td_cwl.desc }),
+  makeBinding('none', ''),
+  kpBinding('Y'), kpBinding('U'), kpBinding('I'), kpBinding('O'), kpBinding('P'), kpBinding('BSLH'),
+  // Row 2: 18 keys (7 left + 2 left-thumb + 2 right-thumb + 7 right)
+  kpBinding('ESC'), kpBinding('A'), kpBinding('S'), kpBinding('D'), kpBinding('F'), kpBinding('G'),
+  kpBinding('GRAVE'),
+  kpBinding('LGUI'), kpBinding('LALT'),
+  kpBinding('RALT'), kpBinding('RGUI'),
+  makeBinding('td', 'Play', { ref: 'td_pp', tooltip: BEHAVIORS.td_pp.desc }),
+  kpBinding('H'), kpBinding('J'), kpBinding('K'), kpBinding('L'), kpBinding('SEMI'), kpBinding('SQT'),
+  // Row 3: 14 keys (6 left + 2 thumb + 6 right)
+  kpBinding('LSHFT'), kpBinding('Z'), kpBinding('X'), kpBinding('C'), kpBinding('V'), kpBinding('B'),
+  resolveKpCode('LG(V)').label === '\u2318V' ? makeBinding('kp', '\u2318V') : kpBinding('LG(V)'),
+  kpBinding('PG_UP'),
+  kpBinding('N'), kpBinding('M'), kpBinding('COMMA'), kpBinding('DOT'), kpBinding('FSLH'), kpBinding('RSHFT'),
+  // Row 4: 16 keys (5 left + 3 left-thumb + 3 right-thumb + 5 right)
+  makeBinding('td', 'Fn', { ref: 'td_fn', tooltip: BEHAVIORS.td_fn.desc }),
+  kpBinding('GRAVE'), kpBinding('GRAVE'), kpBinding('LEFT'), kpBinding('RIGHT'),
+  kpBinding('BSPC'),
+  makeBinding('ht', 'Del', { hold: 'LCtrl', tap: 'Del', tooltip: 'Hold: LCtrl, Tap: Del' }),
+  makeBinding('kp', '\u2318C'),
+  makeBinding('sk', 'Hyper', { stickyMod: 'Hyper', tooltip: 'Sticky Key: Hyper (Ctrl+Alt+Shift+GUI)' }),
+  makeBinding('ht', 'Enter', { hold: 'RCtrl', tap: 'Enter', tooltip: 'Hold: RCtrl, Tap: Enter' }),
+  kpBinding('SPACE'),
+  kpBinding('UP'), kpBinding('DOWN'), kpBinding('LBKT'), kpBinding('RBKT'),
+  makeBinding('td', 'Fn', { ref: 'td_fn', tooltip: BEHAVIORS.td_fn.desc })
+];
+
+// Keypad layer (index 1)
+const KEYPAD = [
+  // Row 0
+  kpBinding('EQUAL'), kpBinding('N1'), kpBinding('N2'), kpBinding('N3'), kpBinding('N4'), kpBinding('N5'),
+  makeBinding('trans', ''),
+  makeBinding('layer', 'Mo Mod', { tooltip: 'Momentary Mod layer' }),
+  kpBinding('N6'), kpBinding('KP_NUM'), kpBinding('KP_EQUAL'), kpBinding('KP_DIVIDE'), kpBinding('KP_MULTIPLY'), kpBinding('MINUS'),
+  // Row 1
+  kpBinding('TAB'), kpBinding('Q'), kpBinding('W'), kpBinding('E'), kpBinding('R'), kpBinding('T'),
+  makeBinding('none', ''),
+  makeBinding('none', ''),
+  kpBinding('Y'), kpBinding('KP_N7'), kpBinding('KP_N8'), kpBinding('KP_N9'), kpBinding('KP_MINUS'), kpBinding('BSLH'),
+  // Row 2
+  kpBinding('ESC'), kpBinding('A'), kpBinding('S'), kpBinding('D'), kpBinding('F'), kpBinding('G'),
+  makeBinding('none', ''),
+  kpBinding('LGUI'), kpBinding('LALT'),
+  kpBinding('RALT'), kpBinding('RGUI'),
+  makeBinding('none', ''),
+  kpBinding('H'), kpBinding('KP_N4'), kpBinding('KP_N5'), kpBinding('KP_N6'), kpBinding('KP_PLUS'), kpBinding('SQT'),
+  // Row 3
+  kpBinding('LSHFT'), kpBinding('Z'), kpBinding('X'), kpBinding('C'), kpBinding('V'), kpBinding('B'),
+  kpBinding('HOME'), kpBinding('PG_UP'),
+  kpBinding('N'), kpBinding('KP_N1'), kpBinding('KP_N2'), kpBinding('KP_N3'), kpBinding('KP_ENTER'), kpBinding('RSHFT'),
+  // Row 4
+  makeBinding('td', 'Fn', { ref: 'td_fn', tooltip: BEHAVIORS.td_fn.desc }),
+  kpBinding('GRAVE'), kpBinding('CAPS'), kpBinding('LEFT'), kpBinding('RIGHT'),
+  kpBinding('BSPC'), kpBinding('DEL'), kpBinding('END'),
+  kpBinding('PG_DN'), kpBinding('ENTER'), kpBinding('KP_N0'),
+  kpBinding('UP'), kpBinding('DOWN'), kpBinding('KP_DOT'), kpBinding('RBKT'),
+  makeBinding('td', 'Fn', { ref: 'td_fn', tooltip: BEHAVIORS.td_fn.desc })
+];
+
+// Fn layer (index 2)
+const FN = [
+  // Row 0
+  kpBinding('F11'), kpBinding('F1'), kpBinding('F2'), kpBinding('F3'), kpBinding('F4'), kpBinding('F5'),
+  makeBinding('layer', 'Tog Kp', { tooltip: 'Toggle Keypad layer' }),
+  makeBinding('layer', 'Mo Mod', { tooltip: 'Momentary Mod layer' }),
+  kpBinding('F6'), kpBinding('F7'), kpBinding('F8'), kpBinding('F9'), kpBinding('F10'), kpBinding('F12'),
+  // Row 1
+  makeBinding('trans', ''), makeBinding('trans', ''), makeBinding('trans', ''), makeBinding('trans', ''),
+  makeBinding('trans', ''), makeBinding('trans', ''),
+  makeBinding('none', ''),
+  makeBinding('media', 'Vol+'),
+  makeBinding('trans', ''),
+  kpBinding('LPAR'), kpBinding('RPAR'), kpBinding('MINUS'), kpBinding('EQUAL'), makeBinding('trans', ''),
+  // Row 2
+  makeBinding('trans', ''), makeBinding('trans', ''), makeBinding('trans', ''), makeBinding('trans', ''),
+  makeBinding('trans', ''), makeBinding('trans', ''),
+  makeBinding('none', ''),
+  makeBinding('trans', ''), makeBinding('trans', ''),
+  makeBinding('trans', ''), makeBinding('trans', ''),
+  makeBinding('media', 'Vol-'),
+  makeBinding('trans', ''),
+  kpBinding('LBKT'), kpBinding('RBKT'), kpBinding('LBRC'), kpBinding('RBRC'), makeBinding('trans', ''),
+  // Row 3
+  makeBinding('trans', ''), makeBinding('trans', ''), makeBinding('trans', ''), makeBinding('trans', ''),
+  makeBinding('trans', ''), makeBinding('trans', ''),
+  makeBinding('trans', ''), makeBinding('trans', ''),
+  makeBinding('trans', ''), makeBinding('trans', ''), makeBinding('trans', ''), makeBinding('trans', ''),
+  makeBinding('trans', ''), makeBinding('trans', ''),
+  // Row 4
+  makeBinding('trans', ''), makeBinding('trans', ''), makeBinding('trans', ''),
+  makeBinding('kp', 'H\u2190'), makeBinding('kp', 'H\u2192'),
+  makeBinding('trans', ''), makeBinding('trans', ''), makeBinding('trans', ''),
+  makeBinding('trans', ''),
+  makeBinding('kp', 'HEnt'), makeBinding('trans', ''),
+  makeBinding('kp', 'H\u2191'), makeBinding('kp', 'H\u2193'),
+  makeBinding('kp', 'H['), makeBinding('kp', 'H]'),
+  makeBinding('trans', '')
+];
+
+// Mod layer (index 3)
+const MOD = [
+  // Row 0
+  makeBinding('none', ''),
+  btBinding('BT 1'), btBinding('BT 2'), btBinding('BT 3'), btBinding('BT 4'), btBinding('BT 5'),
+  makeBinding('none', ''),
+  makeBinding('trans', ''),
+  makeBinding('none', ''), makeBinding('none', ''), makeBinding('none', ''), makeBinding('none', ''),
+  makeBinding('none', ''), makeBinding('none', ''),
+  // Row 1
+  makeBinding('none', ''),
+  makeBinding('none', ''), makeBinding('none', ''), makeBinding('none', ''), makeBinding('none', ''), makeBinding('none', ''),
+  makeBinding('sys', 'Boot'),
+  makeBinding('sys', 'Boot'),
+  makeBinding('none', ''), makeBinding('none', ''), makeBinding('none', ''), makeBinding('none', ''),
+  makeBinding('none', ''), makeBinding('none', ''),
+  // Row 2
+  makeBinding('sys', 'Studio'),
+  makeBinding('none', ''), makeBinding('none', ''), makeBinding('none', ''), makeBinding('none', ''), makeBinding('none', ''),
+  makeBinding('none', ''),
+  makeBinding('none', ''), makeBinding('none', ''),
+  btBinding('BT Clr'), makeBinding('none', ''),
+  makeBinding('sys', 'Battery'),
+  makeBinding('none', ''), makeBinding('none', ''), makeBinding('none', ''), makeBinding('none', ''),
+  makeBinding('none', ''), makeBinding('none', ''),
+  // Row 3
+  makeBinding('none', ''),
+  makeBinding('none', ''), makeBinding('none', ''), makeBinding('none', ''),
+  makeBinding('sys', 'Version'),
+  makeBinding('none', ''),
+  makeBinding('none', ''), makeBinding('none', ''),
+  makeBinding('none', ''), makeBinding('none', ''), makeBinding('none', ''), makeBinding('none', ''),
+  makeBinding('none', ''), makeBinding('none', ''),
+  // Row 4
+  makeBinding('none', ''),
+  makeBinding('none', ''), makeBinding('none', ''), makeBinding('none', ''), makeBinding('none', ''),
+  makeBinding('none', ''), makeBinding('none', ''), makeBinding('none', ''),
+  makeBinding('none', ''),
+  makeBinding('backlight', 'BL'), makeBinding('backlight', 'RGB'),
+  makeBinding('backlight', 'BL+'), makeBinding('backlight', 'BL-'),
+  makeBinding('none', ''), makeBinding('none', ''), makeBinding('none', '')
+];
+
+const LAYERS = [
+  { name: 'Base', bindings: BASE },
+  { name: 'Kp', bindings: KEYPAD },
+  { name: 'Fn', bindings: FN },
+  { name: 'Mod', bindings: MOD }
+];
+
+// === Color scheme ===
+const COLORS = {
+  kp:        { bg: '#2a2a4a', border: '#444444', text: '#dddddd' },
+  mod:       { bg: '#1a3a5a', border: '#2266aa', text: '#88bbee' },
+  layer:     { bg: '#553366', border: '#885599', text: '#dda0dd' },
+  td:        { bg: '#664422', border: '#886633', text: '#ffcc77' },
+  ht:        { bg: '#2a4a2a', border: '#448844', text: '#88cc88' },
+  sk:        { bg: '#1a4a4a', border: '#228888', text: '#88cccc' },
+  media:     { bg: '#4a2a4a', border: '#884488', text: '#cc88cc' },
+  trans:     { bg: '#222240', border: '#555555', text: '#666666' },
+  none:      { bg: '#1a1a2e', border: '#2a2a3e', text: '#333333' },
+  sys:       { bg: '#4a1a1a', border: '#aa2222', text: '#ee8888' },
+  bt:        { bg: '#1a3a4a', border: '#226688', text: '#88aacc' },
+  backlight: { bg: '#3a3a1a', border: '#666622', text: '#aaaa66' }
+};
+
+const TYPE_LABELS = {
+  kp: 'Regular', mod: 'Modifier', layer: 'Layer Switch', td: 'Tap-Dance',
+  ht: 'Hold-Tap', sk: 'Sticky Key', media: 'Media', trans: 'Transparent',
+  none: 'None', sys: 'System', bt: 'Bluetooth', backlight: 'Backlight'
+};
+
+const BADGE_MAP = { td: 'TD', ht: 'HT', sk: 'SK' };
+
+// === Transparent resolution ===
+function resolveTransparent(layerIdx, keyIdx) {
+  for (let l = layerIdx - 1; l >= 0; l--) {
+    const b = LAYERS[l].bindings[keyIdx];
+    if (b.type !== 'trans') return b;
+  }
+  return null;
+}
+
+// === SVG rendering ===
+const UNIT = 60;
+const GAP = 4;
+const RADIUS = 6;
+
+let currentLayer = 0;
+
+function getKeyRect(layout) {
+  const w = (layout.w || 1) * UNIT - GAP;
+  const h = (layout.h || 1) * UNIT - GAP;
+  const px = layout.x * UNIT + GAP / 2;
+  const py = layout.y * UNIT + GAP / 2;
+  return { x: px, y: py, w, h };
+}
+
+function computeViewBox() {
+  // We need to find the bounding box of all keys including rotated ones
+  let minX = Infinity, minY = Infinity, maxX = -Infinity, maxY = -Infinity;
+
+  LAYOUT.forEach(layout => {
+    const rect = getKeyRect(layout);
+    const corners = [
+      [rect.x, rect.y],
+      [rect.x + rect.w, rect.y],
+      [rect.x, rect.y + rect.h],
+      [rect.x + rect.w, rect.y + rect.h]
+    ];
+
+    if (layout.r) {
+      const cx = layout.rx * UNIT;
+      const cy = layout.ry * UNIT;
+      const rad = layout.r * Math.PI / 180;
+      corners.forEach(([px, py]) => {
+        const dx = px - cx;
+        const dy = py - cy;
+        const rx = dx * Math.cos(rad) - dy * Math.sin(rad) + cx;
+        const ry = dx * Math.sin(rad) + dy * Math.cos(rad) + cy;
+        minX = Math.min(minX, rx);
+        minY = Math.min(minY, ry);
+        maxX = Math.max(maxX, rx);
+        maxY = Math.max(maxY, ry);
+      });
+    } else {
+      corners.forEach(([px, py]) => {
+        minX = Math.min(minX, px);
+        minY = Math.min(minY, py);
+        maxX = Math.max(maxX, px);
+        maxY = Math.max(maxY, py);
+      });
+    }
+  });
+
+  const pad = 15;
+  return {
+    x: minX - pad,
+    y: minY - pad,
+    w: maxX - minX + 2 * pad,
+    h: maxY - minY + 2 * pad
+  };
+}
+
+function renderKey(binding, layout, keyIdx) {
+  const rect = getKeyRect(layout);
+  let effectiveBinding = binding;
+  let isResolved = false;
+
+  if (binding.type === 'trans') {
+    const resolved = resolveTransparent(currentLayer, keyIdx);
+    if (resolved) {
+      effectiveBinding = Object.assign({}, resolved, { type: 'trans' });
+      isResolved = true;
+    }
+  }
+
+  const colors = COLORS[binding.type] || COLORS.kp;
+  const label = isResolved ? effectiveBinding.label : binding.label;
+  const textColor = isResolved ? '#666666' : colors.text;
+  const dashAttr = binding.type === 'trans' ? ' stroke-dasharray="4 3"' : '';
+
+  let transform = '';
+  if (layout.r) {
+    const cx = layout.rx * UNIT;
+    const cy = layout.ry * UNIT;
+    transform = ` transform="rotate(${layout.r} ${cx} ${cy})"`;
+  }
+
+  const badge = BADGE_MAP[binding.type];
+  const hasTooltip = binding.tooltip;
+
+  let svg = `<g${transform} class="key" data-idx="${keyIdx}" style="cursor:${hasTooltip ? 'help' : 'default'}">`;
+  svg += `<rect x="${rect.x}" y="${rect.y}" width="${rect.w}" height="${rect.h}" rx="${RADIUS}" ry="${RADIUS}" fill="${colors.bg}" stroke="${colors.border}" stroke-width="1.5"${dashAttr}/>`;
+
+  // Main label
+  const fontSize = label && label.length > 5 ? 10 : (label && label.length > 3 ? 11 : 12);
+  const centerX = rect.x + rect.w / 2;
+  const centerY = rect.y + rect.h / 2;
+
+  if (binding.type === 'ht') {
+    // Hold-tap: main label (tap) centered slightly above, hold below
+    svg += `<text x="${centerX}" y="${centerY - 4}" text-anchor="middle" dominant-baseline="central" fill="${textColor}" font-size="${fontSize}px" font-family="sans-serif">${escapeHtml(binding.tap || label)}</text>`;
+    svg += `<text x="${centerX}" y="${centerY + 12}" text-anchor="middle" dominant-baseline="central" fill="${textColor}" font-size="8px" font-family="sans-serif" opacity="0.7">hold: ${escapeHtml(binding.hold || '')}</text>`;
+  } else if (label) {
+    svg += `<text x="${centerX}" y="${centerY}" text-anchor="middle" dominant-baseline="central" fill="${textColor}" font-size="${fontSize}px" font-family="sans-serif">${escapeHtml(label)}</text>`;
+  }
+
+  // Badge
+  if (badge) {
+    const bx = rect.x + rect.w - 14;
+    const by = rect.y + 10;
+    svg += `<text x="${bx}" y="${by}" text-anchor="middle" fill="${colors.text}" font-size="7px" font-family="sans-serif" opacity="0.6">${badge}</text>`;
+  }
+
+  svg += '</g>';
+  return svg;
+}
+
+function escapeHtml(s) {
+  return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+}
+
+function renderLayer(layerIdx) {
+  currentLayer = layerIdx;
+  const layer = LAYERS[layerIdx];
+  const vb = computeViewBox();
+
+  let svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="${vb.x} ${vb.y} ${vb.w} ${vb.h}" width="${vb.w * 1.0}" height="${vb.h * 1.0}" style="max-width:100%;">`;
+
+  for (let i = 0; i < LAYOUT.length; i++) {
+    svg += renderKey(layer.bindings[i], LAYOUT[i], i);
+  }
+
+  svg += '</svg>';
+  return svg;
+}
+
+function setLayer(idx) {
+  currentLayer = idx;
+  document.querySelectorAll('.tab').forEach((t, i) => {
+    t.classList.toggle('active', i === idx);
+  });
+  document.getElementById('svg-container').innerHTML = renderLayer(idx);
+  attachTooltips();
+}
+
+// === Tabs ===
+const tabsEl = document.getElementById('tabs');
+LAYERS.forEach((layer, i) => {
+  const tab = document.createElement('div');
+  tab.className = 'tab' + (i === 0 ? ' active' : '');
+  tab.textContent = `${layer.name} (${i + 1})`;
+  tab.addEventListener('click', () => setLayer(i));
+  tabsEl.appendChild(tab);
+});
+
+// === Legend ===
+const legendEl = document.getElementById('legend');
+Object.keys(COLORS).forEach(type => {
+  const item = document.createElement('div');
+  item.className = 'legend-item';
+  const swatch = document.createElement('div');
+  swatch.className = 'legend-swatch';
+  swatch.style.background = COLORS[type].bg;
+  swatch.style.borderColor = COLORS[type].border;
+  if (type === 'trans') swatch.style.borderStyle = 'dashed';
+  item.appendChild(swatch);
+  const text = document.createElement('span');
+  text.textContent = TYPE_LABELS[type];
+  item.appendChild(text);
+  legendEl.appendChild(item);
+});
+
+// === Tooltips ===
+const tooltipEl = document.getElementById('tooltip');
+
+function buildTooltipHtml(binding) {
+  if (binding.type === 'td' && binding.ref && BEHAVIORS[binding.ref]) {
+    const b = BEHAVIORS[binding.ref];
+    let html = `<div class="tt-title">${escapeHtml(b.name)}</div>`;
+    b.bindings.forEach((act, i) => {
+      const tapLabel = i === 0 ? 'Tap' : i === 1 ? 'Double-tap' : 'Triple-tap';
+      html += `<div class="tt-row"><span>${tapLabel}:</span> ${escapeHtml(act)}</div>`;
+    });
+    html += `<div class="tt-detail">Tapping term: ${b.tapping_term}ms</div>`;
+    return html;
+  }
+  if (binding.type === 'ht') {
+    const b = BEHAVIORS.ht;
+    let html = `<div class="tt-title">Hold-Tap</div>`;
+    html += `<div class="tt-row"><span>Hold:</span> ${escapeHtml(binding.hold)}</div>`;
+    html += `<div class="tt-row"><span>Tap:</span> ${escapeHtml(binding.tap || binding.label)}</div>`;
+    html += `<div class="tt-detail">Flavor: ${escapeHtml(b.flavor)}<br>Tapping term: ${b.tapping_term}ms<br>Quick-tap: ${b.quick_tap}ms</div>`;
+    return html;
+  }
+  if (binding.type === 'sk') {
+    const b = BEHAVIORS.skq;
+    let html = `<div class="tt-title">Sticky Key</div>`;
+    html += `<div class="tt-row"><span>Key:</span> ${escapeHtml(binding.stickyMod || binding.label)}</div>`;
+    html += `<div class="tt-detail">Release after: ${b.release_after}ms<br>Quick-release: ${b.quick_release ? 'yes' : 'no'}<br>Ignore modifiers: ${b.ignore_modifiers ? 'yes' : 'no'}</div>`;
+    return html;
+  }
+  return escapeHtml(binding.tooltip);
+}
+
+function attachTooltips() {
+  document.querySelectorAll('.key').forEach(g => {
+    const idx = parseInt(g.dataset.idx);
+    const binding = LAYERS[currentLayer].bindings[idx];
+    if (!binding.tooltip) return;
+
+    g.addEventListener('mouseenter', (e) => {
+      tooltipEl.innerHTML = buildTooltipHtml(binding);
+      tooltipEl.style.display = 'block';
+    });
+    g.addEventListener('mousemove', (e) => {
+      const tx = Math.min(e.clientX + 12, window.innerWidth - tooltipEl.offsetWidth - 10);
+      const ty = Math.min(e.clientY + 12, window.innerHeight - tooltipEl.offsetHeight - 10);
+      tooltipEl.style.left = tx + 'px';
+      tooltipEl.style.top = ty + 'px';
+    });
+    g.addEventListener('mouseleave', () => {
+      tooltipEl.style.display = 'none';
+    });
+  });
+}
+
+// === Keyboard shortcuts ===
+document.addEventListener('keydown', (e) => {
+  const n = parseInt(e.key);
+  if (n >= 1 && n <= 4) setLayer(n - 1);
+});
+
+// === Initial render ===
+setLayer(0);
+</script>
+</body>
+</html>
