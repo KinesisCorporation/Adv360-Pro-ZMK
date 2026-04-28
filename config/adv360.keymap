@@ -31,7 +31,7 @@
 &kp TAB         &kp Q      &kp W             &kp E     &kp R      &kp T   &none                                                                &none      &kp Y   &kp KP_N7   &kp KP_N8     &kp KP_N9      &kp KP_MINUS     &kp BSLH
 &kp LEFT_SHIFT  &kp A      &kp S             &kp D     &kp F      &kp G   &none     &kp LEFT_COMMAND  &kp CAPSLOCK       &kp LGUI  &kp DELETE  &none      &kp H   &kp KP_N4   &kp KP_N5     &kp KP_N6      &kp KP_PLUS      &kp SQT
 &kp CAPS        &kp Z      &kp X             &kp C     &kp V      &kp B                               &kp PAGE_UP        &kp HOME                         &kp N   &kp KP_N1   &kp KP_N2     &kp KP_N3      &kp KP_ENTER     &kp RSHFT
-&mo 1           &kp GRAVE  &kp LEFT_COMMAND  &kp LEFT  &kp RIGHT          &kp BSPC  &kp DEL           &kp PAGE_DOWN      &kp END   &kp ENTER   &kp SPACE          &kp UP      &kp DOWN      &kp KP_DOT     &kp RBKT         &mo 1
+&mo 4           &kp GRAVE  &kp LEFT_COMMAND  &kp LEFT  &kp RIGHT          &kp BSPC  &kp DEL           &kp PAGE_DOWN      &kp END   &kp ENTER   &kp SPACE          &kp UP      &kp DOWN      &kp KP_DOT     &kp RBKT         &mo 1
             >;
         };
 
