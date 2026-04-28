@@ -24,28 +24,6 @@
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
-            display-name = "Base";
-            bindings = <
-&kp EQUAL       &kp N1     &kp N2            &kp N3    &kp N4     &kp N5  &tog 0                                                               &mo 1      &kp N6  &kp N7  &kp N8     &kp N9    &kp N0    &kp MINUS
-&kp TAB         &kp Q      &kp W             &kp E     &kp R      &kp T   &none                                                                &none      &kp Y   &kp U   &kp I      &kp O     &kp P     &kp BSLH
-&kp LEFT_SHIFT  &kp A      &kp S             &kp D     &kp F      &kp G   &none     &kp LEFT_COMMAND  &kp CAPSLOCK       &kp LGUI  &kp DELETE  &none      &kp H   &kp J   &kp K      &kp L     &kp SEMI  &kp SQT
-&kp CAPSLOCK    &kp Z      &kp X             &kp C     &kp V      &kp B                               &kp PAGE_UP        &kp HOME                         &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
-&mo 0           &kp GRAVE  &kp LEFT_COMMAND  &kp LEFT  &kp RIGHT          &kp BSPC  &kp DEL           &kp PAGE_DOWN      &kp END   &kp ENTER   &kp SPACE          &kp UP  &kp DOWN   &kp LBKT  &kp RBKT  &mo 0
-            >;
-        };
-
-        fn {
-            display-name = "Fn";
-            bindings = <
-&kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6  &tog 0                                      &mo 1   &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
-&trans  &trans  &trans  &trans  &trans  &trans  &none                                       &none   &trans  &trans  &trans  &trans   &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &none   &trans  &trans      &trans  &trans  &none   &trans  &trans  &trans  &trans   &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans   &trans   &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans   &trans   &trans
-            >;
-        };
-
         mod {
             display-name = "Mod";
             bindings = <
@@ -54,6 +32,28 @@
 &studio_unlock  &none         &none         &none         &none         &none         &none        &none  &none      &bt BT_CLR  &none       &stp STP_BAT     &none  &none       &none       &none  &none  &none
 &none           &none         &none         &none         &macro_ver    &none                             &none      &none                                    &none  &none       &none       &none  &none  &none
 &none           &none         &none         &none         &none                       &none        &none  &none      &none       &bl BL_TOG  &rgb_ug RGB_TOG         &bl BL_INC  &bl BL_DEC  &none  &none  &none
+            >;
+        };
+
+        default_layer {
+            display-name = "Base";
+            bindings = <
+&kp EQUAL       &kp N1     &kp N2            &kp N3    &kp N4     &kp N5  &tog 1                                                               &mo 2      &kp N6  &kp N7  &kp N8     &kp N9    &kp N0    &kp MINUS
+&kp TAB         &kp Q      &kp W             &kp E     &kp R      &kp T   &none                                                                &none      &kp Y   &kp U   &kp I      &kp O     &kp P     &kp BSLH
+&kp LEFT_SHIFT  &kp A      &kp S             &kp D     &kp F      &kp G   &none     &kp LEFT_COMMAND  &kp CAPSLOCK       &kp LGUI  &kp DELETE  &none      &kp H   &kp J   &kp K      &kp L     &kp SEMI  &kp SQT
+&kp CAPSLOCK    &kp Z      &kp X             &kp C     &kp V      &kp B                               &kp PAGE_UP        &kp HOME                         &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
+&mo 1           &kp GRAVE  &kp LEFT_COMMAND  &kp LEFT  &kp RIGHT          &kp BSPC  &kp DEL           &kp PAGE_DOWN      &kp END   &kp ENTER   &kp SPACE          &kp UP  &kp DOWN   &kp LBKT  &kp RBKT  &mo 1
+            >;
+        };
+
+        fn {
+            display-name = "Fn";
+            bindings = <
+&kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6  &tog 1                                      &mo 1   &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
+&trans  &trans  &trans  &trans  &trans  &trans  &none                                       &none   &trans  &trans  &trans  &trans   &trans   &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &none   &trans  &trans      &trans  &trans  &none   &trans  &trans  &trans  &trans   &trans   &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans   &trans   &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans   &trans   &trans
             >;
         };
 
@@ -75,6 +75,16 @@
         extra4 {
             display-name = "Yellow";
             status = "reserved";
+        };
+
+        layer_7 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+            >;
         };
     };
 };
