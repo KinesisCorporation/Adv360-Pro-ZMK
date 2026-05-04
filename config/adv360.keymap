@@ -19,6 +19,13 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
+
+        macshot: macshot {
+            compatible = "zmk,behavior-tap-dance";
+            label = "MACSHOT";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LG(X))>, <&kp LS(LG(T))>;
+        };
     };
 
     macros {
@@ -67,11 +74,11 @@
         default_layer {
             display-name = "Base";
             bindings = <
-&kp EQUAL  &kp N1     &kp N2  &kp N3    &kp N4            &kp N5            &tog 1                                                                                                             &mo 3             &kp N6             &kp N7             &kp N8     &kp N9    &kp N0    &kp MINUS
-&kp TAB    &kp Q      &kp W   &kp E     &kp R             &kp T             &none                                                                                                              &none             &kp Y              &kp U              &kp I      &kp O     &kp P     &kp BSLH
-&kp ESC    &kp A      &kp S   &kp D     &hm LEFT_SHIFT F  &hm LEFT_SHIFT G  &none                       &kp LEFT_GUI  &mt LEFT_ALT SPACE            &kp RIGHT_CONTROL           &kp RIGHT_GUI  &kp C_PLAY_PAUSE  &hm RIGHT_SHIFT H  &hm RIGHT_SHIFT J  &kp K      &kp L     &kp SEMI  &kp SQT
-&kp LSHFT  &kp Z      &kp X   &kp C     &kp V             &kp B                                                       &kp HOME                      &kp PG_UP                                                    &kp N              &kp M              &kp COMMA  &kp DOT   &kp FSLH  &kp ENTER
-&mo 2      &kp GRAVE  &kp F8  &kp LEFT  &lt 4 RIGHT                         &mt LS(LC(LG(LALT))) ENTER  &kp DEL       &mt LS(LC(LG(LALT))) END      &mt RC(RS(RALT)) PAGE_DOWN  &kp BACKSPACE  &kp SPACE                            &kp UP             &kp DOWN   &kp LBKT  &kp RBKT  &kp RIGHT_SHIFT
+&kp EQUAL  &kp N1     &kp N2  &kp N3    &kp N4            &kp N5            &tog 1                                                                                                                                     &mo 3             &kp N6             &kp N7             &kp N8     &kp N9    &kp N0    &kp MINUS
+&kp TAB    &kp Q      &kp W   &kp E     &kp R             &kp T             &macshot                                                                                                                                   &none             &kp Y              &kp U              &kp I      &kp O     &kp P     &kp BSLH
+&kp ESC    &kp A      &kp S   &kp D     &hm LEFT_SHIFT F  &hm LEFT_SHIFT G  &none                       &kp LEFT_GUI  &kp LEFT_CONTROL                    &kp RIGHT_CONTROL           &kp RIGHT_GUI                    &kp C_PLAY_PAUSE  &hm RIGHT_SHIFT H  &hm RIGHT_SHIFT J  &kp K      &kp L     &kp SEMI  &kp SQT
+&kp LSHFT  &kp Z      &kp X   &kp C     &kp V             &kp B                                                       &mt LEFT_ALT SPACE                  &kp PG_UP                                                                      &kp N              &kp M              &kp COMMA  &kp DOT   &kp FSLH  &kp ENTER
+&mo 2      &kp GRAVE  &kp F8  &kp LEFT  &lt 4 RIGHT                         &mt LS(LC(LG(LALT))) ENTER  &kp DEL       &mt LS(LC(LG(LALT))) BACKSPACE      &mt RC(RS(RALT)) PAGE_DOWN  &mt RS(RC(RIGHT_ALT)) BACKSPACE  &kp SPACE                            &kp UP             &kp DOWN   &kp LBKT  &kp RBKT  &kp RIGHT_SHIFT
             >;
         };
 
