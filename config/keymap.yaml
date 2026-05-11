@@ -42,21 +42,21 @@ layers:
     display_name: "Base"
     bindings:
       # Left hand - number row
-      0: EQUAL         # +/=
-      1: N1            # !
-      2: N2            # @
-      3: N3            # #
-      4: N4            # $
-      5: N5            # %
-      6: "tog 1"       # T1 (toggle layer 1)
+      0: EQUAL
+      1: N1
+      2: N2
+      3: N3
+      4: N4
+      5: N5
+      6: none
       # Right hand - number row
-      7: "mo 3"        # M3 (momentary layer 3)
-      8: N6            # ^
-      9: N7            # &
-      10: N8           # *
-      11: N9           # (
-      12: N0           # )
-      13: MINUS        # -
+      7: none
+      8: N6
+      9: N7
+      10: N8
+      11: N9
+      12: N0
+      13: MINUS
       # Left hand - top alpha
       14: TAB
       15: Q
@@ -72,7 +72,7 @@ layers:
       24: I
       25: O
       26: P
-      27: BSLH         # |\
+      27: BSLH
       # Left hand - home row
       28: ESC
       29: A
@@ -81,58 +81,58 @@ layers:
       32: F
       33: G
       34: none
-      # Left inner thumb keys (top row)
-      35: LALT         # Alt
-      36: LGUI         # GUI
-      # Right inner thumb keys (top row)
-      37: ESC          # Esc
-      38: LCTRL        # Ctrl
+      # Left inner thumb keys
+      35: LALT
+      36: LGUI
+      # Right inner thumb keys
+      37: ESC
+      38: RCTRL
       # Right hand - home row
       39: none
       40: H
       41: J
       42: K
       43: L
-      44: SEMI         # :
-      45: SQT          # "
+      44: SEMI
+      45: SQT
       # Left hand - bottom alpha
-      46: LSHFT        # Shft
+      46: LSHFT
       47: Z
       48: X
       49: C
       50: V
       51: B
       # Left middle thumb
-      52: BSPC         # BkSp (with M2 label in image)
-      # Right middle thumb  
-      53: DEL          # Del
+      52: Mac_Spotlight_Search  # Cmd+Space
+      # Right middle thumb
+      53: PAGE_UP
       # Right hand - bottom alpha
       54: N
       55: M
-      56: COMMA        # <
-      57: DOT          # >
-      58: FSLH         # ?/
-      59: RSHFT        # Shft
+      56: COMMA
+      57: DOT
+      58: FSLH
+      59: RSHFT
       # Left hand - bottom row
-      60: "mo 2"       # M2 (momentary layer 2)
-      61: GRAVE        # ~
-      62: CAPS         # Cap
-      63: LEFT         # ←
-      64: RIGHT        # →
+      60: none
+      61: GRAVE
+      62: CAPS
+      63: LEFT
+      64: RIGHT
       # Left thumb cluster (bottom row)
-      65: BSPC         # BkSp
-      66: LSHFT        # Shift (orange M key)
-      67: LSHFT        # Shft
+      65: BSPC
+      66: LSHFT
+      67: END
       # Right thumb cluster (bottom row)
-      68: CAPS         # Cap
-      69: ENTER        # Ret/Enter
-      70: "lt 1 SPACE"  # Tap=space, Hold=symbol layer (was _ in image)
+      68: CAPS
+      69: ENTER
+      70: "lt 1 SPACE"
       # Right hand - bottom row
-      71: UP           # ↑
-      72: DOWN         # ↓
-      73: LBKT         # [
-      74: RBKT         # ]
-      75: "mo 2"       # M2 (momentary layer 2)
+      71: UP
+      72: DOWN
+      73: LBKT
+      74: RBKT
+      75: none
 
   # Layer 1: Symbol layer (activated by holding space)
   - name: symbol
@@ -147,6 +147,20 @@ layers:
       # C, V -> [, ]
       49: LBKT
       50: RBKT
+      # B -> <
+      51: LT
+      # N -> >
+      54: GREATER_THAN
+      # Right hand home row: J, K, L, ; -> =, !, &, `
+      41: EQUAL
+      42: EXCLAMATION
+      43: AMPS
+      44: GRAVE
+      # M, comma, dot, / -> ., ,, :, ;
+      55: PERIOD
+      56: COMMA
+      57: COLON
+      58: SEMI
 
   # Layer 2: Vim navigation layer
   - name: vim_nav
