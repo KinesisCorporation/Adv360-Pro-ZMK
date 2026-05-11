@@ -1,0 +1,176 @@
+# Adv360 Pro Keymap Configuration
+# This YAML file is used to generate adv360.keymap via generate_keymap.py
+#
+# Key format:
+#   - Simple keys: "A", "N1", "TAB", "LSHFT", etc. (auto-prefixed with &kp)
+#   - Layer keys: "mo 2", "tog 1", "lt 2 SPACE" (auto-prefixed with &)
+#   - Special: "none", "trans" (become &none, &trans)
+#   - Bluetooth: "bt BT_SEL 0", "bt BT_CLR" (auto-prefixed with &)
+#   - RGB/Backlight: "rgb_ug RGB_TOG", "bl BL_TOG"
+#   - Macros: "macro_ver", "macro_quotes" (custom macros from macros.dtsi)
+#   - Raw: "&bootloader", "&studio_unlock" (passed through as-is if starts with &)
+#
+# Shorthand for entire layers:
+#   bindings: none    # All 76 keys become &none
+#   bindings: trans   # All 76 keys become &trans
+#
+# Key positions (0-75) map to physical layout:
+#   See assets/key-positions.md for the full matrix diagram
+#
+#   LEFT HAND                          RIGHT HAND
+#   0  1  2  3  4  5  6                7  8  9  10 11 12 13
+#   14 15 16 17 18 19 20               21 22 23 24 25 26 27
+#   28 29 30 31 32 33 34   35 36 37 38 39 40 41 42 43 44 45
+#   46 47 48 49 50 51         52 53       54 55 56 57 58 59
+#   60 61 62 63 64      65 66 67 68 69 70    71 72 73 74 75
+
+# Behaviors defined in the keymap (homerow mods, etc.)
+behaviors:
+  hm:
+    name: homerow_mods
+    compatible: "zmk,behavior-hold-tap"
+    label: "HOMEROW_MODS"
+    binding_cells: 2
+    tapping_term_ms: 200
+    quick_tap_ms: 175
+    flavor: "tap-preferred"
+    bindings: ["&kp", "&kp"]
+
+# Layer definitions using explicit key positions (0-75)
+layers:
+  - name: default_layer
+    display_name: "Base"
+    bindings:
+      # Left hand - number row
+      0: EQUAL         # +/=
+      1: N1            # !
+      2: N2            # @
+      3: N3            # #
+      4: N4            # $
+      5: N5            # %
+      6: "tog 1"       # T1 (toggle layer 1)
+      # Right hand - number row
+      7: "mo 3"        # M3 (momentary layer 3)
+      8: N6            # ^
+      9: N7            # &
+      10: N8           # *
+      11: N9           # (
+      12: N0           # )
+      13: MINUS        # -
+      # Left hand - top alpha
+      14: TAB
+      15: Q
+      16: W
+      17: E
+      18: R
+      19: T
+      20: none
+      # Right hand - top alpha
+      21: none
+      22: Y
+      23: U
+      24: I
+      25: O
+      26: P
+      27: BSLH         # |\
+      # Left hand - home row
+      28: ESC
+      29: A
+      30: S
+      31: D
+      32: F
+      33: G
+      34: none
+      # Left inner thumb keys (top row)
+      35: LALT         # Alt
+      36: LGUI         # GUI
+      # Right inner thumb keys (top row)
+      37: ESC          # Esc
+      38: LCTRL        # Ctrl
+      # Right hand - home row
+      39: none
+      40: H
+      41: J
+      42: K
+      43: L
+      44: SEMI         # :
+      45: SQT          # "
+      # Left hand - bottom alpha
+      46: LSHFT        # Shft
+      47: Z
+      48: X
+      49: C
+      50: V
+      51: B
+      # Left middle thumb
+      52: BSPC         # BkSp (with M2 label in image)
+      # Right middle thumb  
+      53: DEL          # Del
+      # Right hand - bottom alpha
+      54: N
+      55: M
+      56: COMMA        # <
+      57: DOT          # >
+      58: FSLH         # ?/
+      59: RSHFT        # Shft
+      # Left hand - bottom row
+      60: "mo 2"       # M2 (momentary layer 2)
+      61: GRAVE        # ~
+      62: CAPS         # Cap
+      63: LEFT         # ←
+      64: RIGHT        # →
+      # Left thumb cluster (bottom row)
+      65: BSPC         # BkSp
+      66: LSHFT        # Shift (orange M key)
+      67: LSHFT        # Shft
+      # Right thumb cluster (bottom row)
+      68: CAPS         # Cap
+      69: ENTER        # Ret/Enter
+      70: "lt 1 SPACE"  # Tap=space, Hold=symbol layer (was _ in image)
+      # Right hand - bottom row
+      71: UP           # ↑
+      72: DOWN         # ↓
+      73: LBKT         # [
+      74: RBKT         # ]
+      75: "mo 2"       # M2 (momentary layer 2)
+
+  # Layer 1: Symbol layer (activated by holding space)
+  - name: symbol
+    display_name: "Sym"
+    bindings:
+      # E, R -> {, }
+      17: LBRC
+      18: RBRC
+      # D, F -> (, )
+      31: LPAR
+      32: RPAR
+      # C, V -> [, ]
+      49: LBKT
+      50: RBKT
+
+  # Layer 2: Vim navigation layer
+  - name: vim_nav
+    display_name: "Vim"
+    bindings:
+      # H, J, K, L -> Left, Down, Up, Right
+      40: LEFT
+      41: DOWN
+      42: UP
+      43: RIGHT
+
+  # Reserved layers for ZMK Studio
+  - name: extra1
+    display_name: "Red"
+    status: reserved
+
+  - name: extra2
+    display_name: "Purple"
+    status: reserved
+
+  - name: extra3
+    display_name: "Cyan"
+    status: reserved
+
+  - name: extra4
+    display_name: "Yellow"
+    status: reserved
