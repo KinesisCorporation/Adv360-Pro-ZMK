@@ -40,7 +40,7 @@
       bindings = <
         &none &none &none &none &none &none &none &none &none &none &none &none &none &none
         &none &none &none &kp LBRC &kp RBRC &none &none &none &none &none &none &none &none &none
-        &none &none &none &kp LPAR &kp RPAR &none &none &none &none &none &none &none &none &kp EQUAL &kp EXCLAMATION &kp AMPS &kp GRAVE &none
+        &none &none &none &kp LPAR &kp RPAR &none &none &none &none &none &none &none &kp MINUS &kp EQUAL &kp EXCLAMATION &kp AMPS &kp GRAVE &none
         &none &none &none &kp LBKT &kp RBKT &kp LT &none &none &kp GREATER_THAN &kp PERIOD &kp COMMA &kp COLON &kp SEMI &none
         &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none
       >;

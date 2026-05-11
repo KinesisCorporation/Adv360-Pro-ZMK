@@ -151,7 +151,8 @@ layers:
       51: LT
       # N -> >
       54: GREATER_THAN
-      # Right hand home row: J, K, L, ; -> =, !, &, `
+      # Right hand home row: H, J, K, L, ; -> -, =, !, &, `
+      40: MINUS
       41: EQUAL
       42: EXCLAMATION
       43: AMPS
