@@ -105,7 +105,7 @@ layers:
       # Left middle thumb
       52: Mac_Spotlight_Search  # Cmd+Space
       # Right middle thumb
-      53: PAGE_UP
+      53: "mo 8"
       # Right hand - bottom alpha
       54: N
       55: M
@@ -121,12 +121,12 @@ layers:
       64: RIGHT
       # Left thumb cluster (bottom row)
       65: BSPC
-      66: "lt 9 LSHFT"
+      66: LSHFT
       67: END
       # Right thumb cluster (bottom row)
-      68: CAPS
+      68: "mo 9"
       69: ENTER
-      70: "lt 8 SPACE"
+      70: SPACE
       # Right hand - bottom row
       71: UP
       72: DOWN
