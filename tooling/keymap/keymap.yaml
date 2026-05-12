@@ -105,7 +105,7 @@ layers:
       # Left middle thumb
       52: Mac_Spotlight_Search  # Cmd+Space
       # Right middle thumb
-      53: "mo 8"
+      53: "mo 10"
       # Right hand - bottom alpha
       54: N
       55: M
@@ -334,7 +334,21 @@ layers:
     display_name: "Yellow"
     status: reserved
 
-  # Layer 8: Symbol layer
+  - name: extra5
+    display_name: "Orange"
+    status: reserved
+
+  # Layer 9: Vim navigation layer
+  - name: vim_nav
+    display_name: "Vim"
+    bindings:
+      # H, J, K, L -> Left, Down, Up, Right
+      40: LEFT
+      41: DOWN
+      42: UP
+      43: RIGHT
+
+  # Layer 10: Symbol layer
   - name: symbol
     display_name: "Sym"
     bindings:
@@ -363,13 +377,3 @@ layers:
       56: COMMA
       57: COLON
       58: SEMI
-
-  # Layer 9: Vim navigation layer
-  - name: vim_nav
-    display_name: "Vim"
-    bindings:
-      # H, J, K, L -> Left, Down, Up, Right
-      40: LEFT
-      41: DOWN
-      42: UP
-      43: RIGHT
