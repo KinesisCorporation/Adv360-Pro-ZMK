@@ -121,7 +121,7 @@ layers:
       64: RIGHT
       # Left thumb cluster (bottom row)
       65: BSPC
-      66: LSHFT
+      66: "lt 9 LSHFT"
       67: END
       # Right thumb cluster (bottom row)
       68: CAPS
