@@ -126,7 +126,7 @@ layers:
       # Right thumb cluster (bottom row)
       68: CAPS
       69: ENTER
-      70: "lt 4 SPACE"
+      70: "lt 8 SPACE"
       # Right hand - bottom row
       71: UP
       72: DOWN
@@ -317,7 +317,24 @@ layers:
       71: "bl BL_INC"
       72: "bl BL_DEC"
 
-  # Layer 4: Symbol layer
+  # Reserved layers for ZMK Studio
+  - name: extra1
+    display_name: "Red"
+    status: reserved
+
+  - name: extra2
+    display_name: "Purple"
+    status: reserved
+
+  - name: extra3
+    display_name: "Cyan"
+    status: reserved
+
+  - name: extra4
+    display_name: "Yellow"
+    status: reserved
+
+  # Layer 8: Symbol layer
   - name: symbol
     display_name: "Sym"
     bindings:
@@ -347,7 +364,7 @@ layers:
       57: COLON
       58: SEMI
 
-  # Layer 5: Vim navigation layer
+  # Layer 9: Vim navigation layer
   - name: vim_nav
     display_name: "Vim"
     bindings:
@@ -356,20 +373,3 @@ layers:
       41: DOWN
       42: UP
       43: RIGHT
-
-  # Reserved layers for ZMK Studio
-  - name: extra1
-    display_name: "Red"
-    status: reserved
-
-  - name: extra2
-    display_name: "Purple"
-    status: reserved
-
-  - name: extra3
-    display_name: "Cyan"
-    status: reserved
-
-  - name: extra4
-    display_name: "Yellow"
-    status: reserved
