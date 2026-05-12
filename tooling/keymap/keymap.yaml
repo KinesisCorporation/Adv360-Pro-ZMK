@@ -36,16 +36,6 @@ behaviors:
     flavor: "tap-preferred"
     bindings: ["&kp", "&kp"]
 
-  ls:
-    name: layer_space
-    compatible: "zmk,behavior-hold-tap"
-    label: "LAYER_SPACE"
-    binding_cells: 2
-    tapping_term_ms: 275
-    quick_tap_ms: 0
-    flavor: "hold-preferred"
-    bindings: ["&mo", "&kp"]
-
 # Layer definitions using explicit key positions (0-75)
 layers:
   - name: default_layer
@@ -136,7 +126,7 @@ layers:
       # Right thumb cluster (bottom row)
       68: CAPS
       69: ENTER
-      70: "&ls 4 SPACE"
+      70: "lt 4 SPACE"
       # Right hand - bottom row
       71: UP
       72: DOWN
