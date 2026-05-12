@@ -36,6 +36,16 @@ behaviors:
     flavor: "tap-preferred"
     bindings: ["&kp", "&kp"]
 
+  ls:
+    name: layer_space
+    compatible: "zmk,behavior-hold-tap"
+    label: "LAYER_SPACE"
+    binding_cells: 2
+    tapping_term_ms: 275
+    quick_tap_ms: 0
+    flavor: "hold-preferred"
+    bindings: ["&mo", "&kp"]
+
 # Layer definitions using explicit key positions (0-75)
 layers:
   - name: default_layer
@@ -50,7 +60,7 @@ layers:
       5: N5
       6: none
       # Right hand - number row
-      7: none
+      7: "&mo 1"
       8: N6
       9: N7
       10: N8
@@ -114,7 +124,7 @@ layers:
       58: FSLH
       59: RSHFT
       # Left hand - bottom row
-      60: none
+      60: "&mo 2"
       61: GRAVE
       62: CAPS
       63: LEFT
@@ -126,21 +136,28 @@ layers:
       # Right thumb cluster (bottom row)
       68: CAPS
       69: ENTER
-      70: "lt 1 SPACE"
+      70: "&ls 1 SPACE"
       # Right hand - bottom row
       71: UP
       72: DOWN
       73: LBKT
       74: RBKT
-      75: none
+      75: "&mo 2"
 
   # Layer 1: Symbol layer (activated by holding space)
   - name: symbol
     display_name: "Sym"
     bindings:
+      1: "bt BT_SEL 0"
+      2: "bt BT_SEL 1"
+      3: "bt BT_SEL 2"
+      4: "bt BT_SEL 3"
+      5: "bt BT_SEL 4"
+      7: "trans"
       # E, R -> {, }
       17: LBRC
       18: RBRC
+      28: "studio_unlock"
       # D, F -> (, )
       31: LPAR
       32: RPAR

@@ -16,9 +16,18 @@
           label = "HOMEROW_MODS";
           #binding-cells = <2>;
           tapping-term-ms = <200>;
-          quick_tap_ms = <175>;
-          flavor = "hold-preferred";
+          quick-tap-ms = <175>;
+          flavor = "tap-preferred";
           bindings = <&kp>, <&kp>;
+      };
+      ls: layer_space {
+          compatible = "zmk,behavior-hold-tap";
+          label = "LAYER_SPACE";
+          #binding-cells = <2>;
+          tapping-term-ms = <275>;
+          quick-tap-ms = <0>;
+          flavor = "hold-preferred";
+          bindings = <&mo>, <&kp>;
       };
     };
 
@@ -28,19 +37,19 @@
     default_layer {
       display-name = "Base";
       bindings = <
-        &kp EQUAL &kp N1 &kp N2 &kp N3 &kp N4 &kp N5 &none &none &kp N6 &kp N7 &kp N8 &kp N9 &kp N0 &kp MINUS
+        &kp EQUAL &kp N1 &kp N2 &kp N3 &kp N4 &kp N5 &none &mo 1 &kp N6 &kp N7 &kp N8 &kp N9 &kp N0 &kp MINUS
         &kp TAB &kp Q &kp W &kp E &kp R &kp T &none &none &kp Y &kp U &kp I &kp O &kp P &kp BSLH
         &kp ESC &kp A &kp S &kp D &kp F &kp G &none &kp LALT &kp LGUI &kp ESC &kp RCTRL &none &kp H &kp J &kp K &kp L &kp SEMI &kp SQT
         &kp LSHFT &kp Z &kp X &kp C &kp V &kp B &Mac_Spotlight_Search &kp PAGE_UP &kp N &kp M &kp COMMA &kp DOT &kp FSLH &kp RSHFT
-        &none &kp GRAVE &kp CAPS &kp LEFT &kp RIGHT &kp BSPC &kp LSHFT &kp END &kp CAPS &kp ENTER &lt 1 SPACE &kp UP &kp DOWN &kp LBKT &kp RBKT &none
+        &mo 2 &kp GRAVE &kp CAPS &kp LEFT &kp RIGHT &kp BSPC &kp LSHFT &kp END &kp CAPS &kp ENTER &ls 1 SPACE &kp UP &kp DOWN &kp LBKT &kp RBKT &mo 2
       >;
     };
     symbol {
       display-name = "Sym";
       bindings = <
-        &none &none &none &none &none &none &none &none &none &none &none &none &none &none
+        &none &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &none &trans &none &none &none &none &none &none
         &none &none &none &kp LBRC &kp RBRC &none &none &none &none &none &none &none &none &none
-        &none &none &none &kp LPAR &kp RPAR &none &none &none &none &none &none &none &kp MINUS &kp EQUAL &kp EXCLAMATION &kp AMPS &kp GRAVE &none
+        &studio_unlock &none &none &kp LPAR &kp RPAR &none &none &none &none &none &none &none &kp MINUS &kp EQUAL &kp EXCLAMATION &kp AMPS &kp GRAVE &none
         &none &none &none &kp LBKT &kp RBKT &kp LT &none &none &kp GREATER_THAN &kp PERIOD &kp COMMA &kp COLON &kp SEMI &none
         &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none
       >;

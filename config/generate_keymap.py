@@ -155,7 +155,7 @@ def generate_behavior_block(behaviors: dict) -> str:
         lines.append(f'          label = "{config["label"]}";')
         lines.append(f'          #binding-cells = <{config["binding_cells"]}>;')
         lines.append(f'          tapping-term-ms = <{config["tapping_term_ms"]}>;')
-        lines.append(f'          quick_tap_ms = <{config["quick_tap_ms"]}>;')
+        lines.append(f'          quick-tap-ms = <{config["quick_tap_ms"]}>;')
         lines.append(f'          flavor = "{config["flavor"]}";')
 
         bindings_str = ", ".join(f"<{b}>" for b in config["bindings"])

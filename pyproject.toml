@@ -1,0 +1,9 @@
+[project]
+name = "adv360-pro-zmk"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "pyyaml>=6.0.3",
+]
