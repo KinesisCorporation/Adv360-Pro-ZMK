@@ -50,7 +50,7 @@ layers:
       5: N5
       6: none
       # Right hand - number row
-      7: "&mo 1"
+      7: "mo 3"
       8: N6
       9: N7
       10: N8
@@ -114,7 +114,7 @@ layers:
       58: FSLH
       59: RSHFT
       # Left hand - bottom row
-      60: "&mo 2"
+      60: "mo 2"
       61: GRAVE
       62: CAPS
       63: LEFT
@@ -132,7 +132,7 @@ layers:
       72: DOWN
       73: LBKT
       74: RBKT
-      75: "&mo 2"
+      75: "mo 2"
 
   # Layer 1: Keypad layer (default mapping)
   - name: keypad
