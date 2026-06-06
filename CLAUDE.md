@@ -5,7 +5,7 @@ ZMK firmware configuration for the Kinesis Advantage 360 Pro keyboard.
 ## Project structure
 
 - `config/adv360.keymap` - Main keymap definition (layers, bindings, behaviors)
-- `config/macros.dtsi` / `config/version.dtsi` - Macros and version info included by the keymap
+- `config/version.dtsi` - Version macro (generated at build time) included by the keymap
 - `config/west.yml` - ZMK west manifest (points to the Kinesis ZMK fork)
 - `Makefile` - Local build via Docker/Podman container
 - `firmware/` - Build output (`.uf2` files)
