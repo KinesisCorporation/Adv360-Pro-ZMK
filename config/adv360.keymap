@@ -5,7 +5,9 @@
 #include <dt-bindings/zmk/stp.h>
 #include <dt-bindings/zmk/backlight.h>
 
-/* Hyper = Cmd+Ctrl+Opt+Shift (collision-free namespace for global app/window shortcuts) */
+/**
+ * Hyper = Cmd+Ctrl+Opt+Shift (collision-free namespace for global app/window shortcuts)
+ */
 #define HYPER LS(LC(LA(LGUI)))
 
 / {
@@ -14,8 +16,11 @@
     };
 
     macros {
-      /* tmux prefix: taps Ctrl+A, then the passed key.
-       * Usage: &tmux N  ->  C-a n   (hold the layer key + press n repeatedly = C-a n C-a n ...) */
+      /**
+       * tmux prefix: taps Ctrl+A, then the passed key. Works for any keycode,
+       * including punctuation (e.g. &tmux LBKT -> C-a [ to enter copy mode).
+       * Usage: &tmux N -> C-a n   (hold the layer key + press n repeatedly = C-a n C-a n ...)
+       */
       tmux: tmux {
         compatible = "zmk,behavior-macro-one-param";
         #binding-cells = <1>;
@@ -31,7 +36,8 @@
   keymap {
     compatible = "zmk,keymap";
 
-    /* Layer 0: Base (QWERTY)
+    /**
+     * Layer 0: Base (QWERTY)
      *
      * =     1    2    3    4    5    MUTE                                         PLAY  6    7    8    9    0    -
      * TAB   Q    W    E    R    T    VOL+                                         PREV  Y    U    I    O    P    \
@@ -50,7 +56,9 @@
       >;
     };
 
-    /* Layer 1: Util — F1-F12; wrt=⌘W/⌘R/⌘T; zxcvb=undo/cut/copy/paste/redo, a=select-all; esdf=arrows; ←/→=bspc/enter; jkl;=right mods */
+    /**
+     * Layer 1: Util — F1-F12; wrt=⌘W/⌘R/⌘T; zxcvb=undo/cut/copy/paste/redo, a=select-all; esdf=arrows; ←/→=bspc/enter; jkl;=right mods
+     */
     util {
       display-name = "Util";
       bindings = <
@@ -62,7 +70,9 @@
       >;
     };
 
-    /* Layer 2: Mod — BT profiles (1-5), bootloader, BT clear, backlight, RGB, battery */
+    /**
+     * Layer 2: Mod — BT profiles (1-5), bootloader, BT clear, backlight, RGB, battery
+     */
     mod {
       display-name = "Mod";
       bindings = <
@@ -74,15 +84,19 @@
       >;
     };
 
-    /* Layer 3: Tmux — every key sends the tmux prefix (Ctrl+A) then itself. Held via the left inner thumb key. */
+    /**
+     * Layer 3: Tmux — every typing key sends the tmux prefix (Ctrl+A) then itself
+     * (e.g. [ -> C-a [ enters copy mode). Modifiers, layer keys, and media keys
+     * pass through; held via the left inner thumb key.
+     */
     tmux_layer {
       display-name = "Tmux";
       bindings = <
-        &trans  &tmux N1  &tmux N2  &tmux N3    &tmux N4     &tmux N5  &trans                                                  &trans  &tmux N6    &tmux N7  &tmux N8  &tmux N9  &tmux N0  &trans
-        &trans  &tmux Q   &tmux W   &tmux E     &tmux R      &tmux T   &trans                                                  &trans  &tmux Y     &tmux U   &tmux I   &tmux O   &tmux P   &trans
-        &trans  &tmux A   &tmux S   &tmux D     &tmux F      &tmux G   &trans          &trans  &trans  &trans  &trans          &trans  &tmux H     &tmux J   &tmux K   &tmux L   &trans    &trans
-        &trans  &tmux Z   &tmux X   &tmux C     &tmux V      &tmux B                           &trans  &trans                          &tmux N     &tmux M   &trans    &trans    &trans    &trans
-        &trans  &trans    &trans    &tmux LEFT  &tmux RIGHT                    &trans  &trans  &trans  &trans  &trans  &trans          &tmux DOWN  &tmux UP  &trans    &trans    &trans
+        &tmux EQUAL  &tmux N1     &tmux N2   &tmux N3    &tmux N4     &tmux N5  &trans                                                      &trans  &tmux N6    &tmux N7  &tmux N8     &tmux N9    &tmux N0    &tmux MINUS
+        &tmux TAB    &tmux Q      &tmux W    &tmux E     &tmux R      &tmux T   &trans                                                      &trans  &tmux Y     &tmux U   &tmux I      &tmux O     &tmux P     &tmux BSLH
+        &trans       &tmux A      &tmux S    &tmux D     &tmux F      &tmux G   &trans            &trans  &trans  &trans  &trans            &trans  &tmux H     &tmux J   &tmux K      &tmux L     &tmux SEMI  &tmux SQT
+        &trans       &tmux Z      &tmux X    &tmux C     &tmux V      &tmux B                            &trans  &trans                             &tmux N     &tmux M   &tmux COMMA  &tmux DOT   &tmux FSLH  &trans
+        &trans       &tmux GRAVE  &tmux ESC  &tmux LEFT  &tmux RIGHT        &tmux SPACE  &tmux ESC  &trans  &trans  &tmux ENTER  &tmux BSPC         &tmux DOWN  &tmux UP  &tmux LBKT   &tmux RBKT  &trans
       >;
     };
   };
