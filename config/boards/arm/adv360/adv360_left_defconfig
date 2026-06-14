@@ -55,7 +55,7 @@ CONFIG_BT_DIS_MANUF="Kinesis Corporation"
 #CONFIG_BT_PERIPHERAL_PREF_MIN_INT=12
 #CONFIG_BT_PERIPHERAL_PREF_MAX_INT=24
 #CONFIG_BT_PERIPHERAL_PREF_LATENCY=30
-CONFIG_BT_BAS=n #Set this to y to enable BLE battery reporting
+CONFIG_BT_BAS=y #Set this to y to enable BLE battery reporting
 
 #Misc configuration
 CONFIG_USB_DEVICE_VID=0x29EA
