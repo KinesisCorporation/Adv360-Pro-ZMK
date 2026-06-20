@@ -4,6 +4,10 @@ Here's all notable changes and commits to both the configuration repo and the ba
 Many thanks to all those who have submitted issues and pull requests to make this firmware better!
 ## Config repo
 
+6/20/2026 - Adjust bluetooth connection parameters [#841](https://github.com/KinesisCorporation/Adv360-Pro-ZMK/pull/841)
+
+6/14/2026 - Fix cache key path for west manifest [#832](https://github.com/KinesisCorporation/Adv360-Pro-ZMK/pull/832)
+
 11/7/2025 - Update README, replacing outdated layout editing information with current options [#768](https://github.com/KinesisCorporation/Adv360-Pro-ZMK/pull/768)
 
 2/9/2025 - Minor changes to the local build process to improve local building experience, Remove preprocessor commands in keymap file [#643](https://github.com/KinesisCorporation/Adv360-Pro-ZMK/pull/643)
