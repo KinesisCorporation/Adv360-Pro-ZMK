@@ -11,14 +11,32 @@
       #include "macros.dtsi"
       #include "version.dtsi"
 
-      hm: homerow_mods {
+      hml: homerow_mods_left {
           compatible = "zmk,behavior-hold-tap";
-          label = "HOMEROW_MODS";
+          label = "HOMEROW_MODS_LEFT";
           #binding-cells = <2>;
-          tapping-term-ms = <200>;
-          quick_tap_ms = <175>;
-          flavor = "tap-preferred";
+          flavor = "balanced";
+          tapping-term-ms = <280>;
+          quick-tap-ms = <175>;
+          require-prior-idle-ms = <150>;
           bindings = <&kp>, <&kp>;
+          /* Trigger modifiers only for a key on the opposite half. */
+          hold-trigger-key-positions = <7 8 9 10 11 12 13 21 22 23 24 25 26 27 37 38 39 40 41 42 43 44 45 53 54 55 56 57 58 59 68 69 70 71 72 73 74 75>;
+          hold-trigger-on-release;
+      };
+
+      hmr: homerow_mods_right {
+          compatible = "zmk,behavior-hold-tap";
+          label = "HOMEROW_MODS_RIGHT";
+          #binding-cells = <2>;
+          flavor = "balanced";
+          tapping-term-ms = <280>;
+          quick-tap-ms = <175>;
+          require-prior-idle-ms = <150>;
+          bindings = <&kp>, <&kp>;
+          /* Trigger modifiers only for a key on the opposite half. */
+          hold-trigger-key-positions = <0 1 2 3 4 5 6 14 15 16 17 18 19 20 28 29 30 31 32 33 34 35 36 46 47 48 49 50 51 52 60 61 62 63 64 65 66 67>;
+          hold-trigger-on-release;
       };
     };
 
@@ -30,9 +48,9 @@
       bindings = <
         &kp EQUAL &kp N1    &kp N2   &kp N3   &kp N4     &kp N5 &tog 1                                                           &mo 3 &kp N6 &kp N7 &kp N8    &kp N9   &kp N0   &kp MINUS
         &kp TAB   &kp Q     &kp W    &kp E    &kp R      &kp T  &none                                                            &none &kp Y  &kp U  &kp I     &kp O    &kp P    &kp BSLH
-        &kp ESC   &kp A     &kp S    &kp D    &kp F      &kp G  &none           &kp LCTRL &kp LALT &kp LGUI  &kp RCTRL           &none &kp H  &kp J  &kp K     &kp L    &kp SEMI &kp SQT
+        &kp ESC   &hml LGUI A &hml LALT S &hml LCTRL D &hml LSHFT F &kp G  &none           &kp LCTRL &kp LALT &kp LGUI  &kp RCTRL           &none &kp H  &hmr RSHFT J &hmr RCTRL K &hmr RALT L &hmr RGUI SEMI &kp SQT
         &kp LSHFT &kp Z     &kp X    &kp C    &kp V      &kp B                            &kp HOME &kp PG_UP                           &kp N  &kp M  &kp COMMA &kp DOT  &kp FSLH &kp RSHFT
-        &mo 2     &kp GRAVE &kp CAPS &kp LEFT &kp RIGHT                &kp BSPC &kp DEL   &kp END  &kp PG_DN &kp ENTER &kp SPACE              &kp UP &kp DOWN  &kp LBKT &kp RBKT &mo 2
+        &mo 2     &kp GRAVE &lt 4 CAPS &kp LEFT &kp RIGHT                &kp SPACE &kp DEL   &kp END  &kp PG_DN &kp ENTER &kp BSPC               &kp UP &kp DOWN  &kp LBKT &kp RBKT &mo 2
       >;
     };
     keypad {
@@ -65,9 +83,15 @@
         &none &none        &none        &none        &none                                       &none &none &none &none      &bl BL_TOG &rgb_ug RGB_TOG                                     &bl BL_INC   &bl BL_DEC   &none &none &none
       >;
     };
-    extra1 { 
-      display-name = "Red";    
-      status = "reserved";
+    nav {
+      display-name = "Nav";
+      bindings = <
+        &trans &trans &trans &trans &trans &trans &trans                                      &trans &trans &trans &trans &trans &trans &trans
+        &trans &trans &trans &trans &trans &trans &trans                                      &trans &trans &trans &trans &trans &trans &trans
+        &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans &trans
+        &trans &trans &trans &trans &trans &trans                                    &trans &trans                           &trans &trans &trans &trans &trans &trans
+        &trans &trans &trans &trans &trans                 &trans &trans &trans &trans &trans &trans             &trans &trans &trans &trans &trans
+      >;
     };
 
     extra2 { 
