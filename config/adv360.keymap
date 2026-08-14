@@ -36,18 +36,18 @@
      *
      * =     1    2    3    4    5    MUTE                                         PLAY  6    7    8    9    0    -
      * TAB   Q    W    E    R    T    VOL+                                         PREV  Y    U    I    O    P    \
-     * CTRL  A    S    D    F    G    VOL-         LGUI  TMUX  |  TMUX  RGUI       NEXT  H    J    K    L    ;    '
+     * CTRL  A    S    D    F    G    VOL-         LGUI  LALT  |  RALT  RGUI       NEXT  H    J    K    L    ;    '
      * SHFT  Z    X    C    V    B                       LCTL  |  RCTL                   N    M    ,    .    /    SHFT
-     * Util  `    ESC  ←    →                SPC   ESC   LALT  |  RALT  ENT   BSP        ↓    ↑    [    ]    MOD
+     * Util  `    ESC  ←    →                SPC   ESC   TMUX  |  TMUX  ENT   BSP        ↓    ↑    [    ]    MOD
      */
     default_layer {
       display-name = "Base";
       bindings = <
         &kp EQUAL  &kp N1     &kp N2   &kp N3    &kp N4     &kp N5  &kp C_MUTE                                                                 &kp C_PP    &kp N6    &kp N7  &kp N8     &kp N9    &kp N0    &kp MINUS
         &kp TAB    &kp Q      &kp W    &kp E     &kp R      &kp T   &kp C_VOL_UP                                                               &kp C_PREV  &kp Y     &kp U   &kp I      &kp O     &kp P     &kp BSLH
-        &kp LCTRL  &kp A      &kp S    &kp D     &kp F      &kp G   &kp C_VOL_DN               &kp LGUI  &mo 3  &mo 3     &kp RGUI             &kp C_NEXT  &kp H     &kp J   &kp K      &kp L     &kp SEMI  &kp SQT
+        &kp LCTRL  &kp A      &kp S    &kp D     &kp F      &kp G   &kp C_VOL_DN               &kp LGUI  &kp LALT  &kp RALT  &kp RGUI          &kp C_NEXT  &kp H     &kp J   &kp K      &kp L     &kp SEMI  &kp SQT
         &kp LSHFT  &kp Z      &kp X    &kp C     &kp V      &kp B                                    &kp LCTRL  &kp RCTRL                                  &kp N     &kp M   &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
-        &mo 1      &kp GRAVE  &kp ESC  &kp LEFT  &kp RIGHT                        &kp SPACE  &kp ESC  &kp LALT  &kp RALT  &kp ENTER  &kp BSPC              &kp DOWN  &kp UP  &kp LBKT   &kp RBKT  &mo 2
+        &mo 1      &kp GRAVE  &kp ESC  &kp LEFT  &kp RIGHT                        &kp SPACE  &kp ESC  &mo 3     &mo 3     &kp ENTER  &kp BSPC              &kp DOWN  &kp UP  &kp LBKT   &kp RBKT  &mo 2
       >;
     };
 
@@ -82,7 +82,7 @@
     /**
      * Layer 3: Tmux — every typing key sends the tmux prefix (Ctrl+A) then itself
      * (e.g. [ -> C-a [ enters copy mode). Modifiers, layer keys, and media keys
-     * pass through; held via the left inner thumb key.
+     * pass through; held via either inner bottom-row thumb key.
      */
     tmux_layer {
       display-name = "Tmux";
