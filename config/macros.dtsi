@@ -34,6 +34,32 @@
     #binding-cells = <0>;
     bindings = <&kp LS(K)>, <&kp I>, <&kp N>, <&kp E>, <&kp S>, <&kp I>, <&kp S>;
   };
+
+  // US layout: Windows Alt codes for Finnish letters (Alt+0228 = ä, Alt+0246 = ö).
+  macro_aumlaut: macro_aumlaut {
+    compatible = "zmk,behavior-macro";
+    label = "macro_aumlaut";
+    #binding-cells = <0>;
+    tap-ms = <40>;
+    wait-ms = <40>;
+    bindings =
+        <&macro_press &kp LALT>
+        , <&macro_tap &kp N0 &kp N2 &kp N2 &kp N8>
+        , <&macro_release &kp LALT>;
+  };
+
+  macro_oumlaut: macro_oumlaut {
+    compatible = "zmk,behavior-macro";
+    label = "macro_oumlaut";
+    #binding-cells = <0>;
+    tap-ms = <40>;
+    wait-ms = <40>;
+    bindings =
+        <&macro_press &kp LALT>
+        , <&macro_tap &kp N0 &kp N2 &kp N4 &kp N6>
+        , <&macro_release &kp LALT>;
+  };
+
   Win_Cut: Windows_Cut {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
